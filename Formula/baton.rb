@@ -11,7 +11,7 @@ class Baton < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ConductorOne/baton-sdk/releases/download/v0.0.1/baton-v0.0.1-darwin-amd64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "792948f09d60030a7a222857480905971786152ac3319207561ff192fab826ef"
+      sha256 "ece99fb3385415c13e89e1be4a75840aa2d3ee25b7df29ca3dd91437a3b05508"
 
       def install
         bin.install "baton"
@@ -19,7 +19,7 @@ class Baton < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/ConductorOne/baton-sdk/releases/download/v0.0.1/baton-v0.0.1-darwin-arm64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "226606b0ea06b35c45080355d365f4ece5ba3dc8dec064d1d74e8c784c67f369"
+      sha256 "1fcd6019154589fc8b20d0074faf7d667e0e2060411c2dc044a1028abdfa7957"
 
       def install
         bin.install "baton"
@@ -30,7 +30,7 @@ class Baton < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ConductorOne/baton-sdk/releases/download/v0.0.1/baton-v0.0.1-linux-arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "2470c783914d072e535525e85375c63ff6377f915cccb1b785c77e4a20e653c8"
+      sha256 "3724748986fb989874759003532a7c447abfbb170d495edd92937982ae31516f"
 
       def install
         bin.install "baton"
@@ -38,7 +38,7 @@ class Baton < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/ConductorOne/baton-sdk/releases/download/v0.0.1/baton-v0.0.1-linux-amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "c8ceba401c58eee896e17d5b0bb04d323d5e884a275786bb9acd813ce8a5534a"
+      sha256 "5a741c5c00f46321fc6b2afcef6e771b8e5b67a868b9046873d141ae7186d5e5"
 
       def install
         bin.install "baton"
