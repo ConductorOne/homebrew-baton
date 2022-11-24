@@ -6,20 +6,20 @@ require_relative "lib/custom_download_strategy"
 class BatonGithub < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-github/releases/download/v0.0.3/baton-github-v0.0.3-darwin-amd64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "673839637cee23b69af7da16bd8e6c1c58e137e631203de38dce7d149d7c2521"
+      url "https://github.com/ConductorOne/baton-github/releases/download/v0.0.4/baton-github-v0.0.4-darwin-amd64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "a59f32676af2ffa006ec0817ecf5348c49dbb7f17bee37517a537081d11dbc8d"
 
       def install
         bin.install "baton-github"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-github/releases/download/v0.0.3/baton-github-v0.0.3-darwin-arm64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "996f47451061fad9cc267d52ac6aa3e9b5b3ac10b7e3d2e3ecec7e083df7c75a"
+      url "https://github.com/ConductorOne/baton-github/releases/download/v0.0.4/baton-github-v0.0.4-darwin-arm64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "4f7ea263d5a1774a57f99baf62ede134006fa138e0469e064845f83eab82f5da"
 
       def install
         bin.install "baton-github"
@@ -29,16 +29,16 @@ class BatonGithub < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-github/releases/download/v0.0.3/baton-github-v0.0.3-linux-arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "70ce097d62bf276fc811a52e08c532ea5a2f54ecb6d6ff45419c724dc8754602"
+      url "https://github.com/ConductorOne/baton-github/releases/download/v0.0.4/baton-github-v0.0.4-linux-arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "d0d77ea324c919f3ac4615799f21c8c5803bf8a12e19b71c08b50bee60500d0a"
 
       def install
         bin.install "baton-github"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-github/releases/download/v0.0.3/baton-github-v0.0.3-linux-amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "3ff35da861b454d4b15000a52745d69a67c811a88bd59e3f68b88589e93b2d8d"
+      url "https://github.com/ConductorOne/baton-github/releases/download/v0.0.4/baton-github-v0.0.4-linux-amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "b9942c824a013b3d4fea206e8bf8caa5fbb4ebf00881eeddb23b4f022c03f6a5"
 
       def install
         bin.install "baton-github"
