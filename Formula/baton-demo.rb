@@ -9,17 +9,17 @@ class BatonDemo < Formula
   version "0.0.1"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-demo/releases/download/v0.0.1/baton-demo-v0.0.1-darwin-amd64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "b653d64f45f98dabd405d50c9460c5f871f4557fb3d7e1bd526e4fdcb217152b"
+    if Hardware::CPU.arm?
+      url "https://github.com/ConductorOne/baton-demo/releases/download/v0.0.1/baton-demo-v0.0.1-darwin-arm64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "a6a2922a266163db42fda1d45d0601507ffd1aa30bf507426b37430488d80bed"
 
       def install
         bin.install "baton-demo"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-demo/releases/download/v0.0.1/baton-demo-v0.0.1-darwin-arm64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "646e49d38a15147bc5200544bc796c5368ca1d8df5aac51f306429451a857494"
+    if Hardware::CPU.intel?
+      url "https://github.com/ConductorOne/baton-demo/releases/download/v0.0.1/baton-demo-v0.0.1-darwin-amd64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "d3c75285327baa70e79308558b92f7ac9662baa3245cb13476987ba894d68c81"
 
       def install
         bin.install "baton-demo"
@@ -30,7 +30,7 @@ class BatonDemo < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ConductorOne/baton-demo/releases/download/v0.0.1/baton-demo-v0.0.1-linux-arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "3c3ac8810a17d6b57b9a79bf0d042f0da53164d18fb40dd32f28cd99d2867ec5"
+      sha256 "d2c2c72fd00600f68fccacfecbc5014870acb9dd1301420b67da2fbf2db0bef8"
 
       def install
         bin.install "baton-demo"
@@ -38,7 +38,7 @@ class BatonDemo < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/ConductorOne/baton-demo/releases/download/v0.0.1/baton-demo-v0.0.1-linux-amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "e21a37024bb8eb9245402286483c3afb77a0c1ecb28099e9462401ac5f5ef5f5"
+      sha256 "2c789e71c043bfda39c9f82543ce61628ae43095627b75ac2552b3950708e6f6"
 
       def install
         bin.install "baton-demo"
