@@ -6,20 +6,20 @@ require_relative "lib/custom_download_strategy"
 class BatonMysql < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-mysql/releases/download/v0.0.1/baton-mysql-v0.0.1-darwin-amd64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "e1943e043f23177d86e8bd50e78f9f4f5f1b8ae203635f634fa4c686bb4aea34"
+      url "https://github.com/ConductorOne/baton-mysql/releases/download/v0.0.2/baton-mysql-v0.0.2-darwin-amd64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "e819420be5ca5df22f33e71f140159e016ec5831a9e577161b9c28d295edb58b"
 
       def install
         bin.install "baton-mysql"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-mysql/releases/download/v0.0.1/baton-mysql-v0.0.1-darwin-arm64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "4f91a79cf354b776a5f432cc7d911205a0ff815a0795db72f1fa266b5a2d5af8"
+      url "https://github.com/ConductorOne/baton-mysql/releases/download/v0.0.2/baton-mysql-v0.0.2-darwin-arm64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "ea075d189fd003de05424ab49f260c30fa9535c9afe1671193533a2b4a189f23"
 
       def install
         bin.install "baton-mysql"
@@ -29,16 +29,16 @@ class BatonMysql < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-mysql/releases/download/v0.0.1/baton-mysql-v0.0.1-linux-arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "e8c31053895b1ee9275216ba2844b6e4173fa165804c8624d84404858319c94f"
+      url "https://github.com/ConductorOne/baton-mysql/releases/download/v0.0.2/baton-mysql-v0.0.2-linux-arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "81db236acd8d4da5099879a6d44418ec633769e0605105bef484b057d1f64aed"
 
       def install
         bin.install "baton-mysql"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-mysql/releases/download/v0.0.1/baton-mysql-v0.0.1-linux-amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "84d3718e29a64e89ab275ee4a87128c1b0a70efbb3a12f558b04653951d4ae22"
+      url "https://github.com/ConductorOne/baton-mysql/releases/download/v0.0.2/baton-mysql-v0.0.2-linux-amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "8d2f51ea05d552b22451887f6d41e31778aec0ebab5b6a68026c733e3d295c0b"
 
       def install
         bin.install "baton-mysql"
