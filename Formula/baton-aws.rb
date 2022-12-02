@@ -6,20 +6,20 @@ require_relative "lib/custom_download_strategy"
 class BatonAws < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.0.1/baton-aws-v0.0.1-darwin-amd64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "19ed84639dfb0a32c63369a4d315329a01f674f2f5c828d9a5193a0ee41ec381"
+      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.0.2/baton-aws-v0.0.2-darwin-amd64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "b770feb97eb468ddbf868646d515b290e477f4555505f694fdbcfe4082d951ef"
 
       def install
         bin.install "baton-aws"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.0.1/baton-aws-v0.0.1-darwin-arm64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "f5e7df5e29d50d133bc1d5c1eb53bf5001ec3d1206af71407abc82c7b770dd9f"
+      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.0.2/baton-aws-v0.0.2-darwin-arm64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "6909b45eed007215e459df22542042503dea81767b3b71047706110677c8a40a"
 
       def install
         bin.install "baton-aws"
@@ -29,16 +29,16 @@ class BatonAws < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.0.1/baton-aws-v0.0.1-linux-arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "40adf2ed75c148531159b42a0f91099d29b2c7a0ae4e8d39e184e3a9fb0e625b"
+      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.0.2/baton-aws-v0.0.2-linux-arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "3c0624064742310976c7571cf76f86d2d2dfdbaadea23493a896c98d6607b360"
 
       def install
         bin.install "baton-aws"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.0.1/baton-aws-v0.0.1-linux-amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "a41d2bbcba11cc1781a9ac07f5b6493fb4f5f8319eae07a6e2da70bb30db6700"
+      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.0.2/baton-aws-v0.0.2-linux-amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "f3a35a56dc4626790a98ad2856dae4db5cfe22f901f39d18d4f86ebd2b73878c"
 
       def install
         bin.install "baton-aws"
