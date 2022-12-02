@@ -6,20 +6,20 @@ require_relative "lib/custom_download_strategy"
 class BatonPostgresql < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-postgresql/releases/download/v0.0.2/baton-postgresql-v0.0.2-darwin-amd64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "3d64ac1f98f73ce07a3fb08ec7d08b82b10039d3a452e9837b431a526d89342e"
+    if Hardware::CPU.arm?
+      url "https://github.com/ConductorOne/baton-postgresql/releases/download/v0.0.3/baton-postgresql-v0.0.3-darwin-arm64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "69d75e7610d35f8ebddcdb9cfc6ca33829ec6e674595b5f3742c872f83891a6b"
 
       def install
         bin.install "baton-postgresql"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-postgresql/releases/download/v0.0.2/baton-postgresql-v0.0.2-darwin-arm64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "947de6edb52f53204cf85f9502bdfce7460f178fffac3e31571219261a4efc0a"
+    if Hardware::CPU.intel?
+      url "https://github.com/ConductorOne/baton-postgresql/releases/download/v0.0.3/baton-postgresql-v0.0.3-darwin-amd64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "bac22816254aa0e5a90d6de70d34b18d2fde475b2e3dd88072b77732d2a59776"
 
       def install
         bin.install "baton-postgresql"
@@ -29,16 +29,16 @@ class BatonPostgresql < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-postgresql/releases/download/v0.0.2/baton-postgresql-v0.0.2-linux-arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "06a116745ebeac3c9fb606aa4d38f21ddcdecdbc62406573c3aa99a1a56a5a68"
+      url "https://github.com/ConductorOne/baton-postgresql/releases/download/v0.0.3/baton-postgresql-v0.0.3-linux-arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "70718533fa0cc34d724755b3f1f14c13a5d2ef57d7ce9b485164765a08a4146d"
 
       def install
         bin.install "baton-postgresql"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-postgresql/releases/download/v0.0.2/baton-postgresql-v0.0.2-linux-amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "4e5d9212b915464d4b5e2294111f8146f68259a4cd4f0901dc786f0efd666f29"
+      url "https://github.com/ConductorOne/baton-postgresql/releases/download/v0.0.3/baton-postgresql-v0.0.3-linux-amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "1b3892d30df1e7de1a191c8789adbbacc0259c6029e0fef50729094993e27578"
 
       def install
         bin.install "baton-postgresql"
