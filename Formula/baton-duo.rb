@@ -5,20 +5,20 @@
 class BatonDuo < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-duo/releases/download/v0.0.1/baton-duo-v0.0.1-darwin-amd64.zip"
-      sha256 "9eaf23fd52e26a4153f6f838959a0785338e1f828a2d2229ba2c4ddd550f68e6"
+      url "https://github.com/ConductorOne/baton-duo/releases/download/v0.0.2/baton-duo-v0.0.2-darwin-amd64.zip"
+      sha256 "76ad7abc5e91bf221a55449b575ffd3237d1b522e36615a7384ad34f30b3a1e2"
 
       def install
         bin.install "baton-duo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-duo/releases/download/v0.0.1/baton-duo-v0.0.1-darwin-arm64.zip"
-      sha256 "80bc6a0bb42b77a347af2c32cf91907a4da6f114e11adbde933fc6bb841db663"
+      url "https://github.com/ConductorOne/baton-duo/releases/download/v0.0.2/baton-duo-v0.0.2-darwin-arm64.zip"
+      sha256 "5b36359a154a9f3c28e4015f7db4de0fd0a82b0ec1ad9fb0aaa84235636bd37b"
 
       def install
         bin.install "baton-duo"
@@ -28,16 +28,16 @@ class BatonDuo < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-duo/releases/download/v0.0.1/baton-duo-v0.0.1-linux-arm64.tar.gz"
-      sha256 "2ec092526659625b32be717264a80a1b3d7932f19ea52a47a9ce676946241b9a"
+      url "https://github.com/ConductorOne/baton-duo/releases/download/v0.0.2/baton-duo-v0.0.2-linux-arm64.tar.gz"
+      sha256 "0ae11bba279cc57c4e4fed832f19fe8a1873a3f1a5ec397129fe38c5ac9ddfa8"
 
       def install
         bin.install "baton-duo"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-duo/releases/download/v0.0.1/baton-duo-v0.0.1-linux-amd64.tar.gz"
-      sha256 "a4c9e02b6bedc437e323d2e5b4d4be87d0e1fa080b78e9ea267e34153a7bd441"
+      url "https://github.com/ConductorOne/baton-duo/releases/download/v0.0.2/baton-duo-v0.0.2-linux-amd64.tar.gz"
+      sha256 "9ba9a463a3814b69f2d89d9e2ff04458b0290bdcd8ec742c3039440d06e0b5f3"
 
       def install
         bin.install "baton-duo"
