@@ -5,20 +5,20 @@
 class BatonCrowdstrike < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-crowdstrike/releases/download/v0.0.1/baton-crowdstrike-v0.0.1-darwin-amd64.zip"
-      sha256 "1325afd1526da9173df94ecf891595e22644c639efa1c1c80de5969e563a7edc"
+    if Hardware::CPU.arm?
+      url "https://github.com/ConductorOne/baton-crowdstrike/releases/download/v0.0.2/baton-crowdstrike-v0.0.2-darwin-arm64.zip"
+      sha256 "926207efedc6f06839970cb6e6877334d993485b6d7a8f77ce1cf7ae7ad7e875"
 
       def install
         bin.install "baton-crowdstrike"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-crowdstrike/releases/download/v0.0.1/baton-crowdstrike-v0.0.1-darwin-arm64.zip"
-      sha256 "5ea8d9fe4722ba6bfdd47b8fff0e301e272724298214134aae2535bdb62205cb"
+    if Hardware::CPU.intel?
+      url "https://github.com/ConductorOne/baton-crowdstrike/releases/download/v0.0.2/baton-crowdstrike-v0.0.2-darwin-amd64.zip"
+      sha256 "a6621d7dc2fd8680031cd2a24e22584ee49fdf56e4f5e62f47b8dd2ef8fb2ec9"
 
       def install
         bin.install "baton-crowdstrike"
@@ -28,16 +28,16 @@ class BatonCrowdstrike < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-crowdstrike/releases/download/v0.0.1/baton-crowdstrike-v0.0.1-linux-arm64.tar.gz"
-      sha256 "b6d05107554fafcf65c6c0b4c2652e4f24a932b5b563c1b10ccbd198fd5a33ee"
+      url "https://github.com/ConductorOne/baton-crowdstrike/releases/download/v0.0.2/baton-crowdstrike-v0.0.2-linux-arm64.tar.gz"
+      sha256 "05e2a425b88946f4af3503ca77d02fe74ecf64ef65d7dedae24d53df8fd7947e"
 
       def install
         bin.install "baton-crowdstrike"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-crowdstrike/releases/download/v0.0.1/baton-crowdstrike-v0.0.1-linux-amd64.tar.gz"
-      sha256 "512c4a80e9012ab3e2b8d52e4f60e76be25237610d2b877140b8fcbd0cc7c053"
+      url "https://github.com/ConductorOne/baton-crowdstrike/releases/download/v0.0.2/baton-crowdstrike-v0.0.2-linux-amd64.tar.gz"
+      sha256 "28e2baa0f3ab6b62c230fa0c5b438845a1160c82c0a00d87be53b11809a223d2"
 
       def install
         bin.install "baton-crowdstrike"
