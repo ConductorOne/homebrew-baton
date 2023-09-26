@@ -5,20 +5,20 @@
 class BatonJumpcloud < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.5"
+  version "0.0.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-jumpcloud/releases/download/v0.0.5/baton-jumpcloud-v0.0.5-darwin-amd64.zip"
-      sha256 "b76faf5a295dd299d8e5a6abeb9fbc26f56cab1f875e444b8ad97ef03a885ce2"
+      url "https://github.com/ConductorOne/baton-jumpcloud/releases/download/v0.0.6/baton-jumpcloud-v0.0.6-darwin-amd64.zip"
+      sha256 "093fa7dac9ed2a52707f7cf77dcc3a97a0a5cfd358ceca2df9bebe326312604a"
 
       def install
         bin.install "baton-jumpcloud"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-jumpcloud/releases/download/v0.0.5/baton-jumpcloud-v0.0.5-darwin-arm64.zip"
-      sha256 "4786d8b83322acecc4eec39bb30acfa7b3026666c3c82a252c5bc9f1167bff54"
+      url "https://github.com/ConductorOne/baton-jumpcloud/releases/download/v0.0.6/baton-jumpcloud-v0.0.6-darwin-arm64.zip"
+      sha256 "bc05b61dcfcadee3c52557ce6ee5d48e51e73352828c7188b0d5dc9a71d88289"
 
       def install
         bin.install "baton-jumpcloud"
@@ -28,16 +28,16 @@ class BatonJumpcloud < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-jumpcloud/releases/download/v0.0.5/baton-jumpcloud-v0.0.5-linux-arm64.tar.gz"
-      sha256 "e76d59f3440d5e83daf0e5dda41f31dea84c60f8fe12d3040fb6f4f9b2e3affb"
+      url "https://github.com/ConductorOne/baton-jumpcloud/releases/download/v0.0.6/baton-jumpcloud-v0.0.6-linux-arm64.tar.gz"
+      sha256 "570cbadbbc942e23bade90e75c68b38d2edbcbfa198abc7c84ac3d6fa10c412d"
 
       def install
         bin.install "baton-jumpcloud"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-jumpcloud/releases/download/v0.0.5/baton-jumpcloud-v0.0.5-linux-amd64.tar.gz"
-      sha256 "b75c94d92b7964a78c2538a02ec9a784eeb3e7b6424b2e62273a944ff5baaa6b"
+      url "https://github.com/ConductorOne/baton-jumpcloud/releases/download/v0.0.6/baton-jumpcloud-v0.0.6-linux-amd64.tar.gz"
+      sha256 "b0787d3fc6ca9db0169a36b33a2da7cb87443b062e57704b32e4ed18b9e5a221"
 
       def install
         bin.install "baton-jumpcloud"
