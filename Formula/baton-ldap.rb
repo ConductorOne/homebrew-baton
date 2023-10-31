@@ -5,20 +5,20 @@
 class BatonLdap < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.4"
+  version "0.0.5"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-ldap/releases/download/v0.0.4/baton-ldap-v0.0.4-darwin-arm64.zip"
-      sha256 "33fe516cae7ca8f766a723c1a9a0cce11f800c1d4ed42b8889bcbda3b1cde54f"
+      url "https://github.com/ConductorOne/baton-ldap/releases/download/v0.0.5/baton-ldap-v0.0.5-darwin-arm64.zip"
+      sha256 "f64642bf42e1e88426438dddc568645fb392444d38957e77c3602d295abc8e96"
 
       def install
         bin.install "baton-ldap"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-ldap/releases/download/v0.0.4/baton-ldap-v0.0.4-darwin-amd64.zip"
-      sha256 "ac80a76fcc3d363f4bcce5d3a0f9f40836e9e935e1a41188addcffa865ef802d"
+      url "https://github.com/ConductorOne/baton-ldap/releases/download/v0.0.5/baton-ldap-v0.0.5-darwin-amd64.zip"
+      sha256 "fdf13078534ffeb520bac171d08ad86a16ea6f2b234e5b466e2d301ac6f7e494"
 
       def install
         bin.install "baton-ldap"
@@ -28,16 +28,16 @@ class BatonLdap < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ldap/releases/download/v0.0.4/baton-ldap-v0.0.4-linux-arm64.tar.gz"
-      sha256 "6d136aff0373b21a9ce3f22dd07a610adad12570cce49bff9224ad8a88382f5e"
+      url "https://github.com/ConductorOne/baton-ldap/releases/download/v0.0.5/baton-ldap-v0.0.5-linux-arm64.tar.gz"
+      sha256 "deb802df3fc1a23905d1cd58f61c46407d99fad7bacec9d25c6072a599a7f046"
 
       def install
         bin.install "baton-ldap"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-ldap/releases/download/v0.0.4/baton-ldap-v0.0.4-linux-amd64.tar.gz"
-      sha256 "df61d5f1e3a8031915ae23bafdc3187ef85fa08a0f1eea5f1f2391a97690a361"
+      url "https://github.com/ConductorOne/baton-ldap/releases/download/v0.0.5/baton-ldap-v0.0.5-linux-amd64.tar.gz"
+      sha256 "def8510063c4b1ca77655d2f310ecfc42c3f137699e960282a845069b4cc7ab6"
 
       def install
         bin.install "baton-ldap"
