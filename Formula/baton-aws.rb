@@ -5,20 +5,20 @@
 class BatonAws < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.7"
+  version "0.0.8"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.0.7/baton-aws-v0.0.7-darwin-amd64.zip"
-      sha256 "f69776cc2d23189c6df4b1206ec58a1f2853d9fbe70d6d3e5a4d9bce46b14a8e"
+      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.0.8/baton-aws-v0.0.8-darwin-amd64.zip"
+      sha256 "eb6e1c217a104f6bd5fc486b9d998cf8290d09270cbb152db4c5637301ed48fc"
 
       def install
         bin.install "baton-aws"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.0.7/baton-aws-v0.0.7-darwin-arm64.zip"
-      sha256 "c3a549d5ef2d9f38ddf655fe41fd88763c339850b6a95b268e3c9baae78bcff1"
+      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.0.8/baton-aws-v0.0.8-darwin-arm64.zip"
+      sha256 "7ca091ab310caf5a2e23ded9f32f80a7121ea22215f36c87bebaf32fd4acd8a4"
 
       def install
         bin.install "baton-aws"
@@ -28,16 +28,16 @@ class BatonAws < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.0.7/baton-aws-v0.0.7-linux-arm64.tar.gz"
-      sha256 "26b9a984fa5122f3e094bc83973420df8ac832d310afd85882833e454e5abd68"
+      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.0.8/baton-aws-v0.0.8-linux-arm64.tar.gz"
+      sha256 "f90f44e8f012992b117baf2857c818e270a2e20363c18b2c4d44bab0059200db"
 
       def install
         bin.install "baton-aws"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.0.7/baton-aws-v0.0.7-linux-amd64.tar.gz"
-      sha256 "204a814428b87a1294b5c3fa586ba23bf6c41f73d28a558363a4475dbac265aa"
+      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.0.8/baton-aws-v0.0.8-linux-amd64.tar.gz"
+      sha256 "ebb02f37dd37b6f121789f9cac4bdd59c8c89f0e9e91abe00da127e82338c9cb"
 
       def install
         bin.install "baton-aws"
