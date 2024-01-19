@@ -5,20 +5,20 @@
 class BatonMs365 < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-ms365/releases/download/v0.0.1/baton-ms365-v0.0.1-darwin-arm64.zip"
-      sha256 "bfb006e16da3c1a8a66220d4aa5a1dda4970e34b9e35bf0021fc2b4370be761f"
+    if Hardware::CPU.intel?
+      url "https://github.com/ConductorOne/baton-ms365/releases/download/v0.0.2/baton-ms365-v0.0.2-darwin-amd64.zip"
+      sha256 "fd891754ea51f8939d271dcc814df13fbbaf113234dd6644e3a21e7a2a9233ed"
 
       def install
         bin.install "baton-ms365"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-ms365/releases/download/v0.0.1/baton-ms365-v0.0.1-darwin-amd64.zip"
-      sha256 "6d7fb9c9933fd1a2e712575c929ba805dc56b198dcaedfdec1944465dcf8310d"
+    if Hardware::CPU.arm?
+      url "https://github.com/ConductorOne/baton-ms365/releases/download/v0.0.2/baton-ms365-v0.0.2-darwin-arm64.zip"
+      sha256 "18ff0c4d8a0f2c30c7081a18093c5e622272cb990e28ea8fb77b6f8e93aafe0e"
 
       def install
         bin.install "baton-ms365"
@@ -28,16 +28,16 @@ class BatonMs365 < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ms365/releases/download/v0.0.1/baton-ms365-v0.0.1-linux-arm64.tar.gz"
-      sha256 "d919d43c41d5ea93f10e3d7fb1a7caaef5d529437767d42cfc856db8a1add232"
+      url "https://github.com/ConductorOne/baton-ms365/releases/download/v0.0.2/baton-ms365-v0.0.2-linux-arm64.tar.gz"
+      sha256 "c62e9f3c7f665967c8e7bdf642593a0ee6a79d322b3d1cb0f04a0b7369012163"
 
       def install
         bin.install "baton-ms365"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-ms365/releases/download/v0.0.1/baton-ms365-v0.0.1-linux-amd64.tar.gz"
-      sha256 "3902d302ce57d76349f9d597979239e4a17cb3eb2bcafa0f3713be171f1f656e"
+      url "https://github.com/ConductorOne/baton-ms365/releases/download/v0.0.2/baton-ms365-v0.0.2-linux-amd64.tar.gz"
+      sha256 "3520dbb399ac4be83914ffc93dd46339ed1ef13fd4156ce6995b33b79776d1cc"
 
       def install
         bin.install "baton-ms365"
