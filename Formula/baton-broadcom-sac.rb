@@ -5,20 +5,20 @@
 class BatonBroadcomSac < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.8"
+  version "0.0.9"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-broadcom-sac/releases/download/v0.0.8/baton-broadcom-sac-v0.0.8-darwin-arm64.zip"
-      sha256 "3c0e28de8cfba7422d01e92e06bb7e08cd3f5744971f50e253015661b6682b6c"
+      url "https://github.com/ConductorOne/baton-broadcom-sac/releases/download/v0.0.9/baton-broadcom-sac-v0.0.9-darwin-arm64.zip"
+      sha256 "6ec20fbfd54f0b3248f1eb41ce5b45e33e7020e66fdc95e86d176abd429fd1a5"
 
       def install
         bin.install "baton-broadcom-sac"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-broadcom-sac/releases/download/v0.0.8/baton-broadcom-sac-v0.0.8-darwin-amd64.zip"
-      sha256 "424f220d0f885f2742767707844723e878b0081077306f84d0e8867c6739dc3d"
+      url "https://github.com/ConductorOne/baton-broadcom-sac/releases/download/v0.0.9/baton-broadcom-sac-v0.0.9-darwin-amd64.zip"
+      sha256 "ef05d9228356b30dbd46234ba5c6711df45cd1b50009b2068d5b17bee38b1e1b"
 
       def install
         bin.install "baton-broadcom-sac"
@@ -28,16 +28,16 @@ class BatonBroadcomSac < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-broadcom-sac/releases/download/v0.0.8/baton-broadcom-sac-v0.0.8-linux-arm64.tar.gz"
-      sha256 "652c15e6e691711ac6b04f58c87f715aa3241d02242482ec9f799d7cedec083b"
+      url "https://github.com/ConductorOne/baton-broadcom-sac/releases/download/v0.0.9/baton-broadcom-sac-v0.0.9-linux-arm64.tar.gz"
+      sha256 "abaeea5033d2d0dc2f45c8fc63c688dbeb68807ab39f7a7af1ce9de27c030157"
 
       def install
         bin.install "baton-broadcom-sac"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-broadcom-sac/releases/download/v0.0.8/baton-broadcom-sac-v0.0.8-linux-amd64.tar.gz"
-      sha256 "9b6a9029d3ee55facfc257ba0c59c755b3c81c4586fb916a0863cb5fd45d8a06"
+      url "https://github.com/ConductorOne/baton-broadcom-sac/releases/download/v0.0.9/baton-broadcom-sac-v0.0.9-linux-amd64.tar.gz"
+      sha256 "e5af8d3f3fc1987893cd03b3525e787857aab5287e509f7c4e3dfbdf5cfd456a"
 
       def install
         bin.install "baton-broadcom-sac"
