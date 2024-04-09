@@ -5,20 +5,20 @@
 class BatonPanther < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-panther/releases/download/v0.0.1/baton-panther-v0.0.1-darwin-amd64.zip"
-      sha256 "1c305cea2d2dadaa1aadc6e4140b33c3dc1e147878880aad9b1bc123a15d5f56"
+      url "https://github.com/ConductorOne/baton-panther/releases/download/v0.0.2/baton-panther-v0.0.2-darwin-amd64.zip"
+      sha256 "185dfc0c5e3718fc4f004299d6921c153320b8de9baa24e08a0c611ed002802b"
 
       def install
         bin.install "baton-panther"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-panther/releases/download/v0.0.1/baton-panther-v0.0.1-darwin-arm64.zip"
-      sha256 "0b5d4fb1c6a764530ad29667fe5aa27b04c802552f5dfd3d914b74e2a48b1efd"
+      url "https://github.com/ConductorOne/baton-panther/releases/download/v0.0.2/baton-panther-v0.0.2-darwin-arm64.zip"
+      sha256 "bff93e6d6b0c5768e3a21f77e2b8de3287ea1247f4aac324385b6ec71fbe8086"
 
       def install
         bin.install "baton-panther"
@@ -27,17 +27,17 @@ class BatonPanther < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-panther/releases/download/v0.0.1/baton-panther-v0.0.1-linux-arm64.tar.gz"
-      sha256 "bc9f69d8203569d60c010ee8cdb603b516659752845b4437b48fc74bfd55fd9a"
+    if Hardware::CPU.intel?
+      url "https://github.com/ConductorOne/baton-panther/releases/download/v0.0.2/baton-panther-v0.0.2-linux-amd64.tar.gz"
+      sha256 "dfb04bdbc7e1a2d30b2ca6f58a81c6236e2b183a97f1298406a72fa7dcef7da5"
 
       def install
         bin.install "baton-panther"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-panther/releases/download/v0.0.1/baton-panther-v0.0.1-linux-amd64.tar.gz"
-      sha256 "63f0693650872374ccf181ff508e95a430f028b5a3796f91da0af2c65c8f0796"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-panther/releases/download/v0.0.2/baton-panther-v0.0.2-linux-arm64.tar.gz"
+      sha256 "6b6ec851c7af7ff6d7024bc0ec943f25b17ace8d3fb0df8636341e04aca381dc"
 
       def install
         bin.install "baton-panther"
