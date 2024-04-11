@@ -5,20 +5,20 @@
 class BatonBox < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-box/releases/download/v0.0.1/baton-box-v0.0.1-darwin-amd64.zip"
-      sha256 "7ce018621a9afa49728150d33147bfe9feb59dac413cbc77d592b998bb76b296"
+      url "https://github.com/ConductorOne/baton-box/releases/download/v0.0.2/baton-box-v0.0.2-darwin-amd64.zip"
+      sha256 "70b1878ebbf71a910c2740e604ea110fd7388f0083ee77c88f4156bdb862583f"
 
       def install
         bin.install "baton-box"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-box/releases/download/v0.0.1/baton-box-v0.0.1-darwin-arm64.zip"
-      sha256 "bbf0318dbc8364bb203275b4a106251ced1ffa2ef09f284f497e66f5a817fafc"
+      url "https://github.com/ConductorOne/baton-box/releases/download/v0.0.2/baton-box-v0.0.2-darwin-arm64.zip"
+      sha256 "64a6a5e1c4368ba56321d2616d1842eaf971d5475643b23262cf67583fe35f7a"
 
       def install
         bin.install "baton-box"
@@ -27,17 +27,17 @@ class BatonBox < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-box/releases/download/v0.0.1/baton-box-v0.0.1-linux-arm64.tar.gz"
-      sha256 "fe5848bfa51a59c897152b8aba2dbbe05badfa489f676731c5881bf5b3023a7d"
+    if Hardware::CPU.intel?
+      url "https://github.com/ConductorOne/baton-box/releases/download/v0.0.2/baton-box-v0.0.2-linux-amd64.tar.gz"
+      sha256 "561b442a77108aafa03879984f3a22fadb56ea8a1e7113d6c20017d95e950d57"
 
       def install
         bin.install "baton-box"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-box/releases/download/v0.0.1/baton-box-v0.0.1-linux-amd64.tar.gz"
-      sha256 "bdd586f8feaaed3906923c7f0d27b5b984c0f6028e058a0cd6cc236ea32dac63"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-box/releases/download/v0.0.2/baton-box-v0.0.2-linux-arm64.tar.gz"
+      sha256 "db0cb6003059c388a02c09e716be9b58f79db7d28f9b0a7ae4d1ecddfea57924"
 
       def install
         bin.install "baton-box"
