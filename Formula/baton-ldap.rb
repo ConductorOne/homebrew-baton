@@ -5,20 +5,20 @@
 class BatonLdap < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.10"
+  version "0.0.11"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-ldap/releases/download/v0.0.10/baton-ldap-v0.0.10-darwin-arm64.zip"
-      sha256 "50b12bfbb663fa68179f940f7c7b2f1524d8c5e5bce637143aa9b1360ee15624"
+    if Hardware::CPU.intel?
+      url "https://github.com/ConductorOne/baton-ldap/releases/download/v0.0.11/baton-ldap-v0.0.11-darwin-amd64.zip"
+      sha256 "cef87253890be50832a3e5a68733146b9bf4d7f31f73d747e11c0695618b9682"
 
       def install
         bin.install "baton-ldap"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-ldap/releases/download/v0.0.10/baton-ldap-v0.0.10-darwin-amd64.zip"
-      sha256 "861e02bd8a3edf2e3f9a12dc0545dfd59d40d59a1b5e312c3f13feb530de0065"
+    if Hardware::CPU.arm?
+      url "https://github.com/ConductorOne/baton-ldap/releases/download/v0.0.11/baton-ldap-v0.0.11-darwin-arm64.zip"
+      sha256 "77993c0164026c3e567c011ce947a5fe0f12802ecaaa382ff8f7a22e0de43fe8"
 
       def install
         bin.install "baton-ldap"
@@ -27,17 +27,17 @@ class BatonLdap < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ldap/releases/download/v0.0.10/baton-ldap-v0.0.10-linux-arm64.tar.gz"
-      sha256 "5da38882ed81bfad1af649229b8531a741e233a44a7516ba705707c2b79ea0de"
+    if Hardware::CPU.intel?
+      url "https://github.com/ConductorOne/baton-ldap/releases/download/v0.0.11/baton-ldap-v0.0.11-linux-amd64.tar.gz"
+      sha256 "88120b59b521b50c0ce93b5ce5fc6e4eed4d8f3e22448591a9157737e9ff1254"
 
       def install
         bin.install "baton-ldap"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-ldap/releases/download/v0.0.10/baton-ldap-v0.0.10-linux-amd64.tar.gz"
-      sha256 "24bb8eb6e18b1ca3ac3b24ec8bc232611ad46b29dd3a855801a0cedac1f405d3"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-ldap/releases/download/v0.0.11/baton-ldap-v0.0.11-linux-arm64.tar.gz"
+      sha256 "03a337dc24ab9002479a4920df3ff379def6a133ee1c4986fdabd3cc283194e6"
 
       def install
         bin.install "baton-ldap"
