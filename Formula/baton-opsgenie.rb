@@ -5,20 +5,20 @@
 class BatonOpsgenie < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-opsgenie/releases/download/v0.0.3/baton-opsgenie-v0.0.3-darwin-amd64.zip"
-      sha256 "ff959c84227eb916813ebda69774f580a88f6d4bbd072f6af3ba6748cd25ac26"
+      url "https://github.com/ConductorOne/baton-opsgenie/releases/download/v0.0.4/baton-opsgenie-v0.0.4-darwin-amd64.zip"
+      sha256 "656e1b893c856e99808816f23098bc911ec88a52adfcc375fb4cb323280bd8a0"
 
       def install
         bin.install "baton-opsgenie"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-opsgenie/releases/download/v0.0.3/baton-opsgenie-v0.0.3-darwin-arm64.zip"
-      sha256 "4269a431038061eaf7576f773c9d18f1cce2c79d2fe93f44dd95983a99fa7c6f"
+      url "https://github.com/ConductorOne/baton-opsgenie/releases/download/v0.0.4/baton-opsgenie-v0.0.4-darwin-arm64.zip"
+      sha256 "0ddf326a5464fbabc64484b539a1c4709f2a6e1f922fafc946a358b4348a266c"
 
       def install
         bin.install "baton-opsgenie"
@@ -28,16 +28,16 @@ class BatonOpsgenie < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-opsgenie/releases/download/v0.0.3/baton-opsgenie-v0.0.3-linux-amd64.tar.gz"
-      sha256 "16391b8404726ba6c11ec99c486e07c553648053c95374bec900e7d6061c10c0"
+      url "https://github.com/ConductorOne/baton-opsgenie/releases/download/v0.0.4/baton-opsgenie-v0.0.4-linux-amd64.tar.gz"
+      sha256 "aa58b8bdc7517d4f542a4c6dac2ec6e9b09b3b15bcc265f48cd7600a25ae25fa"
 
       def install
         bin.install "baton-opsgenie"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-opsgenie/releases/download/v0.0.3/baton-opsgenie-v0.0.3-linux-arm64.tar.gz"
-      sha256 "553ac52305668e1328e94aa19f4f8a62678cfd41cd9ad49ac37494511d23db40"
+      url "https://github.com/ConductorOne/baton-opsgenie/releases/download/v0.0.4/baton-opsgenie-v0.0.4-linux-arm64.tar.gz"
+      sha256 "a01e043117f3b992e05444953c70d89554b211384e507ab103b07d57ed3a44ad"
 
       def install
         bin.install "baton-opsgenie"
