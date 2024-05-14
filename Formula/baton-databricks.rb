@@ -5,20 +5,20 @@
 class BatonDatabricks < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-databricks/releases/download/v0.0.1/baton-databricks-v0.0.1-darwin-arm64.zip"
-      sha256 "8743a5282a9f8424f48b1d9c179619ef11b6aa857df795f9e423b62b172478c4"
+    on_intel do
+      url "https://github.com/ConductorOne/baton-databricks/releases/download/v0.0.2/baton-databricks-v0.0.2-darwin-amd64.zip"
+      sha256 "b3decf6133af3a34dd119d4a5901dbf4c9028e58a155ebbf9d37f7680282d8c6"
 
       def install
         bin.install "baton-databricks"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-databricks/releases/download/v0.0.1/baton-databricks-v0.0.1-darwin-amd64.zip"
-      sha256 "09e6c8d05671975eb7c4b6d276cdde6ec622423c9b39d606c1c3338ed08f3540"
+    on_arm do
+      url "https://github.com/ConductorOne/baton-databricks/releases/download/v0.0.2/baton-databricks-v0.0.2-darwin-arm64.zip"
+      sha256 "df37e4bffcce43334b20934933fc7ed10ed47f9e20a87ba27d02535f0468eeca"
 
       def install
         bin.install "baton-databricks"
@@ -27,20 +27,24 @@ class BatonDatabricks < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-databricks/releases/download/v0.0.1/baton-databricks-v0.0.1-linux-arm64.tar.gz"
-      sha256 "899af1c6a53116ef06e037b6d0c3515f1498a015378964d049dc4330459c7a0a"
+    on_intel do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/ConductorOne/baton-databricks/releases/download/v0.0.2/baton-databricks-v0.0.2-linux-amd64.tar.gz"
+        sha256 "c0f8cf64f0b9b47dabc281ab80ec8b53b71214deb9942f05c2670f913eeacc06"
 
-      def install
-        bin.install "baton-databricks"
+        def install
+          bin.install "baton-databricks"
+        end
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-databricks/releases/download/v0.0.1/baton-databricks-v0.0.1-linux-amd64.tar.gz"
-      sha256 "3c1ad6dd0590fcd93239dc0f34326f02706d59588a274570004820789a000d98"
+    on_arm do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/ConductorOne/baton-databricks/releases/download/v0.0.2/baton-databricks-v0.0.2-linux-arm64.tar.gz"
+        sha256 "868b906edc3dba98483be83a71dc8530ea03384b73477a25d38d0f2c4d7cfb8f"
 
-      def install
-        bin.install "baton-databricks"
+        def install
+          bin.install "baton-databricks"
+        end
       end
     end
   end
