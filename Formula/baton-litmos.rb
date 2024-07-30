@@ -5,20 +5,20 @@
 class BatonLitmos < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.4"
+  version "0.0.5"
 
   on_macos do
     on_intel do
-      url "https://github.com/ConductorOne/baton-litmos/releases/download/v0.0.4/baton-litmos-v0.0.4-darwin-amd64.zip"
-      sha256 "b9310dbd758ebb46515641b34701671d75961a90fc2e850b528bcbf13deae095"
+      url "https://github.com/ConductorOne/baton-litmos/releases/download/v0.0.5/baton-litmos-v0.0.5-darwin-amd64.zip"
+      sha256 "7ac9351b5b90ca42e247691bb490f77c0f68eab381f6e50422c9438aac9aa34c"
 
       def install
         bin.install "baton-litmos"
       end
     end
     on_arm do
-      url "https://github.com/ConductorOne/baton-litmos/releases/download/v0.0.4/baton-litmos-v0.0.4-darwin-arm64.zip"
-      sha256 "eeb5fbc247eaa1a51f5c5125550c2ca7e9d5e45ff2a91d3b67629ada47eaa506"
+      url "https://github.com/ConductorOne/baton-litmos/releases/download/v0.0.5/baton-litmos-v0.0.5-darwin-arm64.zip"
+      sha256 "31ed97e3ef889d46eae348056e3b27b99840b5a5af1b07a3816ac5127a36f468"
 
       def install
         bin.install "baton-litmos"
@@ -29,8 +29,8 @@ class BatonLitmos < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-litmos/releases/download/v0.0.4/baton-litmos-v0.0.4-linux-amd64.tar.gz"
-        sha256 "8ccc6649e405c6c0c6ab71ecf8343441607002b9b3b71b5ba1c6f4cb3a6f3a88"
+        url "https://github.com/ConductorOne/baton-litmos/releases/download/v0.0.5/baton-litmos-v0.0.5-linux-amd64.tar.gz"
+        sha256 "08ce57ae407d489362089e12c39948a07c5a0fce2c8aa37da6dacb472fb2ef2e"
 
         def install
           bin.install "baton-litmos"
@@ -39,8 +39,8 @@ class BatonLitmos < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-litmos/releases/download/v0.0.4/baton-litmos-v0.0.4-linux-arm64.tar.gz"
-        sha256 "20b195f6a2ab36697581e8062469fe3d7f767de1235284f05ac2638028fc1073"
+        url "https://github.com/ConductorOne/baton-litmos/releases/download/v0.0.5/baton-litmos-v0.0.5-linux-arm64.tar.gz"
+        sha256 "dfd04299a2bbc4c26a9ce104bddfb4d5f6f85d411625e4a64592b6e92d154902"
 
         def install
           bin.install "baton-litmos"
