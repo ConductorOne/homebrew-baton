@@ -5,20 +5,20 @@
 class BatonBitbucket < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.14"
+  version "0.0.15"
 
   on_macos do
     on_intel do
-      url "https://github.com/ConductorOne/baton-bitbucket/releases/download/v0.0.14/baton-bitbucket-v0.0.14-darwin-amd64.zip"
-      sha256 "cb87376594959f44927efe5f9df36e6e4ba286ae01ca032231356fc9ba73e9c9"
+      url "https://github.com/ConductorOne/baton-bitbucket/releases/download/v0.0.15/baton-bitbucket-v0.0.15-darwin-amd64.zip"
+      sha256 "8e123c08610b78548a8ce0d84a0d32561ab1f6e43d91c2d0d3e9e39cab05c49d"
 
       def install
         bin.install "baton-bitbucket"
       end
     end
     on_arm do
-      url "https://github.com/ConductorOne/baton-bitbucket/releases/download/v0.0.14/baton-bitbucket-v0.0.14-darwin-arm64.zip"
-      sha256 "42cac9c51c86a1d15d61948b491e671b6c8325e8981ac0eaa9d89d42327b6444"
+      url "https://github.com/ConductorOne/baton-bitbucket/releases/download/v0.0.15/baton-bitbucket-v0.0.15-darwin-arm64.zip"
+      sha256 "0527bd8b259abf53564ab47ae28ea2f4ebf8ff8fdeaacab8002463f11730675d"
 
       def install
         bin.install "baton-bitbucket"
@@ -29,8 +29,8 @@ class BatonBitbucket < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-bitbucket/releases/download/v0.0.14/baton-bitbucket-v0.0.14-linux-amd64.tar.gz"
-        sha256 "4d696af65c91c2e9bdba26f072d365d06445868430829053458e7dacd7d71b37"
+        url "https://github.com/ConductorOne/baton-bitbucket/releases/download/v0.0.15/baton-bitbucket-v0.0.15-linux-amd64.tar.gz"
+        sha256 "9a1a6b82bfe33261580b1d15d1d36983a704f6d610b7d64e20628a9ff20612bb"
 
         def install
           bin.install "baton-bitbucket"
@@ -39,8 +39,8 @@ class BatonBitbucket < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-bitbucket/releases/download/v0.0.14/baton-bitbucket-v0.0.14-linux-arm64.tar.gz"
-        sha256 "14a9eea7cb09685c9b67716263bc45ac5d930f1e53a4233c17b1b6aad208e05d"
+        url "https://github.com/ConductorOne/baton-bitbucket/releases/download/v0.0.15/baton-bitbucket-v0.0.15-linux-arm64.tar.gz"
+        sha256 "b80acce4364d7d870cf75777495dca1998a0b88ba678008e8fcfababc43b4017"
 
         def install
           bin.install "baton-bitbucket"
