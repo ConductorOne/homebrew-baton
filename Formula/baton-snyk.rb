@@ -5,20 +5,20 @@
 class BatonSnyk < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.8"
+  version "0.0.9"
 
   on_macos do
     on_intel do
-      url "https://github.com/ConductorOne/baton-snyk/releases/download/v0.0.8/baton-snyk-v0.0.8-darwin-amd64.zip"
-      sha256 "0e49d22043b6a27c682f1e484ba932bd2ac2840568eb8b7fa6fa6c34b086cf1a"
+      url "https://github.com/ConductorOne/baton-snyk/releases/download/v0.0.9/baton-snyk-v0.0.9-darwin-amd64.zip"
+      sha256 "d9f7857cafe8463435e38d445dd40fce6aa08f2f28a9ac4dbf0ace9adc136127"
 
       def install
         bin.install "baton-snyk"
       end
     end
     on_arm do
-      url "https://github.com/ConductorOne/baton-snyk/releases/download/v0.0.8/baton-snyk-v0.0.8-darwin-arm64.zip"
-      sha256 "c633136346a339c8f313da0196658f4badce94beff0b260b2048f9cf810190fc"
+      url "https://github.com/ConductorOne/baton-snyk/releases/download/v0.0.9/baton-snyk-v0.0.9-darwin-arm64.zip"
+      sha256 "1e7645899aac5fbea66ab82ddd690e1dbcfe644ed934b48ffac32fe597f201fa"
 
       def install
         bin.install "baton-snyk"
@@ -29,8 +29,8 @@ class BatonSnyk < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-snyk/releases/download/v0.0.8/baton-snyk-v0.0.8-linux-amd64.tar.gz"
-        sha256 "1be0171ed7bd5363eed14c880f90fca5627506a4e7913b7dde30d5eeebc0dc41"
+        url "https://github.com/ConductorOne/baton-snyk/releases/download/v0.0.9/baton-snyk-v0.0.9-linux-amd64.tar.gz"
+        sha256 "6c2617099fb167fe09d4947d173ca18941023332dfcb156dbb6a41c71da08945"
 
         def install
           bin.install "baton-snyk"
@@ -39,8 +39,8 @@ class BatonSnyk < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-snyk/releases/download/v0.0.8/baton-snyk-v0.0.8-linux-arm64.tar.gz"
-        sha256 "3ff2d52fe1650092a40f36d4d01f9c2d82e74e66757d06d1e5cce677b5ab04a0"
+        url "https://github.com/ConductorOne/baton-snyk/releases/download/v0.0.9/baton-snyk-v0.0.9-linux-arm64.tar.gz"
+        sha256 "1b3b3cf900de9c71190ccbf2a977777fe5b4f24c8de82760f655f63eb5f8132a"
 
         def install
           bin.install "baton-snyk"
