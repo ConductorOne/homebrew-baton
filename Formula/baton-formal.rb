@@ -5,20 +5,20 @@
 class BatonFormal < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     on_intel do
-      url "https://github.com/ConductorOne/baton-formal/releases/download/v0.0.3/baton-formal-v0.0.3-darwin-amd64.zip"
-      sha256 "e582e5523a32db732afd9f5f07273c33f1119bf65223157eebc242e48c3eda49"
+      url "https://github.com/ConductorOne/baton-formal/releases/download/v0.0.4/baton-formal-v0.0.4-darwin-amd64.zip"
+      sha256 "605dd398739e439d42664c313b2954cb39dbcf473aefc9e4bd88d7f06ddf274f"
 
       def install
         bin.install "baton-formal"
       end
     end
     on_arm do
-      url "https://github.com/ConductorOne/baton-formal/releases/download/v0.0.3/baton-formal-v0.0.3-darwin-arm64.zip"
-      sha256 "08122276a99945d7672a2721efe83b435e0a7d1dcdabc3d6d58f83739cfef83b"
+      url "https://github.com/ConductorOne/baton-formal/releases/download/v0.0.4/baton-formal-v0.0.4-darwin-arm64.zip"
+      sha256 "86e6e139970dacc35878272a8cce55af61d8b6023705b3257e6819905f806d6d"
 
       def install
         bin.install "baton-formal"
@@ -29,8 +29,8 @@ class BatonFormal < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-formal/releases/download/v0.0.3/baton-formal-v0.0.3-linux-amd64.tar.gz"
-        sha256 "9453c0c9a5fe54efe441262dab6ea82e0205732f96986016fa3747e4c1398812"
+        url "https://github.com/ConductorOne/baton-formal/releases/download/v0.0.4/baton-formal-v0.0.4-linux-amd64.tar.gz"
+        sha256 "585cce9af0e390caf17bc17e561fbcf0536bb453d0897e8185c6d211756a3b78"
 
         def install
           bin.install "baton-formal"
@@ -39,8 +39,8 @@ class BatonFormal < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-formal/releases/download/v0.0.3/baton-formal-v0.0.3-linux-arm64.tar.gz"
-        sha256 "6108a1fcb211d936cbcd19dbfa98c53604f64cc4ef51fb88a2168c201dbce59a"
+        url "https://github.com/ConductorOne/baton-formal/releases/download/v0.0.4/baton-formal-v0.0.4-linux-arm64.tar.gz"
+        sha256 "133fdc89430dd355d03afec83003d9f655730f8569f9d80729ffcfbc3c168836"
 
         def install
           bin.install "baton-formal"
