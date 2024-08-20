@@ -5,20 +5,20 @@
 class BatonVgs < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.4"
+  version "0.0.5"
 
   on_macos do
     on_intel do
-      url "https://github.com/ConductorOne/baton-vgs/releases/download/v0.0.4/baton-vgs-v0.0.4-darwin-amd64.zip"
-      sha256 "e90a9aadf64c5adda3719ae32f808d82fbfb23ed6c89053a45426ea8c11f9858"
+      url "https://github.com/ConductorOne/baton-vgs/releases/download/v0.0.5/baton-vgs-v0.0.5-darwin-amd64.zip"
+      sha256 "09ae9f71572aa8a4b9424ab6f7043cecc8646131d254d0e69f8af39b72e9af31"
 
       def install
         bin.install "baton-vgs"
       end
     end
     on_arm do
-      url "https://github.com/ConductorOne/baton-vgs/releases/download/v0.0.4/baton-vgs-v0.0.4-darwin-arm64.zip"
-      sha256 "9ca354be49bb9969964a0f48f9bddd0796fd7b71e6cd5e0f8298c52e516da644"
+      url "https://github.com/ConductorOne/baton-vgs/releases/download/v0.0.5/baton-vgs-v0.0.5-darwin-arm64.zip"
+      sha256 "c7dc9ef7225b230a6e05b42173a3f83424ee4b8edc589d0d2aee6db97d16f386"
 
       def install
         bin.install "baton-vgs"
@@ -29,8 +29,8 @@ class BatonVgs < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-vgs/releases/download/v0.0.4/baton-vgs-v0.0.4-linux-amd64.tar.gz"
-        sha256 "10d14f9e0d000bf80a7626143a3c9f0cfdf991a7490ff5b6db4d3cebf3293593"
+        url "https://github.com/ConductorOne/baton-vgs/releases/download/v0.0.5/baton-vgs-v0.0.5-linux-amd64.tar.gz"
+        sha256 "65a359199f5390bf257c44c476e1d6248e985d44c3d1bafbd12dd64e52e9c55c"
 
         def install
           bin.install "baton-vgs"
@@ -39,8 +39,8 @@ class BatonVgs < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-vgs/releases/download/v0.0.4/baton-vgs-v0.0.4-linux-arm64.tar.gz"
-        sha256 "808dea1996aa452ed4739bc916015f64ef1dac95b7d3e46a4414a2d333a15773"
+        url "https://github.com/ConductorOne/baton-vgs/releases/download/v0.0.5/baton-vgs-v0.0.5-linux-arm64.tar.gz"
+        sha256 "fd05f0a1f421ad822ddd4ee4892c251878f1c331e28f07163dada28fb5b3312f"
 
         def install
           bin.install "baton-vgs"
