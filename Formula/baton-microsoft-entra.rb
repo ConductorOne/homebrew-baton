@@ -5,20 +5,20 @@
 class BatonMicrosoftEntra < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.19"
+  version "0.0.20"
 
   on_macos do
     on_intel do
-      url "https://github.com/ConductorOne/baton-microsoft-entra/releases/download/v0.0.19/baton-microsoft-entra-v0.0.19-darwin-amd64.zip"
-      sha256 "2d6144d3a57b6ca94370eb23284c3e2aa65a968a3f61504d4db34822062d26b7"
+      url "https://github.com/ConductorOne/baton-microsoft-entra/releases/download/v0.0.20/baton-microsoft-entra-v0.0.20-darwin-amd64.zip"
+      sha256 "a3a7ec11e42d3b6bfd8651a8d1c39cfa19919bd1a3ec1df4ae58a579ae6b5d98"
 
       def install
         bin.install "baton-microsoft-entra"
       end
     end
     on_arm do
-      url "https://github.com/ConductorOne/baton-microsoft-entra/releases/download/v0.0.19/baton-microsoft-entra-v0.0.19-darwin-arm64.zip"
-      sha256 "db9aa12cf737e5326ad5e9737f943ca1bf3de7201d03ac84904160aee8f78f51"
+      url "https://github.com/ConductorOne/baton-microsoft-entra/releases/download/v0.0.20/baton-microsoft-entra-v0.0.20-darwin-arm64.zip"
+      sha256 "ba4af54acd39f4180c4594b12f405de793d8c1142b339d503ccec046ad0ec683"
 
       def install
         bin.install "baton-microsoft-entra"
@@ -29,8 +29,8 @@ class BatonMicrosoftEntra < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-microsoft-entra/releases/download/v0.0.19/baton-microsoft-entra-v0.0.19-linux-amd64.tar.gz"
-        sha256 "b4454fda7b3edca0fad766e780211bcc21e6138139d7d12bc57d63ca8875dbac"
+        url "https://github.com/ConductorOne/baton-microsoft-entra/releases/download/v0.0.20/baton-microsoft-entra-v0.0.20-linux-amd64.tar.gz"
+        sha256 "98de7ad57dfce2b671f3fa492df9ca6c9cdb99a0a057b03d317d3bb08c767170"
 
         def install
           bin.install "baton-microsoft-entra"
@@ -39,8 +39,8 @@ class BatonMicrosoftEntra < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-microsoft-entra/releases/download/v0.0.19/baton-microsoft-entra-v0.0.19-linux-arm64.tar.gz"
-        sha256 "7f6b88e9f18e6e79338dff4d5c1fd7b9d3c6add8e92d461bcc40ecd9e522d731"
+        url "https://github.com/ConductorOne/baton-microsoft-entra/releases/download/v0.0.20/baton-microsoft-entra-v0.0.20-linux-arm64.tar.gz"
+        sha256 "95df428d40f9494f71f0a10e153fea9a38117246531cfec2b23c6797667f58f6"
 
         def install
           bin.install "baton-microsoft-entra"
