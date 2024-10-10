@@ -5,20 +5,20 @@
 class Baton1Password < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.9"
+  version "0.1.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-1password/releases/download/v0.0.9/baton-1password-v0.0.9-darwin-amd64.zip"
-      sha256 "66fd22b6dace16768a576de431049b994e0f80e9f72a2636a2b589c9d96f705d"
+    on_intel do
+      url "https://github.com/ConductorOne/baton-1password/releases/download/v0.1.0/baton-1password-v0.1.0-darwin-amd64.zip"
+      sha256 "c9a6d44b53cd80a27a746488ef6be3b562f9b9ded77737b3a23c45dacf7001e3"
 
       def install
         bin.install "baton-1password"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-1password/releases/download/v0.0.9/baton-1password-v0.0.9-darwin-arm64.zip"
-      sha256 "094166db28cc0df56c1ca06df9ef44a9e1729f68f360cca134687773fbea517c"
+    on_arm do
+      url "https://github.com/ConductorOne/baton-1password/releases/download/v0.1.0/baton-1password-v0.1.0-darwin-arm64.zip"
+      sha256 "df5268ef8176dec082ceccc4f54f90589f74c7e77d34c5829136046ca4246d26"
 
       def install
         bin.install "baton-1password"
@@ -27,20 +27,24 @@ class Baton1Password < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-1password/releases/download/v0.0.9/baton-1password-v0.0.9-linux-amd64.tar.gz"
-      sha256 "74155c4849473a3199c642117b5a2ced1ef177d81297c1b51a53af41db698e07"
+    on_intel do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/ConductorOne/baton-1password/releases/download/v0.1.0/baton-1password-v0.1.0-linux-amd64.tar.gz"
+        sha256 "35bb0b1100ed4437823fef138820cf892b337ecc47aacc52250f5d0a076e36ab"
 
-      def install
-        bin.install "baton-1password"
+        def install
+          bin.install "baton-1password"
+        end
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-1password/releases/download/v0.0.9/baton-1password-v0.0.9-linux-arm64.tar.gz"
-      sha256 "ef46460aa43fc8ce3a2908916a9c5eec41551e99eb4d1bcc8d03def9b1f2b2dd"
+    on_arm do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/ConductorOne/baton-1password/releases/download/v0.1.0/baton-1password-v0.1.0-linux-arm64.tar.gz"
+        sha256 "32a90ec7afc8c14240000ef790a921a7a372e87e72183187bb31cea2258a560f"
 
-      def install
-        bin.install "baton-1password"
+        def install
+          bin.install "baton-1password"
+        end
       end
     end
   end
