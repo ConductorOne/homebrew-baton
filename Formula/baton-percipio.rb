@@ -5,20 +5,20 @@
 class BatonPercipio < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.5"
+  version "0.0.6"
 
   on_macos do
     on_intel do
-      url "https://github.com/ConductorOne/baton-percipio/releases/download/v0.0.5/baton-percipio-v0.0.5-darwin-amd64.zip"
-      sha256 "f7d85e4ff67cee2d1263172d2d7f5737fc2594e6676c0ccfa8d0e37cb5e8f06b"
+      url "https://github.com/ConductorOne/baton-percipio/releases/download/v0.0.6/baton-percipio-v0.0.6-darwin-amd64.zip"
+      sha256 "b1a8af947a285b6be081ff593df066d62f0a11db2d82031aa08ea918806c46a7"
 
       def install
         bin.install "baton-percipio"
       end
     end
     on_arm do
-      url "https://github.com/ConductorOne/baton-percipio/releases/download/v0.0.5/baton-percipio-v0.0.5-darwin-arm64.zip"
-      sha256 "7915f08428b2364072b30160e5bd6e32e564499c825112f9f9a5379ba85c366f"
+      url "https://github.com/ConductorOne/baton-percipio/releases/download/v0.0.6/baton-percipio-v0.0.6-darwin-arm64.zip"
+      sha256 "55afacdd6c1f22e90f5b7d2a7a2b53e777953daa54bff00d372952981494087e"
 
       def install
         bin.install "baton-percipio"
@@ -29,8 +29,8 @@ class BatonPercipio < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-percipio/releases/download/v0.0.5/baton-percipio-v0.0.5-linux-amd64.tar.gz"
-        sha256 "526700aa913985fea3026a4c5a47a93bfe0afdab04f4da9998b1010a3f6a869e"
+        url "https://github.com/ConductorOne/baton-percipio/releases/download/v0.0.6/baton-percipio-v0.0.6-linux-amd64.tar.gz"
+        sha256 "1abe3499739b055cac10a5ea8467a74ffa543b7ff8783ca69a26938fa5f1dd20"
 
         def install
           bin.install "baton-percipio"
@@ -39,8 +39,8 @@ class BatonPercipio < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-percipio/releases/download/v0.0.5/baton-percipio-v0.0.5-linux-arm64.tar.gz"
-        sha256 "ae9dfab3ba0b6541f4c5ae407ff9e2e58ede8f3d91ac00976f51830c7561b8ff"
+        url "https://github.com/ConductorOne/baton-percipio/releases/download/v0.0.6/baton-percipio-v0.0.6-linux-arm64.tar.gz"
+        sha256 "8736dd77507afb56149a30b7a724c95ec20ace3f880d360d97383b56191fc708"
 
         def install
           bin.install "baton-percipio"
