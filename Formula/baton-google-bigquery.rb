@@ -5,20 +5,20 @@
 class BatonGoogleBigquery < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     on_intel do
-      url "https://github.com/ConductorOne/baton-google-bigquery/releases/download/v0.0.3/baton-google-bigquery-v0.0.3-darwin-amd64.zip"
-      sha256 "e7d0785fe0536af15155c737faf50ccf3ac3f12719c6e898b79a974ecc35476a"
+      url "https://github.com/ConductorOne/baton-google-bigquery/releases/download/v0.0.4/baton-google-bigquery-v0.0.4-darwin-amd64.zip"
+      sha256 "ff2564e0761f2078067e5666820bf24a8aafad4fc61cce292cef9a1df6fc0eb1"
 
       def install
         bin.install "baton-google-bigquery"
       end
     end
     on_arm do
-      url "https://github.com/ConductorOne/baton-google-bigquery/releases/download/v0.0.3/baton-google-bigquery-v0.0.3-darwin-arm64.zip"
-      sha256 "b550c650af2e0ff30f188b7fba62653ffafbd2274e87aa0b0e017528951a0ed8"
+      url "https://github.com/ConductorOne/baton-google-bigquery/releases/download/v0.0.4/baton-google-bigquery-v0.0.4-darwin-arm64.zip"
+      sha256 "5809eb81a5e627419614026dcb27f36568d8446b23adc1440354b11a3bec3f78"
 
       def install
         bin.install "baton-google-bigquery"
@@ -29,8 +29,8 @@ class BatonGoogleBigquery < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-google-bigquery/releases/download/v0.0.3/baton-google-bigquery-v0.0.3-linux-amd64.tar.gz"
-        sha256 "8cdef8d23e494e248db9d2494f236f44da25a9574031958e26e10d2d9e5f88cd"
+        url "https://github.com/ConductorOne/baton-google-bigquery/releases/download/v0.0.4/baton-google-bigquery-v0.0.4-linux-amd64.tar.gz"
+        sha256 "4fc4435b20ee47425773f77a830a7156f88529078e2863a89293a84509d6f4dc"
 
         def install
           bin.install "baton-google-bigquery"
@@ -39,8 +39,8 @@ class BatonGoogleBigquery < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-google-bigquery/releases/download/v0.0.3/baton-google-bigquery-v0.0.3-linux-arm64.tar.gz"
-        sha256 "faf5be572d6a165ea175c386d3eb89dfdcb63b618409576415e31586cc96bff7"
+        url "https://github.com/ConductorOne/baton-google-bigquery/releases/download/v0.0.4/baton-google-bigquery-v0.0.4-linux-arm64.tar.gz"
+        sha256 "33de9e46e676d2b06c460fabe27971e628e571b7011920546e2795cca99af09c"
 
         def install
           bin.install "baton-google-bigquery"
