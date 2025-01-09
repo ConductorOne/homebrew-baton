@@ -5,20 +5,20 @@
 class Baton < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.4"
+  version "0.1.5"
 
   on_macos do
-    on_intel do
-      url "https://github.com/ConductorOne/baton/releases/download/v0.1.4/baton-v0.1.4-darwin-amd64.zip"
-      sha256 "803088e347f7cc3420fa78b292d49b757c59b67a5538018a55d99ab4a62a46ea"
+    if Hardware::CPU.intel?
+      url "https://github.com/ConductorOne/baton/releases/download/v0.1.5/baton-v0.1.5-darwin-amd64.zip"
+      sha256 "e1fb4efef224389e9e74d57f90745ad4c0bf8766cac3f8d288685e74408ab118"
 
       def install
         bin.install "baton"
       end
     end
-    on_arm do
-      url "https://github.com/ConductorOne/baton/releases/download/v0.1.4/baton-v0.1.4-darwin-arm64.zip"
-      sha256 "de356dce6c1a168502a133daab10579c4d7e3f5cc881d7797308525dfef3cd67"
+    if Hardware::CPU.arm?
+      url "https://github.com/ConductorOne/baton/releases/download/v0.1.5/baton-v0.1.5-darwin-arm64.zip"
+      sha256 "64748857f856bbac44b928edc087e30730a58ec8fd6a6515289c89a6f30ad35b"
 
       def install
         bin.install "baton"
@@ -27,20 +27,20 @@ class Baton < Formula
   end
 
   on_linux do
-    on_intel do
+    if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton/releases/download/v0.1.4/baton-v0.1.4-linux-amd64.tar.gz"
-        sha256 "facef29b4de02049f00f5cd9ef776c9691a065b07554d710a9cda1666118423f"
+        url "https://github.com/ConductorOne/baton/releases/download/v0.1.5/baton-v0.1.5-linux-amd64.tar.gz"
+        sha256 "408353f46fbac10751dd5cd356fae6cadeb0ff84343e179bb7e9a45f4d3885f2"
 
         def install
           bin.install "baton"
         end
       end
     end
-    on_arm do
+    if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton/releases/download/v0.1.4/baton-v0.1.4-linux-arm64.tar.gz"
-        sha256 "d29a72f87ac5c9e3883f828b0891d1f44edd9d7d9b5adae2f7c5fd4e33807487"
+        url "https://github.com/ConductorOne/baton/releases/download/v0.1.5/baton-v0.1.5-linux-arm64.tar.gz"
+        sha256 "70a62091fddd1fcfaad57e7a19f5d96587776636cc0712c63ab76c961379635a"
 
         def install
           bin.install "baton"
