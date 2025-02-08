@@ -5,20 +5,20 @@
 class BatonPingfederate < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-pingfed/releases/download/v0.0.1/baton-pingfederate-v0.0.1-darwin-amd64.zip"
-      sha256 "faad2f4bd34b48b6c7b3da9891e741ba76927da7e508e744997569489e69804c"
+      url "https://github.com/ConductorOne/baton-pingfed/releases/download/v0.0.2/baton-pingfederate-v0.0.2-darwin-amd64.zip"
+      sha256 "d7c43d1e98fb4a0a1ac97906fbd10bf99b25362d669eefb237c665dae5958372"
 
       def install
         bin.install "baton-pingfederate"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-pingfed/releases/download/v0.0.1/baton-pingfederate-v0.0.1-darwin-arm64.zip"
-      sha256 "3bf55b7cdd4785c2f5d27d928bdfb1d0011123f158e38b514960cee593899cef"
+      url "https://github.com/ConductorOne/baton-pingfed/releases/download/v0.0.2/baton-pingfederate-v0.0.2-darwin-arm64.zip"
+      sha256 "a86d9cd8601235bd984b2cbc320bb37a02b43749ea40d492a1a791d4dd4ef85d"
 
       def install
         bin.install "baton-pingfederate"
@@ -29,8 +29,8 @@ class BatonPingfederate < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-pingfed/releases/download/v0.0.1/baton-pingfederate-v0.0.1-linux-amd64.tar.gz"
-        sha256 "3294a3770b85fe82b32a21341d1bcf195ef16ac9bae81c6f82e53c72dbda78ce"
+        url "https://github.com/ConductorOne/baton-pingfed/releases/download/v0.0.2/baton-pingfederate-v0.0.2-linux-amd64.tar.gz"
+        sha256 "e6f9e5f9d129f4253fdd4975a1269aa1ff0b1db4cc3c44d8c49f5ff02b5141b6"
 
         def install
           bin.install "baton-pingfederate"
@@ -39,8 +39,8 @@ class BatonPingfederate < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-pingfed/releases/download/v0.0.1/baton-pingfederate-v0.0.1-linux-arm64.tar.gz"
-        sha256 "29e37ca52598a18997d23620ee2d71b27a8e7c3c48f24f6f08c3cd291869e904"
+        url "https://github.com/ConductorOne/baton-pingfed/releases/download/v0.0.2/baton-pingfederate-v0.0.2-linux-arm64.tar.gz"
+        sha256 "d11b43e9dda2721e22f9b586c96d49c12580d34434238344c90a5897d58e2460"
 
         def install
           bin.install "baton-pingfederate"
