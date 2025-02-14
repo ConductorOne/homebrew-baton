@@ -5,20 +5,20 @@
 class Baton < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.6"
+  version "0.1.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton/releases/download/v0.1.6/baton-v0.1.6-darwin-amd64.zip"
-      sha256 "800c5617804ed6bde756902a32dfb3a6031455506b5da56bfa600544fb2890cf"
+      url "https://github.com/ConductorOne/baton/releases/download/v0.1.7/baton-v0.1.7-darwin-amd64.zip"
+      sha256 "76f02890200897e919b8dfb938c298053a15afd3cc3fe3aa7cddea7ae2048071"
 
       def install
         bin.install "baton"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton/releases/download/v0.1.6/baton-v0.1.6-darwin-arm64.zip"
-      sha256 "cdb141fb1ba17a157f3ca60d40912935098ebd1fac7abc8578ac7eb82f68101c"
+      url "https://github.com/ConductorOne/baton/releases/download/v0.1.7/baton-v0.1.7-darwin-arm64.zip"
+      sha256 "64dfa2c6afa4db8b0fd24c0e378dc78f6f33e77ae3af4953ee6f8e9a582612cc"
 
       def install
         bin.install "baton"
@@ -29,8 +29,8 @@ class Baton < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton/releases/download/v0.1.6/baton-v0.1.6-linux-amd64.tar.gz"
-        sha256 "15edc806c9347deb5aa907eb3d6f21b87fc07ec12485c67d33c684a9e5b2d1c3"
+        url "https://github.com/ConductorOne/baton/releases/download/v0.1.7/baton-v0.1.7-linux-amd64.tar.gz"
+        sha256 "c68371f1224d5b2e8c6aa21de30f4de57ee7c50bac5661d28d7de6bdb600ebef"
 
         def install
           bin.install "baton"
@@ -39,8 +39,8 @@ class Baton < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton/releases/download/v0.1.6/baton-v0.1.6-linux-arm64.tar.gz"
-        sha256 "55f93c9e6f7fb9a0704ceac8b5fb67a6e069721fccae200c94adb57f0dc2c918"
+        url "https://github.com/ConductorOne/baton/releases/download/v0.1.7/baton-v0.1.7-linux-arm64.tar.gz"
+        sha256 "8ee084f058776f384e2d8ed1c3aff5f972e2d0623c2f2ca38ab87f48a0500cea"
 
         def install
           bin.install "baton"
