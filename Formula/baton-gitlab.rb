@@ -5,20 +5,20 @@
 class BatonGitlab < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.10"
+  version "0.0.11"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.10/baton-gitlab-v0.0.10-darwin-amd64.zip"
-      sha256 "3fa96b59192b95fe71133bf57ed7581543ed83e0501f9dfb9114990b4e2eb271"
+      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.11/baton-gitlab-v0.0.11-darwin-amd64.zip"
+      sha256 "dc5e56b910f45ec5fc369bc1f57657aaf58756ff23a54a49f520ce1839a14036"
 
       def install
         bin.install "baton-gitlab"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.10/baton-gitlab-v0.0.10-darwin-arm64.zip"
-      sha256 "57932d6a80c3007c7423952eb43499c8bf338aacebd9f9a0ade5c12f4508ae05"
+      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.11/baton-gitlab-v0.0.11-darwin-arm64.zip"
+      sha256 "67ca53e626aaf3f241bf4a808a4c8bcc524ee20b082e395417d073bdec762172"
 
       def install
         bin.install "baton-gitlab"
@@ -29,8 +29,8 @@ class BatonGitlab < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.10/baton-gitlab-v0.0.10-linux-amd64.tar.gz"
-        sha256 "4ced70a8c10ff63222b77933546b2dc5267a5815f22b60b6d398a7b0dfe515bb"
+        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.11/baton-gitlab-v0.0.11-linux-amd64.tar.gz"
+        sha256 "029b5586a74a1ee6c99fa12a797ce8bc4af35684f19ca9d554fc921ee6a315c1"
 
         def install
           bin.install "baton-gitlab"
@@ -39,8 +39,8 @@ class BatonGitlab < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.10/baton-gitlab-v0.0.10-linux-arm64.tar.gz"
-        sha256 "1e6ad6589a53862b1543085a8055eaa99ca7f97840c881259a9c1f1c2563032d"
+        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.11/baton-gitlab-v0.0.11-linux-arm64.tar.gz"
+        sha256 "2b043fdcf2206d7cb7f7a347b2d4bd4e6f22b8ce19320d7cd3e2c185a39bb4f9"
 
         def install
           bin.install "baton-gitlab"
