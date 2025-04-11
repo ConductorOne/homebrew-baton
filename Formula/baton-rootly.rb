@@ -5,20 +5,20 @@
 class BatonRootly < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-rootly/releases/download/v0.0.1/baton-rootly-v0.0.1-darwin-amd64.zip"
-      sha256 "0b07022243cdc7e21f460cee792daa36702189bb7058fc94a543b123f362a639"
+      url "https://github.com/ConductorOne/baton-rootly/releases/download/v0.0.2/baton-rootly-v0.0.2-darwin-amd64.zip"
+      sha256 "e65bc01889406e07fb6b624fd957f4b62d695251e2bbcc7a75a6d49284fd133c"
 
       def install
         bin.install "baton-rootly"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-rootly/releases/download/v0.0.1/baton-rootly-v0.0.1-darwin-arm64.zip"
-      sha256 "b59bbe51980f8b3ebdf992971e8882853b527da14e39da81dd909cd91d962c43"
+      url "https://github.com/ConductorOne/baton-rootly/releases/download/v0.0.2/baton-rootly-v0.0.2-darwin-arm64.zip"
+      sha256 "06025a7b463376a29e5ca94a89fe9548df47e41566b92048823cf90c464f14e5"
 
       def install
         bin.install "baton-rootly"
@@ -29,8 +29,8 @@ class BatonRootly < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-rootly/releases/download/v0.0.1/baton-rootly-v0.0.1-linux-amd64.tar.gz"
-        sha256 "7014b376bb94797b40080e043a712617281c3a66e81ab5c472c56de2fdc0d07f"
+        url "https://github.com/ConductorOne/baton-rootly/releases/download/v0.0.2/baton-rootly-v0.0.2-linux-amd64.tar.gz"
+        sha256 "21b18afeb85221ea150243e642296ec6ad69a2bceca07aba11fc6584227a5ef5"
 
         def install
           bin.install "baton-rootly"
@@ -39,8 +39,8 @@ class BatonRootly < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-rootly/releases/download/v0.0.1/baton-rootly-v0.0.1-linux-arm64.tar.gz"
-        sha256 "95ec3f81c42470c59224a325c6d22064fa5fc5ab3ad2e22320cf01b497b866b6"
+        url "https://github.com/ConductorOne/baton-rootly/releases/download/v0.0.2/baton-rootly-v0.0.2-linux-arm64.tar.gz"
+        sha256 "66d910b9de4c62d8809930f54ba715fb45ac7be5150e89e5022bc3c960814f78"
 
         def install
           bin.install "baton-rootly"
