@@ -5,20 +5,20 @@
 class BatonTrayai < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.4"
+  version "0.0.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-trayai/releases/download/v0.0.4/baton-trayai-v0.0.4-darwin-amd64.zip"
-      sha256 "1b5fe6c873e9b40d005e02111046f87cb529249838de62ae04a5144657e87ad5"
+      url "https://github.com/ConductorOne/baton-trayai/releases/download/v0.0.5/baton-trayai-v0.0.5-darwin-amd64.zip"
+      sha256 "616fe5898cadedff5d761db53eac77509e505fe1812e328a1a396439f2fb20c5"
 
       def install
         bin.install "baton-trayai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-trayai/releases/download/v0.0.4/baton-trayai-v0.0.4-darwin-arm64.zip"
-      sha256 "8f7120b21ddbfe0415ce9cc3bcb7ebebf6db5980d710ba2babf73f2c97e29ea9"
+      url "https://github.com/ConductorOne/baton-trayai/releases/download/v0.0.5/baton-trayai-v0.0.5-darwin-arm64.zip"
+      sha256 "5cfa1ddb67c9ad42ba517206c0ea22b9b811688a376289f65da819901873d421"
 
       def install
         bin.install "baton-trayai"
@@ -29,8 +29,8 @@ class BatonTrayai < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-trayai/releases/download/v0.0.4/baton-trayai-v0.0.4-linux-amd64.tar.gz"
-        sha256 "ba8dff893144e934d3ad1d67d072b97bb80dd67df8985f50d64f0a2a5420d47d"
+        url "https://github.com/ConductorOne/baton-trayai/releases/download/v0.0.5/baton-trayai-v0.0.5-linux-amd64.tar.gz"
+        sha256 "418313888d97245155bf1add5446632476aa1d5a2adf5ee6a7be6d3ef559aa53"
 
         def install
           bin.install "baton-trayai"
@@ -39,8 +39,8 @@ class BatonTrayai < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-trayai/releases/download/v0.0.4/baton-trayai-v0.0.4-linux-arm64.tar.gz"
-        sha256 "da26bc3878f9aa4af765a5f6ce76907cd6dc9ef5b87a0ef627332dd7218e857d"
+        url "https://github.com/ConductorOne/baton-trayai/releases/download/v0.0.5/baton-trayai-v0.0.5-linux-arm64.tar.gz"
+        sha256 "5ebfde4c03db24205470c2e04da2144df94cd5a3dece8ff03e6fff71626fa081"
 
         def install
           bin.install "baton-trayai"
