@@ -5,20 +5,20 @@
 class BatonCalendly < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.4"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-calendly/releases/download/v0.0.1/baton-calendly-v0.0.1-darwin-arm64.zip"
-      sha256 "62a60e6431eb57cc17254318a58666a4c9f9488a3b487bca083e1b2bd47e9b4d"
+    if Hardware::CPU.intel?
+      url "https://github.com/ConductorOne/baton-calendly/releases/download/v0.0.4/baton-calendly-v0.0.4-darwin-amd64.zip"
+      sha256 "68917b8a29268393c33c1c9893fa676ce0ad6ba59305169d0bda3a82b4c1f035"
 
       def install
         bin.install "baton-calendly"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-calendly/releases/download/v0.0.1/baton-calendly-v0.0.1-darwin-amd64.zip"
-      sha256 "63dc9d4e70de6e248c09b3e0f649b923ed1d8f7775e26073bf705f989d92a7ce"
+    if Hardware::CPU.arm?
+      url "https://github.com/ConductorOne/baton-calendly/releases/download/v0.0.4/baton-calendly-v0.0.4-darwin-arm64.zip"
+      sha256 "2303f03b45b8671a818c3463976b45f2de5eaeb56021ad3851c5230a7d92530b"
 
       def install
         bin.install "baton-calendly"
@@ -27,18 +27,16 @@ class BatonCalendly < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-calendly/releases/download/v0.0.1/baton-calendly-v0.0.1-linux-arm64.tar.gz"
-      sha256 "91d2002bc9a859a4f007024a91ec51a3cde41765ce672af8ca02d1c0117effed"
-
+    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-calendly/releases/download/v0.0.4/baton-calendly-v0.0.4-linux-amd64.tar.gz"
+      sha256 "0dc4d3b546b80678a7dd71bb6dae727bf4465c81dd152ca7f41728fdefbcdd7e"
       def install
         bin.install "baton-calendly"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-calendly/releases/download/v0.0.1/baton-calendly-v0.0.1-linux-amd64.tar.gz"
-      sha256 "80b7d4300b0cee8abb577d2e94f97638de6311340dad358e3c5ab8273c9faaec"
-
+    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-calendly/releases/download/v0.0.4/baton-calendly-v0.0.4-linux-arm64.tar.gz"
+      sha256 "7bcfcb678b678d783c5c8ce7aaaba0088178c5698592ce9df4eff0be7f6318de"
       def install
         bin.install "baton-calendly"
       end
