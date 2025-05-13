@@ -5,20 +5,20 @@
 class BatonJira < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.6"
+  version "0.1.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.1.6/baton-jira-v0.1.6-darwin-amd64.zip"
-      sha256 "5e49cbcf495ef5296d09862f3947174e03f5d5fec44c4ae47d2f4ca3ea29e4e9"
+      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.1.7/baton-jira-v0.1.7-darwin-amd64.zip"
+      sha256 "d17cd1c909efc058a0fc03be98d81fdf22dfd6a0c82419cf3b4bd2fce828ab1d"
 
       def install
         bin.install "baton-jira"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.1.6/baton-jira-v0.1.6-darwin-arm64.zip"
-      sha256 "dc85481d093b7c64d8004ed5a37dd7cae02508d79ed8230aefa0ed919ffc8c2f"
+      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.1.7/baton-jira-v0.1.7-darwin-arm64.zip"
+      sha256 "202e0a42ffc5ceb9588b39fde34ee807a74ac76044cef5d13ec5511d93154f17"
 
       def install
         bin.install "baton-jira"
@@ -28,15 +28,15 @@ class BatonJira < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.1.6/baton-jira-v0.1.6-linux-amd64.tar.gz"
-      sha256 "853eb6492c74291bf9a00639290c5c9d31e557bff114ce4e59f4287696d90c4f"
+      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.1.7/baton-jira-v0.1.7-linux-amd64.tar.gz"
+      sha256 "151467b1c97c09c0271850f58b3ae2fd62204248a1fa916afe902127821344dd"
       def install
         bin.install "baton-jira"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.1.6/baton-jira-v0.1.6-linux-arm64.tar.gz"
-      sha256 "e122d79caee93f0dc5bacee3272e08304cc9f5eb58375fc683016cd7aff48f19"
+      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.1.7/baton-jira-v0.1.7-linux-arm64.tar.gz"
+      sha256 "d8dc348e9f8e7fd218d28306cc1dcbf00616cd22c13f462abcdb3b2d78edaa5b"
       def install
         bin.install "baton-jira"
       end
