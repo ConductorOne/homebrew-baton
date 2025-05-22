@@ -5,20 +5,20 @@
 class BatonPostgresql < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.1"
+  version "0.2.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-postgresql/releases/download/v0.2.1/baton-postgresql-v0.2.1-darwin-amd64.zip"
-      sha256 "48e1738c5c2eeacaa96a1618dd0400206585a277da2b261d300a6af6910453c0"
+      url "https://github.com/ConductorOne/baton-postgresql/releases/download/v0.2.2/baton-postgresql-v0.2.2-darwin-amd64.zip"
+      sha256 "7af20a95233d7fcf5d4227a0a4c8cc827f068b0cd171410e70213ea1b447e48b"
 
       def install
         bin.install "baton-postgresql"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-postgresql/releases/download/v0.2.1/baton-postgresql-v0.2.1-darwin-arm64.zip"
-      sha256 "d5a76ad75b9a5efc9ff05501ce8bb04639bf446980adf5aadc3f4d6ad7f98afd"
+      url "https://github.com/ConductorOne/baton-postgresql/releases/download/v0.2.2/baton-postgresql-v0.2.2-darwin-arm64.zip"
+      sha256 "bbe22237b16345da782c0b889c04aa5f0ec9e4c9f0efb9b6ab54fa5f40f85678"
 
       def install
         bin.install "baton-postgresql"
@@ -28,15 +28,15 @@ class BatonPostgresql < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-postgresql/releases/download/v0.2.1/baton-postgresql-v0.2.1-linux-amd64.tar.gz"
-      sha256 "6c4f5775f84a094595216a59b9f5f4887361fab3066028e57fd3b0fa6b824720"
+      url "https://github.com/ConductorOne/baton-postgresql/releases/download/v0.2.2/baton-postgresql-v0.2.2-linux-amd64.tar.gz"
+      sha256 "6633b3f76f0740c4f875d4c935d90487fa13239cdd7a32f636b93e8cfd22127f"
       def install
         bin.install "baton-postgresql"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-postgresql/releases/download/v0.2.1/baton-postgresql-v0.2.1-linux-arm64.tar.gz"
-      sha256 "4c4eafc0658a7e5cf140e0b57feada2ea4739d0bbfc71ad4f0634729b3d8289a"
+      url "https://github.com/ConductorOne/baton-postgresql/releases/download/v0.2.2/baton-postgresql-v0.2.2-linux-arm64.tar.gz"
+      sha256 "491ef960dff9986f635ad0b1050d87108da50afc9baadc66a6015ed2e1ab5276"
       def install
         bin.install "baton-postgresql"
       end
