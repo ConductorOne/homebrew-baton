@@ -5,20 +5,20 @@
 class BatonAzureInfrastructure < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.13"
+  version "0.0.14"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-azure-infrastructure/releases/download/v0.0.13/baton-azure-infrastructure-v0.0.13-darwin-amd64.zip"
-      sha256 "09d81c354c21b2fc3a9513643048807f162ebb922297a883b81a29abefc56225"
+      url "https://github.com/ConductorOne/baton-azure-infrastructure/releases/download/v0.0.14/baton-azure-infrastructure-v0.0.14-darwin-amd64.zip"
+      sha256 "a0f7a2707d180e65c80c96bddb6da4fea2f863fecfa0d7ec92c3b310131d7408"
 
       def install
         bin.install "baton-azure-infrastructure"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-azure-infrastructure/releases/download/v0.0.13/baton-azure-infrastructure-v0.0.13-darwin-arm64.zip"
-      sha256 "6337a9dfcb3740e8c1e77faf287cfe6d2d7b06ff7937a33f7363cc8eba41cbea"
+      url "https://github.com/ConductorOne/baton-azure-infrastructure/releases/download/v0.0.14/baton-azure-infrastructure-v0.0.14-darwin-arm64.zip"
+      sha256 "0c26e48362027eceb683ed3ea4ffefd74cd37f64291b9b0902fb62e7bd68c957"
 
       def install
         bin.install "baton-azure-infrastructure"
@@ -28,15 +28,15 @@ class BatonAzureInfrastructure < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-azure-infrastructure/releases/download/v0.0.13/baton-azure-infrastructure-v0.0.13-linux-amd64.tar.gz"
-      sha256 "882ec7f61b95144830c49d6eaf11db04baf300e9eda480f3392735f21dedcab6"
+      url "https://github.com/ConductorOne/baton-azure-infrastructure/releases/download/v0.0.14/baton-azure-infrastructure-v0.0.14-linux-amd64.tar.gz"
+      sha256 "abb53dcfdf1a1b278567102e6b09d7f0be251ae1551628a39900671a62ee8e52"
       def install
         bin.install "baton-azure-infrastructure"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-azure-infrastructure/releases/download/v0.0.13/baton-azure-infrastructure-v0.0.13-linux-arm64.tar.gz"
-      sha256 "28ba98e0a16b4033f946f5732fd313f0d7eeaab362d5bf88e75fe5203f0723e5"
+      url "https://github.com/ConductorOne/baton-azure-infrastructure/releases/download/v0.0.14/baton-azure-infrastructure-v0.0.14-linux-arm64.tar.gz"
+      sha256 "8b523744f515d6cb37809838a74fce28ec0cc46448e0c7ada52ef22506fc04e8"
       def install
         bin.install "baton-azure-infrastructure"
       end
