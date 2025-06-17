@@ -5,20 +5,20 @@
 class BatonLinear < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.14"
+  version "0.0.15"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.14/baton-linear-v0.0.14-darwin-amd64.zip"
-      sha256 "f8168ac721f10bfdd646bef9ee14e116c5ec378c889efe5a796421e78d21779a"
+      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.15/baton-linear-v0.0.15-darwin-amd64.zip"
+      sha256 "59367680a8d91526366b09c757fcccf325f52be4c0a900b82428fc8422e96af9"
 
       def install
         bin.install "baton-linear"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.14/baton-linear-v0.0.14-darwin-arm64.zip"
-      sha256 "29bb4402bfa1cff0ef6e4e43afb77ee501ae668c8a6feb5c3fa48d46bea40f9a"
+      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.15/baton-linear-v0.0.15-darwin-arm64.zip"
+      sha256 "4f5b0861d31a988a48b9abb3a1385e0afcd33577d137a17d1b7761ec1af9e650"
 
       def install
         bin.install "baton-linear"
@@ -29,8 +29,8 @@ class BatonLinear < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.14/baton-linear-v0.0.14-linux-amd64.tar.gz"
-        sha256 "8d0e08f906a3d50dec3ba145476653d76988b20d593f776fb699b9207b053453"
+        url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.15/baton-linear-v0.0.15-linux-amd64.tar.gz"
+        sha256 "88ace641b91329b6cf52af88740f582eab8fd7daf9ed0cc148f9d3592ba40d81"
 
         def install
           bin.install "baton-linear"
@@ -39,8 +39,8 @@ class BatonLinear < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.14/baton-linear-v0.0.14-linux-arm64.tar.gz"
-        sha256 "7949e852e6abd1be9af0937e04625a648745aeb50d60e8282a4d56dd15a7b971"
+        url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.15/baton-linear-v0.0.15-linux-arm64.tar.gz"
+        sha256 "3a9e2f64e8bdcd261ee3c5b9d3706b712e0db8d0720957b0981fc3e2b8f93908"
 
         def install
           bin.install "baton-linear"
