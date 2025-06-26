@@ -5,20 +5,20 @@
 class BatonIpa < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2-alpha-001"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-ipa/releases/download/v0.0.1/baton-ipa-v0.0.1-darwin-amd64.zip"
-      sha256 "00da72dc2a5152f4e671461f028c4108a0928446858456af40dfd74f3349634d"
+      url "https://github.com/ConductorOne/baton-ipa/releases/download/v0.0.2-alpha-001/baton-ipa-v0.0.2-alpha-001-darwin-amd64.zip"
+      sha256 "faad6b0b841e7853f3c6613f758df30c93931d5aca8b2875c93735b9d51c3ef6"
 
       def install
         bin.install "baton-ipa"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-ipa/releases/download/v0.0.1/baton-ipa-v0.0.1-darwin-arm64.zip"
-      sha256 "4a085c38f4ed5517f56dbad0cb8108339a571eb799cc87bc4eae5fc8e6c6460c"
+      url "https://github.com/ConductorOne/baton-ipa/releases/download/v0.0.2-alpha-001/baton-ipa-v0.0.2-alpha-001-darwin-arm64.zip"
+      sha256 "d2314908944280394ef444c0827ade4d0e9330b1777ae8b0465fc165564af62e"
 
       def install
         bin.install "baton-ipa"
@@ -28,15 +28,15 @@ class BatonIpa < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ipa/releases/download/v0.0.1/baton-ipa-v0.0.1-linux-amd64.tar.gz"
-      sha256 "cbe90bb5977bb8a542a0fa93a7669933dea3462de303ad45ba415449146b3dab"
+      url "https://github.com/ConductorOne/baton-ipa/releases/download/v0.0.2-alpha-001/baton-ipa-v0.0.2-alpha-001-linux-amd64.tar.gz"
+      sha256 "2b0dbca2b4884a1a2f060dd630d4136211c14b8838136dde483102fe986215d2"
       def install
         bin.install "baton-ipa"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ipa/releases/download/v0.0.1/baton-ipa-v0.0.1-linux-arm64.tar.gz"
-      sha256 "c6145f515821c1f7adfa1fafda07c4e63c6ebada59d93a15f909278afadb9d6b"
+      url "https://github.com/ConductorOne/baton-ipa/releases/download/v0.0.2-alpha-001/baton-ipa-v0.0.2-alpha-001-linux-arm64.tar.gz"
+      sha256 "bb2c1ce35f49facbe8efc6c55df0f7d7febfdc8b8a160ff661446c10336bea6f"
       def install
         bin.install "baton-ipa"
       end
