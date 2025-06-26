@@ -5,20 +5,20 @@
 class BatonSonatypeNexus < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.0"
+  version "0.0.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-sonatype-nexus/releases/download/v0.0.0/baton-sonatype-nexus-v0.0.0-darwin-amd64.zip"
-      sha256 "fdb7f2e6c215a93a19f9592bfd9a4b4717735e8c27f2dec79294efbb6ea2900f"
+      url "https://github.com/ConductorOne/baton-sonatype-nexus/releases/download/v0.0.1/baton-sonatype-nexus-v0.0.1-darwin-amd64.zip"
+      sha256 "42b92ab3734ffadb46b8d4e84438b695582cab3c161d81681253bcdac7c883d5"
 
       def install
         bin.install "baton-sonatype-nexus"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-sonatype-nexus/releases/download/v0.0.0/baton-sonatype-nexus-v0.0.0-darwin-arm64.zip"
-      sha256 "7e389920609f7be290dc608116e488f4189e1bf8f21d8381e3090a03928a0fb7"
+      url "https://github.com/ConductorOne/baton-sonatype-nexus/releases/download/v0.0.1/baton-sonatype-nexus-v0.0.1-darwin-arm64.zip"
+      sha256 "a733ffc05b5f5377b06ed57a2ca7393f8ed42df9c29cfe5409ff8c92ea0c2663"
 
       def install
         bin.install "baton-sonatype-nexus"
@@ -29,8 +29,8 @@ class BatonSonatypeNexus < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-sonatype-nexus/releases/download/v0.0.0/baton-sonatype-nexus-v0.0.0-linux-amd64.tar.gz"
-        sha256 "61de9c85097d895be1e7f88413189550445ec1aa66e71b2959fe567a762a7597"
+        url "https://github.com/ConductorOne/baton-sonatype-nexus/releases/download/v0.0.1/baton-sonatype-nexus-v0.0.1-linux-amd64.tar.gz"
+        sha256 "e9b83178a1b17c6afc63fa87873afeed382f06001b02d951ac4705302160c368"
 
         def install
           bin.install "baton-sonatype-nexus"
@@ -39,8 +39,8 @@ class BatonSonatypeNexus < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-sonatype-nexus/releases/download/v0.0.0/baton-sonatype-nexus-v0.0.0-linux-arm64.tar.gz"
-        sha256 "8faf2d4f3d977dbd678cef91e5643a4a13d9a3d96184daf548bbb69fbafc40ee"
+        url "https://github.com/ConductorOne/baton-sonatype-nexus/releases/download/v0.0.1/baton-sonatype-nexus-v0.0.1-linux-arm64.tar.gz"
+        sha256 "d59e72b9fe34c9894751be69e6bc1977f8af24878c035a5ebd6aeed9a7c4e8a9"
 
         def install
           bin.install "baton-sonatype-nexus"
