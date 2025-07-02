@@ -5,20 +5,20 @@
 class BatonSevenshifts < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-sevenshifts/releases/download/v0.0.3/baton-sevenshifts-v0.0.3-darwin-amd64.zip"
-      sha256 "94e65b8c149e60b01e2c2f8c0cef5486bb418e6b802d1db67c10840767bdc4bf"
+      url "https://github.com/ConductorOne/baton-sevenshifts/releases/download/v0.0.4/baton-sevenshifts-v0.0.4-darwin-amd64.zip"
+      sha256 "9115a52ed8c366276114bd37ad6948ba74969f0ed3a98b063802732851eee1fc"
 
       def install
         bin.install "baton-sevenshifts"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-sevenshifts/releases/download/v0.0.3/baton-sevenshifts-v0.0.3-darwin-arm64.zip"
-      sha256 "6f7e2720764b3ed57c705d0c2ecb8e260981a0770c336a3d0fd9a5961c86d2de"
+      url "https://github.com/ConductorOne/baton-sevenshifts/releases/download/v0.0.4/baton-sevenshifts-v0.0.4-darwin-arm64.zip"
+      sha256 "d0add8ff867425bd173e425af5a5a6de61da6cae9af346039621f0870526f5da"
 
       def install
         bin.install "baton-sevenshifts"
@@ -29,8 +29,8 @@ class BatonSevenshifts < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-sevenshifts/releases/download/v0.0.3/baton-sevenshifts-v0.0.3-linux-amd64.tar.gz"
-        sha256 "06fdaf30e85076b42f6629f4f963486d44a9cb0f08e01ddc5052f9448e65780d"
+        url "https://github.com/ConductorOne/baton-sevenshifts/releases/download/v0.0.4/baton-sevenshifts-v0.0.4-linux-amd64.tar.gz"
+        sha256 "4abbf36923f9f7f79d8d583634a7f6b8dd91af39a1fd6b12393de354577361d1"
 
         def install
           bin.install "baton-sevenshifts"
@@ -39,8 +39,8 @@ class BatonSevenshifts < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-sevenshifts/releases/download/v0.0.3/baton-sevenshifts-v0.0.3-linux-arm64.tar.gz"
-        sha256 "41f2449db2e19da5f695273eda44824253663a9682df04369c96fe6386c8a742"
+        url "https://github.com/ConductorOne/baton-sevenshifts/releases/download/v0.0.4/baton-sevenshifts-v0.0.4-linux-arm64.tar.gz"
+        sha256 "658b235ee4abd6bb115b755b8eb6b8b29accf397b29ff157f0dfcb9d5035e10a"
 
         def install
           bin.install "baton-sevenshifts"
