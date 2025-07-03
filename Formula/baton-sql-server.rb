@@ -5,20 +5,20 @@
 class BatonSqlServer < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.11"
+  version "0.0.12"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-sql-server/releases/download/v0.0.11/baton-sql-server-v0.0.11-darwin-amd64.zip"
-      sha256 "64ad94cf89bba692fe112bea76a2b5f7b6131dfa9cc1c6413c6613a906d2a8a2"
+      url "https://github.com/ConductorOne/baton-sql-server/releases/download/v0.0.12/baton-sql-server-v0.0.12-darwin-amd64.zip"
+      sha256 "e24522a51bc8d5423f406015f7a2c464901c56fb23198c0361165cb4db0e0f1c"
 
       def install
         bin.install "baton-sql-server"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-sql-server/releases/download/v0.0.11/baton-sql-server-v0.0.11-darwin-arm64.zip"
-      sha256 "a72ad031a08d1feefd7aea350115995bfa13379df9d54f80d566f85d91dbfdf7"
+      url "https://github.com/ConductorOne/baton-sql-server/releases/download/v0.0.12/baton-sql-server-v0.0.12-darwin-arm64.zip"
+      sha256 "ab7debffb3f86738266e4d5c4bf69773c4b0a77991507276fd80c192de318c50"
 
       def install
         bin.install "baton-sql-server"
@@ -28,15 +28,15 @@ class BatonSqlServer < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sql-server/releases/download/v0.0.11/baton-sql-server-v0.0.11-linux-amd64.tar.gz"
-      sha256 "1a3860597bb2ea6d8af3a10dc4426c9cbf030897616ef3371565209d2fa38102"
+      url "https://github.com/ConductorOne/baton-sql-server/releases/download/v0.0.12/baton-sql-server-v0.0.12-linux-amd64.tar.gz"
+      sha256 "da32f1cb3956950397e211ed79a3a0201f003d85de7d3b9035671cf131dda5ef"
       def install
         bin.install "baton-sql-server"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sql-server/releases/download/v0.0.11/baton-sql-server-v0.0.11-linux-arm64.tar.gz"
-      sha256 "d9f4933972619ba1ddde5ef1b51f698fca22e5d7ab1bbb4d18e735645ddc3974"
+      url "https://github.com/ConductorOne/baton-sql-server/releases/download/v0.0.12/baton-sql-server-v0.0.12-linux-arm64.tar.gz"
+      sha256 "09ad7b95c8d3880ef68160f011073a4592a53d5a990805c60ac16e9713831a52"
       def install
         bin.install "baton-sql-server"
       end
