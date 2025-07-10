@@ -5,20 +5,20 @@
 class BatonOracleIdcs < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-oracle-idcs/releases/download/v0.0.1/baton-oracle-idcs-v0.0.1-darwin-amd64.zip"
-      sha256 "97c9cfd136f572d73839ec89bc1579bf64013955f1863154e0cf4b2cc93eff7c"
+      url "https://github.com/ConductorOne/baton-oracle-idcs/releases/download/v0.0.2/baton-oracle-idcs-v0.0.2-darwin-amd64.zip"
+      sha256 "64a67223690a50ad7727ea564c9c9d8d21a85bfc55c4ad62957fd9780e8e6919"
 
       def install
         bin.install "baton-oracle-idcs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-oracle-idcs/releases/download/v0.0.1/baton-oracle-idcs-v0.0.1-darwin-arm64.zip"
-      sha256 "7ed81ac08be6f2693a55fec70fb41dd767993fe5e2550f440db981bc5caf77b8"
+      url "https://github.com/ConductorOne/baton-oracle-idcs/releases/download/v0.0.2/baton-oracle-idcs-v0.0.2-darwin-arm64.zip"
+      sha256 "499f8ed1825df782f3c94c998e95d9af04c8324be62c815d6c4d77ebd09fe995"
 
       def install
         bin.install "baton-oracle-idcs"
@@ -29,8 +29,8 @@ class BatonOracleIdcs < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-oracle-idcs/releases/download/v0.0.1/baton-oracle-idcs-v0.0.1-linux-amd64.tar.gz"
-        sha256 "c8845046fae5dab62be09c88a1dda653f0954d264051c8ebef008b49a556aa55"
+        url "https://github.com/ConductorOne/baton-oracle-idcs/releases/download/v0.0.2/baton-oracle-idcs-v0.0.2-linux-amd64.tar.gz"
+        sha256 "35fef50d27b44e559241e4eda97d531c8a562c30dff9176f69e0c59bb2ab27ad"
 
         def install
           bin.install "baton-oracle-idcs"
@@ -39,8 +39,8 @@ class BatonOracleIdcs < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-oracle-idcs/releases/download/v0.0.1/baton-oracle-idcs-v0.0.1-linux-arm64.tar.gz"
-        sha256 "8ffe0b48af569e5c1e18df210dbc7c027daddd0c10fae9a14477e9d2e87da0ed"
+        url "https://github.com/ConductorOne/baton-oracle-idcs/releases/download/v0.0.2/baton-oracle-idcs-v0.0.2-linux-arm64.tar.gz"
+        sha256 "41fcd2ab3272473e553e5a18e3607a8464b3d4676a1614053c1747ce2fa6418f"
 
         def install
           bin.install "baton-oracle-idcs"
