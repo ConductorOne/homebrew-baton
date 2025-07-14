@@ -5,20 +5,20 @@
 class BatonWiz < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.11"
+  version "0.0.12"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-wiz/releases/download/v0.0.11/baton-wiz-v0.0.11-darwin-amd64.zip"
-      sha256 "5a864c6f8a3e88b81b07bb468a4fa6a7235e94af768306be9411816722a5461d"
+      url "https://github.com/ConductorOne/baton-wiz/releases/download/v0.0.12/baton-wiz-v0.0.12-darwin-amd64.zip"
+      sha256 "27a456f7e53a9d38823c0d23abbac9b8862193975794632f8b9c489f2e4191bd"
 
       def install
         bin.install "baton-wiz"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-wiz/releases/download/v0.0.11/baton-wiz-v0.0.11-darwin-arm64.zip"
-      sha256 "f49973fe0a86a7647d9e41120f12427b988dcc8aa33f2d2a3912e25427f44175"
+      url "https://github.com/ConductorOne/baton-wiz/releases/download/v0.0.12/baton-wiz-v0.0.12-darwin-arm64.zip"
+      sha256 "72604ffd2279613ee3b7cc2a1c342620e29f462f92e06b49040efd0ef9dd849f"
 
       def install
         bin.install "baton-wiz"
@@ -27,24 +27,18 @@ class BatonWiz < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-wiz/releases/download/v0.0.11/baton-wiz-v0.0.11-linux-amd64.tar.gz"
-        sha256 "34dd5f8a13f0c6086a684a1de2ae5bca3b082012bfad023c399c6f3cd1394cb7"
-
-        def install
-          bin.install "baton-wiz"
-        end
+    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-wiz/releases/download/v0.0.12/baton-wiz-v0.0.12-linux-amd64.tar.gz"
+      sha256 "121960f4f4bbf07693601cfbc2033d4e01687c5abc50994602e08aeba0bc348b"
+      def install
+        bin.install "baton-wiz"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-wiz/releases/download/v0.0.11/baton-wiz-v0.0.11-linux-arm64.tar.gz"
-        sha256 "4cc91c117f8015729b3007594f80ceb469566e29c5a0bd02f2f2062ab2ca9dee"
-
-        def install
-          bin.install "baton-wiz"
-        end
+    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-wiz/releases/download/v0.0.12/baton-wiz-v0.0.12-linux-arm64.tar.gz"
+      sha256 "ab74e25c20e14a457532dd02fcac573696c849c19a24db81eb1d08990f6cd970"
+      def install
+        bin.install "baton-wiz"
       end
     end
   end
