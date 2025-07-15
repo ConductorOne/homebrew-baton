@@ -5,20 +5,20 @@
 class BatonAks < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-aks/releases/download/v0.0.1/baton-aks-v0.0.1-darwin-amd64.zip"
-      sha256 "e9e2d423562b12f43561402c39ecec54c3e9b91ca3eabaf0e7dffdbbfcbda44b"
+      url "https://github.com/ConductorOne/baton-aks/releases/download/v0.0.2/baton-aks-v0.0.2-darwin-amd64.zip"
+      sha256 "6fa65861e056e9ef91fdf348a933e37ed2c5cda051147d559267842c69a0a80f"
 
       def install
         bin.install "baton-aks"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-aks/releases/download/v0.0.1/baton-aks-v0.0.1-darwin-arm64.zip"
-      sha256 "c13d08e6ac2150cb966bb5d929414cc87c4fc838532da7f434818e5dfd519743"
+      url "https://github.com/ConductorOne/baton-aks/releases/download/v0.0.2/baton-aks-v0.0.2-darwin-arm64.zip"
+      sha256 "8836ed57441fb5edfc66414c0e751bc279bdb02f3fc21442715569b1ec4394f1"
 
       def install
         bin.install "baton-aks"
@@ -29,8 +29,8 @@ class BatonAks < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-aks/releases/download/v0.0.1/baton-aks-v0.0.1-linux-amd64.tar.gz"
-        sha256 "1e4916d10307b744a193118143fbef28b6ed5a40bc514bfd1e8744c6e3827938"
+        url "https://github.com/ConductorOne/baton-aks/releases/download/v0.0.2/baton-aks-v0.0.2-linux-amd64.tar.gz"
+        sha256 "12787d187a5449e4f2fbbb45f2fdd50c78f1d0e40ef38bdfe13d8ceda27c7e72"
 
         def install
           bin.install "baton-aks"
@@ -39,8 +39,8 @@ class BatonAks < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-aks/releases/download/v0.0.1/baton-aks-v0.0.1-linux-arm64.tar.gz"
-        sha256 "fa54b0168f16a88ac6cc3c12bae4b73731ce19756adac9e0668d89959c88bfea"
+        url "https://github.com/ConductorOne/baton-aks/releases/download/v0.0.2/baton-aks-v0.0.2-linux-arm64.tar.gz"
+        sha256 "e72ed187a9f1ab6f0ec39b1adead3545e82f553e1c7b2d9b5d68c4aba24e0c69"
 
         def install
           bin.install "baton-aks"
