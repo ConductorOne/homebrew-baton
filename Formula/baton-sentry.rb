@@ -5,20 +5,20 @@
 class BatonSentry < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-sentry/releases/download/v0.0.2/baton-sentry-v0.0.2-darwin-amd64.zip"
-      sha256 "9c77476aca6b2e534412c7321f0f6d4a9399054ba982fcd37537bcf6873b3f2f"
+      url "https://github.com/ConductorOne/baton-sentry/releases/download/v0.0.3/baton-sentry-v0.0.3-darwin-amd64.zip"
+      sha256 "040cdbee7c0f8a8f02d9b65a5e2dd845ea7e796fd18c82ce8fc86f8bc57dd178"
 
       def install
         bin.install "baton-sentry"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-sentry/releases/download/v0.0.2/baton-sentry-v0.0.2-darwin-arm64.zip"
-      sha256 "081272b50990d8696657761991aea2e25e25055673724cf5f5a507f82484babf"
+      url "https://github.com/ConductorOne/baton-sentry/releases/download/v0.0.3/baton-sentry-v0.0.3-darwin-arm64.zip"
+      sha256 "73e35a5269a6324c963196baaf6e1dc642ade08cff2d4f81f94955cb27a05d77"
 
       def install
         bin.install "baton-sentry"
@@ -29,8 +29,8 @@ class BatonSentry < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-sentry/releases/download/v0.0.2/baton-sentry-v0.0.2-linux-amd64.tar.gz"
-        sha256 "3b16f335ae21208fa84a17e9f7562186bb307f18e00097864bdeca50c91b4bd1"
+        url "https://github.com/ConductorOne/baton-sentry/releases/download/v0.0.3/baton-sentry-v0.0.3-linux-amd64.tar.gz"
+        sha256 "8d22ce7df4d1c5a11666d21b3b1ec62f753b89c1fbc1938ef2a3d0c5a7e3b5f2"
 
         def install
           bin.install "baton-sentry"
@@ -39,8 +39,8 @@ class BatonSentry < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-sentry/releases/download/v0.0.2/baton-sentry-v0.0.2-linux-arm64.tar.gz"
-        sha256 "cd9dc8e559e8f8eb2608248f17425ce614fcf1968672da2ee55fd6e54c68185d"
+        url "https://github.com/ConductorOne/baton-sentry/releases/download/v0.0.3/baton-sentry-v0.0.3-linux-arm64.tar.gz"
+        sha256 "37e226f3d64405c4b01f8b5f1bd2b46e0d89446a5efd863c66168753d1226d16"
 
         def install
           bin.install "baton-sentry"
