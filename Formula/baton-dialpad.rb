@@ -5,20 +5,20 @@
 class BatonDialpad < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-dialpad/releases/download/v0.0.1/baton-dialpad-v0.0.1-darwin-amd64.zip"
-      sha256 "6852606ae11adf5cabe67824de36e2548e855e9f55952407f57b4c1f02be2983"
+      url "https://github.com/ConductorOne/baton-dialpad/releases/download/v0.0.2/baton-dialpad-v0.0.2-darwin-amd64.zip"
+      sha256 "df7a6ec53178ea76a8bfb6f451fd7d76e73ed1da28272d57557e6e07b4d622f0"
 
       def install
         bin.install "baton-dialpad"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-dialpad/releases/download/v0.0.1/baton-dialpad-v0.0.1-darwin-arm64.zip"
-      sha256 "1e5068ceb9de0591741e1a0e12ae2cdc2095d0dcc7030d9e8a3db7483a1ce79d"
+      url "https://github.com/ConductorOne/baton-dialpad/releases/download/v0.0.2/baton-dialpad-v0.0.2-darwin-arm64.zip"
+      sha256 "1c8be48307818b72c33f8fd5e4653068c38ef6af0110c225c6ac008c9d9ce6c2"
 
       def install
         bin.install "baton-dialpad"
@@ -29,8 +29,8 @@ class BatonDialpad < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-dialpad/releases/download/v0.0.1/baton-dialpad-v0.0.1-linux-amd64.tar.gz"
-        sha256 "064277835c7c1283cfe54eb9086c9408fd058b0819cfefd00ec0483fa78c64f8"
+        url "https://github.com/ConductorOne/baton-dialpad/releases/download/v0.0.2/baton-dialpad-v0.0.2-linux-amd64.tar.gz"
+        sha256 "854c0ef7b3eacb6918aa8f5fce8894ecbfafbd9d257b2a428f0382e906e3c26b"
 
         def install
           bin.install "baton-dialpad"
@@ -39,8 +39,8 @@ class BatonDialpad < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-dialpad/releases/download/v0.0.1/baton-dialpad-v0.0.1-linux-arm64.tar.gz"
-        sha256 "f67b8a3c7836f6951156c5c3e98f30981a865223a21e34bbfe2e351ae7935779"
+        url "https://github.com/ConductorOne/baton-dialpad/releases/download/v0.0.2/baton-dialpad-v0.0.2-linux-arm64.tar.gz"
+        sha256 "2735db400dcc36790f01131349bd8dde22664e09518b9c3cf5c851bb87db0d22"
 
         def install
           bin.install "baton-dialpad"
