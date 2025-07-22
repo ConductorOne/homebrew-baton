@@ -5,20 +5,20 @@
 class BatonFifteenfive < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-fifteenfive/releases/download/v0.0.1/baton-fifteenfive-v0.0.1-darwin-amd64.zip"
-      sha256 "00c8fbce0d0d79c7f5773fe31e8302230ba14c08b8dc7ae27981b32d22716520"
+      url "https://github.com/ConductorOne/baton-fifteenfive/releases/download/v0.0.2/baton-fifteenfive-v0.0.2-darwin-amd64.zip"
+      sha256 "f996e639720af21c44042a2ad755fbf4f760e6ac6ac27b58814783f27decd6a0"
 
       def install
         bin.install "baton-fifteenfive"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-fifteenfive/releases/download/v0.0.1/baton-fifteenfive-v0.0.1-darwin-arm64.zip"
-      sha256 "5b540473a3986f87eef381d6effa4e78e508f731aae09bfcfaf5d9419fbc4772"
+      url "https://github.com/ConductorOne/baton-fifteenfive/releases/download/v0.0.2/baton-fifteenfive-v0.0.2-darwin-arm64.zip"
+      sha256 "8124c048d83701ba8ca9137dc7d0193132a9580d95254cf4f8460268c6ec357c"
 
       def install
         bin.install "baton-fifteenfive"
@@ -29,8 +29,8 @@ class BatonFifteenfive < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-fifteenfive/releases/download/v0.0.1/baton-fifteenfive-v0.0.1-linux-amd64.tar.gz"
-        sha256 "8ea222a6b23200532f473ae71135f4c399565f52ae9ff5b6febfd422133c32df"
+        url "https://github.com/ConductorOne/baton-fifteenfive/releases/download/v0.0.2/baton-fifteenfive-v0.0.2-linux-amd64.tar.gz"
+        sha256 "d2da5b13ee6e3246def478a1d66688e6e0827bb756105d459d3d6cf201b8751e"
 
         def install
           bin.install "baton-fifteenfive"
@@ -39,8 +39,8 @@ class BatonFifteenfive < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-fifteenfive/releases/download/v0.0.1/baton-fifteenfive-v0.0.1-linux-arm64.tar.gz"
-        sha256 "ed2a86e0a9f459371363cabd870f1591aff6244207f8336bba7178e2075a3f0a"
+        url "https://github.com/ConductorOne/baton-fifteenfive/releases/download/v0.0.2/baton-fifteenfive-v0.0.2-linux-arm64.tar.gz"
+        sha256 "522a78f06018e229b6a0a2e6596cb8cf5edb8ecf0d07daca7329ff33703ae574"
 
         def install
           bin.install "baton-fifteenfive"
