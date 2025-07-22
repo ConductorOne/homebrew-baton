@@ -5,20 +5,20 @@
 class BatonCursor < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-cursor/releases/download/v0.1.0/baton-cursor-v0.1.0-darwin-amd64.zip"
-      sha256 "3f0c8254ab9259fc6b33edb9da875d4e3d607c3e7584b2bbf2ff9c00c801e011"
+      url "https://github.com/ConductorOne/baton-cursor/releases/download/v0.1.1/baton-cursor-v0.1.1-darwin-amd64.zip"
+      sha256 "70d71a32f1852c97214f1832e67756e8d894a1a08a4d1d864a83ee55f3d9cc33"
 
       def install
         bin.install "baton-cursor"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-cursor/releases/download/v0.1.0/baton-cursor-v0.1.0-darwin-arm64.zip"
-      sha256 "8736a562624c908b467fb703efae38257f1c3c5b7bd87abefce034ab49a789d5"
+      url "https://github.com/ConductorOne/baton-cursor/releases/download/v0.1.1/baton-cursor-v0.1.1-darwin-arm64.zip"
+      sha256 "48b05d56274445683249f4e1730d0e87eb910e63a027c4f0d809864e7e7ce57c"
 
       def install
         bin.install "baton-cursor"
@@ -29,8 +29,8 @@ class BatonCursor < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-cursor/releases/download/v0.1.0/baton-cursor-v0.1.0-linux-amd64.tar.gz"
-        sha256 "2ef249035ea5ad505671c839f606a9c5c99d939cc80c315622d1ee014ccb65dd"
+        url "https://github.com/ConductorOne/baton-cursor/releases/download/v0.1.1/baton-cursor-v0.1.1-linux-amd64.tar.gz"
+        sha256 "83d3539a9cf25dae246418d1ab013e09953bba13e8216d657e88747fe0cc6470"
 
         def install
           bin.install "baton-cursor"
@@ -39,8 +39,8 @@ class BatonCursor < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-cursor/releases/download/v0.1.0/baton-cursor-v0.1.0-linux-arm64.tar.gz"
-        sha256 "02b79c6e0acc24d43ccb5db180ce5695b040bf283ed9e12d3a312dd569a71512"
+        url "https://github.com/ConductorOne/baton-cursor/releases/download/v0.1.1/baton-cursor-v0.1.1-linux-arm64.tar.gz"
+        sha256 "7ec495537c0cc82d333eee36d65d8bc8a58d64be770646328167851f57570eb4"
 
         def install
           bin.install "baton-cursor"
