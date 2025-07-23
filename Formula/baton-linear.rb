@@ -5,20 +5,20 @@
 class BatonLinear < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.16-test-retry-debugging"
+  version "0.0.16-test-retry-debugging-2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.16-test-retry-debugging/baton-linear-v0.0.16-test-retry-debugging-darwin-amd64.zip"
-      sha256 "bf92bacd0c1ba361dca9df8b7628b07bd0ef90b1ef7ba230293596175d8b0f7c"
+      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.16-test-retry-debugging-2/baton-linear-v0.0.16-test-retry-debugging-2-darwin-amd64.zip"
+      sha256 "ff390a20905f597c90f0c24456771117bb0f563a48986d958dfbfb9704331714"
 
       def install
         bin.install "baton-linear"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.16-test-retry-debugging/baton-linear-v0.0.16-test-retry-debugging-darwin-arm64.zip"
-      sha256 "dcf38eee1380b6c324f2f87cad1492919c602bb7e789499fd28a4ec1ca108b62"
+      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.16-test-retry-debugging-2/baton-linear-v0.0.16-test-retry-debugging-2-darwin-arm64.zip"
+      sha256 "76fb0a9ca3ab9fda380d82fd6340b0147a50e1eff91b832f98767c753b472f48"
 
       def install
         bin.install "baton-linear"
@@ -29,8 +29,8 @@ class BatonLinear < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.16-test-retry-debugging/baton-linear-v0.0.16-test-retry-debugging-linux-amd64.tar.gz"
-        sha256 "0ca9ef73e7853c1fde2b016033bd4e42439181ee922dc9bff9c91d635c3e9278"
+        url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.16-test-retry-debugging-2/baton-linear-v0.0.16-test-retry-debugging-2-linux-amd64.tar.gz"
+        sha256 "fa9aef899c41064bec5d111c5b99010819175a2f900884408b768f07c760d8f7"
 
         def install
           bin.install "baton-linear"
@@ -39,8 +39,8 @@ class BatonLinear < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.16-test-retry-debugging/baton-linear-v0.0.16-test-retry-debugging-linux-arm64.tar.gz"
-        sha256 "3def6d5e517289e4286f8b102edf2ea1512e61f4ce4ba6e955549c22756b8714"
+        url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.16-test-retry-debugging-2/baton-linear-v0.0.16-test-retry-debugging-2-linux-arm64.tar.gz"
+        sha256 "ea54112745e44fbaf58efdcdcd32ff92fc323d2e3071dd804b72ea482cde84ad"
 
         def install
           bin.install "baton-linear"
