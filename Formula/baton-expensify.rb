@@ -5,20 +5,20 @@
 class BatonExpensify < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.8-test-validate-retries-3"
+  version "0.0.9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-expensify/releases/download/v0.0.8-test-validate-retries-3/baton-expensify-v0.0.8-test-validate-retries-3-darwin-amd64.zip"
-      sha256 "9665a9a040edabe22e95d7e4c114a667db7a454b811b7fbbdaa0f03121f3b4ce"
+      url "https://github.com/ConductorOne/baton-expensify/releases/download/v0.0.9/baton-expensify-v0.0.9-darwin-amd64.zip"
+      sha256 "a1db27d62e329712d2982c1bbf8eb0a14941f774b35933f3fedd5e2923867422"
 
       def install
         bin.install "baton-expensify"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-expensify/releases/download/v0.0.8-test-validate-retries-3/baton-expensify-v0.0.8-test-validate-retries-3-darwin-arm64.zip"
-      sha256 "6244802e438df964e567dcbd3cf59be206e4b2cd7b2e81bafbc8ca43cce4f0da"
+      url "https://github.com/ConductorOne/baton-expensify/releases/download/v0.0.9/baton-expensify-v0.0.9-darwin-arm64.zip"
+      sha256 "5fdc04b0f6751912980aa4d2f18ee86fd1130949d3add1eec655036a61fbc09c"
 
       def install
         bin.install "baton-expensify"
@@ -29,8 +29,8 @@ class BatonExpensify < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-expensify/releases/download/v0.0.8-test-validate-retries-3/baton-expensify-v0.0.8-test-validate-retries-3-linux-amd64.tar.gz"
-        sha256 "d685bacbdbdb99e09e412d084ed8b5a3b24baedb866902597664a0e8e6bbb441"
+        url "https://github.com/ConductorOne/baton-expensify/releases/download/v0.0.9/baton-expensify-v0.0.9-linux-amd64.tar.gz"
+        sha256 "fc80f042086b68b8a73006493c5411394e8a108757e590b1a4e4280f683b1ddd"
 
         def install
           bin.install "baton-expensify"
@@ -39,8 +39,8 @@ class BatonExpensify < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-expensify/releases/download/v0.0.8-test-validate-retries-3/baton-expensify-v0.0.8-test-validate-retries-3-linux-arm64.tar.gz"
-        sha256 "7cc5546daad71d23e62499d0ca3bbf95a3d99d36af71dd858422914b35b220ae"
+        url "https://github.com/ConductorOne/baton-expensify/releases/download/v0.0.9/baton-expensify-v0.0.9-linux-arm64.tar.gz"
+        sha256 "cdbb28dc66c65bc2706025a1b3a8b414dc14f4b1eb23de42cba2d50eddfca241"
 
         def install
           bin.install "baton-expensify"
