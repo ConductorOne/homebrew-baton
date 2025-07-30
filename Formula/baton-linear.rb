@@ -5,20 +5,20 @@
 class BatonLinear < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.16-test-debug-7"
+  version "0.0.16-test-debug-6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.16-test-debug-7/baton-linear-v0.0.16-test-debug-7-darwin-amd64.zip"
-      sha256 "40b62ad8b2f960e3ed5209e1940182d1207c4d60c77ab1394b2f3a959e9c746c"
+      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.16-test-debug-6/baton-linear-v0.0.16-test-debug-6-darwin-amd64.zip"
+      sha256 "02a2addb9ebcd620e5fd7eb2b6c0ca1ccaf9b4cf1cbbd530ddff2a3b16234f28"
 
       def install
         bin.install "baton-linear"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.16-test-debug-7/baton-linear-v0.0.16-test-debug-7-darwin-arm64.zip"
-      sha256 "e7ba55d0c82041d68d3da765aa75c573c5483d1c3f216842f3d22746f8d96796"
+      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.16-test-debug-6/baton-linear-v0.0.16-test-debug-6-darwin-arm64.zip"
+      sha256 "2e2d5b5ba1c3fd15d3a6796a35453d13d1d4370c5cfaf5c5658c83cddd277f3a"
 
       def install
         bin.install "baton-linear"
@@ -29,8 +29,8 @@ class BatonLinear < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.16-test-debug-7/baton-linear-v0.0.16-test-debug-7-linux-amd64.tar.gz"
-        sha256 "f66cb362b78d85fc7504ea08be6a0c0d251977feff0023f26281818bce2a8d57"
+        url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.16-test-debug-6/baton-linear-v0.0.16-test-debug-6-linux-amd64.tar.gz"
+        sha256 "2aa94fb6b95ee2305b5710836fd8d8bb6f29e4a21796de4a7229f341f5d73751"
 
         def install
           bin.install "baton-linear"
@@ -39,8 +39,8 @@ class BatonLinear < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.16-test-debug-7/baton-linear-v0.0.16-test-debug-7-linux-arm64.tar.gz"
-        sha256 "4d0df14c3f8aa9454f287efb474f86aee93bf1f82a7e5d65ac5300661e2035c8"
+        url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.16-test-debug-6/baton-linear-v0.0.16-test-debug-6-linux-arm64.tar.gz"
+        sha256 "36e9ba0d56855ca81a0ad02a776bae653490b640eed56c3a8aee16c374033f12"
 
         def install
           bin.install "baton-linear"
