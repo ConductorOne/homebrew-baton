@@ -5,20 +5,20 @@
 class BatonBamboohr < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.7"
+  version "0.0.8"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-bamboohr/releases/download/v0.0.7/baton-bamboohr-v0.0.7-darwin-amd64.zip"
-      sha256 "5e3a3183d8e0cffbe10d9fb474d0fc04671fc98eca136143aba656e4302d0e92"
+      url "https://github.com/ConductorOne/baton-bamboohr/releases/download/v0.0.8/baton-bamboohr-v0.0.8-darwin-amd64.zip"
+      sha256 "65ab2bfaa6a11ae2f8b851228125c2ee56e91b66ca56a4d4921ce60571754b7e"
 
       def install
         bin.install "baton-bamboohr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-bamboohr/releases/download/v0.0.7/baton-bamboohr-v0.0.7-darwin-arm64.zip"
-      sha256 "91e02b1cc0e7ea317e072a87e4252af9de55e845eec1e6c0ebd5abbe659430e2"
+      url "https://github.com/ConductorOne/baton-bamboohr/releases/download/v0.0.8/baton-bamboohr-v0.0.8-darwin-arm64.zip"
+      sha256 "508650b34f415a43fbe9a169cbf14e8b8b9c1b8c3134613a1f0b5b719eef2711"
 
       def install
         bin.install "baton-bamboohr"
@@ -29,8 +29,8 @@ class BatonBamboohr < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-bamboohr/releases/download/v0.0.7/baton-bamboohr-v0.0.7-linux-amd64.tar.gz"
-        sha256 "afde278a4782d2e8876f56897642f8876e39eb33c9bd1020bd8468021fd08598"
+        url "https://github.com/ConductorOne/baton-bamboohr/releases/download/v0.0.8/baton-bamboohr-v0.0.8-linux-amd64.tar.gz"
+        sha256 "b1a9258f1fa197f466a56878ea6df80719d63a391bb80dcbf24c589f901f8c16"
 
         def install
           bin.install "baton-bamboohr"
@@ -39,8 +39,8 @@ class BatonBamboohr < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-bamboohr/releases/download/v0.0.7/baton-bamboohr-v0.0.7-linux-arm64.tar.gz"
-        sha256 "501ecacd10f5e912c169afb8e3cbd1ad7d26a49a483fe9cfb5a865614944e0c2"
+        url "https://github.com/ConductorOne/baton-bamboohr/releases/download/v0.0.8/baton-bamboohr-v0.0.8-linux-arm64.tar.gz"
+        sha256 "2454fabe3a43a62691091513ec9a56349476a54c5f0596d3e0a0861825390ec8"
 
         def install
           bin.install "baton-bamboohr"
