@@ -5,20 +5,20 @@
 class BatonLinear < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.17-debug-mode-expiration-3"
+  version "0.0.17-debug-mode-expiration-4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.17-debug-mode-expiration-3/baton-linear-v0.0.17-debug-mode-expiration-3-darwin-amd64.zip"
-      sha256 "ff24344bae1414e7a10960090657b9c24a7c5fc4c616f1f0f11447cb14dfb487"
+      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.17-debug-mode-expiration-4/baton-linear-v0.0.17-debug-mode-expiration-4-darwin-amd64.zip"
+      sha256 "80e78fca954d58623cac4f62bd0bc483c4e5dff67c2b41239e0f3bc077ef970d"
 
       def install
         bin.install "baton-linear"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.17-debug-mode-expiration-3/baton-linear-v0.0.17-debug-mode-expiration-3-darwin-arm64.zip"
-      sha256 "d30e395f1e8489cf4207a74bb373cf6aeba79ff2a9fa9818d3bd36f1c21ff7b2"
+      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.17-debug-mode-expiration-4/baton-linear-v0.0.17-debug-mode-expiration-4-darwin-arm64.zip"
+      sha256 "787e81953407d295d532f1c16ca3fa5993ca4f97f2afff3627a3f04f74c33f73"
 
       def install
         bin.install "baton-linear"
@@ -29,8 +29,8 @@ class BatonLinear < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.17-debug-mode-expiration-3/baton-linear-v0.0.17-debug-mode-expiration-3-linux-amd64.tar.gz"
-        sha256 "53913bd4dbcdc496f172c039c34fb4ddc6d2812fdb6ce63e2bcede39bbe437ed"
+        url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.17-debug-mode-expiration-4/baton-linear-v0.0.17-debug-mode-expiration-4-linux-amd64.tar.gz"
+        sha256 "145c6455f0632a58911777f49861fc2fd2e08a9f0a3cfae3086b802f2c9db9bf"
 
         def install
           bin.install "baton-linear"
@@ -39,8 +39,8 @@ class BatonLinear < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.17-debug-mode-expiration-3/baton-linear-v0.0.17-debug-mode-expiration-3-linux-arm64.tar.gz"
-        sha256 "e0d9895ea08cca8964008716705543aa6caedfd0103090de7923bc8e8d138b29"
+        url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.17-debug-mode-expiration-4/baton-linear-v0.0.17-debug-mode-expiration-4-linux-arm64.tar.gz"
+        sha256 "f40273a956f4b515d3061ad5e781a628db0c018c1c4a38e53b53bd56f5be1429"
 
         def install
           bin.install "baton-linear"
