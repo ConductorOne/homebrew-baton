@@ -5,20 +5,20 @@
 class BatonLinear < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.17-validate-connector-logs-8"
+  version "0.0.17-validate-connector-logs-9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.17-validate-connector-logs-8/baton-linear-v0.0.17-validate-connector-logs-8-darwin-amd64.zip"
-      sha256 "2083020bda789a45450f25f4451fd4071924f7d65fae777c35d60343338955fb"
+      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.17-validate-connector-logs-9/baton-linear-v0.0.17-validate-connector-logs-9-darwin-amd64.zip"
+      sha256 "20aa6ddd8d78f82a803526e375a167a6424db45ab144d69a71a1ecc3b2a2ea2b"
 
       def install
         bin.install "baton-linear"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.17-validate-connector-logs-8/baton-linear-v0.0.17-validate-connector-logs-8-darwin-arm64.zip"
-      sha256 "dd40e5edc9addd3b16d0947bb49b8004619d3e5a23e8094d5ca1659df2f225ea"
+      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.17-validate-connector-logs-9/baton-linear-v0.0.17-validate-connector-logs-9-darwin-arm64.zip"
+      sha256 "8db78fd49bc42445c27629ef50c4cc56b4af0d805c95060d8bfd1f71cf40b14c"
 
       def install
         bin.install "baton-linear"
@@ -29,8 +29,8 @@ class BatonLinear < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.17-validate-connector-logs-8/baton-linear-v0.0.17-validate-connector-logs-8-linux-amd64.tar.gz"
-        sha256 "b3026db5932881062451c590538f26ad40bbbbf5217a618f983a182af7a7e375"
+        url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.17-validate-connector-logs-9/baton-linear-v0.0.17-validate-connector-logs-9-linux-amd64.tar.gz"
+        sha256 "e2432e9b2ad15530c37fe6b3f665a272ecb0ded1f5bc91374417c6b30b7592a5"
 
         def install
           bin.install "baton-linear"
@@ -39,8 +39,8 @@ class BatonLinear < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.17-validate-connector-logs-8/baton-linear-v0.0.17-validate-connector-logs-8-linux-arm64.tar.gz"
-        sha256 "256040b2c2cc2ca6aae0dbb14f4f73f04e33e95eccc12b298bbda198cf6894de"
+        url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.17-validate-connector-logs-9/baton-linear-v0.0.17-validate-connector-logs-9-linux-arm64.tar.gz"
+        sha256 "5a0cfa8763f3cbee209c642742f4b8605b2390e8961c0439f29c386a7eb83a59"
 
         def install
           bin.install "baton-linear"
