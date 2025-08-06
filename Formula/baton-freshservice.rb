@@ -5,20 +5,20 @@
 class BatonFreshservice < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.4"
+  version "0.0.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-freshservice/releases/download/v0.0.4/baton-freshservice-v0.0.4-darwin-amd64.zip"
-      sha256 "1daf965144681dbbced0cf761855535d30aa9b7d02774c881c77a56781ff01ba"
+      url "https://github.com/ConductorOne/baton-freshservice/releases/download/v0.0.5/baton-freshservice-v0.0.5-darwin-amd64.zip"
+      sha256 "060faca648804c65e05136d41c69bc92f1b9bb7bc82266fe5274ca520d046197"
 
       def install
         bin.install "baton-freshservice"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-freshservice/releases/download/v0.0.4/baton-freshservice-v0.0.4-darwin-arm64.zip"
-      sha256 "3d839e8666cec1758321682ab92d206b43842ed26605aa7c74a19b5ae52423e3"
+      url "https://github.com/ConductorOne/baton-freshservice/releases/download/v0.0.5/baton-freshservice-v0.0.5-darwin-arm64.zip"
+      sha256 "03f7698dce3154535cd6227c7fd8dbca7657dd2ac1ff0abd22f1b1bf6f782228"
 
       def install
         bin.install "baton-freshservice"
@@ -29,8 +29,8 @@ class BatonFreshservice < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-freshservice/releases/download/v0.0.4/baton-freshservice-v0.0.4-linux-amd64.tar.gz"
-        sha256 "5bd385334d5a5f7519e85b30bfce8fd5a60a7c4e8e5ff5a43a0dfd8cd0a24880"
+        url "https://github.com/ConductorOne/baton-freshservice/releases/download/v0.0.5/baton-freshservice-v0.0.5-linux-amd64.tar.gz"
+        sha256 "d418c48a07118a7bd0b81b40257c23cbed17a7fbf86698cb1e6d092ac5902e21"
 
         def install
           bin.install "baton-freshservice"
@@ -39,8 +39,8 @@ class BatonFreshservice < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-freshservice/releases/download/v0.0.4/baton-freshservice-v0.0.4-linux-arm64.tar.gz"
-        sha256 "ecf827e4645059dd116279b5bfdbbbf21fe7c98972b62251bd58769cc4274a11"
+        url "https://github.com/ConductorOne/baton-freshservice/releases/download/v0.0.5/baton-freshservice-v0.0.5-linux-arm64.tar.gz"
+        sha256 "7ac6c19fc27b35ce27b1052a8e58235de9ac8028c764d2e66c1e77b4aadec843"
 
         def install
           bin.install "baton-freshservice"
