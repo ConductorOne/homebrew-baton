@@ -5,20 +5,20 @@
 class BatonRippling < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-rippling/releases/download/v0.0.1/baton-rippling-v0.0.1-darwin-amd64.zip"
-      sha256 "75721040b68111fb81482a1e80153c507ad6a5d221dee3ec28c2e70a832d04c7"
+      url "https://github.com/ConductorOne/baton-rippling/releases/download/v0.0.2/baton-rippling-v0.0.2-darwin-amd64.zip"
+      sha256 "4b06a457a07805ba561d75e14bbc53540571bfdafea094cd348d9952443ccd88"
 
       def install
         bin.install "baton-rippling"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-rippling/releases/download/v0.0.1/baton-rippling-v0.0.1-darwin-arm64.zip"
-      sha256 "5b7f2a0ea18fd171452a14c342db582005a76092aead4be13dc0868afe5335b2"
+      url "https://github.com/ConductorOne/baton-rippling/releases/download/v0.0.2/baton-rippling-v0.0.2-darwin-arm64.zip"
+      sha256 "436d4852a1649a5abd6e0866390c8e9a131eda72b68b29dcd95be5a5a52d4ae2"
 
       def install
         bin.install "baton-rippling"
@@ -29,8 +29,8 @@ class BatonRippling < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-rippling/releases/download/v0.0.1/baton-rippling-v0.0.1-linux-amd64.tar.gz"
-        sha256 "4856d7df2f4d37cee04fd7cd9d34cba458d6276594825dfa3c2c37c5f891000f"
+        url "https://github.com/ConductorOne/baton-rippling/releases/download/v0.0.2/baton-rippling-v0.0.2-linux-amd64.tar.gz"
+        sha256 "cdcee480a4ea7ba253e2f28215061911b809f9991532a148c81b9b50a28d1690"
 
         def install
           bin.install "baton-rippling"
@@ -39,8 +39,8 @@ class BatonRippling < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-rippling/releases/download/v0.0.1/baton-rippling-v0.0.1-linux-arm64.tar.gz"
-        sha256 "75ac232e5200c8087cb6557b65a466bf10d66a83e05f1d5c8950f0eb503060d7"
+        url "https://github.com/ConductorOne/baton-rippling/releases/download/v0.0.2/baton-rippling-v0.0.2-linux-arm64.tar.gz"
+        sha256 "31be6c3b1cf52dfaf7240203116b9a2d6620a447aa93c0ff27482fdb451cb58b"
 
         def install
           bin.install "baton-rippling"
