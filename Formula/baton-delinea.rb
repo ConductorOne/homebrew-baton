@@ -5,20 +5,20 @@
 class BatonDelinea < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-delinea/releases/download/v0.0.1/baton-delinea-v0.0.1-darwin-amd64.zip"
-      sha256 "53ca5ebe9cb2bc72fb098631afac39d54c0e1cca6da72b78f05a978e47ca8fa6"
+      url "https://github.com/ConductorOne/baton-delinea/releases/download/v0.0.2/baton-delinea-v0.0.2-darwin-amd64.zip"
+      sha256 "5b0b91f90d367e95c3165465a8c1bce5712e13161dbcda930f77963d5b69acaa"
 
       def install
         bin.install "baton-delinea"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-delinea/releases/download/v0.0.1/baton-delinea-v0.0.1-darwin-arm64.zip"
-      sha256 "d15e6263fa94e7cc55335b3a2a5ab823541d178f6a2262b79805b3107eabc912"
+      url "https://github.com/ConductorOne/baton-delinea/releases/download/v0.0.2/baton-delinea-v0.0.2-darwin-arm64.zip"
+      sha256 "9944160b11a1a035ef371822cbf55c9c17e1b754b07e1fdead68d8c627e2e84d"
 
       def install
         bin.install "baton-delinea"
@@ -29,8 +29,8 @@ class BatonDelinea < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-delinea/releases/download/v0.0.1/baton-delinea-v0.0.1-linux-amd64.tar.gz"
-        sha256 "68551a0d6c811b6d4fbff943f04159927f861d27322f943bb5ac0f9aaa3969af"
+        url "https://github.com/ConductorOne/baton-delinea/releases/download/v0.0.2/baton-delinea-v0.0.2-linux-amd64.tar.gz"
+        sha256 "14e31f3f6f76a2add7782af7f3d3d09f14e11c34414816a28fbb385acfa828d5"
 
         def install
           bin.install "baton-delinea"
@@ -39,8 +39,8 @@ class BatonDelinea < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-delinea/releases/download/v0.0.1/baton-delinea-v0.0.1-linux-arm64.tar.gz"
-        sha256 "dad5955b39387b5a965390ec6a3c555d047ea403baa4dd37f9bdb50fd12f365f"
+        url "https://github.com/ConductorOne/baton-delinea/releases/download/v0.0.2/baton-delinea-v0.0.2-linux-arm64.tar.gz"
+        sha256 "db537259fff6bea3ecf0ffa10a1d60a0d8bf4e8eb06aa1413ea81ed1f9fe741a"
 
         def install
           bin.install "baton-delinea"
