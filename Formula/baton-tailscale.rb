@@ -5,20 +5,20 @@
 class BatonTailscale < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.5"
+  version "0.0.5-pov-acl-ssh-grants"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-tailscale/releases/download/v0.0.5/baton-tailscale-v0.0.5-darwin-amd64.zip"
-      sha256 "ecc5b20bad523a1dfc31a0195787694ffabb2511c48c842fa4cf85f98f5dc54a"
+      url "https://github.com/ConductorOne/baton-tailscale/releases/download/v0.0.5-pov-acl-ssh-grants/baton-tailscale-v0.0.5-pov-acl-ssh-grants-darwin-amd64.zip"
+      sha256 "29f537708375f31c930a9c86bc1f7b9b05bae5be625ac60c969aea7c1a8b098d"
 
       def install
         bin.install "baton-tailscale"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-tailscale/releases/download/v0.0.5/baton-tailscale-v0.0.5-darwin-arm64.zip"
-      sha256 "f719526e3b342ef1906c8e92f3a5a8913a64957faaa71e687c25a0b6a2f32d7c"
+      url "https://github.com/ConductorOne/baton-tailscale/releases/download/v0.0.5-pov-acl-ssh-grants/baton-tailscale-v0.0.5-pov-acl-ssh-grants-darwin-arm64.zip"
+      sha256 "865e962710cdd07d476a849ea816537b37fd0be47d0a1b40aba1faca3f2ed89a"
 
       def install
         bin.install "baton-tailscale"
@@ -29,8 +29,8 @@ class BatonTailscale < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-tailscale/releases/download/v0.0.5/baton-tailscale-v0.0.5-linux-amd64.tar.gz"
-        sha256 "55898e7f41219868f406ad3533be77b72b9ebff03af0e2d58d956a966a051fac"
+        url "https://github.com/ConductorOne/baton-tailscale/releases/download/v0.0.5-pov-acl-ssh-grants/baton-tailscale-v0.0.5-pov-acl-ssh-grants-linux-amd64.tar.gz"
+        sha256 "0d91438831246f7ae9039f46017c843cd6b4d5a4bdb3d32b5a5feaddc7bcdf60"
 
         def install
           bin.install "baton-tailscale"
@@ -39,8 +39,8 @@ class BatonTailscale < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-tailscale/releases/download/v0.0.5/baton-tailscale-v0.0.5-linux-arm64.tar.gz"
-        sha256 "26286b80bfe6316c3baa8217e6e8abff56924ffe9abdec3ea790ae76fef6ec2a"
+        url "https://github.com/ConductorOne/baton-tailscale/releases/download/v0.0.5-pov-acl-ssh-grants/baton-tailscale-v0.0.5-pov-acl-ssh-grants-linux-arm64.tar.gz"
+        sha256 "52d04e54069c7c6a3a879b61efed285b2ac40cc016ee323ce2af39bac01d4492"
 
         def install
           bin.install "baton-tailscale"
