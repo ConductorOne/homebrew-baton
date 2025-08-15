@@ -5,20 +5,20 @@
 class BatonMiro < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.5"
+  version "0.0.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-miro/releases/download/v0.0.5/baton-miro-v0.0.5-darwin-amd64.zip"
-      sha256 "6deabe557f6ad9a08cfc7ab335f390bbdd1672e00b1a00449861a6a0ac8dc1ce"
+      url "https://github.com/ConductorOne/baton-miro/releases/download/v0.0.6/baton-miro-v0.0.6-darwin-amd64.zip"
+      sha256 "eed941f29bf47b35db760d7625ac10f874ff0c42cd3945116b66ded048ad9d8a"
 
       def install
         bin.install "baton-miro"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-miro/releases/download/v0.0.5/baton-miro-v0.0.5-darwin-arm64.zip"
-      sha256 "79412ba7d0ebcc045b337862ad4c5d4f2dfbd7568e21315a13124ddd034e32bd"
+      url "https://github.com/ConductorOne/baton-miro/releases/download/v0.0.6/baton-miro-v0.0.6-darwin-arm64.zip"
+      sha256 "ae77038e70d23685ef6b1353ac14a309c941399ae08f5085aa796f09ea9dcea0"
 
       def install
         bin.install "baton-miro"
@@ -29,8 +29,8 @@ class BatonMiro < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-miro/releases/download/v0.0.5/baton-miro-v0.0.5-linux-amd64.tar.gz"
-        sha256 "5ebd7d67c92d96ed0b45b23d48227b1632ad8d1fe8caad0062525bb019ec9ea0"
+        url "https://github.com/ConductorOne/baton-miro/releases/download/v0.0.6/baton-miro-v0.0.6-linux-amd64.tar.gz"
+        sha256 "db268a0de117f79120192e41511e3de41bad777e3781a91048e7f12d94444aff"
 
         def install
           bin.install "baton-miro"
@@ -39,8 +39,8 @@ class BatonMiro < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-miro/releases/download/v0.0.5/baton-miro-v0.0.5-linux-arm64.tar.gz"
-        sha256 "0bcf0e30c6a6299280036628766429aa69ba37c39caa5f225c378bdcc0b1eb6b"
+        url "https://github.com/ConductorOne/baton-miro/releases/download/v0.0.6/baton-miro-v0.0.6-linux-arm64.tar.gz"
+        sha256 "f79c00099391f8cabf52da45c147c2a8f257a394b6d4a1ff243537262896b5d0"
 
         def install
           bin.install "baton-miro"
