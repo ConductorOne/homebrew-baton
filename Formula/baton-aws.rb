@@ -5,20 +5,20 @@
 class BatonAws < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.41"
+  version "0.0.44"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.0.41/baton-aws-v0.0.41-darwin-amd64.zip"
-      sha256 "26f6a8c631c46b4aa077f1d63bb452f0a414f9c954cb0d779308cac3955de94a"
+      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.0.44/baton-aws-v0.0.44-darwin-amd64.zip"
+      sha256 "0b433a3e890494647fd4a876612eb16e0d636008b49fc39baa11deb7fb781b10"
 
       def install
         bin.install "baton-aws"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.0.41/baton-aws-v0.0.41-darwin-arm64.zip"
-      sha256 "f72a37030726557899d4a3aca7dedd45f1cc3b366cf543cf903bac7edd05f1ce"
+      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.0.44/baton-aws-v0.0.44-darwin-arm64.zip"
+      sha256 "8e5a1bd9cb33d43d529a9fca2ad954828a3dd1a4cf39c3aaef0302d7119adaa4"
 
       def install
         bin.install "baton-aws"
@@ -27,18 +27,24 @@ class BatonAws < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.0.41/baton-aws-v0.0.41-linux-amd64.tar.gz"
-      sha256 "37869aa8852426900a308e1effa211ec2ce7dfc579b323ef874de6a3eafbffaf"
-      def install
-        bin.install "baton-aws"
+    if Hardware::CPU.intel?
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/ConductorOne/baton-aws/releases/download/v0.0.44/baton-aws-v0.0.44-linux-amd64.tar.gz"
+        sha256 "612c8a4b24cca81679f4dff7d39a677b355eea31b6859972875c9b8c354a2951"
+
+        def install
+          bin.install "baton-aws"
+        end
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.0.41/baton-aws-v0.0.41-linux-arm64.tar.gz"
-      sha256 "ebc55705a18412d78e85614b8d7864a2cff057906d7f568cd405548228cf3b07"
-      def install
-        bin.install "baton-aws"
+    if Hardware::CPU.arm?
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/ConductorOne/baton-aws/releases/download/v0.0.44/baton-aws-v0.0.44-linux-arm64.tar.gz"
+        sha256 "84a7cfc213ceb3da0aa2161a30a6ea10db1db28a876f478a96dba147b49c0aa0"
+
+        def install
+          bin.install "baton-aws"
+        end
       end
     end
   end
