@@ -5,20 +5,20 @@
 class BatonYoutrack < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-youtrack/releases/download/v0.0.2/baton-youtrack-v0.0.2-darwin-amd64.zip"
-      sha256 "69ee325ed9f1a45f0a173bcf6cc8d470ceb2925cbaa505fb1b6d2c8e5a03dd03"
+      url "https://github.com/ConductorOne/baton-youtrack/releases/download/v0.0.3/baton-youtrack-v0.0.3-darwin-amd64.zip"
+      sha256 "50f247e4bda7c8b1e798a064b8734b4a155b9eb7b0b7ef9320b007e7f8e627a7"
 
       def install
         bin.install "baton-youtrack"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-youtrack/releases/download/v0.0.2/baton-youtrack-v0.0.2-darwin-arm64.zip"
-      sha256 "2cf8d306c4bea82059e903c0e7e4ce94ae243f5b7e64ff5c839b26fe542a1265"
+      url "https://github.com/ConductorOne/baton-youtrack/releases/download/v0.0.3/baton-youtrack-v0.0.3-darwin-arm64.zip"
+      sha256 "c3c2bfd96f39d1874a1a5d485ed9cd951f5f83ec405af44a8759dd313e9bf791"
 
       def install
         bin.install "baton-youtrack"
@@ -29,8 +29,8 @@ class BatonYoutrack < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-youtrack/releases/download/v0.0.2/baton-youtrack-v0.0.2-linux-amd64.tar.gz"
-        sha256 "78d77ed6ba6ec0a208f103ad8e095d371872c09b32156465512f078959c748d0"
+        url "https://github.com/ConductorOne/baton-youtrack/releases/download/v0.0.3/baton-youtrack-v0.0.3-linux-amd64.tar.gz"
+        sha256 "e09395d19c7b0d39aadea55c523b7cbec72b9130df58901e3cd8e0196aa014cc"
 
         def install
           bin.install "baton-youtrack"
@@ -39,8 +39,8 @@ class BatonYoutrack < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-youtrack/releases/download/v0.0.2/baton-youtrack-v0.0.2-linux-arm64.tar.gz"
-        sha256 "205137a3f0196e780afffd1875366b24409937c00b0e525c929911a4c38864b1"
+        url "https://github.com/ConductorOne/baton-youtrack/releases/download/v0.0.3/baton-youtrack-v0.0.3-linux-arm64.tar.gz"
+        sha256 "a3584ecd22b0c3efbf26d40360e297fe3e86cb9845160c0eec63082fe96ce25b"
 
         def install
           bin.install "baton-youtrack"
