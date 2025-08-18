@@ -5,20 +5,20 @@
 class BatonGitlab < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.26-remove-roundtrip"
+  version "0.0.27"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.26-remove-roundtrip/baton-gitlab-v0.0.26-remove-roundtrip-darwin-amd64.zip"
-      sha256 "907e4057d328f3c5da2dc24e7a0d4e63103d36548b06a607e19357407ec84b92"
+      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.27/baton-gitlab-v0.0.27-darwin-amd64.zip"
+      sha256 "2ef403a1c5b59be71c6422e19c956488216acd13136c864e136a2547e0c7c5e1"
 
       def install
         bin.install "baton-gitlab"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.26-remove-roundtrip/baton-gitlab-v0.0.26-remove-roundtrip-darwin-arm64.zip"
-      sha256 "26c3721cab4a69bf2b3823b40ff218bf80ba829a20c7203c51d69a61a3703b82"
+      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.27/baton-gitlab-v0.0.27-darwin-arm64.zip"
+      sha256 "d384fbb499d32dd48cfacab6ecce11198fa8b42698ceae290b3a821ddf9deb1c"
 
       def install
         bin.install "baton-gitlab"
@@ -29,8 +29,8 @@ class BatonGitlab < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.26-remove-roundtrip/baton-gitlab-v0.0.26-remove-roundtrip-linux-amd64.tar.gz"
-        sha256 "cb70dd988e8daf46d3a309d30b887087a59f848808c1bbbd26eac5427aafaa9a"
+        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.27/baton-gitlab-v0.0.27-linux-amd64.tar.gz"
+        sha256 "547cc55362682a1817f7e5aeb48e59e3958e3a69cf014ab5f824ee9c1af3ab46"
 
         def install
           bin.install "baton-gitlab"
@@ -39,8 +39,8 @@ class BatonGitlab < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.26-remove-roundtrip/baton-gitlab-v0.0.26-remove-roundtrip-linux-arm64.tar.gz"
-        sha256 "cd53df27cea52540531cc10ac2b77d0863101384d45e00bbc5912809626d44a2"
+        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.27/baton-gitlab-v0.0.27-linux-arm64.tar.gz"
+        sha256 "4b3677b0fb44da9f49b60bb33037498f698c2d1b52fd2fa034b062dfbde67b2f"
 
         def install
           bin.install "baton-gitlab"
