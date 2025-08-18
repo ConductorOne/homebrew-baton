@@ -5,20 +5,20 @@
 class BatonGitlab < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.25-validate-currently-auth-user"
+  version "0.0.26"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.25-validate-currently-auth-user/baton-gitlab-v0.0.25-validate-currently-auth-user-darwin-amd64.zip"
-      sha256 "e7fefb36031054d9d95b7ec8db74c65ae86a000589ce503ce2563d28b613e052"
+      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.26/baton-gitlab-v0.0.26-darwin-amd64.zip"
+      sha256 "2562d2d599d0abb98f06045eb4775ce414a27e9f082c9b2bc987744620c4758e"
 
       def install
         bin.install "baton-gitlab"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.25-validate-currently-auth-user/baton-gitlab-v0.0.25-validate-currently-auth-user-darwin-arm64.zip"
-      sha256 "9fe2c902c1e2845eb578214b4a2ee555934f55fd91612ded1138083cec586eb4"
+      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.26/baton-gitlab-v0.0.26-darwin-arm64.zip"
+      sha256 "298f36f15201b1595de9dda71a17dbbbd44b1e1b1b9056dcc5258b90054554d7"
 
       def install
         bin.install "baton-gitlab"
@@ -29,8 +29,8 @@ class BatonGitlab < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.25-validate-currently-auth-user/baton-gitlab-v0.0.25-validate-currently-auth-user-linux-amd64.tar.gz"
-        sha256 "5b71a7c0c3d4ccc0d492f654f315d3205a04f9bf65f3de5277b959eafc9069ac"
+        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.26/baton-gitlab-v0.0.26-linux-amd64.tar.gz"
+        sha256 "6fecbc6e6df08bfbdc06a4c52fad52c39a023f76b5797626adaa95a50ff50d9b"
 
         def install
           bin.install "baton-gitlab"
@@ -39,8 +39,8 @@ class BatonGitlab < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.25-validate-currently-auth-user/baton-gitlab-v0.0.25-validate-currently-auth-user-linux-arm64.tar.gz"
-        sha256 "431be557c860f2a51dab1ebc603ee0c15dd519ba511d02c7c6190cb2d26971e6"
+        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.26/baton-gitlab-v0.0.26-linux-arm64.tar.gz"
+        sha256 "06b94c12977a4927d7ac22f8414201b9568f2248529fe0150e76270315cb6a9e"
 
         def install
           bin.install "baton-gitlab"
