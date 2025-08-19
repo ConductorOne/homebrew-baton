@@ -5,20 +5,20 @@
 class BatonGitlab < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.28-skip-child-resource-annos-5"
+  version "0.0.29"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.28-skip-child-resource-annos-5/baton-gitlab-v0.0.28-skip-child-resource-annos-5-darwin-amd64.zip"
-      sha256 "5ac7cc839071126a1318302ef33f5f88d15ef52a7ea9b37c83db3f16e660a9dc"
+      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.29/baton-gitlab-v0.0.29-darwin-amd64.zip"
+      sha256 "17bcc3432645c51f65ce97d9ddaea492537eb20ae88714343c4ed8e9247e85f2"
 
       def install
         bin.install "baton-gitlab"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.28-skip-child-resource-annos-5/baton-gitlab-v0.0.28-skip-child-resource-annos-5-darwin-arm64.zip"
-      sha256 "b8cfd499ab92d0e3ec1e7c4223dbd3e1f03e8f22a8bcfd9a60d012f3a92f8275"
+      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.29/baton-gitlab-v0.0.29-darwin-arm64.zip"
+      sha256 "f4e52df78c44a381358ecbbe9699cf13fd78a622210496c6f5a554c3b04248bb"
 
       def install
         bin.install "baton-gitlab"
@@ -29,8 +29,8 @@ class BatonGitlab < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.28-skip-child-resource-annos-5/baton-gitlab-v0.0.28-skip-child-resource-annos-5-linux-amd64.tar.gz"
-        sha256 "0ebd87767ee108892076c642cdc57c6430f221afa28cb1033ca82237b31c50b0"
+        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.29/baton-gitlab-v0.0.29-linux-amd64.tar.gz"
+        sha256 "0e016460c14221c32b1b12334e0f50dca24c440099601699d5cd24c8b7161803"
 
         def install
           bin.install "baton-gitlab"
@@ -39,8 +39,8 @@ class BatonGitlab < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.28-skip-child-resource-annos-5/baton-gitlab-v0.0.28-skip-child-resource-annos-5-linux-arm64.tar.gz"
-        sha256 "5da381b68fcdda5fd00ab709420b1744ab5639df07ad141349df334efd7ebb11"
+        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.29/baton-gitlab-v0.0.29-linux-arm64.tar.gz"
+        sha256 "eb067ed398da4eb8032cdc8e10e7ab702b09e54bd923a6725ebba8b0d0b522b2"
 
         def install
           bin.install "baton-gitlab"
