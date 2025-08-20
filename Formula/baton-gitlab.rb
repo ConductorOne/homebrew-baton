@@ -5,20 +5,20 @@
 class BatonGitlab < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.29-log-member-counts-3"
+  version "0.0.29-log-member-counts-4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.29-log-member-counts-3/baton-gitlab-v0.0.29-log-member-counts-3-darwin-amd64.zip"
-      sha256 "3e1bee2cf80abf1ba927ec3da3c3c3ceb126f948eb9f21c3e105fbae0f1f9e13"
+      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.29-log-member-counts-4/baton-gitlab-v0.0.29-log-member-counts-4-darwin-amd64.zip"
+      sha256 "dc87abce286b8d092c209196334e01ed0d85de0e12c60431e39394bf525d2eb9"
 
       def install
         bin.install "baton-gitlab"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.29-log-member-counts-3/baton-gitlab-v0.0.29-log-member-counts-3-darwin-arm64.zip"
-      sha256 "14d70f03804ddc94675c003457c6caedd91e111e054d5d9ce79e00fa1171c6ba"
+      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.29-log-member-counts-4/baton-gitlab-v0.0.29-log-member-counts-4-darwin-arm64.zip"
+      sha256 "fdef5f84623b42e234e78e90c2327f44609470f3bc4a70ea7a113c3e1a6e8667"
 
       def install
         bin.install "baton-gitlab"
@@ -29,8 +29,8 @@ class BatonGitlab < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.29-log-member-counts-3/baton-gitlab-v0.0.29-log-member-counts-3-linux-amd64.tar.gz"
-        sha256 "814201538fc22556de5bfd6479dc633923004d2411cda325b56a8baff42e00f8"
+        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.29-log-member-counts-4/baton-gitlab-v0.0.29-log-member-counts-4-linux-amd64.tar.gz"
+        sha256 "92174ce96f67144b7332d474cf5d511f240ca6996ad6089a7d3f31dd852d50ac"
 
         def install
           bin.install "baton-gitlab"
@@ -39,8 +39,8 @@ class BatonGitlab < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.29-log-member-counts-3/baton-gitlab-v0.0.29-log-member-counts-3-linux-arm64.tar.gz"
-        sha256 "0a871c5f47b9a8e9e7a5494068236fe378e4eb2f449711489b520c51e826d732"
+        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.29-log-member-counts-4/baton-gitlab-v0.0.29-log-member-counts-4-linux-arm64.tar.gz"
+        sha256 "5b1cd47a814c5b5ea5d5ad9d6a5cbd75dbcb730d6e67fbe1ccd3e9e32e2f94bc"
 
         def install
           bin.install "baton-gitlab"
