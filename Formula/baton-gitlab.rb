@@ -5,20 +5,20 @@
 class BatonGitlab < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.29-log-member-counts-4"
+  version "0.0.29-graphql"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.29-log-member-counts-4/baton-gitlab-v0.0.29-log-member-counts-4-darwin-amd64.zip"
-      sha256 "dc87abce286b8d092c209196334e01ed0d85de0e12c60431e39394bf525d2eb9"
+      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.29-graphql/baton-gitlab-v0.0.29-graphql-darwin-amd64.zip"
+      sha256 "4c043a690af1b10060d82c5345220e33cb03e17908a01d9366a0ce3a4ce66922"
 
       def install
         bin.install "baton-gitlab"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.29-log-member-counts-4/baton-gitlab-v0.0.29-log-member-counts-4-darwin-arm64.zip"
-      sha256 "fdef5f84623b42e234e78e90c2327f44609470f3bc4a70ea7a113c3e1a6e8667"
+      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.29-graphql/baton-gitlab-v0.0.29-graphql-darwin-arm64.zip"
+      sha256 "c1c031165b37d6ec00c02d18af311b0329fd09d2534d97a029029f23758f43df"
 
       def install
         bin.install "baton-gitlab"
@@ -29,8 +29,8 @@ class BatonGitlab < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.29-log-member-counts-4/baton-gitlab-v0.0.29-log-member-counts-4-linux-amd64.tar.gz"
-        sha256 "92174ce96f67144b7332d474cf5d511f240ca6996ad6089a7d3f31dd852d50ac"
+        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.29-graphql/baton-gitlab-v0.0.29-graphql-linux-amd64.tar.gz"
+        sha256 "d707a16dde751e6b827b92f46d1f4f78bb40b8c45410e485777b76ac98cbc71e"
 
         def install
           bin.install "baton-gitlab"
@@ -39,8 +39,8 @@ class BatonGitlab < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.29-log-member-counts-4/baton-gitlab-v0.0.29-log-member-counts-4-linux-arm64.tar.gz"
-        sha256 "5b1cd47a814c5b5ea5d5ad9d6a5cbd75dbcb730d6e67fbe1ccd3e9e32e2f94bc"
+        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.29-graphql/baton-gitlab-v0.0.29-graphql-linux-arm64.tar.gz"
+        sha256 "60f5f903fbc5c650ec01775fe7f873c13b6829c5e0d2bbe4da42ca0e8dadda3a"
 
         def install
           bin.install "baton-gitlab"
