@@ -5,20 +5,20 @@
 class BatonEks < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-eks/releases/download/v0.0.3/baton-eks-v0.0.3-darwin-amd64.zip"
-      sha256 "85b25c7614643d774a89b0109af1c57ed444d35203ec51c4e792b250884a550f"
+      url "https://github.com/ConductorOne/baton-eks/releases/download/v0.0.4/baton-eks-v0.0.4-darwin-amd64.zip"
+      sha256 "75501564e859f2d604208e822abe86a746a705d1ab4c09932b12ab2e8219eba8"
 
       def install
         bin.install "baton-eks"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-eks/releases/download/v0.0.3/baton-eks-v0.0.3-darwin-arm64.zip"
-      sha256 "32911bee2c4396f817d7cff5f5346fa7d50197c1d48f5b496bde4d2644216fef"
+      url "https://github.com/ConductorOne/baton-eks/releases/download/v0.0.4/baton-eks-v0.0.4-darwin-arm64.zip"
+      sha256 "6f1d4cae222c4f616c9f55fd3523d7d2929a38c2a0721a6865b24ad564f88661"
 
       def install
         bin.install "baton-eks"
@@ -29,8 +29,8 @@ class BatonEks < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-eks/releases/download/v0.0.3/baton-eks-v0.0.3-linux-amd64.tar.gz"
-        sha256 "8c4edea906c035f44364afcb0d6f005593037cdd2bca9fe1967a9c541f8d72b6"
+        url "https://github.com/ConductorOne/baton-eks/releases/download/v0.0.4/baton-eks-v0.0.4-linux-amd64.tar.gz"
+        sha256 "efc9ed75a479334ef95fdfaf6d1758af860988e250d77dab31d4c96100926920"
 
         def install
           bin.install "baton-eks"
@@ -39,8 +39,8 @@ class BatonEks < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-eks/releases/download/v0.0.3/baton-eks-v0.0.3-linux-arm64.tar.gz"
-        sha256 "f9285086d49dc78d03eec0285df3c7cd67b4d1c9d465e362979384ad098e8acb"
+        url "https://github.com/ConductorOne/baton-eks/releases/download/v0.0.4/baton-eks-v0.0.4-linux-arm64.tar.gz"
+        sha256 "0f9674a118244c221146a0537e9d3a9e08164e0423a66bc4dcc286f53ce06594"
 
         def install
           bin.install "baton-eks"
