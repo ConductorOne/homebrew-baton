@@ -5,20 +5,20 @@
 class BatonMongodbAtlas < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.18"
+  version "0.0.18-add-resource-delete"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.0.18/baton-mongodb-atlas-v0.0.18-darwin-amd64.zip"
-      sha256 "c3a1bd7752687f929d9825e4027dc8cba1e0e2d456e87ab544556e8f09c71aad"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.0.18-add-resource-delete/baton-mongodb-atlas-v0.0.18-add-resource-delete-darwin-amd64.zip"
+      sha256 "59c54c6ce97ae4179d03b3c2e44a6c4f312c1fe0f708cc6537fe38a2b9150184"
 
       def install
         bin.install "baton-mongodb-atlas"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.0.18/baton-mongodb-atlas-v0.0.18-darwin-arm64.zip"
-      sha256 "fc1283edb282e5533542f42c3f35ce5ff42d328cdc26fa48b955049d6b5e34fe"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.0.18-add-resource-delete/baton-mongodb-atlas-v0.0.18-add-resource-delete-darwin-arm64.zip"
+      sha256 "f59115674d22062b0996831821c65caae969f24767239b069a46a12044d6943a"
 
       def install
         bin.install "baton-mongodb-atlas"
@@ -29,8 +29,8 @@ class BatonMongodbAtlas < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.0.18/baton-mongodb-atlas-v0.0.18-linux-amd64.tar.gz"
-        sha256 "f6f13e4feba9fa00caee8efc75769c0fbbd64b49eeb30c39a75646e4b246a78a"
+        url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.0.18-add-resource-delete/baton-mongodb-atlas-v0.0.18-add-resource-delete-linux-amd64.tar.gz"
+        sha256 "d9db77aaa3633578f16e3d002d46320044c101e2be75e147e4a3123f37a48a15"
 
         def install
           bin.install "baton-mongodb-atlas"
@@ -39,8 +39,8 @@ class BatonMongodbAtlas < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.0.18/baton-mongodb-atlas-v0.0.18-linux-arm64.tar.gz"
-        sha256 "df26ecfece8396b65e924366b6a1bf344d909f1689fdfa14581f32af063c01eb"
+        url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.0.18-add-resource-delete/baton-mongodb-atlas-v0.0.18-add-resource-delete-linux-arm64.tar.gz"
+        sha256 "f158772846df803cec96045a8f16300927f98dc8134ae70976a0571635209ba4"
 
         def install
           bin.install "baton-mongodb-atlas"
