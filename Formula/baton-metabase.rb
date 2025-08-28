@@ -5,20 +5,20 @@
 class BatonMetabase < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-metabase/releases/download/v0.0.1/baton-metabase-v0.0.1-darwin-amd64.zip"
-      sha256 "b061429594c98abf242c27b2f6c1e7a9091642929255d04c8948780caa958ebe"
+      url "https://github.com/ConductorOne/baton-metabase/releases/download/v0.0.2/baton-metabase-v0.0.2-darwin-amd64.zip"
+      sha256 "377ea69dd4c325908e533d8bad64bceb5e2c9c2e69224d4ddfa218c5269eb21a"
 
       def install
         bin.install "baton-metabase"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-metabase/releases/download/v0.0.1/baton-metabase-v0.0.1-darwin-arm64.zip"
-      sha256 "5f59e1077173773c08e20e468cfe25d901d8e812ee6df2700d8beb0da24b01de"
+      url "https://github.com/ConductorOne/baton-metabase/releases/download/v0.0.2/baton-metabase-v0.0.2-darwin-arm64.zip"
+      sha256 "4d755b2f1b282d3b5cfe542cafd414a72d626414e90b7203afe8e336efc96de6"
 
       def install
         bin.install "baton-metabase"
@@ -29,8 +29,8 @@ class BatonMetabase < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-metabase/releases/download/v0.0.1/baton-metabase-v0.0.1-linux-amd64.tar.gz"
-        sha256 "96fe9bb062b4e8ac1496e18ce08e015c5384fb26921bd77f2d1ee52039256441"
+        url "https://github.com/ConductorOne/baton-metabase/releases/download/v0.0.2/baton-metabase-v0.0.2-linux-amd64.tar.gz"
+        sha256 "05a1d2ac8ff1011c9f898a0c96a668e817910cfed1ef79c511408272e975e309"
 
         def install
           bin.install "baton-metabase"
@@ -39,8 +39,8 @@ class BatonMetabase < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-metabase/releases/download/v0.0.1/baton-metabase-v0.0.1-linux-arm64.tar.gz"
-        sha256 "daf6da4247ff96969201a8ce1e63e006c715233ddf32b990695019f6523dac49"
+        url "https://github.com/ConductorOne/baton-metabase/releases/download/v0.0.2/baton-metabase-v0.0.2-linux-arm64.tar.gz"
+        sha256 "13dc0aa4b30bad9c62c2fd68597fa02badfc6477d38da0dc737443cc29b96110"
 
         def install
           bin.install "baton-metabase"
