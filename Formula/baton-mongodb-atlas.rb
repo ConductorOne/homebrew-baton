@@ -5,20 +5,20 @@
 class BatonMongodbAtlas < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.18-undo-skip-db"
+  version "0.0.18-max-connection-idle-time"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.0.18-undo-skip-db/baton-mongodb-atlas-v0.0.18-undo-skip-db-darwin-amd64.zip"
-      sha256 "14c7c4acf0db6181705908172bff8854c90c5840ceca33203bf1dec7e35c05a8"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.0.18-max-connection-idle-time/baton-mongodb-atlas-v0.0.18-max-connection-idle-time-darwin-amd64.zip"
+      sha256 "b46181c4a4900e4c3d2146615e8574c060c2d094a04bfc8db5d78d51f839782c"
 
       def install
         bin.install "baton-mongodb-atlas"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.0.18-undo-skip-db/baton-mongodb-atlas-v0.0.18-undo-skip-db-darwin-arm64.zip"
-      sha256 "178b98238069e90ea9c0503449331930de7439b43282f5f9d29f205d91acbcb2"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.0.18-max-connection-idle-time/baton-mongodb-atlas-v0.0.18-max-connection-idle-time-darwin-arm64.zip"
+      sha256 "ca63fe4ed52b12384c5fd9f6c42d258b40e43fe64f785b3e421a4227366a23fb"
 
       def install
         bin.install "baton-mongodb-atlas"
@@ -29,8 +29,8 @@ class BatonMongodbAtlas < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.0.18-undo-skip-db/baton-mongodb-atlas-v0.0.18-undo-skip-db-linux-amd64.tar.gz"
-        sha256 "5acd374944f09967929e3f4dc9d1e9e39f521d89fca7f59f868d9f6e6e8e7fb5"
+        url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.0.18-max-connection-idle-time/baton-mongodb-atlas-v0.0.18-max-connection-idle-time-linux-amd64.tar.gz"
+        sha256 "7324344a85d761b62fdf2fe0ef6af09cfad55d8e90ccf8d6c976c3a5307734ba"
 
         def install
           bin.install "baton-mongodb-atlas"
@@ -39,8 +39,8 @@ class BatonMongodbAtlas < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.0.18-undo-skip-db/baton-mongodb-atlas-v0.0.18-undo-skip-db-linux-arm64.tar.gz"
-        sha256 "2a307341f3d9e1bb01c86c72a8666a24ef18702ad3cb3e5682b5f33604fd7d1b"
+        url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.0.18-max-connection-idle-time/baton-mongodb-atlas-v0.0.18-max-connection-idle-time-linux-arm64.tar.gz"
+        sha256 "a5edd81ec177a856679388dfad9850b0bc296425f2913e77475a69e5955311e8"
 
         def install
           bin.install "baton-mongodb-atlas"
