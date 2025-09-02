@@ -5,20 +5,20 @@
 class BatonMongodbAtlas < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.18-max-connection-idle-time"
+  version "0.0.19"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.0.18-max-connection-idle-time/baton-mongodb-atlas-v0.0.18-max-connection-idle-time-darwin-amd64.zip"
-      sha256 "b46181c4a4900e4c3d2146615e8574c060c2d094a04bfc8db5d78d51f839782c"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.0.19/baton-mongodb-atlas-v0.0.19-darwin-amd64.zip"
+      sha256 "c85fa8407f106d3271d0f901e63864dec92234f096b19aaa78c2a9967f8c4be0"
 
       def install
         bin.install "baton-mongodb-atlas"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.0.18-max-connection-idle-time/baton-mongodb-atlas-v0.0.18-max-connection-idle-time-darwin-arm64.zip"
-      sha256 "ca63fe4ed52b12384c5fd9f6c42d258b40e43fe64f785b3e421a4227366a23fb"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.0.19/baton-mongodb-atlas-v0.0.19-darwin-arm64.zip"
+      sha256 "0e7c08a1eab90dd50ff54e2b8e2ce82ddcd37191f9e84eb1a63256542c69da97"
 
       def install
         bin.install "baton-mongodb-atlas"
@@ -29,8 +29,8 @@ class BatonMongodbAtlas < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.0.18-max-connection-idle-time/baton-mongodb-atlas-v0.0.18-max-connection-idle-time-linux-amd64.tar.gz"
-        sha256 "7324344a85d761b62fdf2fe0ef6af09cfad55d8e90ccf8d6c976c3a5307734ba"
+        url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.0.19/baton-mongodb-atlas-v0.0.19-linux-amd64.tar.gz"
+        sha256 "ba605933652e2f792f84ff73fd839502967ca018e23c566b239fc4f9daa0f413"
 
         def install
           bin.install "baton-mongodb-atlas"
@@ -39,8 +39,8 @@ class BatonMongodbAtlas < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.0.18-max-connection-idle-time/baton-mongodb-atlas-v0.0.18-max-connection-idle-time-linux-arm64.tar.gz"
-        sha256 "a5edd81ec177a856679388dfad9850b0bc296425f2913e77475a69e5955311e8"
+        url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.0.19/baton-mongodb-atlas-v0.0.19-linux-arm64.tar.gz"
+        sha256 "fd7daaba12238a6b4f9e92c123cac56a20085c959564c41fb5e2607093cb8ece"
 
         def install
           bin.install "baton-mongodb-atlas"
