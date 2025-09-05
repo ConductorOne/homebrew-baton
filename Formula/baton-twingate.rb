@@ -5,20 +5,20 @@
 class BatonTwingate < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.4"
+  version "0.0.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-twingate/releases/download/v0.0.4/baton-twingate-v0.0.4-darwin-amd64.zip"
-      sha256 "f1db16586bcc8a411e2156cb9239ac33eae3eb32e4ddd2d14740421a4469f578"
+      url "https://github.com/ConductorOne/baton-twingate/releases/download/v0.0.5/baton-twingate-v0.0.5-darwin-amd64.zip"
+      sha256 "fe9aceede40f6262f31ed670639190c2ed21b216923c323934dc02a054b8aae6"
 
       def install
         bin.install "baton-twingate"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-twingate/releases/download/v0.0.4/baton-twingate-v0.0.4-darwin-arm64.zip"
-      sha256 "c9540e50af56682f08f8f1e61977c0e8eb37438fce5ce945b60995f518015b75"
+      url "https://github.com/ConductorOne/baton-twingate/releases/download/v0.0.5/baton-twingate-v0.0.5-darwin-arm64.zip"
+      sha256 "c381324f62065a25f3d19704ea8fd499556973a03993b8de004bb67fcc50dc85"
 
       def install
         bin.install "baton-twingate"
@@ -29,8 +29,8 @@ class BatonTwingate < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-twingate/releases/download/v0.0.4/baton-twingate-v0.0.4-linux-amd64.tar.gz"
-        sha256 "c64b36dee4a5659dace52286c304b242ddf48a64a7e6198ae1bf3cc5d9bf35e5"
+        url "https://github.com/ConductorOne/baton-twingate/releases/download/v0.0.5/baton-twingate-v0.0.5-linux-amd64.tar.gz"
+        sha256 "a179e0f7c85a9b49fcf1474357d51f7767d75bb1112c18e401013b3f697bbabf"
 
         def install
           bin.install "baton-twingate"
@@ -39,8 +39,8 @@ class BatonTwingate < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-twingate/releases/download/v0.0.4/baton-twingate-v0.0.4-linux-arm64.tar.gz"
-        sha256 "c32094dc610bfd88c9c6da970e0284ce332de7e8232fad801fcff8f845708ffa"
+        url "https://github.com/ConductorOne/baton-twingate/releases/download/v0.0.5/baton-twingate-v0.0.5-linux-arm64.tar.gz"
+        sha256 "d99bf352403301ebdb847ac4da4dabb6d1f29bb6897e2c9ff22f466583fe3156"
 
         def install
           bin.install "baton-twingate"
