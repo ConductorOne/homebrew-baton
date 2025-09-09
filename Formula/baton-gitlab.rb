@@ -5,20 +5,20 @@
 class BatonGitlab < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.29-graphql"
+  version "0.0.30"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.29-graphql/baton-gitlab-v0.0.29-graphql-darwin-amd64.zip"
-      sha256 "4c043a690af1b10060d82c5345220e33cb03e17908a01d9366a0ce3a4ce66922"
+      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.30/baton-gitlab-v0.0.30-darwin-amd64.zip"
+      sha256 "59fc2795e202f944a5dded905c7ace2e7b19422551b910215a779761547a0548"
 
       def install
         bin.install "baton-gitlab"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.29-graphql/baton-gitlab-v0.0.29-graphql-darwin-arm64.zip"
-      sha256 "c1c031165b37d6ec00c02d18af311b0329fd09d2534d97a029029f23758f43df"
+      url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.30/baton-gitlab-v0.0.30-darwin-arm64.zip"
+      sha256 "d6c2c29ef389f317bda7ecd49ad1e4df0e5b3dea0db13ae5fc533a1387b22e48"
 
       def install
         bin.install "baton-gitlab"
@@ -29,8 +29,8 @@ class BatonGitlab < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.29-graphql/baton-gitlab-v0.0.29-graphql-linux-amd64.tar.gz"
-        sha256 "d707a16dde751e6b827b92f46d1f4f78bb40b8c45410e485777b76ac98cbc71e"
+        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.30/baton-gitlab-v0.0.30-linux-amd64.tar.gz"
+        sha256 "a5ab6a985dbba5cb9dfaf165eec379489babd38f03d913cb0d9ce70027af6957"
 
         def install
           bin.install "baton-gitlab"
@@ -39,8 +39,8 @@ class BatonGitlab < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.29-graphql/baton-gitlab-v0.0.29-graphql-linux-arm64.tar.gz"
-        sha256 "60f5f903fbc5c650ec01775fe7f873c13b6829c5e0d2bbe4da42ca0e8dadda3a"
+        url "https://github.com/ConductorOne/baton-gitlab/releases/download/v0.0.30/baton-gitlab-v0.0.30-linux-arm64.tar.gz"
+        sha256 "442a95919523bf2ae28bb24cbf4db63fb1758ff32c98e02ae01030c115699932"
 
         def install
           bin.install "baton-gitlab"
