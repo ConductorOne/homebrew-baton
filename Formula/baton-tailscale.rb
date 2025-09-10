@@ -5,20 +5,20 @@
 class BatonTailscale < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.7"
+  version "0.0.8"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-tailscale/releases/download/v0.0.7/baton-tailscale-v0.0.7-darwin-amd64.zip"
-      sha256 "95dfe6d920dfebaa7cc39948356c409948a0614c4a4f9e1b912635308d6bc88e"
+      url "https://github.com/ConductorOne/baton-tailscale/releases/download/v0.0.8/baton-tailscale-v0.0.8-darwin-amd64.zip"
+      sha256 "8775bfa7d41cde1592a5d78439fe65b0c91fec2c1b76c03daba39b2d8f77ed9d"
 
       def install
         bin.install "baton-tailscale"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-tailscale/releases/download/v0.0.7/baton-tailscale-v0.0.7-darwin-arm64.zip"
-      sha256 "868deaff32b263f7a1fa24bd708a87c93c21efcb228fab640e022ed0719fdd7b"
+      url "https://github.com/ConductorOne/baton-tailscale/releases/download/v0.0.8/baton-tailscale-v0.0.8-darwin-arm64.zip"
+      sha256 "686310bbf17d70c08b70a1b3440df2ae07f1164ac907c13b937dc6228c2742c9"
 
       def install
         bin.install "baton-tailscale"
@@ -29,8 +29,8 @@ class BatonTailscale < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-tailscale/releases/download/v0.0.7/baton-tailscale-v0.0.7-linux-amd64.tar.gz"
-        sha256 "8b105cb4231281d11210c62f018ae256be2769aec38f080353c0f277f4b031bc"
+        url "https://github.com/ConductorOne/baton-tailscale/releases/download/v0.0.8/baton-tailscale-v0.0.8-linux-amd64.tar.gz"
+        sha256 "e9a164e875e74f941969f7a61ee2668426934201dc1860de891ff2ccafb7030f"
 
         def install
           bin.install "baton-tailscale"
@@ -39,8 +39,8 @@ class BatonTailscale < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-tailscale/releases/download/v0.0.7/baton-tailscale-v0.0.7-linux-arm64.tar.gz"
-        sha256 "e3a3e6842b596e5d87b27072bc894b77b44adc2d555f4f04f5ce43bd616b21fb"
+        url "https://github.com/ConductorOne/baton-tailscale/releases/download/v0.0.8/baton-tailscale-v0.0.8-linux-arm64.tar.gz"
+        sha256 "02c7b43c218146beab147683d88231babcea5b53a739c2cf1bbe8294cdb308a0"
 
         def install
           bin.install "baton-tailscale"
