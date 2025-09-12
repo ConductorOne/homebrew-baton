@@ -5,20 +5,20 @@
 class BatonJira < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.20-debug-sessions-3"
+  version "0.1.20-debug-sessions-4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.1.20-debug-sessions-3/baton-jira-v0.1.20-debug-sessions-3-darwin-amd64.zip"
-      sha256 "3b82c3d666ebcc07bdfe1a77e4c0d0d32c811d0cf8ba6092cb279a921b54239a"
+      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.1.20-debug-sessions-4/baton-jira-v0.1.20-debug-sessions-4-darwin-amd64.zip"
+      sha256 "ca92cd1e52dd076a9d695f71274b8974361e35968d637b4b04c2cc054f9f9574"
 
       def install
         bin.install "baton-jira"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.1.20-debug-sessions-3/baton-jira-v0.1.20-debug-sessions-3-darwin-arm64.zip"
-      sha256 "39d41410a082460421aa274bda03959d792737bd76660ac35670d8d742858d6d"
+      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.1.20-debug-sessions-4/baton-jira-v0.1.20-debug-sessions-4-darwin-arm64.zip"
+      sha256 "d092c2f56c44cc69ed6d7001faa1f0a6ba4c7e8e194e9f642f8815be69b484b5"
 
       def install
         bin.install "baton-jira"
@@ -29,8 +29,8 @@ class BatonJira < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-jira/releases/download/v0.1.20-debug-sessions-3/baton-jira-v0.1.20-debug-sessions-3-linux-amd64.tar.gz"
-        sha256 "9710e780a4d127b73a4dabd0085194472095cc7cc37726feb6fefedcd5a3319c"
+        url "https://github.com/ConductorOne/baton-jira/releases/download/v0.1.20-debug-sessions-4/baton-jira-v0.1.20-debug-sessions-4-linux-amd64.tar.gz"
+        sha256 "d226dd25edf9771e9a863f6898bdf16fd41be46681ae5e64495f6941a649b855"
 
         def install
           bin.install "baton-jira"
@@ -39,8 +39,8 @@ class BatonJira < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-jira/releases/download/v0.1.20-debug-sessions-3/baton-jira-v0.1.20-debug-sessions-3-linux-arm64.tar.gz"
-        sha256 "66bad36d49206f57a2f1828c98c832b23ea642d9909c84f74ec0508aac0771cc"
+        url "https://github.com/ConductorOne/baton-jira/releases/download/v0.1.20-debug-sessions-4/baton-jira-v0.1.20-debug-sessions-4-linux-arm64.tar.gz"
+        sha256 "5248f7ea05d357c104befd00053b141c2def6dc5d587762b3e827ca77350a51c"
 
         def install
           bin.install "baton-jira"
