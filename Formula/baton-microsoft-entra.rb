@@ -5,20 +5,20 @@
 class BatonMicrosoftEntra < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.49-testing"
+  version "0.0.49"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-microsoft-entra/releases/download/v0.0.49-testing/baton-microsoft-entra-v0.0.49-testing-darwin-amd64.zip"
-      sha256 "286f1309707bb39fca4c6f43720ae1efe49c79462b69aefca8a0c1c282483827"
+      url "https://github.com/ConductorOne/baton-microsoft-entra/releases/download/v0.0.49/baton-microsoft-entra-v0.0.49-darwin-amd64.zip"
+      sha256 "e8bb8fb29221d5cca3792546b3abdd6abab2bf70fdbc3a1adccb6cbb9e0ab0ac"
 
       def install
         bin.install "baton-microsoft-entra"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-microsoft-entra/releases/download/v0.0.49-testing/baton-microsoft-entra-v0.0.49-testing-darwin-arm64.zip"
-      sha256 "f6b2b42eedf15dec358eec6ed399fec7259816f4e793069098eeef49d311c48f"
+      url "https://github.com/ConductorOne/baton-microsoft-entra/releases/download/v0.0.49/baton-microsoft-entra-v0.0.49-darwin-arm64.zip"
+      sha256 "60cf7983128b184047e31c7ac7b2dc89df941bab0712e33d55460408fbc960e6"
 
       def install
         bin.install "baton-microsoft-entra"
@@ -29,8 +29,8 @@ class BatonMicrosoftEntra < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-microsoft-entra/releases/download/v0.0.49-testing/baton-microsoft-entra-v0.0.49-testing-linux-amd64.tar.gz"
-        sha256 "150828e7c231762fa4b84b78587a181976015bbaa9d830d0d0196f54e6e801cb"
+        url "https://github.com/ConductorOne/baton-microsoft-entra/releases/download/v0.0.49/baton-microsoft-entra-v0.0.49-linux-amd64.tar.gz"
+        sha256 "49d5cd6a0ea4de0e2734c59839e925650bef78dec16be920099a845a46a636ff"
 
         def install
           bin.install "baton-microsoft-entra"
@@ -39,8 +39,8 @@ class BatonMicrosoftEntra < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-microsoft-entra/releases/download/v0.0.49-testing/baton-microsoft-entra-v0.0.49-testing-linux-arm64.tar.gz"
-        sha256 "e621d5803a3e9b21beaccc943a2cfcb6e825acf84541169d3a4669433f2f984f"
+        url "https://github.com/ConductorOne/baton-microsoft-entra/releases/download/v0.0.49/baton-microsoft-entra-v0.0.49-linux-arm64.tar.gz"
+        sha256 "2002252fde0715bc55deccc7fba044f2dd527fab1b46ec789ac0eba83c6cefad"
 
         def install
           bin.install "baton-microsoft-entra"
