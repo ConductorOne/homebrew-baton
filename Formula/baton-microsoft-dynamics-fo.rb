@@ -5,20 +5,20 @@
 class BatonMicrosoftDynamicsFo < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-microsoft-dynamics-fo/releases/download/v0.0.1/baton-microsoft-dynamics-fo-v0.0.1-darwin-amd64.zip"
-      sha256 "fca67d120e798a56e3815de74575b136050d850b9cac945b116bcfd13428a36e"
+      url "https://github.com/ConductorOne/baton-microsoft-dynamics-fo/releases/download/v0.0.2/baton-microsoft-dynamics-fo-v0.0.2-darwin-amd64.zip"
+      sha256 "9e5953fa2303333389d40edafd0034aba70d7682d6112984cd37dbd5aeda5816"
 
       def install
         bin.install "baton-microsoft-dynamics-fo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-microsoft-dynamics-fo/releases/download/v0.0.1/baton-microsoft-dynamics-fo-v0.0.1-darwin-arm64.zip"
-      sha256 "39b2557914d9d690bc17c95b618d45d3a878caa742491828e1d5f54803ee11a9"
+      url "https://github.com/ConductorOne/baton-microsoft-dynamics-fo/releases/download/v0.0.2/baton-microsoft-dynamics-fo-v0.0.2-darwin-arm64.zip"
+      sha256 "0098e35c97ab3f6f9b7c8294e38d36d96efff7477c8f6f79f7d717521f45696a"
 
       def install
         bin.install "baton-microsoft-dynamics-fo"
@@ -29,8 +29,8 @@ class BatonMicrosoftDynamicsFo < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-microsoft-dynamics-fo/releases/download/v0.0.1/baton-microsoft-dynamics-fo-v0.0.1-linux-amd64.tar.gz"
-        sha256 "de2981f33f6bb017582572ae46588d2db1273eca7d26681199f81bcf9f211fa5"
+        url "https://github.com/ConductorOne/baton-microsoft-dynamics-fo/releases/download/v0.0.2/baton-microsoft-dynamics-fo-v0.0.2-linux-amd64.tar.gz"
+        sha256 "4095beb92b6e1b5317fdf6ca0b6006917846d1016d8d30a2253841581992c2d8"
 
         def install
           bin.install "baton-microsoft-dynamics-fo"
@@ -39,8 +39,8 @@ class BatonMicrosoftDynamicsFo < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-microsoft-dynamics-fo/releases/download/v0.0.1/baton-microsoft-dynamics-fo-v0.0.1-linux-arm64.tar.gz"
-        sha256 "844dde8fae8de4078fda0890e91864e7fab01c763d7e077dba10fb6d6d1cc1fb"
+        url "https://github.com/ConductorOne/baton-microsoft-dynamics-fo/releases/download/v0.0.2/baton-microsoft-dynamics-fo-v0.0.2-linux-arm64.tar.gz"
+        sha256 "ea5b8cf4e5d719d708f34525f54b38cd8eef6b4a7a7aafb18934d9d426f1c685"
 
         def install
           bin.install "baton-microsoft-dynamics-fo"
