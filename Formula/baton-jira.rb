@@ -5,20 +5,20 @@
 class BatonJira < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.20-debug-sessions-4"
+  version "0.1.22"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.1.20-debug-sessions-4/baton-jira-v0.1.20-debug-sessions-4-darwin-amd64.zip"
-      sha256 "ca92cd1e52dd076a9d695f71274b8974361e35968d637b4b04c2cc054f9f9574"
+      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.1.22/baton-jira-v0.1.22-darwin-amd64.zip"
+      sha256 "dc1bdf3e726f3ab07ed01a318286c15e8d5a0d416820147fd5ea44d2bd4b0579"
 
       def install
         bin.install "baton-jira"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.1.20-debug-sessions-4/baton-jira-v0.1.20-debug-sessions-4-darwin-arm64.zip"
-      sha256 "d092c2f56c44cc69ed6d7001faa1f0a6ba4c7e8e194e9f642f8815be69b484b5"
+      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.1.22/baton-jira-v0.1.22-darwin-arm64.zip"
+      sha256 "8031b1a6a856d7fb104b8f2b220f24f6c0686db68e42864cd7e1761925dfd414"
 
       def install
         bin.install "baton-jira"
@@ -29,8 +29,8 @@ class BatonJira < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-jira/releases/download/v0.1.20-debug-sessions-4/baton-jira-v0.1.20-debug-sessions-4-linux-amd64.tar.gz"
-        sha256 "d226dd25edf9771e9a863f6898bdf16fd41be46681ae5e64495f6941a649b855"
+        url "https://github.com/ConductorOne/baton-jira/releases/download/v0.1.22/baton-jira-v0.1.22-linux-amd64.tar.gz"
+        sha256 "258a72c2226c5651da2acd44978eadc0ae69c8080dfbde4bc39be0a5dbf253ee"
 
         def install
           bin.install "baton-jira"
@@ -39,8 +39,8 @@ class BatonJira < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-jira/releases/download/v0.1.20-debug-sessions-4/baton-jira-v0.1.20-debug-sessions-4-linux-arm64.tar.gz"
-        sha256 "5248f7ea05d357c104befd00053b141c2def6dc5d587762b3e827ca77350a51c"
+        url "https://github.com/ConductorOne/baton-jira/releases/download/v0.1.22/baton-jira-v0.1.22-linux-arm64.tar.gz"
+        sha256 "336d8e08477e948d986f3ead37070f4ab3407ea9a2423617b4f9d695c2ed820b"
 
         def install
           bin.install "baton-jira"
