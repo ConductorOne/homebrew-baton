@@ -5,20 +5,20 @@
 class BatonHttp < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.13.8"
+  version "0.13.9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-http/releases/download/v0.13.8/baton-http-v0.13.8-darwin-amd64.zip"
-      sha256 "a1c8d3e5485a2e0745535d176174b64f481df9611eab142c3a26cdd165ce61ef"
+      url "https://github.com/ConductorOne/baton-http/releases/download/v0.13.9/baton-http-v0.13.9-darwin-amd64.zip"
+      sha256 "5f64d0a9f12e409f1678ba1a2b7c6e0ff773bc34d36c3a4424f2c63346f6e574"
 
       def install
         bin.install "baton-http"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-http/releases/download/v0.13.8/baton-http-v0.13.8-darwin-arm64.zip"
-      sha256 "1e4d4ab24718a60ed0b61319761a01435cb23d4d8c48ceafee5752b952f98d99"
+      url "https://github.com/ConductorOne/baton-http/releases/download/v0.13.9/baton-http-v0.13.9-darwin-arm64.zip"
+      sha256 "d9707c8cce237ca3b95da6450e948a1ec11722e710cee97629432e605fb80293"
 
       def install
         bin.install "baton-http"
@@ -29,8 +29,8 @@ class BatonHttp < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-http/releases/download/v0.13.8/baton-http-v0.13.8-linux-amd64.tar.gz"
-        sha256 "13c1b9bab11736f5b27ee193ef671c9cd2962ff43ea0304d6fcadf7364fb34bb"
+        url "https://github.com/ConductorOne/baton-http/releases/download/v0.13.9/baton-http-v0.13.9-linux-amd64.tar.gz"
+        sha256 "f09344368581a03daf40e4f8aeac57aa5b0b44d43ec041cc4f81249353e02d8a"
 
         def install
           bin.install "baton-http"
@@ -39,8 +39,8 @@ class BatonHttp < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-http/releases/download/v0.13.8/baton-http-v0.13.8-linux-arm64.tar.gz"
-        sha256 "6c49daea7ab5b240e3db41306fe0e47eaf9bbe443420c0f468c1f7cc5f01c927"
+        url "https://github.com/ConductorOne/baton-http/releases/download/v0.13.9/baton-http-v0.13.9-linux-arm64.tar.gz"
+        sha256 "7aa468d2dc9c965c3e60a9a5fbf80193f8116a2c753da70544b4ae5a9e8ce1a3"
 
         def install
           bin.install "baton-http"
