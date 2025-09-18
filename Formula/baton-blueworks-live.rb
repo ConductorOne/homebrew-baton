@@ -5,20 +5,20 @@
 class BatonBlueworksLive < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-blueworks-live/releases/download/v0.0.1/baton-blueworks-live-v0.0.1-darwin-amd64.zip"
-      sha256 "1e2be7921323a8a4ee7467259e233c746451657eea431c1dc42d98e0e8a9c2ab"
+      url "https://github.com/ConductorOne/baton-blueworks-live/releases/download/v0.0.2/baton-blueworks-live-v0.0.2-darwin-amd64.zip"
+      sha256 "261ba03552388fa2af7fd71d88f5d0fe3235fab5c9247ee8f34e0b417a745a1c"
 
       def install
         bin.install "baton-blueworks-live"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-blueworks-live/releases/download/v0.0.1/baton-blueworks-live-v0.0.1-darwin-arm64.zip"
-      sha256 "b87497bca5ca9e88b3990f26c7324beb22f69d5f802e9cc8097903a6df5e3161"
+      url "https://github.com/ConductorOne/baton-blueworks-live/releases/download/v0.0.2/baton-blueworks-live-v0.0.2-darwin-arm64.zip"
+      sha256 "0da825919c581365298a096babc0375a23748f7bd21147f353ec318a59964ae6"
 
       def install
         bin.install "baton-blueworks-live"
@@ -29,8 +29,8 @@ class BatonBlueworksLive < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-blueworks-live/releases/download/v0.0.1/baton-blueworks-live-v0.0.1-linux-amd64.tar.gz"
-        sha256 "12c9ba0b4203cb3910d3df604a30bf52d378d1b0a67f3a12acfc4d4e819a3aea"
+        url "https://github.com/ConductorOne/baton-blueworks-live/releases/download/v0.0.2/baton-blueworks-live-v0.0.2-linux-amd64.tar.gz"
+        sha256 "21882b68a0f00acedfd4516089dee7d425b0dd85ba8126ed6f6b2f807818ed8e"
 
         def install
           bin.install "baton-blueworks-live"
@@ -39,8 +39,8 @@ class BatonBlueworksLive < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-blueworks-live/releases/download/v0.0.1/baton-blueworks-live-v0.0.1-linux-arm64.tar.gz"
-        sha256 "667ffec157743633df6c49c91cbca5e7bcc495f186821a65c7a7fb5b7db7db36"
+        url "https://github.com/ConductorOne/baton-blueworks-live/releases/download/v0.0.2/baton-blueworks-live-v0.0.2-linux-arm64.tar.gz"
+        sha256 "f9463119a242335706bfc8f65f97e6430881e42184a52ec99b922f8b0400486d"
 
         def install
           bin.install "baton-blueworks-live"
