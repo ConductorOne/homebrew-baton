@@ -5,20 +5,20 @@
 class BatonGreenhouse < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.15"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-greenhouse/releases/download/v0.0.15/baton-greenhouse-v0.0.15-darwin-amd64.zip"
-      sha256 "61825f07f39d083ba4f9af944852e452bfc91163a7636cb5a3d21ec8e0a392ee"
+      url "https://github.com/ConductorOne/baton-greenhouse/releases/download/v0.1.0/baton-greenhouse-v0.1.0-darwin-amd64.zip"
+      sha256 "86d4541f689f70160158b016df9d5ed753e93e8d4c89498fa40773ec580b1871"
 
       def install
         bin.install "baton-greenhouse"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-greenhouse/releases/download/v0.0.15/baton-greenhouse-v0.0.15-darwin-arm64.zip"
-      sha256 "dc4470b017c38542be0474dc0b1d241494e5831c2a1cd1ab10920b6eccb679ad"
+      url "https://github.com/ConductorOne/baton-greenhouse/releases/download/v0.1.0/baton-greenhouse-v0.1.0-darwin-arm64.zip"
+      sha256 "bc8df812f5139ddfb6cc3b2f5a6aa891af952e3c4925b6cf227daf4d04e8fc12"
 
       def install
         bin.install "baton-greenhouse"
@@ -29,8 +29,8 @@ class BatonGreenhouse < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-greenhouse/releases/download/v0.0.15/baton-greenhouse-v0.0.15-linux-amd64.tar.gz"
-        sha256 "6e575ce69a8bbca52d7189eebec029d7c3032f244415aafbb20ae48e876d0079"
+        url "https://github.com/ConductorOne/baton-greenhouse/releases/download/v0.1.0/baton-greenhouse-v0.1.0-linux-amd64.tar.gz"
+        sha256 "e03ed8aa371058b825ec86e121a03033cf5f7558005c9893a0837cbb395933a8"
 
         def install
           bin.install "baton-greenhouse"
@@ -39,8 +39,8 @@ class BatonGreenhouse < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-greenhouse/releases/download/v0.0.15/baton-greenhouse-v0.0.15-linux-arm64.tar.gz"
-        sha256 "dfcd9b18cbffce1eac9db840df4d4b73bce3721914711903489ccb3ef8575e67"
+        url "https://github.com/ConductorOne/baton-greenhouse/releases/download/v0.1.0/baton-greenhouse-v0.1.0-linux-arm64.tar.gz"
+        sha256 "da8f5cd7c978e9c3a20332befe8ccd09a462ec5385950cdc9e8bdd0a883ece2f"
 
         def install
           bin.install "baton-greenhouse"
