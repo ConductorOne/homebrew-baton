@@ -5,20 +5,20 @@
 class BatonProcore < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-procore/releases/download/v0.0.1/baton-procore-v0.0.1-darwin-amd64.zip"
-      sha256 "1ca3a7be745f6569fdc7a39cbbb32a9fe9840f4bf1059092ee49b24a88c370cf"
+      url "https://github.com/ConductorOne/baton-procore/releases/download/v0.0.2/baton-procore-v0.0.2-darwin-amd64.zip"
+      sha256 "3bdd8c33ec1d237fe51f4b3c94562fdc9d7f9fedc49218286854061be14e359a"
 
       def install
         bin.install "baton-procore"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-procore/releases/download/v0.0.1/baton-procore-v0.0.1-darwin-arm64.zip"
-      sha256 "6edcb4b7432d05d03eb331375d72b5da9760f0c660a1b56ae885951918ec0989"
+      url "https://github.com/ConductorOne/baton-procore/releases/download/v0.0.2/baton-procore-v0.0.2-darwin-arm64.zip"
+      sha256 "d105452a867acc03e5e38ae2742204d64afabc06ba61f60e433bf8b66b7565ae"
 
       def install
         bin.install "baton-procore"
@@ -29,8 +29,8 @@ class BatonProcore < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-procore/releases/download/v0.0.1/baton-procore-v0.0.1-linux-amd64.tar.gz"
-        sha256 "b7139e123a9eebdd0256c46c7054f316e24a2e9eba7f9ccccbc5ae7421cc5c48"
+        url "https://github.com/ConductorOne/baton-procore/releases/download/v0.0.2/baton-procore-v0.0.2-linux-amd64.tar.gz"
+        sha256 "b47e268188c59d41058cedb6509db7cb3dec9ff656d092c0ba02e2da6f9ba363"
 
         def install
           bin.install "baton-procore"
@@ -39,8 +39,8 @@ class BatonProcore < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-procore/releases/download/v0.0.1/baton-procore-v0.0.1-linux-arm64.tar.gz"
-        sha256 "13978f10cc775fcaad6ceaae2560e3826f1fc020a5693e54841fd4dd4131f151"
+        url "https://github.com/ConductorOne/baton-procore/releases/download/v0.0.2/baton-procore-v0.0.2-linux-arm64.tar.gz"
+        sha256 "21a346fe5bc034c479921818b86537d1d85a441e050aa787a7d5d5ea9045cd1e"
 
         def install
           bin.install "baton-procore"
