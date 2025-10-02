@@ -5,20 +5,20 @@
 class BatonGithubTest < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.109-field-groups"
+  version "0.0.110-field-groups"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.0.109-field-groups/baton-github-test-v0.0.109-field-groups-darwin-amd64.zip"
-      sha256 "a1c6e6ef05de3d83095d530157ae0a85a585cd35279fde21a1ad7890a8a148bf"
+      url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.0.110-field-groups/baton-github-test-v0.0.110-field-groups-darwin-amd64.zip"
+      sha256 "1890641bf3734b64baab707858e008220cb02f4f403104164c345950a8fed2d1"
 
       def install
         bin.install "baton-github-test"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.0.109-field-groups/baton-github-test-v0.0.109-field-groups-darwin-arm64.zip"
-      sha256 "5df1227cd67d98149fa432e2ba71680eb1e3a025018ec3ff92694fd0eae421f4"
+      url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.0.110-field-groups/baton-github-test-v0.0.110-field-groups-darwin-arm64.zip"
+      sha256 "f1b7aa1f7d2fb407ff49589ebbeb8f725f438f2a1fded5ffc2c370810b86162a"
 
       def install
         bin.install "baton-github-test"
@@ -29,8 +29,8 @@ class BatonGithubTest < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.0.109-field-groups/baton-github-test-v0.0.109-field-groups-linux-amd64.tar.gz"
-        sha256 "876a0029ed09bf02f82123656f6bf400b89221735cbf516f3a8369bd02d778a9"
+        url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.0.110-field-groups/baton-github-test-v0.0.110-field-groups-linux-amd64.tar.gz"
+        sha256 "efe72a6163e11f769363cfa8fa81705b529ac52f585ff4d9d1cb61b28bad10a2"
 
         def install
           bin.install "baton-github-test"
@@ -39,8 +39,8 @@ class BatonGithubTest < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.0.109-field-groups/baton-github-test-v0.0.109-field-groups-linux-arm64.tar.gz"
-        sha256 "45d161a5f95cb9872433bdb16a61e4fd4a1da8d02c23a2d01a5bf0a5633bef45"
+        url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.0.110-field-groups/baton-github-test-v0.0.110-field-groups-linux-arm64.tar.gz"
+        sha256 "54eece4fd6afe723cb4aa69d94d9325885fac8072b9e1d7835d42b1574630e82"
 
         def install
           bin.install "baton-github-test"
