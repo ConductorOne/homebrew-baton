@@ -5,20 +5,20 @@
 class BatonMinecraftLuckperms < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.8"
+  version "0.0.9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-minecraft-luckperms/releases/download/v0.0.8/baton-minecraft-luckperms-v0.0.8-darwin-amd64.zip"
-      sha256 "3d6a5146f5b15d2c6f85bc60f5d599361be2ac5a47cd760c6fa04ad7e81b7f88"
+      url "https://github.com/ConductorOne/baton-minecraft-luckperms/releases/download/v0.0.9/baton-minecraft-luckperms-v0.0.9-darwin-amd64.zip"
+      sha256 "5aa50e1ed7cbc6736a620efa581ea6f805fe3aa37915e72514daabfb1b9f9494"
 
       def install
         bin.install "baton-minecraft-luckperms"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-minecraft-luckperms/releases/download/v0.0.8/baton-minecraft-luckperms-v0.0.8-darwin-arm64.zip"
-      sha256 "fb0c13db9a05574e7522dc5aa9ed1b3588224b8db2dfbe49178b2d6dbda3ba7c"
+      url "https://github.com/ConductorOne/baton-minecraft-luckperms/releases/download/v0.0.9/baton-minecraft-luckperms-v0.0.9-darwin-arm64.zip"
+      sha256 "ba16124d5967347cedfb01199f216205f34fe61dd70de05bc5e052b6d9aa9f81"
 
       def install
         bin.install "baton-minecraft-luckperms"
@@ -29,8 +29,8 @@ class BatonMinecraftLuckperms < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-minecraft-luckperms/releases/download/v0.0.8/baton-minecraft-luckperms-v0.0.8-linux-amd64.tar.gz"
-        sha256 "585d0b443266c3bd5c903db3a7f9cd072808a1ffebbd7cc0e3e58953c1e1f2f4"
+        url "https://github.com/ConductorOne/baton-minecraft-luckperms/releases/download/v0.0.9/baton-minecraft-luckperms-v0.0.9-linux-amd64.tar.gz"
+        sha256 "ed6344827b1db984c1b9c3ce420f062d4b17974da7996126c08acc691f8645f3"
 
         def install
           bin.install "baton-minecraft-luckperms"
@@ -39,8 +39,8 @@ class BatonMinecraftLuckperms < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-minecraft-luckperms/releases/download/v0.0.8/baton-minecraft-luckperms-v0.0.8-linux-arm64.tar.gz"
-        sha256 "279c3306566630865ba3da42137f0d15cf3675e985ae5df28b537f28da0bf6f0"
+        url "https://github.com/ConductorOne/baton-minecraft-luckperms/releases/download/v0.0.9/baton-minecraft-luckperms-v0.0.9-linux-arm64.tar.gz"
+        sha256 "98f850118e921541481e636bf4aaecfec410994c648e67e60dc2b1e3bbd81f9c"
 
         def install
           bin.install "baton-minecraft-luckperms"
