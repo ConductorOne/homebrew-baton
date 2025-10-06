@@ -5,20 +5,20 @@
 class BatonMonday < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-monday/releases/download/v0.0.3/baton-monday-v0.0.3-darwin-amd64.zip"
-      sha256 "78ade4cf6ba127b09ec87376794a8493f9eca1f0ee8d8f490dade627f775c38d"
+      url "https://github.com/ConductorOne/baton-monday/releases/download/v0.0.4/baton-monday-v0.0.4-darwin-amd64.zip"
+      sha256 "08e79ac077977eae8f8cc6779495b52875a4a9cb38de89e7cdbde7091e764d9d"
 
       def install
         bin.install "baton-monday"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-monday/releases/download/v0.0.3/baton-monday-v0.0.3-darwin-arm64.zip"
-      sha256 "4d7e0bc76f5628add75ff30eeec63b7542e749d43f6a2c9f99421e8fc475f719"
+      url "https://github.com/ConductorOne/baton-monday/releases/download/v0.0.4/baton-monday-v0.0.4-darwin-arm64.zip"
+      sha256 "a0cae1287d87dcc45527f02d20f5de97a4915fca7d42d51cef1d0e46c69f5b67"
 
       def install
         bin.install "baton-monday"
@@ -29,8 +29,8 @@ class BatonMonday < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-monday/releases/download/v0.0.3/baton-monday-v0.0.3-linux-amd64.tar.gz"
-        sha256 "e738a0fc1144125a55fd1407f5b29cf9aaf5f06654bdeaf5e8df93ec264ff659"
+        url "https://github.com/ConductorOne/baton-monday/releases/download/v0.0.4/baton-monday-v0.0.4-linux-amd64.tar.gz"
+        sha256 "90fdc91254558d25c7f8827dcb528ad8b1b41651a0c66381d95d786097646495"
 
         def install
           bin.install "baton-monday"
@@ -39,8 +39,8 @@ class BatonMonday < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-monday/releases/download/v0.0.3/baton-monday-v0.0.3-linux-arm64.tar.gz"
-        sha256 "2426e4ca5c154a27f6d4ce6e2ec4529955125a4dd002763552bc2be29132e51c"
+        url "https://github.com/ConductorOne/baton-monday/releases/download/v0.0.4/baton-monday-v0.0.4-linux-arm64.tar.gz"
+        sha256 "62f4771bc4c36d6183ada69a59bd1be73fdd7b3bffc2836ee1ae56c4050a8ebe"
 
         def install
           bin.install "baton-monday"
