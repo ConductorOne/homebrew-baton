@@ -5,20 +5,20 @@
 class BatonDeel < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-deel/releases/download/v0.0.1/baton-deel-v0.0.1-darwin-amd64.zip"
-      sha256 "ce4f9f352efe29c05648ff63c7efd399ee641452e2c519ee25599b23caa06455"
+      url "https://github.com/ConductorOne/baton-deel/releases/download/v0.0.2/baton-deel-v0.0.2-darwin-amd64.zip"
+      sha256 "b01b6ef16646fe2e5673e88d833b6cbfc941d6e675e2bb7ec6576571c4f82aec"
 
       def install
         bin.install "baton-deel"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-deel/releases/download/v0.0.1/baton-deel-v0.0.1-darwin-arm64.zip"
-      sha256 "412546bc8250e0ca8049ae168ec643bf6efb280a8ddfb59fee97500a3cf4cec0"
+      url "https://github.com/ConductorOne/baton-deel/releases/download/v0.0.2/baton-deel-v0.0.2-darwin-arm64.zip"
+      sha256 "192b7434e76bc1298f24256ddd03ef04687e30bad38787e0ef323ad104ec6b0f"
 
       def install
         bin.install "baton-deel"
@@ -29,8 +29,8 @@ class BatonDeel < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-deel/releases/download/v0.0.1/baton-deel-v0.0.1-linux-amd64.tar.gz"
-        sha256 "199d472fa13b41df93d8b11980a7271614325fbdbe741a041aaea5481a12638f"
+        url "https://github.com/ConductorOne/baton-deel/releases/download/v0.0.2/baton-deel-v0.0.2-linux-amd64.tar.gz"
+        sha256 "6752c9e056c12a3a652b196f12e569e651d3f9d82700aab59169e460ed803046"
 
         def install
           bin.install "baton-deel"
@@ -39,8 +39,8 @@ class BatonDeel < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-deel/releases/download/v0.0.1/baton-deel-v0.0.1-linux-arm64.tar.gz"
-        sha256 "5da7cd25aa0c2f1d4ddc2af1d8dfa1542e758fd9f0c8c3c653a9b9877d5adabc"
+        url "https://github.com/ConductorOne/baton-deel/releases/download/v0.0.2/baton-deel-v0.0.2-linux-arm64.tar.gz"
+        sha256 "d0f7d37796a8111828582ceab53f7d623aecc2ae6965f9fd20a82d1829f55e13"
 
         def install
           bin.install "baton-deel"
