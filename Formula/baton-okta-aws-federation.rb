@@ -5,20 +5,20 @@
 class BatonOktaAwsFederation < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-okta-aws-federation/releases/download/v0.3.0/baton-okta-aws-federation-v0.3.0-darwin-amd64.zip"
-      sha256 "413a4b26a83e92f6e1ce04994abc61ab86b5c130102dee8366fd644d70a0cc78"
+      url "https://github.com/ConductorOne/baton-okta-aws-federation/releases/download/v0.3.1/baton-okta-aws-federation-v0.3.1-darwin-amd64.zip"
+      sha256 "9a2ac317e101d8d92453025fa3045c5e6e3c88803f7fb06e24c10013aa477940"
 
       def install
         bin.install "baton-okta-aws-federation"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-okta-aws-federation/releases/download/v0.3.0/baton-okta-aws-federation-v0.3.0-darwin-arm64.zip"
-      sha256 "896f7f5b7e56da5144b00d126b6d5e28623f8c39990138fc18ed56bcecbc64dc"
+      url "https://github.com/ConductorOne/baton-okta-aws-federation/releases/download/v0.3.1/baton-okta-aws-federation-v0.3.1-darwin-arm64.zip"
+      sha256 "28674c4bfbbad45d945f02b0f736242fbe7ae02695013dd82da18cf9663f4a49"
 
       def install
         bin.install "baton-okta-aws-federation"
@@ -29,8 +29,8 @@ class BatonOktaAwsFederation < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-okta-aws-federation/releases/download/v0.3.0/baton-okta-aws-federation-v0.3.0-linux-amd64.tar.gz"
-        sha256 "ba06c59a312061ea98a63d548b104be247ce1f96c87776e2547a09a8e10c3270"
+        url "https://github.com/ConductorOne/baton-okta-aws-federation/releases/download/v0.3.1/baton-okta-aws-federation-v0.3.1-linux-amd64.tar.gz"
+        sha256 "d6d5a72e9eb59b2e0c73a5c48caccf371e3d4c3a96fe53b0dd00b51bfd540beb"
 
         def install
           bin.install "baton-okta-aws-federation"
@@ -39,8 +39,8 @@ class BatonOktaAwsFederation < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-okta-aws-federation/releases/download/v0.3.0/baton-okta-aws-federation-v0.3.0-linux-arm64.tar.gz"
-        sha256 "3f27db707356f7558f445b052f482e9813bd48647a5deeb33523abd726e0924e"
+        url "https://github.com/ConductorOne/baton-okta-aws-federation/releases/download/v0.3.1/baton-okta-aws-federation-v0.3.1-linux-arm64.tar.gz"
+        sha256 "081c1c45157301ffa6afd7df39564cee4e9a4ab7149e044ebb34f41d81d0586d"
 
         def install
           bin.install "baton-okta-aws-federation"
