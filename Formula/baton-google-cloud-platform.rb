@@ -5,20 +5,20 @@
 class BatonGoogleCloudPlatform < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.15"
+  version "0.0.19-lambda-test"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-google-cloud-platform/releases/download/v0.0.15/baton-google-cloud-platform-v0.0.15-darwin-amd64.zip"
-      sha256 "e5dac331f4f5a94eb772cce4969c101bd6f2f00d5022da67b9cc7c814693c9f9"
+      url "https://github.com/ConductorOne/baton-google-cloud-platform/releases/download/v0.0.19-lambda-test/baton-google-cloud-platform-v0.0.19-lambda-test-darwin-amd64.zip"
+      sha256 "cb2297aa2031a493ab0d92bd76586da028311277c4ad72adb1404f93eebbf988"
 
       def install
         bin.install "baton-google-cloud-platform"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-google-cloud-platform/releases/download/v0.0.15/baton-google-cloud-platform-v0.0.15-darwin-arm64.zip"
-      sha256 "10959ad5c95ab865a8fc2de9703b31081952afbb092c414fa90980d9c70d1387"
+      url "https://github.com/ConductorOne/baton-google-cloud-platform/releases/download/v0.0.19-lambda-test/baton-google-cloud-platform-v0.0.19-lambda-test-darwin-arm64.zip"
+      sha256 "0b4439b468808488d4b483d76c901177cafcee43d07bf1111eb61fee31664610"
 
       def install
         bin.install "baton-google-cloud-platform"
@@ -27,18 +27,24 @@ class BatonGoogleCloudPlatform < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-google-cloud-platform/releases/download/v0.0.15/baton-google-cloud-platform-v0.0.15-linux-amd64.tar.gz"
-      sha256 "687e596c0dfc33decc7bb34eb422e0b6c26b2a155bc8f4a0212f9d1ddd39aa96"
-      def install
-        bin.install "baton-google-cloud-platform"
+    if Hardware::CPU.intel?
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/ConductorOne/baton-google-cloud-platform/releases/download/v0.0.19-lambda-test/baton-google-cloud-platform-v0.0.19-lambda-test-linux-amd64.tar.gz"
+        sha256 "68b449a9dc3d3ece34877f039b383eb49373e65e49233f2423fdec3f3b362263"
+
+        def install
+          bin.install "baton-google-cloud-platform"
+        end
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-google-cloud-platform/releases/download/v0.0.15/baton-google-cloud-platform-v0.0.15-linux-arm64.tar.gz"
-      sha256 "6dd8f68e3711335ec79b7741eea511491c7521763b6a40648ed231685dfd837d"
-      def install
-        bin.install "baton-google-cloud-platform"
+    if Hardware::CPU.arm?
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/ConductorOne/baton-google-cloud-platform/releases/download/v0.0.19-lambda-test/baton-google-cloud-platform-v0.0.19-lambda-test-linux-arm64.tar.gz"
+        sha256 "603a529ca2fe8f3d38a56fe8189bbbddc1b525e61290fc3b84980f077f80e114"
+
+        def install
+          bin.install "baton-google-cloud-platform"
+        end
       end
     end
   end
