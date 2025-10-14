@@ -5,20 +5,20 @@
 class BatonGoogleCloudPlatform < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.19-lambda-test-5"
+  version "0.0.19-lambda-test-6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-google-cloud-platform/releases/download/v0.0.19-lambda-test-5/baton-google-cloud-platform-v0.0.19-lambda-test-5-darwin-amd64.zip"
-      sha256 "7c76e31aefe64cc738113bf940b73d500852e3cc4dd1bd4a808bb509bcf086da"
+      url "https://github.com/ConductorOne/baton-google-cloud-platform/releases/download/v0.0.19-lambda-test-6/baton-google-cloud-platform-v0.0.19-lambda-test-6-darwin-amd64.zip"
+      sha256 "50128b797c3cd5a378dafdf97de4705463b3272c23d950179141e55079c8bd28"
 
       def install
         bin.install "baton-google-cloud-platform"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-google-cloud-platform/releases/download/v0.0.19-lambda-test-5/baton-google-cloud-platform-v0.0.19-lambda-test-5-darwin-arm64.zip"
-      sha256 "fad37e9c7510c21ff969acb939569fa8bf6841ef01538e623b90f93a1736e073"
+      url "https://github.com/ConductorOne/baton-google-cloud-platform/releases/download/v0.0.19-lambda-test-6/baton-google-cloud-platform-v0.0.19-lambda-test-6-darwin-arm64.zip"
+      sha256 "3e78740a6bd45cdbc91210f236c27dcd5fde778e3074993d6cda16e53d2830dc"
 
       def install
         bin.install "baton-google-cloud-platform"
@@ -29,8 +29,8 @@ class BatonGoogleCloudPlatform < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-google-cloud-platform/releases/download/v0.0.19-lambda-test-5/baton-google-cloud-platform-v0.0.19-lambda-test-5-linux-amd64.tar.gz"
-        sha256 "26fa41973032a2868dda6b0ff99c0c04e6f994a54da3e083acb01d2afb9c1452"
+        url "https://github.com/ConductorOne/baton-google-cloud-platform/releases/download/v0.0.19-lambda-test-6/baton-google-cloud-platform-v0.0.19-lambda-test-6-linux-amd64.tar.gz"
+        sha256 "b0cdc9dd3bbe3a7be0211413fe60cf09712bf453c4fd469d2c37e85291f05209"
 
         def install
           bin.install "baton-google-cloud-platform"
@@ -39,8 +39,8 @@ class BatonGoogleCloudPlatform < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-google-cloud-platform/releases/download/v0.0.19-lambda-test-5/baton-google-cloud-platform-v0.0.19-lambda-test-5-linux-arm64.tar.gz"
-        sha256 "0e83e0d1eb7c8745a36e91d04ceb093a2b0285e000c4480090c99e81a1c841c8"
+        url "https://github.com/ConductorOne/baton-google-cloud-platform/releases/download/v0.0.19-lambda-test-6/baton-google-cloud-platform-v0.0.19-lambda-test-6-linux-arm64.tar.gz"
+        sha256 "c703ebbff69c23c327197652cea3c28cbadc4ca568a0b7e46c1731530f88b989"
 
         def install
           bin.install "baton-google-cloud-platform"
