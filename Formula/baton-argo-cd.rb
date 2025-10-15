@@ -5,20 +5,20 @@
 class BatonArgoCd < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-argo-cd/releases/download/v0.0.1/baton-argo-cd-v0.0.1-darwin-amd64.zip"
-      sha256 "9fd378c0744b83ee9a3add6602232dccdf9efc4e530baf18760bf776e76c9195"
+      url "https://github.com/ConductorOne/baton-argo-cd/releases/download/v0.0.2/baton-argo-cd-v0.0.2-darwin-amd64.zip"
+      sha256 "b9f53f94df7b31deb5d88b5de89a9955cc451c822a152ccef1e22fa54a849bad"
 
       def install
         bin.install "baton-argo-cd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-argo-cd/releases/download/v0.0.1/baton-argo-cd-v0.0.1-darwin-arm64.zip"
-      sha256 "cd49969e1d06c2f585cc77c10a3b698d7230324a39573d7ee08171575222f578"
+      url "https://github.com/ConductorOne/baton-argo-cd/releases/download/v0.0.2/baton-argo-cd-v0.0.2-darwin-arm64.zip"
+      sha256 "25a20a5ec95d85c937d61aa622ab43340491dc919043d318a9dc968d0c5ddc6c"
 
       def install
         bin.install "baton-argo-cd"
@@ -29,8 +29,8 @@ class BatonArgoCd < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-argo-cd/releases/download/v0.0.1/baton-argo-cd-v0.0.1-linux-amd64.tar.gz"
-        sha256 "1872da4cbe7a8907f50cf618627ce0fa2de2c7a42af883f7236a6eb1e04aa2b2"
+        url "https://github.com/ConductorOne/baton-argo-cd/releases/download/v0.0.2/baton-argo-cd-v0.0.2-linux-amd64.tar.gz"
+        sha256 "aa24a55d3b85127bd3e2e1a06ca53ad3a785fc47c2a7f1fa96bb5b86f116ffb2"
 
         def install
           bin.install "baton-argo-cd"
@@ -39,8 +39,8 @@ class BatonArgoCd < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-argo-cd/releases/download/v0.0.1/baton-argo-cd-v0.0.1-linux-arm64.tar.gz"
-        sha256 "3a8ebc226e0492a1cb597e04b73f764e61690c0c2f88c27180bcbf798c26e793"
+        url "https://github.com/ConductorOne/baton-argo-cd/releases/download/v0.0.2/baton-argo-cd-v0.0.2-linux-arm64.tar.gz"
+        sha256 "69a0b7b0a50533198dc884fec0352079d528686ce5e21636cb7f693d835e695c"
 
         def install
           bin.install "baton-argo-cd"
