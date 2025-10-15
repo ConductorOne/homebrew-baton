@@ -5,20 +5,20 @@
 class BatonGithubTest < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.110-otel-tags"
+  version "0.0.111-otel-tags"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.0.110-otel-tags/baton-github-test-v0.0.110-otel-tags-darwin-amd64.zip"
-      sha256 "3f4f2bdf16c72355bb84a1799c16f1d7ef8789a43a3cdd93b0a016dc1e2076e4"
+      url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.0.111-otel-tags/baton-github-test-v0.0.111-otel-tags-darwin-amd64.zip"
+      sha256 "590618789c074462be7b92e6821c66524321fa7dbd42454069826283717f5c09"
 
       def install
         bin.install "baton-github-test"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.0.110-otel-tags/baton-github-test-v0.0.110-otel-tags-darwin-arm64.zip"
-      sha256 "770a8263ee16d70530cc725b70867164632ab23d627a624c38d400d912708209"
+      url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.0.111-otel-tags/baton-github-test-v0.0.111-otel-tags-darwin-arm64.zip"
+      sha256 "0321dafb66081d00dcf6e7eb72cc9cef8526660e56f36cf5b27257c10d0eb394"
 
       def install
         bin.install "baton-github-test"
@@ -29,8 +29,8 @@ class BatonGithubTest < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.0.110-otel-tags/baton-github-test-v0.0.110-otel-tags-linux-amd64.tar.gz"
-        sha256 "68f211798475d092934cac4340bf36fec3a3f22231ef2e46109db2f9a2370c7f"
+        url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.0.111-otel-tags/baton-github-test-v0.0.111-otel-tags-linux-amd64.tar.gz"
+        sha256 "cb1f9519802610f41bf93a5047b7952de12ea1ab4c6a602052d3d627adee33eb"
 
         def install
           bin.install "baton-github-test"
@@ -39,8 +39,8 @@ class BatonGithubTest < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.0.110-otel-tags/baton-github-test-v0.0.110-otel-tags-linux-arm64.tar.gz"
-        sha256 "3f7048d4b09e0983bb4b467f93c3fe7a41af4b6284c529a6a4076fb4456203fb"
+        url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.0.111-otel-tags/baton-github-test-v0.0.111-otel-tags-linux-arm64.tar.gz"
+        sha256 "94e199123929252c4d8f7e9fe8173ee0a3e7f04360ab92c64e0336ab2da2b153"
 
         def install
           bin.install "baton-github-test"
