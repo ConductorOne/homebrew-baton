@@ -5,20 +5,20 @@
 class BatonDayforceZinnia < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2"
+  version "1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-dayforce-zinnia/releases/download/v0.2/baton-dayforce-zinnia-v0.2-darwin-amd64.zip"
-      sha256 "ea0bc341c549ad55df7bc134af6a5e81043a3b77ff785bdfabd1a4d79649595f"
+      url "https://github.com/ConductorOne/baton-dayforce-zinnia/releases/download/v1.0/baton-dayforce-zinnia-v1.0-darwin-amd64.zip"
+      sha256 "eb9e71ac6f1d262b105e337bab9580166c7df04aa2edbd7938daa2675d5227ce"
 
       def install
         bin.install "baton-dayforce-zinnia"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-dayforce-zinnia/releases/download/v0.2/baton-dayforce-zinnia-v0.2-darwin-arm64.zip"
-      sha256 "8b7abb53c9e58a4ee5bef3d4df885338abaec28d9b1a42f57da5f2866a34f9dd"
+      url "https://github.com/ConductorOne/baton-dayforce-zinnia/releases/download/v1.0/baton-dayforce-zinnia-v1.0-darwin-arm64.zip"
+      sha256 "bd5722a0ee2bbf041027097ba6b966457c5eb8af8d78d8c3be517c0cae581889"
 
       def install
         bin.install "baton-dayforce-zinnia"
@@ -29,8 +29,8 @@ class BatonDayforceZinnia < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-dayforce-zinnia/releases/download/v0.2/baton-dayforce-zinnia-v0.2-linux-amd64.tar.gz"
-        sha256 "6c7f8416519a143f56aebbb55639237945505e275495b3c7496c019d2b30c049"
+        url "https://github.com/ConductorOne/baton-dayforce-zinnia/releases/download/v1.0/baton-dayforce-zinnia-v1.0-linux-amd64.tar.gz"
+        sha256 "905c8084c9d572a3aee7abd22b15467d0bb7f1b6c589252d4cb3a7be9c3d3f7d"
 
         def install
           bin.install "baton-dayforce-zinnia"
@@ -39,8 +39,8 @@ class BatonDayforceZinnia < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-dayforce-zinnia/releases/download/v0.2/baton-dayforce-zinnia-v0.2-linux-arm64.tar.gz"
-        sha256 "ad1dc7fdf9e44fe0a4f73bc7c8211e4379a0797e5ec56041b84a6d46d39d224a"
+        url "https://github.com/ConductorOne/baton-dayforce-zinnia/releases/download/v1.0/baton-dayforce-zinnia-v1.0-linux-arm64.tar.gz"
+        sha256 "c5b4e5ed5f7ceb55a9e0a291ae5fa29652d22cabee0dc17167b572958c529b13"
 
         def install
           bin.install "baton-dayforce-zinnia"
