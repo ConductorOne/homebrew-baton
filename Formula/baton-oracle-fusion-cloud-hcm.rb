@@ -5,20 +5,20 @@
 class BatonOracleFusionCloudHcm < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.7"
+  version "0.0.8"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-oracle-fusion-cloud-hcm/releases/download/v0.0.7/baton-oracle-fusion-cloud-hcm-v0.0.7-darwin-amd64.zip"
-      sha256 "9ed8dd8ee21b75d3100a5cc2badbe39e822f3b88ad45de0777430675c22d9b7c"
+      url "https://github.com/ConductorOne/baton-oracle-fusion-cloud-hcm/releases/download/v0.0.8/baton-oracle-fusion-cloud-hcm-v0.0.8-darwin-amd64.zip"
+      sha256 "01fccb3fa28bf982bb3823b5bb673aaab0d2088b97b431a42be042e5b3b23036"
 
       def install
         bin.install "baton-oracle-fusion-cloud-hcm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-oracle-fusion-cloud-hcm/releases/download/v0.0.7/baton-oracle-fusion-cloud-hcm-v0.0.7-darwin-arm64.zip"
-      sha256 "fdca8ca21cf43ad1bd0418388f8158bacbdb043aee924789d97cd44cd8ffe1fe"
+      url "https://github.com/ConductorOne/baton-oracle-fusion-cloud-hcm/releases/download/v0.0.8/baton-oracle-fusion-cloud-hcm-v0.0.8-darwin-arm64.zip"
+      sha256 "48128dd96de93d4bc1fc8ba5da266316b24c5b63be25bf3806b105e603bd7467"
 
       def install
         bin.install "baton-oracle-fusion-cloud-hcm"
@@ -29,8 +29,8 @@ class BatonOracleFusionCloudHcm < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-oracle-fusion-cloud-hcm/releases/download/v0.0.7/baton-oracle-fusion-cloud-hcm-v0.0.7-linux-amd64.tar.gz"
-        sha256 "98647459ae5eebe635f6a369969881cc78bb715c10e706d4686aebeb9c0932f5"
+        url "https://github.com/ConductorOne/baton-oracle-fusion-cloud-hcm/releases/download/v0.0.8/baton-oracle-fusion-cloud-hcm-v0.0.8-linux-amd64.tar.gz"
+        sha256 "70ff00fbc037c1370b72ce78c9680ec2cae7f982caac85dd1dbfedebc66f2135"
 
         def install
           bin.install "baton-oracle-fusion-cloud-hcm"
@@ -39,8 +39,8 @@ class BatonOracleFusionCloudHcm < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-oracle-fusion-cloud-hcm/releases/download/v0.0.7/baton-oracle-fusion-cloud-hcm-v0.0.7-linux-arm64.tar.gz"
-        sha256 "e9e30169bf361a2101c759ddfee8f50e11a6fab4c408554863b68dd8c430feaa"
+        url "https://github.com/ConductorOne/baton-oracle-fusion-cloud-hcm/releases/download/v0.0.8/baton-oracle-fusion-cloud-hcm-v0.0.8-linux-arm64.tar.gz"
+        sha256 "99200d3432bce3a70b1890774f690ecce7a2e5b5907a0e36a9dd3be6df78601c"
 
         def install
           bin.install "baton-oracle-fusion-cloud-hcm"
