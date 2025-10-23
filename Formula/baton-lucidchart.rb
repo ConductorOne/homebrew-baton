@@ -5,20 +5,20 @@
 class BatonLucidchart < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.7"
+  version "0.0.8"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-lucidchart/releases/download/v0.0.7/baton-lucidchart-v0.0.7-darwin-amd64.zip"
-      sha256 "e709c386f0553304a321d0c10adb028658976dc0aaf52f3b66a06e4fc4b871b9"
+      url "https://github.com/ConductorOne/baton-lucidchart/releases/download/v0.0.8/baton-lucidchart-v0.0.8-darwin-amd64.zip"
+      sha256 "d0b9215a8532291f3a01e5d58052df46a53c6c599da28c2979a59f78b12cd17d"
 
       def install
         bin.install "baton-lucidchart"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-lucidchart/releases/download/v0.0.7/baton-lucidchart-v0.0.7-darwin-arm64.zip"
-      sha256 "8ae588ee0bfa581c363a6c7cc47325227927638219d9cd2a051833dce1f3bea6"
+      url "https://github.com/ConductorOne/baton-lucidchart/releases/download/v0.0.8/baton-lucidchart-v0.0.8-darwin-arm64.zip"
+      sha256 "c3c070923728fee171e78e30a899ced8a5e2064d95b27ef81eb653f757323827"
 
       def install
         bin.install "baton-lucidchart"
@@ -29,8 +29,8 @@ class BatonLucidchart < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-lucidchart/releases/download/v0.0.7/baton-lucidchart-v0.0.7-linux-amd64.tar.gz"
-        sha256 "e7bbe373ea4b8ef52dd64fda0decec9a9c2e97cd3cc4d5c0fc4d53bdf7d68973"
+        url "https://github.com/ConductorOne/baton-lucidchart/releases/download/v0.0.8/baton-lucidchart-v0.0.8-linux-amd64.tar.gz"
+        sha256 "8af6b93cb912259ef56464cd165d333a9bab95a0f216fe64993e2a1a5f704820"
 
         def install
           bin.install "baton-lucidchart"
@@ -39,8 +39,8 @@ class BatonLucidchart < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-lucidchart/releases/download/v0.0.7/baton-lucidchart-v0.0.7-linux-arm64.tar.gz"
-        sha256 "f307beb0e73a3f55fc56c9851dd035c003b75bb1966decf0f5fdb0fad013e53d"
+        url "https://github.com/ConductorOne/baton-lucidchart/releases/download/v0.0.8/baton-lucidchart-v0.0.8-linux-arm64.tar.gz"
+        sha256 "3819d1ed2464371e68f9308c0f3f4b6091a10d9ab0149ee56f170472b2ffb182"
 
         def install
           bin.install "baton-lucidchart"
