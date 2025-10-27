@@ -5,20 +5,20 @@
 class BatonZendesk < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.7"
+  version "0.0.8"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-zendesk/releases/download/v0.0.7/baton-zendesk-v0.0.7-darwin-amd64.zip"
-      sha256 "147df5159196f4c702563202e83bc46fb8603d340631554e6fabcba02ce03cb1"
+      url "https://github.com/ConductorOne/baton-zendesk/releases/download/v0.0.8/baton-zendesk-v0.0.8-darwin-amd64.zip"
+      sha256 "756c8f1a4e62df92e5b2f435479de49ccf710c3f1fbfdf7ff1bf58efa91c9391"
 
       def install
         bin.install "baton-zendesk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-zendesk/releases/download/v0.0.7/baton-zendesk-v0.0.7-darwin-arm64.zip"
-      sha256 "d5345b7515eb40b95d2d3ea689f27bf4dbe762aeb2b2e4e63b5efda66a34d502"
+      url "https://github.com/ConductorOne/baton-zendesk/releases/download/v0.0.8/baton-zendesk-v0.0.8-darwin-arm64.zip"
+      sha256 "da7b6181052a9c4786e125c40767670ae801659bfec93783737de1c1e10faa7c"
 
       def install
         bin.install "baton-zendesk"
@@ -29,8 +29,8 @@ class BatonZendesk < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-zendesk/releases/download/v0.0.7/baton-zendesk-v0.0.7-linux-amd64.tar.gz"
-        sha256 "dd48a618cd6fdd68c9cccd3d78f8625b7f017d93ffe6b1c1d13c7a023a4b3669"
+        url "https://github.com/ConductorOne/baton-zendesk/releases/download/v0.0.8/baton-zendesk-v0.0.8-linux-amd64.tar.gz"
+        sha256 "6e5006afa0db3a8a6e9d9120e4850df053c48845a5bf974ba2981a00bc8cef71"
 
         def install
           bin.install "baton-zendesk"
@@ -39,8 +39,8 @@ class BatonZendesk < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-zendesk/releases/download/v0.0.7/baton-zendesk-v0.0.7-linux-arm64.tar.gz"
-        sha256 "a5a4cf24794f797e0fc2d47b544e018be3560815351f93c8ee7930d6cd33ccd6"
+        url "https://github.com/ConductorOne/baton-zendesk/releases/download/v0.0.8/baton-zendesk-v0.0.8-linux-arm64.tar.gz"
+        sha256 "5924b39b01a02af0cdfff410a1832d6da92b6f9b926f192c663edfad281cbcef"
 
         def install
           bin.install "baton-zendesk"
