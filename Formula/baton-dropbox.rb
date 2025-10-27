@@ -5,20 +5,20 @@
 class BatonDropbox < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.4-alpha-11"
+  version "0.0.4-alpha-12"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-dropbox/releases/download/v0.0.4-alpha-11/baton-dropbox-v0.0.4-alpha-11-darwin-amd64.zip"
-      sha256 "910a35c032404983c05dc57b36f7aae5203b2d5397fac5c284bc11f6ce3d55a6"
+      url "https://github.com/ConductorOne/baton-dropbox/releases/download/v0.0.4-alpha-12/baton-dropbox-v0.0.4-alpha-12-darwin-amd64.zip"
+      sha256 "7579f566f48c78c62714559e8c1c3f6de4f57d9a6972994d2add7a453130a759"
 
       def install
         bin.install "baton-dropbox"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-dropbox/releases/download/v0.0.4-alpha-11/baton-dropbox-v0.0.4-alpha-11-darwin-arm64.zip"
-      sha256 "df2ed58e0247a80280690e902cc510b430a2a3531a4eca03cb3dfc3d90197b7f"
+      url "https://github.com/ConductorOne/baton-dropbox/releases/download/v0.0.4-alpha-12/baton-dropbox-v0.0.4-alpha-12-darwin-arm64.zip"
+      sha256 "ce455c8556c4760c9833bc5d119e471d276605d80b84e659279142148a7522cc"
 
       def install
         bin.install "baton-dropbox"
@@ -29,8 +29,8 @@ class BatonDropbox < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-dropbox/releases/download/v0.0.4-alpha-11/baton-dropbox-v0.0.4-alpha-11-linux-amd64.tar.gz"
-        sha256 "03dffddcd9b68e45ca4dac8498c664e2c0b5417912a95b44276810232613ff80"
+        url "https://github.com/ConductorOne/baton-dropbox/releases/download/v0.0.4-alpha-12/baton-dropbox-v0.0.4-alpha-12-linux-amd64.tar.gz"
+        sha256 "bb382976f5ccc9d8e217011d0f3ae2b8ab327083fb58159bc7f56da376cf6604"
 
         def install
           bin.install "baton-dropbox"
@@ -39,8 +39,8 @@ class BatonDropbox < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-dropbox/releases/download/v0.0.4-alpha-11/baton-dropbox-v0.0.4-alpha-11-linux-arm64.tar.gz"
-        sha256 "d75b15fe908faa6ee50996a9479095b8242c1ccfac34b9c4ad1560846f840e01"
+        url "https://github.com/ConductorOne/baton-dropbox/releases/download/v0.0.4-alpha-12/baton-dropbox-v0.0.4-alpha-12-linux-arm64.tar.gz"
+        sha256 "28bcca34412075af1f0247d468a1cb68b8e4353b83b16b96c35771b195d3d551"
 
         def install
           bin.install "baton-dropbox"
