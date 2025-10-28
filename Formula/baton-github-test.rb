@@ -5,20 +5,20 @@
 class BatonGithubTest < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.11"
+  version "0.1.12-auth-method-skip-validation"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.1.11/baton-github-test-v0.1.11-darwin-amd64.zip"
-      sha256 "aaab1334723f8ace0b2820e32894edd65362c1f10a4cd42b4a7a6cc68e830c2e"
+      url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.1.12-auth-method-skip-validation/baton-github-test-v0.1.12-auth-method-skip-validation-darwin-amd64.zip"
+      sha256 "ddb9d464ef984ceba0f93e4ce6cec44de90800c76103dfdcd0dcefb7c1c92ddb"
 
       def install
         bin.install "baton-github-test"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.1.11/baton-github-test-v0.1.11-darwin-arm64.zip"
-      sha256 "0bde0d8b84460278b94ae17de1364a59ddf9b09777afeb5d51c8d68b2b0e68a0"
+      url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.1.12-auth-method-skip-validation/baton-github-test-v0.1.12-auth-method-skip-validation-darwin-arm64.zip"
+      sha256 "c44ea3fcac086e4eeaf476eb171d1ea383a622daecdb1df4b2b1b9e92cdd4818"
 
       def install
         bin.install "baton-github-test"
@@ -29,8 +29,8 @@ class BatonGithubTest < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.1.11/baton-github-test-v0.1.11-linux-amd64.tar.gz"
-        sha256 "8b8d31a0546b12d7ca42370c87c033c04bff44208db18f6f7a54632a31b22f9d"
+        url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.1.12-auth-method-skip-validation/baton-github-test-v0.1.12-auth-method-skip-validation-linux-amd64.tar.gz"
+        sha256 "272457c39f699e6a1f7254b79b381fcda105e90e117e67929e43decca7516645"
 
         def install
           bin.install "baton-github-test"
@@ -39,8 +39,8 @@ class BatonGithubTest < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.1.11/baton-github-test-v0.1.11-linux-arm64.tar.gz"
-        sha256 "d942166676fa4005f4fb01e4877f11a43f199e28ed3067c25e06096d9f76858d"
+        url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.1.12-auth-method-skip-validation/baton-github-test-v0.1.12-auth-method-skip-validation-linux-arm64.tar.gz"
+        sha256 "1d836ba2adac90077682b06f1e938ab1598a3722bc9617fe5d58c1b92052b40c"
 
         def install
           bin.install "baton-github-test"
