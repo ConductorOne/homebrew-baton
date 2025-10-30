@@ -5,20 +5,20 @@
 class BatonNinjaOne < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-ninja-one/releases/download/v0.0.3/baton-ninja-one-v0.0.3-darwin-amd64.zip"
-      sha256 "2c3cc484ddf3a18ae886c00ccfc51e2dcac1e0d397eb0a8de3386e46f4e3ff2e"
+      url "https://github.com/ConductorOne/baton-ninja-one/releases/download/v0.0.4/baton-ninja-one-v0.0.4-darwin-amd64.zip"
+      sha256 "c3deefa9780cfb006a00a4687ac6ed2112245be8ac7fe1ab7fdeabbe1f02fe8a"
 
       def install
         bin.install "baton-ninja-one"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-ninja-one/releases/download/v0.0.3/baton-ninja-one-v0.0.3-darwin-arm64.zip"
-      sha256 "66d08cf2cb7c387cf3a965788f99f60bb76a5364e307e468ffcb2832edb595c7"
+      url "https://github.com/ConductorOne/baton-ninja-one/releases/download/v0.0.4/baton-ninja-one-v0.0.4-darwin-arm64.zip"
+      sha256 "1fcd632a7e42556b2d40a05c372cf19edabfdb535bfeb0fd98327c74eeb92889"
 
       def install
         bin.install "baton-ninja-one"
@@ -29,8 +29,8 @@ class BatonNinjaOne < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-ninja-one/releases/download/v0.0.3/baton-ninja-one-v0.0.3-linux-amd64.tar.gz"
-        sha256 "d80dadfbd5a7a8893ccda1abfcb99ab12a276f3908b231411aa5f7365d4f7f12"
+        url "https://github.com/ConductorOne/baton-ninja-one/releases/download/v0.0.4/baton-ninja-one-v0.0.4-linux-amd64.tar.gz"
+        sha256 "1c099818feeb72021c0046cbb5c0a5f579e45c8cd2195c033c551cb28ce76c20"
 
         def install
           bin.install "baton-ninja-one"
@@ -39,8 +39,8 @@ class BatonNinjaOne < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-ninja-one/releases/download/v0.0.3/baton-ninja-one-v0.0.3-linux-arm64.tar.gz"
-        sha256 "354bb640b22c8be26ef14ebea162c54b462a5cadffec1e64c0be2157dceb93db"
+        url "https://github.com/ConductorOne/baton-ninja-one/releases/download/v0.0.4/baton-ninja-one-v0.0.4-linux-arm64.tar.gz"
+        sha256 "31a93de704dd3f45483b7e8f092855d5a586e1b100a1a59887deb2c2197a7c14"
 
         def install
           bin.install "baton-ninja-one"
