@@ -5,20 +5,20 @@
 class BatonDayforce < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.2-alpha.3"
+  version "0.2.2-alpha.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-dayforce/releases/download/v0.2.2-alpha.3/baton-dayforce-v0.2.2-alpha.3-darwin-amd64.zip"
-      sha256 "ee893e9bae670b9813ce5314d92846f87d0546080451bb3d0002b0336779108d"
+      url "https://github.com/ConductorOne/baton-dayforce/releases/download/v0.2.2-alpha.4/baton-dayforce-v0.2.2-alpha.4-darwin-amd64.zip"
+      sha256 "5d4fcd9dac68231145c1a993eccf99151102d902365bd86aa259f6ef283bb491"
 
       def install
         bin.install "baton-dayforce"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-dayforce/releases/download/v0.2.2-alpha.3/baton-dayforce-v0.2.2-alpha.3-darwin-arm64.zip"
-      sha256 "c0f45af165e49806c5b573ea1ec694081a7ab78adcdac0bf0542b657060b4ae9"
+      url "https://github.com/ConductorOne/baton-dayforce/releases/download/v0.2.2-alpha.4/baton-dayforce-v0.2.2-alpha.4-darwin-arm64.zip"
+      sha256 "c5a6d7c276bafdfb7a76d1fb79425f1a035b33bd6ade2318892956b4854588ce"
 
       def install
         bin.install "baton-dayforce"
@@ -29,8 +29,8 @@ class BatonDayforce < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-dayforce/releases/download/v0.2.2-alpha.3/baton-dayforce-v0.2.2-alpha.3-linux-amd64.tar.gz"
-        sha256 "5517470cf18d446642e715421f1907ce7ad140c37054ffca252ef9772cb9d873"
+        url "https://github.com/ConductorOne/baton-dayforce/releases/download/v0.2.2-alpha.4/baton-dayforce-v0.2.2-alpha.4-linux-amd64.tar.gz"
+        sha256 "998f6dd9db713fc09dc09fcc14100c1809f6c9c5dff30b0c61d3ea69d0fd2ae9"
 
         def install
           bin.install "baton-dayforce"
@@ -39,8 +39,8 @@ class BatonDayforce < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-dayforce/releases/download/v0.2.2-alpha.3/baton-dayforce-v0.2.2-alpha.3-linux-arm64.tar.gz"
-        sha256 "da6ea5ce1324a078d5b63e465a110ea8769845034a250e9f3ea2ece30f8d2c35"
+        url "https://github.com/ConductorOne/baton-dayforce/releases/download/v0.2.2-alpha.4/baton-dayforce-v0.2.2-alpha.4-linux-arm64.tar.gz"
+        sha256 "2ea8008be0fe11c86f75f81d612956a3c50666f31b163cac959150ce75a92bdb"
 
         def install
           bin.install "baton-dayforce"
