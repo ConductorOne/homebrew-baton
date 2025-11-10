@@ -5,20 +5,20 @@
 class BatonGoogleWorkspace < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.30"
+  version "0.2.31"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-google-workspace/releases/download/v0.2.30/baton-google-workspace-v0.2.30-darwin-amd64.zip"
-      sha256 "9a52309a1f558c84d65c3b8d9af5097d5aedb68928992e76b777b211595cc7a8"
+      url "https://github.com/ConductorOne/baton-google-workspace/releases/download/v0.2.31/baton-google-workspace-v0.2.31-darwin-amd64.zip"
+      sha256 "e0c23548db18c97247c3163df31c4990cf345f5b5fca6acde28134023eb7f807"
 
       def install
         bin.install "baton-google-workspace"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-google-workspace/releases/download/v0.2.30/baton-google-workspace-v0.2.30-darwin-arm64.zip"
-      sha256 "0feffeb9034582986a74cdab74439d9c4c464999f43049193bedf064c93458e2"
+      url "https://github.com/ConductorOne/baton-google-workspace/releases/download/v0.2.31/baton-google-workspace-v0.2.31-darwin-arm64.zip"
+      sha256 "cd13c4035c6163f44e50b1bbcbbd20f610c4c6d7bcb242da36cbb54960abd091"
 
       def install
         bin.install "baton-google-workspace"
@@ -29,8 +29,8 @@ class BatonGoogleWorkspace < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-google-workspace/releases/download/v0.2.30/baton-google-workspace-v0.2.30-linux-amd64.tar.gz"
-        sha256 "8d0a087341cecc404703b1eb3f887b212f0e36a8b698a74e6d265788e8c635e8"
+        url "https://github.com/ConductorOne/baton-google-workspace/releases/download/v0.2.31/baton-google-workspace-v0.2.31-linux-amd64.tar.gz"
+        sha256 "9797fdf3a7a1242c1207d5db29fbaed1f7f71cba1452cf7d607464362b2d7267"
 
         def install
           bin.install "baton-google-workspace"
@@ -39,8 +39,8 @@ class BatonGoogleWorkspace < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-google-workspace/releases/download/v0.2.30/baton-google-workspace-v0.2.30-linux-arm64.tar.gz"
-        sha256 "72f359e5a471dada93f65481cefd7056fe9872a2d9a89f8f42fdd48fd105f02c"
+        url "https://github.com/ConductorOne/baton-google-workspace/releases/download/v0.2.31/baton-google-workspace-v0.2.31-linux-arm64.tar.gz"
+        sha256 "ae4fbe79a95463b03c3681be6f1d391279ea6ec9750b99c4fcc16dae78936ff5"
 
         def install
           bin.install "baton-google-workspace"
