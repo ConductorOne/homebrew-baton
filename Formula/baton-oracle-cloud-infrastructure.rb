@@ -5,20 +5,20 @@
 class BatonOracleCloudInfrastructure < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.9"
+  version "0.0.10"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-oracle-cloud-infrastructure/releases/download/v0.0.9/baton-oracle-cloud-infrastructure-v0.0.9-darwin-amd64.zip"
-      sha256 "5d895c393a68a8ebbe87a1288a4b4aae62b450cb06ff02b33115d235ec75d29e"
+      url "https://github.com/ConductorOne/baton-oracle-cloud-infrastructure/releases/download/v0.0.10/baton-oracle-cloud-infrastructure-v0.0.10-darwin-amd64.zip"
+      sha256 "da571b1bb05b938f2360709b4d377602a6d5755d5dfa948dcd16ebac3f0d9e24"
 
       def install
         bin.install "baton-oracle-cloud-infrastructure"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-oracle-cloud-infrastructure/releases/download/v0.0.9/baton-oracle-cloud-infrastructure-v0.0.9-darwin-arm64.zip"
-      sha256 "124f50bb59c1a1a7c7947ed239b27186b758e1367bac5264d2a210ffabc4ef1d"
+      url "https://github.com/ConductorOne/baton-oracle-cloud-infrastructure/releases/download/v0.0.10/baton-oracle-cloud-infrastructure-v0.0.10-darwin-arm64.zip"
+      sha256 "ff5017b65e2c8652f78b6544af1df590b912cbb5a46b33430be3567489ba56aa"
 
       def install
         bin.install "baton-oracle-cloud-infrastructure"
@@ -29,8 +29,8 @@ class BatonOracleCloudInfrastructure < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-oracle-cloud-infrastructure/releases/download/v0.0.9/baton-oracle-cloud-infrastructure-v0.0.9-linux-amd64.tar.gz"
-        sha256 "f3a033d76a65d72284327bf79edc0e5ddbded679e2abb6e7ecc2c7c0f0287a3e"
+        url "https://github.com/ConductorOne/baton-oracle-cloud-infrastructure/releases/download/v0.0.10/baton-oracle-cloud-infrastructure-v0.0.10-linux-amd64.tar.gz"
+        sha256 "5c6ecc8abaaf40fe55ec40372a4b035a8e1b05df45ae507d14233620726bea29"
 
         def install
           bin.install "baton-oracle-cloud-infrastructure"
@@ -39,8 +39,8 @@ class BatonOracleCloudInfrastructure < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-oracle-cloud-infrastructure/releases/download/v0.0.9/baton-oracle-cloud-infrastructure-v0.0.9-linux-arm64.tar.gz"
-        sha256 "8f8c92a90c9532b2b548604008d441087f927c17787edb84747e1d74437913f5"
+        url "https://github.com/ConductorOne/baton-oracle-cloud-infrastructure/releases/download/v0.0.10/baton-oracle-cloud-infrastructure-v0.0.10-linux-arm64.tar.gz"
+        sha256 "0071491cfc695c5df36b6732c3d740a0fa478ac3c229240f5d4b24d779872090"
 
         def install
           bin.install "baton-oracle-cloud-infrastructure"
