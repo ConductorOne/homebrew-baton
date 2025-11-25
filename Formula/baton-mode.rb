@@ -5,20 +5,20 @@
 class BatonMode < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.2"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-mode/releases/download/v0.0.2/baton-mode-v0.0.2-darwin-amd64.zip"
-      sha256 "22785de5442b7941bb67ead1bec6a63e6c325622feb1841018ca660272e3b19f"
+      url "https://github.com/ConductorOne/baton-mode/releases/download/v0.1.0/baton-mode-v0.1.0-darwin-amd64.zip"
+      sha256 "e306b67b94650d314595c0016b807895b7d77b01fe807df8645aa5c69b3de769"
 
       def install
         bin.install "baton-mode"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-mode/releases/download/v0.0.2/baton-mode-v0.0.2-darwin-arm64.zip"
-      sha256 "e332bc42f7417a8506620c1f2b581de45584eaa4ae714554bb9fc7c01e357045"
+      url "https://github.com/ConductorOne/baton-mode/releases/download/v0.1.0/baton-mode-v0.1.0-darwin-arm64.zip"
+      sha256 "6a0918491e96bfcc9af1904aac75f2bb1fefbb07aaf3b4a442004691477abc71"
 
       def install
         bin.install "baton-mode"
@@ -29,8 +29,8 @@ class BatonMode < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-mode/releases/download/v0.0.2/baton-mode-v0.0.2-linux-amd64.tar.gz"
-        sha256 "1b6f0555e3ca6ea4472872d52fb9e5e73f91c8e1303a7e0133838d2d622269d3"
+        url "https://github.com/ConductorOne/baton-mode/releases/download/v0.1.0/baton-mode-v0.1.0-linux-amd64.tar.gz"
+        sha256 "cfd67af27d6396c5bfb3ebf4580690b611f16675557680ca3cbe09327737eca6"
 
         def install
           bin.install "baton-mode"
@@ -39,8 +39,8 @@ class BatonMode < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-mode/releases/download/v0.0.2/baton-mode-v0.0.2-linux-arm64.tar.gz"
-        sha256 "80bb4aae29b556e3bc16dc55c52463a08b08d14351492c305352a7c1cc849f65"
+        url "https://github.com/ConductorOne/baton-mode/releases/download/v0.1.0/baton-mode-v0.1.0-linux-arm64.tar.gz"
+        sha256 "4db72adecceb5f9535fd8a7fa1826d26464a45ff07414679f60e36389cfe0ab1"
 
         def install
           bin.install "baton-mode"
