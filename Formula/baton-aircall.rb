@@ -5,20 +5,20 @@
 class BatonAircall < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.2"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-aircall/releases/download/v0.0.2/baton-aircall-v0.0.2-darwin-amd64.zip"
-      sha256 "a4bd54a7373ba7654cf8ff0f825310e63ab43dee4f697c6494d5b9d90383ec40"
+      url "https://github.com/ConductorOne/baton-aircall/releases/download/v0.1.0/baton-aircall-v0.1.0-darwin-amd64.zip"
+      sha256 "a853c8856fa9cea434d6e2b7b33ae3c9e6e2fe9b82b578453ac77613e3a94329"
 
       def install
         bin.install "baton-aircall"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-aircall/releases/download/v0.0.2/baton-aircall-v0.0.2-darwin-arm64.zip"
-      sha256 "4a26ec8262408b50d4f80a70b2d67bfa7b1817a3f94e07183a6d90022b75416f"
+      url "https://github.com/ConductorOne/baton-aircall/releases/download/v0.1.0/baton-aircall-v0.1.0-darwin-arm64.zip"
+      sha256 "b0b00c16af3876ce55dfebbf6f3a5b52f190151853eb6233e2f81c08a14136aa"
 
       def install
         bin.install "baton-aircall"
@@ -29,8 +29,8 @@ class BatonAircall < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-aircall/releases/download/v0.0.2/baton-aircall-v0.0.2-linux-amd64.tar.gz"
-        sha256 "aae61b1e49e4ad5699d8b1454fb7fbc39b908daaa56e7aa424d051c8d5ec652c"
+        url "https://github.com/ConductorOne/baton-aircall/releases/download/v0.1.0/baton-aircall-v0.1.0-linux-amd64.tar.gz"
+        sha256 "5b0031f82aff762612c11643726cc718cc6a3c8bcd85fb8d49979cc47af6c7bd"
 
         def install
           bin.install "baton-aircall"
@@ -39,8 +39,8 @@ class BatonAircall < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-aircall/releases/download/v0.0.2/baton-aircall-v0.0.2-linux-arm64.tar.gz"
-        sha256 "17a750e7b706d832f85929157c575930e1dd856871e73207c7be56d7e8168ba7"
+        url "https://github.com/ConductorOne/baton-aircall/releases/download/v0.1.0/baton-aircall-v0.1.0-linux-arm64.tar.gz"
+        sha256 "0297de2fbaa7026b333f71a24659e0feecbcdabfd3a01c682edf0dbeed159f71"
 
         def install
           bin.install "baton-aircall"
