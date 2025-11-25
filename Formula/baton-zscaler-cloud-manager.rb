@@ -5,20 +5,20 @@
 class BatonZscalerCloudManager < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-zscaler-cloud-manager/releases/download/v0.0.1/baton-zscaler-cloud-manager-v0.0.1-darwin-amd64.zip"
-      sha256 "9ab53c1a0e7ebf3b0fb37ef846647a8460f4f266ffc8168fa2d0986a5134ef17"
+      url "https://github.com/ConductorOne/baton-zscaler-cloud-manager/releases/download/v0.0.2/baton-zscaler-cloud-manager-v0.0.2-darwin-amd64.zip"
+      sha256 "4e8ae82704df92b268ef9376db81e768e06c67724c2c170500d41359622399fc"
 
       def install
         bin.install "baton-zscaler-cloud-manager"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-zscaler-cloud-manager/releases/download/v0.0.1/baton-zscaler-cloud-manager-v0.0.1-darwin-arm64.zip"
-      sha256 "469613b091b101cdf30e5173a39e63ed0dd9d38648499e1df13580dad4b21f78"
+      url "https://github.com/ConductorOne/baton-zscaler-cloud-manager/releases/download/v0.0.2/baton-zscaler-cloud-manager-v0.0.2-darwin-arm64.zip"
+      sha256 "21e7a34e7d3320f06152645ebd8c09516fd5e3dca7f89d9af3272c98e906f092"
 
       def install
         bin.install "baton-zscaler-cloud-manager"
@@ -29,8 +29,8 @@ class BatonZscalerCloudManager < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-zscaler-cloud-manager/releases/download/v0.0.1/baton-zscaler-cloud-manager-v0.0.1-linux-amd64.tar.gz"
-        sha256 "b3ea24587fe40fdef0d75993a48723fd0cc77de67c96f4e0b0d6e1f1cb1c42ca"
+        url "https://github.com/ConductorOne/baton-zscaler-cloud-manager/releases/download/v0.0.2/baton-zscaler-cloud-manager-v0.0.2-linux-amd64.tar.gz"
+        sha256 "f28e2c12fd83e692372ef19e3bce8ef33c2d2ee5de775d157d922cf61e18efb4"
 
         def install
           bin.install "baton-zscaler-cloud-manager"
@@ -39,8 +39,8 @@ class BatonZscalerCloudManager < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-zscaler-cloud-manager/releases/download/v0.0.1/baton-zscaler-cloud-manager-v0.0.1-linux-arm64.tar.gz"
-        sha256 "a75eafdfe62af22a89ebbcb6f090bf01a869d75a628c848e3e69d87d8da923e8"
+        url "https://github.com/ConductorOne/baton-zscaler-cloud-manager/releases/download/v0.0.2/baton-zscaler-cloud-manager-v0.0.2-linux-arm64.tar.gz"
+        sha256 "e157038e79b535dacbdf042b4e124bf66c09c7af07a401efad81a0202ae76f13"
 
         def install
           bin.install "baton-zscaler-cloud-manager"
