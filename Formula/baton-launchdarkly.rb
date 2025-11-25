@@ -5,20 +5,20 @@
 class BatonLaunchdarkly < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-launchdarkly/releases/download/v0.0.2/baton-launchdarkly-v0.0.2-darwin-amd64.zip"
-      sha256 "6e59423949d0971d2f36efb72fd03cdcbda4b348a44cf0624269f0b4126420bc"
+      url "https://github.com/ConductorOne/baton-launchdarkly/releases/download/v0.0.3/baton-launchdarkly-v0.0.3-darwin-amd64.zip"
+      sha256 "c9f196f62016d2d70ba036211622699675582c820b9d412cfbba65c9a9ab11b7"
 
       def install
         bin.install "baton-launchdarkly"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-launchdarkly/releases/download/v0.0.2/baton-launchdarkly-v0.0.2-darwin-arm64.zip"
-      sha256 "2fac0e6b55e8f684415d81bd753aa78ba34de2efedaad10e50fb9b9c4210c581"
+      url "https://github.com/ConductorOne/baton-launchdarkly/releases/download/v0.0.3/baton-launchdarkly-v0.0.3-darwin-arm64.zip"
+      sha256 "3bda6c7652329a1de4d9fcae3caf97269d8b71a96d93e6e85af460b33703ae2e"
 
       def install
         bin.install "baton-launchdarkly"
@@ -29,8 +29,8 @@ class BatonLaunchdarkly < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-launchdarkly/releases/download/v0.0.2/baton-launchdarkly-v0.0.2-linux-amd64.tar.gz"
-        sha256 "f3ae35b1eda59523f1e818d196252eade3e377a94f928afa51d3d40ae92e63c1"
+        url "https://github.com/ConductorOne/baton-launchdarkly/releases/download/v0.0.3/baton-launchdarkly-v0.0.3-linux-amd64.tar.gz"
+        sha256 "23fe6fb7ab461d931bc15da275921c4838dce6a2074356b2e5a8851f40525fd6"
 
         def install
           bin.install "baton-launchdarkly"
@@ -39,8 +39,8 @@ class BatonLaunchdarkly < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-launchdarkly/releases/download/v0.0.2/baton-launchdarkly-v0.0.2-linux-arm64.tar.gz"
-        sha256 "f562582af6de9e920aa5b741beff9deab5e3f2ba551e8dc29fa0ddc12f6399f6"
+        url "https://github.com/ConductorOne/baton-launchdarkly/releases/download/v0.0.3/baton-launchdarkly-v0.0.3-linux-arm64.tar.gz"
+        sha256 "3af13fc846b85f0dac137de1c91f02113ff035339e832a526d553cbbd021c65d"
 
         def install
           bin.install "baton-launchdarkly"
