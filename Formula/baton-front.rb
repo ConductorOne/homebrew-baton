@@ -5,20 +5,20 @@
 class BatonFront < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.2"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-front/releases/download/v0.0.2/baton-front-v0.0.2-darwin-amd64.zip"
-      sha256 "0e79a2abdd2b4e5ac80d29ec2714a3f6b18282348b017696ebbc866cae6a9a1d"
+      url "https://github.com/ConductorOne/baton-front/releases/download/v0.1.0/baton-front-v0.1.0-darwin-amd64.zip"
+      sha256 "fd55e4a36841f45f44d18269dbceb2ae36c2b46b9b9f9393d1987b7a618073cc"
 
       def install
         bin.install "baton-front"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-front/releases/download/v0.0.2/baton-front-v0.0.2-darwin-arm64.zip"
-      sha256 "4f7cc80c865ff459a3389b49ac6f3f71647bc5d2248fea75b2d2f9cfb4c4f69a"
+      url "https://github.com/ConductorOne/baton-front/releases/download/v0.1.0/baton-front-v0.1.0-darwin-arm64.zip"
+      sha256 "6657738a8780875d86db901a421e57e8f6729a82dd0bfe320c97b96068fbae72"
 
       def install
         bin.install "baton-front"
@@ -29,8 +29,8 @@ class BatonFront < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-front/releases/download/v0.0.2/baton-front-v0.0.2-linux-amd64.tar.gz"
-        sha256 "d165b8951abb70d08eded2628716687e2ba16156049c2b4876420335fab48637"
+        url "https://github.com/ConductorOne/baton-front/releases/download/v0.1.0/baton-front-v0.1.0-linux-amd64.tar.gz"
+        sha256 "0f22a5193ee7e4d7d139d6c8e705a7c4736d8f28ffa305f5bf9efecf3a0626ac"
 
         def install
           bin.install "baton-front"
@@ -39,8 +39,8 @@ class BatonFront < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-front/releases/download/v0.0.2/baton-front-v0.0.2-linux-arm64.tar.gz"
-        sha256 "e498749d01755bf56775c2e9849ea138720ebae9e4121e3678f1bb989f24d5bf"
+        url "https://github.com/ConductorOne/baton-front/releases/download/v0.1.0/baton-front-v0.1.0-linux-arm64.tar.gz"
+        sha256 "2f6f18086466b314886814032eda422a35157919837051f3d3ea0c04210a08f5"
 
         def install
           bin.install "baton-front"
