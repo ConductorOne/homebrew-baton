@@ -5,20 +5,20 @@
 class BatonBitrise < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.3"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-bitrise/releases/download/v0.0.3/baton-bitrise-v0.0.3-darwin-amd64.zip"
-      sha256 "29abe4aab2892beaac79367d733e5953c78d00256d1b6a75be7aee23a60f04c6"
+      url "https://github.com/ConductorOne/baton-bitrise/releases/download/v0.1.0/baton-bitrise-v0.1.0-darwin-amd64.zip"
+      sha256 "dc948279d055eeddc1598724f51cd5f5a9eaa0bd54038209f3e9a6098a847b0a"
 
       def install
         bin.install "baton-bitrise"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-bitrise/releases/download/v0.0.3/baton-bitrise-v0.0.3-darwin-arm64.zip"
-      sha256 "05c7c9f34dc0ed61841358c7d3cd134acb0f466a6800c3bbbbd04fb6596eedb5"
+      url "https://github.com/ConductorOne/baton-bitrise/releases/download/v0.1.0/baton-bitrise-v0.1.0-darwin-arm64.zip"
+      sha256 "78dfab16e573af400531a0c03d89bf975d54cc5d8d500ef1b63483f7dfc5848f"
 
       def install
         bin.install "baton-bitrise"
@@ -29,8 +29,8 @@ class BatonBitrise < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-bitrise/releases/download/v0.0.3/baton-bitrise-v0.0.3-linux-amd64.tar.gz"
-        sha256 "c921e271a548da9a687f08b707034b4c94ef3fa9155d96291c1d8f204c56cc16"
+        url "https://github.com/ConductorOne/baton-bitrise/releases/download/v0.1.0/baton-bitrise-v0.1.0-linux-amd64.tar.gz"
+        sha256 "7372d148b2a56458335e019d36e2b05dfc234b746300d9a36f28d99c027a96dc"
 
         def install
           bin.install "baton-bitrise"
@@ -39,8 +39,8 @@ class BatonBitrise < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-bitrise/releases/download/v0.0.3/baton-bitrise-v0.0.3-linux-arm64.tar.gz"
-        sha256 "cebccb9fe9cb5eb0dd95e7b66d05cdf9d740fd3455bc1fbb86a6f7951487f038"
+        url "https://github.com/ConductorOne/baton-bitrise/releases/download/v0.1.0/baton-bitrise-v0.1.0-linux-arm64.tar.gz"
+        sha256 "4ec8f7260e72bd9120fa5d762fbb53b36d5a0e7140f37e37a87c549265df810d"
 
         def install
           bin.install "baton-bitrise"
