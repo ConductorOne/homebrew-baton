@@ -5,20 +5,20 @@
 class BatonContentful < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.5"
+  version "0.1.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-contentful/releases/download/v0.1.5/baton-contentful-v0.1.5-darwin-amd64.zip"
-      sha256 "6bd06c724fd116fc6cb6d9f8e25d0067652fc62873b41c6ef8820a81f18a5a44"
+      url "https://github.com/ConductorOne/baton-contentful/releases/download/v0.1.6/baton-contentful-v0.1.6-darwin-amd64.zip"
+      sha256 "7b687227f25aae883b4bd1263a19e247c4eb490121eee1c1372662df72c25a98"
 
       def install
         bin.install "baton-contentful"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-contentful/releases/download/v0.1.5/baton-contentful-v0.1.5-darwin-arm64.zip"
-      sha256 "6db32e3a88f23c1fbe187e9cb56e4106a68132314c4bdaf7deab51fb4c6b1156"
+      url "https://github.com/ConductorOne/baton-contentful/releases/download/v0.1.6/baton-contentful-v0.1.6-darwin-arm64.zip"
+      sha256 "ce1d16ec747ec48ca5321caab0469cb40efe419dfc7a0f26a092f703d674ab80"
 
       def install
         bin.install "baton-contentful"
@@ -29,8 +29,8 @@ class BatonContentful < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-contentful/releases/download/v0.1.5/baton-contentful-v0.1.5-linux-amd64.tar.gz"
-        sha256 "9a706cfc525155215d9252c2e485ed4cd2666aa6591c145b8edeaa81490bacc1"
+        url "https://github.com/ConductorOne/baton-contentful/releases/download/v0.1.6/baton-contentful-v0.1.6-linux-amd64.tar.gz"
+        sha256 "06f36bc800a81d1d85dfe223656411d39e7869adc0083cd070733081a089a84a"
 
         def install
           bin.install "baton-contentful"
@@ -39,8 +39,8 @@ class BatonContentful < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-contentful/releases/download/v0.1.5/baton-contentful-v0.1.5-linux-arm64.tar.gz"
-        sha256 "94cfe10aea38ac2123f0179302b947b73e45b9b64d387126e5948db1176e84e3"
+        url "https://github.com/ConductorOne/baton-contentful/releases/download/v0.1.6/baton-contentful-v0.1.6-linux-arm64.tar.gz"
+        sha256 "908653a7cb187ee03859166274e4be15ee821d8c7edfa8cbe9b0db0cd28c0788"
 
         def install
           bin.install "baton-contentful"
