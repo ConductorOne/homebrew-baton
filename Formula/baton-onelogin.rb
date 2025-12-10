@@ -5,20 +5,20 @@
 class BatonOnelogin < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-onelogin/releases/download/v0.1.2/baton-onelogin-v0.1.2-darwin-amd64.zip"
-      sha256 "9e8758c01016f1c23c1de36c9aa1ec312f5437055c0747d78407bb7d4e8434cd"
+      url "https://github.com/ConductorOne/baton-onelogin/releases/download/v0.1.3/baton-onelogin-v0.1.3-darwin-amd64.zip"
+      sha256 "9308e8351c1e1ae60be934ade9b2509acd3d9ba55d0304f51fae583e308f3b86"
 
       def install
         bin.install "baton-onelogin"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-onelogin/releases/download/v0.1.2/baton-onelogin-v0.1.2-darwin-arm64.zip"
-      sha256 "466dd3f0c99e7a794d249985db25bedbb76fa931dac83628b72f6218e6993466"
+      url "https://github.com/ConductorOne/baton-onelogin/releases/download/v0.1.3/baton-onelogin-v0.1.3-darwin-arm64.zip"
+      sha256 "d24f88aaddc601c0d85988ebe597d1ac1873281b62da1e3d52b08b6a3fbe2c60"
 
       def install
         bin.install "baton-onelogin"
@@ -27,24 +27,18 @@ class BatonOnelogin < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-onelogin/releases/download/v0.1.2/baton-onelogin-v0.1.2-linux-amd64.tar.gz"
-        sha256 "de9f841ca460e18365db418cdfe7591097b33ae53f64126c3e500acb825ce58d"
-
-        def install
-          bin.install "baton-onelogin"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-onelogin/releases/download/v0.1.3/baton-onelogin-v0.1.3-linux-amd64.tar.gz"
+      sha256 "1ae53a063517ad6325044c441be1cfbe065be4a5b5146732b8797d4593c267b8"
+      def install
+        bin.install "baton-onelogin"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-onelogin/releases/download/v0.1.2/baton-onelogin-v0.1.2-linux-arm64.tar.gz"
-        sha256 "098a00c0a92bc6bde189c5878aaacf842cd853d66ed65f37753842077ad996ee"
-
-        def install
-          bin.install "baton-onelogin"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-onelogin/releases/download/v0.1.3/baton-onelogin-v0.1.3-linux-arm64.tar.gz"
+      sha256 "f58ac6ddb6f700670be18958e4fa88c705a864059160cdae544c06ac2fd4aa75"
+      def install
+        bin.install "baton-onelogin"
       end
     end
   end
