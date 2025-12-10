@@ -5,20 +5,20 @@
 class BatonAdobe < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-adobe/releases/download/v0.1.0/baton-adobe-v0.1.0-darwin-amd64.zip"
-      sha256 "943ec52c80227075931997bfd4d76c679fa93dbf61a8fbbb9adc102c54f63890"
+      url "https://github.com/ConductorOne/baton-adobe/releases/download/v0.1.1/baton-adobe-v0.1.1-darwin-amd64.zip"
+      sha256 "6fec80fecd4aee7777a7fdb135c381ed62c30332bb3242839ad96e11a5b6e1da"
 
       def install
         bin.install "baton-adobe"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-adobe/releases/download/v0.1.0/baton-adobe-v0.1.0-darwin-arm64.zip"
-      sha256 "c79095806e7180d01d3b450f79017f7193f03d8c8598b1a9c59d5ed20b2f9b49"
+      url "https://github.com/ConductorOne/baton-adobe/releases/download/v0.1.1/baton-adobe-v0.1.1-darwin-arm64.zip"
+      sha256 "88fc783c2085a935777b6c2d3c6022cf8fb4152394f960b87b12fb2d8de14289"
 
       def install
         bin.install "baton-adobe"
@@ -27,24 +27,18 @@ class BatonAdobe < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-adobe/releases/download/v0.1.0/baton-adobe-v0.1.0-linux-amd64.tar.gz"
-        sha256 "c7d3b34eab37129b811034be4ce961670e9835ec277ccb97b89fd168a9090c33"
-
-        def install
-          bin.install "baton-adobe"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-adobe/releases/download/v0.1.1/baton-adobe-v0.1.1-linux-amd64.tar.gz"
+      sha256 "44d121cf0a890457abd2c5ceeb15d7e8cd34f98e2a55798faec59d21424cc949"
+      def install
+        bin.install "baton-adobe"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-adobe/releases/download/v0.1.0/baton-adobe-v0.1.0-linux-arm64.tar.gz"
-        sha256 "bdf8528b794aab0d5a7effb9d247a31064330579ebe5b5dcb28e9fdaf1e09326"
-
-        def install
-          bin.install "baton-adobe"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-adobe/releases/download/v0.1.1/baton-adobe-v0.1.1-linux-arm64.tar.gz"
+      sha256 "46c2efc52e9b2b11d3a0067deb2a60b0f9785ca5c2265a66c4c6a1b4b34110bb"
+      def install
+        bin.install "baton-adobe"
       end
     end
   end
