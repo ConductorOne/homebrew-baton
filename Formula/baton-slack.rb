@@ -5,20 +5,20 @@
 class BatonSlack < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.7"
+  version "0.1.8"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-slack/releases/download/v0.1.7/baton-slack-v0.1.7-darwin-amd64.zip"
-      sha256 "eaf35d67737f9d35c25b06e28d64a2685c5070c30cde7816c6c16055e9998ffe"
+      url "https://github.com/ConductorOne/baton-slack/releases/download/v0.1.8/baton-slack-v0.1.8-darwin-amd64.zip"
+      sha256 "0257332c2d769330e30911880d20f62e8a012da26be018a97d56fa147caed121"
 
       def install
         bin.install "baton-slack"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-slack/releases/download/v0.1.7/baton-slack-v0.1.7-darwin-arm64.zip"
-      sha256 "ba23a022dfc6cefede47bd25268412d98a45d19f8bb992e7344f4f8503a7f6db"
+      url "https://github.com/ConductorOne/baton-slack/releases/download/v0.1.8/baton-slack-v0.1.8-darwin-arm64.zip"
+      sha256 "6de020ac79fe7d61f407de3008e41e19949c7d9c4d035d5d28c787c20406838f"
 
       def install
         bin.install "baton-slack"
@@ -27,24 +27,18 @@ class BatonSlack < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-slack/releases/download/v0.1.7/baton-slack-v0.1.7-linux-amd64.tar.gz"
-        sha256 "021a46d52efe72d11f0d54f31a963c68913376085edddbd4238332a67e125ec3"
-
-        def install
-          bin.install "baton-slack"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-slack/releases/download/v0.1.8/baton-slack-v0.1.8-linux-amd64.tar.gz"
+      sha256 "cf14f700727cf07a2c828e107c5140f8d9a10708d81dd5594f319c5acd688ec6"
+      def install
+        bin.install "baton-slack"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-slack/releases/download/v0.1.7/baton-slack-v0.1.7-linux-arm64.tar.gz"
-        sha256 "4f6289e3a9e9c962aafdebd3ce5be8dab4454f537460256e2ed522eda13f118b"
-
-        def install
-          bin.install "baton-slack"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-slack/releases/download/v0.1.8/baton-slack-v0.1.8-linux-arm64.tar.gz"
+      sha256 "96c6ff692e0555f87c293a0e4850e8a21ca891b4ee92858be89e0175093ead40"
+      def install
+        bin.install "baton-slack"
       end
     end
   end
