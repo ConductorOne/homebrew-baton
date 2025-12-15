@@ -5,20 +5,20 @@
 class BatonLinear < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.22-override-resp-status-code-ratelimit"
+  version "0.0.23"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.22-override-resp-status-code-ratelimit/baton-linear-v0.0.22-override-resp-status-code-ratelimit-darwin-amd64.zip"
-      sha256 "c9b4a728e9e7e7160ee91e43890a2741c65966cf3348ad82fa546c2eae35001e"
+      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.23/baton-linear-v0.0.23-darwin-amd64.zip"
+      sha256 "642cf618e7b06b935b387bea231fb8d072198c1222b2123c1c0349f5c297a12d"
 
       def install
         bin.install "baton-linear"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.22-override-resp-status-code-ratelimit/baton-linear-v0.0.22-override-resp-status-code-ratelimit-darwin-arm64.zip"
-      sha256 "db42b56abad3ccddcd2f5171a6b6e879479209265c9d1a2deb9fdef6f1eacf92"
+      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.23/baton-linear-v0.0.23-darwin-arm64.zip"
+      sha256 "f28b661b42dd2cae022317b72ddceefb6704037cb56414f91c4ab33ba5ffccd7"
 
       def install
         bin.install "baton-linear"
@@ -27,24 +27,18 @@ class BatonLinear < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.22-override-resp-status-code-ratelimit/baton-linear-v0.0.22-override-resp-status-code-ratelimit-linux-amd64.tar.gz"
-        sha256 "ff3d1bf6e840d49b34771c8a2c41d9a786ae7ea78b8fb210ff419274bf815009"
-
-        def install
-          bin.install "baton-linear"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.23/baton-linear-v0.0.23-linux-amd64.tar.gz"
+      sha256 "0ff3638dd441cdf48c3681cee259805fb98c17874b3feec6da3698822ab83f6c"
+      def install
+        bin.install "baton-linear"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.22-override-resp-status-code-ratelimit/baton-linear-v0.0.22-override-resp-status-code-ratelimit-linux-arm64.tar.gz"
-        sha256 "6da0eab6f6ab3a6b96d3a3b65563d5162d94751d1fd9e70ea0be8505c00c1159"
-
-        def install
-          bin.install "baton-linear"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.0.23/baton-linear-v0.0.23-linux-arm64.tar.gz"
+      sha256 "51961e7d2b3247926c347397eb8a85019e95565e79d46e2a689024cf323d2905"
+      def install
+        bin.install "baton-linear"
       end
     end
   end
