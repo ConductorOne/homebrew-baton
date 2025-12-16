@@ -10,7 +10,7 @@ class BatonAzure < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.4-dev-env-test/baton-azure-v0.0.4-dev-env-test-darwin-amd64.zip"
-      sha256 "cb5f3d3847affd108b11e8f34e7912377ef0983287c3458e756e23f262eb7aec"
+      sha256 "3acee8c871d9a0cb1577041f0c7a32c38ec21c6923f2e57e8b2f995078a442a6"
 
       def install
         bin.install "baton-azure"
@@ -18,7 +18,7 @@ class BatonAzure < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.4-dev-env-test/baton-azure-v0.0.4-dev-env-test-darwin-arm64.zip"
-      sha256 "7ddd1c15cb79e5a9af28fa7520b305e2673edd2c748504e0d0dcc77e8a9fe72f"
+      sha256 "c05838ae20a32646d51faaa3f941b4a6bb1808ad204158860d6e847b55ebac92"
 
       def install
         bin.install "baton-azure"
@@ -30,7 +30,7 @@ class BatonAzure < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.4-dev-env-test/baton-azure-v0.0.4-dev-env-test-linux-amd64.tar.gz"
-        sha256 "9b27dbdafaf3176985d680543164203c8b45e762676ecc8858342bd6cfafb31d"
+        sha256 "2e273a41c398e4f47993b91233c99422e355b3692d60019ad5c1c53afa9a7c9c"
 
         def install
           bin.install "baton-azure"
@@ -40,7 +40,7 @@ class BatonAzure < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.4-dev-env-test/baton-azure-v0.0.4-dev-env-test-linux-arm64.tar.gz"
-        sha256 "3362468d10d1ef374b4e2819d0e1723730d92dc7d932d16d15c0c051d98ed72f"
+        sha256 "859880df968c794ddba1c8a1f084e3f16abd7eb5f1c371aa1ab8b5d24423f546"
 
         def install
           bin.install "baton-azure"
