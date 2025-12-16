@@ -5,20 +5,20 @@
 class BatonAzure < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.4-dev-env-test"
+  version "0.0.4-dev-env-test-2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.4-dev-env-test/baton-azure-v0.0.4-dev-env-test-darwin-amd64.zip"
-      sha256 "3acee8c871d9a0cb1577041f0c7a32c38ec21c6923f2e57e8b2f995078a442a6"
+      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.4-dev-env-test-2/baton-azure-v0.0.4-dev-env-test-2-darwin-amd64.zip"
+      sha256 "aaf7218320e50e5a2ff553a6f01acb23b963696f29b401f4af36d03d053fcbae"
 
       def install
         bin.install "baton-azure"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.4-dev-env-test/baton-azure-v0.0.4-dev-env-test-darwin-arm64.zip"
-      sha256 "c05838ae20a32646d51faaa3f941b4a6bb1808ad204158860d6e847b55ebac92"
+      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.4-dev-env-test-2/baton-azure-v0.0.4-dev-env-test-2-darwin-arm64.zip"
+      sha256 "796619a192e30039dcb75ff7e8ec2ef6a8e3ac847efd3f602b522fe7c95d9961"
 
       def install
         bin.install "baton-azure"
@@ -29,8 +29,8 @@ class BatonAzure < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.4-dev-env-test/baton-azure-v0.0.4-dev-env-test-linux-amd64.tar.gz"
-        sha256 "2e273a41c398e4f47993b91233c99422e355b3692d60019ad5c1c53afa9a7c9c"
+        url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.4-dev-env-test-2/baton-azure-v0.0.4-dev-env-test-2-linux-amd64.tar.gz"
+        sha256 "04d994be771bc92222c728f5a626ef103bee8b98a400d8ebcb4a06f265f419a9"
 
         def install
           bin.install "baton-azure"
@@ -39,8 +39,8 @@ class BatonAzure < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.4-dev-env-test/baton-azure-v0.0.4-dev-env-test-linux-arm64.tar.gz"
-        sha256 "859880df968c794ddba1c8a1f084e3f16abd7eb5f1c371aa1ab8b5d24423f546"
+        url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.4-dev-env-test-2/baton-azure-v0.0.4-dev-env-test-2-linux-arm64.tar.gz"
+        sha256 "cf1431d183287fe444215d9ecd855d0a804a515d8c76f380311e5b1222cfb826"
 
         def install
           bin.install "baton-azure"
