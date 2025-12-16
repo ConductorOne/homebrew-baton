@@ -5,20 +5,20 @@
 class BatonPrismhr < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-prismhr/releases/download/v0.0.3/baton-prismhr-v0.0.3-darwin-amd64.zip"
-      sha256 "625380cfe397be85b7134d7923632a71a5ece3a7c03d13314359344185da4c50"
+      url "https://github.com/ConductorOne/baton-prismhr/releases/download/v0.0.4/baton-prismhr-v0.0.4-darwin-amd64.zip"
+      sha256 "8ac69a31b9c993dd11aa2a01d220af626420179d8dbce5aa8d521480f6ad5b31"
 
       def install
         bin.install "baton-prismhr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-prismhr/releases/download/v0.0.3/baton-prismhr-v0.0.3-darwin-arm64.zip"
-      sha256 "ba16cbeb5b5322a23f407211b59de967d0d38e5a3e62c7a4089816af2ebdee39"
+      url "https://github.com/ConductorOne/baton-prismhr/releases/download/v0.0.4/baton-prismhr-v0.0.4-darwin-arm64.zip"
+      sha256 "8a098268cb745260466920aef32bd21495fd4f80a5645700bc93dce16ec2747a"
 
       def install
         bin.install "baton-prismhr"
@@ -28,15 +28,15 @@ class BatonPrismhr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-prismhr/releases/download/v0.0.3/baton-prismhr-v0.0.3-linux-amd64.tar.gz"
-      sha256 "c849683ddfeceda7d5849d378fd6b1acc00aa09bf52e5ec3a833b126ae1624bd"
+      url "https://github.com/ConductorOne/baton-prismhr/releases/download/v0.0.4/baton-prismhr-v0.0.4-linux-amd64.tar.gz"
+      sha256 "add140704e5531083117b87fd6ecd20483f5f01142781702c79c2f60a566e5d1"
       def install
         bin.install "baton-prismhr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-prismhr/releases/download/v0.0.3/baton-prismhr-v0.0.3-linux-arm64.tar.gz"
-      sha256 "32507e40187e8605cfdfc0c19b49bce63ab77c8f43a2f20fe98dd79167e81746"
+      url "https://github.com/ConductorOne/baton-prismhr/releases/download/v0.0.4/baton-prismhr-v0.0.4-linux-arm64.tar.gz"
+      sha256 "ac20ae4853aa20e6ee2961a7144a5fa20eb22f5b0b29be3a89b71b97b4dfcfd3"
       def install
         bin.install "baton-prismhr"
       end
