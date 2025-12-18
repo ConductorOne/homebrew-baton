@@ -5,20 +5,20 @@
 class BatonSlackEnterprise < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.6"
+  version "0.0.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-slack-enterprise/releases/download/v0.0.6/baton-slack-enterprise-v0.0.6-darwin-amd64.zip"
-      sha256 "b616d95973540ec8a388a7477b2088b4dbb899394406947b0c1691463efa629a"
+      url "https://github.com/ConductorOne/baton-slack-enterprise/releases/download/v0.0.7/baton-slack-enterprise-v0.0.7-darwin-amd64.zip"
+      sha256 "2ca6f9d5d576120d7508779d81865a9291150c5c5843808a4c7483f1b0cd0440"
 
       def install
         bin.install "baton-slack-enterprise"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-slack-enterprise/releases/download/v0.0.6/baton-slack-enterprise-v0.0.6-darwin-arm64.zip"
-      sha256 "eff712782fc3cc1d180d3725dff3d05cb83ec9a78eef0664ac78a31a6e75829a"
+      url "https://github.com/ConductorOne/baton-slack-enterprise/releases/download/v0.0.7/baton-slack-enterprise-v0.0.7-darwin-arm64.zip"
+      sha256 "7eb104b739b74bcd35271ee7b335b4d702eca12819a6f93872eb02d567a4647f"
 
       def install
         bin.install "baton-slack-enterprise"
@@ -28,15 +28,15 @@ class BatonSlackEnterprise < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-slack-enterprise/releases/download/v0.0.6/baton-slack-enterprise-v0.0.6-linux-amd64.tar.gz"
-      sha256 "1adec817ac9543b418f34c32f20ab784a346123625d19dfff551b9ce2e17b63b"
+      url "https://github.com/ConductorOne/baton-slack-enterprise/releases/download/v0.0.7/baton-slack-enterprise-v0.0.7-linux-amd64.tar.gz"
+      sha256 "2c6d21ca266bb697d2e0935d42904e6a2c94997f68823668ce271ae390bcc201"
       def install
         bin.install "baton-slack-enterprise"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-slack-enterprise/releases/download/v0.0.6/baton-slack-enterprise-v0.0.6-linux-arm64.tar.gz"
-      sha256 "ff45a585eaeb5d84fffe362300667dbb2b163aed455122a42519a0a2732e626e"
+      url "https://github.com/ConductorOne/baton-slack-enterprise/releases/download/v0.0.7/baton-slack-enterprise-v0.0.7-linux-arm64.tar.gz"
+      sha256 "f033b26ea3395d67cd333b6fa043729ef8e629b9f920374acd8255d5ca1edd6d"
       def install
         bin.install "baton-slack-enterprise"
       end
