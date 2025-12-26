@@ -5,20 +5,20 @@
 class BatonAzureDevops < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.6-grant-expansion-test"
+  version "0.1.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-azure-devops/releases/download/v0.1.6-grant-expansion-test/baton-azure-devops-v0.1.6-grant-expansion-test-darwin-amd64.zip"
-      sha256 "0e258fd1373f0e2b17bcaf9b81c33db6f701b3e21384eea9ff60baef5a215806"
+      url "https://github.com/ConductorOne/baton-azure-devops/releases/download/v0.1.7/baton-azure-devops-v0.1.7-darwin-amd64.zip"
+      sha256 "e0b111835a9338170c39ac28effb8485d9f7a0a291f81f5debca12bae6610fcc"
 
       def install
         bin.install "baton-azure-devops"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-azure-devops/releases/download/v0.1.6-grant-expansion-test/baton-azure-devops-v0.1.6-grant-expansion-test-darwin-arm64.zip"
-      sha256 "3fc5ec3875dbb10ac0a82c1bd1cd770ad97c537fa5fc36b0e66210d8198bce8f"
+      url "https://github.com/ConductorOne/baton-azure-devops/releases/download/v0.1.7/baton-azure-devops-v0.1.7-darwin-arm64.zip"
+      sha256 "d22668bb0b813c10edd682f2a8e74b4bcd611aefab6765119c2800ca4416659e"
 
       def install
         bin.install "baton-azure-devops"
@@ -27,24 +27,18 @@ class BatonAzureDevops < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-azure-devops/releases/download/v0.1.6-grant-expansion-test/baton-azure-devops-v0.1.6-grant-expansion-test-linux-amd64.tar.gz"
-        sha256 "3fa19777ba733a4bef377b9d9a8347a30db72efaa9645be3cced83af2bbb3ff0"
-
-        def install
-          bin.install "baton-azure-devops"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-azure-devops/releases/download/v0.1.7/baton-azure-devops-v0.1.7-linux-amd64.tar.gz"
+      sha256 "9b526dc2057b4d1ed4ddd71e00cd4d3122b687939ad98740902e69507dda878d"
+      def install
+        bin.install "baton-azure-devops"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-azure-devops/releases/download/v0.1.6-grant-expansion-test/baton-azure-devops-v0.1.6-grant-expansion-test-linux-arm64.tar.gz"
-        sha256 "61786867e768d723b9a6da5474f021bb6871a9e0c4478b945cfb9e18acc1ef00"
-
-        def install
-          bin.install "baton-azure-devops"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-azure-devops/releases/download/v0.1.7/baton-azure-devops-v0.1.7-linux-arm64.tar.gz"
+      sha256 "b097c2b8cb33311be57abbd0b18bea16430a77f2109a5ff2e5b7d01a7275270c"
+      def install
+        bin.install "baton-azure-devops"
       end
     end
   end
