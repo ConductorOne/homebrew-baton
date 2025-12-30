@@ -5,20 +5,20 @@
 class BatonWorkato < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.13-beta.6"
+  version "0.0.13"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-workato/releases/download/v0.0.13-beta.6/baton-workato-v0.0.13-beta.6-darwin-amd64.zip"
-      sha256 "ffa2c5887b5a22ea569d6ff4a78e6d99dc61d5558512cf72fe94c8b33b76dd14"
+      url "https://github.com/ConductorOne/baton-workato/releases/download/v0.0.13/baton-workato-v0.0.13-darwin-amd64.zip"
+      sha256 "2c79e9a989e062b86e9f9f757be5620008edd3d47bd17be89acdc320cb57a9a5"
 
       def install
         bin.install "baton-workato"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-workato/releases/download/v0.0.13-beta.6/baton-workato-v0.0.13-beta.6-darwin-arm64.zip"
-      sha256 "479316f36d32ed73509fffa4accecdadd35a7d977fce556c576d416e89d42ba4"
+      url "https://github.com/ConductorOne/baton-workato/releases/download/v0.0.13/baton-workato-v0.0.13-darwin-arm64.zip"
+      sha256 "e6c3d1acf3dbbb0a83a532ee00983cb55d670670b51aa51912a2d54d812df05e"
 
       def install
         bin.install "baton-workato"
@@ -28,15 +28,15 @@ class BatonWorkato < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-workato/releases/download/v0.0.13-beta.6/baton-workato-v0.0.13-beta.6-linux-amd64.tar.gz"
-      sha256 "25b92867f5b31426fbe8ada4b0d2f70eacf78614859b7ef94744cc46fc05ccee"
+      url "https://github.com/ConductorOne/baton-workato/releases/download/v0.0.13/baton-workato-v0.0.13-linux-amd64.tar.gz"
+      sha256 "5bc4906a25def80d63a7422264ee6c2278359305ec8a3e4da9aaf6661e6e412e"
       def install
         bin.install "baton-workato"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-workato/releases/download/v0.0.13-beta.6/baton-workato-v0.0.13-beta.6-linux-arm64.tar.gz"
-      sha256 "21134dfb78f85ff0adbbfdd43d9905dbb0df222149cb50965c8e5d1e45e97076"
+      url "https://github.com/ConductorOne/baton-workato/releases/download/v0.0.13/baton-workato-v0.0.13-linux-arm64.tar.gz"
+      sha256 "4d3c2f16b97bdc9e6772df5b779ae4bb72af227815abb50966a41fb1d7810e33"
       def install
         bin.install "baton-workato"
       end
