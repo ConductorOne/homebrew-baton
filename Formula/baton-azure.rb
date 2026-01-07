@@ -5,20 +5,20 @@
 class BatonAzure < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.5-inc-sync-test-3"
+  version "0.0.5-inc-sync-test-4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.5-inc-sync-test-3/baton-azure-v0.0.5-inc-sync-test-3-darwin-amd64.zip"
-      sha256 "96879dc525f899dec83a7f36dad6861011fadbcca27d69f305fba101bdb02ab6"
+      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.5-inc-sync-test-4/baton-azure-v0.0.5-inc-sync-test-4-darwin-amd64.zip"
+      sha256 "f7a8b3ea7182b0e17fb0034fedc4e91c35f9596380f57751b5a94713ecbf5e79"
 
       def install
         bin.install "baton-azure"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.5-inc-sync-test-3/baton-azure-v0.0.5-inc-sync-test-3-darwin-arm64.zip"
-      sha256 "53a89e2564cee46b6225b667778495b64a67613ab6f1fcbbfac6bb1ca4963888"
+      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.5-inc-sync-test-4/baton-azure-v0.0.5-inc-sync-test-4-darwin-arm64.zip"
+      sha256 "0c4265cf15d2cfca0aa46a000fb299f45e5439a5057a6c74e8435a64cc05b07a"
 
       def install
         bin.install "baton-azure"
@@ -28,15 +28,15 @@ class BatonAzure < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.5-inc-sync-test-3/baton-azure-v0.0.5-inc-sync-test-3-linux-amd64.tar.gz"
-      sha256 "f2a77eec2c2dd759908437194829fc1587bbf412a9932fd9e0d8794a90274c40"
+      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.5-inc-sync-test-4/baton-azure-v0.0.5-inc-sync-test-4-linux-amd64.tar.gz"
+      sha256 "da70c593b87784ac4e6cc1f9d2702bd5e233fc647fa3cc234e02ace9572e2240"
       def install
         bin.install "baton-azure"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.5-inc-sync-test-3/baton-azure-v0.0.5-inc-sync-test-3-linux-arm64.tar.gz"
-      sha256 "90113ef53042cd504eb55033fdd00c21fdfcc80c5b43c3198a495852fa700bbc"
+      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.5-inc-sync-test-4/baton-azure-v0.0.5-inc-sync-test-4-linux-arm64.tar.gz"
+      sha256 "a22a1bbdec47d57a06b48dbc627c87545517afcdb2a0161a0a46e28808f2d06f"
       def install
         bin.install "baton-azure"
       end
