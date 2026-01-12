@@ -5,20 +5,20 @@
 class BatonZiphq < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.4"
+  version "0.0.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-ziphq/releases/download/v0.0.4/baton-ziphq-v0.0.4-darwin-amd64.zip"
-      sha256 "6e4558add8cd6c3e700150e5cb596ecb7e971afe6f128eeb2a253af3909653d1"
+      url "https://github.com/ConductorOne/baton-ziphq/releases/download/v0.0.5/baton-ziphq-v0.0.5-darwin-amd64.zip"
+      sha256 "3e5b04f53bf0349ff58ab774afdccd2d4b4e2b3ee18bdc5e5e7b72184306261a"
 
       def install
         bin.install "baton-ziphq"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-ziphq/releases/download/v0.0.4/baton-ziphq-v0.0.4-darwin-arm64.zip"
-      sha256 "d6556bf25a12b19ce348aa6c7aeded5c6e7976e935d96dc8e503789b6958f5af"
+      url "https://github.com/ConductorOne/baton-ziphq/releases/download/v0.0.5/baton-ziphq-v0.0.5-darwin-arm64.zip"
+      sha256 "24c46f261a575e07f0830e16375a772f178607824b66785eb94fdd890d3a14b4"
 
       def install
         bin.install "baton-ziphq"
@@ -28,15 +28,15 @@ class BatonZiphq < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ziphq/releases/download/v0.0.4/baton-ziphq-v0.0.4-linux-amd64.tar.gz"
-      sha256 "d19ce506118de3bd0b6574fd5f78560aa1f1e9ddceb0934a26b4b759bffe9472"
+      url "https://github.com/ConductorOne/baton-ziphq/releases/download/v0.0.5/baton-ziphq-v0.0.5-linux-amd64.tar.gz"
+      sha256 "1f2a8797dd2cecac4dd1ebc9c20dca88588bdd8d27f31ba60eb34a037a2a1eb7"
       def install
         bin.install "baton-ziphq"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ziphq/releases/download/v0.0.4/baton-ziphq-v0.0.4-linux-arm64.tar.gz"
-      sha256 "33f0d167201054dbed15bfbb12cc67ebeb0bf16737da69c13d166d7f6fac40f1"
+      url "https://github.com/ConductorOne/baton-ziphq/releases/download/v0.0.5/baton-ziphq-v0.0.5-linux-arm64.tar.gz"
+      sha256 "b77dcf6f0c2dd10926d269b035fa81f9535f1a32821e15b17381d68786324ee5"
       def install
         bin.install "baton-ziphq"
       end
