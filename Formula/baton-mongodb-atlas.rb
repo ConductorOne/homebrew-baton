@@ -5,20 +5,20 @@
 class BatonMongodbAtlas < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.2"
+  version "0.1.2-default-proxy-port"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.2/baton-mongodb-atlas-v0.1.2-darwin-amd64.zip"
-      sha256 "6da869b33f96daf78d560492a0b80ef1ac786e71ad54dd54d0fa48edfecab770"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.2-default-proxy-port/baton-mongodb-atlas-v0.1.2-default-proxy-port-darwin-amd64.zip"
+      sha256 "bfdc02ae7dc3b789fea4ba177892fe6d24a37bb4cf12bfc377c8f6e4ce6fe1f3"
 
       def install
         bin.install "baton-mongodb-atlas"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.2/baton-mongodb-atlas-v0.1.2-darwin-arm64.zip"
-      sha256 "caceafa44d9f16eb6b560eb49016306f8e7ab99506753dcb6d9beb6d699d64cb"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.2-default-proxy-port/baton-mongodb-atlas-v0.1.2-default-proxy-port-darwin-arm64.zip"
+      sha256 "66c57f5d101e2ef08ca892a3f67676cfc8de867f0919124c814756fdd7a86402"
 
       def install
         bin.install "baton-mongodb-atlas"
@@ -28,15 +28,15 @@ class BatonMongodbAtlas < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.2/baton-mongodb-atlas-v0.1.2-linux-amd64.tar.gz"
-      sha256 "15d619a573f33fa3c6db3292645a93b4acf68da0a794e696cf56b4ef9c8d8c89"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.2-default-proxy-port/baton-mongodb-atlas-v0.1.2-default-proxy-port-linux-amd64.tar.gz"
+      sha256 "63113e74033a3a6f606606ea8eef4bce2e52f2f382f9a007b93e3239273fcd0c"
       def install
         bin.install "baton-mongodb-atlas"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.2/baton-mongodb-atlas-v0.1.2-linux-arm64.tar.gz"
-      sha256 "46f1c2e906ee383be25653477b9e5edf7521c28a34b2a318e8d31a872cd51340"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.2-default-proxy-port/baton-mongodb-atlas-v0.1.2-default-proxy-port-linux-arm64.tar.gz"
+      sha256 "ad3a0d91e7e736b6fd75b41e407d3f74415e20ff889095110f472fd19f790237"
       def install
         bin.install "baton-mongodb-atlas"
       end
