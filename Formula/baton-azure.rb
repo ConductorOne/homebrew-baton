@@ -5,20 +5,20 @@
 class BatonAzure < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.8"
+  version "0.0.9-skip-keys-test"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.8/baton-azure-v0.0.8-darwin-amd64.zip"
-      sha256 "c455eba3088731025538e5f5b14c1e0972d80766fb6e598adee57cc756f03f9c"
+      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.9-skip-keys-test/baton-azure-v0.0.9-skip-keys-test-darwin-amd64.zip"
+      sha256 "0607622dacc199c2edbbd1b0e4cc3c7095ab5b8611ca6aaab974e73e6d043500"
 
       def install
         bin.install "baton-azure"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.8/baton-azure-v0.0.8-darwin-arm64.zip"
-      sha256 "21c9b66e83cb2320fac6dbc9d15724da97a870032a7781ae66b5ef4800092412"
+      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.9-skip-keys-test/baton-azure-v0.0.9-skip-keys-test-darwin-arm64.zip"
+      sha256 "528d8907f6119ac8e57f4a1d0042a197b6a907089f412f86f90485012a76773c"
 
       def install
         bin.install "baton-azure"
@@ -28,15 +28,15 @@ class BatonAzure < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.8/baton-azure-v0.0.8-linux-amd64.tar.gz"
-      sha256 "b92d3f879fe73a248f8dfca0c945c63236f12240cdda9dc108ff0797744bc3e2"
+      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.9-skip-keys-test/baton-azure-v0.0.9-skip-keys-test-linux-amd64.tar.gz"
+      sha256 "b29a5b85c34cf152f678d1843d4bda6d864064f08e1c0279b16630ceffd5c872"
       def install
         bin.install "baton-azure"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.8/baton-azure-v0.0.8-linux-arm64.tar.gz"
-      sha256 "7d5d4f1e626afbb75c8b6cdf704cb94702d7e5985098074018546645c0dfe84a"
+      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.9-skip-keys-test/baton-azure-v0.0.9-skip-keys-test-linux-arm64.tar.gz"
+      sha256 "3e14c990f94f731dbb1930f13201ee113093d5169ae41a1c288c02aadeb18890"
       def install
         bin.install "baton-azure"
       end
