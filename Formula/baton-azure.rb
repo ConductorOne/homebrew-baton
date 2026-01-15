@@ -5,20 +5,20 @@
 class BatonAzure < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.9-test-new-data-model-0"
+  version "0.0.9-test-new-data-model-1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.9-test-new-data-model-0/baton-azure-v0.0.9-test-new-data-model-0-darwin-amd64.zip"
-      sha256 "7322d5c9194d5c9387cbb88e07a79897724b17f3922c98abb061bec3a63753fe"
+      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.9-test-new-data-model-1/baton-azure-v0.0.9-test-new-data-model-1-darwin-amd64.zip"
+      sha256 "6c1d71007f56a82d261d8518216d778d219198b16bd8d4ef9ab1ec2aab0ebe65"
 
       def install
         bin.install "baton-azure"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.9-test-new-data-model-0/baton-azure-v0.0.9-test-new-data-model-0-darwin-arm64.zip"
-      sha256 "bcd93f8b8b32d7dc7455ba9d62070f87a89c2f7ef528c4c4757f7dc0d23aa07f"
+      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.9-test-new-data-model-1/baton-azure-v0.0.9-test-new-data-model-1-darwin-arm64.zip"
+      sha256 "653424fcea74811ef1e2abc9fb8fe37efafbb632d9b4320a445fc5c4dcd13bfc"
 
       def install
         bin.install "baton-azure"
@@ -28,15 +28,15 @@ class BatonAzure < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.9-test-new-data-model-0/baton-azure-v0.0.9-test-new-data-model-0-linux-amd64.tar.gz"
-      sha256 "6510132a0bbeda1c024533a2985a21adc3846b8592f3cbb58f8f843344c3e006"
+      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.9-test-new-data-model-1/baton-azure-v0.0.9-test-new-data-model-1-linux-amd64.tar.gz"
+      sha256 "d2d508d5fed967e19730edfb8d70ffa643a6a79ae2c6f7d15c9e2606be9ea7be"
       def install
         bin.install "baton-azure"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.9-test-new-data-model-0/baton-azure-v0.0.9-test-new-data-model-0-linux-arm64.tar.gz"
-      sha256 "e13b51bbcfbcf6bd7baeec7a0ef75adffba89646d0edc99390ec16f575259f62"
+      url "https://github.com/ConductorOne/baton-azure/releases/download/v0.0.9-test-new-data-model-1/baton-azure-v0.0.9-test-new-data-model-1-linux-arm64.tar.gz"
+      sha256 "e596a3c11114d14f797618f355897b7b0e0cf24e0b752838bedf6198a8ef4418"
       def install
         bin.install "baton-azure"
       end
