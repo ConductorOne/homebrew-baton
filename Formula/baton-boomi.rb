@@ -5,20 +5,20 @@
 class BatonBoomi < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-boomi/releases/download/v0.0.1/baton-boomi-v0.0.1-darwin-amd64.zip"
-      sha256 "f51f1253a89470914c130c82e6a637499daac1918722b862c59231cdac212703"
+      url "https://github.com/ConductorOne/baton-boomi/releases/download/v0.0.2/baton-boomi-v0.0.2-darwin-amd64.zip"
+      sha256 "2b1180b06852e9b57a6e46ae0b708acbc3108c2cac307833aaae76245495e81a"
 
       def install
         bin.install "baton-boomi"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-boomi/releases/download/v0.0.1/baton-boomi-v0.0.1-darwin-arm64.zip"
-      sha256 "fd6f8c227f2b8ebdb6b6c914797dc7ba2205e697851ef7af6bef02ed1905e958"
+      url "https://github.com/ConductorOne/baton-boomi/releases/download/v0.0.2/baton-boomi-v0.0.2-darwin-arm64.zip"
+      sha256 "1d44124af4a51293a96e237f93096b8f4b4df0c9b6ec3b3c153a488676fec2d9"
 
       def install
         bin.install "baton-boomi"
@@ -28,15 +28,15 @@ class BatonBoomi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-boomi/releases/download/v0.0.1/baton-boomi-v0.0.1-linux-amd64.tar.gz"
-      sha256 "193e1f30e484dd0d6c5f19797a2cfee12b81763fce1e478a909b0b88abc5a6f5"
+      url "https://github.com/ConductorOne/baton-boomi/releases/download/v0.0.2/baton-boomi-v0.0.2-linux-amd64.tar.gz"
+      sha256 "6a013b4a9bcaf19ed1253eb974493cffe4eb786d8f517e39c424bff6dc0961e8"
       def install
         bin.install "baton-boomi"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-boomi/releases/download/v0.0.1/baton-boomi-v0.0.1-linux-arm64.tar.gz"
-      sha256 "a751affd63042e8f02e7f4431e4240e932c045cf45aadacf65b58dbbc5407ff2"
+      url "https://github.com/ConductorOne/baton-boomi/releases/download/v0.0.2/baton-boomi-v0.0.2-linux-arm64.tar.gz"
+      sha256 "22e3fd2141fcda9f6dd3f9ed0f4f8be63d70e5e61b8c229154608409e66a3e89"
       def install
         bin.install "baton-boomi"
       end
