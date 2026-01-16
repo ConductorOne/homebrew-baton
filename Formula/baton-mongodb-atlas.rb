@@ -5,20 +5,20 @@
 class BatonMongodbAtlas < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.2-default-proxy-port"
+  version "0.1.2-socks5-test"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.2-default-proxy-port/baton-mongodb-atlas-v0.1.2-default-proxy-port-darwin-amd64.zip"
-      sha256 "bfdc02ae7dc3b789fea4ba177892fe6d24a37bb4cf12bfc377c8f6e4ce6fe1f3"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.2-socks5-test/baton-mongodb-atlas-v0.1.2-socks5-test-darwin-amd64.zip"
+      sha256 "14c5c31685fe1e5241395d52a09af315699ab41d26065f7675ca73190d47abec"
 
       def install
         bin.install "baton-mongodb-atlas"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.2-default-proxy-port/baton-mongodb-atlas-v0.1.2-default-proxy-port-darwin-arm64.zip"
-      sha256 "66c57f5d101e2ef08ca892a3f67676cfc8de867f0919124c814756fdd7a86402"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.2-socks5-test/baton-mongodb-atlas-v0.1.2-socks5-test-darwin-arm64.zip"
+      sha256 "22c7fe1605b1c087c04b4788e8bae1c82c41c42eb84ff4fb164e85e5b6600645"
 
       def install
         bin.install "baton-mongodb-atlas"
@@ -28,15 +28,15 @@ class BatonMongodbAtlas < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.2-default-proxy-port/baton-mongodb-atlas-v0.1.2-default-proxy-port-linux-amd64.tar.gz"
-      sha256 "63113e74033a3a6f606606ea8eef4bce2e52f2f382f9a007b93e3239273fcd0c"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.2-socks5-test/baton-mongodb-atlas-v0.1.2-socks5-test-linux-amd64.tar.gz"
+      sha256 "9a2b05830f2cd98f261efc2a04bc9038aabb5393e07009cb352c1bd677359f09"
       def install
         bin.install "baton-mongodb-atlas"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.2-default-proxy-port/baton-mongodb-atlas-v0.1.2-default-proxy-port-linux-arm64.tar.gz"
-      sha256 "ad3a0d91e7e736b6fd75b41e407d3f74415e20ff889095110f472fd19f790237"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.2-socks5-test/baton-mongodb-atlas-v0.1.2-socks5-test-linux-arm64.tar.gz"
+      sha256 "4ede7f1b932730ba3a8d49596ff61599429e0788e5e9ff9c586e76bd616db9fe"
       def install
         bin.install "baton-mongodb-atlas"
       end
