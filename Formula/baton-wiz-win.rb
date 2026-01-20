@@ -5,20 +5,20 @@
 class BatonWizWin < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-wiz-win/releases/download/v0.0.1/baton-wiz-win-v0.0.1-darwin-amd64.zip"
-      sha256 "c9815d1e8faba899bce77c8c1f30c89e8efe10f7c36dc5c0564bfd4b038e2836"
+      url "https://github.com/ConductorOne/baton-wiz-win/releases/download/v0.0.2/baton-wiz-win-v0.0.2-darwin-amd64.zip"
+      sha256 "8ed6b5b9850b9db5d96cf980c5dafe0269c33d1e4ae0b59ee0bc384fce679810"
 
       def install
         bin.install "baton-wiz-win"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-wiz-win/releases/download/v0.0.1/baton-wiz-win-v0.0.1-darwin-arm64.zip"
-      sha256 "d26894738ba8143fa1e3208408847dca793dfff14de56f5892e257e717dd25f4"
+      url "https://github.com/ConductorOne/baton-wiz-win/releases/download/v0.0.2/baton-wiz-win-v0.0.2-darwin-arm64.zip"
+      sha256 "fbb89d2a4da96feb1599b927f1ada7c37f02177c6f645acbce786bed9a34765b"
 
       def install
         bin.install "baton-wiz-win"
@@ -28,15 +28,15 @@ class BatonWizWin < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-wiz-win/releases/download/v0.0.1/baton-wiz-win-v0.0.1-linux-amd64.tar.gz"
-      sha256 "23b57bb4387b56eb8a0da463f3e034b32fe6e9d979fdb57710c64831fe170304"
+      url "https://github.com/ConductorOne/baton-wiz-win/releases/download/v0.0.2/baton-wiz-win-v0.0.2-linux-amd64.tar.gz"
+      sha256 "032ac9a580cadcc95d9d375726dcc80ebb3f63921b6a47845b14c626cebdec92"
       def install
         bin.install "baton-wiz-win"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-wiz-win/releases/download/v0.0.1/baton-wiz-win-v0.0.1-linux-arm64.tar.gz"
-      sha256 "c7d23739eeda5185573a4b303424fd66bc535f4558bd7e14390ac02c5eb42fde"
+      url "https://github.com/ConductorOne/baton-wiz-win/releases/download/v0.0.2/baton-wiz-win-v0.0.2-linux-arm64.tar.gz"
+      sha256 "6f1692962c279bbe2e3da6f15aca6a715b44abff286fc3e3c163fea2290359e7"
       def install
         bin.install "baton-wiz-win"
       end
