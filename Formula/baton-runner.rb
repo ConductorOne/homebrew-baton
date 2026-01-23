@@ -5,20 +5,20 @@
 class BatonRunner < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.10"
+  version "0.1.11"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-runner/releases/download/v0.1.10/baton-runner-v0.1.10-darwin-amd64.zip"
-      sha256 "aac0562b5b8330dfc9d74142918257e2a35eeef79838c954cec099750c759e83"
+      url "https://github.com/ConductorOne/baton-runner/releases/download/v0.1.11/baton-runner-v0.1.11-darwin-amd64.zip"
+      sha256 "ee8a14c8d7e3c0d58bf0d469cb0803947139b44bac0ce01d70316a64a08cbf7c"
 
       def install
         bin.install "baton-runner"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-runner/releases/download/v0.1.10/baton-runner-v0.1.10-darwin-arm64.zip"
-      sha256 "fec131f429cea984a0cf9833c029de404395e4b7a2f5678eda1b02bc14599def"
+      url "https://github.com/ConductorOne/baton-runner/releases/download/v0.1.11/baton-runner-v0.1.11-darwin-arm64.zip"
+      sha256 "f417153539704530be96208f163403d41037f6c0860d6ab9e738588e99451507"
 
       def install
         bin.install "baton-runner"
@@ -28,15 +28,15 @@ class BatonRunner < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-runner/releases/download/v0.1.10/baton-runner-v0.1.10-linux-amd64.tar.gz"
-      sha256 "15b611c9d21cbcf3dad0d2ad61b1fa3fd3984fb56a90da464097e0ad74cac45c"
+      url "https://github.com/ConductorOne/baton-runner/releases/download/v0.1.11/baton-runner-v0.1.11-linux-amd64.tar.gz"
+      sha256 "e7c0dca1d8acd1d62314ac19ba5dacf2cec39376d84d1fa161a3c82eaaf8984d"
       def install
         bin.install "baton-runner"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-runner/releases/download/v0.1.10/baton-runner-v0.1.10-linux-arm64.tar.gz"
-      sha256 "ebaf52064dfff085a2e392640fd55986df131cfd357814b2b0e983a73a4032ab"
+      url "https://github.com/ConductorOne/baton-runner/releases/download/v0.1.11/baton-runner-v0.1.11-linux-arm64.tar.gz"
+      sha256 "7db672f2cbe9fd954b2f0029711e8486273c5174c22ee9215c8278d049325f98"
       def install
         bin.install "baton-runner"
       end
