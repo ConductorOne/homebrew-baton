@@ -5,20 +5,20 @@
 class BatonRunner < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.12-test.3"
+  version "0.1.12-test.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-runner/releases/download/v0.1.12-test.3/baton-runner-v0.1.12-test.3-darwin-amd64.zip"
-      sha256 "457d2c773a9c5cdda14ac1473151efc2121150542dae4f1303069e3dd5d2ca0a"
+      url "https://github.com/ConductorOne/baton-runner/releases/download/v0.1.12-test.5/baton-runner-v0.1.12-test.5-darwin-amd64.zip"
+      sha256 "79c153629b912e2e28ad0f66121c99c9133b1047d1cfc7adc76fb616dae810af"
 
       def install
         bin.install "baton-runner"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-runner/releases/download/v0.1.12-test.3/baton-runner-v0.1.12-test.3-darwin-arm64.zip"
-      sha256 "3e7924d7c779627c04a35bcb8cb023cb5b5866e4fb635d5d6c8ed6e90117a0d3"
+      url "https://github.com/ConductorOne/baton-runner/releases/download/v0.1.12-test.5/baton-runner-v0.1.12-test.5-darwin-arm64.zip"
+      sha256 "a2c00a018e695ab7e44ee18f9e598f779572e9aef96cdcd7c2390866840bd476"
 
       def install
         bin.install "baton-runner"
@@ -28,15 +28,15 @@ class BatonRunner < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-runner/releases/download/v0.1.12-test.3/baton-runner-v0.1.12-test.3-linux-amd64.tar.gz"
-      sha256 "7ee11a8d62bdfce8b5fc4ea0c35fdc5aca11ca463ee3372c39a92489c0258809"
+      url "https://github.com/ConductorOne/baton-runner/releases/download/v0.1.12-test.5/baton-runner-v0.1.12-test.5-linux-amd64.tar.gz"
+      sha256 "681fa3c2b3a68dcf10d636667e1ad0b47256fd6c8ae4534b85e8dd2e87db59aa"
       def install
         bin.install "baton-runner"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-runner/releases/download/v0.1.12-test.3/baton-runner-v0.1.12-test.3-linux-arm64.tar.gz"
-      sha256 "f1122971e3de19aab7ed07af1bfce29c3bc7144ff162bf923d663c7f6789f454"
+      url "https://github.com/ConductorOne/baton-runner/releases/download/v0.1.12-test.5/baton-runner-v0.1.12-test.5-linux-arm64.tar.gz"
+      sha256 "384e0145ea4735f4c64c765689001ad9b3de98c845ef72c0affc5a04a73cb107"
       def install
         bin.install "baton-runner"
       end
