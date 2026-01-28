@@ -5,20 +5,20 @@
 class BatonKeycloak < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.6"
+  version "0.0.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-keycloak/releases/download/v0.0.6/baton-keycloak-v0.0.6-darwin-amd64.zip"
-      sha256 "31e0cea1fca57f1ad5694865a5c93d92281a34998ce78eace1607417477f24bd"
+      url "https://github.com/ConductorOne/baton-keycloak/releases/download/v0.0.7/baton-keycloak-v0.0.7-darwin-amd64.zip"
+      sha256 "1639674ab39d824b4fbfb61190fa593290607f23c1c81cf11218b924d6568aae"
 
       def install
         bin.install "baton-keycloak"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-keycloak/releases/download/v0.0.6/baton-keycloak-v0.0.6-darwin-arm64.zip"
-      sha256 "3021c3be024ce65f00b819f25551f0f4f46ea769f0c5f12f325577353c90dad5"
+      url "https://github.com/ConductorOne/baton-keycloak/releases/download/v0.0.7/baton-keycloak-v0.0.7-darwin-arm64.zip"
+      sha256 "0befd9ba34ee6bf8287806f71b9ff2c589618ae1014f50fbe9af8814ca0ca2d8"
 
       def install
         bin.install "baton-keycloak"
@@ -27,24 +27,18 @@ class BatonKeycloak < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-keycloak/releases/download/v0.0.6/baton-keycloak-v0.0.6-linux-amd64.tar.gz"
-        sha256 "f19a8b4f42d5146768453d26c3433cfd631f01ab99e63cc746fe008becc75c81"
-
-        def install
-          bin.install "baton-keycloak"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-keycloak/releases/download/v0.0.7/baton-keycloak-v0.0.7-linux-amd64.tar.gz"
+      sha256 "fd88e87ae9532e2a3343b2bfc22d25453478e4adb091aac018da5b57d4410ef2"
+      def install
+        bin.install "baton-keycloak"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-keycloak/releases/download/v0.0.6/baton-keycloak-v0.0.6-linux-arm64.tar.gz"
-        sha256 "169ae8c487caadd4d4779b539d4bee284e1b0f331aea2ccad668ee03934c7fd4"
-
-        def install
-          bin.install "baton-keycloak"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-keycloak/releases/download/v0.0.7/baton-keycloak-v0.0.7-linux-arm64.tar.gz"
+      sha256 "f040dc0a8d006bf60044b1c5b482f2107bc2f43b55668db1b1b1e1a7e48fe300"
+      def install
+        bin.install "baton-keycloak"
       end
     end
   end
