@@ -5,20 +5,20 @@
 class BatonFivetran < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-fivetran/releases/download/v0.1.0/baton-fivetran-v0.1.0-darwin-amd64.zip"
-      sha256 "16749a378dff94a98a311db329dde52d373bb731fb23240d6c5abbb0c85223fe"
+      url "https://github.com/ConductorOne/baton-fivetran/releases/download/v0.1.1/baton-fivetran-v0.1.1-darwin-amd64.zip"
+      sha256 "3326b34cc67685a1c99a0f46d5f76be2371ac59a597f6507ed9e85c4c3e7e223"
 
       def install
         bin.install "baton-fivetran"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-fivetran/releases/download/v0.1.0/baton-fivetran-v0.1.0-darwin-arm64.zip"
-      sha256 "6d6c967c4a8cbf4e109f281fb5f46343ed8d4ecaf36995353216e1932be4b8ad"
+      url "https://github.com/ConductorOne/baton-fivetran/releases/download/v0.1.1/baton-fivetran-v0.1.1-darwin-arm64.zip"
+      sha256 "d803b475d4a9cd6895b5c714de7204193acce74654d825ae2b9a9578695d6f36"
 
       def install
         bin.install "baton-fivetran"
@@ -27,24 +27,18 @@ class BatonFivetran < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-fivetran/releases/download/v0.1.0/baton-fivetran-v0.1.0-linux-amd64.tar.gz"
-        sha256 "57238ca3415a4d77eab48bba8caffb394056854400ee3fd5cdac883e568a57c0"
-
-        def install
-          bin.install "baton-fivetran"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-fivetran/releases/download/v0.1.1/baton-fivetran-v0.1.1-linux-amd64.tar.gz"
+      sha256 "da5a651e9850b2e777160f1bd97935c36637601c8fe234f8b88257090d18fdbd"
+      def install
+        bin.install "baton-fivetran"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-fivetran/releases/download/v0.1.0/baton-fivetran-v0.1.0-linux-arm64.tar.gz"
-        sha256 "e99242494b5f156a6cb4b98508dbdc66b9468abb1b48e300a1203ff5b3c54cb0"
-
-        def install
-          bin.install "baton-fivetran"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-fivetran/releases/download/v0.1.1/baton-fivetran-v0.1.1-linux-arm64.tar.gz"
+      sha256 "84ec17e546f50f04250a40fa7b7d5b2bceb1bf5945f3eb8d07ad68c3133960dd"
+      def install
+        bin.install "baton-fivetran"
       end
     end
   end
