@@ -5,20 +5,20 @@
 class BatonOutreach < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.5"
+  version "0.1.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-outreach/releases/download/v0.1.5/baton-outreach-v0.1.5-darwin-amd64.zip"
-      sha256 "538665f0b86085bb14480dcd8953bda8fb61bf3044db14ca7d059744573cef90"
+      url "https://github.com/ConductorOne/baton-outreach/releases/download/v0.1.6/baton-outreach-v0.1.6-darwin-amd64.zip"
+      sha256 "fcd185bcfa53384eb44b4a64775aa8af39a4589625b9c104ea1b701e6ac2d26b"
 
       def install
         bin.install "baton-outreach"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-outreach/releases/download/v0.1.5/baton-outreach-v0.1.5-darwin-arm64.zip"
-      sha256 "23609cbb8fc0199838e79c9ef1b38a643fb1a7ff250f9a5bd4f12a1abac7e547"
+      url "https://github.com/ConductorOne/baton-outreach/releases/download/v0.1.6/baton-outreach-v0.1.6-darwin-arm64.zip"
+      sha256 "2cff5bfeabfa6add1994883e6d0f964daedd7dde82a98f7cbe4443272606d9ee"
 
       def install
         bin.install "baton-outreach"
@@ -28,15 +28,15 @@ class BatonOutreach < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-outreach/releases/download/v0.1.5/baton-outreach-v0.1.5-linux-amd64.tar.gz"
-      sha256 "a18632b76887c56830b56971ff3e256cf379583473c3307bb8d6a995e046fed9"
+      url "https://github.com/ConductorOne/baton-outreach/releases/download/v0.1.6/baton-outreach-v0.1.6-linux-amd64.tar.gz"
+      sha256 "ff4007559642461c76ce44c01c9091845a007c6bcbe481a5b2b54e70ad5ecc78"
       def install
         bin.install "baton-outreach"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-outreach/releases/download/v0.1.5/baton-outreach-v0.1.5-linux-arm64.tar.gz"
-      sha256 "70f2273c2be67d0cba7ed6cf4fff2c6b8bac128747a6a1d5774154894b7dc5e5"
+      url "https://github.com/ConductorOne/baton-outreach/releases/download/v0.1.6/baton-outreach-v0.1.6-linux-arm64.tar.gz"
+      sha256 "89d6aff6be9e1241a5add841695051c5f1a37ee1c056c1c0eb3727faf63a838f"
       def install
         bin.install "baton-outreach"
       end
