@@ -5,20 +5,20 @@
 class BatonActiveDirectory < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.4.9-rc.1"
+  version "0.4.9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-active-directory/releases/download/v0.4.9-rc.1/baton-active-directory-v0.4.9-rc.1-darwin-amd64.zip"
-      sha256 "9b6ae07a85c1381c38e1c44d2f3bc95024b4a7b45d29172c7f3138b2e453caff"
+      url "https://github.com/ConductorOne/baton-active-directory/releases/download/v0.4.9/baton-active-directory-v0.4.9-darwin-amd64.zip"
+      sha256 "b491e96f8534ff87b68ecefa612352c5e7416f02b2304394885b79cd06e5b9de"
 
       def install
         bin.install "baton-active-directory"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-active-directory/releases/download/v0.4.9-rc.1/baton-active-directory-v0.4.9-rc.1-darwin-arm64.zip"
-      sha256 "73fd702a55192506397acae975cc1da484897ecc04473bbbb33ef39198afdca5"
+      url "https://github.com/ConductorOne/baton-active-directory/releases/download/v0.4.9/baton-active-directory-v0.4.9-darwin-arm64.zip"
+      sha256 "638f3ee4c3c0043d90233eafa3f1708230000367c6df7c056367507c386ccfc2"
 
       def install
         bin.install "baton-active-directory"
@@ -28,15 +28,15 @@ class BatonActiveDirectory < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-active-directory/releases/download/v0.4.9-rc.1/baton-active-directory-v0.4.9-rc.1-linux-amd64.tar.gz"
-      sha256 "5c71428b82781a8931fcf3a4693e7e98ed4bf74a7f2c9d7338db21545637aa1f"
+      url "https://github.com/ConductorOne/baton-active-directory/releases/download/v0.4.9/baton-active-directory-v0.4.9-linux-amd64.tar.gz"
+      sha256 "cfbaf4c62f680adbeedbd41af382355bbe3394e5aa04763bf33a78dac3c30180"
       def install
         bin.install "baton-active-directory"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-active-directory/releases/download/v0.4.9-rc.1/baton-active-directory-v0.4.9-rc.1-linux-arm64.tar.gz"
-      sha256 "a47e32c25a570e06c3f478d97461d382032ca29b4be072fdc03f35597e3706da"
+      url "https://github.com/ConductorOne/baton-active-directory/releases/download/v0.4.9/baton-active-directory-v0.4.9-linux-arm64.tar.gz"
+      sha256 "cda292acb743e0570406efe2d1d0c00b52e964129124a7386af304a2cd8a1ba7"
       def install
         bin.install "baton-active-directory"
       end
