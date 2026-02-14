@@ -5,20 +5,20 @@
 class BatonZoom < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-zoom/releases/download/v0.1.0/baton-zoom-v0.1.0-darwin-amd64.zip"
-      sha256 "75d9d13cccacf2dc5da5af02d1b6901b61cded850e4266710c9b3820a04deb26"
+      url "https://github.com/ConductorOne/baton-zoom/releases/download/v0.1.1/baton-zoom-v0.1.1-darwin-amd64.zip"
+      sha256 "0a9ea12e629d524a97c24d3a5408d35cb83b60b58a1dc7ea572c10f27efbcef7"
 
       def install
         bin.install "baton-zoom"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-zoom/releases/download/v0.1.0/baton-zoom-v0.1.0-darwin-arm64.zip"
-      sha256 "b8382c47cb8a65202f59258a5dfc9fc74d9a5bb9bf556d6a743c2a8e82b68807"
+      url "https://github.com/ConductorOne/baton-zoom/releases/download/v0.1.1/baton-zoom-v0.1.1-darwin-arm64.zip"
+      sha256 "d54b016d3e962414f6dbf91d317d721b2e4ee653a5e7d14414daed5b1c6bd5b7"
 
       def install
         bin.install "baton-zoom"
@@ -27,24 +27,18 @@ class BatonZoom < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-zoom/releases/download/v0.1.0/baton-zoom-v0.1.0-linux-amd64.tar.gz"
-        sha256 "24b34648822cb7325fc7c654051df46b09037674b8deb2dfb8b05bbc5b45eea2"
-
-        def install
-          bin.install "baton-zoom"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-zoom/releases/download/v0.1.1/baton-zoom-v0.1.1-linux-amd64.tar.gz"
+      sha256 "bd7adedd81ea55b38d5e2bee68ed3eb79e7e9693a5b60a2fb2825f386324eaea"
+      def install
+        bin.install "baton-zoom"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-zoom/releases/download/v0.1.0/baton-zoom-v0.1.0-linux-arm64.tar.gz"
-        sha256 "4ac01bafa044fc29f1bc3c10f474a7f47bd71bf393d0f24fce26b0149adb853d"
-
-        def install
-          bin.install "baton-zoom"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-zoom/releases/download/v0.1.1/baton-zoom-v0.1.1-linux-arm64.tar.gz"
+      sha256 "d642c0687bd6f24321619ee551d360efca9de3cb643a7c2552daacdc086ab184"
+      def install
+        bin.install "baton-zoom"
       end
     end
   end
