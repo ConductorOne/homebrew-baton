@@ -5,20 +5,20 @@
 class BatonPagerduty < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.5"
+  version "0.0.6"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-pagerduty/releases/download/v0.0.5/baton-pagerduty-v0.0.5-darwin-arm64.zip"
-      sha256 "2560413bf69ef706a296dd2a002c1276908a4ffa5ce9493e55f021bf27fe180d"
+    if Hardware::CPU.intel?
+      url "https://github.com/ConductorOne/baton-pagerduty/releases/download/v0.0.6/baton-pagerduty-v0.0.6-darwin-amd64.zip"
+      sha256 "9f6e67dfa3490121cae1d07f3635222838c1804c2270dc705439a01aaf75a2fd"
 
       def install
         bin.install "baton-pagerduty"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-pagerduty/releases/download/v0.0.5/baton-pagerduty-v0.0.5-darwin-amd64.zip"
-      sha256 "87b2fc8afb7288c89d3c1138148861c525794c7cdd3b6de75f503296b2c2523b"
+    if Hardware::CPU.arm?
+      url "https://github.com/ConductorOne/baton-pagerduty/releases/download/v0.0.6/baton-pagerduty-v0.0.6-darwin-arm64.zip"
+      sha256 "903847392d40cd1d0f897c71f3db2a787c1241bbca93195b2a576696091e6c4f"
 
       def install
         bin.install "baton-pagerduty"
@@ -27,18 +27,16 @@ class BatonPagerduty < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-pagerduty/releases/download/v0.0.5/baton-pagerduty-v0.0.5-linux-arm64.tar.gz"
-      sha256 "eabadab9fd19526a63c4910fe62a7d28e94e835b9214454ac26482ef26c6608b"
-
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-pagerduty/releases/download/v0.0.6/baton-pagerduty-v0.0.6-linux-amd64.tar.gz"
+      sha256 "616b64a152f82bd4aa8565c36673a7c13ff1658c4db89944c97b096a4230708c"
       def install
         bin.install "baton-pagerduty"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-pagerduty/releases/download/v0.0.5/baton-pagerduty-v0.0.5-linux-amd64.tar.gz"
-      sha256 "f23cfebcab464e8e55db10c8dd718ca6bf133c064d79309e39c3a3cd3472b1f9"
-
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-pagerduty/releases/download/v0.0.6/baton-pagerduty-v0.0.6-linux-arm64.tar.gz"
+      sha256 "72788238a87341ed4b35fe405ee9b8aad6e59fcb3f715b1f8ac28a9a785e7c48"
       def install
         bin.install "baton-pagerduty"
       end
