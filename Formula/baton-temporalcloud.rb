@@ -5,20 +5,20 @@
 class BatonTemporalcloud < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-temporalcloud/releases/download/v0.1.0/baton-temporalcloud-v0.1.0-darwin-amd64.zip"
-      sha256 "ca4b1330c29180f8c4389332d54b9c821d99088c09e5f9e6b8eaec7150e1a500"
+      url "https://github.com/ConductorOne/baton-temporalcloud/releases/download/v0.1.1/baton-temporalcloud-v0.1.1-darwin-amd64.zip"
+      sha256 "1fa4b18e23db13467f50ff37953255e4a81a396d232d288e9b711951e31da81b"
 
       def install
         bin.install "baton-temporalcloud"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-temporalcloud/releases/download/v0.1.0/baton-temporalcloud-v0.1.0-darwin-arm64.zip"
-      sha256 "f0735bc2d260d53c1d5ea9160f633308e2692ee31e509ece5be5f423d7e958fe"
+      url "https://github.com/ConductorOne/baton-temporalcloud/releases/download/v0.1.1/baton-temporalcloud-v0.1.1-darwin-arm64.zip"
+      sha256 "09b951ffa8010c8846a39f0e4363c95b66fbcb5c4e883843a4100218b6b79356"
 
       def install
         bin.install "baton-temporalcloud"
@@ -27,24 +27,18 @@ class BatonTemporalcloud < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-temporalcloud/releases/download/v0.1.0/baton-temporalcloud-v0.1.0-linux-amd64.tar.gz"
-        sha256 "34903909bdde4a8e2ed06161b5bc32f750fec1c9bfa9acba996a2cacb312ea7c"
-
-        def install
-          bin.install "baton-temporalcloud"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-temporalcloud/releases/download/v0.1.1/baton-temporalcloud-v0.1.1-linux-amd64.tar.gz"
+      sha256 "01d97f1e0ef0d4b702240b09616e994f0f89f430b4970118b9ba271d3d98d113"
+      def install
+        bin.install "baton-temporalcloud"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-temporalcloud/releases/download/v0.1.0/baton-temporalcloud-v0.1.0-linux-arm64.tar.gz"
-        sha256 "20ff14db78613a300116438cb6238421526223ac58cf5f7af436be3cdc083528"
-
-        def install
-          bin.install "baton-temporalcloud"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-temporalcloud/releases/download/v0.1.1/baton-temporalcloud-v0.1.1-linux-arm64.tar.gz"
+      sha256 "1237e9ebade59b4619558a673fd36f45cdb3bce6bc1aa47b404318dd01b31bbf"
+      def install
+        bin.install "baton-temporalcloud"
       end
     end
   end
