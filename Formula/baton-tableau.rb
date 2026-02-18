@@ -5,20 +5,20 @@
 class BatonTableau < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.6"
+  version "0.1.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-tableau/releases/download/v0.1.6/baton-tableau-v0.1.6-darwin-amd64.zip"
-      sha256 "91d11bfb4686ea6f04e0919d10a873cf59ab310a7c006cc5546ffafa590c0721"
+      url "https://github.com/ConductorOne/baton-tableau/releases/download/v0.1.7/baton-tableau-v0.1.7-darwin-amd64.zip"
+      sha256 "8417f29dffb53f5be92d63aafac0fb84f71e5b4379655de236c81837523ee246"
 
       def install
         bin.install "baton-tableau"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-tableau/releases/download/v0.1.6/baton-tableau-v0.1.6-darwin-arm64.zip"
-      sha256 "f131cf0c5555c897969baafabb542601664b2f1e5c64571d5893d37f917f886d"
+      url "https://github.com/ConductorOne/baton-tableau/releases/download/v0.1.7/baton-tableau-v0.1.7-darwin-arm64.zip"
+      sha256 "54218ec91eb3be0e031e1b13a77aa8f823869f9e9bbc22ef481291dab6c69e68"
 
       def install
         bin.install "baton-tableau"
@@ -28,15 +28,15 @@ class BatonTableau < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-tableau/releases/download/v0.1.6/baton-tableau-v0.1.6-linux-amd64.tar.gz"
-      sha256 "4fe6a1d8f0894bb58b28bff2ef59b76cdcd435f7e3ed8777b181c1e228155d06"
+      url "https://github.com/ConductorOne/baton-tableau/releases/download/v0.1.7/baton-tableau-v0.1.7-linux-amd64.tar.gz"
+      sha256 "bde734c7a99d6d226d9e88df81c22b74d7ba6c7a6bc84ad92a3f56d1af2dd9d5"
       def install
         bin.install "baton-tableau"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-tableau/releases/download/v0.1.6/baton-tableau-v0.1.6-linux-arm64.tar.gz"
-      sha256 "2e2270ca7a72de29fbc48aeb337dc6e14070795dc2ffd7abdf394875b7b7c5f3"
+      url "https://github.com/ConductorOne/baton-tableau/releases/download/v0.1.7/baton-tableau-v0.1.7-linux-arm64.tar.gz"
+      sha256 "4de2bffbda316c63de8ac21e130cabe67a2b505fa541f505e59c117f48328750"
       def install
         bin.install "baton-tableau"
       end
