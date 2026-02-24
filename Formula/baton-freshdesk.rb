@@ -5,20 +5,20 @@
 class BatonFreshdesk < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-freshdesk/releases/download/v0.1.2/baton-freshdesk-v0.1.2-darwin-amd64.zip"
-      sha256 "8631ace673fc661a92aa5e2e2a0e850f502c115ea5adbe710da0dd3e14ba7e24"
+      url "https://github.com/ConductorOne/baton-freshdesk/releases/download/v0.1.3/baton-freshdesk-v0.1.3-darwin-amd64.zip"
+      sha256 "717f502414be34369be470068da436b8036e8eac97116904e4fa72b982957aa5"
 
       def install
         bin.install "baton-freshdesk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-freshdesk/releases/download/v0.1.2/baton-freshdesk-v0.1.2-darwin-arm64.zip"
-      sha256 "c543b8fd29dd8be48eb00eac1a1f126ec2eeaac62c95c3db4dbc63cd4fd95b46"
+      url "https://github.com/ConductorOne/baton-freshdesk/releases/download/v0.1.3/baton-freshdesk-v0.1.3-darwin-arm64.zip"
+      sha256 "47297f9af19b330d0bc631c0183085c3a9debadfa0b87e487359e5971da62312"
 
       def install
         bin.install "baton-freshdesk"
@@ -28,15 +28,15 @@ class BatonFreshdesk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-freshdesk/releases/download/v0.1.2/baton-freshdesk-v0.1.2-linux-amd64.tar.gz"
-      sha256 "a43b9df7742d03bfa11bd814467b686d5183bdb48a2dbe77349153060de2dcbc"
+      url "https://github.com/ConductorOne/baton-freshdesk/releases/download/v0.1.3/baton-freshdesk-v0.1.3-linux-amd64.tar.gz"
+      sha256 "044b867f44d8704e22cc709fd34044ec32ca11caa5406429be71851e0dc86b1b"
       def install
         bin.install "baton-freshdesk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-freshdesk/releases/download/v0.1.2/baton-freshdesk-v0.1.2-linux-arm64.tar.gz"
-      sha256 "6a9c1e1bf3b0c9e78cb3c549fe8e257105d7887d10390101b6e518057afe62bc"
+      url "https://github.com/ConductorOne/baton-freshdesk/releases/download/v0.1.3/baton-freshdesk-v0.1.3-linux-arm64.tar.gz"
+      sha256 "21e3da2e682c047ce16c3ee853708182c5f645e342d7ff24dae56ed59ea958bc"
       def install
         bin.install "baton-freshdesk"
       end
