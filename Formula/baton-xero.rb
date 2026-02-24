@@ -5,20 +5,20 @@
 class BatonXero < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-xero/releases/download/v0.1.0/baton-xero-v0.1.0-darwin-amd64.zip"
-      sha256 "aee5f394ce3ac4e8b9106da6f1ad60a919080ae20956f6bcd5c80ad613cdaefb"
+      url "https://github.com/ConductorOne/baton-xero/releases/download/v0.1.1/baton-xero-v0.1.1-darwin-amd64.zip"
+      sha256 "e31a99befc007a651cab5aeeb20e9e43278dea69cbf0c00b878866de972f0eba"
 
       def install
         bin.install "baton-xero"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-xero/releases/download/v0.1.0/baton-xero-v0.1.0-darwin-arm64.zip"
-      sha256 "2834a61234545a153bb7e11e17a52b628718f40c4a73a19b93657e82465ca554"
+      url "https://github.com/ConductorOne/baton-xero/releases/download/v0.1.1/baton-xero-v0.1.1-darwin-arm64.zip"
+      sha256 "35b5e292a078ab58c02850909500872f8893828a96448f0c2f6d44787e91793a"
 
       def install
         bin.install "baton-xero"
@@ -28,15 +28,15 @@ class BatonXero < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-xero/releases/download/v0.1.0/baton-xero-v0.1.0-linux-amd64.tar.gz"
-      sha256 "ebd712355f309af1f45551ea19e494d88ad0dedfaa59f665bcf142380a215a15"
+      url "https://github.com/ConductorOne/baton-xero/releases/download/v0.1.1/baton-xero-v0.1.1-linux-amd64.tar.gz"
+      sha256 "99b7eceb814e110ae9915ec2441cbb7adfb8f50bd1af995169924ecf531d347b"
       def install
         bin.install "baton-xero"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-xero/releases/download/v0.1.0/baton-xero-v0.1.0-linux-arm64.tar.gz"
-      sha256 "b809fba672b581f7322f2243b59d6d07cacce1883f814e67a4c8239d81c75bd7"
+      url "https://github.com/ConductorOne/baton-xero/releases/download/v0.1.1/baton-xero-v0.1.1-linux-arm64.tar.gz"
+      sha256 "713f580ffbfe265f2d128ba4cd815230c0c383634bb1c90639d22ab61b1393da"
       def install
         bin.install "baton-xero"
       end
