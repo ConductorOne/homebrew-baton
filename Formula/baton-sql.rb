@@ -5,20 +5,20 @@
 class BatonSql < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.4.5"
+  version "0.5.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-sql/releases/download/v0.4.5/baton-sql-v0.4.5-darwin-amd64.zip"
-      sha256 "e51ad2e4c4812fe7384957f2827db3445e312b4538d0ba284c27eff9ac5542d2"
+      url "https://github.com/ConductorOne/baton-sql/releases/download/v0.5.0/baton-sql-v0.5.0-darwin-amd64.zip"
+      sha256 "408edb9382d4255478c39785b1f7068ed8dd9d66d459ea27f309c98edbe4e59d"
 
       def install
         bin.install "baton-sql"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-sql/releases/download/v0.4.5/baton-sql-v0.4.5-darwin-arm64.zip"
-      sha256 "f7ec9188049804c8c54262a02dc5183ea9b9b36d13babefd9d2d3f7cc27a71e1"
+      url "https://github.com/ConductorOne/baton-sql/releases/download/v0.5.0/baton-sql-v0.5.0-darwin-arm64.zip"
+      sha256 "17336ab4feb53d1255b49755933b9a3ca9beee7b0df8fe55dc00e90a95516974"
 
       def install
         bin.install "baton-sql"
@@ -28,15 +28,15 @@ class BatonSql < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sql/releases/download/v0.4.5/baton-sql-v0.4.5-linux-amd64.tar.gz"
-      sha256 "b42f41b308892c2d26c2b2ad1bd53a344ec0163d975a038f8f24324a5ac30f28"
+      url "https://github.com/ConductorOne/baton-sql/releases/download/v0.5.0/baton-sql-v0.5.0-linux-amd64.tar.gz"
+      sha256 "3eaa8635718da0a21a291e30f7e158b202e5d52d6327e63e33237e3ceac3a3dc"
       def install
         bin.install "baton-sql"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sql/releases/download/v0.4.5/baton-sql-v0.4.5-linux-arm64.tar.gz"
-      sha256 "cecd6df383123356260b919170daca8f9239e2a90a75c6deb1dc76a439ba7f18"
+      url "https://github.com/ConductorOne/baton-sql/releases/download/v0.5.0/baton-sql-v0.5.0-linux-arm64.tar.gz"
+      sha256 "d75289bc578a7e9fca9d34250b8ad68cdfaa620b94879ed834a827e16da2ff11"
       def install
         bin.install "baton-sql"
       end
