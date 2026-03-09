@@ -5,20 +5,20 @@
 class BatonRippling < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.5-test.7"
+  version "0.0.5-test.8"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-rippling/releases/download/v0.0.5-test.7/baton-rippling-v0.0.5-test.7-darwin-amd64.zip"
-      sha256 "8e877859e2787c51db14e8ff1d3a6123e049079861c3331cc409f8c2f3189a53"
+      url "https://github.com/ConductorOne/baton-rippling/releases/download/v0.0.5-test.8/baton-rippling-v0.0.5-test.8-darwin-amd64.zip"
+      sha256 "4956343b97d0b1f46d57ff74d149998127d4a34fddbdd94d4fd94006a36efcae"
 
       def install
         bin.install "baton-rippling"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-rippling/releases/download/v0.0.5-test.7/baton-rippling-v0.0.5-test.7-darwin-arm64.zip"
-      sha256 "e283ce37abfcf23498aae0d2c373795a3451c66b669d2a003c106e44a2e23343"
+      url "https://github.com/ConductorOne/baton-rippling/releases/download/v0.0.5-test.8/baton-rippling-v0.0.5-test.8-darwin-arm64.zip"
+      sha256 "402d33d8b98a6a093425da65988e8f0067af81db624680ddf84fedc75ae55d11"
 
       def install
         bin.install "baton-rippling"
@@ -28,15 +28,15 @@ class BatonRippling < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-rippling/releases/download/v0.0.5-test.7/baton-rippling-v0.0.5-test.7-linux-amd64.tar.gz"
-      sha256 "0a63f0d1c9bfcddbe72b52a2c558c46d078f4e9205ab38dfa106b4f0f21eea1f"
+      url "https://github.com/ConductorOne/baton-rippling/releases/download/v0.0.5-test.8/baton-rippling-v0.0.5-test.8-linux-amd64.tar.gz"
+      sha256 "17546bb9db406fb8d0bb16fae455ddc571534ddef4acb96e2c899c7cb9406884"
       def install
         bin.install "baton-rippling"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-rippling/releases/download/v0.0.5-test.7/baton-rippling-v0.0.5-test.7-linux-arm64.tar.gz"
-      sha256 "f00f938ee9a0b841ba45252bd56cf877a48f277892840cda93654d5a87cbc390"
+      url "https://github.com/ConductorOne/baton-rippling/releases/download/v0.0.5-test.8/baton-rippling-v0.0.5-test.8-linux-arm64.tar.gz"
+      sha256 "5ad759d99f5ee8a7f8dcb1056e70429b8910f2381504c3f7f7d3583d122b6422"
       def install
         bin.install "baton-rippling"
       end
