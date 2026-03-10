@@ -5,20 +5,20 @@
 class BatonSuccessfactors < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-successfactors/releases/download/v0.1.2/baton-successfactors-v0.1.2-darwin-amd64.zip"
-      sha256 "da08f7369a6b7e4da473bf77143cb422f14f571535240a3530b6b3912d90b503"
+      url "https://github.com/ConductorOne/baton-successfactors/releases/download/v0.1.3/baton-successfactors-v0.1.3-darwin-amd64.zip"
+      sha256 "6e1fb130cad7cb5dc27035d064e15682456ce24fbe6dcb7d97f1516ac9f6871f"
 
       def install
         bin.install "baton-successfactors"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-successfactors/releases/download/v0.1.2/baton-successfactors-v0.1.2-darwin-arm64.zip"
-      sha256 "5032b5f91c1d9d3de75def520af3ff82b3fabcdfcad05a3998f1127f7f34618a"
+      url "https://github.com/ConductorOne/baton-successfactors/releases/download/v0.1.3/baton-successfactors-v0.1.3-darwin-arm64.zip"
+      sha256 "dd729447cb231ebd9c4456ee94aa5b5ce27cc3b369e54f2ed9403b661c2946b9"
 
       def install
         bin.install "baton-successfactors"
@@ -27,24 +27,18 @@ class BatonSuccessfactors < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-successfactors/releases/download/v0.1.2/baton-successfactors-v0.1.2-linux-amd64.tar.gz"
-        sha256 "3daf59a10112887d1269648aae17bc974dceadd96f4915a39392dbaa43da1cdc"
-
-        def install
-          bin.install "baton-successfactors"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-successfactors/releases/download/v0.1.3/baton-successfactors-v0.1.3-linux-amd64.tar.gz"
+      sha256 "828ba031c3f26a1bb1adc096adadd6aeb70862e90ac55d87214c4726c77278a8"
+      def install
+        bin.install "baton-successfactors"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-successfactors/releases/download/v0.1.2/baton-successfactors-v0.1.2-linux-arm64.tar.gz"
-        sha256 "2374585ebf09bc5e2f11f8ae9591490434b03af947ccf7145f7fb9cc7cd1086a"
-
-        def install
-          bin.install "baton-successfactors"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-successfactors/releases/download/v0.1.3/baton-successfactors-v0.1.3-linux-arm64.tar.gz"
+      sha256 "a945a0c65fb96323d44131cd383b543e64c93c886336eeedddce680f79c5516b"
+      def install
+        bin.install "baton-successfactors"
       end
     end
   end
