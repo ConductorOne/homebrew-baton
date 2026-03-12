@@ -5,20 +5,20 @@
 class BatonWizInsights < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-wiz-insights/releases/download/v0.0.1/baton-wiz-insights-v0.0.1-darwin-amd64.zip"
-      sha256 "e616b36a511e6202d5986f97c53c25a761907d2d8955372a9c5f30af861044f9"
+      url "https://github.com/ConductorOne/baton-wiz-insights/releases/download/v0.0.2/baton-wiz-insights-v0.0.2-darwin-amd64.zip"
+      sha256 "d0d9a2087e24a38e58ec90962d549ac8e5405fe0604faff68666c4140287d116"
 
       def install
         bin.install "baton-wiz-insights"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-wiz-insights/releases/download/v0.0.1/baton-wiz-insights-v0.0.1-darwin-arm64.zip"
-      sha256 "86653f92ae4dba5044adba27dada6f579ad9e6587a2ff1407f4ad3a845d156bc"
+      url "https://github.com/ConductorOne/baton-wiz-insights/releases/download/v0.0.2/baton-wiz-insights-v0.0.2-darwin-arm64.zip"
+      sha256 "7b6d41941bcbd8b67af5010612b12c9d743f87155f0c3d616f9c99bf4271caa0"
 
       def install
         bin.install "baton-wiz-insights"
@@ -28,15 +28,15 @@ class BatonWizInsights < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-wiz-insights/releases/download/v0.0.1/baton-wiz-insights-v0.0.1-linux-amd64.tar.gz"
-      sha256 "760c3cd71c6024a927f1a5e6b02a97a36fe2751789b2a90bad2839567e4adf2a"
+      url "https://github.com/ConductorOne/baton-wiz-insights/releases/download/v0.0.2/baton-wiz-insights-v0.0.2-linux-amd64.tar.gz"
+      sha256 "25c67345328743c1c0938267c74e1ea9c46ee084e226eb88a844d36bff028784"
       def install
         bin.install "baton-wiz-insights"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-wiz-insights/releases/download/v0.0.1/baton-wiz-insights-v0.0.1-linux-arm64.tar.gz"
-      sha256 "3439b79150db5078efc81f02433bfd28f575cb7727f6a284ee10015826487c94"
+      url "https://github.com/ConductorOne/baton-wiz-insights/releases/download/v0.0.2/baton-wiz-insights-v0.0.2-linux-arm64.tar.gz"
+      sha256 "1be5fc6492162d2b803c4b5f14f94b5aad6cf3629f7e29a45b513f507642d26f"
       def install
         bin.install "baton-wiz-insights"
       end
