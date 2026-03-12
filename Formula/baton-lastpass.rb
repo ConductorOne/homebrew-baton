@@ -5,20 +5,20 @@
 class BatonLastpass < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.1-test.2"
+  version "0.2.1-test.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-lastpass/releases/download/v0.2.1-test.2/baton-lastpass-v0.2.1-test.2-darwin-amd64.zip"
-      sha256 "1b9ae0b61e2540467a572ce793343a54308c6c86ea44cab7ba6bdd008475b431"
+      url "https://github.com/ConductorOne/baton-lastpass/releases/download/v0.2.1-test.3/baton-lastpass-v0.2.1-test.3-darwin-amd64.zip"
+      sha256 "2d67a58b55e355c399046f9c4c38fb2549f55d1f9c0698fa61a7e6b42be40ba6"
 
       def install
         bin.install "baton-lastpass"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-lastpass/releases/download/v0.2.1-test.2/baton-lastpass-v0.2.1-test.2-darwin-arm64.zip"
-      sha256 "f2faebf3cc26c1b422de54696021a377ae833ea4c6bd5434a0d8dbc4ae9f1807"
+      url "https://github.com/ConductorOne/baton-lastpass/releases/download/v0.2.1-test.3/baton-lastpass-v0.2.1-test.3-darwin-arm64.zip"
+      sha256 "e8cfda8f01ff05c39181d2ca3ef30dbfd834517ee8c556cd88747634139ca94a"
 
       def install
         bin.install "baton-lastpass"
@@ -28,15 +28,15 @@ class BatonLastpass < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-lastpass/releases/download/v0.2.1-test.2/baton-lastpass-v0.2.1-test.2-linux-amd64.tar.gz"
-      sha256 "f97dc4a2eaf5278e1fdfec57834da0aa1a2d8fa9cfbf919e3b7cd5a07e40be7d"
+      url "https://github.com/ConductorOne/baton-lastpass/releases/download/v0.2.1-test.3/baton-lastpass-v0.2.1-test.3-linux-amd64.tar.gz"
+      sha256 "2f1d71f2890aef05351ee5123471ed3b0d5bb09fd9869ffeaf989b4b88fb9100"
       def install
         bin.install "baton-lastpass"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-lastpass/releases/download/v0.2.1-test.2/baton-lastpass-v0.2.1-test.2-linux-arm64.tar.gz"
-      sha256 "82815e5d8361f170411d6287459a7ed1f72d99a66aae2151cad25218989bf2c7"
+      url "https://github.com/ConductorOne/baton-lastpass/releases/download/v0.2.1-test.3/baton-lastpass-v0.2.1-test.3-linux-arm64.tar.gz"
+      sha256 "baf68309acd1e4a53d3d1e7ea27cc6a5291866b3b9e896d912633f1b7caac50a"
       def install
         bin.install "baton-lastpass"
       end
