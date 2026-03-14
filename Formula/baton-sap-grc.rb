@@ -5,20 +5,20 @@
 class BatonSapGrc < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-sap-grc/releases/download/v0.1.0/baton-sap-grc-v0.1.0-darwin-amd64.zip"
-      sha256 "ab0508244bbc3252935273edbe706b4236930f661a6c3c396a1ab1958e7c14f7"
+      url "https://github.com/ConductorOne/baton-sap-grc/releases/download/v0.2.0/baton-sap-grc-v0.2.0-darwin-amd64.zip"
+      sha256 "6664017121ee3663f7ae76cebad306b9a1c2da2abfcf7ceff1a48fa23de82d21"
 
       def install
         bin.install "baton-sap-grc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-sap-grc/releases/download/v0.1.0/baton-sap-grc-v0.1.0-darwin-arm64.zip"
-      sha256 "5adbf6c2d75ef75a4e179af2d9228a080ae2cdff981193168e548d4a13fbf14e"
+      url "https://github.com/ConductorOne/baton-sap-grc/releases/download/v0.2.0/baton-sap-grc-v0.2.0-darwin-arm64.zip"
+      sha256 "021371e9779482bb6d40d424b9c8d837a150e5356b1d8ac292ab2d9d0ebad152"
 
       def install
         bin.install "baton-sap-grc"
@@ -28,15 +28,15 @@ class BatonSapGrc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sap-grc/releases/download/v0.1.0/baton-sap-grc-v0.1.0-linux-amd64.tar.gz"
-      sha256 "004485081270c399ed1753dfc4ad4921e0e7c70af5470b61fb97733e38056723"
+      url "https://github.com/ConductorOne/baton-sap-grc/releases/download/v0.2.0/baton-sap-grc-v0.2.0-linux-amd64.tar.gz"
+      sha256 "247acac8e519dae4a4a2d925f72dcaf0acd1232df2791984f8720fd386cdc0a9"
       def install
         bin.install "baton-sap-grc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sap-grc/releases/download/v0.1.0/baton-sap-grc-v0.1.0-linux-arm64.tar.gz"
-      sha256 "45a7af6f7543fc33dfa3d92983234a0e35315dad15b89cc99032180a2883a267"
+      url "https://github.com/ConductorOne/baton-sap-grc/releases/download/v0.2.0/baton-sap-grc-v0.2.0-linux-arm64.tar.gz"
+      sha256 "cba6c79d028ab9f54f9930c39540024063f099f5f31d2a82a36d82ce2885108e"
       def install
         bin.install "baton-sap-grc"
       end
