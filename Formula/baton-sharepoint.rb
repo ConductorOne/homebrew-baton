@@ -5,20 +5,20 @@
 class BatonSharepoint < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.4-test"
+  version "0.1.4-test-1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-sharepoint/releases/download/v0.1.4-test/baton-sharepoint-v0.1.4-test-darwin-amd64.zip"
-      sha256 "789db4a3fae30539ac12b1a92dbb56c58a7f6bb463460603bd2a96cd6a9a4c8a"
+      url "https://github.com/ConductorOne/baton-sharepoint/releases/download/v0.1.4-test-1/baton-sharepoint-v0.1.4-test-1-darwin-amd64.zip"
+      sha256 "056b9ba590956d90db0e0425919cf79a95203b1110999e204fe46412db26dd3b"
 
       def install
         bin.install "baton-sharepoint"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-sharepoint/releases/download/v0.1.4-test/baton-sharepoint-v0.1.4-test-darwin-arm64.zip"
-      sha256 "785911d2808507285f089d5dc44d5c9ffd1341833cd0266025d043df8679e1ec"
+      url "https://github.com/ConductorOne/baton-sharepoint/releases/download/v0.1.4-test-1/baton-sharepoint-v0.1.4-test-1-darwin-arm64.zip"
+      sha256 "1181f36a7627b3f87d97174b5ca4a390a41d67828175a512462412f744c18b08"
 
       def install
         bin.install "baton-sharepoint"
@@ -28,15 +28,15 @@ class BatonSharepoint < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sharepoint/releases/download/v0.1.4-test/baton-sharepoint-v0.1.4-test-linux-amd64.tar.gz"
-      sha256 "0c06c8199f0ab642083bdf727a0aae9b83874e5b3402e2f11019d93a6cde440f"
+      url "https://github.com/ConductorOne/baton-sharepoint/releases/download/v0.1.4-test-1/baton-sharepoint-v0.1.4-test-1-linux-amd64.tar.gz"
+      sha256 "72b738c15ed9dce3335b7994260577bfe00926f33f0816d3a4c9a1c984f6c8ef"
       def install
         bin.install "baton-sharepoint"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sharepoint/releases/download/v0.1.4-test/baton-sharepoint-v0.1.4-test-linux-arm64.tar.gz"
-      sha256 "80ea93aa769191cbb30eebb46ff8ab23ee0ab74812fc81441700ae620799205d"
+      url "https://github.com/ConductorOne/baton-sharepoint/releases/download/v0.1.4-test-1/baton-sharepoint-v0.1.4-test-1-linux-arm64.tar.gz"
+      sha256 "47bcb749053007b746ed17c1ac1872d2714b1edce41e03ca4cca5c642d8617c7"
       def install
         bin.install "baton-sharepoint"
       end
