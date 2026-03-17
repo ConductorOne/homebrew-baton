@@ -5,20 +5,20 @@
 class BatonFullstory < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.6"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-fullstory/releases/download/v0.0.6/baton-fullstory-v0.0.6-darwin-amd64.zip"
-      sha256 "a1865ca1e52a94b2a861a67461dcf0b8a2915740f58d4cb0f7c4f94cdfb01e8f"
+      url "https://github.com/ConductorOne/baton-fullstory/releases/download/v0.1.0/baton-fullstory-v0.1.0-darwin-amd64.zip"
+      sha256 "1884cf9265ca364a6a268988d010df315c26b9bcfcb69803de20332c93efa4d9"
 
       def install
         bin.install "baton-fullstory"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-fullstory/releases/download/v0.0.6/baton-fullstory-v0.0.6-darwin-arm64.zip"
-      sha256 "998e5cffae6bb94b2d951891db1f4e7aa02206ebf99ede0e663f4df2928955e5"
+      url "https://github.com/ConductorOne/baton-fullstory/releases/download/v0.1.0/baton-fullstory-v0.1.0-darwin-arm64.zip"
+      sha256 "150e963810e1abfa614ec21d547cba7c38cf714d8985a3263b33fbe1bd0cf765"
 
       def install
         bin.install "baton-fullstory"
@@ -27,24 +27,18 @@ class BatonFullstory < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-fullstory/releases/download/v0.0.6/baton-fullstory-v0.0.6-linux-amd64.tar.gz"
-        sha256 "bc1de4f1667bb0ea0cebfc24d61a25c3b83b15a1d99195a6504c1f18544bb4c5"
-
-        def install
-          bin.install "baton-fullstory"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-fullstory/releases/download/v0.1.0/baton-fullstory-v0.1.0-linux-amd64.tar.gz"
+      sha256 "aa7ed85b70256ecdf1f87937010cf743e9dd9882c86cf70ad24110d4382a964b"
+      def install
+        bin.install "baton-fullstory"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-fullstory/releases/download/v0.0.6/baton-fullstory-v0.0.6-linux-arm64.tar.gz"
-        sha256 "f8e03b25a5a9d70c447687a2db3e34b15305e6cd2bb36ff6b4dd336342206260"
-
-        def install
-          bin.install "baton-fullstory"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-fullstory/releases/download/v0.1.0/baton-fullstory-v0.1.0-linux-arm64.tar.gz"
+      sha256 "706c656a9a064977d5bed046b8fc4bdeb28d17a958309179eff907524de54ad4"
+      def install
+        bin.install "baton-fullstory"
       end
     end
   end
