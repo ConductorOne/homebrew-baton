@@ -5,20 +5,20 @@
 class BatonNetsuite < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.3.4-test.1"
+  version "0.3.4-test.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-netsuite/releases/download/v0.3.4-test.1/baton-netsuite-v0.3.4-test.1-darwin-amd64.zip"
-      sha256 "6db1ef7a1b3a87a92757e673d33910d45d4ca663b3f6b65446f15fc8d2a885a1"
+      url "https://github.com/ConductorOne/baton-netsuite/releases/download/v0.3.4-test.2/baton-netsuite-v0.3.4-test.2-darwin-amd64.zip"
+      sha256 "a0f9fa9281b459e7a1711c9ea13cb8c16c3a4912cd61de8126289decc779834b"
 
       def install
         bin.install "baton-netsuite"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-netsuite/releases/download/v0.3.4-test.1/baton-netsuite-v0.3.4-test.1-darwin-arm64.zip"
-      sha256 "ac7d6aafe227aba70496000895d78cc13fc81faafc4a1499aa4ac04bb628f8e5"
+      url "https://github.com/ConductorOne/baton-netsuite/releases/download/v0.3.4-test.2/baton-netsuite-v0.3.4-test.2-darwin-arm64.zip"
+      sha256 "b7a5c9d82fd8b231a7b5298baae0569c27ab7b2e2a327430491c332565bdc87d"
 
       def install
         bin.install "baton-netsuite"
@@ -28,15 +28,15 @@ class BatonNetsuite < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-netsuite/releases/download/v0.3.4-test.1/baton-netsuite-v0.3.4-test.1-linux-amd64.tar.gz"
-      sha256 "026e960ae285ae7f4988eadc280f47629cfc6a71309411a5ac401fdfea8c0444"
+      url "https://github.com/ConductorOne/baton-netsuite/releases/download/v0.3.4-test.2/baton-netsuite-v0.3.4-test.2-linux-amd64.tar.gz"
+      sha256 "0a08fc77141602067afe6d881f177fb445405fa9784097bf58b72015c74c8187"
       def install
         bin.install "baton-netsuite"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-netsuite/releases/download/v0.3.4-test.1/baton-netsuite-v0.3.4-test.1-linux-arm64.tar.gz"
-      sha256 "ba4d7ac5fd722180ef917e85daf9b74c076b5f84886b0b240e8f63116758e188"
+      url "https://github.com/ConductorOne/baton-netsuite/releases/download/v0.3.4-test.2/baton-netsuite-v0.3.4-test.2-linux-arm64.tar.gz"
+      sha256 "7acc947a64c49176fb5d62ca327e94e3bdb486cf1dd864545076edfb0444c1c3"
       def install
         bin.install "baton-netsuite"
       end
