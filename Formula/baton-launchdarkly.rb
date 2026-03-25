@@ -5,20 +5,20 @@
 class BatonLaunchdarkly < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-launchdarkly/releases/download/v0.0.3/baton-launchdarkly-v0.0.3-darwin-amd64.zip"
-      sha256 "c9f196f62016d2d70ba036211622699675582c820b9d412cfbba65c9a9ab11b7"
+      url "https://github.com/ConductorOne/baton-launchdarkly/releases/download/v0.0.4/baton-launchdarkly-v0.0.4-darwin-amd64.zip"
+      sha256 "bd53c5467801a5886c8d87da3bd7ed26fb58271ec83ce1c38c1ff14a658441a3"
 
       def install
         bin.install "baton-launchdarkly"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-launchdarkly/releases/download/v0.0.3/baton-launchdarkly-v0.0.3-darwin-arm64.zip"
-      sha256 "3bda6c7652329a1de4d9fcae3caf97269d8b71a96d93e6e85af460b33703ae2e"
+      url "https://github.com/ConductorOne/baton-launchdarkly/releases/download/v0.0.4/baton-launchdarkly-v0.0.4-darwin-arm64.zip"
+      sha256 "1f8e6505ae9930e97fc820cc92c52474d0fd9a801f0524868d9b00029ccabda2"
 
       def install
         bin.install "baton-launchdarkly"
@@ -27,24 +27,18 @@ class BatonLaunchdarkly < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-launchdarkly/releases/download/v0.0.3/baton-launchdarkly-v0.0.3-linux-amd64.tar.gz"
-        sha256 "23fe6fb7ab461d931bc15da275921c4838dce6a2074356b2e5a8851f40525fd6"
-
-        def install
-          bin.install "baton-launchdarkly"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-launchdarkly/releases/download/v0.0.4/baton-launchdarkly-v0.0.4-linux-amd64.tar.gz"
+      sha256 "62b2a7c646d436e0cccba20d447b7b585740de0587df3a6a3ff6775367972202"
+      def install
+        bin.install "baton-launchdarkly"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-launchdarkly/releases/download/v0.0.3/baton-launchdarkly-v0.0.3-linux-arm64.tar.gz"
-        sha256 "3af13fc846b85f0dac137de1c91f02113ff035339e832a526d553cbbd021c65d"
-
-        def install
-          bin.install "baton-launchdarkly"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-launchdarkly/releases/download/v0.0.4/baton-launchdarkly-v0.0.4-linux-arm64.tar.gz"
+      sha256 "11a2631d7036588dbc3cc5b803f0f07bd419415d5409153fb6bfe18ac909b89d"
+      def install
+        bin.install "baton-launchdarkly"
       end
     end
   end
