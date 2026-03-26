@@ -5,20 +5,20 @@
 class BatonTeamcity < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.2-test-role-resource"
+  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-teamcity/releases/download/v0.1.2-test-role-resource/baton-teamcity-v0.1.2-test-role-resource-darwin-amd64.zip"
-      sha256 "038665d10e46fcd2768a4354f68acf9d77053ce35cb1e717879200a15459b178"
+      url "https://github.com/ConductorOne/baton-teamcity/releases/download/v0.1.2/baton-teamcity-v0.1.2-darwin-amd64.zip"
+      sha256 "504313300bbc9e8b8fee592bddce921767feb66318773979c990f353d79ef52e"
 
       def install
         bin.install "baton-teamcity"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-teamcity/releases/download/v0.1.2-test-role-resource/baton-teamcity-v0.1.2-test-role-resource-darwin-arm64.zip"
-      sha256 "326b189aed48f3758f88f3561c3f463f7781075974149980d13de1363b2c234b"
+      url "https://github.com/ConductorOne/baton-teamcity/releases/download/v0.1.2/baton-teamcity-v0.1.2-darwin-arm64.zip"
+      sha256 "74c4fafdb938f7c546ea5d19f1133262dd15948ee66fc746cdb20b55ca420640"
 
       def install
         bin.install "baton-teamcity"
@@ -28,15 +28,15 @@ class BatonTeamcity < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-teamcity/releases/download/v0.1.2-test-role-resource/baton-teamcity-v0.1.2-test-role-resource-linux-amd64.tar.gz"
-      sha256 "7cc29a35be6350f1249c32a58ac6c0becb21abc7eddc9096df0b4a5327c5b27c"
+      url "https://github.com/ConductorOne/baton-teamcity/releases/download/v0.1.2/baton-teamcity-v0.1.2-linux-amd64.tar.gz"
+      sha256 "b16b28f65b61b5bcfc240809623405054645402e0eeb20ef31dda655b6fa69c4"
       def install
         bin.install "baton-teamcity"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-teamcity/releases/download/v0.1.2-test-role-resource/baton-teamcity-v0.1.2-test-role-resource-linux-arm64.tar.gz"
-      sha256 "6cdbe0dc6a5add21c74f631d2449940022812f912e2c7a70b17fc606117c3e23"
+      url "https://github.com/ConductorOne/baton-teamcity/releases/download/v0.1.2/baton-teamcity-v0.1.2-linux-arm64.tar.gz"
+      sha256 "70dfd6e5f70c0c14f44c57620efcec40c06f15f475089a33e205045c38197264"
       def install
         bin.install "baton-teamcity"
       end
