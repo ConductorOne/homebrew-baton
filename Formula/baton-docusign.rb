@@ -5,20 +5,20 @@
 class BatonDocusign < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.6-test-demo-auth-3"
+  version "0.1.6-test-demo-auth-4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-docusign/releases/download/v0.1.6-test-demo-auth-3/baton-docusign-v0.1.6-test-demo-auth-3-darwin-amd64.zip"
-      sha256 "cc377079fa11fba15c0e5c9a1de16d66b96ae26f0f75f243bd54f4f05e75f4dc"
+      url "https://github.com/ConductorOne/baton-docusign/releases/download/v0.1.6-test-demo-auth-4/baton-docusign-v0.1.6-test-demo-auth-4-darwin-amd64.zip"
+      sha256 "d93dd2778654a7a89689b551084266acd0c9e0dd79f1954e4f63be4aa8de204e"
 
       def install
         bin.install "baton-docusign"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-docusign/releases/download/v0.1.6-test-demo-auth-3/baton-docusign-v0.1.6-test-demo-auth-3-darwin-arm64.zip"
-      sha256 "75bfdbbf8e2bfd1b80cbbe9689bada812b1c18a058cf16737e540ae42a4be8a5"
+      url "https://github.com/ConductorOne/baton-docusign/releases/download/v0.1.6-test-demo-auth-4/baton-docusign-v0.1.6-test-demo-auth-4-darwin-arm64.zip"
+      sha256 "f43b0b0e49ae3943257b2be88df4e90966e5c0f20fb0f2779c7dee36a8f03041"
 
       def install
         bin.install "baton-docusign"
@@ -28,15 +28,15 @@ class BatonDocusign < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-docusign/releases/download/v0.1.6-test-demo-auth-3/baton-docusign-v0.1.6-test-demo-auth-3-linux-amd64.tar.gz"
-      sha256 "24d105bf143a0fd0d9480e1345fcbef9a152ab37b2202d56cefa6d11d8fd1461"
+      url "https://github.com/ConductorOne/baton-docusign/releases/download/v0.1.6-test-demo-auth-4/baton-docusign-v0.1.6-test-demo-auth-4-linux-amd64.tar.gz"
+      sha256 "3544da1c76f4c1225a33059e94bcea370c2e4276c89913506e747a03762b2037"
       def install
         bin.install "baton-docusign"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-docusign/releases/download/v0.1.6-test-demo-auth-3/baton-docusign-v0.1.6-test-demo-auth-3-linux-arm64.tar.gz"
-      sha256 "74fe0e25fe84a7febe7f84f3f7926d0c1241cfbd665921c28394b681785a2eb9"
+      url "https://github.com/ConductorOne/baton-docusign/releases/download/v0.1.6-test-demo-auth-4/baton-docusign-v0.1.6-test-demo-auth-4-linux-arm64.tar.gz"
+      sha256 "dfa5ffb1d9fca8cc209a8d14555940a74a0c19c8309a3bb6a349d1a04d083079"
       def install
         bin.install "baton-docusign"
       end
