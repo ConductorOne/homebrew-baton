@@ -5,20 +5,20 @@
 class BatonSentinelOne < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.5"
+  version "0.0.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-sentinel-one/releases/download/v0.0.5/baton-sentinel-one-v0.0.5-darwin-amd64.zip"
-      sha256 "ed7d56cf6ba8438a577b9097c8e663c32f7eee469bc4ee7abf85ea7b77ec533d"
+      url "https://github.com/ConductorOne/baton-sentinel-one/releases/download/v0.0.6/baton-sentinel-one-v0.0.6-darwin-amd64.zip"
+      sha256 "822148ffa41d7642a1119f47178665e786a754e12f56cf174b2aec7e6d6e45a7"
 
       def install
         bin.install "baton-sentinel-one"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-sentinel-one/releases/download/v0.0.5/baton-sentinel-one-v0.0.5-darwin-arm64.zip"
-      sha256 "6249d68520b4c241920555ca7a4cb958409d9716f57d206074bb42d418e5be1a"
+      url "https://github.com/ConductorOne/baton-sentinel-one/releases/download/v0.0.6/baton-sentinel-one-v0.0.6-darwin-arm64.zip"
+      sha256 "a3ed063b043910df5893b8cd4ff1ac69665dc755de782849dc68b39a94e137c9"
 
       def install
         bin.install "baton-sentinel-one"
@@ -28,15 +28,15 @@ class BatonSentinelOne < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sentinel-one/releases/download/v0.0.5/baton-sentinel-one-v0.0.5-linux-amd64.tar.gz"
-      sha256 "8ac4492515fc0447d74dc594e68027cc9c614cee70812769f2b1d23fb95dbdc3"
+      url "https://github.com/ConductorOne/baton-sentinel-one/releases/download/v0.0.6/baton-sentinel-one-v0.0.6-linux-amd64.tar.gz"
+      sha256 "61359a9a8fa3cfc285ed76efdbeddcc72859cec039f76dccb5de577cd659aadc"
       def install
         bin.install "baton-sentinel-one"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sentinel-one/releases/download/v0.0.5/baton-sentinel-one-v0.0.5-linux-arm64.tar.gz"
-      sha256 "256c65b4fb97cb7cb8cb3957283f0abd6c676bdcb57f671f1d26d4c0b136fc08"
+      url "https://github.com/ConductorOne/baton-sentinel-one/releases/download/v0.0.6/baton-sentinel-one-v0.0.6-linux-arm64.tar.gz"
+      sha256 "e248b25000a0248254189d1e865f6ab72bb7ec70d058d3170f4dc831c8fac0ea"
       def install
         bin.install "baton-sentinel-one"
       end
