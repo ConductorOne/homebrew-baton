@@ -5,20 +5,20 @@
 class BatonZscalerZidentity < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-zscaler-zidentity/releases/download/v0.0.3/baton-zscaler-zidentity-v0.0.3-darwin-amd64.zip"
-      sha256 "8354b208f510b76e8857e0e009d96d19a9036a34fa9f7ee527fb578180f04f80"
+      url "https://github.com/ConductorOne/baton-zscaler-zidentity/releases/download/v0.0.4/baton-zscaler-zidentity-v0.0.4-darwin-amd64.zip"
+      sha256 "e7f7bd10fc4a63b00cd46619f6933cfe587d0dd117090dae8759218054f6c0af"
 
       def install
         bin.install "baton-zscaler-zidentity"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-zscaler-zidentity/releases/download/v0.0.3/baton-zscaler-zidentity-v0.0.3-darwin-arm64.zip"
-      sha256 "2556c5e92b10f6b32ad01fcc5239e9ad0ef11f9e720163c6abdd1fe557ae5551"
+      url "https://github.com/ConductorOne/baton-zscaler-zidentity/releases/download/v0.0.4/baton-zscaler-zidentity-v0.0.4-darwin-arm64.zip"
+      sha256 "62cc6d2f847171b2502257eb8630a22e2be88e59680199627463768caa0a4ef4"
 
       def install
         bin.install "baton-zscaler-zidentity"
@@ -27,24 +27,18 @@ class BatonZscalerZidentity < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-zscaler-zidentity/releases/download/v0.0.3/baton-zscaler-zidentity-v0.0.3-linux-amd64.tar.gz"
-        sha256 "cef98a2ffadc3f2f716201b60db4ea7b76731d6e481e9720bab1f1bc374c6b97"
-
-        def install
-          bin.install "baton-zscaler-zidentity"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-zscaler-zidentity/releases/download/v0.0.4/baton-zscaler-zidentity-v0.0.4-linux-amd64.tar.gz"
+      sha256 "d9ad68844264cdb02eb868b18e60abd953d3afa9c84cb275cc68400871e6c216"
+      def install
+        bin.install "baton-zscaler-zidentity"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-zscaler-zidentity/releases/download/v0.0.3/baton-zscaler-zidentity-v0.0.3-linux-arm64.tar.gz"
-        sha256 "2e61cb3cfe71c9c051dcb9541911a0570ecd7d607e8dc2aae3baef751abbe1df"
-
-        def install
-          bin.install "baton-zscaler-zidentity"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-zscaler-zidentity/releases/download/v0.0.4/baton-zscaler-zidentity-v0.0.4-linux-arm64.tar.gz"
+      sha256 "8a1ff584843229f9c6128915d298e4af4c533afe21da602b0cc65ef4c7af783e"
+      def install
+        bin.install "baton-zscaler-zidentity"
       end
     end
   end
