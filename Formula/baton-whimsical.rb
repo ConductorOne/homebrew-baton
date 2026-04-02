@@ -5,20 +5,20 @@
 class BatonWhimsical < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.4"
+  version "0.0.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-whimsical/releases/download/v0.0.4/baton-whimsical-v0.0.4-darwin-amd64.zip"
-      sha256 "8f787ec95c2ef83409594b5644deb4f0f6677f414191e306e076d2d20e8beb6c"
+      url "https://github.com/ConductorOne/baton-whimsical/releases/download/v0.0.5/baton-whimsical-v0.0.5-darwin-amd64.zip"
+      sha256 "e3db88bb0a5d13574104bf4def5166d3ff3d2b26edf80765a08be5eed2b86e45"
 
       def install
         bin.install "baton-whimsical"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-whimsical/releases/download/v0.0.4/baton-whimsical-v0.0.4-darwin-arm64.zip"
-      sha256 "7f67712bf06e14784de7322392d99f51a6e6797e62b8daab5c4822efa9df422a"
+      url "https://github.com/ConductorOne/baton-whimsical/releases/download/v0.0.5/baton-whimsical-v0.0.5-darwin-arm64.zip"
+      sha256 "e709421736f1759ba1bf87a83957bb0a3d439f8ecbbef3bdb0bb02e92ce17f92"
 
       def install
         bin.install "baton-whimsical"
@@ -28,15 +28,15 @@ class BatonWhimsical < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-whimsical/releases/download/v0.0.4/baton-whimsical-v0.0.4-linux-amd64.tar.gz"
-      sha256 "c71b93b2feb522891f41431b00e3e850acad83e2c2f43db7e69561d42d7e9d8a"
+      url "https://github.com/ConductorOne/baton-whimsical/releases/download/v0.0.5/baton-whimsical-v0.0.5-linux-amd64.tar.gz"
+      sha256 "ba751054e9380ed58992b27d4a539285e26113c337b2d377ee80598e546eaac1"
       def install
         bin.install "baton-whimsical"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-whimsical/releases/download/v0.0.4/baton-whimsical-v0.0.4-linux-arm64.tar.gz"
-      sha256 "e0befd3d58e1b3331fc297ae89b51db6cd03aff1bd2f6d7b52e2cafb35e21dbe"
+      url "https://github.com/ConductorOne/baton-whimsical/releases/download/v0.0.5/baton-whimsical-v0.0.5-linux-arm64.tar.gz"
+      sha256 "2bc5855ee2b204d3d29903a0f75e3fa9ccdbd2060025ed8d896a8955715a983f"
       def install
         bin.install "baton-whimsical"
       end
