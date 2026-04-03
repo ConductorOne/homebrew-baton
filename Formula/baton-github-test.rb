@@ -5,20 +5,20 @@
 class BatonGithubTest < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.120-test.13"
+  version "0.1.120-test.14"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.1.120-test.13/baton-github-test-v0.1.120-test.13-darwin-amd64.zip"
-      sha256 "33e2dc5dd1cd5db15cc40302ac58f69a021ecb4d583fe9fd863a5eabe5685d1a"
+      url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.1.120-test.14/baton-github-test-v0.1.120-test.14-darwin-amd64.zip"
+      sha256 "348c5c6aaeb7091fb32e79464e2427bf77edaccf1994c0d51e9c1ed8dd13f43e"
 
       def install
         bin.install "baton-github-test"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.1.120-test.13/baton-github-test-v0.1.120-test.13-darwin-arm64.zip"
-      sha256 "564e719e797d72c73418ec455fa4aca8f591e70bd7472188aac24f5456b91ed6"
+      url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.1.120-test.14/baton-github-test-v0.1.120-test.14-darwin-arm64.zip"
+      sha256 "3f5e9d0124f23f64edfcd354415cdde6dd52f4568de777c944d82fe26fdc2c01"
 
       def install
         bin.install "baton-github-test"
@@ -28,15 +28,15 @@ class BatonGithubTest < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.1.120-test.13/baton-github-test-v0.1.120-test.13-linux-amd64.tar.gz"
-      sha256 "f4cfb3d00be8ec63df1fdc983ea354439abaafd628087059de62418ddade85fa"
+      url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.1.120-test.14/baton-github-test-v0.1.120-test.14-linux-amd64.tar.gz"
+      sha256 "337239984e4f115e361e411144fc506f99ef80ff9edbed0d1773e52e44a071e4"
       def install
         bin.install "baton-github-test"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.1.120-test.13/baton-github-test-v0.1.120-test.13-linux-arm64.tar.gz"
-      sha256 "2240c87be2e4cba5dcfe49de20f5a3e7a996163e43543edcd0942c5f6b4d7609"
+      url "https://github.com/ConductorOne/baton-github-test/releases/download/v0.1.120-test.14/baton-github-test-v0.1.120-test.14-linux-arm64.tar.gz"
+      sha256 "7e06c7cee7a99621d53357a4c5d8ce807e931dce75cde9a60f0ca98068710dc9"
       def install
         bin.install "baton-github-test"
       end
