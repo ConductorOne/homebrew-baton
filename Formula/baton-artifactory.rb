@@ -5,20 +5,20 @@
 class BatonArtifactory < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.8"
+  version "0.0.9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-artifactory/releases/download/v0.0.8/baton-artifactory-v0.0.8-darwin-amd64.zip"
-      sha256 "6b3931734e51ac8640faf6a3aa6b6240b4552cc18450c674bbc32b8a779e460f"
+      url "https://github.com/ConductorOne/baton-artifactory/releases/download/v0.0.9/baton-artifactory-v0.0.9-darwin-amd64.zip"
+      sha256 "8936e3ba3ae2596f040e1eb71a7245dc70662417eb480aaceca7297a592be188"
 
       def install
         bin.install "baton-artifactory"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-artifactory/releases/download/v0.0.8/baton-artifactory-v0.0.8-darwin-arm64.zip"
-      sha256 "a2cf8119f3af2f26cdc0c3f3ddcbbc9f6b2930c15e3658455cda63215a523342"
+      url "https://github.com/ConductorOne/baton-artifactory/releases/download/v0.0.9/baton-artifactory-v0.0.9-darwin-arm64.zip"
+      sha256 "4ed8240389fe0d04259b8002863dff144bb28bcf166b2b46fca47bdb17e24f25"
 
       def install
         bin.install "baton-artifactory"
@@ -27,24 +27,18 @@ class BatonArtifactory < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-artifactory/releases/download/v0.0.8/baton-artifactory-v0.0.8-linux-amd64.tar.gz"
-        sha256 "318a6ef15410da38adbec5c24684c422153017ae62964fc9ecd74b95dde797ce"
-
-        def install
-          bin.install "baton-artifactory"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-artifactory/releases/download/v0.0.9/baton-artifactory-v0.0.9-linux-amd64.tar.gz"
+      sha256 "882329d1a984e7c190591a73429fef9bfc225b86023150170b7e5661a120f2c1"
+      def install
+        bin.install "baton-artifactory"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-artifactory/releases/download/v0.0.8/baton-artifactory-v0.0.8-linux-arm64.tar.gz"
-        sha256 "ef4d23e0268cbbacb2c03321a6a4c75349681a6dc6f6b1a3f9592528b827f948"
-
-        def install
-          bin.install "baton-artifactory"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-artifactory/releases/download/v0.0.9/baton-artifactory-v0.0.9-linux-arm64.tar.gz"
+      sha256 "372dfbf85b26c24b5abed4a4e14057e57a2ebaadfaadcd672a69702da687b984"
+      def install
+        bin.install "baton-artifactory"
       end
     end
   end
