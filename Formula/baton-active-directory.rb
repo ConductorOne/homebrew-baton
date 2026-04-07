@@ -5,20 +5,20 @@
 class BatonActiveDirectory < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.4.18"
+  version "0.5.0-test-leet-installer-v2.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-active-directory/releases/download/v0.4.18/baton-active-directory-v0.4.18-darwin-amd64.zip"
-      sha256 "b13c76a3997fb2ff668d4ec6ed89c009ee7654b3791d7b70523e057c57d37eee"
+      url "https://github.com/ConductorOne/baton-active-directory/releases/download/v0.5.0-test-leet-installer-v2.2/baton-active-directory-v0.5.0-test-leet-installer-v2.2-darwin-amd64.zip"
+      sha256 "d0004158904f03f6b1da917ad1fed60672b815e313675fdb3488b68c9ce9a188"
 
       def install
         bin.install "baton-active-directory"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-active-directory/releases/download/v0.4.18/baton-active-directory-v0.4.18-darwin-arm64.zip"
-      sha256 "68b67ade7acaca323e074cb012b0420ad29e90c976461aecc9b1484f4c515277"
+      url "https://github.com/ConductorOne/baton-active-directory/releases/download/v0.5.0-test-leet-installer-v2.2/baton-active-directory-v0.5.0-test-leet-installer-v2.2-darwin-arm64.zip"
+      sha256 "bedd619eff9d85571f99c934b6265340400e3a9d0f57af3483e5b20826e346b7"
 
       def install
         bin.install "baton-active-directory"
@@ -28,15 +28,15 @@ class BatonActiveDirectory < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-active-directory/releases/download/v0.4.18/baton-active-directory-v0.4.18-linux-amd64.tar.gz"
-      sha256 "3205231af0a8cf91d7ab373cd098120fe608d0bdf182336d1ae944cf5f3963dc"
+      url "https://github.com/ConductorOne/baton-active-directory/releases/download/v0.5.0-test-leet-installer-v2.2/baton-active-directory-v0.5.0-test-leet-installer-v2.2-linux-amd64.tar.gz"
+      sha256 "c56fe1269fa486d55e4fac1d34172dea0204ddb68740e8c4ca767d5d9b65c0d2"
       def install
         bin.install "baton-active-directory"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-active-directory/releases/download/v0.4.18/baton-active-directory-v0.4.18-linux-arm64.tar.gz"
-      sha256 "2f2452dabc8f528c7f404355e0a43457cfa65c89a86b285aefdf5b33a97d562f"
+      url "https://github.com/ConductorOne/baton-active-directory/releases/download/v0.5.0-test-leet-installer-v2.2/baton-active-directory-v0.5.0-test-leet-installer-v2.2-linux-arm64.tar.gz"
+      sha256 "b855d1f9a0a5b14fdc04994a9b635f1f0eabf138d0a533bb8019d92d8075e499"
       def install
         bin.install "baton-active-directory"
       end
