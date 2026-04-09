@@ -5,20 +5,20 @@
 class BatonAuth0 < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.10"
+  version "0.0.11"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-auth0/releases/download/v0.0.10/baton-auth0-v0.0.10-darwin-amd64.zip"
-      sha256 "91f86fb395947cbb8e2060645d4c07c623f1857c26560dcef8e6947a67521674"
+      url "https://github.com/ConductorOne/baton-auth0/releases/download/v0.0.11/baton-auth0-v0.0.11-darwin-amd64.zip"
+      sha256 "b3244dc9c050120d60bfc8571546b6d3b28b25ff9b3e7a17ccefa4f7ce7ecb8d"
 
       def install
         bin.install "baton-auth0"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-auth0/releases/download/v0.0.10/baton-auth0-v0.0.10-darwin-arm64.zip"
-      sha256 "e47fbf140a7668ff7bb290ed536d85860e8aacba36cc0e242dd1079245ba61c2"
+      url "https://github.com/ConductorOne/baton-auth0/releases/download/v0.0.11/baton-auth0-v0.0.11-darwin-arm64.zip"
+      sha256 "3427876f0ae60b1ba581b578575a3612c44ec830b1ef33ba0f0f7df02375b090"
 
       def install
         bin.install "baton-auth0"
@@ -28,15 +28,15 @@ class BatonAuth0 < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-auth0/releases/download/v0.0.10/baton-auth0-v0.0.10-linux-amd64.tar.gz"
-      sha256 "b6531b75665413c1eda1a88719cf92c2f1d87d26cf8f38a88ba84b27c8f1a1e8"
+      url "https://github.com/ConductorOne/baton-auth0/releases/download/v0.0.11/baton-auth0-v0.0.11-linux-amd64.tar.gz"
+      sha256 "4edfa302ba6742ac7fd1e39fd294d4d5a5330edf12398b2b7c921a0e125f4436"
       def install
         bin.install "baton-auth0"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-auth0/releases/download/v0.0.10/baton-auth0-v0.0.10-linux-arm64.tar.gz"
-      sha256 "51a05344ee156c4d71da83d103b515e91109705e21d4c73099201f22f0d69be8"
+      url "https://github.com/ConductorOne/baton-auth0/releases/download/v0.0.11/baton-auth0-v0.0.11-linux-arm64.tar.gz"
+      sha256 "436a8260911a5306ac01139e0deddd1606ecdf414c788f0acf9229140be9d9f7"
       def install
         bin.install "baton-auth0"
       end
