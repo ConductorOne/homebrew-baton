@@ -5,20 +5,20 @@
 class BatonRamp < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.4"
+  version "0.0.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-ramp/releases/download/v0.0.4/baton-ramp-v0.0.4-darwin-amd64.zip"
-      sha256 "d637aa429245f926f7337042a149a4ed7be04a44f57cf9de68c0606d83762f60"
+      url "https://github.com/ConductorOne/baton-ramp/releases/download/v0.0.5/baton-ramp-v0.0.5-darwin-amd64.zip"
+      sha256 "a967252d80f42e9e56eac0bae44e5b76020ad434fcb09fa508129142afb8bb58"
 
       def install
         bin.install "baton-ramp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-ramp/releases/download/v0.0.4/baton-ramp-v0.0.4-darwin-arm64.zip"
-      sha256 "fc73ef0d2e8d65cd7f6259d2190ccb268bdb9677fcae2325df0f903956a7a8ff"
+      url "https://github.com/ConductorOne/baton-ramp/releases/download/v0.0.5/baton-ramp-v0.0.5-darwin-arm64.zip"
+      sha256 "dc051f7c783d9d6af0f2c153e0c20c4156d2a5c38a5b88d32e36828371954390"
 
       def install
         bin.install "baton-ramp"
@@ -27,24 +27,18 @@ class BatonRamp < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-ramp/releases/download/v0.0.4/baton-ramp-v0.0.4-linux-amd64.tar.gz"
-        sha256 "ce82272971b4dd4a29f7e2f3980dd5d3a78cd69084f4d6efd69b5680ef02ab2a"
-
-        def install
-          bin.install "baton-ramp"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-ramp/releases/download/v0.0.5/baton-ramp-v0.0.5-linux-amd64.tar.gz"
+      sha256 "445e11ede7c77e4be7d71c92ea9d5af8be8b1e41a60c46c41da5cb62e7d6e33d"
+      def install
+        bin.install "baton-ramp"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-ramp/releases/download/v0.0.4/baton-ramp-v0.0.4-linux-arm64.tar.gz"
-        sha256 "6691f0af1d720ab72275599d731295b1889e2fd814782d232dcaf6d768f3741b"
-
-        def install
-          bin.install "baton-ramp"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-ramp/releases/download/v0.0.5/baton-ramp-v0.0.5-linux-arm64.tar.gz"
+      sha256 "3473ad0dc816d16debe59567afd82cec675c8c3dbfd29d96561534a2eacad4b3"
+      def install
+        bin.install "baton-ramp"
       end
     end
   end
