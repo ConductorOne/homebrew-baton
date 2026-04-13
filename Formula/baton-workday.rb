@@ -5,20 +5,20 @@
 class BatonWorkday < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.6-test-new-role-model"
+  version "0.1.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-workday/releases/download/v0.1.6-test-new-role-model/baton-workday-v0.1.6-test-new-role-model-darwin-amd64.zip"
-      sha256 "8f92e6da599e8f95a5993ddd869bbc5cf23b2c330bcfd7e3eed36de6de33a72c"
+      url "https://github.com/ConductorOne/baton-workday/releases/download/v0.1.6/baton-workday-v0.1.6-darwin-amd64.zip"
+      sha256 "1aacd39535dd92b664c2d24c6c97f4717cf997e80e8664747f78a6da1429221d"
 
       def install
         bin.install "baton-workday"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-workday/releases/download/v0.1.6-test-new-role-model/baton-workday-v0.1.6-test-new-role-model-darwin-arm64.zip"
-      sha256 "a409017bed9bb581026c43a50a401ae78f52a0b4f67869e66ae5919de2b93ee6"
+      url "https://github.com/ConductorOne/baton-workday/releases/download/v0.1.6/baton-workday-v0.1.6-darwin-arm64.zip"
+      sha256 "3049e1fb65ce7d1f403d439b88136e3f5cb0291b709a1ac54450147f98440327"
 
       def install
         bin.install "baton-workday"
@@ -28,15 +28,15 @@ class BatonWorkday < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-workday/releases/download/v0.1.6-test-new-role-model/baton-workday-v0.1.6-test-new-role-model-linux-amd64.tar.gz"
-      sha256 "2679fb8c934be7e51b0b272ad7b2c5e1295413e5ccf261af0ef597c6176b1b7c"
+      url "https://github.com/ConductorOne/baton-workday/releases/download/v0.1.6/baton-workday-v0.1.6-linux-amd64.tar.gz"
+      sha256 "35f6dbb7d7f253ce34f288357859386dce2bb72da466d0f112f5b74c437b2c81"
       def install
         bin.install "baton-workday"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-workday/releases/download/v0.1.6-test-new-role-model/baton-workday-v0.1.6-test-new-role-model-linux-arm64.tar.gz"
-      sha256 "b7cd0f148704ff6e6a2970516b4ddee5cbeb7cfcddaf5cdc07975b04ddeb17db"
+      url "https://github.com/ConductorOne/baton-workday/releases/download/v0.1.6/baton-workday-v0.1.6-linux-arm64.tar.gz"
+      sha256 "e7a224486e496a90f662fb1b93959051ea2020fd101d4e3dc1849d54e0a85253"
       def install
         bin.install "baton-workday"
       end
