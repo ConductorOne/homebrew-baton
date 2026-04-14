@@ -5,20 +5,20 @@
 class BatonMongodbAtlas < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.5-test-fix-connect-retries.1"
+  version "0.1.5-test-fix-connect-retries.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.5-test-fix-connect-retries.1/baton-mongodb-atlas-v0.1.5-test-fix-connect-retries.1-darwin-amd64.zip"
-      sha256 "9260c8c01683dd909e7c592fc4ae9ce384b511268cd4ee134547f2b87d71a485"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.5-test-fix-connect-retries.2/baton-mongodb-atlas-v0.1.5-test-fix-connect-retries.2-darwin-amd64.zip"
+      sha256 "ed0eb73ae4bbaca45cb710347dd986fb15ea452a670d64ccf2446e8cab9d8731"
 
       def install
         bin.install "baton-mongodb-atlas"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.5-test-fix-connect-retries.1/baton-mongodb-atlas-v0.1.5-test-fix-connect-retries.1-darwin-arm64.zip"
-      sha256 "026aecc7faf9a2d92040eaa5b29e4112d0a5fa6fc3d1ecc1254a4d538023c204"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.5-test-fix-connect-retries.2/baton-mongodb-atlas-v0.1.5-test-fix-connect-retries.2-darwin-arm64.zip"
+      sha256 "2b209ff7837f667c00a0954514e0ae073692024a41448c032fda75b176c6fdd7"
 
       def install
         bin.install "baton-mongodb-atlas"
@@ -28,15 +28,15 @@ class BatonMongodbAtlas < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.5-test-fix-connect-retries.1/baton-mongodb-atlas-v0.1.5-test-fix-connect-retries.1-linux-amd64.tar.gz"
-      sha256 "45b66bd520bf2edfab5355e0397855cb1bfcfe6a8f8d84a234fafca5fb2eeb39"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.5-test-fix-connect-retries.2/baton-mongodb-atlas-v0.1.5-test-fix-connect-retries.2-linux-amd64.tar.gz"
+      sha256 "ea29a54cc3876a165a21e2f5a366a4e93a19599e23aac25a22cf045805affc67"
       def install
         bin.install "baton-mongodb-atlas"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.5-test-fix-connect-retries.1/baton-mongodb-atlas-v0.1.5-test-fix-connect-retries.1-linux-arm64.tar.gz"
-      sha256 "97295f27110d1a4041f1d9e51870e228902efd5892dbf0dced88e63bffc4d739"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.5-test-fix-connect-retries.2/baton-mongodb-atlas-v0.1.5-test-fix-connect-retries.2-linux-arm64.tar.gz"
+      sha256 "452af4aa0f15dc05960016bd76499a81f6507087c082cbe851b294156e304323"
       def install
         bin.install "baton-mongodb-atlas"
       end
