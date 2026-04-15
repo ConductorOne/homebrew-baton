@@ -5,20 +5,20 @@
 class BatonDuo < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.9"
+  version "0.0.10"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-duo/releases/download/v0.0.9/baton-duo-v0.0.9-darwin-amd64.zip"
-      sha256 "de20b6d6b8518ec49e3f48283eb4965a1259dd85017b9d9699404a7990dc59f4"
+      url "https://github.com/ConductorOne/baton-duo/releases/download/v0.0.10/baton-duo-v0.0.10-darwin-amd64.zip"
+      sha256 "8cfe0a14788372cd7e6b1538276a75a9b85b108da2bc09cf0b8dd65c49584050"
 
       def install
         bin.install "baton-duo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-duo/releases/download/v0.0.9/baton-duo-v0.0.9-darwin-arm64.zip"
-      sha256 "aef262afd2c61d3b2f8172209fd264de941272467489115159d03c581f899d4e"
+      url "https://github.com/ConductorOne/baton-duo/releases/download/v0.0.10/baton-duo-v0.0.10-darwin-arm64.zip"
+      sha256 "52e4afcb5dde384a48b2c3293f34e4af1f7df342913683bf553c2ffdbe53c6d9"
 
       def install
         bin.install "baton-duo"
@@ -28,15 +28,15 @@ class BatonDuo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-duo/releases/download/v0.0.9/baton-duo-v0.0.9-linux-amd64.tar.gz"
-      sha256 "c750c8042114d2b7ead157bc034def75e8ef208ddfa0cdcd3553bc4d5924373a"
+      url "https://github.com/ConductorOne/baton-duo/releases/download/v0.0.10/baton-duo-v0.0.10-linux-amd64.tar.gz"
+      sha256 "43504e2beb9f76115e3b0bcd689f2b999f8cfe297c751ba4e9f67e5aa00284bb"
       def install
         bin.install "baton-duo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-duo/releases/download/v0.0.9/baton-duo-v0.0.9-linux-arm64.tar.gz"
-      sha256 "6c527d16d206c96b2926dcf0a3f2862e721331fdf4468cfd815f011c7ef73e34"
+      url "https://github.com/ConductorOne/baton-duo/releases/download/v0.0.10/baton-duo-v0.0.10-linux-arm64.tar.gz"
+      sha256 "3fe1da563d1cd4a4a60d63de57d4e0f069f53d516bf6a019e9e2852c3a6adca3"
       def install
         bin.install "baton-duo"
       end
