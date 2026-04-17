@@ -5,20 +5,20 @@
 class BatonMongodbAtlas < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.5-test-fix-connect-retries.2"
+  version "0.1.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.5-test-fix-connect-retries.2/baton-mongodb-atlas-v0.1.5-test-fix-connect-retries.2-darwin-amd64.zip"
-      sha256 "ed0eb73ae4bbaca45cb710347dd986fb15ea452a670d64ccf2446e8cab9d8731"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.5/baton-mongodb-atlas-v0.1.5-darwin-amd64.zip"
+      sha256 "7e1b2df30b002e9695a892f4e10fea271edc8a1d423718c8774c460d9476c178"
 
       def install
         bin.install "baton-mongodb-atlas"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.5-test-fix-connect-retries.2/baton-mongodb-atlas-v0.1.5-test-fix-connect-retries.2-darwin-arm64.zip"
-      sha256 "2b209ff7837f667c00a0954514e0ae073692024a41448c032fda75b176c6fdd7"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.5/baton-mongodb-atlas-v0.1.5-darwin-arm64.zip"
+      sha256 "c2666a878c995a4b76b39cdde7548b56d404790619c5f3df2ca7ee79fe9b5fd2"
 
       def install
         bin.install "baton-mongodb-atlas"
@@ -28,15 +28,15 @@ class BatonMongodbAtlas < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.5-test-fix-connect-retries.2/baton-mongodb-atlas-v0.1.5-test-fix-connect-retries.2-linux-amd64.tar.gz"
-      sha256 "ea29a54cc3876a165a21e2f5a366a4e93a19599e23aac25a22cf045805affc67"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.5/baton-mongodb-atlas-v0.1.5-linux-amd64.tar.gz"
+      sha256 "56247726211f7b99a60aa02c508d74cb8730bf36cf489cc16b867676cd941780"
       def install
         bin.install "baton-mongodb-atlas"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.5-test-fix-connect-retries.2/baton-mongodb-atlas-v0.1.5-test-fix-connect-retries.2-linux-arm64.tar.gz"
-      sha256 "452af4aa0f15dc05960016bd76499a81f6507087c082cbe851b294156e304323"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.5/baton-mongodb-atlas-v0.1.5-linux-arm64.tar.gz"
+      sha256 "08dbe34339761465cb8d98549e1a60abfd17a1695da7444e09595b0fe0a77692"
       def install
         bin.install "baton-mongodb-atlas"
       end
