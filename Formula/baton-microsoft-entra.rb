@@ -5,20 +5,20 @@
 class BatonMicrosoftEntra < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.20-password-reset-test2"
+  version "0.2.21"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-microsoft-entra/releases/download/v0.2.20-password-reset-test2/baton-microsoft-entra-v0.2.20-password-reset-test2-darwin-amd64.zip"
-      sha256 "3ae90ec09e33a39d77570eafc21d76ddce84bf8ffd59fb99b9f2990d0fa3686c"
+      url "https://github.com/ConductorOne/baton-microsoft-entra/releases/download/v0.2.21/baton-microsoft-entra-v0.2.21-darwin-amd64.zip"
+      sha256 "9cb46efa708776256143ee7f7a269124bfc195e98850a5b4e4b81513dc8f18cb"
 
       def install
         bin.install "baton-microsoft-entra"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-microsoft-entra/releases/download/v0.2.20-password-reset-test2/baton-microsoft-entra-v0.2.20-password-reset-test2-darwin-arm64.zip"
-      sha256 "122e40eaa14a4ea4503b6ae036f84707c6e7ee1901c02e4fd52bcf2818c2d531"
+      url "https://github.com/ConductorOne/baton-microsoft-entra/releases/download/v0.2.21/baton-microsoft-entra-v0.2.21-darwin-arm64.zip"
+      sha256 "31bd1f0a41945b5a6adbb07bf167bd669e04ac8987f380db52ad1c71371a3756"
 
       def install
         bin.install "baton-microsoft-entra"
@@ -28,15 +28,15 @@ class BatonMicrosoftEntra < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-microsoft-entra/releases/download/v0.2.20-password-reset-test2/baton-microsoft-entra-v0.2.20-password-reset-test2-linux-amd64.tar.gz"
-      sha256 "0da383d1770ce7432a56fd3ed164c14066b2dfc60b9a9d8beb8712860c260c12"
+      url "https://github.com/ConductorOne/baton-microsoft-entra/releases/download/v0.2.21/baton-microsoft-entra-v0.2.21-linux-amd64.tar.gz"
+      sha256 "b3ccd70aff8eea6290adb43061dcb902a32b7e5ab6923105fa5fa426bdd978e0"
       def install
         bin.install "baton-microsoft-entra"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-microsoft-entra/releases/download/v0.2.20-password-reset-test2/baton-microsoft-entra-v0.2.20-password-reset-test2-linux-arm64.tar.gz"
-      sha256 "8dd946c9456419093c2850d2e452d6469b1bab66138801c41a1a6d15f04115ae"
+      url "https://github.com/ConductorOne/baton-microsoft-entra/releases/download/v0.2.21/baton-microsoft-entra-v0.2.21-linux-arm64.tar.gz"
+      sha256 "c1c1459f08eb6f284efd98dc0f89eb1638473b03b1d9a4f1d118914020347ef1"
       def install
         bin.install "baton-microsoft-entra"
       end
