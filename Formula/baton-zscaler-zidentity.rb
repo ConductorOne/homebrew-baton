@@ -5,20 +5,20 @@
 class BatonZscalerZidentity < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.7"
+  version "0.0.8"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-zscaler-zidentity/releases/download/v0.0.7/baton-zscaler-zidentity-v0.0.7-darwin-amd64.zip"
-      sha256 "59e432bc434ffd265e47c3f5026f53dc0546b9fb875042eb72a6ab2b5cff984c"
+      url "https://github.com/ConductorOne/baton-zscaler-zidentity/releases/download/v0.0.8/baton-zscaler-zidentity-v0.0.8-darwin-amd64.zip"
+      sha256 "19be636d67e3df494eff3aa3e6138a9d5a49e23dbb4d095a3204820435bebdb5"
 
       def install
         bin.install "baton-zscaler-zidentity"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-zscaler-zidentity/releases/download/v0.0.7/baton-zscaler-zidentity-v0.0.7-darwin-arm64.zip"
-      sha256 "60a564e67b4111effe1ccf7eabbad865780c4d2f186f9db7ed93dacba3e934c3"
+      url "https://github.com/ConductorOne/baton-zscaler-zidentity/releases/download/v0.0.8/baton-zscaler-zidentity-v0.0.8-darwin-arm64.zip"
+      sha256 "905564c5fc2727c1e8256b46089521b15ec753c0ead96e4b084afe7941d36f0a"
 
       def install
         bin.install "baton-zscaler-zidentity"
@@ -28,15 +28,15 @@ class BatonZscalerZidentity < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-zscaler-zidentity/releases/download/v0.0.7/baton-zscaler-zidentity-v0.0.7-linux-amd64.tar.gz"
-      sha256 "312473cd268c72bdab14285b408cb111b647d353060a7d00aab4f128bd6cfcf0"
+      url "https://github.com/ConductorOne/baton-zscaler-zidentity/releases/download/v0.0.8/baton-zscaler-zidentity-v0.0.8-linux-amd64.tar.gz"
+      sha256 "aa5e6ab20c0e7669f8d252f6171feb101df624ea5e84b5cdaf82608c8b31c601"
       def install
         bin.install "baton-zscaler-zidentity"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-zscaler-zidentity/releases/download/v0.0.7/baton-zscaler-zidentity-v0.0.7-linux-arm64.tar.gz"
-      sha256 "afb6d996a900b8c1b59e1ed666b74f2e7a77912050393192d231b83d76cbff12"
+      url "https://github.com/ConductorOne/baton-zscaler-zidentity/releases/download/v0.0.8/baton-zscaler-zidentity-v0.0.8-linux-arm64.tar.gz"
+      sha256 "b260cb1c458b50d499f612e0ffd8ab37fae3ded9960ed532b57ac1d690fe50f2"
       def install
         bin.install "baton-zscaler-zidentity"
       end
