@@ -5,20 +5,20 @@
 class BatonIronclad < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.7"
+  version "0.1.8"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-ironclad/releases/download/v0.1.7/baton-ironclad-v0.1.7-darwin-amd64.zip"
-      sha256 "5ffa4f6ad79ccd65e332ee4aff1aefcfdfb61a4ebb5084b3b1cc1331a392e357"
+      url "https://github.com/ConductorOne/baton-ironclad/releases/download/v0.1.8/baton-ironclad-v0.1.8-darwin-amd64.zip"
+      sha256 "fcf0c6ba20c94844197740ac8770747e1c35e34d97f5c53e4e2c71952be51eec"
 
       def install
         bin.install "baton-ironclad"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-ironclad/releases/download/v0.1.7/baton-ironclad-v0.1.7-darwin-arm64.zip"
-      sha256 "1b11182bcd9d60bd787cbd62fe50bbd45e59bd141826510efee2f159ca6173b1"
+      url "https://github.com/ConductorOne/baton-ironclad/releases/download/v0.1.8/baton-ironclad-v0.1.8-darwin-arm64.zip"
+      sha256 "442202690b1d6cf08f98c98eb8cba52b1f9bee33c27699cb6795a63df61b541a"
 
       def install
         bin.install "baton-ironclad"
@@ -28,15 +28,15 @@ class BatonIronclad < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ironclad/releases/download/v0.1.7/baton-ironclad-v0.1.7-linux-amd64.tar.gz"
-      sha256 "a53f7d3a45fda54629693ad79547c1fd0c8dff33cd3c3dcb6f2029addc117f1d"
+      url "https://github.com/ConductorOne/baton-ironclad/releases/download/v0.1.8/baton-ironclad-v0.1.8-linux-amd64.tar.gz"
+      sha256 "cec3959aa1d5693b6a88499d698ddd2886a899f9f907310522637a8cc54e2f63"
       def install
         bin.install "baton-ironclad"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ironclad/releases/download/v0.1.7/baton-ironclad-v0.1.7-linux-arm64.tar.gz"
-      sha256 "5be44cefb9abc7775e51986caf06bf313edec68125d30dfb6dc7774d8f459f6c"
+      url "https://github.com/ConductorOne/baton-ironclad/releases/download/v0.1.8/baton-ironclad-v0.1.8-linux-arm64.tar.gz"
+      sha256 "217674a015fd39746afc406d7a928caeeba94f098f3f8619e03f909363a2292a"
       def install
         bin.install "baton-ironclad"
       end
