@@ -5,20 +5,20 @@
 class BatonPaylocityWeblink < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-paylocity-weblink/releases/download/v0.0.2/baton-paylocity-weblink-v0.0.2-darwin-amd64.zip"
-      sha256 "bf36505343cd32246710b1370573f5ae83354903dc7c6a9a929429ed27e753ce"
+      url "https://github.com/ConductorOne/baton-paylocity-weblink/releases/download/v0.0.3/baton-paylocity-weblink-v0.0.3-darwin-amd64.zip"
+      sha256 "5a3a879fe2e4ee5464dc1e743c86943ddf82ca3151ea88693b244468f9d46169"
 
       def install
         bin.install "baton-paylocity-weblink"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-paylocity-weblink/releases/download/v0.0.2/baton-paylocity-weblink-v0.0.2-darwin-arm64.zip"
-      sha256 "b5cb4932f2254ee4b89e856a49c5731620f033d3874ffde277d3eb2035785083"
+      url "https://github.com/ConductorOne/baton-paylocity-weblink/releases/download/v0.0.3/baton-paylocity-weblink-v0.0.3-darwin-arm64.zip"
+      sha256 "893d0fd7d5c09d494ac68a85723ddce72068f432a73200d5e649481989732602"
 
       def install
         bin.install "baton-paylocity-weblink"
@@ -28,15 +28,15 @@ class BatonPaylocityWeblink < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-paylocity-weblink/releases/download/v0.0.2/baton-paylocity-weblink-v0.0.2-linux-amd64.tar.gz"
-      sha256 "9ab8dc69a0d343db99acaca75cec42c9765d18e27f7b087e94d612d578a0e4e9"
+      url "https://github.com/ConductorOne/baton-paylocity-weblink/releases/download/v0.0.3/baton-paylocity-weblink-v0.0.3-linux-amd64.tar.gz"
+      sha256 "d7d2ec6a8ea852a277b0ca705bba86a103130f59ff5ddae087663240c37792ec"
       def install
         bin.install "baton-paylocity-weblink"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-paylocity-weblink/releases/download/v0.0.2/baton-paylocity-weblink-v0.0.2-linux-arm64.tar.gz"
-      sha256 "1abf6faba124108046a21922074354a31881ae1393f5e779fcdb6f1717ae376d"
+      url "https://github.com/ConductorOne/baton-paylocity-weblink/releases/download/v0.0.3/baton-paylocity-weblink-v0.0.3-linux-arm64.tar.gz"
+      sha256 "4c9d94619e063ff40a7f9fa505bea201d170184a963668644c7c8bd8cd27ae30"
       def install
         bin.install "baton-paylocity-weblink"
       end
