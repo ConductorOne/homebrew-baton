@@ -5,20 +5,20 @@
 class BatonSapCloudIdentity < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-sap-cloud-identity/releases/download/v0.0.1/baton-sap-cloud-identity-v0.0.1-darwin-amd64.zip"
-      sha256 "ceb10e4ba60ea9221ae1b20f5ac3e2bc76245161974280cc83ec7743ea563c63"
+      url "https://github.com/ConductorOne/baton-sap-cloud-identity/releases/download/v0.0.2/baton-sap-cloud-identity-v0.0.2-darwin-amd64.zip"
+      sha256 "70a88e3abbc1c8c6b2a741063966ca32b56eadeb3eeddf0e5922c953280d4391"
 
       def install
         bin.install "baton-sap-cloud-identity"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-sap-cloud-identity/releases/download/v0.0.1/baton-sap-cloud-identity-v0.0.1-darwin-arm64.zip"
-      sha256 "421a144f92d4d6ef09bf457035d85316096d4ff6a23284067f954e3bceec61ca"
+      url "https://github.com/ConductorOne/baton-sap-cloud-identity/releases/download/v0.0.2/baton-sap-cloud-identity-v0.0.2-darwin-arm64.zip"
+      sha256 "675a46172fd627bb633b208679c57a1e0770382c72f520d5cd9d7305ea6f59b7"
 
       def install
         bin.install "baton-sap-cloud-identity"
@@ -28,15 +28,15 @@ class BatonSapCloudIdentity < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sap-cloud-identity/releases/download/v0.0.1/baton-sap-cloud-identity-v0.0.1-linux-amd64.tar.gz"
-      sha256 "f4bdeaecdd9a4d3268ebef4aad1e4df77d10fc71ff375a45e651fa65dc765174"
+      url "https://github.com/ConductorOne/baton-sap-cloud-identity/releases/download/v0.0.2/baton-sap-cloud-identity-v0.0.2-linux-amd64.tar.gz"
+      sha256 "f6bee5c1bf63ac75884922b917d3d5d6f71d3b458e3009536171c8f0a7327333"
       def install
         bin.install "baton-sap-cloud-identity"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sap-cloud-identity/releases/download/v0.0.1/baton-sap-cloud-identity-v0.0.1-linux-arm64.tar.gz"
-      sha256 "22fc7a84f56fa3885f5a756a495d7e51de60d762acdab0dc00d04ab3744f58d8"
+      url "https://github.com/ConductorOne/baton-sap-cloud-identity/releases/download/v0.0.2/baton-sap-cloud-identity-v0.0.2-linux-arm64.tar.gz"
+      sha256 "d30179ef314efd100f6e0b89ee0fe5a03ac0b465ad7c29ce24f813e7f8d344f9"
       def install
         bin.install "baton-sap-cloud-identity"
       end
