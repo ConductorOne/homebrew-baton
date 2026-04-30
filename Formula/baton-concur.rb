@@ -5,20 +5,20 @@
 class BatonConcur < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-concur/releases/download/v0.2.0/baton-concur-v0.2.0-darwin-amd64.zip"
-      sha256 "03fddb6f80d1d7706eb4a0b0b47c5b32dd8a5c45e8aa6c4c6d711455c29abfd6"
+      url "https://github.com/ConductorOne/baton-concur/releases/download/v0.2.1/baton-concur-v0.2.1-darwin-amd64.zip"
+      sha256 "9c9269187a39b477b0999d9d0955fa23c7fc475655b573c0132f0d5fa2b39e65"
 
       def install
         bin.install "baton-concur"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-concur/releases/download/v0.2.0/baton-concur-v0.2.0-darwin-arm64.zip"
-      sha256 "4f8b9a9a02c51572d256566f041a453f779f71173728fee3540894e059dfbfbc"
+      url "https://github.com/ConductorOne/baton-concur/releases/download/v0.2.1/baton-concur-v0.2.1-darwin-arm64.zip"
+      sha256 "323569900bcdb9e2b6af3d3d8a48dfd8cc9743790efe1e071c17a56d27642a78"
 
       def install
         bin.install "baton-concur"
@@ -28,15 +28,15 @@ class BatonConcur < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-concur/releases/download/v0.2.0/baton-concur-v0.2.0-linux-amd64.tar.gz"
-      sha256 "a40253ee49cf4ebe8cf7351cc71b1d1df626ed301a737ce2719390657b3fd62e"
+      url "https://github.com/ConductorOne/baton-concur/releases/download/v0.2.1/baton-concur-v0.2.1-linux-amd64.tar.gz"
+      sha256 "fc7d4c70fcb8dc7a8e48a7613a181e49a295628a0fa2bc0e78cd890cbcc06835"
       def install
         bin.install "baton-concur"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-concur/releases/download/v0.2.0/baton-concur-v0.2.0-linux-arm64.tar.gz"
-      sha256 "0fae6bf5baad19a5db093c14afc2661b44a301bd8bd743b56859494ca6250138"
+      url "https://github.com/ConductorOne/baton-concur/releases/download/v0.2.1/baton-concur-v0.2.1-linux-arm64.tar.gz"
+      sha256 "b134323dc99e1cd8b701a479ea100a52e2ca25d5fd3be0b3b87da37095bcc2c1"
       def install
         bin.install "baton-concur"
       end
