@@ -5,20 +5,20 @@
 class BatonAws < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.3.0/baton-aws-v0.3.0-darwin-amd64.zip"
-      sha256 "5953e5ce4faf09412167aa7110fcab5be78d66719a1f473a13ed41ffb0e9a0bc"
+      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.3.1/baton-aws-v0.3.1-darwin-amd64.zip"
+      sha256 "bca0748a998286914222ebfe16af4ea57261af6dac1cfce1e29426f66aa2a61b"
 
       def install
         bin.install "baton-aws"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.3.0/baton-aws-v0.3.0-darwin-arm64.zip"
-      sha256 "817bfa054d93d5db006c2e168b0bee5c6ca766f5682e187dd5df3ed6ec79f0bb"
+      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.3.1/baton-aws-v0.3.1-darwin-arm64.zip"
+      sha256 "192fe84baeb64a961c6183adba0a863cb617b852df850e958bb83b626a43b9d9"
 
       def install
         bin.install "baton-aws"
@@ -28,15 +28,15 @@ class BatonAws < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.3.0/baton-aws-v0.3.0-linux-amd64.tar.gz"
-      sha256 "301017710423d9abc63d869ce864157d14f8081ee466e56ad077bfc75f67e942"
+      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.3.1/baton-aws-v0.3.1-linux-amd64.tar.gz"
+      sha256 "9948e8efae8c954c66b121a56a3168c78cd53a4c3c42abf434add331bb5b6ef7"
       def install
         bin.install "baton-aws"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.3.0/baton-aws-v0.3.0-linux-arm64.tar.gz"
-      sha256 "752dfad091e85baea3e3a5c6d28a888770ec75081cdc8e511da20babc428b097"
+      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.3.1/baton-aws-v0.3.1-linux-arm64.tar.gz"
+      sha256 "466c292a122109d5e3733590dba20c9c485a980d72359bf6c256c203aad63434"
       def install
         bin.install "baton-aws"
       end
