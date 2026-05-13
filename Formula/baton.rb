@@ -5,20 +5,20 @@
 class Baton < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.4.5"
+  version "0.9.8"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton/releases/download/v0.4.5/baton-v0.4.5-darwin-amd64.zip"
-      sha256 "75906ca6f25d32184ba0896fcaad52a847b206ff7f654e6a7d306cb30905fa3b"
+      url "https://github.com/ConductorOne/baton-sdk/releases/download/v0.9.8/baton-v0.9.8-darwin-amd64.zip"
+      sha256 "2e5830cd40c4cd61770d85b9fb6cabf7079e6478ebe2826327ed84e83f97ff72"
 
       def install
         bin.install "baton"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton/releases/download/v0.4.5/baton-v0.4.5-darwin-arm64.zip"
-      sha256 "fb2e5a1ca02eaeaae177d1c68e56262d79a9805946152f380700cb0787bc5390"
+      url "https://github.com/ConductorOne/baton-sdk/releases/download/v0.9.8/baton-v0.9.8-darwin-arm64.zip"
+      sha256 "631cf66165d30afc016ff802932e613ad0823a45c3902a1c1d0a85e9fb271e05"
 
       def install
         bin.install "baton"
@@ -27,24 +27,18 @@ class Baton < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton/releases/download/v0.4.5/baton-v0.4.5-linux-amd64.tar.gz"
-        sha256 "fb09e050d2f5268e8a1c6fdef53b7754719e89e1620811b12362b7720b4c9985"
-
-        def install
-          bin.install "baton"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-sdk/releases/download/v0.9.8/baton-v0.9.8-linux-amd64.tar.gz"
+      sha256 "a58c03db4c7add83501853b0890850925208707ddee13d40c3eb29fd998caf91"
+      def install
+        bin.install "baton"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton/releases/download/v0.4.5/baton-v0.4.5-linux-arm64.tar.gz"
-        sha256 "a759a40da15dd977e6960bcd05b079b0a4e768235ec85a991e31c5b272454b29"
-
-        def install
-          bin.install "baton"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-sdk/releases/download/v0.9.8/baton-v0.9.8-linux-arm64.tar.gz"
+      sha256 "6427aa3a4fc9312407bb55828f9168873b6474e6adbf83134707359141613082"
+      def install
+        bin.install "baton"
       end
     end
   end
