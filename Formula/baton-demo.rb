@@ -5,20 +5,20 @@
 class BatonDemo < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.6.0"
+  version "0.6.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-demo/releases/download/v0.6.0/baton-demo-v0.6.0-darwin-amd64.zip"
-      sha256 "a5c6853b7d67a29d6572741bdc21b037733f039520af3324c1a8ffe57d76ef49"
+      url "https://github.com/ConductorOne/baton-demo/releases/download/v0.6.1/baton-demo-v0.6.1-darwin-amd64.zip"
+      sha256 "7ba410e263bfcb24f5c9b97c522bfefeeb5b29006e233b811487dac1c58bbd55"
 
       def install
         bin.install "baton-demo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-demo/releases/download/v0.6.0/baton-demo-v0.6.0-darwin-arm64.zip"
-      sha256 "172d31bfd79202b7256c8750bc130ac3da0f7fbc00796f76b3b85824fcfc53d5"
+      url "https://github.com/ConductorOne/baton-demo/releases/download/v0.6.1/baton-demo-v0.6.1-darwin-arm64.zip"
+      sha256 "223a6c0d4a2fc2cb9ea542f0bf8234021e21c101224399a7a0791291713c2c53"
 
       def install
         bin.install "baton-demo"
@@ -29,8 +29,8 @@ class BatonDemo < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-demo/releases/download/v0.6.0/baton-demo-v0.6.0-linux-amd64.tar.gz"
-        sha256 "d1ca24e86467c65e7097ccf2b94c5270fa301d336d3ff61db2c8effffa0a494e"
+        url "https://github.com/ConductorOne/baton-demo/releases/download/v0.6.1/baton-demo-v0.6.1-linux-amd64.tar.gz"
+        sha256 "58ddbf63c964ff0386eaaebe435f09b45d133b6ea4cbcbc52f91f6135eeeca1a"
 
         def install
           bin.install "baton-demo"
@@ -39,8 +39,8 @@ class BatonDemo < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-demo/releases/download/v0.6.0/baton-demo-v0.6.0-linux-arm64.tar.gz"
-        sha256 "6f7d5f52947f312a46b16626558674b889ab89073763013890d1f7e2841749bf"
+        url "https://github.com/ConductorOne/baton-demo/releases/download/v0.6.1/baton-demo-v0.6.1-linux-arm64.tar.gz"
+        sha256 "6016b5d9da91675829dfedfbddbfe6796dc913950759044cfff31f445c6f7b5f"
 
         def install
           bin.install "baton-demo"
