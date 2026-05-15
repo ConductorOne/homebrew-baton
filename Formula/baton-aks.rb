@@ -5,20 +5,20 @@
 class BatonAks < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.3"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-aks/releases/download/v0.0.3/baton-aks-v0.0.3-darwin-amd64.zip"
-      sha256 "ce26aa872c4284ba0b9a64ee056113a3deaaf2fc6d5e83b4f77e8bda7caa5176"
+      url "https://github.com/ConductorOne/baton-aks/releases/download/v0.1.0/baton-aks-v0.1.0-darwin-amd64.zip"
+      sha256 "c7af4ce8ab4e053ef43deabfe771dec4eb6b26e102648b2f305fb081e8cc0df1"
 
       def install
         bin.install "baton-aks"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-aks/releases/download/v0.0.3/baton-aks-v0.0.3-darwin-arm64.zip"
-      sha256 "9cca58fe689a73bb39e059b35106dbde87ba916a3b7e3c5709ddaf0c2c786c6c"
+      url "https://github.com/ConductorOne/baton-aks/releases/download/v0.1.0/baton-aks-v0.1.0-darwin-arm64.zip"
+      sha256 "744c55d483c8dae364b076e7ab615a088cb46e5f683e85277f359be6e4e2f153"
 
       def install
         bin.install "baton-aks"
@@ -27,24 +27,18 @@ class BatonAks < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-aks/releases/download/v0.0.3/baton-aks-v0.0.3-linux-amd64.tar.gz"
-        sha256 "b14e0e20445d195161fb9945d1e46c18d640213b749f937dc0d7bfbe57267fac"
-
-        def install
-          bin.install "baton-aks"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-aks/releases/download/v0.1.0/baton-aks-v0.1.0-linux-amd64.tar.gz"
+      sha256 "42d053bb9dcc3bb68c81fa67fa208b0e61e4f89b716db94ee558215a9f9baefd"
+      def install
+        bin.install "baton-aks"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-aks/releases/download/v0.0.3/baton-aks-v0.0.3-linux-arm64.tar.gz"
-        sha256 "bef81ad417b386bd0c762c9cbbf56fda4e9cd089ad39a463c07e465199a0a918"
-
-        def install
-          bin.install "baton-aks"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-aks/releases/download/v0.1.0/baton-aks-v0.1.0-linux-arm64.tar.gz"
+      sha256 "ec3d0dab8ef4cb043eb9a2b09a7fc05fef7f499309cb39f81b986547d5e4bef5"
+      def install
+        bin.install "baton-aks"
       end
     end
   end
