@@ -5,20 +5,20 @@
 class BatonVercel < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-vercel/releases/download/v0.0.3/baton-vercel-v0.0.3-darwin-amd64.zip"
-      sha256 "bf2b739d77bd54f776fee46fd1274c51ca275b96f420136d5dee89ce88253a32"
+      url "https://github.com/ConductorOne/baton-vercel/releases/download/v0.0.4/baton-vercel-v0.0.4-darwin-amd64.zip"
+      sha256 "0ba0b8774e5dab82f2101cd1b39befd7706d289081c327bdeabea98c02f054d5"
 
       def install
         bin.install "baton-vercel"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-vercel/releases/download/v0.0.3/baton-vercel-v0.0.3-darwin-arm64.zip"
-      sha256 "8057ab689a00656307e040e5cedb9a267f8384f0301c8380249f6a96ee5d9b6f"
+      url "https://github.com/ConductorOne/baton-vercel/releases/download/v0.0.4/baton-vercel-v0.0.4-darwin-arm64.zip"
+      sha256 "b8f2b00386f0c99b92ced637265aa8a4bd37c66637875cc68cd79d4239fe0eb0"
 
       def install
         bin.install "baton-vercel"
@@ -28,15 +28,15 @@ class BatonVercel < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-vercel/releases/download/v0.0.3/baton-vercel-v0.0.3-linux-amd64.tar.gz"
-      sha256 "46550cdc69f068153be0d69ef47a768b0b8ee8f28f725cd570561129e0b8ebc1"
+      url "https://github.com/ConductorOne/baton-vercel/releases/download/v0.0.4/baton-vercel-v0.0.4-linux-amd64.tar.gz"
+      sha256 "09c22ef30a68aae1d079526f78619c57c54ef3d4853ff135fc39c41c0c8cf4a1"
       def install
         bin.install "baton-vercel"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-vercel/releases/download/v0.0.3/baton-vercel-v0.0.3-linux-arm64.tar.gz"
-      sha256 "20063e1ed18e5d2269bff3c59b4a42dc864196c28f1a60b4799b5ab29cac7c50"
+      url "https://github.com/ConductorOne/baton-vercel/releases/download/v0.0.4/baton-vercel-v0.0.4-linux-arm64.tar.gz"
+      sha256 "873b526a40b50a617d694898373ae2e5d66ea7873db59287018ec895f6b81ee1"
       def install
         bin.install "baton-vercel"
       end
