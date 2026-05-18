@@ -10,7 +10,7 @@ class BatonVercel < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ConductorOne/baton-vercel/releases/download/v0.0.3/baton-vercel-v0.0.3-darwin-amd64.zip"
-      sha256 "a710095b49a4c71209602ecd1b0459be30a2a456dd4cdb889c3acc5b18a8bb7a"
+      sha256 "bf2b739d77bd54f776fee46fd1274c51ca275b96f420136d5dee89ce88253a32"
 
       def install
         bin.install "baton-vercel"
@@ -18,7 +18,7 @@ class BatonVercel < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/ConductorOne/baton-vercel/releases/download/v0.0.3/baton-vercel-v0.0.3-darwin-arm64.zip"
-      sha256 "8769715b81107daec994deee778b0d046383e7c9382a39d7a7191ac1b697fe05"
+      sha256 "8057ab689a00656307e040e5cedb9a267f8384f0301c8380249f6a96ee5d9b6f"
 
       def install
         bin.install "baton-vercel"
@@ -29,14 +29,14 @@ class BatonVercel < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/ConductorOne/baton-vercel/releases/download/v0.0.3/baton-vercel-v0.0.3-linux-amd64.tar.gz"
-      sha256 "1a27a71b44dfe7a1b9513364cacd7276efe90726686d9a682ae033d9f6745e94"
+      sha256 "46550cdc69f068153be0d69ef47a768b0b8ee8f28f725cd570561129e0b8ebc1"
       def install
         bin.install "baton-vercel"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ConductorOne/baton-vercel/releases/download/v0.0.3/baton-vercel-v0.0.3-linux-arm64.tar.gz"
-      sha256 "2495e1957f289341d3b87d1af0c3a125150720e9bee0b3396d205f910179a61c"
+      sha256 "20063e1ed18e5d2269bff3c59b4a42dc864196c28f1a60b4799b5ab29cac7c50"
       def install
         bin.install "baton-vercel"
       end
