@@ -5,20 +5,20 @@
 class BatonSuccessfactorsOdata < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-successfactors-odata/releases/download/v0.0.3/baton-successfactors-odata-v0.0.3-darwin-amd64.zip"
-      sha256 "861d0e6452983d654800f5af15581400cf4c63d047845dd547cacdc0c0210dc4"
+      url "https://github.com/ConductorOne/baton-successfactors-odata/releases/download/v0.0.4/baton-successfactors-odata-v0.0.4-darwin-amd64.zip"
+      sha256 "d62f7756f3d1efe4f9ed9ef0ece08c41ca07c0afc080843b6b0b423da7ed3e56"
 
       def install
         bin.install "baton-successfactors-odata"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-successfactors-odata/releases/download/v0.0.3/baton-successfactors-odata-v0.0.3-darwin-arm64.zip"
-      sha256 "abe3ad53380379ce96a6ffd383f9a4b532aaf97a4c546a2ddfb08570da5f0456"
+      url "https://github.com/ConductorOne/baton-successfactors-odata/releases/download/v0.0.4/baton-successfactors-odata-v0.0.4-darwin-arm64.zip"
+      sha256 "b5cb8301165d6c6245b1471f33c7c0e356d2995f244c8aa27544cc7c183cd72c"
 
       def install
         bin.install "baton-successfactors-odata"
@@ -28,15 +28,15 @@ class BatonSuccessfactorsOdata < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-successfactors-odata/releases/download/v0.0.3/baton-successfactors-odata-v0.0.3-linux-amd64.tar.gz"
-      sha256 "da514531b9007dc5a8a64aa5fbc5a896bf00352df3e86b4042460b8bfc48810c"
+      url "https://github.com/ConductorOne/baton-successfactors-odata/releases/download/v0.0.4/baton-successfactors-odata-v0.0.4-linux-amd64.tar.gz"
+      sha256 "1a01408eedbdbb20ee7676cf6ccfcc4076607bb728ff26ab800c709a0deb1a42"
       def install
         bin.install "baton-successfactors-odata"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-successfactors-odata/releases/download/v0.0.3/baton-successfactors-odata-v0.0.3-linux-arm64.tar.gz"
-      sha256 "f8a09f24fba4e9f4003eaeeeb20fbf887efe5e824557dbeaab53f69fda7276ef"
+      url "https://github.com/ConductorOne/baton-successfactors-odata/releases/download/v0.0.4/baton-successfactors-odata-v0.0.4-linux-arm64.tar.gz"
+      sha256 "36832942da321304c1882faeaf29ca768a4f714717ebc38671f77c6bb13b8105"
       def install
         bin.install "baton-successfactors-odata"
       end
