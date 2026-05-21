@@ -5,20 +5,20 @@
 class BatonOracleFieldService < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.11"
+  version "0.0.12"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-oracle-field-service/releases/download/v0.0.11/baton-oracle-field-service-v0.0.11-darwin-amd64.zip"
-      sha256 "f99b77678a5ddd9c60060fd4e786cc204f2f9e8e67d910cf6b9bd3dd82dc3b53"
+      url "https://github.com/ConductorOne/baton-oracle-field-service/releases/download/v0.0.12/baton-oracle-field-service-v0.0.12-darwin-amd64.zip"
+      sha256 "c76076a77076a0d3903d9320dc11a79a91b80c52889b063dd5557bc35c02a323"
 
       def install
         bin.install "baton-oracle-field-service"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-oracle-field-service/releases/download/v0.0.11/baton-oracle-field-service-v0.0.11-darwin-arm64.zip"
-      sha256 "1747210ceca77ff6cd0ddf66a22a1c57b7ced509d39ac271d8f2c835b79dbf4e"
+      url "https://github.com/ConductorOne/baton-oracle-field-service/releases/download/v0.0.12/baton-oracle-field-service-v0.0.12-darwin-arm64.zip"
+      sha256 "34d8e348a7fcf20a9ae5c825fe3ad8ecfd270cd3962eecc646c0c3ed7d4fc155"
 
       def install
         bin.install "baton-oracle-field-service"
@@ -28,15 +28,15 @@ class BatonOracleFieldService < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-oracle-field-service/releases/download/v0.0.11/baton-oracle-field-service-v0.0.11-linux-amd64.tar.gz"
-      sha256 "d0a1deccbdabe0ab4964fb187653b8160dde4ac47d5d17c3667fa6b33ac68590"
+      url "https://github.com/ConductorOne/baton-oracle-field-service/releases/download/v0.0.12/baton-oracle-field-service-v0.0.12-linux-amd64.tar.gz"
+      sha256 "55b5efe5b4fc3c48603750ea08945ae7bb6ffd3aabdf4855b527df975ae97c0b"
       def install
         bin.install "baton-oracle-field-service"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-oracle-field-service/releases/download/v0.0.11/baton-oracle-field-service-v0.0.11-linux-arm64.tar.gz"
-      sha256 "916edabcb50e7616006f1673567b0168eeb5e0c9746815955026a28939982db3"
+      url "https://github.com/ConductorOne/baton-oracle-field-service/releases/download/v0.0.12/baton-oracle-field-service-v0.0.12-linux-arm64.tar.gz"
+      sha256 "f49763776aeb2545bf679318acbd5f12c202826604e8d672ab89c54baee0f6de"
       def install
         bin.install "baton-oracle-field-service"
       end
