@@ -5,20 +5,20 @@
 class BatonOpenai < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-openai/releases/download/v0.1.0/baton-openai-v0.1.0-darwin-amd64.zip"
-      sha256 "3b7f6b32fdf670d02d2b447f8890067f5c001571703054f47a542c8138c2ae8b"
+      url "https://github.com/ConductorOne/baton-openai/releases/download/v0.1.1/baton-openai-v0.1.1-darwin-amd64.zip"
+      sha256 "d43c5bf9c16aba715189033b360b75ad9a186655c62722812a50bf1b030a3a34"
 
       def install
         bin.install "baton-openai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-openai/releases/download/v0.1.0/baton-openai-v0.1.0-darwin-arm64.zip"
-      sha256 "6873ed68dc22c18510ec796fbf17b74662ad52546b35af8bdbf022cf6ee18aec"
+      url "https://github.com/ConductorOne/baton-openai/releases/download/v0.1.1/baton-openai-v0.1.1-darwin-arm64.zip"
+      sha256 "2d5d8554457848a2161175c3be36b25816b3daba91f484b7aaca0ba75a16f99e"
 
       def install
         bin.install "baton-openai"
@@ -28,15 +28,15 @@ class BatonOpenai < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-openai/releases/download/v0.1.0/baton-openai-v0.1.0-linux-amd64.tar.gz"
-      sha256 "0e110f161b2d379dacf1ae7f336547c136f4f28a73d980feae62a398826317ff"
+      url "https://github.com/ConductorOne/baton-openai/releases/download/v0.1.1/baton-openai-v0.1.1-linux-amd64.tar.gz"
+      sha256 "0c39ecf24137f8e568acdd79267ced802dc2f6d949a99634a5ec302e3e4eca5b"
       def install
         bin.install "baton-openai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-openai/releases/download/v0.1.0/baton-openai-v0.1.0-linux-arm64.tar.gz"
-      sha256 "4153d384be404ef575e73aa8a9f57d6b053cffa3117090dfba6d3836db771b34"
+      url "https://github.com/ConductorOne/baton-openai/releases/download/v0.1.1/baton-openai-v0.1.1-linux-arm64.tar.gz"
+      sha256 "253e5ce3fe29c7f9b74654d920b03478f46365370e921478305ce1a133783204"
       def install
         bin.install "baton-openai"
       end
