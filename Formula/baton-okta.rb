@@ -5,20 +5,20 @@
 class BatonOkta < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.5.9"
+  version "0.5.10-test.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-okta/releases/download/v0.5.9/baton-okta-v0.5.9-darwin-amd64.zip"
-      sha256 "e1329815caebea7fa8d8256998ed5c4776d70de8f286a9353e52e6f0215f378a"
+      url "https://github.com/ConductorOne/baton-okta/releases/download/v0.5.10-test.1/baton-okta-v0.5.10-test.1-darwin-amd64.zip"
+      sha256 "f53b102830dea30336602fb250bcafee4fe69bae5b4c472fe2e2d5787d8c01f0"
 
       def install
         bin.install "baton-okta"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-okta/releases/download/v0.5.9/baton-okta-v0.5.9-darwin-arm64.zip"
-      sha256 "7875f36b1db85921771c8ebda7a4b2920df83df8178ee35e1d09b6632ee2aa8b"
+      url "https://github.com/ConductorOne/baton-okta/releases/download/v0.5.10-test.1/baton-okta-v0.5.10-test.1-darwin-arm64.zip"
+      sha256 "df6f5050781cc3abb8896fd1f9a60edf302d4f65cb7e3bb3af0d651fd197216d"
 
       def install
         bin.install "baton-okta"
@@ -28,15 +28,15 @@ class BatonOkta < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-okta/releases/download/v0.5.9/baton-okta-v0.5.9-linux-amd64.tar.gz"
-      sha256 "b4b35cac26540bea1a2f453ee23a8dad4384a8e7202bc5db85fe6503b8ac8c1b"
+      url "https://github.com/ConductorOne/baton-okta/releases/download/v0.5.10-test.1/baton-okta-v0.5.10-test.1-linux-amd64.tar.gz"
+      sha256 "71798c70691780af002dce64c67cb26def5ca8a3a4728f34c5815359a7f8101b"
       def install
         bin.install "baton-okta"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-okta/releases/download/v0.5.9/baton-okta-v0.5.9-linux-arm64.tar.gz"
-      sha256 "800cf63feb7affb34ab505416d4bd99a3e17b88856e8cdf8fb353bc621d620cc"
+      url "https://github.com/ConductorOne/baton-okta/releases/download/v0.5.10-test.1/baton-okta-v0.5.10-test.1-linux-arm64.tar.gz"
+      sha256 "81ed940408db4136a1b8dd700981e6b86b0734baa428e6e42d35c975af3a8768"
       def install
         bin.install "baton-okta"
       end
