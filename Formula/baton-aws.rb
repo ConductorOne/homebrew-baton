@@ -5,20 +5,20 @@
 class BatonAws < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.3.3-test-provisioning-2"
+  version "0.3.3-test-provisioning-3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.3.3-test-provisioning-2/baton-aws-v0.3.3-test-provisioning-2-darwin-amd64.zip"
-      sha256 "19624c8de5e8c354700e4172e5b07cabc28beb0e7e1bb911856f2888c6f69dc9"
+      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.3.3-test-provisioning-3/baton-aws-v0.3.3-test-provisioning-3-darwin-amd64.zip"
+      sha256 "3da6cd5e4314febdf0c80fdc95569cfc227dda633cf893079e1a594e8c252ceb"
 
       def install
         bin.install "baton-aws"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.3.3-test-provisioning-2/baton-aws-v0.3.3-test-provisioning-2-darwin-arm64.zip"
-      sha256 "9d8b6dd099f0dc9fed506a1f6fb9b693e08da27b63bb37892a4b2446eb98e9c5"
+      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.3.3-test-provisioning-3/baton-aws-v0.3.3-test-provisioning-3-darwin-arm64.zip"
+      sha256 "8e76a0daeda30c9a145a77d7c108d8da1c041561c29fd1c20aec75742ee3f6d3"
 
       def install
         bin.install "baton-aws"
@@ -28,15 +28,15 @@ class BatonAws < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.3.3-test-provisioning-2/baton-aws-v0.3.3-test-provisioning-2-linux-amd64.tar.gz"
-      sha256 "ad9fd42a759283d989fdd8091db5cdc0a8e5334bdb8dc950a76847db4a9f965d"
+      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.3.3-test-provisioning-3/baton-aws-v0.3.3-test-provisioning-3-linux-amd64.tar.gz"
+      sha256 "5682df44f341f9e1e81deadc9c9415bcf0ef9f4293d43edb5ea154b5cb4601bb"
       def install
         bin.install "baton-aws"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.3.3-test-provisioning-2/baton-aws-v0.3.3-test-provisioning-2-linux-arm64.tar.gz"
-      sha256 "9d17ff3a9ea583f6f11e7c02b49022844d9eccd4a7279c1d366c62983af374b5"
+      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.3.3-test-provisioning-3/baton-aws-v0.3.3-test-provisioning-3-linux-arm64.tar.gz"
+      sha256 "22be90969a11f3ca207e01337e0a2947b1708530e4dc682257e245d19332974a"
       def install
         bin.install "baton-aws"
       end
