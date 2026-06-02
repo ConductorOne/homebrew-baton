@@ -5,20 +5,20 @@
 class BatonOnelogin < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.6-mappings-sync"
+  version "0.1.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-onelogin/releases/download/v0.1.6-mappings-sync/baton-onelogin-v0.1.6-mappings-sync-darwin-amd64.zip"
-      sha256 "ec749d080bd65db5710f48eb91f716b814fa32cde17865a6454a489ab6c80ff6"
+      url "https://github.com/ConductorOne/baton-onelogin/releases/download/v0.1.6/baton-onelogin-v0.1.6-darwin-amd64.zip"
+      sha256 "e7eb2d860f4e840e3c67f62cd234d176b43fbbe57c8f7d8c98983bd10ef5c3b1"
 
       def install
         bin.install "baton-onelogin"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-onelogin/releases/download/v0.1.6-mappings-sync/baton-onelogin-v0.1.6-mappings-sync-darwin-arm64.zip"
-      sha256 "d34dc531653e2bc75405c4e39a9df639decb98f759933c4445005a359885e7d7"
+      url "https://github.com/ConductorOne/baton-onelogin/releases/download/v0.1.6/baton-onelogin-v0.1.6-darwin-arm64.zip"
+      sha256 "59a4e9908d3dbbd6a9157a6e4415561fe46758836070aa3a1be442ec616004e2"
 
       def install
         bin.install "baton-onelogin"
@@ -28,15 +28,15 @@ class BatonOnelogin < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-onelogin/releases/download/v0.1.6-mappings-sync/baton-onelogin-v0.1.6-mappings-sync-linux-amd64.tar.gz"
-      sha256 "2040fe7213040fcab0a36827984d587fb15f4a531f5d9a83c2a673e4629917f7"
+      url "https://github.com/ConductorOne/baton-onelogin/releases/download/v0.1.6/baton-onelogin-v0.1.6-linux-amd64.tar.gz"
+      sha256 "886907fa5f6a5e2e8b527de42e3a3618ba99000072c4a8caba71035fab328351"
       def install
         bin.install "baton-onelogin"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-onelogin/releases/download/v0.1.6-mappings-sync/baton-onelogin-v0.1.6-mappings-sync-linux-arm64.tar.gz"
-      sha256 "d1e6e36eb27e91079e5c755c69b6654f8c3d1226109b2e7416b2b3438f4837f6"
+      url "https://github.com/ConductorOne/baton-onelogin/releases/download/v0.1.6/baton-onelogin-v0.1.6-linux-arm64.tar.gz"
+      sha256 "d3d5e918986f467855945e5fc7e14af84303fdec733c041bb624f7a96ca7195f"
       def install
         bin.install "baton-onelogin"
       end
