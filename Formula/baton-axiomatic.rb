@@ -5,20 +5,20 @@
 class BatonAxiomatic < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.7"
+  version "0.0.8"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-axiomatic/releases/download/v0.0.7/baton-axiomatic-v0.0.7-darwin-amd64.zip"
-      sha256 "f5e9fadf2044a3957e65a9c4911eb4c998d0e657c2ff338e353eef877610dae1"
+      url "https://github.com/ConductorOne/baton-axiomatic/releases/download/v0.0.8/baton-axiomatic-v0.0.8-darwin-amd64.zip"
+      sha256 "d58274a60b8213646e04bdfc0b6ce4d1c72e08994505f473021889894253196d"
 
       def install
         bin.install "baton-axiomatic"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-axiomatic/releases/download/v0.0.7/baton-axiomatic-v0.0.7-darwin-arm64.zip"
-      sha256 "b466169b3e7a0affa000be1f71d3b22b0cf57eb1bc35e79f4461bd00946209a0"
+      url "https://github.com/ConductorOne/baton-axiomatic/releases/download/v0.0.8/baton-axiomatic-v0.0.8-darwin-arm64.zip"
+      sha256 "384c7954b0bbbb54b5f993b8e4d89f242b56e4472e694e795ea269720581b275"
 
       def install
         bin.install "baton-axiomatic"
@@ -28,15 +28,15 @@ class BatonAxiomatic < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-axiomatic/releases/download/v0.0.7/baton-axiomatic-v0.0.7-linux-amd64.tar.gz"
-      sha256 "1f093b0ef7c213e100e11237814e8d3467c5de41db3c43c996f199f84388bfaa"
+      url "https://github.com/ConductorOne/baton-axiomatic/releases/download/v0.0.8/baton-axiomatic-v0.0.8-linux-amd64.tar.gz"
+      sha256 "a75a8d4a4e1a6a6d5d9b9cc16b1492df20d84bd796cffeaf7d5f4bf82150f49b"
       def install
         bin.install "baton-axiomatic"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-axiomatic/releases/download/v0.0.7/baton-axiomatic-v0.0.7-linux-arm64.tar.gz"
-      sha256 "2480f633390bde17633eb4eee92ac991cddb4f6581f6c4d4fbf7ddbbe3a122e2"
+      url "https://github.com/ConductorOne/baton-axiomatic/releases/download/v0.0.8/baton-axiomatic-v0.0.8-linux-arm64.tar.gz"
+      sha256 "6db11938174924af3ccb4e01fe628e4518672c090d7d955b2eaf8c0ef788ff61"
       def install
         bin.install "baton-axiomatic"
       end
