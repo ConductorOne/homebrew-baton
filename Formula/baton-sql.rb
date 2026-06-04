@@ -5,20 +5,20 @@
 class BatonSql < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.5.9"
+  version "0.5.10"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-sql/releases/download/v0.5.9/baton-sql-v0.5.9-darwin-amd64.zip"
-      sha256 "2193c1c519d66976df83c43c1689f8475e697459b8ca1cd69268c44dfac8f34b"
+      url "https://github.com/ConductorOne/baton-sql/releases/download/v0.5.10/baton-sql-v0.5.10-darwin-amd64.zip"
+      sha256 "ae6c78fec9fc6c47cfe2e9954413c7d8db5d3fc6711b0926572b35c8166d304f"
 
       def install
         bin.install "baton-sql"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-sql/releases/download/v0.5.9/baton-sql-v0.5.9-darwin-arm64.zip"
-      sha256 "621a448e836fbd0b4bfea6b57259e13d52c9b6813fe0a18050eeb7800ba6a2d2"
+      url "https://github.com/ConductorOne/baton-sql/releases/download/v0.5.10/baton-sql-v0.5.10-darwin-arm64.zip"
+      sha256 "55b44eb2f22dc9a4b2b7279c6fbe96ccd7e81d06ca1fdec629316321246fd703"
 
       def install
         bin.install "baton-sql"
@@ -28,15 +28,15 @@ class BatonSql < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sql/releases/download/v0.5.9/baton-sql-v0.5.9-linux-amd64.tar.gz"
-      sha256 "38ff6baf87738dfff172caee1fcd81783cf8ed5c5108845f44d7a3de7cffa68d"
+      url "https://github.com/ConductorOne/baton-sql/releases/download/v0.5.10/baton-sql-v0.5.10-linux-amd64.tar.gz"
+      sha256 "bb9050e72af53bd03c8da118b7c980c06584873e3634610db8f8051ba1973b61"
       def install
         bin.install "baton-sql"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sql/releases/download/v0.5.9/baton-sql-v0.5.9-linux-arm64.tar.gz"
-      sha256 "81057629b4eea7b40a66c44036ed3f5e4af4c3d49c3b0c7bc0ada2839baa2f5a"
+      url "https://github.com/ConductorOne/baton-sql/releases/download/v0.5.10/baton-sql-v0.5.10-linux-arm64.tar.gz"
+      sha256 "dfff9b5a93da11ce430ea5c8ed2a556e2aa2c6a3aeab4bb701dfb501292f45e8"
       def install
         bin.install "baton-sql"
       end
