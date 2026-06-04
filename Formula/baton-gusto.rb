@@ -5,20 +5,20 @@
 class BatonGusto < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-gusto/releases/download/v0.0.1/baton-gusto-v0.0.1-darwin-amd64.zip"
-      sha256 "50d5a59759b87bd54567f546f4ad5ba96f9fd6348647cf3c76b81182abf41e3a"
+      url "https://github.com/ConductorOne/baton-gusto/releases/download/v0.0.2/baton-gusto-v0.0.2-darwin-amd64.zip"
+      sha256 "1d174373a13db307b03165f0a737fd14db1a9bea4f1e6be7ca4bd6b5472ff889"
 
       def install
         bin.install "baton-gusto"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-gusto/releases/download/v0.0.1/baton-gusto-v0.0.1-darwin-arm64.zip"
-      sha256 "261fd2d04c44240fb54db7bf82584e4539c8df2bb1a1333faf4f6b7910193ecb"
+      url "https://github.com/ConductorOne/baton-gusto/releases/download/v0.0.2/baton-gusto-v0.0.2-darwin-arm64.zip"
+      sha256 "edd1e42655f70248c38542646354b85b01109ec4db56c9ae33a01f3fd707a395"
 
       def install
         bin.install "baton-gusto"
@@ -28,15 +28,15 @@ class BatonGusto < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-gusto/releases/download/v0.0.1/baton-gusto-v0.0.1-linux-amd64.tar.gz"
-      sha256 "e4a02b1f49503c42fac6aafc08b737abc8f54c3dc7f6c60d97353a1db61ce9ee"
+      url "https://github.com/ConductorOne/baton-gusto/releases/download/v0.0.2/baton-gusto-v0.0.2-linux-amd64.tar.gz"
+      sha256 "d59dfb9f58464fcb4a616efcf182658011e99c0b2ecf7009ef136f2d9612d1d3"
       def install
         bin.install "baton-gusto"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-gusto/releases/download/v0.0.1/baton-gusto-v0.0.1-linux-arm64.tar.gz"
-      sha256 "821d7d902cc5f58e314094eb4882918d6a6797ddc55823fb9f0fe2482aa7e9a1"
+      url "https://github.com/ConductorOne/baton-gusto/releases/download/v0.0.2/baton-gusto-v0.0.2-linux-arm64.tar.gz"
+      sha256 "ab68b23801a4a45ae5d5f4bfccde46198a791ac3cdd3c0e3a2955bff43241f52"
       def install
         bin.install "baton-gusto"
       end
