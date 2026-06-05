@@ -5,20 +5,20 @@
 class BatonHubspot < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.10"
+  version "0.0.10-test.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-hubspot/releases/download/v0.0.10/baton-hubspot-v0.0.10-darwin-amd64.zip"
-      sha256 "4f7712a533f376708dec4d5776dcbaf604ef3bf30b0042cc8e37c8d9d0ab82fc"
+      url "https://github.com/ConductorOne/baton-hubspot/releases/download/v0.0.10-test.1/baton-hubspot-v0.0.10-test.1-darwin-amd64.zip"
+      sha256 "58a5606fd0a23cdce1cc31988195dc45a295bfb924020167e8ede3824e95299c"
 
       def install
         bin.install "baton-hubspot"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-hubspot/releases/download/v0.0.10/baton-hubspot-v0.0.10-darwin-arm64.zip"
-      sha256 "2ea0db263aa17f27fdba1ba4e33191a9ee74dd86234facb78253091911f11b3d"
+      url "https://github.com/ConductorOne/baton-hubspot/releases/download/v0.0.10-test.1/baton-hubspot-v0.0.10-test.1-darwin-arm64.zip"
+      sha256 "b4e093076c7ea1ea5be889970006df5f7de55661980feedc9ffa3cbcd986fa08"
 
       def install
         bin.install "baton-hubspot"
@@ -28,15 +28,15 @@ class BatonHubspot < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-hubspot/releases/download/v0.0.10/baton-hubspot-v0.0.10-linux-amd64.tar.gz"
-      sha256 "e9e2ff6e07111e3ca23f70a94150807b3df727829943f1eddc4c230b7c529d7c"
+      url "https://github.com/ConductorOne/baton-hubspot/releases/download/v0.0.10-test.1/baton-hubspot-v0.0.10-test.1-linux-amd64.tar.gz"
+      sha256 "b8f6e11f7f9efe8df430dd9ef3ee59a99196d4f80fafab4f4310c8308ed64fbc"
       def install
         bin.install "baton-hubspot"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-hubspot/releases/download/v0.0.10/baton-hubspot-v0.0.10-linux-arm64.tar.gz"
-      sha256 "cc2eef898fde30ce67da1961164ba83686e163f4d90f107c18ae23978e32264e"
+      url "https://github.com/ConductorOne/baton-hubspot/releases/download/v0.0.10-test.1/baton-hubspot-v0.0.10-test.1-linux-arm64.tar.gz"
+      sha256 "1ae1b67aac1464403c1308fad12b3b9a0f29d1d2190c396cd80f7428699d70fc"
       def install
         bin.install "baton-hubspot"
       end
