@@ -5,20 +5,20 @@
 class BatonMongodbAtlas < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.6"
+  version "0.1.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.6/baton-mongodb-atlas-v0.1.6-darwin-amd64.zip"
-      sha256 "333d9768c6854c44d8948ea7ad3e06fe76dcef82de75de4d71f5bafe3dc6b130"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.7/baton-mongodb-atlas-v0.1.7-darwin-amd64.zip"
+      sha256 "40ae0f8556dc258fa53afcc2893779fca1bfce0f7a2aa1dc39cd6255dd6fa8cb"
 
       def install
         bin.install "baton-mongodb-atlas"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.6/baton-mongodb-atlas-v0.1.6-darwin-arm64.zip"
-      sha256 "86da57fc0bb448c912e5c6312d145371c49558671e75f3ebecb2bf63c1d55232"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.7/baton-mongodb-atlas-v0.1.7-darwin-arm64.zip"
+      sha256 "4dc20508e329c6fe4cc6b31593ebb0576b121aab302c1e95b8d8c45079d5f459"
 
       def install
         bin.install "baton-mongodb-atlas"
@@ -28,15 +28,15 @@ class BatonMongodbAtlas < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.6/baton-mongodb-atlas-v0.1.6-linux-amd64.tar.gz"
-      sha256 "d89f809b3720ffabc108128d3552ba1ca14c4bd0dd7a44e78a2759689c39e602"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.7/baton-mongodb-atlas-v0.1.7-linux-amd64.tar.gz"
+      sha256 "07b063dae2cc7216c1a53f3a047c712c53b66281cfded6409c32f0b2cb3a21f7"
       def install
         bin.install "baton-mongodb-atlas"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.6/baton-mongodb-atlas-v0.1.6-linux-arm64.tar.gz"
-      sha256 "ddf26db5ec02c936a11dd77c230b06e39a666e89ca87715a3162ac8a54815dbc"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.7/baton-mongodb-atlas-v0.1.7-linux-arm64.tar.gz"
+      sha256 "a75be92ae3868ad61636d61521e7613e82d69f1f25d88505fa4b3b0da43d8b00"
       def install
         bin.install "baton-mongodb-atlas"
       end
