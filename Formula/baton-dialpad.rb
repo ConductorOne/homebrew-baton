@@ -5,20 +5,20 @@
 class BatonDialpad < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.2-test-cel-fix.2"
+  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-dialpad/releases/download/v0.1.2-test-cel-fix.2/baton-dialpad-v0.1.2-test-cel-fix.2-darwin-amd64.zip"
-      sha256 "72f4d76647585024830f9123c643376ec2826edd21aa2cf7b68b9286947c953c"
+      url "https://github.com/ConductorOne/baton-dialpad/releases/download/v0.1.2/baton-dialpad-v0.1.2-darwin-amd64.zip"
+      sha256 "5653563162521f4e1bee566e30826e0a4a822374af63fff32a672ff61b5a5093"
 
       def install
         bin.install "baton-dialpad"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-dialpad/releases/download/v0.1.2-test-cel-fix.2/baton-dialpad-v0.1.2-test-cel-fix.2-darwin-arm64.zip"
-      sha256 "fbcec319420d5b222da00ce96e4412bf155011599aafc6f54f42330b8a2cb08e"
+      url "https://github.com/ConductorOne/baton-dialpad/releases/download/v0.1.2/baton-dialpad-v0.1.2-darwin-arm64.zip"
+      sha256 "3de01c3ad7768cf642f4c3bcb8494d25079880a9aa72c6e0a61504234b09f363"
 
       def install
         bin.install "baton-dialpad"
@@ -28,15 +28,15 @@ class BatonDialpad < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-dialpad/releases/download/v0.1.2-test-cel-fix.2/baton-dialpad-v0.1.2-test-cel-fix.2-linux-amd64.tar.gz"
-      sha256 "e4c17a652ff2bd1a761ed00daacd2078664f1e3ba5d81969e5d0c74d898a14a5"
+      url "https://github.com/ConductorOne/baton-dialpad/releases/download/v0.1.2/baton-dialpad-v0.1.2-linux-amd64.tar.gz"
+      sha256 "88c6669a9f9b42324488fdf93396560e9234222a5fb3db42f02e78dd5c0a783b"
       def install
         bin.install "baton-dialpad"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-dialpad/releases/download/v0.1.2-test-cel-fix.2/baton-dialpad-v0.1.2-test-cel-fix.2-linux-arm64.tar.gz"
-      sha256 "d82ea93fb67a8b0b16a1aef13b40fe847987e41ec6875f3d18966718163a9035"
+      url "https://github.com/ConductorOne/baton-dialpad/releases/download/v0.1.2/baton-dialpad-v0.1.2-linux-arm64.tar.gz"
+      sha256 "2acd615471a0ed9156fedf7f8a595b7a4d3285ffd7a013ed89b01b2a13334467"
       def install
         bin.install "baton-dialpad"
       end
