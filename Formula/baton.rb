@@ -5,20 +5,20 @@
 class Baton < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.13.3"
+  version "0.13.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-sdk/releases/download/v0.13.3/baton-v0.13.3-darwin-amd64.zip"
-      sha256 "ce9648d0b2952de3ca399c7a5cbfa62e1bbfc78063c388e89321076cb3780bc8"
+      url "https://github.com/ConductorOne/baton-sdk/releases/download/v0.13.4/baton-v0.13.4-darwin-amd64.zip"
+      sha256 "e97f46c61cd6dfe634e5fbab2ccb89f3441f608f3ea3890a2f3c89ab30a9b709"
 
       def install
         bin.install "baton"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-sdk/releases/download/v0.13.3/baton-v0.13.3-darwin-arm64.zip"
-      sha256 "16787038df1a4a7ecdbdf7b2cb927cb721748cdd6266046e8d2491bddcb13f67"
+      url "https://github.com/ConductorOne/baton-sdk/releases/download/v0.13.4/baton-v0.13.4-darwin-arm64.zip"
+      sha256 "187de4aa7f1a6fb7d5ff0d0c3c1bb16b18b43cbf637d3c8c120c5204a2e22d87"
 
       def install
         bin.install "baton"
@@ -28,15 +28,15 @@ class Baton < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sdk/releases/download/v0.13.3/baton-v0.13.3-linux-amd64.tar.gz"
-      sha256 "5a2dcb24869fc4bf47d80db734923b75c6245e4f7952fbed1fb76eb3b77c8b33"
+      url "https://github.com/ConductorOne/baton-sdk/releases/download/v0.13.4/baton-v0.13.4-linux-amd64.tar.gz"
+      sha256 "ba92201f4958d602f7aec07a76d33779d62e5d583adc35f5a60ce6fcebd64c4d"
       def install
         bin.install "baton"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sdk/releases/download/v0.13.3/baton-v0.13.3-linux-arm64.tar.gz"
-      sha256 "f04c66f8ab6af9e5143b4b2a34b2c39baf149c78f8e76de539014989eadf9895"
+      url "https://github.com/ConductorOne/baton-sdk/releases/download/v0.13.4/baton-v0.13.4-linux-arm64.tar.gz"
+      sha256 "53d982e90e3a7a6efc33ff246781ec745919d75c34ca8b4c8ec4e8b6e9386f36"
       def install
         bin.install "baton"
       end
