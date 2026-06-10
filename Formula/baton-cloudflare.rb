@@ -5,20 +5,20 @@
 class BatonCloudflare < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.14-test-account-provisionig"
+  version "0.0.14-test-account-provisioning-1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-cloudflare/releases/download/v0.0.14-test-account-provisionig/baton-cloudflare-v0.0.14-test-account-provisionig-darwin-amd64.zip"
-      sha256 "81e23b2f1be7f76852f27956979f709425e9b9d02e2610bb85c962d524ea57d7"
+      url "https://github.com/ConductorOne/baton-cloudflare/releases/download/v0.0.14-test-account-provisioning-1/baton-cloudflare-v0.0.14-test-account-provisioning-1-darwin-amd64.zip"
+      sha256 "6560930d0767f10c58d15e1305ffd02f5d2e176ef15f1fdb706982930c19ff8c"
 
       def install
         bin.install "baton-cloudflare"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-cloudflare/releases/download/v0.0.14-test-account-provisionig/baton-cloudflare-v0.0.14-test-account-provisionig-darwin-arm64.zip"
-      sha256 "9916eda11558f9d6146a4f770d82bc39d71df48d27518daa83f8b5c639809944"
+      url "https://github.com/ConductorOne/baton-cloudflare/releases/download/v0.0.14-test-account-provisioning-1/baton-cloudflare-v0.0.14-test-account-provisioning-1-darwin-arm64.zip"
+      sha256 "e1277b76437e478c2cf4cb4f5e67a34c96d4f5d4efacf266edc22d688d9f5140"
 
       def install
         bin.install "baton-cloudflare"
@@ -28,15 +28,15 @@ class BatonCloudflare < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-cloudflare/releases/download/v0.0.14-test-account-provisionig/baton-cloudflare-v0.0.14-test-account-provisionig-linux-amd64.tar.gz"
-      sha256 "596d78f9014994d8eb9729a7f0ebf22e8b857950a4079d675332abac01b49161"
+      url "https://github.com/ConductorOne/baton-cloudflare/releases/download/v0.0.14-test-account-provisioning-1/baton-cloudflare-v0.0.14-test-account-provisioning-1-linux-amd64.tar.gz"
+      sha256 "b21b7684e66cf6877d5c7dc640be95ccd589b9e64927132e57794351ed3fec45"
       def install
         bin.install "baton-cloudflare"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-cloudflare/releases/download/v0.0.14-test-account-provisionig/baton-cloudflare-v0.0.14-test-account-provisionig-linux-arm64.tar.gz"
-      sha256 "f58d91db4906ed51187c4075aea277e12bdd24787ff46e9bf55a122d86321173"
+      url "https://github.com/ConductorOne/baton-cloudflare/releases/download/v0.0.14-test-account-provisioning-1/baton-cloudflare-v0.0.14-test-account-provisioning-1-linux-arm64.tar.gz"
+      sha256 "046beaf2822a7b5dc6df558fdc118dffc67e1d1196a8690c14eef67e3d37a984"
       def install
         bin.install "baton-cloudflare"
       end
