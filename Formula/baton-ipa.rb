@@ -5,20 +5,20 @@
 class BatonIpa < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.3"
+  version "0.1.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-ipa/releases/download/v0.1.3/baton-ipa-v0.1.3-darwin-amd64.zip"
-      sha256 "36efb540a22c66d15a2b093374ed61d51afdb3bc8831ae34a6ea2b219531738d"
+      url "https://github.com/ConductorOne/baton-ipa/releases/download/v0.1.4/baton-ipa-v0.1.4-darwin-amd64.zip"
+      sha256 "3036a43830a0ef664c2fcc1538a78114352dc33452ea8515568a05588289faf3"
 
       def install
         bin.install "baton-ipa"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-ipa/releases/download/v0.1.3/baton-ipa-v0.1.3-darwin-arm64.zip"
-      sha256 "77efdb8f4132a98a06e96f4e0d7f9ecd460085aba63a8fb0f5e9bd0b93a69976"
+      url "https://github.com/ConductorOne/baton-ipa/releases/download/v0.1.4/baton-ipa-v0.1.4-darwin-arm64.zip"
+      sha256 "94842068e63c52d0c74061a45afef619d3a7fca6df421e80dc515b114551a928"
 
       def install
         bin.install "baton-ipa"
@@ -28,15 +28,15 @@ class BatonIpa < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ipa/releases/download/v0.1.3/baton-ipa-v0.1.3-linux-amd64.tar.gz"
-      sha256 "2c3fca8390505ca3ee558b1b70b0fd791482a3b1ec0a211309f4665f9521fd86"
+      url "https://github.com/ConductorOne/baton-ipa/releases/download/v0.1.4/baton-ipa-v0.1.4-linux-amd64.tar.gz"
+      sha256 "99b894cd7bfd309d6cb220ed01088506659f9265324a8d61d5c74da1a0579d58"
       def install
         bin.install "baton-ipa"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ipa/releases/download/v0.1.3/baton-ipa-v0.1.3-linux-arm64.tar.gz"
-      sha256 "49ef9986b06fe199327389e0163158a824489f22019f9f214d90e530ba998204"
+      url "https://github.com/ConductorOne/baton-ipa/releases/download/v0.1.4/baton-ipa-v0.1.4-linux-arm64.tar.gz"
+      sha256 "4f4576a10611253a810169fadb7b702da09ca161c235ed82b0bee5db4bdc9e38"
       def install
         bin.install "baton-ipa"
       end
