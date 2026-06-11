@@ -5,20 +5,20 @@
 class BatonNotion < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-notion/releases/download/v0.1.2/baton-notion-v0.1.2-darwin-amd64.zip"
-      sha256 "662c591535d4f5274efe07148ae829dfee4d0dada58a1e2a03ab06857b9a21ad"
+      url "https://github.com/ConductorOne/baton-notion/releases/download/v0.1.3/baton-notion-v0.1.3-darwin-amd64.zip"
+      sha256 "34bb5d557c05d32474fe22e83566c5c8ac86b46a7a22a9cbf41380278dcf0130"
 
       def install
         bin.install "baton-notion"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-notion/releases/download/v0.1.2/baton-notion-v0.1.2-darwin-arm64.zip"
-      sha256 "cf87b9dfb0a531d15fa9e0358afb6dbd76339982f3f58aa2cfd663f33a91c956"
+      url "https://github.com/ConductorOne/baton-notion/releases/download/v0.1.3/baton-notion-v0.1.3-darwin-arm64.zip"
+      sha256 "7d472dc65133a31dfa8d8b22384b208d4587f7a22be70098017a14baff069192"
 
       def install
         bin.install "baton-notion"
@@ -28,15 +28,15 @@ class BatonNotion < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-notion/releases/download/v0.1.2/baton-notion-v0.1.2-linux-amd64.tar.gz"
-      sha256 "0a46abbadb476b991181cdf69cfbfb21b03bac56a9da7b5446430d690b1e3269"
+      url "https://github.com/ConductorOne/baton-notion/releases/download/v0.1.3/baton-notion-v0.1.3-linux-amd64.tar.gz"
+      sha256 "d939d4d20423895265fee722f59adb9a365bb594f08440b68f84c2a25d535343"
       def install
         bin.install "baton-notion"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-notion/releases/download/v0.1.2/baton-notion-v0.1.2-linux-arm64.tar.gz"
-      sha256 "5bc3d01710f030c8be0705f1207c53e19fdf9195867d3167b1cbafa6792d3ff9"
+      url "https://github.com/ConductorOne/baton-notion/releases/download/v0.1.3/baton-notion-v0.1.3-linux-arm64.tar.gz"
+      sha256 "46a8abc88941e7db7e128dc669a976208bba345d7c93b8ad66589ad2f6d67f3e"
       def install
         bin.install "baton-notion"
       end
