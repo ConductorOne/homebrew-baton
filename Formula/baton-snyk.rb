@@ -5,20 +5,20 @@
 class BatonSnyk < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.0"
+  version "0.2.1-test-pagination-fix.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-snyk/releases/download/v0.2.0/baton-snyk-v0.2.0-darwin-amd64.zip"
-      sha256 "54543f06adda189dbe6a633d4a3a6932f9ef4a37d8515bedd0123ab4f27e6077"
+      url "https://github.com/ConductorOne/baton-snyk/releases/download/v0.2.1-test-pagination-fix.1/baton-snyk-v0.2.1-test-pagination-fix.1-darwin-amd64.zip"
+      sha256 "e0a136d2c597c7a9a9892434bbfeec4e370f39a90982d759c1dbff43bfeb91cb"
 
       def install
         bin.install "baton-snyk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-snyk/releases/download/v0.2.0/baton-snyk-v0.2.0-darwin-arm64.zip"
-      sha256 "3b7f8d81fd0ece647ec4d6c39a1f245723aba1ca89f10f8062d8922359b5efcc"
+      url "https://github.com/ConductorOne/baton-snyk/releases/download/v0.2.1-test-pagination-fix.1/baton-snyk-v0.2.1-test-pagination-fix.1-darwin-arm64.zip"
+      sha256 "e23fffbe8cc3e067148349ceaac21320970e886e7a977649ddb4af697e5627d5"
 
       def install
         bin.install "baton-snyk"
@@ -28,15 +28,15 @@ class BatonSnyk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-snyk/releases/download/v0.2.0/baton-snyk-v0.2.0-linux-amd64.tar.gz"
-      sha256 "94fc034fe1a619900e2b210d111f896586a071e7750b65317d637dc2ee47df44"
+      url "https://github.com/ConductorOne/baton-snyk/releases/download/v0.2.1-test-pagination-fix.1/baton-snyk-v0.2.1-test-pagination-fix.1-linux-amd64.tar.gz"
+      sha256 "11def182baa7359b1de9c92d58dfa44016bb19078921c829454113b13cba9dbd"
       def install
         bin.install "baton-snyk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-snyk/releases/download/v0.2.0/baton-snyk-v0.2.0-linux-arm64.tar.gz"
-      sha256 "33bf0db7bde785a0246094e8cface376babd45ff1152409e9040bdb64f65d9ae"
+      url "https://github.com/ConductorOne/baton-snyk/releases/download/v0.2.1-test-pagination-fix.1/baton-snyk-v0.2.1-test-pagination-fix.1-linux-arm64.tar.gz"
+      sha256 "dfc8fad630b6ab0386c00f8a6f1df6464b0baf9d4b8404f13b5df131f8dcded4"
       def install
         bin.install "baton-snyk"
       end
