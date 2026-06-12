@@ -5,20 +5,20 @@
 class BatonArtifactory < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.12-test-fix-pagination.1"
+  version "0.0.12"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-artifactory/releases/download/v0.0.12-test-fix-pagination.1/baton-artifactory-v0.0.12-test-fix-pagination.1-darwin-amd64.zip"
-      sha256 "a4f75ddb847b461332d57ff118d9a632bf049f8f1129e4fc1f637f117d6314d0"
+      url "https://github.com/ConductorOne/baton-artifactory/releases/download/v0.0.12/baton-artifactory-v0.0.12-darwin-amd64.zip"
+      sha256 "5b584857483b4852553aba751b3a1e5b0bce284c686f86ac738f2802a8bfa4c3"
 
       def install
         bin.install "baton-artifactory"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-artifactory/releases/download/v0.0.12-test-fix-pagination.1/baton-artifactory-v0.0.12-test-fix-pagination.1-darwin-arm64.zip"
-      sha256 "35f2483c6836b5ccd27f0e1f40b792298b9ba609af97f22da141b7da95b5060f"
+      url "https://github.com/ConductorOne/baton-artifactory/releases/download/v0.0.12/baton-artifactory-v0.0.12-darwin-arm64.zip"
+      sha256 "3c66ddd2edde209229f0f8e91738194707ce2232973d4b345d6d9dd93d3d5067"
 
       def install
         bin.install "baton-artifactory"
@@ -28,15 +28,15 @@ class BatonArtifactory < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-artifactory/releases/download/v0.0.12-test-fix-pagination.1/baton-artifactory-v0.0.12-test-fix-pagination.1-linux-amd64.tar.gz"
-      sha256 "45f0f172714d2726228463414170070e903a283019b88865b5484aecda65cce4"
+      url "https://github.com/ConductorOne/baton-artifactory/releases/download/v0.0.12/baton-artifactory-v0.0.12-linux-amd64.tar.gz"
+      sha256 "0c96168dbc512d23c3d158dd87907297a17cf5df96be076fd741ac516509772f"
       def install
         bin.install "baton-artifactory"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-artifactory/releases/download/v0.0.12-test-fix-pagination.1/baton-artifactory-v0.0.12-test-fix-pagination.1-linux-arm64.tar.gz"
-      sha256 "b535c9982b50e5ea27efa79d315de54edcd8dd0b1883d88e360b60602f626a54"
+      url "https://github.com/ConductorOne/baton-artifactory/releases/download/v0.0.12/baton-artifactory-v0.0.12-linux-arm64.tar.gz"
+      sha256 "1f240abcec0eae1764b0aaa253b231703bd08ceee66b0d8d8cb619ed3a762e61"
       def install
         bin.install "baton-artifactory"
       end
