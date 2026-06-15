@@ -5,20 +5,20 @@
 class BridgeClient < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/bridge-client/releases/download/v0.0.1/bridge-client-v0.0.1-darwin-amd64.zip"
-      sha256 "f8c380955815e59b66301b725f1d7158e4894a6702140e3210e5a89711d5f0a5"
+      url "https://github.com/ConductorOne/bridge-client/releases/download/v0.0.2/bridge-client-v0.0.2-darwin-amd64.zip"
+      sha256 "15d9dfec38e2ec1f799e3e63026abf687abf4d9c114c378eb20deebef92bd6d5"
 
       def install
         bin.install "bridge-client"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/bridge-client/releases/download/v0.0.1/bridge-client-v0.0.1-darwin-arm64.zip"
-      sha256 "dff4902f0ccf48df68f748d09017cafd986ace49d0aa4928f1c8b01d7ce643ba"
+      url "https://github.com/ConductorOne/bridge-client/releases/download/v0.0.2/bridge-client-v0.0.2-darwin-arm64.zip"
+      sha256 "7dfa3d33e1113b66e32ebc275361b110ab6c3b3d0604839ff3dd72260ef93b19"
 
       def install
         bin.install "bridge-client"
@@ -28,15 +28,15 @@ class BridgeClient < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/bridge-client/releases/download/v0.0.1/bridge-client-v0.0.1-linux-amd64.tar.gz"
-      sha256 "b5accc39cd690c610e6effaaa64ea1808a0d9db27caed13c2720213dbb7ab27a"
+      url "https://github.com/ConductorOne/bridge-client/releases/download/v0.0.2/bridge-client-v0.0.2-linux-amd64.tar.gz"
+      sha256 "032dd6b8f56b99d782b032fec7583b6ccb8b4da956c3e59c0ca03c3a7f96afd9"
       def install
         bin.install "bridge-client"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/bridge-client/releases/download/v0.0.1/bridge-client-v0.0.1-linux-arm64.tar.gz"
-      sha256 "ebdcd6afe85039684ef748737291c4740a3cdec715f4801a81c4f885d09aaccb"
+      url "https://github.com/ConductorOne/bridge-client/releases/download/v0.0.2/bridge-client-v0.0.2-linux-arm64.tar.gz"
+      sha256 "ab64c0afe74808abbad33c942be11a5b53487af03e07e7a3b97909d2fedce96d"
       def install
         bin.install "bridge-client"
       end
