@@ -5,20 +5,20 @@
 class BatonRapid7 < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-rapid7/releases/download/v0.1.2/baton-rapid7-v0.1.2-darwin-amd64.zip"
-      sha256 "e22b0ea61a6c81ea8cb0ab5cfd7f180278bb5bb35677d5fa03db65415deabd6f"
+      url "https://github.com/ConductorOne/baton-rapid7/releases/download/v0.1.3/baton-rapid7-v0.1.3-darwin-amd64.zip"
+      sha256 "86074ba2e73d468c7c3f9f6a18a16dabfb00b995d19b299708431d3a4e224476"
 
       def install
         bin.install "baton-rapid7"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-rapid7/releases/download/v0.1.2/baton-rapid7-v0.1.2-darwin-arm64.zip"
-      sha256 "71338f2da4bf7bf4fa585c220b7b0066e09fdca7a6736651e49303541f8dc87c"
+      url "https://github.com/ConductorOne/baton-rapid7/releases/download/v0.1.3/baton-rapid7-v0.1.3-darwin-arm64.zip"
+      sha256 "6752fc7ff2a58af98dc44f5906c7227c8b3ec7f20f86f1ca4c9f604fe24c6430"
 
       def install
         bin.install "baton-rapid7"
@@ -28,15 +28,15 @@ class BatonRapid7 < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-rapid7/releases/download/v0.1.2/baton-rapid7-v0.1.2-linux-amd64.tar.gz"
-      sha256 "10eb5ea203e4fd57d624cc125b77b2953481f4950ad392246da3d24b13b850f6"
+      url "https://github.com/ConductorOne/baton-rapid7/releases/download/v0.1.3/baton-rapid7-v0.1.3-linux-amd64.tar.gz"
+      sha256 "9bd7d546f302ae3476e332f8ada0141f88a9cbfa0e8430c8292a6f9dba97955a"
       def install
         bin.install "baton-rapid7"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-rapid7/releases/download/v0.1.2/baton-rapid7-v0.1.2-linux-arm64.tar.gz"
-      sha256 "f780ef11220932d89b4aeef044445ecb130424625250a74d655a4a3423e19e9d"
+      url "https://github.com/ConductorOne/baton-rapid7/releases/download/v0.1.3/baton-rapid7-v0.1.3-linux-arm64.tar.gz"
+      sha256 "d0a303b33776479c381fa714bcf2b4e19d781be521ca098947a3246ad7fa7aa4"
       def install
         bin.install "baton-rapid7"
       end
