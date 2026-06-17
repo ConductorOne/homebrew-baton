@@ -5,20 +5,20 @@
 class BatonConfluenceDatacenter < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.8"
+  version "0.0.10"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-confluence-datacenter/releases/download/v0.0.8/baton-confluence-datacenter-v0.0.8-darwin-amd64.zip"
-      sha256 "5dc9e945cf405bcacfc7e9c2ddc356b83bcc79608fba4ebcff83bb56539a1b31"
+      url "https://github.com/ConductorOne/baton-confluence-datacenter/releases/download/v0.0.10/baton-confluence-datacenter-v0.0.10-darwin-amd64.zip"
+      sha256 "5f91926a55a98f2e2d23176c949b21b130e65721bee036fe52ead3040bbc2776"
 
       def install
         bin.install "baton-confluence-datacenter"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-confluence-datacenter/releases/download/v0.0.8/baton-confluence-datacenter-v0.0.8-darwin-arm64.zip"
-      sha256 "d8aeb2c3ec0c3b95f88c7e02d25c06fb6a9f42213378b64ed6c42652463bc991"
+      url "https://github.com/ConductorOne/baton-confluence-datacenter/releases/download/v0.0.10/baton-confluence-datacenter-v0.0.10-darwin-arm64.zip"
+      sha256 "4dd8ee2756e063b5d0710858da2fcd98b04d0dee7093beeaf1b973cce2d0a2c1"
 
       def install
         bin.install "baton-confluence-datacenter"
@@ -27,24 +27,18 @@ class BatonConfluenceDatacenter < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-confluence-datacenter/releases/download/v0.0.8/baton-confluence-datacenter-v0.0.8-linux-amd64.tar.gz"
-        sha256 "04ed78c34e9056fda1759d2a1fe5b55aea831e40b91ac39d7cabff92e845e181"
-
-        def install
-          bin.install "baton-confluence-datacenter"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-confluence-datacenter/releases/download/v0.0.10/baton-confluence-datacenter-v0.0.10-linux-amd64.tar.gz"
+      sha256 "a303d477716bc32b5c8f18e80d88b89658754209bd5a44b7743dc91c01859917"
+      def install
+        bin.install "baton-confluence-datacenter"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-confluence-datacenter/releases/download/v0.0.8/baton-confluence-datacenter-v0.0.8-linux-arm64.tar.gz"
-        sha256 "a01ed49040dc024eb5024bde52f00e6fd69774df7377561415684faaa6802ea4"
-
-        def install
-          bin.install "baton-confluence-datacenter"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-confluence-datacenter/releases/download/v0.0.10/baton-confluence-datacenter-v0.0.10-linux-arm64.tar.gz"
+      sha256 "26aad7681d43037b6bce1d0197c567b76828586496b666c615ea91af5c01fd20"
+      def install
+        bin.install "baton-confluence-datacenter"
       end
     end
   end
