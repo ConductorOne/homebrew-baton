@@ -5,20 +5,20 @@
 class BatonBox < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.4"
+  version "0.0.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-box/releases/download/v0.0.4/baton-box-v0.0.4-darwin-amd64.zip"
-      sha256 "8757d3b37c1c804e7d3c76ccab5944455b6f5047932c7e12c5461e31059c6a79"
+      url "https://github.com/ConductorOne/baton-box/releases/download/v0.0.5/baton-box-v0.0.5-darwin-amd64.zip"
+      sha256 "0987a6ea7b65590ccc81ffef5f4d0b951c54476529b75695e8b00804236020f5"
 
       def install
         bin.install "baton-box"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-box/releases/download/v0.0.4/baton-box-v0.0.4-darwin-arm64.zip"
-      sha256 "e3d479ecb22987f624c09b7acadc5a00374b9610ac7d8724e37d5ac5467b16b9"
+      url "https://github.com/ConductorOne/baton-box/releases/download/v0.0.5/baton-box-v0.0.5-darwin-arm64.zip"
+      sha256 "bd89d237dd4eb65b57148ce0f105194254fc118358b9b6d12aae0c8cfcfd6703"
 
       def install
         bin.install "baton-box"
@@ -28,15 +28,15 @@ class BatonBox < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-box/releases/download/v0.0.4/baton-box-v0.0.4-linux-amd64.tar.gz"
-      sha256 "1cfb230b6d832d8202e1929ffba21710cb24891c0e8e2880b871afbc4c0b60a4"
+      url "https://github.com/ConductorOne/baton-box/releases/download/v0.0.5/baton-box-v0.0.5-linux-amd64.tar.gz"
+      sha256 "3305ff09de2682b41ffda108e7eaa2e4b4dc6d6e95dd3b5cf84b48f22e871e32"
       def install
         bin.install "baton-box"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-box/releases/download/v0.0.4/baton-box-v0.0.4-linux-arm64.tar.gz"
-      sha256 "b1b894c766c80d511b454f3ce717f030ebc3fa048cda969431dcde6da3023098"
+      url "https://github.com/ConductorOne/baton-box/releases/download/v0.0.5/baton-box-v0.0.5-linux-arm64.tar.gz"
+      sha256 "f39868f5b866f6bef1f5c248926e6907b2ba7ba3f9283aa5fd0c7f9f7fca0a51"
       def install
         bin.install "baton-box"
       end
