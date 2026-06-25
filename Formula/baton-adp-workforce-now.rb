@@ -5,20 +5,20 @@
 class BatonAdpWorkforceNow < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.20"
+  version "0.0.21"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-adp-workforce-now/releases/download/v0.0.20/baton-adp-workforce-now-v0.0.20-darwin-amd64.zip"
-      sha256 "c21530f82297098027502f551af7d2c145f04d3d665cd726cebd8723b55f82a9"
+      url "https://github.com/ConductorOne/baton-adp-workforce-now/releases/download/v0.0.21/baton-adp-workforce-now-v0.0.21-darwin-amd64.zip"
+      sha256 "683188ef0cf3e6e8eb3b1120d4d56880be79e713ed8b44db5f676d08502ad521"
 
       def install
         bin.install "baton-adp-workforce-now"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-adp-workforce-now/releases/download/v0.0.20/baton-adp-workforce-now-v0.0.20-darwin-arm64.zip"
-      sha256 "cbb99e1724af134040b6babe7c635a136105f1d355191eac4a069d967100e413"
+      url "https://github.com/ConductorOne/baton-adp-workforce-now/releases/download/v0.0.21/baton-adp-workforce-now-v0.0.21-darwin-arm64.zip"
+      sha256 "e350a783ad7e4e21bbf8f94ce862a9f1e99528565cf370f18a34aeea80016a8e"
 
       def install
         bin.install "baton-adp-workforce-now"
@@ -28,15 +28,15 @@ class BatonAdpWorkforceNow < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-adp-workforce-now/releases/download/v0.0.20/baton-adp-workforce-now-v0.0.20-linux-amd64.tar.gz"
-      sha256 "6c21a7eb886a47bc7fe42e80e6ea6d8895c00caf1766f4c72ecbc0f2ebe21de9"
+      url "https://github.com/ConductorOne/baton-adp-workforce-now/releases/download/v0.0.21/baton-adp-workforce-now-v0.0.21-linux-amd64.tar.gz"
+      sha256 "1827005a65cca9fda463941cf4321c5fa5360327acc67cd099ac47813be7e619"
       def install
         bin.install "baton-adp-workforce-now"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-adp-workforce-now/releases/download/v0.0.20/baton-adp-workforce-now-v0.0.20-linux-arm64.tar.gz"
-      sha256 "fcdb3be3af79f761418edac365ea1927f7959a3f74f1c3c75d5526e53aae52c2"
+      url "https://github.com/ConductorOne/baton-adp-workforce-now/releases/download/v0.0.21/baton-adp-workforce-now-v0.0.21-linux-arm64.tar.gz"
+      sha256 "7774715772b255bb50f1a4032a90c3b3c775036b7c346fbd1523703ab5342d82"
       def install
         bin.install "baton-adp-workforce-now"
       end
