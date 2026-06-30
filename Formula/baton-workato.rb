@@ -5,20 +5,20 @@
 class BatonWorkato < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.17-test-folder-paging-fix"
+  version "0.0.17"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-workato/releases/download/v0.0.17-test-folder-paging-fix/baton-workato-v0.0.17-test-folder-paging-fix-darwin-amd64.zip"
-      sha256 "d7151d4400b6cd83a7c4ab74da55ddb9b2359acbcb38795b0ae5cbbfa9518314"
+      url "https://github.com/ConductorOne/baton-workato/releases/download/v0.0.17/baton-workato-v0.0.17-darwin-amd64.zip"
+      sha256 "49cf1348b9ebc248eb75e65df83136acc9cf7e143320ebaaf0c94aa6628367ef"
 
       def install
         bin.install "baton-workato"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-workato/releases/download/v0.0.17-test-folder-paging-fix/baton-workato-v0.0.17-test-folder-paging-fix-darwin-arm64.zip"
-      sha256 "c9776b3a62652f1bbe1103712d25bec191291f30f797966ddd15c811279f9de2"
+      url "https://github.com/ConductorOne/baton-workato/releases/download/v0.0.17/baton-workato-v0.0.17-darwin-arm64.zip"
+      sha256 "4bc5c92857689bc249a03b892f3992a546160e1b65ef9d16bc0e4ef62a155d8c"
 
       def install
         bin.install "baton-workato"
@@ -28,15 +28,15 @@ class BatonWorkato < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-workato/releases/download/v0.0.17-test-folder-paging-fix/baton-workato-v0.0.17-test-folder-paging-fix-linux-amd64.tar.gz"
-      sha256 "568c7f814cb07a9f7db4c994b674076ba53c6c826af04ef09902da0186c936db"
+      url "https://github.com/ConductorOne/baton-workato/releases/download/v0.0.17/baton-workato-v0.0.17-linux-amd64.tar.gz"
+      sha256 "5421ce79444d4eb0871f150e0c674dd220ba9f9f55143ba91720cd08b031c8a1"
       def install
         bin.install "baton-workato"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-workato/releases/download/v0.0.17-test-folder-paging-fix/baton-workato-v0.0.17-test-folder-paging-fix-linux-arm64.tar.gz"
-      sha256 "96a36c2172a0fa48fa91dd6dff3160169aeae995cfae8fa0e4fdee3d679c5a90"
+      url "https://github.com/ConductorOne/baton-workato/releases/download/v0.0.17/baton-workato-v0.0.17-linux-arm64.tar.gz"
+      sha256 "246bf4f84e4dff16484322c5004b497e41dc13c7685215996f96878f931d141a"
       def install
         bin.install "baton-workato"
       end
