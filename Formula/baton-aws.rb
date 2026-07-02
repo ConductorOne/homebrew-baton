@@ -5,20 +5,20 @@
 class BatonAws < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.3.4-test-iam-policy"
+  version "0.3.4-test-iam-policy-2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.3.4-test-iam-policy/baton-aws-v0.3.4-test-iam-policy-darwin-amd64.zip"
-      sha256 "086d527e88e623013debe1ae124fdcded84b4f69f5e265e39bea6350a47e833a"
+      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.3.4-test-iam-policy-2/baton-aws-v0.3.4-test-iam-policy-2-darwin-amd64.zip"
+      sha256 "29258eaa2dcf11cafa4190ee2b34e34a60a5472eec7b6a49bb5ee11e23312a1a"
 
       def install
         bin.install "baton-aws"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.3.4-test-iam-policy/baton-aws-v0.3.4-test-iam-policy-darwin-arm64.zip"
-      sha256 "ec07648db519a7d34aa926354ea582998638fd3af03d1f6631a5ecae6f4831ff"
+      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.3.4-test-iam-policy-2/baton-aws-v0.3.4-test-iam-policy-2-darwin-arm64.zip"
+      sha256 "72547490491fe6f84bc1415609695110c6592004e9414432d4e0cab2784dc382"
 
       def install
         bin.install "baton-aws"
@@ -28,15 +28,15 @@ class BatonAws < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.3.4-test-iam-policy/baton-aws-v0.3.4-test-iam-policy-linux-amd64.tar.gz"
-      sha256 "1bfdfc7ab6c92011770a7ab745dd940b46a30999df2655b6eae4780f9fd14bb7"
+      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.3.4-test-iam-policy-2/baton-aws-v0.3.4-test-iam-policy-2-linux-amd64.tar.gz"
+      sha256 "f6dab226f58a25d1cb8f01f8332432232452cae90b7156f29a3f0b1dcc165a26"
       def install
         bin.install "baton-aws"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.3.4-test-iam-policy/baton-aws-v0.3.4-test-iam-policy-linux-arm64.tar.gz"
-      sha256 "9fd7aecabc8cb028cc3c100ca20d4a4fbfcb9893c5f0fa88c97ff28feb99d9af"
+      url "https://github.com/ConductorOne/baton-aws/releases/download/v0.3.4-test-iam-policy-2/baton-aws-v0.3.4-test-iam-policy-2-linux-arm64.tar.gz"
+      sha256 "7fa37409511bd721e7c23e1b009d5c84e8253dc05054eb248b1325282b783a89"
       def install
         bin.install "baton-aws"
       end
