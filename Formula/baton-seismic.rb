@@ -5,20 +5,20 @@
 class BatonSeismic < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-seismic/releases/download/v0.0.2/baton-seismic-v0.0.2-darwin-amd64.zip"
-      sha256 "f8ad817f3b61f550e10f6c92348e0063f51453580d76e0e047eaa20f607241d9"
+      url "https://github.com/ConductorOne/baton-seismic/releases/download/v0.0.3/baton-seismic-v0.0.3-darwin-amd64.zip"
+      sha256 "d0e736c0835f50bf2dccc076f9532da24331ddbec123cb0ca212526ecdd721d8"
 
       def install
         bin.install "baton-seismic"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-seismic/releases/download/v0.0.2/baton-seismic-v0.0.2-darwin-arm64.zip"
-      sha256 "6c7480c7e696570f7d210ba2d1edb08d6c00325cac0102ebde6201b9e42b692e"
+      url "https://github.com/ConductorOne/baton-seismic/releases/download/v0.0.3/baton-seismic-v0.0.3-darwin-arm64.zip"
+      sha256 "a2302e2894a691528478c290c656cd4a87880b706e575b114f74d8105e68a49d"
 
       def install
         bin.install "baton-seismic"
@@ -28,15 +28,15 @@ class BatonSeismic < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-seismic/releases/download/v0.0.2/baton-seismic-v0.0.2-linux-amd64.tar.gz"
-      sha256 "6d087168b095451a06d8d70496010bd205df5282ba3b5dbb35bcdab531c1569e"
+      url "https://github.com/ConductorOne/baton-seismic/releases/download/v0.0.3/baton-seismic-v0.0.3-linux-amd64.tar.gz"
+      sha256 "51fc80582abececf48a5befbaf883b8b185d650e5f02ba3d27ec67aef5092894"
       def install
         bin.install "baton-seismic"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-seismic/releases/download/v0.0.2/baton-seismic-v0.0.2-linux-arm64.tar.gz"
-      sha256 "ff914861ad6f9d6bd6c3d2be106bf4525b233984dd413e3e70c8a4fdaacdacc2"
+      url "https://github.com/ConductorOne/baton-seismic/releases/download/v0.0.3/baton-seismic-v0.0.3-linux-arm64.tar.gz"
+      sha256 "068341c14f7b2b0a51c1964d35e84819c67aaa6b580b11ff75c0752a84911bcb"
       def install
         bin.install "baton-seismic"
       end
