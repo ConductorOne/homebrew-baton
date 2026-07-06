@@ -5,20 +5,20 @@
 class BatonSendgrid < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-sendgrid/releases/download/v0.1.0/baton-sendgrid-v0.1.0-darwin-amd64.zip"
-      sha256 "7cb7d7e38457af91d2ff7f6122f26ecb70c8171af139a73d20c6ec443696fac1"
+      url "https://github.com/ConductorOne/baton-sendgrid/releases/download/v0.1.1/baton-sendgrid-v0.1.1-darwin-amd64.zip"
+      sha256 "1e779dc2b522c8d30ea2938da56de235313ab086f71b6598001f8206437fdc80"
 
       def install
         bin.install "baton-sendgrid"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-sendgrid/releases/download/v0.1.0/baton-sendgrid-v0.1.0-darwin-arm64.zip"
-      sha256 "240620518946cddf7f1c1f4296ab7a3e267f0485d55d35cd02b642890d065087"
+      url "https://github.com/ConductorOne/baton-sendgrid/releases/download/v0.1.1/baton-sendgrid-v0.1.1-darwin-arm64.zip"
+      sha256 "9c7196648ef8ab26eb59295eddd61deaec6971f2bf1ae52f00c4d94f05f95cb2"
 
       def install
         bin.install "baton-sendgrid"
@@ -28,15 +28,15 @@ class BatonSendgrid < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sendgrid/releases/download/v0.1.0/baton-sendgrid-v0.1.0-linux-amd64.tar.gz"
-      sha256 "0f7ec3bad1acd4fff0aaf1367835e1e499270b057e59d99232df11df3340985a"
+      url "https://github.com/ConductorOne/baton-sendgrid/releases/download/v0.1.1/baton-sendgrid-v0.1.1-linux-amd64.tar.gz"
+      sha256 "3b83846c6aa1ff7072d726b28edc3c526ff5d2f6bc1968d99dcadd6a5b25b82b"
       def install
         bin.install "baton-sendgrid"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sendgrid/releases/download/v0.1.0/baton-sendgrid-v0.1.0-linux-arm64.tar.gz"
-      sha256 "41f23a79d498edceabf3cdb92c3b0681806cb475c3ed4c91e2920335d8602af7"
+      url "https://github.com/ConductorOne/baton-sendgrid/releases/download/v0.1.1/baton-sendgrid-v0.1.1-linux-arm64.tar.gz"
+      sha256 "5b1f3edbbbaf1736791eb78c455fb10e32d65244055d9150db5c289f4c815849"
       def install
         bin.install "baton-sendgrid"
       end
