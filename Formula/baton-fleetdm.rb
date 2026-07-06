@@ -5,20 +5,20 @@
 class BatonFleetdm < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.8"
+  version "0.0.9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-fleetdm/releases/download/v0.0.8/baton-fleetdm-v0.0.8-darwin-amd64.zip"
-      sha256 "f040cba035771f506b509a02ef3a8bb44a00a6df66eb6eb09d088677ea345bc8"
+      url "https://github.com/ConductorOne/baton-fleetdm/releases/download/v0.0.9/baton-fleetdm-v0.0.9-darwin-amd64.zip"
+      sha256 "2af88912ed3813cae20983937380c84991caf9a8567e00f4e3e59af8b8b6c68d"
 
       def install
         bin.install "baton-fleetdm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-fleetdm/releases/download/v0.0.8/baton-fleetdm-v0.0.8-darwin-arm64.zip"
-      sha256 "cd045c6a895d3793d31d1cd1dd6aef71088ac7bde43f64625b0d132ab8a0be7e"
+      url "https://github.com/ConductorOne/baton-fleetdm/releases/download/v0.0.9/baton-fleetdm-v0.0.9-darwin-arm64.zip"
+      sha256 "206702e58cae07e06003424a028ca1f9e738222b8357c3eb40cf613fd326a92c"
 
       def install
         bin.install "baton-fleetdm"
@@ -28,15 +28,15 @@ class BatonFleetdm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-fleetdm/releases/download/v0.0.8/baton-fleetdm-v0.0.8-linux-amd64.tar.gz"
-      sha256 "10086f67828ea98f439f71566219deda53ff30ae2f23e6dde373c609045a51ba"
+      url "https://github.com/ConductorOne/baton-fleetdm/releases/download/v0.0.9/baton-fleetdm-v0.0.9-linux-amd64.tar.gz"
+      sha256 "7d8bec4c4de13eb724d42e041850720aa99c18842f35ecad095f1fa7f11a2c31"
       def install
         bin.install "baton-fleetdm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-fleetdm/releases/download/v0.0.8/baton-fleetdm-v0.0.8-linux-arm64.tar.gz"
-      sha256 "33bb5d41d1b176a37ea6349b878cc3d85e27ce42b43030fe7ec29b8fc37e74d1"
+      url "https://github.com/ConductorOne/baton-fleetdm/releases/download/v0.0.9/baton-fleetdm-v0.0.9-linux-arm64.tar.gz"
+      sha256 "1ee6e0610f8a4f5b92618cd9e934217124d1471a38aee549c320158908ac9b31"
       def install
         bin.install "baton-fleetdm"
       end
