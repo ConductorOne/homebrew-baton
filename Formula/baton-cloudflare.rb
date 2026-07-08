@@ -5,20 +5,20 @@
 class BatonCloudflare < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.14"
+  version "0.0.15"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-cloudflare/releases/download/v0.0.14/baton-cloudflare-v0.0.14-darwin-amd64.zip"
-      sha256 "3cad10ac36e4807ad9b53e76115f08087a9e39ee0bd8b3e99102b2c455dfe48c"
+      url "https://github.com/ConductorOne/baton-cloudflare/releases/download/v0.0.15/baton-cloudflare-v0.0.15-darwin-amd64.zip"
+      sha256 "4f4318b0969ce15cd8dbe7132a4e120a3b618a2fb4c63325da6014b2c5840ee4"
 
       def install
         bin.install "baton-cloudflare"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-cloudflare/releases/download/v0.0.14/baton-cloudflare-v0.0.14-darwin-arm64.zip"
-      sha256 "e6d472d95bc8235936caaa56f4d0e9696e4f2e13ac5b625fe1faa952e9e5ffd4"
+      url "https://github.com/ConductorOne/baton-cloudflare/releases/download/v0.0.15/baton-cloudflare-v0.0.15-darwin-arm64.zip"
+      sha256 "cbfd3e0e5817df7b50ee22a8c375a1099b47e3d12864b1f94162bc2fe410d7a2"
 
       def install
         bin.install "baton-cloudflare"
@@ -28,15 +28,15 @@ class BatonCloudflare < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-cloudflare/releases/download/v0.0.14/baton-cloudflare-v0.0.14-linux-amd64.tar.gz"
-      sha256 "cb4444fd6b21da6cacf03499345dfdcea4b98c0800b9a3facd5041dbe3032f06"
+      url "https://github.com/ConductorOne/baton-cloudflare/releases/download/v0.0.15/baton-cloudflare-v0.0.15-linux-amd64.tar.gz"
+      sha256 "30a7e6ed59dd077ed01c745530e289dac227309f83648724fbf920877a3feeed"
       def install
         bin.install "baton-cloudflare"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-cloudflare/releases/download/v0.0.14/baton-cloudflare-v0.0.14-linux-arm64.tar.gz"
-      sha256 "74473efa0df42f6d64b6a1ae3c5013a91c28b1d6da4f920012a9e20de423f5ca"
+      url "https://github.com/ConductorOne/baton-cloudflare/releases/download/v0.0.15/baton-cloudflare-v0.0.15-linux-arm64.tar.gz"
+      sha256 "84b9c22837cb11bc5982fecb69142b38588b2762fbced99bf7f04b12c85dff03"
       def install
         bin.install "baton-cloudflare"
       end
