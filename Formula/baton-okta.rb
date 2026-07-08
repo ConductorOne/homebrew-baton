@@ -5,20 +5,20 @@
 class BatonOkta < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.5.15"
+  version "0.5.15-update-group-trait-test"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-okta/releases/download/v0.5.15/baton-okta-v0.5.15-darwin-amd64.zip"
-      sha256 "dac56fabf5602f1a8212c7c9e818e09853ac49b928e62cf9541150c66a6a0525"
+      url "https://github.com/ConductorOne/baton-okta/releases/download/v0.5.15-update-group-trait-test/baton-okta-v0.5.15-update-group-trait-test-darwin-amd64.zip"
+      sha256 "80c2cd00319298210d0d7575559127ae2f406d090c80763a5db3d1b6b33ee8bd"
 
       def install
         bin.install "baton-okta"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-okta/releases/download/v0.5.15/baton-okta-v0.5.15-darwin-arm64.zip"
-      sha256 "fb051eb4161d39f7b9bca1d092abb16d14003f7296130f2e6e8f9881640d2ea3"
+      url "https://github.com/ConductorOne/baton-okta/releases/download/v0.5.15-update-group-trait-test/baton-okta-v0.5.15-update-group-trait-test-darwin-arm64.zip"
+      sha256 "f92f31797ef890b55f0df96034d50460a259efc4567e9badf8bd05bb90c57707"
 
       def install
         bin.install "baton-okta"
@@ -28,15 +28,15 @@ class BatonOkta < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-okta/releases/download/v0.5.15/baton-okta-v0.5.15-linux-amd64.tar.gz"
-      sha256 "9e0a855046fca66af75614581cb62b03e48091442c6991dbe5dbc6a88fa3e3b0"
+      url "https://github.com/ConductorOne/baton-okta/releases/download/v0.5.15-update-group-trait-test/baton-okta-v0.5.15-update-group-trait-test-linux-amd64.tar.gz"
+      sha256 "6296be41a01e668e837430a44b37b12b9fce8c29db9e8385ed7f886166629f66"
       def install
         bin.install "baton-okta"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-okta/releases/download/v0.5.15/baton-okta-v0.5.15-linux-arm64.tar.gz"
-      sha256 "cda76f485d81d3db0f2e191b342f44591b9e633a9d190db8d67a1d06f00e97a6"
+      url "https://github.com/ConductorOne/baton-okta/releases/download/v0.5.15-update-group-trait-test/baton-okta-v0.5.15-update-group-trait-test-linux-arm64.tar.gz"
+      sha256 "973a8f661fd4bcb9529a3e03bdd89f5ed0c9e6b89ecfb84ee8ce4a4db1d08e99"
       def install
         bin.install "baton-okta"
       end
