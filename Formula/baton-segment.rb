@@ -5,20 +5,20 @@
 class BatonSegment < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-segment/releases/download/v0.1.1/baton-segment-v0.1.1-darwin-amd64.zip"
-      sha256 "3207bce1367374e06150a3927ac1caa54105b630e45dc2e34f225af41dd94366"
+      url "https://github.com/ConductorOne/baton-segment/releases/download/v0.1.2/baton-segment-v0.1.2-darwin-amd64.zip"
+      sha256 "855f5be42d1d0b87f18ecad893afdabc50aa6ed119468e8549620280e834d4b5"
 
       def install
         bin.install "baton-segment"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-segment/releases/download/v0.1.1/baton-segment-v0.1.1-darwin-arm64.zip"
-      sha256 "96efc98142d7353085517450dd8b27f2df3aff79dc48de6bd9ef596c50856bbf"
+      url "https://github.com/ConductorOne/baton-segment/releases/download/v0.1.2/baton-segment-v0.1.2-darwin-arm64.zip"
+      sha256 "d7736a3f21af80e87ed600558b6a26db3d48a71311444731dbf91315e7297112"
 
       def install
         bin.install "baton-segment"
@@ -28,15 +28,15 @@ class BatonSegment < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-segment/releases/download/v0.1.1/baton-segment-v0.1.1-linux-amd64.tar.gz"
-      sha256 "9d22b39f259a3c9e416e78e55872d8d07d3469a748093d67fd6c9c7af4a5b08d"
+      url "https://github.com/ConductorOne/baton-segment/releases/download/v0.1.2/baton-segment-v0.1.2-linux-amd64.tar.gz"
+      sha256 "4e7f604fd4330e677edea528c03cc97fa9e83d9dcabcc6c5dacff61d4a720aba"
       def install
         bin.install "baton-segment"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-segment/releases/download/v0.1.1/baton-segment-v0.1.1-linux-arm64.tar.gz"
-      sha256 "4fd60f588cbd436220e0ca2968db977fb28c410c376b24a29735d99982222bc3"
+      url "https://github.com/ConductorOne/baton-segment/releases/download/v0.1.2/baton-segment-v0.1.2-linux-arm64.tar.gz"
+      sha256 "a3b9070124a2e6fadd7d5e6bb1f55c0634dbb3710eaea0fced1af7447432043c"
       def install
         bin.install "baton-segment"
       end
