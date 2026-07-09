@@ -5,20 +5,20 @@
 class BatonSageIntacct < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-sage-intacct/releases/download/v0.0.2/baton-sage-intacct-v0.0.2-darwin-amd64.zip"
-      sha256 "37235aa953e9a2b19dca03ebb1064804db6c3afcd899b81885b488bcc62e2c94"
+      url "https://github.com/ConductorOne/baton-sage-intacct/releases/download/v0.0.3/baton-sage-intacct-v0.0.3-darwin-amd64.zip"
+      sha256 "4e5266ec3818d7725bcfc3f5d27ca8c5f3b1422c1d86e085b0b7866f6ff25b08"
 
       def install
         bin.install "baton-sage-intacct"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-sage-intacct/releases/download/v0.0.2/baton-sage-intacct-v0.0.2-darwin-arm64.zip"
-      sha256 "f04dd9de59705316e0355494e025c117d3dba230d55cdd6fece75bda68cf8eaa"
+      url "https://github.com/ConductorOne/baton-sage-intacct/releases/download/v0.0.3/baton-sage-intacct-v0.0.3-darwin-arm64.zip"
+      sha256 "09ec007ecbe7c76b3607365c6085bfcde66ba5f2968e6a732cbeed93384eed13"
 
       def install
         bin.install "baton-sage-intacct"
@@ -28,15 +28,15 @@ class BatonSageIntacct < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sage-intacct/releases/download/v0.0.2/baton-sage-intacct-v0.0.2-linux-amd64.tar.gz"
-      sha256 "d65cdb0c7884266724f409e25b7a210c773edc6e85c61d5169a0a57f953693dc"
+      url "https://github.com/ConductorOne/baton-sage-intacct/releases/download/v0.0.3/baton-sage-intacct-v0.0.3-linux-amd64.tar.gz"
+      sha256 "ccf01fee161fa5fb3d84abf0c4895d59936acae16ffde62690b17287917ef919"
       def install
         bin.install "baton-sage-intacct"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sage-intacct/releases/download/v0.0.2/baton-sage-intacct-v0.0.2-linux-arm64.tar.gz"
-      sha256 "8e41638fd4cfc05db1cc03a4a3f186e92f5b3a4dc543f629185c7a203fc4e56b"
+      url "https://github.com/ConductorOne/baton-sage-intacct/releases/download/v0.0.3/baton-sage-intacct-v0.0.3-linux-arm64.tar.gz"
+      sha256 "6574f0c521cf521a45432427e29c06df607440906fbd131cbf718282d1518f90"
       def install
         bin.install "baton-sage-intacct"
       end
