@@ -5,20 +5,20 @@
 class BatonUkg < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.10-test-conflicting-employee-status"
+  version "0.0.10-test-conflicting-employee-status-2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-ukg/releases/download/v0.0.10-test-conflicting-employee-status/baton-ukg-v0.0.10-test-conflicting-employee-status-darwin-amd64.zip"
-      sha256 "cf9af4d2d678fc467d938341c7ae4859ace530dd540b45e25c140126f3d8b742"
+      url "https://github.com/ConductorOne/baton-ukg/releases/download/v0.0.10-test-conflicting-employee-status-2/baton-ukg-v0.0.10-test-conflicting-employee-status-2-darwin-amd64.zip"
+      sha256 "727a3523fd332c18af38f946e8bfd0c40e47f81a80ed73b8306740dcc24c511c"
 
       def install
         bin.install "baton-ukg"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-ukg/releases/download/v0.0.10-test-conflicting-employee-status/baton-ukg-v0.0.10-test-conflicting-employee-status-darwin-arm64.zip"
-      sha256 "bf0680cb47640bd4c6f236ed85725ccee5fbb436374e84e3fd2ff1eb69a25a0d"
+      url "https://github.com/ConductorOne/baton-ukg/releases/download/v0.0.10-test-conflicting-employee-status-2/baton-ukg-v0.0.10-test-conflicting-employee-status-2-darwin-arm64.zip"
+      sha256 "92a31c5cd9a856d56df849d3b4de2a7a43d892709468ac25876abe48c3b987e9"
 
       def install
         bin.install "baton-ukg"
@@ -28,15 +28,15 @@ class BatonUkg < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ukg/releases/download/v0.0.10-test-conflicting-employee-status/baton-ukg-v0.0.10-test-conflicting-employee-status-linux-amd64.tar.gz"
-      sha256 "f9da734861e80ff952c9e0f6f713f6a790a4e3d545d28320c57dbb62e1d9e751"
+      url "https://github.com/ConductorOne/baton-ukg/releases/download/v0.0.10-test-conflicting-employee-status-2/baton-ukg-v0.0.10-test-conflicting-employee-status-2-linux-amd64.tar.gz"
+      sha256 "6fc72c2507c90b9377d5a75c8fc80931aba284875b8ef295c507b62a402e0ce2"
       def install
         bin.install "baton-ukg"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ukg/releases/download/v0.0.10-test-conflicting-employee-status/baton-ukg-v0.0.10-test-conflicting-employee-status-linux-arm64.tar.gz"
-      sha256 "150b2f3b09fb69d66969250f5a69d43ef1a66095805012ed8b1601e9251cdedb"
+      url "https://github.com/ConductorOne/baton-ukg/releases/download/v0.0.10-test-conflicting-employee-status-2/baton-ukg-v0.0.10-test-conflicting-employee-status-2-linux-arm64.tar.gz"
+      sha256 "140ff0d08a1b830870a5cb2ce46b1292e46953e266dc64a6d2a198c1f8b2d037"
       def install
         bin.install "baton-ukg"
       end
