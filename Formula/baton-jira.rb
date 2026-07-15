@@ -5,20 +5,20 @@
 class BatonJira < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.4.5"
+  version "0.4.6-test-transient-errors"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.4.5/baton-jira-v0.4.5-darwin-amd64.zip"
-      sha256 "96edaa70d5de4fa68a39cdf0cf42d47a0ae97fe21ab0bbc12faa46dd3ac9518f"
+      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.4.6-test-transient-errors/baton-jira-v0.4.6-test-transient-errors-darwin-amd64.zip"
+      sha256 "9892d63aec0b61aaff1cb2938eec23b469a20af2d4049b0c5e0710374d11e5cd"
 
       def install
         bin.install "baton-jira"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.4.5/baton-jira-v0.4.5-darwin-arm64.zip"
-      sha256 "7b7f05ae2cdfaf680cb774b4cc1f351a9d85f9295183f07ac464714547dfd4dc"
+      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.4.6-test-transient-errors/baton-jira-v0.4.6-test-transient-errors-darwin-arm64.zip"
+      sha256 "b92b76e93a94951129d53238ab5d6c452db6cf1a236fe873118dce230291bd50"
 
       def install
         bin.install "baton-jira"
@@ -28,15 +28,15 @@ class BatonJira < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.4.5/baton-jira-v0.4.5-linux-amd64.tar.gz"
-      sha256 "6240d366e5dccea737e0e59938ef30beb304d6bdf7a4ab1acd52d1532cb420bc"
+      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.4.6-test-transient-errors/baton-jira-v0.4.6-test-transient-errors-linux-amd64.tar.gz"
+      sha256 "885d41bb6f98561bbca40cb4ab0f3e5cb28e09a8604d8ce7f19bb61856b877a5"
       def install
         bin.install "baton-jira"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.4.5/baton-jira-v0.4.5-linux-arm64.tar.gz"
-      sha256 "616fc50e7fc7a7914fa9852dc6a6308b49c8bc9545d7b3447077517ac5dddc86"
+      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.4.6-test-transient-errors/baton-jira-v0.4.6-test-transient-errors-linux-arm64.tar.gz"
+      sha256 "4bbddf9c5e2623481253a6a45a4ff2f345a936526392fb38cae0115df91829c9"
       def install
         bin.install "baton-jira"
       end
