@@ -5,20 +5,20 @@
 class BatonJira < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.4.6-test-transient-errors"
+  version "0.4.6-test-transient-errors-2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.4.6-test-transient-errors/baton-jira-v0.4.6-test-transient-errors-darwin-amd64.zip"
-      sha256 "9892d63aec0b61aaff1cb2938eec23b469a20af2d4049b0c5e0710374d11e5cd"
+      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.4.6-test-transient-errors-2/baton-jira-v0.4.6-test-transient-errors-2-darwin-amd64.zip"
+      sha256 "1b49046506bf568a16c50ef63a57c2ff24f8a5efb97300c1346e8e8534442c93"
 
       def install
         bin.install "baton-jira"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.4.6-test-transient-errors/baton-jira-v0.4.6-test-transient-errors-darwin-arm64.zip"
-      sha256 "b92b76e93a94951129d53238ab5d6c452db6cf1a236fe873118dce230291bd50"
+      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.4.6-test-transient-errors-2/baton-jira-v0.4.6-test-transient-errors-2-darwin-arm64.zip"
+      sha256 "70e6b21952ec1afaf32f4bb8fcc30b6aad9bea37c59e964015c2b85ed90ee974"
 
       def install
         bin.install "baton-jira"
@@ -28,15 +28,15 @@ class BatonJira < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.4.6-test-transient-errors/baton-jira-v0.4.6-test-transient-errors-linux-amd64.tar.gz"
-      sha256 "885d41bb6f98561bbca40cb4ab0f3e5cb28e09a8604d8ce7f19bb61856b877a5"
+      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.4.6-test-transient-errors-2/baton-jira-v0.4.6-test-transient-errors-2-linux-amd64.tar.gz"
+      sha256 "caae64ea92b42acca7263bc31dd6a73d31d1f34c0786edd31a9790043a21cb0b"
       def install
         bin.install "baton-jira"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.4.6-test-transient-errors/baton-jira-v0.4.6-test-transient-errors-linux-arm64.tar.gz"
-      sha256 "4bbddf9c5e2623481253a6a45a4ff2f345a936526392fb38cae0115df91829c9"
+      url "https://github.com/ConductorOne/baton-jira/releases/download/v0.4.6-test-transient-errors-2/baton-jira-v0.4.6-test-transient-errors-2-linux-arm64.tar.gz"
+      sha256 "d2df49f8cefbaaffe276dabb58f43be502033fdceab03a809b957cffa75045d9"
       def install
         bin.install "baton-jira"
       end
