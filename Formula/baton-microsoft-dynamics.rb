@@ -5,20 +5,20 @@
 class BatonMicrosoftDynamics < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.6"
+  version "0.0.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-microsoft-dynamics/releases/download/v0.0.6/baton-microsoft-dynamics-v0.0.6-darwin-amd64.zip"
-      sha256 "e8543ec03cd0a8901e7ca3fb3e36fb46a52dd3c6951aaea824cf6935e95b76ec"
+      url "https://github.com/ConductorOne/baton-microsoft-dynamics/releases/download/v0.0.7/baton-microsoft-dynamics-v0.0.7-darwin-amd64.zip"
+      sha256 "6f4ce623725a2cf121e3bb2301c476138f7ba98f66f9515696b12e86141374e2"
 
       def install
         bin.install "baton-microsoft-dynamics"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-microsoft-dynamics/releases/download/v0.0.6/baton-microsoft-dynamics-v0.0.6-darwin-arm64.zip"
-      sha256 "9324f442b8edafae431c2a7ff21b20d6681faf8f42498dabf1c525deec3f5bf7"
+      url "https://github.com/ConductorOne/baton-microsoft-dynamics/releases/download/v0.0.7/baton-microsoft-dynamics-v0.0.7-darwin-arm64.zip"
+      sha256 "5d5c7e4124d45690fce05e9287a4a5526f248fcd8e2e22233d9aad3b46264014"
 
       def install
         bin.install "baton-microsoft-dynamics"
@@ -28,15 +28,15 @@ class BatonMicrosoftDynamics < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-microsoft-dynamics/releases/download/v0.0.6/baton-microsoft-dynamics-v0.0.6-linux-amd64.tar.gz"
-      sha256 "6c28487fded0d83eb999f062d0f311ed64594444d6496f154660e5b3f3ee4f1b"
+      url "https://github.com/ConductorOne/baton-microsoft-dynamics/releases/download/v0.0.7/baton-microsoft-dynamics-v0.0.7-linux-amd64.tar.gz"
+      sha256 "026a17d3b3066e687d70811e80f7ad5b69e58365fb6e071d6e2bdf4896b54b1c"
       def install
         bin.install "baton-microsoft-dynamics"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-microsoft-dynamics/releases/download/v0.0.6/baton-microsoft-dynamics-v0.0.6-linux-arm64.tar.gz"
-      sha256 "f8a2d04eda8fb809647e3727bae0c465280a48a42a6c49017e19a37e88a676ba"
+      url "https://github.com/ConductorOne/baton-microsoft-dynamics/releases/download/v0.0.7/baton-microsoft-dynamics-v0.0.7-linux-arm64.tar.gz"
+      sha256 "7d14e8531cf396b38f0996c128deffd129c623c91476c09aa20da691079225e7"
       def install
         bin.install "baton-microsoft-dynamics"
       end
