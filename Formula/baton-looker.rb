@@ -5,20 +5,20 @@
 class BatonLooker < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-looker/releases/download/v0.0.3/baton-looker-v0.0.3-darwin-amd64.zip"
-      sha256 "5358a1f7a84056b8b5f1c025b3d6047163888d8335e0c07ee50a46602899305c"
+      url "https://github.com/ConductorOne/baton-looker/releases/download/v0.0.4/baton-looker-v0.0.4-darwin-amd64.zip"
+      sha256 "89031e838b180c7f2b83faba04a6a0346287b8b78ab7182621415a85219f2320"
 
       def install
         bin.install "baton-looker"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-looker/releases/download/v0.0.3/baton-looker-v0.0.3-darwin-arm64.zip"
-      sha256 "e2c99afd4d4874c60c4b29966c29c499056ac2f4dd23973029e1421f087fe492"
+      url "https://github.com/ConductorOne/baton-looker/releases/download/v0.0.4/baton-looker-v0.0.4-darwin-arm64.zip"
+      sha256 "0bea10ac5511188abb01828f2a583a31e533251bdf970e570be171c60de0a7fa"
 
       def install
         bin.install "baton-looker"
@@ -28,15 +28,15 @@ class BatonLooker < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-looker/releases/download/v0.0.3/baton-looker-v0.0.3-linux-amd64.tar.gz"
-      sha256 "150376967b394606c87895099b25e3a236cada9d754737abdf756ab281ad9dde"
+      url "https://github.com/ConductorOne/baton-looker/releases/download/v0.0.4/baton-looker-v0.0.4-linux-amd64.tar.gz"
+      sha256 "8480385cbefbf21539c1ec612039143c2155ae3656504bba74231940f818fde8"
       def install
         bin.install "baton-looker"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-looker/releases/download/v0.0.3/baton-looker-v0.0.3-linux-arm64.tar.gz"
-      sha256 "617a5b0f63540070933783a945ac86bc68da116d8aae594ffdc3a465d150962f"
+      url "https://github.com/ConductorOne/baton-looker/releases/download/v0.0.4/baton-looker-v0.0.4-linux-arm64.tar.gz"
+      sha256 "8461e8460dc8f428571ff491df0be1b38385e9127e81190e471a7fc731eeb16d"
       def install
         bin.install "baton-looker"
       end
