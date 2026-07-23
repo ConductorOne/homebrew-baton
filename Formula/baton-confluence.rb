@@ -5,20 +5,20 @@
 class BatonConfluence < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.22"
+  version "0.0.23-test.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-confluence/releases/download/v0.0.22/baton-confluence-v0.0.22-darwin-amd64.zip"
-      sha256 "fd53717a3a14ef216078d53be865d1abb56ae4443ed5a2d3e1c310c5c0b96c53"
+      url "https://github.com/ConductorOne/baton-confluence/releases/download/v0.0.23-test.1/baton-confluence-v0.0.23-test.1-darwin-amd64.zip"
+      sha256 "d4c593d6c448b945a1e6cd8e85c0c8ae6e2dce018af3f8d2d95ec8ecf39ff0a9"
 
       def install
         bin.install "baton-confluence"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-confluence/releases/download/v0.0.22/baton-confluence-v0.0.22-darwin-arm64.zip"
-      sha256 "6dbc12bf05797ce0009682f2253c4eb40bc6d246475b7caa6a95520e3c2a1df0"
+      url "https://github.com/ConductorOne/baton-confluence/releases/download/v0.0.23-test.1/baton-confluence-v0.0.23-test.1-darwin-arm64.zip"
+      sha256 "10a33a571cd3aca39b48eef3eb0ffbc8969a67d6f45125b094e10c04eeab7137"
 
       def install
         bin.install "baton-confluence"
@@ -28,15 +28,15 @@ class BatonConfluence < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-confluence/releases/download/v0.0.22/baton-confluence-v0.0.22-linux-amd64.tar.gz"
-      sha256 "a8715da272983d77c3e001ad48c0129eb78cc16b43320be30e725fd724aa77ff"
+      url "https://github.com/ConductorOne/baton-confluence/releases/download/v0.0.23-test.1/baton-confluence-v0.0.23-test.1-linux-amd64.tar.gz"
+      sha256 "9d2fcf6bf7d63d95265e0f93032be5fceb69afc8aa53d3530fdc0624e08c0bea"
       def install
         bin.install "baton-confluence"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-confluence/releases/download/v0.0.22/baton-confluence-v0.0.22-linux-arm64.tar.gz"
-      sha256 "6365b4f802518f31f36687cdba2c6159cb7d438a2ac25b7777ddea3546102dfa"
+      url "https://github.com/ConductorOne/baton-confluence/releases/download/v0.0.23-test.1/baton-confluence-v0.0.23-test.1-linux-arm64.tar.gz"
+      sha256 "935a30710b9310d5028dc5734cbb909fc867cc92d5cfc6b8100eb5d6eb60cbd7"
       def install
         bin.install "baton-confluence"
       end
