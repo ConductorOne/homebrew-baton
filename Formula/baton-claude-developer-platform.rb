@@ -5,20 +5,20 @@
 class BatonClaudeDeveloperPlatform < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-claude-developer-platform/releases/download/v0.1.2/baton-claude-developer-platform-v0.1.2-darwin-amd64.zip"
-      sha256 "48ab8fa8b606da2f91b905528d3c682a94c45c7e58990f647579fb162fbce28d"
+      url "https://github.com/ConductorOne/baton-claude-developer-platform/releases/download/v0.1.3/baton-claude-developer-platform-v0.1.3-darwin-amd64.zip"
+      sha256 "b24bd4eba2a0a27c2dd6d0705144470f0c74165cc54cac225ed851407fc713df"
 
       def install
         bin.install "baton-claude-developer-platform"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-claude-developer-platform/releases/download/v0.1.2/baton-claude-developer-platform-v0.1.2-darwin-arm64.zip"
-      sha256 "1501f3338ab3b7235aa35e30aa24947fb2bfdd820d97ebcd6a3f712259d68e9f"
+      url "https://github.com/ConductorOne/baton-claude-developer-platform/releases/download/v0.1.3/baton-claude-developer-platform-v0.1.3-darwin-arm64.zip"
+      sha256 "9c99771b009b0c0d29f71836b418aa3fb38c72b95eba6e09bd8e585b88170bae"
 
       def install
         bin.install "baton-claude-developer-platform"
@@ -28,15 +28,15 @@ class BatonClaudeDeveloperPlatform < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-claude-developer-platform/releases/download/v0.1.2/baton-claude-developer-platform-v0.1.2-linux-amd64.tar.gz"
-      sha256 "5f4d5c410dc2cc3e4b192bc05398187dee4f13d8bc46b44e8fe56ef34c37c59d"
+      url "https://github.com/ConductorOne/baton-claude-developer-platform/releases/download/v0.1.3/baton-claude-developer-platform-v0.1.3-linux-amd64.tar.gz"
+      sha256 "f1b102941af947ebd68fdd72d7cfab19b5a0506dd0da50a45ea8bcc5edd2af92"
       def install
         bin.install "baton-claude-developer-platform"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-claude-developer-platform/releases/download/v0.1.2/baton-claude-developer-platform-v0.1.2-linux-arm64.tar.gz"
-      sha256 "af3d94b0f6fed82a9d696de71614b422540baee9c67ac00c6e4689533fc626ef"
+      url "https://github.com/ConductorOne/baton-claude-developer-platform/releases/download/v0.1.3/baton-claude-developer-platform-v0.1.3-linux-arm64.tar.gz"
+      sha256 "6afaa92a11616321f579b7a7e91338658c020d0e5edd007a0a6a06243e056f2d"
       def install
         bin.install "baton-claude-developer-platform"
       end
