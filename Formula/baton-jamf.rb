@@ -5,20 +5,20 @@
 class BatonJamf < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.12"
+  version "0.0.13"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-jamf/releases/download/v0.0.12/baton-jamf-v0.0.12-darwin-amd64.zip"
-      sha256 "b5c6b0a88ba8482f565fc332cbe04a34a1819cf837dd5e6038c2d5323a18803b"
+      url "https://github.com/ConductorOne/baton-jamf/releases/download/v0.0.13/baton-jamf-v0.0.13-darwin-amd64.zip"
+      sha256 "ff5ef22360b92ed6d54a57815ee1ad4bb917a4cb0bda991f195aabb97561cb26"
 
       def install
         bin.install "baton-jamf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-jamf/releases/download/v0.0.12/baton-jamf-v0.0.12-darwin-arm64.zip"
-      sha256 "3c5a7322430ccff9ace6343c971b0cfe746c4b6bb480fda0dd0542e631977b05"
+      url "https://github.com/ConductorOne/baton-jamf/releases/download/v0.0.13/baton-jamf-v0.0.13-darwin-arm64.zip"
+      sha256 "aa871fba779183e3f98574821d548ef095281f2384bf8ae919be4c9b3040838a"
 
       def install
         bin.install "baton-jamf"
@@ -28,15 +28,15 @@ class BatonJamf < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-jamf/releases/download/v0.0.12/baton-jamf-v0.0.12-linux-amd64.tar.gz"
-      sha256 "65d9a1b822dbedad49770c5247bc22efd0c847a6309335bfbe1a88d3a6ff1750"
+      url "https://github.com/ConductorOne/baton-jamf/releases/download/v0.0.13/baton-jamf-v0.0.13-linux-amd64.tar.gz"
+      sha256 "f2f2900a4b9beefcfa913995f680ff01495f202dbf049e4f73b64e12fe1622e5"
       def install
         bin.install "baton-jamf"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-jamf/releases/download/v0.0.12/baton-jamf-v0.0.12-linux-arm64.tar.gz"
-      sha256 "5639709fe4d31ef41bb12332099ed50bda19f447b3375ad7d9f637886ef36964"
+      url "https://github.com/ConductorOne/baton-jamf/releases/download/v0.0.13/baton-jamf-v0.0.13-linux-arm64.tar.gz"
+      sha256 "55c947d0a074c318a9de34e006f570fe11898f610e70f7cfba164a37afc3d063"
       def install
         bin.install "baton-jamf"
       end
