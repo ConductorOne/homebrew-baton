@@ -5,20 +5,20 @@
 class BatonNetsuite < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.3.11-test-permissions"
+  version "0.3.11-test-permissions-2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-netsuite/releases/download/v0.3.11-test-permissions/baton-netsuite-v0.3.11-test-permissions-darwin-amd64.zip"
-      sha256 "6edc22eb7d107dcd5e07de0a190a0273962c592472ffa4eb2209eafddaba0248"
+      url "https://github.com/ConductorOne/baton-netsuite/releases/download/v0.3.11-test-permissions-2/baton-netsuite-v0.3.11-test-permissions-2-darwin-amd64.zip"
+      sha256 "16b4f035f172ff985a7aa399a5c7f6e98d404148fce0f7b6a0cdea75b3038557"
 
       def install
         bin.install "baton-netsuite"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-netsuite/releases/download/v0.3.11-test-permissions/baton-netsuite-v0.3.11-test-permissions-darwin-arm64.zip"
-      sha256 "34e30b171bcc6d8b94d6c2e77f9a59e460d001ff0ebe6d6693d472c4f7c5ebf9"
+      url "https://github.com/ConductorOne/baton-netsuite/releases/download/v0.3.11-test-permissions-2/baton-netsuite-v0.3.11-test-permissions-2-darwin-arm64.zip"
+      sha256 "fa9bc77d76fbee224156d193d5ec1a857b6ef057d8c63afbf2bf237222d773c1"
 
       def install
         bin.install "baton-netsuite"
@@ -28,15 +28,15 @@ class BatonNetsuite < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-netsuite/releases/download/v0.3.11-test-permissions/baton-netsuite-v0.3.11-test-permissions-linux-amd64.tar.gz"
-      sha256 "6b3222ac60e003ae98248f0b4784a880736a6caa8c8037ad5e990041b6694bbe"
+      url "https://github.com/ConductorOne/baton-netsuite/releases/download/v0.3.11-test-permissions-2/baton-netsuite-v0.3.11-test-permissions-2-linux-amd64.tar.gz"
+      sha256 "ecf9d96264e2579d17e1dacf9c5e05bfa3c6a073185b6025f2183fab0a07dd0d"
       def install
         bin.install "baton-netsuite"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-netsuite/releases/download/v0.3.11-test-permissions/baton-netsuite-v0.3.11-test-permissions-linux-arm64.tar.gz"
-      sha256 "737d07d14bd7ef5e7cc2870616c45aaf389a4e23940c6192cce262c2f9fc3d96"
+      url "https://github.com/ConductorOne/baton-netsuite/releases/download/v0.3.11-test-permissions-2/baton-netsuite-v0.3.11-test-permissions-2-linux-arm64.tar.gz"
+      sha256 "bcf015c440c25b7e104e2ed41e331a34230386f23b906416cb340442dffd16e8"
       def install
         bin.install "baton-netsuite"
       end
