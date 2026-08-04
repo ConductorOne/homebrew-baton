@@ -5,20 +5,20 @@
 class BatonAzureDevops < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.31"
+  version "0.1.32"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-azure-devops/releases/download/v0.1.31/baton-azure-devops-v0.1.31-darwin-amd64.zip"
-      sha256 "3e0298422e639da8fe6bd8643b05c00c06c0a1b4bd03ef210109646c528d55c6"
+      url "https://github.com/ConductorOne/baton-azure-devops/releases/download/v0.1.32/baton-azure-devops-v0.1.32-darwin-amd64.zip"
+      sha256 "f167c586efaf1f4427f39be26c69c2000fc56fee2d0e4c8a26deee7fc6549cdf"
 
       def install
         bin.install "baton-azure-devops"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-azure-devops/releases/download/v0.1.31/baton-azure-devops-v0.1.31-darwin-arm64.zip"
-      sha256 "e02718e457a8e8e779a2dd9aad0092a0eed43b1d26b51930bef80a4c380cd533"
+      url "https://github.com/ConductorOne/baton-azure-devops/releases/download/v0.1.32/baton-azure-devops-v0.1.32-darwin-arm64.zip"
+      sha256 "d3fad87c3f10c5b0aed847fd65229f264791fd801a5ae3dffdabda4e0fa6c941"
 
       def install
         bin.install "baton-azure-devops"
@@ -28,15 +28,15 @@ class BatonAzureDevops < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-azure-devops/releases/download/v0.1.31/baton-azure-devops-v0.1.31-linux-amd64.tar.gz"
-      sha256 "6a452d0a00176b595c3b3fdc48988780e568e57b07fca21952f682118f10a1c7"
+      url "https://github.com/ConductorOne/baton-azure-devops/releases/download/v0.1.32/baton-azure-devops-v0.1.32-linux-amd64.tar.gz"
+      sha256 "9f219c095f9b5f709227363a8d3c30ad0a3e4fe895cdec9d06cc9abcaf0f68ff"
       def install
         bin.install "baton-azure-devops"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-azure-devops/releases/download/v0.1.31/baton-azure-devops-v0.1.31-linux-arm64.tar.gz"
-      sha256 "67f2d8dffc4f97948e1c70c708a2d4dfc96072c4b62ea4dd6cee61c6923ed567"
+      url "https://github.com/ConductorOne/baton-azure-devops/releases/download/v0.1.32/baton-azure-devops-v0.1.32-linux-arm64.tar.gz"
+      sha256 "ee339d2814ef06abbc7d98488a7c52cca21b0bf6a7bf0c37095eacde98dbeead"
       def install
         bin.install "baton-azure-devops"
       end
