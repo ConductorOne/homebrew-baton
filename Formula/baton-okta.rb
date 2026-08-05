@@ -5,20 +5,20 @@
 class BatonOkta < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.5.21-test-remove-explicit-check"
+  version "0.5.21"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-okta/releases/download/v0.5.21-test-remove-explicit-check/baton-okta-v0.5.21-test-remove-explicit-check-darwin-amd64.zip"
-      sha256 "15e351aa6cc273f85b7d0f57f783104cd5e8cc7584f24920c6d0bf0c3f38f260"
+      url "https://github.com/ConductorOne/baton-okta/releases/download/v0.5.21/baton-okta-v0.5.21-darwin-amd64.zip"
+      sha256 "59e2dfd1297449836721c2062b23f6f796e4eb59d47a1be291cad6228b4809d7"
 
       def install
         bin.install "baton-okta"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-okta/releases/download/v0.5.21-test-remove-explicit-check/baton-okta-v0.5.21-test-remove-explicit-check-darwin-arm64.zip"
-      sha256 "8d31bffb6053a04a730ece607c5021f1b23957746cb2c2cec91edb5a7a4c8e69"
+      url "https://github.com/ConductorOne/baton-okta/releases/download/v0.5.21/baton-okta-v0.5.21-darwin-arm64.zip"
+      sha256 "9234bd8d799e3ffb60b6978e17739a497c540208a416a3ad441ac1adc606145a"
 
       def install
         bin.install "baton-okta"
@@ -28,15 +28,15 @@ class BatonOkta < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-okta/releases/download/v0.5.21-test-remove-explicit-check/baton-okta-v0.5.21-test-remove-explicit-check-linux-amd64.tar.gz"
-      sha256 "d16cb28d915cfe5929b5b1ec0bd40a98505530c5f5d8ce9b670589ad0ed2e5d0"
+      url "https://github.com/ConductorOne/baton-okta/releases/download/v0.5.21/baton-okta-v0.5.21-linux-amd64.tar.gz"
+      sha256 "5ef5d219c020a80d1941e7bcbf30502cfdb546d5d5de3cee74e465078a9f0436"
       def install
         bin.install "baton-okta"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-okta/releases/download/v0.5.21-test-remove-explicit-check/baton-okta-v0.5.21-test-remove-explicit-check-linux-arm64.tar.gz"
-      sha256 "470c80bd23f2c37b9933394c306c58f136cf61a6087bd2af1326ab53077b331a"
+      url "https://github.com/ConductorOne/baton-okta/releases/download/v0.5.21/baton-okta-v0.5.21-linux-arm64.tar.gz"
+      sha256 "9a348e586787c6fce5a2e74d63c3549bb07e30b4c0dcb2c943bcdba4457c6581"
       def install
         bin.install "baton-okta"
       end
