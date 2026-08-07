@@ -5,20 +5,20 @@
 class BatonServicenow < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "1.1.19"
+  version "1.1.20"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-servicenow/releases/download/v1.1.19/baton-servicenow-v1.1.19-darwin-amd64.zip"
-      sha256 "c28f929bccd29cb914adf08850ad4aef088f01a91ee3586f9b415c7b6fcc357d"
+      url "https://github.com/ConductorOne/baton-servicenow/releases/download/v1.1.20/baton-servicenow-v1.1.20-darwin-amd64.zip"
+      sha256 "b144ce685f46244d2074579709114d1efdd13fd2a8ffc0f47ffdfb98313f898d"
 
       def install
         bin.install "baton-servicenow"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-servicenow/releases/download/v1.1.19/baton-servicenow-v1.1.19-darwin-arm64.zip"
-      sha256 "2cda3c9e4b518b8b017e2f0f3f093d3c1b059600b924eaca7a50c80466e0592d"
+      url "https://github.com/ConductorOne/baton-servicenow/releases/download/v1.1.20/baton-servicenow-v1.1.20-darwin-arm64.zip"
+      sha256 "0263c52e1345fb6402514e6f4cb3102cc3d4a9d819170015f8b63330ee9e3452"
 
       def install
         bin.install "baton-servicenow"
@@ -28,15 +28,15 @@ class BatonServicenow < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-servicenow/releases/download/v1.1.19/baton-servicenow-v1.1.19-linux-amd64.tar.gz"
-      sha256 "ddf53705578329af94fa6f1abe88e407219a22523c7d765d5f2eb33be5746130"
+      url "https://github.com/ConductorOne/baton-servicenow/releases/download/v1.1.20/baton-servicenow-v1.1.20-linux-amd64.tar.gz"
+      sha256 "561dc8288a2f3bf95c50276ef9704c2bb924b447ff3140fb1f5b2209c6fdf50f"
       def install
         bin.install "baton-servicenow"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-servicenow/releases/download/v1.1.19/baton-servicenow-v1.1.19-linux-arm64.tar.gz"
-      sha256 "6cdeaef3dcbcfa20ab253a8cced90ac3c136624f4b02d9eb34e334f859e132f0"
+      url "https://github.com/ConductorOne/baton-servicenow/releases/download/v1.1.20/baton-servicenow-v1.1.20-linux-arm64.tar.gz"
+      sha256 "593b466384fd6df1643267ba2b4257348b3ca537701961f8fb792b649d6efa96"
       def install
         bin.install "baton-servicenow"
       end
