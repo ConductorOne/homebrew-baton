@@ -5,20 +5,20 @@
 class BatonTerraformCloud < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.3"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-terraform-cloud/releases/download/v0.0.3/baton-terraform-cloud-v0.0.3-darwin-amd64.zip"
-      sha256 "9c287fc6fb816f239bc292c9eb5a4962dc4ebe4b910b78d2a42b7bd8a1c1ccfb"
+      url "https://github.com/ConductorOne/baton-terraform-cloud/releases/download/v0.1.0/baton-terraform-cloud-v0.1.0-darwin-amd64.zip"
+      sha256 "42ddc899c053f4c8e2d29282a650a928c7c886931b1883d02fae93426a24030b"
 
       def install
         bin.install "baton-terraform-cloud"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-terraform-cloud/releases/download/v0.0.3/baton-terraform-cloud-v0.0.3-darwin-arm64.zip"
-      sha256 "5f1f72fe2b0bdc83a2c78ca0e65e85e3bb83b8198c0d537a266d8e3db7ae10c7"
+      url "https://github.com/ConductorOne/baton-terraform-cloud/releases/download/v0.1.0/baton-terraform-cloud-v0.1.0-darwin-arm64.zip"
+      sha256 "9f74962fb20b030f2295d72a8ff4f46874e7b5099dfaa4d7c25241366efbb9d2"
 
       def install
         bin.install "baton-terraform-cloud"
@@ -28,15 +28,15 @@ class BatonTerraformCloud < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-terraform-cloud/releases/download/v0.0.3/baton-terraform-cloud-v0.0.3-linux-amd64.tar.gz"
-      sha256 "b74044bf809e3234ea815af9f3c49e5f196a4d24556d3c7039915d9611bf9981"
+      url "https://github.com/ConductorOne/baton-terraform-cloud/releases/download/v0.1.0/baton-terraform-cloud-v0.1.0-linux-amd64.tar.gz"
+      sha256 "5c1f2d76f4e9f93438b861c838dc8f1c4b51cb9fa222e6801d69bc5228c1dc0a"
       def install
         bin.install "baton-terraform-cloud"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-terraform-cloud/releases/download/v0.0.3/baton-terraform-cloud-v0.0.3-linux-arm64.tar.gz"
-      sha256 "c008d94056e1684d710700a37789233e6db897b9a20a9ecbc40ba5f05d72ad17"
+      url "https://github.com/ConductorOne/baton-terraform-cloud/releases/download/v0.1.0/baton-terraform-cloud-v0.1.0-linux-arm64.tar.gz"
+      sha256 "b54d0033923b95a9ea8acd5f3ce18e8eb4e020d57dd6580392218af3c24aeed1"
       def install
         bin.install "baton-terraform-cloud"
       end
