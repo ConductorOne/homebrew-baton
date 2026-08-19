@@ -5,20 +5,20 @@
 class BatonZuora < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-zuora/releases/download/v0.0.2/baton-zuora-v0.0.2-darwin-amd64.zip"
-      sha256 "0a710345e79f0be1cad8fab30acc7fc0f639aa4ec380597b16549d6287a746c3"
+      url "https://github.com/ConductorOne/baton-zuora/releases/download/v0.0.3/baton-zuora-v0.0.3-darwin-amd64.zip"
+      sha256 "44239bdbad62fb0fbdcd8df88671197fe4bf053079ea07b3ccca707dd9f801ae"
 
       def install
         bin.install "baton-zuora"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-zuora/releases/download/v0.0.2/baton-zuora-v0.0.2-darwin-arm64.zip"
-      sha256 "88667bba99ff09fc310b70f9aa9e2a200a1313f84f7b3e006a1d71b562a8badc"
+      url "https://github.com/ConductorOne/baton-zuora/releases/download/v0.0.3/baton-zuora-v0.0.3-darwin-arm64.zip"
+      sha256 "c84ead82870c4f7ecf2c67e48b40daed847b0b3eb62d4431d6193d3af40b2364"
 
       def install
         bin.install "baton-zuora"
@@ -28,15 +28,15 @@ class BatonZuora < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-zuora/releases/download/v0.0.2/baton-zuora-v0.0.2-linux-amd64.tar.gz"
-      sha256 "d59baad9612de205b9f936c79a01d16943da0aecc63372dcbc02cf8f6de8397c"
+      url "https://github.com/ConductorOne/baton-zuora/releases/download/v0.0.3/baton-zuora-v0.0.3-linux-amd64.tar.gz"
+      sha256 "d83bee12829c0b4547ab847dfa4c031274cc3a1fe99b2b30e4b3021bfdfde53c"
       def install
         bin.install "baton-zuora"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-zuora/releases/download/v0.0.2/baton-zuora-v0.0.2-linux-arm64.tar.gz"
-      sha256 "830c2fc0e90be8facd0e30b08f5040c9f0d1b3c0f103e7788a0d89bd432ff226"
+      url "https://github.com/ConductorOne/baton-zuora/releases/download/v0.0.3/baton-zuora-v0.0.3-linux-arm64.tar.gz"
+      sha256 "29b44ca798b1654cd9b9455fcecb0cfe9911e547f748b3617719a6e20a599f5a"
       def install
         bin.install "baton-zuora"
       end
