@@ -5,20 +5,20 @@
 class BatonBlackline < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.4"
+  version "0.2.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-blackline/releases/download/v0.2.4/baton-blackline-v0.2.4-darwin-amd64.zip"
-      sha256 "b195d4b3d1428b7ed9b1fb44c6f77e69545ceacba30841d6d81e5c1fd3fc4209"
+      url "https://github.com/ConductorOne/baton-blackline/releases/download/v0.2.5/baton-blackline-v0.2.5-darwin-amd64.zip"
+      sha256 "08ffa85fb804c6bf5fac66f8abff9507dfefe207a39de2195c0ff6853390f42d"
 
       def install
         bin.install "baton-blackline"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-blackline/releases/download/v0.2.4/baton-blackline-v0.2.4-darwin-arm64.zip"
-      sha256 "0efaf318ebbe405b847e637739f4a038aa2527be9ec623ff68ba1293a55d8cb3"
+      url "https://github.com/ConductorOne/baton-blackline/releases/download/v0.2.5/baton-blackline-v0.2.5-darwin-arm64.zip"
+      sha256 "a303733f6c6edb37629aadb82f96bcbb5826ca2b37250efcc19db59397a21472"
 
       def install
         bin.install "baton-blackline"
@@ -28,15 +28,15 @@ class BatonBlackline < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-blackline/releases/download/v0.2.4/baton-blackline-v0.2.4-linux-amd64.tar.gz"
-      sha256 "2cfcc9bc81d4550fe6367de4347e42e457fec3616108196066e753a43b332688"
+      url "https://github.com/ConductorOne/baton-blackline/releases/download/v0.2.5/baton-blackline-v0.2.5-linux-amd64.tar.gz"
+      sha256 "de15a785968c3af2da673b577af71ab0946688644e2788359fab9c62a46f26e1"
       def install
         bin.install "baton-blackline"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-blackline/releases/download/v0.2.4/baton-blackline-v0.2.4-linux-arm64.tar.gz"
-      sha256 "c749c6f7c3d5e460d469fe4437b7accdb050cfd3873624da1c1aa9b5b856f368"
+      url "https://github.com/ConductorOne/baton-blackline/releases/download/v0.2.5/baton-blackline-v0.2.5-linux-arm64.tar.gz"
+      sha256 "e548732203df6743871703d2f4794c945791f184ff45c27fb050687ca3db5127"
       def install
         bin.install "baton-blackline"
       end
