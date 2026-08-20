@@ -5,20 +5,20 @@
 class BatonGithub < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.4.0"
+  version "0.4.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-github/releases/download/v0.4.0/baton-github-v0.4.0-darwin-amd64.zip"
-      sha256 "9a1c6a5bfca55930307ff0ac1e76e010edaa19864c6870c190f5b3dafd8dc11d"
+      url "https://github.com/ConductorOne/baton-github/releases/download/v0.4.1/baton-github-v0.4.1-darwin-amd64.zip"
+      sha256 "daed67b45ec1c3508cbcc9693ac0fa45efa1caeda419e8d5f10fd454f8f349da"
 
       def install
         bin.install "baton-github"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-github/releases/download/v0.4.0/baton-github-v0.4.0-darwin-arm64.zip"
-      sha256 "a945d1b504eb68ad1f43e8f6c3c7d97cb78598429bb39c40c291269b9dd28e9c"
+      url "https://github.com/ConductorOne/baton-github/releases/download/v0.4.1/baton-github-v0.4.1-darwin-arm64.zip"
+      sha256 "931777059a58bfaf6e07906363d29afebaf491b24a8597825d544c45f13f5fbc"
 
       def install
         bin.install "baton-github"
@@ -28,15 +28,15 @@ class BatonGithub < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-github/releases/download/v0.4.0/baton-github-v0.4.0-linux-amd64.tar.gz"
-      sha256 "3c9863d6a7d7d1133430dcfa9de31d134de095818bbcb4f5ac9ddd4db39ae203"
+      url "https://github.com/ConductorOne/baton-github/releases/download/v0.4.1/baton-github-v0.4.1-linux-amd64.tar.gz"
+      sha256 "10be499e212c60a3598a1955607c6e0423d917ce30c4da378c0711681ef7c7d0"
       def install
         bin.install "baton-github"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-github/releases/download/v0.4.0/baton-github-v0.4.0-linux-arm64.tar.gz"
-      sha256 "b5ef6bdcebdf6cff266951616d5679d40f81ddc7a00bf6911f5fa6dd0e51318f"
+      url "https://github.com/ConductorOne/baton-github/releases/download/v0.4.1/baton-github-v0.4.1-linux-arm64.tar.gz"
+      sha256 "d47b418057b77260fd09fc8f7706c9d76aeda44042c01acc6264078aed418ebe"
       def install
         bin.install "baton-github"
       end
