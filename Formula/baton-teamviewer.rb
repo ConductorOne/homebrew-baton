@@ -5,20 +5,20 @@
 class BatonTeamviewer < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.6"
+  version "0.0.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-teamviewer/releases/download/v0.0.6/baton-teamviewer-v0.0.6-darwin-amd64.zip"
-      sha256 "b4710dac00d924193a72cd606dc399d8f2d0952dc2baeaf79a4869ed9a207aa3"
+      url "https://github.com/ConductorOne/baton-teamviewer/releases/download/v0.0.7/baton-teamviewer-v0.0.7-darwin-amd64.zip"
+      sha256 "2ff734673fed9f3ffdfb34589b85d4d2c98b536515f0b512adf8764f155aa89a"
 
       def install
         bin.install "baton-teamviewer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-teamviewer/releases/download/v0.0.6/baton-teamviewer-v0.0.6-darwin-arm64.zip"
-      sha256 "d6b79d0994255a913130ba6a85de82a0f3b560afe85d965a50e7c7b0606277d6"
+      url "https://github.com/ConductorOne/baton-teamviewer/releases/download/v0.0.7/baton-teamviewer-v0.0.7-darwin-arm64.zip"
+      sha256 "61184b1097b758e73a391911ea33661667efe2c89cc1422615a36cb618621518"
 
       def install
         bin.install "baton-teamviewer"
@@ -28,15 +28,15 @@ class BatonTeamviewer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-teamviewer/releases/download/v0.0.6/baton-teamviewer-v0.0.6-linux-amd64.tar.gz"
-      sha256 "24bddd3f6a3c947d1ecf46a9862b90f8e43098272ae733d0d88a194ea2b3f9e5"
+      url "https://github.com/ConductorOne/baton-teamviewer/releases/download/v0.0.7/baton-teamviewer-v0.0.7-linux-amd64.tar.gz"
+      sha256 "0512f0c4f9d9d0d6984f3ca3fb9ff4a2558c1f19ce27eeba186994c352892d4a"
       def install
         bin.install "baton-teamviewer"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-teamviewer/releases/download/v0.0.6/baton-teamviewer-v0.0.6-linux-arm64.tar.gz"
-      sha256 "8b186e1ec6a544ce68576f9ff1053500eb1e55396b3c3a18bd8958abc7d589f8"
+      url "https://github.com/ConductorOne/baton-teamviewer/releases/download/v0.0.7/baton-teamviewer-v0.0.7-linux-arm64.tar.gz"
+      sha256 "ab4d9b5d5831d69510333186d8cc5f1b798b9772cc4559163a516db04fc7e344"
       def install
         bin.install "baton-teamviewer"
       end
