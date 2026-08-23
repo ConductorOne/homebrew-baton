@@ -5,20 +5,20 @@
 class PlaidCache < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "1.0.0-rc.11"
+  version "1.0.0-rc.12"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/plaid-cache/releases/download/v1.0.0-rc.11/plaid-cache-v1.0.0-rc.11-darwin-amd64.zip"
-      sha256 "3b2ce1fc28128fd741ced2f96ef3793dfe6e8fcda78091c6308d45fcef92105c"
+      url "https://github.com/ConductorOne/plaid-cache/releases/download/v1.0.0-rc.12/plaid-cache-v1.0.0-rc.12-darwin-amd64.zip"
+      sha256 "5ccb84145cc7ae0772b3493ebca25d32d4fd12bc93647c838b2329284d52fa82"
 
       def install
         bin.install "plaid-cache"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/plaid-cache/releases/download/v1.0.0-rc.11/plaid-cache-v1.0.0-rc.11-darwin-arm64.zip"
-      sha256 "3073cb922ecceccb143e438df935cb2296a3abbc0c0eaab914ff7bd0bb47ae64"
+      url "https://github.com/ConductorOne/plaid-cache/releases/download/v1.0.0-rc.12/plaid-cache-v1.0.0-rc.12-darwin-arm64.zip"
+      sha256 "03cfecf8d8b8c121d40dee5c46c8e42d714b7d0bc62002d43033251ea395fc8a"
 
       def install
         bin.install "plaid-cache"
@@ -29,8 +29,8 @@ class PlaidCache < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/plaid-cache/releases/download/v1.0.0-rc.11/plaid-cache-v1.0.0-rc.11-linux-amd64.tar.gz"
-        sha256 "b333618493080774667c2ba7014d64507fa1c207b8318e5c50315bab0f340e9e"
+        url "https://github.com/ConductorOne/plaid-cache/releases/download/v1.0.0-rc.12/plaid-cache-v1.0.0-rc.12-linux-amd64.tar.gz"
+        sha256 "81b70fb752a26fdc97e9cab2f4823497b90086b3a27a763e8e9bcf5bb25cf249"
 
         def install
           bin.install "plaid-cache"
@@ -39,8 +39,8 @@ class PlaidCache < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/plaid-cache/releases/download/v1.0.0-rc.11/plaid-cache-v1.0.0-rc.11-linux-arm64.tar.gz"
-        sha256 "6a29e2ca7f1c28b77af54fff8c69b7bd7095949c4a16c63caa44be33ab52f6d1"
+        url "https://github.com/ConductorOne/plaid-cache/releases/download/v1.0.0-rc.12/plaid-cache-v1.0.0-rc.12-linux-arm64.tar.gz"
+        sha256 "72f4893a74a9d0df440d376732c2150161bc4c0c80159e817152b02bfb9f5328"
 
         def install
           bin.install "plaid-cache"
