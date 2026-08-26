@@ -5,20 +5,20 @@
 class BatonLaunchdarkly < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.11-test-revoke"
+  version "0.0.11"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-launchdarkly/releases/download/v0.0.11-test-revoke/baton-launchdarkly-v0.0.11-test-revoke-darwin-amd64.zip"
-      sha256 "8e76d4c781b94ea1f0cf1a76a654ac67f2409f43ee4b9b52c00401f2e7ee80df"
+      url "https://github.com/ConductorOne/baton-launchdarkly/releases/download/v0.0.11/baton-launchdarkly-v0.0.11-darwin-amd64.zip"
+      sha256 "245ad52dc4db5f6d2666addd56f74aa2a211f7b64545dbf12f354bdd4a761efc"
 
       def install
         bin.install "baton-launchdarkly"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-launchdarkly/releases/download/v0.0.11-test-revoke/baton-launchdarkly-v0.0.11-test-revoke-darwin-arm64.zip"
-      sha256 "9538d230165b929a5f6ae2dc53124491cf9f916f3da44560a96a12439e3541eb"
+      url "https://github.com/ConductorOne/baton-launchdarkly/releases/download/v0.0.11/baton-launchdarkly-v0.0.11-darwin-arm64.zip"
+      sha256 "c5e51829de671c560331deec085c41914e1c1bb0f294ceddc00aad1412e07165"
 
       def install
         bin.install "baton-launchdarkly"
@@ -28,15 +28,15 @@ class BatonLaunchdarkly < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-launchdarkly/releases/download/v0.0.11-test-revoke/baton-launchdarkly-v0.0.11-test-revoke-linux-amd64.tar.gz"
-      sha256 "627a899fe848cdac24cc1b9bba94067178ab4d3eedc7d272c66d94a5aeca67b3"
+      url "https://github.com/ConductorOne/baton-launchdarkly/releases/download/v0.0.11/baton-launchdarkly-v0.0.11-linux-amd64.tar.gz"
+      sha256 "c34e1d3cb0430f3ca523546340222a8097c2a0b6c72424c5ce9a0b56a56be39b"
       def install
         bin.install "baton-launchdarkly"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-launchdarkly/releases/download/v0.0.11-test-revoke/baton-launchdarkly-v0.0.11-test-revoke-linux-arm64.tar.gz"
-      sha256 "294d4cc439a72c42517801d5704f0545db14975c406d46613bd11e0c7a57573f"
+      url "https://github.com/ConductorOne/baton-launchdarkly/releases/download/v0.0.11/baton-launchdarkly-v0.0.11-linux-arm64.tar.gz"
+      sha256 "c2dc8c06e53226dc8e61c043f3be9c44467c63287d495323d151dcadc23c688e"
       def install
         bin.install "baton-launchdarkly"
       end
