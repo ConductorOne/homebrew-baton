@@ -5,20 +5,20 @@
 class BatonNewrelic < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.6"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-newrelic/releases/download/v0.0.6/baton-newrelic-v0.0.6-darwin-amd64.zip"
-      sha256 "a52ea3aa8015c6e8538686f54c6e801daa21f00cfb2fcf1b9a5e88c6d7d98a53"
+      url "https://github.com/ConductorOne/baton-newrelic/releases/download/v0.1.0/baton-newrelic-v0.1.0-darwin-amd64.zip"
+      sha256 "ba5a7803468a26c220e80f99e661f9aeeb3e244ff443bc1ce58d117663fd98a1"
 
       def install
         bin.install "baton-newrelic"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-newrelic/releases/download/v0.0.6/baton-newrelic-v0.0.6-darwin-arm64.zip"
-      sha256 "63a95c6bda61435cb990b129740dcf971fb68f1f66b644215c2141362f8ba347"
+      url "https://github.com/ConductorOne/baton-newrelic/releases/download/v0.1.0/baton-newrelic-v0.1.0-darwin-arm64.zip"
+      sha256 "fb7808efb71ff4366e451713f3941e102d195b77becbdc9bcd6914b4decbc75d"
 
       def install
         bin.install "baton-newrelic"
@@ -28,15 +28,15 @@ class BatonNewrelic < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-newrelic/releases/download/v0.0.6/baton-newrelic-v0.0.6-linux-amd64.tar.gz"
-      sha256 "14a6f8809262ea60ba2c1f244f18ae3a62524b1d23c7ed3cbab42079d5d763ff"
+      url "https://github.com/ConductorOne/baton-newrelic/releases/download/v0.1.0/baton-newrelic-v0.1.0-linux-amd64.tar.gz"
+      sha256 "919366f63c10239486fe4d05662f8f884f36aeb39523037e87659697a92b3541"
       def install
         bin.install "baton-newrelic"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-newrelic/releases/download/v0.0.6/baton-newrelic-v0.0.6-linux-arm64.tar.gz"
-      sha256 "8dcd00411e58ea198ea41b29972eac15ecc3c38a46d7cf66f650a9b0d15fae85"
+      url "https://github.com/ConductorOne/baton-newrelic/releases/download/v0.1.0/baton-newrelic-v0.1.0-linux-arm64.tar.gz"
+      sha256 "60593ea2ab5e5ad76ebb03631b98522a667f42377dbaac18958ebb2d2e65f304"
       def install
         bin.install "baton-newrelic"
       end
