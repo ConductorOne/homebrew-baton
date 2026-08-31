@@ -5,20 +5,20 @@
 class BatonClickhouseCloud < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-clickhouse-cloud/releases/download/v0.1.0/baton-clickhouse-cloud-v0.1.0-darwin-amd64.zip"
-      sha256 "bc96297ddd8cc9352e07aaa0d84b9e11d9c7abf55516b4c97f7ee3a17a5590d3"
+      url "https://github.com/ConductorOne/baton-clickhouse-cloud/releases/download/v0.1.1/baton-clickhouse-cloud-v0.1.1-darwin-amd64.zip"
+      sha256 "460aa263fff8dc42b04a927bc40e9dcc5c2cd4e4f79572a7216647657b1f54be"
 
       def install
         bin.install "baton-clickhouse-cloud"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-clickhouse-cloud/releases/download/v0.1.0/baton-clickhouse-cloud-v0.1.0-darwin-arm64.zip"
-      sha256 "ba1ef31a985c4e2ab40c76904ea5b0bff8aff7e122ac5f8fcb7c06128667a4b0"
+      url "https://github.com/ConductorOne/baton-clickhouse-cloud/releases/download/v0.1.1/baton-clickhouse-cloud-v0.1.1-darwin-arm64.zip"
+      sha256 "b904737265f83c01be5f63a2258c14f41a93ac972f355631fe978b416c1e0b4f"
 
       def install
         bin.install "baton-clickhouse-cloud"
@@ -28,15 +28,15 @@ class BatonClickhouseCloud < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-clickhouse-cloud/releases/download/v0.1.0/baton-clickhouse-cloud-v0.1.0-linux-amd64.tar.gz"
-      sha256 "23af94f5dc05a1ab6e569c74f72788236fe133a15c93b7fdaf6c2181a15f4195"
+      url "https://github.com/ConductorOne/baton-clickhouse-cloud/releases/download/v0.1.1/baton-clickhouse-cloud-v0.1.1-linux-amd64.tar.gz"
+      sha256 "a85d210dd8a12ed2dc7799d4843c671d6ac1d0fbb480f63cfa889cd0520f927b"
       def install
         bin.install "baton-clickhouse-cloud"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-clickhouse-cloud/releases/download/v0.1.0/baton-clickhouse-cloud-v0.1.0-linux-arm64.tar.gz"
-      sha256 "464efe96d90fe6dec49c1b7b27c52f3064aa127f1e21b49b52d947e7ddb94ba3"
+      url "https://github.com/ConductorOne/baton-clickhouse-cloud/releases/download/v0.1.1/baton-clickhouse-cloud-v0.1.1-linux-arm64.tar.gz"
+      sha256 "09e1e6c319ef5b230a77e9c2385d132664a0af4692475550a81cb3f04554b0f6"
       def install
         bin.install "baton-clickhouse-cloud"
       end
