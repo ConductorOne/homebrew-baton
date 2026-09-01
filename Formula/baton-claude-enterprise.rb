@@ -5,20 +5,20 @@
 class BatonClaudeEnterprise < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.9-test-key-split"
+  version "0.0.9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-claude-enterprise/releases/download/v0.0.9-test-key-split/baton-claude-enterprise-v0.0.9-test-key-split-darwin-amd64.zip"
-      sha256 "fc9309a4b2e2a52c388a59c9819e24eb25a71fb87c66ff3c44a3e425466cb6d0"
+      url "https://github.com/ConductorOne/baton-claude-enterprise/releases/download/v0.0.9/baton-claude-enterprise-v0.0.9-darwin-amd64.zip"
+      sha256 "2464698413ca58fe4bf4c13c9f9cb6efad369e2b985da636f533c01d33089d09"
 
       def install
         bin.install "baton-claude-enterprise"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-claude-enterprise/releases/download/v0.0.9-test-key-split/baton-claude-enterprise-v0.0.9-test-key-split-darwin-arm64.zip"
-      sha256 "f6fa98ea2c76f951243d367a4c8f0403535319206f1eb4bb53463d03f87b93d3"
+      url "https://github.com/ConductorOne/baton-claude-enterprise/releases/download/v0.0.9/baton-claude-enterprise-v0.0.9-darwin-arm64.zip"
+      sha256 "863ee690a5b4eeeaf8e82e1a995889417ef447bcdc7c10af1ffffb0d3c4cbf11"
 
       def install
         bin.install "baton-claude-enterprise"
@@ -28,15 +28,15 @@ class BatonClaudeEnterprise < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-claude-enterprise/releases/download/v0.0.9-test-key-split/baton-claude-enterprise-v0.0.9-test-key-split-linux-amd64.tar.gz"
-      sha256 "86f0d1191eeedc77e957952aa52dc3182da97637ee7b8080025ec04a9d1b5c4e"
+      url "https://github.com/ConductorOne/baton-claude-enterprise/releases/download/v0.0.9/baton-claude-enterprise-v0.0.9-linux-amd64.tar.gz"
+      sha256 "5d18d004fe3bcb6dc7cd262440463556d4fc0d508a51861c070b3aa9a46f7eed"
       def install
         bin.install "baton-claude-enterprise"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-claude-enterprise/releases/download/v0.0.9-test-key-split/baton-claude-enterprise-v0.0.9-test-key-split-linux-arm64.tar.gz"
-      sha256 "43d5bee958ed15b146223bb6eae71a4656ef06c05b547d1f4db3e79191575771"
+      url "https://github.com/ConductorOne/baton-claude-enterprise/releases/download/v0.0.9/baton-claude-enterprise-v0.0.9-linux-arm64.tar.gz"
+      sha256 "7a24bf91e92e0977dcbe69f23f4cd7df5327f5d2b2331898a0041755b5ffcfdd"
       def install
         bin.install "baton-claude-enterprise"
       end
