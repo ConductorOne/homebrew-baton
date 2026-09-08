@@ -5,20 +5,20 @@
 class PlaidLint < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "1.0.0-rc.14"
+  version "1.0.0-rc.15"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/plaid-lint/releases/download/v1.0.0-rc.14/plaid-lint-v1.0.0-rc.14-darwin-amd64.zip"
-      sha256 "f9e257a9a6326a4b4c42ace1e481d7bbd090a0defd698542f61ff5fb5b5dd961"
+      url "https://github.com/ConductorOne/plaid-lint/releases/download/v1.0.0-rc.15/plaid-lint-v1.0.0-rc.15-darwin-amd64.zip"
+      sha256 "7adc211d2fa7f55ae9eda12ead9d35ec04e0eba38cfe91074647c160c33ee11c"
 
       def install
         bin.install "plaid-lint"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/plaid-lint/releases/download/v1.0.0-rc.14/plaid-lint-v1.0.0-rc.14-darwin-arm64.zip"
-      sha256 "499be471878fc01c32210138f43737ee8b66d862d3e65450c1259619d48f3dd6"
+      url "https://github.com/ConductorOne/plaid-lint/releases/download/v1.0.0-rc.15/plaid-lint-v1.0.0-rc.15-darwin-arm64.zip"
+      sha256 "e78e6039f661c1b28b23af705f2fe30c1831f62c74883b41e838ef9148d3bbc9"
 
       def install
         bin.install "plaid-lint"
@@ -29,8 +29,8 @@ class PlaidLint < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/plaid-lint/releases/download/v1.0.0-rc.14/plaid-lint-v1.0.0-rc.14-linux-amd64.tar.gz"
-        sha256 "d4fd27a9c5e939b28def957c8354d3b0e0eb2595e618a3d1eea3ef13d05ef333"
+        url "https://github.com/ConductorOne/plaid-lint/releases/download/v1.0.0-rc.15/plaid-lint-v1.0.0-rc.15-linux-amd64.tar.gz"
+        sha256 "f788471951b9eee3ed387d81bc653343536f65d74aee2f6f0b377d2536434157"
 
         def install
           bin.install "plaid-lint"
@@ -39,8 +39,8 @@ class PlaidLint < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/plaid-lint/releases/download/v1.0.0-rc.14/plaid-lint-v1.0.0-rc.14-linux-arm64.tar.gz"
-        sha256 "584cf3725619f04daea4ea87ff4b2101d2b2b0a957ed8f08fb3e1688e33175ac"
+        url "https://github.com/ConductorOne/plaid-lint/releases/download/v1.0.0-rc.15/plaid-lint-v1.0.0-rc.15-linux-arm64.tar.gz"
+        sha256 "4e9dd38da416c5e046b9a071b3ddd64634ef74ad3793d2a3f6918e033a03001a"
 
         def install
           bin.install "plaid-lint"
