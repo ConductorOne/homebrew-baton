@@ -5,20 +5,20 @@
 class BatonGithubEnterprise < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.18-test-last-login"
+  version "0.0.18-test-last-login-2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-github-enterprise/releases/download/v0.0.18-test-last-login/baton-github-enterprise-v0.0.18-test-last-login-darwin-amd64.zip"
-      sha256 "641c74adabc10706d853850f79df89ceb41a87acb6cf12a9f7d64a1eaa785e53"
+      url "https://github.com/ConductorOne/baton-github-enterprise/releases/download/v0.0.18-test-last-login-2/baton-github-enterprise-v0.0.18-test-last-login-2-darwin-amd64.zip"
+      sha256 "c4a4640935897d0ef3d576dc29dd5f88d1bdab7513c99a5078b8f2f0b7c01a11"
 
       def install
         bin.install "baton-github-enterprise"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-github-enterprise/releases/download/v0.0.18-test-last-login/baton-github-enterprise-v0.0.18-test-last-login-darwin-arm64.zip"
-      sha256 "27011a44a524704560fb700767223f4518809bb5592e04b7c4fcbed8463836e3"
+      url "https://github.com/ConductorOne/baton-github-enterprise/releases/download/v0.0.18-test-last-login-2/baton-github-enterprise-v0.0.18-test-last-login-2-darwin-arm64.zip"
+      sha256 "68b4646f3fc48b43069078c270ba79090f07311a9df532c3ace96894b4d14d69"
 
       def install
         bin.install "baton-github-enterprise"
@@ -28,15 +28,15 @@ class BatonGithubEnterprise < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-github-enterprise/releases/download/v0.0.18-test-last-login/baton-github-enterprise-v0.0.18-test-last-login-linux-amd64.tar.gz"
-      sha256 "6752443de0b3ce1aa0439683aa4b999b0cc2d824f897859372b8507f3c0fa347"
+      url "https://github.com/ConductorOne/baton-github-enterprise/releases/download/v0.0.18-test-last-login-2/baton-github-enterprise-v0.0.18-test-last-login-2-linux-amd64.tar.gz"
+      sha256 "863f8c25acd03106ab0e576057c9d6e1cd659f37aaa1f1e679df93646b2b580b"
       def install
         bin.install "baton-github-enterprise"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-github-enterprise/releases/download/v0.0.18-test-last-login/baton-github-enterprise-v0.0.18-test-last-login-linux-arm64.tar.gz"
-      sha256 "ef25a7284d138619ba6f2f1d46d8a9e3ffeaaf9b4e097c391946939e2dc1c07a"
+      url "https://github.com/ConductorOne/baton-github-enterprise/releases/download/v0.0.18-test-last-login-2/baton-github-enterprise-v0.0.18-test-last-login-2-linux-arm64.tar.gz"
+      sha256 "c6b7d22dd0b430b50c93de4e2832ac0eb2517687bbf8d021f5d87ec32ced9ff5"
       def install
         bin.install "baton-github-enterprise"
       end
