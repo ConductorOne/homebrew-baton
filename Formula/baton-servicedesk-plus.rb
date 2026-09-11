@@ -5,20 +5,20 @@
 class BatonServicedeskPlus < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-servicedesk-plus/releases/download/v0.0.2/baton-servicedesk-plus-v0.0.2-darwin-amd64.zip"
-      sha256 "d6ee3646057bcc7f15b8fbfdd7bc707028cf6607ecf7f79a72b256653993e7a5"
+      url "https://github.com/ConductorOne/baton-servicedesk-plus/releases/download/v0.0.3/baton-servicedesk-plus-v0.0.3-darwin-amd64.zip"
+      sha256 "4208386b0020f812f8da77c1b7f990f5311aa03032673069054c3b9820bb02eb"
 
       def install
         bin.install "baton-servicedesk-plus"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-servicedesk-plus/releases/download/v0.0.2/baton-servicedesk-plus-v0.0.2-darwin-arm64.zip"
-      sha256 "0e5f7815efa876d522983377ced1c53e7400d0dbf9416ba645fe5e60a8d3b8b9"
+      url "https://github.com/ConductorOne/baton-servicedesk-plus/releases/download/v0.0.3/baton-servicedesk-plus-v0.0.3-darwin-arm64.zip"
+      sha256 "b699f2511812bfba4897ca939fdfb429b3dfacc30e595d13f366070d6fe922ac"
 
       def install
         bin.install "baton-servicedesk-plus"
@@ -28,15 +28,15 @@ class BatonServicedeskPlus < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-servicedesk-plus/releases/download/v0.0.2/baton-servicedesk-plus-v0.0.2-linux-amd64.tar.gz"
-      sha256 "1a8f4514a3b526283095494c86b893e04fac12eb0e54717d1163a1cd036e3199"
+      url "https://github.com/ConductorOne/baton-servicedesk-plus/releases/download/v0.0.3/baton-servicedesk-plus-v0.0.3-linux-amd64.tar.gz"
+      sha256 "227f210e0cf3f7df2a7d73e7051cd276acdde61510ae47588c386c3b0c96d9f1"
       def install
         bin.install "baton-servicedesk-plus"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-servicedesk-plus/releases/download/v0.0.2/baton-servicedesk-plus-v0.0.2-linux-arm64.tar.gz"
-      sha256 "5497644a0342611d473451c2171c349f05abe8e759a22985fd9e6524b0bcd201"
+      url "https://github.com/ConductorOne/baton-servicedesk-plus/releases/download/v0.0.3/baton-servicedesk-plus-v0.0.3-linux-arm64.tar.gz"
+      sha256 "d686955071e25f8b29515f9c10c83611d78ba0b650abc84abac05633dc2a00b2"
       def install
         bin.install "baton-servicedesk-plus"
       end
