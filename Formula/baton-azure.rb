@@ -5,20 +5,20 @@
 class BatonAzure < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "1.1.8"
+  version "1.1.9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-azure/releases/download/v1.1.8/baton-azure-v1.1.8-darwin-amd64.zip"
-      sha256 "5109a43f12bb23b13950d4cb0c823323bceefcca1436f6793272108f0c5c3f88"
+      url "https://github.com/ConductorOne/baton-azure/releases/download/v1.1.9/baton-azure-v1.1.9-darwin-amd64.zip"
+      sha256 "1765367744041860c696972a4340f58b767e6a963f8ec3aa7be2abfde2647cbf"
 
       def install
         bin.install "baton-azure"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-azure/releases/download/v1.1.8/baton-azure-v1.1.8-darwin-arm64.zip"
-      sha256 "4c53f40994386fc05ba8db0490f8f4a55544df277ed41a6f45aa85692a75aad5"
+      url "https://github.com/ConductorOne/baton-azure/releases/download/v1.1.9/baton-azure-v1.1.9-darwin-arm64.zip"
+      sha256 "7fcf6a641f5f305654bec6c1443b1ed72362e1848158fa7250f3afbdccb170aa"
 
       def install
         bin.install "baton-azure"
@@ -28,15 +28,15 @@ class BatonAzure < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-azure/releases/download/v1.1.8/baton-azure-v1.1.8-linux-amd64.tar.gz"
-      sha256 "ae8487520af11614eba3b3bb0180e7b6f102517d061ac4a4da844cb096bd538a"
+      url "https://github.com/ConductorOne/baton-azure/releases/download/v1.1.9/baton-azure-v1.1.9-linux-amd64.tar.gz"
+      sha256 "84f5b07a7951297bf8b090596ee0217fad8a0f7a2ebe842c733dc111d53d0d07"
       def install
         bin.install "baton-azure"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-azure/releases/download/v1.1.8/baton-azure-v1.1.8-linux-arm64.tar.gz"
-      sha256 "d36f085a2b76f7c22f85a559f06c2968c1c41354ce7c131513b7c5fb1d6c66df"
+      url "https://github.com/ConductorOne/baton-azure/releases/download/v1.1.9/baton-azure-v1.1.9-linux-arm64.tar.gz"
+      sha256 "960246fc638291f6400be3f02fe45fab2ed9d96574792ab6711b201a5f16fb04"
       def install
         bin.install "baton-azure"
       end
