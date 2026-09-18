@@ -5,20 +5,20 @@
 class BatonConfluenceDatacenter < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.10"
+  version "0.0.11"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-confluence-datacenter/releases/download/v0.0.10/baton-confluence-datacenter-v0.0.10-darwin-amd64.zip"
-      sha256 "5f91926a55a98f2e2d23176c949b21b130e65721bee036fe52ead3040bbc2776"
+      url "https://github.com/ConductorOne/baton-confluence-datacenter/releases/download/v0.0.11/baton-confluence-datacenter-v0.0.11-darwin-amd64.zip"
+      sha256 "74d1a12899e7d7c6a7bf1766b52f3af553855990294308e427ddcaffc783887b"
 
       def install
         bin.install "baton-confluence-datacenter"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-confluence-datacenter/releases/download/v0.0.10/baton-confluence-datacenter-v0.0.10-darwin-arm64.zip"
-      sha256 "4dd8ee2756e063b5d0710858da2fcd98b04d0dee7093beeaf1b973cce2d0a2c1"
+      url "https://github.com/ConductorOne/baton-confluence-datacenter/releases/download/v0.0.11/baton-confluence-datacenter-v0.0.11-darwin-arm64.zip"
+      sha256 "ab144ac987860879c84145bde0c68d5757544612f74bd09e4af0d08a95d7302e"
 
       def install
         bin.install "baton-confluence-datacenter"
@@ -28,15 +28,15 @@ class BatonConfluenceDatacenter < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-confluence-datacenter/releases/download/v0.0.10/baton-confluence-datacenter-v0.0.10-linux-amd64.tar.gz"
-      sha256 "a303d477716bc32b5c8f18e80d88b89658754209bd5a44b7743dc91c01859917"
+      url "https://github.com/ConductorOne/baton-confluence-datacenter/releases/download/v0.0.11/baton-confluence-datacenter-v0.0.11-linux-amd64.tar.gz"
+      sha256 "6cb8bdd62a09eecfbee4468265821a69fcd126251cc146b243dbe9999e69cdf5"
       def install
         bin.install "baton-confluence-datacenter"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-confluence-datacenter/releases/download/v0.0.10/baton-confluence-datacenter-v0.0.10-linux-arm64.tar.gz"
-      sha256 "26aad7681d43037b6bce1d0197c567b76828586496b666c615ea91af5c01fd20"
+      url "https://github.com/ConductorOne/baton-confluence-datacenter/releases/download/v0.0.11/baton-confluence-datacenter-v0.0.11-linux-arm64.tar.gz"
+      sha256 "dea8999f0ddd0739b43a238752e184d0bdae2dce9020734f4762cbb7adcee2ee"
       def install
         bin.install "baton-confluence-datacenter"
       end
