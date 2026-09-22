@@ -5,20 +5,20 @@
 class BatonSailpointIiq < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.3"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-sailpoint-iiq/releases/download/v0.0.3/baton-sailpoint-iiq-v0.0.3-darwin-amd64.zip"
-      sha256 "148d2f83dd4aff5ffe34f02c7fe9e4e4e03bde5fec46d3c56e7918700185f073"
+      url "https://github.com/ConductorOne/baton-sailpoint-iiq/releases/download/v0.1.0/baton-sailpoint-iiq-v0.1.0-darwin-amd64.zip"
+      sha256 "9334f93edc85d2ca97c3b36808de96d6e3057aa7fc52a70bf5e804a230a58aef"
 
       def install
         bin.install "baton-sailpoint-iiq"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-sailpoint-iiq/releases/download/v0.0.3/baton-sailpoint-iiq-v0.0.3-darwin-arm64.zip"
-      sha256 "332471a65f492e8a78fe8212edcb74f5e3e98c08740556cab4e99cb98fc261b8"
+      url "https://github.com/ConductorOne/baton-sailpoint-iiq/releases/download/v0.1.0/baton-sailpoint-iiq-v0.1.0-darwin-arm64.zip"
+      sha256 "f797d864723136a2901d4aab8f95f349f434142f10368c6b1236dc9552c66a78"
 
       def install
         bin.install "baton-sailpoint-iiq"
@@ -28,15 +28,15 @@ class BatonSailpointIiq < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sailpoint-iiq/releases/download/v0.0.3/baton-sailpoint-iiq-v0.0.3-linux-amd64.tar.gz"
-      sha256 "0609cb6ff98caef93865d5c4eca300059e09e597893b8db38fa6a933d38ea043"
+      url "https://github.com/ConductorOne/baton-sailpoint-iiq/releases/download/v0.1.0/baton-sailpoint-iiq-v0.1.0-linux-amd64.tar.gz"
+      sha256 "38c970fb2d566ec38705357196b37f106bb5b82cb3b7088bbb719042ea2f1cd2"
       def install
         bin.install "baton-sailpoint-iiq"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sailpoint-iiq/releases/download/v0.0.3/baton-sailpoint-iiq-v0.0.3-linux-arm64.tar.gz"
-      sha256 "89ce49409d0c8ecc77476a911ee38db5742cd28a53873d497e27484d322b62ab"
+      url "https://github.com/ConductorOne/baton-sailpoint-iiq/releases/download/v0.1.0/baton-sailpoint-iiq-v0.1.0-linux-arm64.tar.gz"
+      sha256 "26b06f8d3cf8a4eb1bb6f879e36b40c29da40ef1d126c38b013c397055632ad2"
       def install
         bin.install "baton-sailpoint-iiq"
       end
