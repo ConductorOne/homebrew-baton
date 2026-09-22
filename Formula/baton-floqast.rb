@@ -5,20 +5,20 @@
 class BatonFloqast < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-floqast/releases/download/v0.1.0/baton-floqast-v0.1.0-darwin-amd64.zip"
-      sha256 "bb9b87d9d7b7e092192187d6b9a097eec7f2022d3ed2c2cd0b51ea657f23c273"
+      url "https://github.com/ConductorOne/baton-floqast/releases/download/v0.2.0/baton-floqast-v0.2.0-darwin-amd64.zip"
+      sha256 "a2d53a266a49b9206d93a2a389eea69c8070f136b4818365054629ea5ded2846"
 
       def install
         bin.install "baton-floqast"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-floqast/releases/download/v0.1.0/baton-floqast-v0.1.0-darwin-arm64.zip"
-      sha256 "56461736e2c308beb14f71353044035cbcd5c756fe8b58dd0dae0318d46d7444"
+      url "https://github.com/ConductorOne/baton-floqast/releases/download/v0.2.0/baton-floqast-v0.2.0-darwin-arm64.zip"
+      sha256 "62a6af88b396a5f6301ab30815da9b9eddbb0e2711ccba80b1367a6dcb95bab1"
 
       def install
         bin.install "baton-floqast"
@@ -28,15 +28,15 @@ class BatonFloqast < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-floqast/releases/download/v0.1.0/baton-floqast-v0.1.0-linux-amd64.tar.gz"
-      sha256 "31f9889e529a2801861d04ffb2e05de41daef9afe46a27d9c9a840249fbe1984"
+      url "https://github.com/ConductorOne/baton-floqast/releases/download/v0.2.0/baton-floqast-v0.2.0-linux-amd64.tar.gz"
+      sha256 "8c131053ec1ae26c2bc8d5be4eb610c52912192ee6f04bc6fdcaa73c21844910"
       def install
         bin.install "baton-floqast"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-floqast/releases/download/v0.1.0/baton-floqast-v0.1.0-linux-arm64.tar.gz"
-      sha256 "feced3236127103ae4595460a75a6c1b604a8905cb49efa5c24999ef3e6eb617"
+      url "https://github.com/ConductorOne/baton-floqast/releases/download/v0.2.0/baton-floqast-v0.2.0-linux-arm64.tar.gz"
+      sha256 "d57d7e7c46efabd41566fbe515afe8a2f9cc5d2a95f7d06f0cc76da2d041c1e5"
       def install
         bin.install "baton-floqast"
       end
