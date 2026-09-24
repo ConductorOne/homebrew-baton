@@ -5,20 +5,20 @@
 class BatonClaudeEnterprise < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.10"
+  version "0.0.11-test-role-provisioning.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-claude-enterprise/releases/download/v0.0.10/baton-claude-enterprise-v0.0.10-darwin-amd64.zip"
-      sha256 "8b03e941e196811c6c4b1fcb100b63f83f5823faaab993bafbddabf75a296531"
+      url "https://github.com/ConductorOne/baton-claude-enterprise/releases/download/v0.0.11-test-role-provisioning.1/baton-claude-enterprise-v0.0.11-test-role-provisioning.1-darwin-amd64.zip"
+      sha256 "2d1d76daa45ce33f4f9ac3ce0546819a2aa9dd24fd291c945f800641d3ca5224"
 
       def install
         bin.install "baton-claude-enterprise"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-claude-enterprise/releases/download/v0.0.10/baton-claude-enterprise-v0.0.10-darwin-arm64.zip"
-      sha256 "82d0e2566d66643e8f7772808ac4ed59d5ce8412fe2edba7faa06e38520e067b"
+      url "https://github.com/ConductorOne/baton-claude-enterprise/releases/download/v0.0.11-test-role-provisioning.1/baton-claude-enterprise-v0.0.11-test-role-provisioning.1-darwin-arm64.zip"
+      sha256 "5dc73ea986eac9e70c145be9f5d64e7b173a17fd39446397aa1076ef923d9546"
 
       def install
         bin.install "baton-claude-enterprise"
@@ -28,15 +28,15 @@ class BatonClaudeEnterprise < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-claude-enterprise/releases/download/v0.0.10/baton-claude-enterprise-v0.0.10-linux-amd64.tar.gz"
-      sha256 "3da9b185c0474e6e34c5a45a8e03528117f9fd23063d51296f3931edabf3673a"
+      url "https://github.com/ConductorOne/baton-claude-enterprise/releases/download/v0.0.11-test-role-provisioning.1/baton-claude-enterprise-v0.0.11-test-role-provisioning.1-linux-amd64.tar.gz"
+      sha256 "787dc60dc83309ad1889ef19b65c8dffc7ed7d2ea6a5b719b32aa0e495e0d6f8"
       def install
         bin.install "baton-claude-enterprise"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-claude-enterprise/releases/download/v0.0.10/baton-claude-enterprise-v0.0.10-linux-arm64.tar.gz"
-      sha256 "882354cd08c8435fa39d6c088a6004bd6750844187b1c266442a053a3d252f92"
+      url "https://github.com/ConductorOne/baton-claude-enterprise/releases/download/v0.0.11-test-role-provisioning.1/baton-claude-enterprise-v0.0.11-test-role-provisioning.1-linux-arm64.tar.gz"
+      sha256 "faae2fa64e161444d7d7f06bd2115a95a8b0fd3e1337e4b558a01ce0392d950f"
       def install
         bin.install "baton-claude-enterprise"
       end
