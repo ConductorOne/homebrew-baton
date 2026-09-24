@@ -5,20 +5,20 @@
 class BatonPingfed < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.3"
+  version "0.2.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-pingfed/releases/download/v0.2.3/baton-pingfed-v0.2.3-darwin-amd64.zip"
-      sha256 "4ba9f03a2bcfa94810df5ec7c6f6493e837830ba975b8fb7e42413b9fa0f6826"
+      url "https://github.com/ConductorOne/baton-pingfed/releases/download/v0.2.2/baton-pingfed-v0.2.2-darwin-amd64.zip"
+      sha256 "195713ec00313bf6352e6154d336f3856172d9592c4f59b46dd5ffca9f472dc4"
 
       def install
         bin.install "baton-pingfed"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-pingfed/releases/download/v0.2.3/baton-pingfed-v0.2.3-darwin-arm64.zip"
-      sha256 "1baf1afc84147a1bc80996eb2813d6120aa2a076501702d53957b569d1615b27"
+      url "https://github.com/ConductorOne/baton-pingfed/releases/download/v0.2.2/baton-pingfed-v0.2.2-darwin-arm64.zip"
+      sha256 "91792c08722495e3e93a471d01f7ccbc05f91bdef9d1e3836ae8a64dea2a5c08"
 
       def install
         bin.install "baton-pingfed"
@@ -28,15 +28,15 @@ class BatonPingfed < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-pingfed/releases/download/v0.2.3/baton-pingfed-v0.2.3-linux-amd64.tar.gz"
-      sha256 "9c91d2877321e743435c7d872c4c72e401aaa2f81a4bf91cfd505f79c10b9770"
+      url "https://github.com/ConductorOne/baton-pingfed/releases/download/v0.2.2/baton-pingfed-v0.2.2-linux-amd64.tar.gz"
+      sha256 "0f29c1863268fc0b7fd43420c5ba48026a53a6843f58c2657abf4d542b05ab3e"
       def install
         bin.install "baton-pingfed"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-pingfed/releases/download/v0.2.3/baton-pingfed-v0.2.3-linux-arm64.tar.gz"
-      sha256 "3fcf045b523a4b5d74aa56395c948509933ae89715b452d337edc952bd5bd353"
+      url "https://github.com/ConductorOne/baton-pingfed/releases/download/v0.2.2/baton-pingfed-v0.2.2-linux-arm64.tar.gz"
+      sha256 "665f3d977679623eaa24a489c6f3abbbcfae356e06d185c6258da56a11886699"
       def install
         bin.install "baton-pingfed"
       end
