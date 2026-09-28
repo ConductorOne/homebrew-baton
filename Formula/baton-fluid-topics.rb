@@ -5,20 +5,20 @@
 class BatonFluidTopics < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-fluid-topics/releases/download/v0.1.0/baton-fluid-topics-v0.1.0-darwin-amd64.zip"
-      sha256 "e55fb9835bc0b927467f0172f6a211df199fe6e0b8d332a7a3e43881e3755394"
+      url "https://github.com/ConductorOne/baton-fluid-topics/releases/download/v0.1.1/baton-fluid-topics-v0.1.1-darwin-amd64.zip"
+      sha256 "9fa9d025a695dc6023259b7e2e47c524081e837ceee219bcf7ec18c7734393f9"
 
       def install
         bin.install "baton-fluid-topics"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-fluid-topics/releases/download/v0.1.0/baton-fluid-topics-v0.1.0-darwin-arm64.zip"
-      sha256 "07ad7a3a2c86e410149735d1ef9bb6be27db8cfc04c689677634c10f655793b9"
+      url "https://github.com/ConductorOne/baton-fluid-topics/releases/download/v0.1.1/baton-fluid-topics-v0.1.1-darwin-arm64.zip"
+      sha256 "aa418b193d09c76e7013d7df0b294652af9c85d558c90ccbf52c60b20100b3f3"
 
       def install
         bin.install "baton-fluid-topics"
@@ -28,15 +28,15 @@ class BatonFluidTopics < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-fluid-topics/releases/download/v0.1.0/baton-fluid-topics-v0.1.0-linux-amd64.tar.gz"
-      sha256 "d5d5592408eeee6f726f332d0b7d5f0508b78783218ba35a7452bd5402f904e1"
+      url "https://github.com/ConductorOne/baton-fluid-topics/releases/download/v0.1.1/baton-fluid-topics-v0.1.1-linux-amd64.tar.gz"
+      sha256 "3178c11de52093b362dba0bc4a3128ebd0124107a756f57083a33fc13e8a1a2c"
       def install
         bin.install "baton-fluid-topics"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-fluid-topics/releases/download/v0.1.0/baton-fluid-topics-v0.1.0-linux-arm64.tar.gz"
-      sha256 "d617d21b76a883434710521c465750f35753f741d9b6705f2cdaa5dc22b0ab17"
+      url "https://github.com/ConductorOne/baton-fluid-topics/releases/download/v0.1.1/baton-fluid-topics-v0.1.1-linux-arm64.tar.gz"
+      sha256 "ede172a0d1129d43658b8cc9b7ba6f13d6e5762422097eefc178f5d4e6aefae4"
       def install
         bin.install "baton-fluid-topics"
       end
