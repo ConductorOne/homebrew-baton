@@ -5,20 +5,20 @@
 class BatonWorkos < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-workos/releases/download/v0.0.1/baton-workos-v0.0.1-darwin-amd64.zip"
-      sha256 "26ddcb8e737a990bc380b72f04793044eb51483fe44adac746ffff80cbecf12e"
+      url "https://github.com/ConductorOne/baton-workos/releases/download/v0.0.2/baton-workos-v0.0.2-darwin-amd64.zip"
+      sha256 "499185e12c40a5380278daf877a66bfdd2b2eb502c38f1fc6772e05075ff23c7"
 
       def install
         bin.install "baton-workos"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-workos/releases/download/v0.0.1/baton-workos-v0.0.1-darwin-arm64.zip"
-      sha256 "936737536a155a340c07ffab7f8156b2e7c2ea0f78a8f5f6390af860489dbcc7"
+      url "https://github.com/ConductorOne/baton-workos/releases/download/v0.0.2/baton-workos-v0.0.2-darwin-arm64.zip"
+      sha256 "3f6fb60949bae7cfb61834308cc01468543ec135bd2f1f28b77ee67e87b7c50a"
 
       def install
         bin.install "baton-workos"
@@ -28,15 +28,15 @@ class BatonWorkos < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-workos/releases/download/v0.0.1/baton-workos-v0.0.1-linux-amd64.tar.gz"
-      sha256 "1073cde6c9156ca7af4e4dc5e8e9c18c853ff36d7d60b82c664b840dd30403e1"
+      url "https://github.com/ConductorOne/baton-workos/releases/download/v0.0.2/baton-workos-v0.0.2-linux-amd64.tar.gz"
+      sha256 "12156ec3e92bc6774df56ab6bf0c0b55c811b3fa03cb1fcd4f858481efc68910"
       def install
         bin.install "baton-workos"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-workos/releases/download/v0.0.1/baton-workos-v0.0.1-linux-arm64.tar.gz"
-      sha256 "43fe2cc75f09ccb5e7c9f9e61f9fc88ae0751b7c5b65aa9280b0d6fc927bdc25"
+      url "https://github.com/ConductorOne/baton-workos/releases/download/v0.0.2/baton-workos-v0.0.2-linux-arm64.tar.gz"
+      sha256 "0b395b9d3e4a528016836adbbff09ccc2eb73c1c1580d820e86ba64a3f403cfd"
       def install
         bin.install "baton-workos"
       end
