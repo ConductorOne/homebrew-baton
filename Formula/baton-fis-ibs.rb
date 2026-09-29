@@ -5,20 +5,20 @@
 class BatonFisIbs < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-fis-ibs/releases/download/v0.1.0/baton-fis-ibs-v0.1.0-darwin-amd64.zip"
-      sha256 "4bf537989bbf8f4a5a565ce1cb0fccd2b46f30ba0277ed379f49e7220289651a"
+      url "https://github.com/ConductorOne/baton-fis-ibs/releases/download/v0.1.1/baton-fis-ibs-v0.1.1-darwin-amd64.zip"
+      sha256 "fc1430195e07d41ffb19fcff553bf3f31bdc7d135ee00201f7eb6a1ec838ad1c"
 
       def install
         bin.install "baton-fis-ibs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-fis-ibs/releases/download/v0.1.0/baton-fis-ibs-v0.1.0-darwin-arm64.zip"
-      sha256 "963365196453f8ad49e89ae8c484ad51348a774c86ab58929691b9480330c3e4"
+      url "https://github.com/ConductorOne/baton-fis-ibs/releases/download/v0.1.1/baton-fis-ibs-v0.1.1-darwin-arm64.zip"
+      sha256 "a9a6fab09365c971e064ebce52a396be5566ce472607436d1e35ed259b661b63"
 
       def install
         bin.install "baton-fis-ibs"
@@ -28,15 +28,15 @@ class BatonFisIbs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-fis-ibs/releases/download/v0.1.0/baton-fis-ibs-v0.1.0-linux-amd64.tar.gz"
-      sha256 "093c42476c2a3aff481d18b0d562d1ce839c95cfad9975805d16924898bbf4e0"
+      url "https://github.com/ConductorOne/baton-fis-ibs/releases/download/v0.1.1/baton-fis-ibs-v0.1.1-linux-amd64.tar.gz"
+      sha256 "5d11836284eb0eecfc9d318d6e2fc8a3684240c3590c2336e916a00feb6048b8"
       def install
         bin.install "baton-fis-ibs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-fis-ibs/releases/download/v0.1.0/baton-fis-ibs-v0.1.0-linux-arm64.tar.gz"
-      sha256 "cff779852a33eedf7fca778db98e99318d71e20bdd9a91409eb7c2d2d599566c"
+      url "https://github.com/ConductorOne/baton-fis-ibs/releases/download/v0.1.1/baton-fis-ibs-v0.1.1-linux-arm64.tar.gz"
+      sha256 "03753ee5303cb8bfa39954a593b7e319611cba60fa9d798916e48daaeb55c7c7"
       def install
         bin.install "baton-fis-ibs"
       end
