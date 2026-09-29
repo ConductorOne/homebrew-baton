@@ -5,20 +5,20 @@
 class BatonCoupa < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.12"
+  version "0.1.13"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-coupa/releases/download/v0.1.12/baton-coupa-v0.1.12-darwin-amd64.zip"
-      sha256 "c26067a00b0c1aeb5b48a0fc9c1b81a0d1c35b8e3e07130bb022f3dd13234891"
+      url "https://github.com/ConductorOne/baton-coupa/releases/download/v0.1.13/baton-coupa-v0.1.13-darwin-amd64.zip"
+      sha256 "c737736ac85aa9a104da0747b8e38bb2b5a974d5f7abf03d5dd21d657d5f1a8b"
 
       def install
         bin.install "baton-coupa"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-coupa/releases/download/v0.1.12/baton-coupa-v0.1.12-darwin-arm64.zip"
-      sha256 "0b0e663a90fb548a338cdf56b05a352f8e4cd07dbca08214dcc2f0722a4bbede"
+      url "https://github.com/ConductorOne/baton-coupa/releases/download/v0.1.13/baton-coupa-v0.1.13-darwin-arm64.zip"
+      sha256 "7831e41aeb9f02ebfab1248bc1d45d2c3c2a2d3b972a2e3259f17ba9e8046b3e"
 
       def install
         bin.install "baton-coupa"
@@ -28,15 +28,15 @@ class BatonCoupa < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-coupa/releases/download/v0.1.12/baton-coupa-v0.1.12-linux-amd64.tar.gz"
-      sha256 "cc0ef035c8070191cdcb9c5eb268db1d4810eef32eaf96c53947d9c83f084363"
+      url "https://github.com/ConductorOne/baton-coupa/releases/download/v0.1.13/baton-coupa-v0.1.13-linux-amd64.tar.gz"
+      sha256 "144e6c407cd6d9bf1b4caea60807dc96933ff78c0fa003628953cbb42233d068"
       def install
         bin.install "baton-coupa"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-coupa/releases/download/v0.1.12/baton-coupa-v0.1.12-linux-arm64.tar.gz"
-      sha256 "688baeed5605c6645d83830d3fc2d50533e16e86db05dda3b07d14f6e0986360"
+      url "https://github.com/ConductorOne/baton-coupa/releases/download/v0.1.13/baton-coupa-v0.1.13-linux-arm64.tar.gz"
+      sha256 "739da761f9dbd7a8b2e800aad6fc6afc077e10f87b6bfff3566afd1ba05fd566"
       def install
         bin.install "baton-coupa"
       end
