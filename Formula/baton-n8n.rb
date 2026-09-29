@@ -5,20 +5,20 @@
 class BatonN8n < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-n8n/releases/download/v0.0.1/baton-n8n-v0.0.1-darwin-amd64.zip"
-      sha256 "d8070fef1c94ea74cdd1eeae0ebfc0cfa73d6d1b01f460190640a560026b3101"
+      url "https://github.com/ConductorOne/baton-n8n/releases/download/v0.1.1/baton-n8n-v0.1.1-darwin-amd64.zip"
+      sha256 "8d6e855d9b4c0cd8984087acba68d3e27c6e7c64c9a7987d5203b002a81f47dc"
 
       def install
         bin.install "baton-n8n"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-n8n/releases/download/v0.0.1/baton-n8n-v0.0.1-darwin-arm64.zip"
-      sha256 "0e365801e60b0a5722bbe9a43498d741473e469d19d48bed67f2ad105e14fa14"
+      url "https://github.com/ConductorOne/baton-n8n/releases/download/v0.1.1/baton-n8n-v0.1.1-darwin-arm64.zip"
+      sha256 "7b1bce5ddcf57168d874cc13d2da44f1483cd95cc1125c3741e727fec5d10340"
 
       def install
         bin.install "baton-n8n"
@@ -28,15 +28,15 @@ class BatonN8n < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-n8n/releases/download/v0.0.1/baton-n8n-v0.0.1-linux-amd64.tar.gz"
-      sha256 "ca900f07057dcf9743c5db892b9401796bd05660459360e7dc0ff6c302501cff"
+      url "https://github.com/ConductorOne/baton-n8n/releases/download/v0.1.1/baton-n8n-v0.1.1-linux-amd64.tar.gz"
+      sha256 "980e855193e975b6e21961022adf7184cdfc471e77f21db7ff405c62b6b8f60a"
       def install
         bin.install "baton-n8n"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-n8n/releases/download/v0.0.1/baton-n8n-v0.0.1-linux-arm64.tar.gz"
-      sha256 "d42f619144a9567ca0f84b84edc8519d863def406fcbce72d1edd115e56d6177"
+      url "https://github.com/ConductorOne/baton-n8n/releases/download/v0.1.1/baton-n8n-v0.1.1-linux-arm64.tar.gz"
+      sha256 "559448750e1e64db61659c9f376f4638d337565c8ceeee62a74b7a2894cfd5e1"
       def install
         bin.install "baton-n8n"
       end
