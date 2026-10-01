@@ -5,20 +5,20 @@
 class BatonVictorops < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-victorops/releases/download/v0.1.0/baton-victorops-v0.1.0-darwin-amd64.zip"
-      sha256 "978ecf74d03238fd3c2f9c2c7b61c4e2239ff2a0eed39f311fd9da171744ae5a"
+      url "https://github.com/ConductorOne/baton-victorops/releases/download/v0.1.1/baton-victorops-v0.1.1-darwin-amd64.zip"
+      sha256 "862060a85f764ec8003ad7075f24752a7655a065c2e9ad2a8381186a94d86b42"
 
       def install
         bin.install "baton-victorops"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-victorops/releases/download/v0.1.0/baton-victorops-v0.1.0-darwin-arm64.zip"
-      sha256 "7d5f3a20e947811de0bb93819341bcc03aec54d3afa528b54ec64964ceb4aebb"
+      url "https://github.com/ConductorOne/baton-victorops/releases/download/v0.1.1/baton-victorops-v0.1.1-darwin-arm64.zip"
+      sha256 "6d1ea85e33d253f0f9564e8c154a0f92d120ecbd2a9e8e5d1951da0c6c2ee66d"
 
       def install
         bin.install "baton-victorops"
@@ -28,15 +28,15 @@ class BatonVictorops < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-victorops/releases/download/v0.1.0/baton-victorops-v0.1.0-linux-amd64.tar.gz"
-      sha256 "be2a9861fc4073e7ca8fab5c4f42f04b81fe80dac0f06b8e0fb982c3451acf79"
+      url "https://github.com/ConductorOne/baton-victorops/releases/download/v0.1.1/baton-victorops-v0.1.1-linux-amd64.tar.gz"
+      sha256 "d71682e843f6a246fb30e686d5af28c675ed828f1f6d7f63a5066bf063fee7b0"
       def install
         bin.install "baton-victorops"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-victorops/releases/download/v0.1.0/baton-victorops-v0.1.0-linux-arm64.tar.gz"
-      sha256 "ce890a69dfc2a88cfa640fa5deb300fb6834e2710f39054ddf42c2fc9574c4c6"
+      url "https://github.com/ConductorOne/baton-victorops/releases/download/v0.1.1/baton-victorops-v0.1.1-linux-arm64.tar.gz"
+      sha256 "acb09a7c483f35123438d6681f82bbdaa94f9c9ebd2ab52d81443ed45d49b3c3"
       def install
         bin.install "baton-victorops"
       end
