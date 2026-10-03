@@ -5,20 +5,20 @@
 class BatonEks < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.1"
+  version "0.2.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-eks/releases/download/v0.2.1/baton-eks-v0.2.1-darwin-amd64.zip"
-      sha256 "211cb85cfd92a791acb451953fdac0796752eb2ea3e423a10f57fb01922079fa"
+      url "https://github.com/ConductorOne/baton-eks/releases/download/v0.2.2/baton-eks-v0.2.2-darwin-amd64.zip"
+      sha256 "535e9fcccacace2cae60fa17b3fa86e64bd9c177575ff810368e51243a11bcb9"
 
       def install
         bin.install "baton-eks"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-eks/releases/download/v0.2.1/baton-eks-v0.2.1-darwin-arm64.zip"
-      sha256 "238208ff280e8a505085c5ccf1ddf6ca9c7e5e58912909dfcb2f8c54ba3b2d08"
+      url "https://github.com/ConductorOne/baton-eks/releases/download/v0.2.2/baton-eks-v0.2.2-darwin-arm64.zip"
+      sha256 "50908f00489be8fd51c2f07b88a6d1a504f38fa325db004c9841a01160cfc95f"
 
       def install
         bin.install "baton-eks"
@@ -28,15 +28,15 @@ class BatonEks < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-eks/releases/download/v0.2.1/baton-eks-v0.2.1-linux-amd64.tar.gz"
-      sha256 "8f004a111972cfedb1d2d2445bfffacdae8d5ea89c3128e2e40777475a04e3ff"
+      url "https://github.com/ConductorOne/baton-eks/releases/download/v0.2.2/baton-eks-v0.2.2-linux-amd64.tar.gz"
+      sha256 "ed52f3a63c4935eb04c91297010f69e9e29c4e3df46be9b90fa9cd1305bf2e3e"
       def install
         bin.install "baton-eks"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-eks/releases/download/v0.2.1/baton-eks-v0.2.1-linux-arm64.tar.gz"
-      sha256 "781e99103cba7bdf2ba2f199eeee6c9f628d3c48daf321910ebab283c87d4ee2"
+      url "https://github.com/ConductorOne/baton-eks/releases/download/v0.2.2/baton-eks-v0.2.2-linux-arm64.tar.gz"
+      sha256 "0e806851f5e75cf361447439a3ca02709a8b0e10b832c8d2d928cbd714b8e93c"
       def install
         bin.install "baton-eks"
       end
