@@ -5,20 +5,20 @@
 class BatonCouchdb < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.4"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-couchdb/releases/download/v0.0.4/baton-couchdb-v0.0.4-darwin-amd64.zip"
-      sha256 "e97f188c98e158c1c2ef777fab2e2448fb79689a0152c009fb29f6f20762ef32"
+      url "https://github.com/ConductorOne/baton-couchdb/releases/download/v0.1.0/baton-couchdb-v0.1.0-darwin-amd64.zip"
+      sha256 "343885d623b968af428bddce6ba7f85f9214ae4c354a254ee5714369fb0f41c4"
 
       def install
         bin.install "baton-couchdb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-couchdb/releases/download/v0.0.4/baton-couchdb-v0.0.4-darwin-arm64.zip"
-      sha256 "937e4dfe8f5f84066e824529685fd7a15b984d556d270bd4dc42d93087762483"
+      url "https://github.com/ConductorOne/baton-couchdb/releases/download/v0.1.0/baton-couchdb-v0.1.0-darwin-arm64.zip"
+      sha256 "05210aed8dd8014bbe2b98efeb7dd51920ae05551d32822362d88d75616d2280"
 
       def install
         bin.install "baton-couchdb"
@@ -28,15 +28,15 @@ class BatonCouchdb < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-couchdb/releases/download/v0.0.4/baton-couchdb-v0.0.4-linux-amd64.tar.gz"
-      sha256 "f1035ae083fa492ca8265552892b852fc5cf84b68291f89f31b751ed312b1f7e"
+      url "https://github.com/ConductorOne/baton-couchdb/releases/download/v0.1.0/baton-couchdb-v0.1.0-linux-amd64.tar.gz"
+      sha256 "fa702816da4177bfca3a477605cf04f3477fc08e991ca3561013909ce64d17c0"
       def install
         bin.install "baton-couchdb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-couchdb/releases/download/v0.0.4/baton-couchdb-v0.0.4-linux-arm64.tar.gz"
-      sha256 "938834155974f24bfeca691a394e0b34bf909651268e7093f1b87e8f0d13d6de"
+      url "https://github.com/ConductorOne/baton-couchdb/releases/download/v0.1.0/baton-couchdb-v0.1.0-linux-arm64.tar.gz"
+      sha256 "489dc2cf43d29ea182e9ddeab9d6936980b32bb424083dd5518a2d698999c60d"
       def install
         bin.install "baton-couchdb"
       end
