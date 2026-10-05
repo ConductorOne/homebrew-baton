@@ -5,20 +5,20 @@
 class BatonPerplexity < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-perplexity/releases/download/v0.0.1/baton-perplexity-v0.0.1-darwin-amd64.zip"
-      sha256 "8fc61894b5b368fa635442bbc215771605ef13f02566874232d0e5aeefe31bb9"
+      url "https://github.com/ConductorOne/baton-perplexity/releases/download/v0.1.0/baton-perplexity-v0.1.0-darwin-amd64.zip"
+      sha256 "c0dc845bab5385bb7c20baf506dbbc7a2c63448c5133f1d95d5b997f6b010ae7"
 
       def install
         bin.install "baton-perplexity"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-perplexity/releases/download/v0.0.1/baton-perplexity-v0.0.1-darwin-arm64.zip"
-      sha256 "0c6d76813b4703501ab82b9e3c8e5664c5be7ffb478306119e79e8a6c71503d8"
+      url "https://github.com/ConductorOne/baton-perplexity/releases/download/v0.1.0/baton-perplexity-v0.1.0-darwin-arm64.zip"
+      sha256 "3ecbd7c6c96c9acb721baf47e438bf252b20d5f6d21af094f7a7a4e902f9ffc0"
 
       def install
         bin.install "baton-perplexity"
@@ -28,15 +28,15 @@ class BatonPerplexity < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-perplexity/releases/download/v0.0.1/baton-perplexity-v0.0.1-linux-amd64.tar.gz"
-      sha256 "6dededdde883c37954ec2e39b1b95de121b979e1c015bcbd7a81e0a822b25405"
+      url "https://github.com/ConductorOne/baton-perplexity/releases/download/v0.1.0/baton-perplexity-v0.1.0-linux-amd64.tar.gz"
+      sha256 "b5eb585b92379f0f03c48367661f16a7e720ed58be568442c366300d5ff0001d"
       def install
         bin.install "baton-perplexity"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-perplexity/releases/download/v0.0.1/baton-perplexity-v0.0.1-linux-arm64.tar.gz"
-      sha256 "3b0ac27ea1f38cf01b72c28a43a1275080e04b5c56bcbc773690aa4affebb573"
+      url "https://github.com/ConductorOne/baton-perplexity/releases/download/v0.1.0/baton-perplexity-v0.1.0-linux-arm64.tar.gz"
+      sha256 "a0279020306f1301677f3e882c0808cb87573f41f000bc6778a024bea7ef8060"
       def install
         bin.install "baton-perplexity"
       end
