@@ -5,20 +5,20 @@
 class BatonAwsBedrockAgentcore < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.4"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-aws-bedrock-agentcore/releases/download/v0.0.4/baton-aws-bedrock-agentcore-v0.0.4-darwin-amd64.zip"
-      sha256 "b8aff11b0463b1bf399b2fa2dc659974d89b167cbcaf011293477e04e5a0a738"
+      url "https://github.com/ConductorOne/baton-aws-bedrock-agentcore/releases/download/v0.1.0/baton-aws-bedrock-agentcore-v0.1.0-darwin-amd64.zip"
+      sha256 "462499ff7ed92cb5803bc662969b6bdff73a273f97f97eaaef336a69ec244ea9"
 
       def install
         bin.install "baton-aws-bedrock-agentcore"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-aws-bedrock-agentcore/releases/download/v0.0.4/baton-aws-bedrock-agentcore-v0.0.4-darwin-arm64.zip"
-      sha256 "43cd36ffd69698e75ed708ed506fb1b932c3432415e56824914b34fedf5c4d9c"
+      url "https://github.com/ConductorOne/baton-aws-bedrock-agentcore/releases/download/v0.1.0/baton-aws-bedrock-agentcore-v0.1.0-darwin-arm64.zip"
+      sha256 "8e8bc36a6908da5e2f077b1446532953173d7a7899af11ef57f214d4b061ba69"
 
       def install
         bin.install "baton-aws-bedrock-agentcore"
@@ -28,15 +28,15 @@ class BatonAwsBedrockAgentcore < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-aws-bedrock-agentcore/releases/download/v0.0.4/baton-aws-bedrock-agentcore-v0.0.4-linux-amd64.tar.gz"
-      sha256 "1f97b289b1af2ccfb973ffabb92dfb046dc668f56c4eeb5312a4f4a44942c82f"
+      url "https://github.com/ConductorOne/baton-aws-bedrock-agentcore/releases/download/v0.1.0/baton-aws-bedrock-agentcore-v0.1.0-linux-amd64.tar.gz"
+      sha256 "8e61e23c326363fc20e879c153daabbf41561b4390f2f4014cffe9431c695887"
       def install
         bin.install "baton-aws-bedrock-agentcore"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-aws-bedrock-agentcore/releases/download/v0.0.4/baton-aws-bedrock-agentcore-v0.0.4-linux-arm64.tar.gz"
-      sha256 "8144f7ffd748dc35d0691c8f4f35a184dd5720036fc58226cd3348e1a77943cd"
+      url "https://github.com/ConductorOne/baton-aws-bedrock-agentcore/releases/download/v0.1.0/baton-aws-bedrock-agentcore-v0.1.0-linux-arm64.tar.gz"
+      sha256 "9b558ca1ff3380cde94b70fb0825b0a43d6390b41f94beb48253d0eab58da5f2"
       def install
         bin.install "baton-aws-bedrock-agentcore"
       end
