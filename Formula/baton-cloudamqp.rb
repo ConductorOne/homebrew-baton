@@ -5,20 +5,20 @@
 class BatonCloudamqp < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-cloudamqp/releases/download/v0.2.0/baton-cloudamqp-v0.2.0-darwin-amd64.zip"
-      sha256 "c36deb3d8c263e1f0e218fe5aa0a3b407f7178d534207e90a79367c43bb5c8b6"
+      url "https://github.com/ConductorOne/baton-cloudamqp/releases/download/v0.3.0/baton-cloudamqp-v0.3.0-darwin-amd64.zip"
+      sha256 "17e94ccc8b5dc40722ee431d1eb00c9d2794c0898ddab1d07b2ba099c8068700"
 
       def install
         bin.install "baton-cloudamqp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-cloudamqp/releases/download/v0.2.0/baton-cloudamqp-v0.2.0-darwin-arm64.zip"
-      sha256 "f3397fc0440c94fa0093dfd411864645562a8d7809a4879f07811b04cb1eb91a"
+      url "https://github.com/ConductorOne/baton-cloudamqp/releases/download/v0.3.0/baton-cloudamqp-v0.3.0-darwin-arm64.zip"
+      sha256 "531eef5344bc86a394d492f4f16aeb34201075c45e5f409621d36807982cb6d4"
 
       def install
         bin.install "baton-cloudamqp"
@@ -28,15 +28,15 @@ class BatonCloudamqp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-cloudamqp/releases/download/v0.2.0/baton-cloudamqp-v0.2.0-linux-amd64.tar.gz"
-      sha256 "86e641e1f6d0f11d532477d6d3b385e37ea54d56620459503840a9d7fd8218a5"
+      url "https://github.com/ConductorOne/baton-cloudamqp/releases/download/v0.3.0/baton-cloudamqp-v0.3.0-linux-amd64.tar.gz"
+      sha256 "d136c1360bfb00b492d092c7adff0756a5326404444b21e849974512db5f82f8"
       def install
         bin.install "baton-cloudamqp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-cloudamqp/releases/download/v0.2.0/baton-cloudamqp-v0.2.0-linux-arm64.tar.gz"
-      sha256 "97537d7c397c0b2470c78eefa4e39f3690edba35a91751184d3efaf574b6de8f"
+      url "https://github.com/ConductorOne/baton-cloudamqp/releases/download/v0.3.0/baton-cloudamqp-v0.3.0-linux-arm64.tar.gz"
+      sha256 "8b3d97d5c68fbb9cedfdf64b2321a205bf84b7b6c39c771762311345afe95270"
       def install
         bin.install "baton-cloudamqp"
       end
