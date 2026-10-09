@@ -5,20 +5,20 @@
 class BatonAwsAccountAccessManager < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-aws-account-access-manager/releases/download/v0.0.3/baton-aws-account-access-manager-v0.0.3-darwin-amd64.zip"
-      sha256 "bd8f9688fa5510c6718d5eacb9e4f815158a0fd7d4530a81f65d02dcc2ca53e7"
+      url "https://github.com/ConductorOne/baton-aws-account-access-manager/releases/download/v0.0.4/baton-aws-account-access-manager-v0.0.4-darwin-amd64.zip"
+      sha256 "7bdaad40f37507a2c7586fea4d2f06e2ab3b19697505f01afda4250aa42b35da"
 
       def install
         bin.install "baton-aws-account-access-manager"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-aws-account-access-manager/releases/download/v0.0.3/baton-aws-account-access-manager-v0.0.3-darwin-arm64.zip"
-      sha256 "d4b67e209156a0abaa619ef5ac8fcd0c997c374075f3b5115685d5359084771a"
+      url "https://github.com/ConductorOne/baton-aws-account-access-manager/releases/download/v0.0.4/baton-aws-account-access-manager-v0.0.4-darwin-arm64.zip"
+      sha256 "ff78e303855a4fc3228c68fb5ebeeb81a8765e05bd5aefc8b322807e7363cddc"
 
       def install
         bin.install "baton-aws-account-access-manager"
@@ -28,15 +28,15 @@ class BatonAwsAccountAccessManager < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-aws-account-access-manager/releases/download/v0.0.3/baton-aws-account-access-manager-v0.0.3-linux-amd64.tar.gz"
-      sha256 "1de98e6df57b0c17f79ab57a75a4dbc34ec09076ae93cc32625fea0c1e78ab40"
+      url "https://github.com/ConductorOne/baton-aws-account-access-manager/releases/download/v0.0.4/baton-aws-account-access-manager-v0.0.4-linux-amd64.tar.gz"
+      sha256 "fa69b7c9b2ce49a3f6ca2a6c59cbafdb57b9b281f7cef6ac43c143e387c3055a"
       def install
         bin.install "baton-aws-account-access-manager"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-aws-account-access-manager/releases/download/v0.0.3/baton-aws-account-access-manager-v0.0.3-linux-arm64.tar.gz"
-      sha256 "110595d37d4cae43467b895e6bd90bc0558e437bbb8435b0c2df25edb9b479d3"
+      url "https://github.com/ConductorOne/baton-aws-account-access-manager/releases/download/v0.0.4/baton-aws-account-access-manager-v0.0.4-linux-arm64.tar.gz"
+      sha256 "4f105f22b1e94518d9d50ceeb4f503708a11865978810f67ecf6404bcf4380d7"
       def install
         bin.install "baton-aws-account-access-manager"
       end
