@@ -5,20 +5,20 @@
 class BatonSuccessfactors < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.4"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-successfactors/releases/download/v0.1.4/baton-successfactors-v0.1.4-darwin-amd64.zip"
-      sha256 "fdab9b0cb7261636c4b06924e7d17ce94bdba66763e5211ceb2c0ca861176f92"
+      url "https://github.com/ConductorOne/baton-successfactors/releases/download/v0.2.0/baton-successfactors-v0.2.0-darwin-amd64.zip"
+      sha256 "d14ec53c8bed838b5b66181d30842080aea29c9bb27a9a0a45ff3ab3c406fe0f"
 
       def install
         bin.install "baton-successfactors"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-successfactors/releases/download/v0.1.4/baton-successfactors-v0.1.4-darwin-arm64.zip"
-      sha256 "975dfebb84bb7e6d9617324dc706321d65c1843b050b4ffcf7c2780e0e696a1f"
+      url "https://github.com/ConductorOne/baton-successfactors/releases/download/v0.2.0/baton-successfactors-v0.2.0-darwin-arm64.zip"
+      sha256 "83085a854c8b51688165fa50926ebc3287c212afd18ac8da21ba46b59175287b"
 
       def install
         bin.install "baton-successfactors"
@@ -28,15 +28,15 @@ class BatonSuccessfactors < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-successfactors/releases/download/v0.1.4/baton-successfactors-v0.1.4-linux-amd64.tar.gz"
-      sha256 "79d293c1ee7eaaf23b0322b8ce1031723bac4501a0d6cccc49b8947d19a6560b"
+      url "https://github.com/ConductorOne/baton-successfactors/releases/download/v0.2.0/baton-successfactors-v0.2.0-linux-amd64.tar.gz"
+      sha256 "a42a4b1b96574046046c49c1ce202b1246483de379bbbd1b7f576439b1a0aa63"
       def install
         bin.install "baton-successfactors"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-successfactors/releases/download/v0.1.4/baton-successfactors-v0.1.4-linux-arm64.tar.gz"
-      sha256 "c2e7488298e5f3126ff9710084449f6e932d9c9579acb603125b8b54b14f7d0e"
+      url "https://github.com/ConductorOne/baton-successfactors/releases/download/v0.2.0/baton-successfactors-v0.2.0-linux-arm64.tar.gz"
+      sha256 "4c0f19130656b34983ef344a3af307fa3db515a9d2efe4d9e706890c6351bbe5"
       def install
         bin.install "baton-successfactors"
       end
