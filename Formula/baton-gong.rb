@@ -5,20 +5,20 @@
 class BatonGong < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.2"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-gong/releases/download/v0.2.2/baton-gong-v0.2.2-darwin-amd64.zip"
-      sha256 "964a441eeb3384c46621820c7fa4bc24d6b7a6c00d2836cf17b85fd8b65469f9"
+      url "https://github.com/ConductorOne/baton-gong/releases/download/v0.3.0/baton-gong-v0.3.0-darwin-amd64.zip"
+      sha256 "3897b0a2bd39145d3038425602d41bc4bfc6cda42d58afd0b1a1122cc6bb94d5"
 
       def install
         bin.install "baton-gong"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-gong/releases/download/v0.2.2/baton-gong-v0.2.2-darwin-arm64.zip"
-      sha256 "11cac7fb1d487e6f17989afcab91f4bf2060569746611b549aaf8ef836facb96"
+      url "https://github.com/ConductorOne/baton-gong/releases/download/v0.3.0/baton-gong-v0.3.0-darwin-arm64.zip"
+      sha256 "2290486bf3d1df0f6bf73a853b7dc3c50ca4832e2f9dabda4d9f3841dc5bdfba"
 
       def install
         bin.install "baton-gong"
@@ -28,15 +28,15 @@ class BatonGong < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-gong/releases/download/v0.2.2/baton-gong-v0.2.2-linux-amd64.tar.gz"
-      sha256 "34238ad2b1b912d5588ab7663fed102ab22d3fee670c4480abce1d1d3bb0b9aa"
+      url "https://github.com/ConductorOne/baton-gong/releases/download/v0.3.0/baton-gong-v0.3.0-linux-amd64.tar.gz"
+      sha256 "10ef4c204790028c9f6c955a95029cec0428640f714e54f566907c19ce3ac70b"
       def install
         bin.install "baton-gong"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-gong/releases/download/v0.2.2/baton-gong-v0.2.2-linux-arm64.tar.gz"
-      sha256 "bc16c59056f082cadcd8a20477315d711c2efc8f6824f73fcceba0a1d6590fb6"
+      url "https://github.com/ConductorOne/baton-gong/releases/download/v0.3.0/baton-gong-v0.3.0-linux-arm64.tar.gz"
+      sha256 "e2150e7e8ea9012c03223cd7d75a6e031b0b6cc739c06c1ae9e8f2a9723b1cb6"
       def install
         bin.install "baton-gong"
       end
