@@ -5,20 +5,20 @@
 class BatonTrello < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.1"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-trello/releases/download/v0.1.1/baton-trello-v0.1.1-darwin-amd64.zip"
-      sha256 "bbd5f9230f5b664d418c82cf303a6acf7747e33922ffd7f07aa6daf2462e3159"
+      url "https://github.com/ConductorOne/baton-trello/releases/download/v0.2.0/baton-trello-v0.2.0-darwin-amd64.zip"
+      sha256 "c3262b28e629011464afef09d72e18ccb9a40511c466df08785a4553c45e6bb6"
 
       def install
         bin.install "baton-trello"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-trello/releases/download/v0.1.1/baton-trello-v0.1.1-darwin-arm64.zip"
-      sha256 "b1358194e1fd0636679e2ba5b0d816e9ad05dff2db2bb3133dd320e96a7b796a"
+      url "https://github.com/ConductorOne/baton-trello/releases/download/v0.2.0/baton-trello-v0.2.0-darwin-arm64.zip"
+      sha256 "0a4f69af812a680f0eacc6c2fa3c588d776e73ad614269e98dde91a5cf7fd5dc"
 
       def install
         bin.install "baton-trello"
@@ -28,15 +28,15 @@ class BatonTrello < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-trello/releases/download/v0.1.1/baton-trello-v0.1.1-linux-amd64.tar.gz"
-      sha256 "70056fee8b721d4df982f00017c96fd111060f6c5f232216852ba874b6f55236"
+      url "https://github.com/ConductorOne/baton-trello/releases/download/v0.2.0/baton-trello-v0.2.0-linux-amd64.tar.gz"
+      sha256 "aa8610337fb3e09512f2c87e2e826f773846cdba3c2f12a883ca14ffd6b5294c"
       def install
         bin.install "baton-trello"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-trello/releases/download/v0.1.1/baton-trello-v0.1.1-linux-arm64.tar.gz"
-      sha256 "47cdfffd8971343690523168d3f830de08c8fc03f3878270ef0efdbe8b78dd00"
+      url "https://github.com/ConductorOne/baton-trello/releases/download/v0.2.0/baton-trello-v0.2.0-linux-arm64.tar.gz"
+      sha256 "7331603bf76305920e6fd8180d1038e2e190a5e3afb3d6d6172ac3246429fe8d"
       def install
         bin.install "baton-trello"
       end
