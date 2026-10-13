@@ -5,20 +5,20 @@
 class BatonGalileoFt < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-galileo-ft/releases/download/v0.1.0/baton-galileo-ft-v0.1.0-darwin-amd64.zip"
-      sha256 "52d2bd5336928cb5c428ae4296c8a6a8605b9d92ae72549269da0ce8856faa87"
+      url "https://github.com/ConductorOne/baton-galileo-ft/releases/download/v0.2.0/baton-galileo-ft-v0.2.0-darwin-amd64.zip"
+      sha256 "4cb3be04b433714e203e71ef86435e94232f5ea02215c22ff6b9d402ab25332d"
 
       def install
         bin.install "baton-galileo-ft"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-galileo-ft/releases/download/v0.1.0/baton-galileo-ft-v0.1.0-darwin-arm64.zip"
-      sha256 "b6a782c49014282d74d0031bfb0bb18bc9c8f3ced26cd653ba2dca5f93cadb8a"
+      url "https://github.com/ConductorOne/baton-galileo-ft/releases/download/v0.2.0/baton-galileo-ft-v0.2.0-darwin-arm64.zip"
+      sha256 "7a26d03702887408c40969506d9dca32f145779ec4a70cd50a97d5415b0a1d12"
 
       def install
         bin.install "baton-galileo-ft"
@@ -28,15 +28,15 @@ class BatonGalileoFt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-galileo-ft/releases/download/v0.1.0/baton-galileo-ft-v0.1.0-linux-amd64.tar.gz"
-      sha256 "56e29e2b0174dbba155b3dbe728b1796870623d98245a104016570877c86637e"
+      url "https://github.com/ConductorOne/baton-galileo-ft/releases/download/v0.2.0/baton-galileo-ft-v0.2.0-linux-amd64.tar.gz"
+      sha256 "54c5931b5df4a49884d56d926bab3a5068509d6bf765d5c158fc5773877e939e"
       def install
         bin.install "baton-galileo-ft"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-galileo-ft/releases/download/v0.1.0/baton-galileo-ft-v0.1.0-linux-arm64.tar.gz"
-      sha256 "a9aa1ef0550940a34de764035b2f8f43afafbf03e5c6635f368134137fd33157"
+      url "https://github.com/ConductorOne/baton-galileo-ft/releases/download/v0.2.0/baton-galileo-ft-v0.2.0-linux-arm64.tar.gz"
+      sha256 "51fd822a3eb75d93828065f072f27b3cc62e6060c7eff8bf9980aebdfeb96783"
       def install
         bin.install "baton-galileo-ft"
       end
