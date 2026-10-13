@@ -5,20 +5,20 @@
 class BatonWorkdayWql < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.3.1-test-group-optimizations.1"
+  version "0.3.1-test-group-optimizations.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-workday-wql/releases/download/v0.3.1-test-group-optimizations.1/baton-workday-wql-v0.3.1-test-group-optimizations.1-darwin-amd64.zip"
-      sha256 "1c372598f37bd0519855134c7ede1fecfdb9b98db3037759ebc5147f70a2ceba"
+      url "https://github.com/ConductorOne/baton-workday-wql/releases/download/v0.3.1-test-group-optimizations.2/baton-workday-wql-v0.3.1-test-group-optimizations.2-darwin-amd64.zip"
+      sha256 "13f63eddc8531e8f4fa5a508a8e4d24dad5d31a4a851e69012194932c5fae2d4"
 
       def install
         bin.install "baton-workday-wql"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-workday-wql/releases/download/v0.3.1-test-group-optimizations.1/baton-workday-wql-v0.3.1-test-group-optimizations.1-darwin-arm64.zip"
-      sha256 "fdb388ad0a8d6e7bdda0e9f7e9d463ecd4afc0c3bd79cf24cb4a64adfb8496fd"
+      url "https://github.com/ConductorOne/baton-workday-wql/releases/download/v0.3.1-test-group-optimizations.2/baton-workday-wql-v0.3.1-test-group-optimizations.2-darwin-arm64.zip"
+      sha256 "65f665f4084827f36cbed0fc5413e753fa0fd02ee5ec2036533afb7808f33034"
 
       def install
         bin.install "baton-workday-wql"
@@ -28,15 +28,15 @@ class BatonWorkdayWql < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-workday-wql/releases/download/v0.3.1-test-group-optimizations.1/baton-workday-wql-v0.3.1-test-group-optimizations.1-linux-amd64.tar.gz"
-      sha256 "1eb761eca5ff725a8b11d1de4830463a7ed81cdfb7cfecd776d38e0a6259c9ff"
+      url "https://github.com/ConductorOne/baton-workday-wql/releases/download/v0.3.1-test-group-optimizations.2/baton-workday-wql-v0.3.1-test-group-optimizations.2-linux-amd64.tar.gz"
+      sha256 "75783d6fb5b929f91bdab06a8a12412d32bf87ad34d0f99204f0fc69f844b6bf"
       def install
         bin.install "baton-workday-wql"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-workday-wql/releases/download/v0.3.1-test-group-optimizations.1/baton-workday-wql-v0.3.1-test-group-optimizations.1-linux-arm64.tar.gz"
-      sha256 "b2e23afac208406c0849c7c78c2a64823a3444fa8fa78d93d9f7032b89c8e273"
+      url "https://github.com/ConductorOne/baton-workday-wql/releases/download/v0.3.1-test-group-optimizations.2/baton-workday-wql-v0.3.1-test-group-optimizations.2-linux-arm64.tar.gz"
+      sha256 "19020e802e73dd90a33ecc35e129377d864016197abe150ffd9001dff9eea6b1"
       def install
         bin.install "baton-workday-wql"
       end
