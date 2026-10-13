@@ -5,20 +5,20 @@
 class BatonMysql < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.3"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-mysql/releases/download/v0.1.3/baton-mysql-v0.1.3-darwin-amd64.zip"
-      sha256 "6242d1652d0a808297b572b16e14ebcfbbf1c31c31c10c4801089f7f9a71d471"
+      url "https://github.com/ConductorOne/baton-mysql/releases/download/v0.2.0/baton-mysql-v0.2.0-darwin-amd64.zip"
+      sha256 "bf73c34123b0197fe917497378f748fd6f22ffa0c9047a3023188a930eecb12b"
 
       def install
         bin.install "baton-mysql"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-mysql/releases/download/v0.1.3/baton-mysql-v0.1.3-darwin-arm64.zip"
-      sha256 "9914ec803c1a3be5cf300a8cdccc2146516f10913060aac4bb62c2d6db39af55"
+      url "https://github.com/ConductorOne/baton-mysql/releases/download/v0.2.0/baton-mysql-v0.2.0-darwin-arm64.zip"
+      sha256 "43fd5beb6b97bad192e14b026f45261ab96d950e64a8676b1225f2afb8a92ee8"
 
       def install
         bin.install "baton-mysql"
@@ -28,15 +28,15 @@ class BatonMysql < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-mysql/releases/download/v0.1.3/baton-mysql-v0.1.3-linux-amd64.tar.gz"
-      sha256 "164c1c2ff1fcd14940db3a485fa93844ba638d08cd275d40409c4f6ccef2da16"
+      url "https://github.com/ConductorOne/baton-mysql/releases/download/v0.2.0/baton-mysql-v0.2.0-linux-amd64.tar.gz"
+      sha256 "738435ee094cd96e9ca3bed4267c50cdfb48b09b6f2a00a7c441864f5860136e"
       def install
         bin.install "baton-mysql"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-mysql/releases/download/v0.1.3/baton-mysql-v0.1.3-linux-arm64.tar.gz"
-      sha256 "6a1b1f8b66b836fd53e1130143fc9ef3f9a670ab64b2c51dd2920fa1d177b430"
+      url "https://github.com/ConductorOne/baton-mysql/releases/download/v0.2.0/baton-mysql-v0.2.0-linux-arm64.tar.gz"
+      sha256 "9f6e0035d04b2cb38c7ee5e0374d904f35cdfdb27fab01e138d0b53bfe612b81"
       def install
         bin.install "baton-mysql"
       end
