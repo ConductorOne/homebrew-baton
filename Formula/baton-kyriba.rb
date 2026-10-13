@@ -5,20 +5,20 @@
 class BatonKyriba < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-kyriba/releases/download/v0.1.0/baton-kyriba-v0.1.0-darwin-amd64.zip"
-      sha256 "954589810ec7d354bee0ff401a6a3a48d770cf85473d5c3f822b9105b5b9b391"
+      url "https://github.com/ConductorOne/baton-kyriba/releases/download/v0.2.0/baton-kyriba-v0.2.0-darwin-amd64.zip"
+      sha256 "5195fb90aeecfdfb12b2aea3590f9c68a0c802127490e032ea1bb9f2ca2ae99a"
 
       def install
         bin.install "baton-kyriba"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-kyriba/releases/download/v0.1.0/baton-kyriba-v0.1.0-darwin-arm64.zip"
-      sha256 "318dd2beaf1d6a1e2cf988a0aa11b922c014474b9bc797aa7801280cb11fc857"
+      url "https://github.com/ConductorOne/baton-kyriba/releases/download/v0.2.0/baton-kyriba-v0.2.0-darwin-arm64.zip"
+      sha256 "0aca4fcf054b4f6447a2fcff47d9057ffec0c78db5d439afd5cc47fae2f2f523"
 
       def install
         bin.install "baton-kyriba"
@@ -28,15 +28,15 @@ class BatonKyriba < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-kyriba/releases/download/v0.1.0/baton-kyriba-v0.1.0-linux-amd64.tar.gz"
-      sha256 "3a28813ddeb1635e3c090239517d3c201189a0f8f7172854e301d5865c905e89"
+      url "https://github.com/ConductorOne/baton-kyriba/releases/download/v0.2.0/baton-kyriba-v0.2.0-linux-amd64.tar.gz"
+      sha256 "6c048e6e833cea5e12272e00392b839d44a51ab6a41c02ca9dac6ba640bd85e2"
       def install
         bin.install "baton-kyriba"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-kyriba/releases/download/v0.1.0/baton-kyriba-v0.1.0-linux-arm64.tar.gz"
-      sha256 "33df447cb3216bc7723c0877d5a54eeb3db77e92c718b4a08d72041fdbf3092d"
+      url "https://github.com/ConductorOne/baton-kyriba/releases/download/v0.2.0/baton-kyriba-v0.2.0-linux-arm64.tar.gz"
+      sha256 "3d9b0356a95e39992fa2c81b9f34e881c56c5f69c92e96c1d3b91a065430a46b"
       def install
         bin.install "baton-kyriba"
       end
