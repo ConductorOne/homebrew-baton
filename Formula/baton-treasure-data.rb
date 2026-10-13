@@ -5,20 +5,20 @@
 class BatonTreasureData < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.2"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-treasure-data/releases/download/v0.0.2/baton-treasure-data-v0.0.2-darwin-amd64.zip"
-      sha256 "6e19b6d5b21b9ee2ddb5e32e8fa4d0db66b1e76f959baa6741105733fdf0ad58"
+      url "https://github.com/ConductorOne/baton-treasure-data/releases/download/v0.1.0/baton-treasure-data-v0.1.0-darwin-amd64.zip"
+      sha256 "cf53f73d8ebda14b13110d7fbd668e5218f53a5ea2e762538da2afeb1eab855b"
 
       def install
         bin.install "baton-treasure-data"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-treasure-data/releases/download/v0.0.2/baton-treasure-data-v0.0.2-darwin-arm64.zip"
-      sha256 "a8ef26b4e38d5b3d3ac6b996a0bd947582e7afb0ead058d6c2bfad840a65a508"
+      url "https://github.com/ConductorOne/baton-treasure-data/releases/download/v0.1.0/baton-treasure-data-v0.1.0-darwin-arm64.zip"
+      sha256 "c18294692dc4f6f6b65811d206006193ac091fefcf7d57e6f0e14d16cae3e1fd"
 
       def install
         bin.install "baton-treasure-data"
@@ -28,15 +28,15 @@ class BatonTreasureData < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-treasure-data/releases/download/v0.0.2/baton-treasure-data-v0.0.2-linux-amd64.tar.gz"
-      sha256 "af9a37edae546c3c17da4ba9f03a681d49201ba2f5a61f6a917cdd6de5fc5767"
+      url "https://github.com/ConductorOne/baton-treasure-data/releases/download/v0.1.0/baton-treasure-data-v0.1.0-linux-amd64.tar.gz"
+      sha256 "d8f53f45c0b237e0ed5c60a6033e46cb37c7a3a20a152ee22820c9718de165e6"
       def install
         bin.install "baton-treasure-data"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-treasure-data/releases/download/v0.0.2/baton-treasure-data-v0.0.2-linux-arm64.tar.gz"
-      sha256 "87cc30195c7c16f21e6523bc2a05334f35f9db60bcbe9992e93a62a47d295eca"
+      url "https://github.com/ConductorOne/baton-treasure-data/releases/download/v0.1.0/baton-treasure-data-v0.1.0-linux-arm64.tar.gz"
+      sha256 "81ea8b10b05c4c4d0eb019790fa16461ec11d7adb3b1034737b8f81a2364811f"
       def install
         bin.install "baton-treasure-data"
       end
