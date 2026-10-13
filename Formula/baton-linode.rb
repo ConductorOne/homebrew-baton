@@ -5,20 +5,20 @@
 class BatonLinode < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.2"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-linode/releases/download/v0.0.2/baton-linode-v0.0.2-darwin-amd64.zip"
-      sha256 "5675533ae122417be6590b78fa4d0a324e588cf5e9f392f239b12cd619a55b14"
+      url "https://github.com/ConductorOne/baton-linode/releases/download/v0.1.0/baton-linode-v0.1.0-darwin-amd64.zip"
+      sha256 "124bf4dd05d70dffeaa44b7bd4887ed02035700e6c01041568e4f415cb16afbe"
 
       def install
         bin.install "baton-linode"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-linode/releases/download/v0.0.2/baton-linode-v0.0.2-darwin-arm64.zip"
-      sha256 "faa6e6e84a3cd6cceeb857b1b8d0972312fa08657f0feed8c7db7b024e9437fa"
+      url "https://github.com/ConductorOne/baton-linode/releases/download/v0.1.0/baton-linode-v0.1.0-darwin-arm64.zip"
+      sha256 "d1676e351323287ee2660d142e52372f4e5f27692bf0a87912ad365f81f4adca"
 
       def install
         bin.install "baton-linode"
@@ -28,15 +28,15 @@ class BatonLinode < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-linode/releases/download/v0.0.2/baton-linode-v0.0.2-linux-amd64.tar.gz"
-      sha256 "d629549013c5c6d8306ebcf6ea7b2b2c71cbc5e1fe4dfc1e99d6182dab5b3bfb"
+      url "https://github.com/ConductorOne/baton-linode/releases/download/v0.1.0/baton-linode-v0.1.0-linux-amd64.tar.gz"
+      sha256 "b3f2bc8121d99c8d8c9c517ef52fd691ddee071d4d804c0ccbfa5a8ec9ca4969"
       def install
         bin.install "baton-linode"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-linode/releases/download/v0.0.2/baton-linode-v0.0.2-linux-arm64.tar.gz"
-      sha256 "57c7f6fc7ed9a2b3ecd1db0c9575d23be5380dae55d0af151fb55e743cb620d4"
+      url "https://github.com/ConductorOne/baton-linode/releases/download/v0.1.0/baton-linode-v0.1.0-linux-arm64.tar.gz"
+      sha256 "be5fa16358d83411774ad87efb5d38a02d83e98a20e2acc2bb8283c9fd629968"
       def install
         bin.install "baton-linode"
       end
