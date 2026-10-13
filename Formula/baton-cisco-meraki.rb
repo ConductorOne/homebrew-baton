@@ -5,20 +5,20 @@
 class BatonCiscoMeraki < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.5"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-cisco-meraki/releases/download/v0.0.5/baton-cisco-meraki-v0.0.5-darwin-amd64.zip"
-      sha256 "365d57c3f5453791ebdbad79b9990600a28d5d82841cb3061d15616d88bbb416"
+      url "https://github.com/ConductorOne/baton-cisco-meraki/releases/download/v0.1.0/baton-cisco-meraki-v0.1.0-darwin-amd64.zip"
+      sha256 "d9a069d8227bb11925ce314e4800504bdddf0fcd003f39c7aee6e6e97014e650"
 
       def install
         bin.install "baton-cisco-meraki"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-cisco-meraki/releases/download/v0.0.5/baton-cisco-meraki-v0.0.5-darwin-arm64.zip"
-      sha256 "ab3096d52401ed6d7d13bcea9e26df953ca0df315dfc798355d936fea7503a95"
+      url "https://github.com/ConductorOne/baton-cisco-meraki/releases/download/v0.1.0/baton-cisco-meraki-v0.1.0-darwin-arm64.zip"
+      sha256 "5cc4751f19ba6912a35dd7f66f922b35fc4b28a10e947135c65c079e3e64b154"
 
       def install
         bin.install "baton-cisco-meraki"
@@ -28,15 +28,15 @@ class BatonCiscoMeraki < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-cisco-meraki/releases/download/v0.0.5/baton-cisco-meraki-v0.0.5-linux-amd64.tar.gz"
-      sha256 "f02c7077ad107fe0706f21754cb2e4a0b6a6d1c0db564646f9ffd31f3c4f98fd"
+      url "https://github.com/ConductorOne/baton-cisco-meraki/releases/download/v0.1.0/baton-cisco-meraki-v0.1.0-linux-amd64.tar.gz"
+      sha256 "f26f39edde367e9672da472d6109ad2ef2efba3f9bfa7aa8cc442e0bfaa4ca77"
       def install
         bin.install "baton-cisco-meraki"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-cisco-meraki/releases/download/v0.0.5/baton-cisco-meraki-v0.0.5-linux-arm64.tar.gz"
-      sha256 "b84022c9bf6d4a09ba221ff1982c1f00c9c921b277ab67b17c0a5af08d96274f"
+      url "https://github.com/ConductorOne/baton-cisco-meraki/releases/download/v0.1.0/baton-cisco-meraki-v0.1.0-linux-arm64.tar.gz"
+      sha256 "8fd779f38a6acdf6f1098cfedf1990180bc2f3fe7bd8e475be295cd71c5e3f3d"
       def install
         bin.install "baton-cisco-meraki"
       end
