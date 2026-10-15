@@ -5,20 +5,20 @@
 class BatonBitbucketDatacenter < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.17"
+  version "0.1.18"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-bitbucket-datacenter/releases/download/v0.1.17/baton-bitbucket-datacenter-v0.1.17-darwin-amd64.zip"
-      sha256 "a3a89b7d01c91830b257ce66faa7825d92339a0b586d929dbc82368c0b109106"
+      url "https://github.com/ConductorOne/baton-bitbucket-datacenter/releases/download/v0.1.18/baton-bitbucket-datacenter-v0.1.18-darwin-amd64.zip"
+      sha256 "3a3dab366401071dd5508895fccbd38484f85a52284b01dbc4b71fe858e7900b"
 
       def install
         bin.install "baton-bitbucket-datacenter"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-bitbucket-datacenter/releases/download/v0.1.17/baton-bitbucket-datacenter-v0.1.17-darwin-arm64.zip"
-      sha256 "0172d4ffffd95af32227af5fde2c898d19818f94cc33b5d0464d17c69feb7990"
+      url "https://github.com/ConductorOne/baton-bitbucket-datacenter/releases/download/v0.1.18/baton-bitbucket-datacenter-v0.1.18-darwin-arm64.zip"
+      sha256 "15138e1ce39225395daa27d2e5fc5eb59114440cf039d7fdf243bf2c508a9489"
 
       def install
         bin.install "baton-bitbucket-datacenter"
@@ -28,15 +28,15 @@ class BatonBitbucketDatacenter < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-bitbucket-datacenter/releases/download/v0.1.17/baton-bitbucket-datacenter-v0.1.17-linux-amd64.tar.gz"
-      sha256 "eaf6b97369f1608b5fcc8771d4739869ae217ccd2764cbe8d458c2f9971826d0"
+      url "https://github.com/ConductorOne/baton-bitbucket-datacenter/releases/download/v0.1.18/baton-bitbucket-datacenter-v0.1.18-linux-amd64.tar.gz"
+      sha256 "a94c9a99ba0e6752217a6ae39d6b58af6b8518420e4199d42519b16a1df4dbc3"
       def install
         bin.install "baton-bitbucket-datacenter"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-bitbucket-datacenter/releases/download/v0.1.17/baton-bitbucket-datacenter-v0.1.17-linux-arm64.tar.gz"
-      sha256 "605d4d08c1451c431f477592c796732ffd0af5a1c24e04dbba8d41d14d413867"
+      url "https://github.com/ConductorOne/baton-bitbucket-datacenter/releases/download/v0.1.18/baton-bitbucket-datacenter-v0.1.18-linux-arm64.tar.gz"
+      sha256 "a9f16e7f446cab73c740d41d7f41b459c1df9118f5760ea9dbd882e4c9445376"
       def install
         bin.install "baton-bitbucket-datacenter"
       end
