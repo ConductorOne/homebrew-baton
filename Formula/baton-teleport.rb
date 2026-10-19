@@ -5,20 +5,20 @@
 class BatonTeleport < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.6"
+  version "0.0.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-teleport/releases/download/v0.0.6/baton-teleport-v0.0.6-darwin-amd64.zip"
-      sha256 "35de64618613fd3bf1dac77329472a59f09a97a921cf593bc9c282062bccd4bf"
+      url "https://github.com/ConductorOne/baton-teleport/releases/download/v0.0.7/baton-teleport-v0.0.7-darwin-amd64.zip"
+      sha256 "92b1207b8c1e3ac08dd0f62922f0b43bcf7fc9c35114b7caf7616f18b1eca2ab"
 
       def install
         bin.install "baton-teleport"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-teleport/releases/download/v0.0.6/baton-teleport-v0.0.6-darwin-arm64.zip"
-      sha256 "26a9f63f839cb609156b708d8afe8d8dc80af0a128a05e630e2a0aaf18c90414"
+      url "https://github.com/ConductorOne/baton-teleport/releases/download/v0.0.7/baton-teleport-v0.0.7-darwin-arm64.zip"
+      sha256 "2f2edcf5b0591616beb56da98a44f29eb80f2e96e8875926fea6b49d52b4e4b2"
 
       def install
         bin.install "baton-teleport"
@@ -28,15 +28,15 @@ class BatonTeleport < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-teleport/releases/download/v0.0.6/baton-teleport-v0.0.6-linux-amd64.tar.gz"
-      sha256 "c7e4ee964f7e9445187c1ed8a9af034b4b07305baf7a5c8f9e8643747b15f77a"
+      url "https://github.com/ConductorOne/baton-teleport/releases/download/v0.0.7/baton-teleport-v0.0.7-linux-amd64.tar.gz"
+      sha256 "5012f16e1e7fea29649f7d7f0536a09cb47536d9b05ec608cbc158bf89b57205"
       def install
         bin.install "baton-teleport"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-teleport/releases/download/v0.0.6/baton-teleport-v0.0.6-linux-arm64.tar.gz"
-      sha256 "03f8544b8943d9d537767a74e8d23716611ecaf835916edb2589e424ce10fe97"
+      url "https://github.com/ConductorOne/baton-teleport/releases/download/v0.0.7/baton-teleport-v0.0.7-linux-arm64.tar.gz"
+      sha256 "49f5fe380c7283389ecdd8080a311da9fd364268d70926a0d0b7853f4ad97a8c"
       def install
         bin.install "baton-teleport"
       end
