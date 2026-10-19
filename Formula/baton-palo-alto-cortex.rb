@@ -5,20 +5,20 @@
 class BatonPaloAltoCortex < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.6"
+  version "0.0.7-test"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-palo-alto-cortex/releases/download/v0.0.6/baton-palo-alto-cortex-v0.0.6-darwin-amd64.zip"
-      sha256 "588da2f79b06923e2f5689f61891560f14189bf170f3ce32c2df83b9e2ac8a10"
+      url "https://github.com/ConductorOne/baton-palo-alto-cortex/releases/download/v0.0.7-test/baton-palo-alto-cortex-v0.0.7-test-darwin-amd64.zip"
+      sha256 "46bb530513b807af74132f2e3ff97a6c9d400d78c56e6a230ea353d97ef6afec"
 
       def install
         bin.install "baton-palo-alto-cortex"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-palo-alto-cortex/releases/download/v0.0.6/baton-palo-alto-cortex-v0.0.6-darwin-arm64.zip"
-      sha256 "8210a1a6c8f0ae2a0defcdfdd662da42bfceccb2dbe176fc39d0b3eaf0eeb4e1"
+      url "https://github.com/ConductorOne/baton-palo-alto-cortex/releases/download/v0.0.7-test/baton-palo-alto-cortex-v0.0.7-test-darwin-arm64.zip"
+      sha256 "65730a7ff2245298951e8a8cba75b6cda24bac940f9ea4e434e82c4e00524297"
 
       def install
         bin.install "baton-palo-alto-cortex"
@@ -28,15 +28,15 @@ class BatonPaloAltoCortex < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-palo-alto-cortex/releases/download/v0.0.6/baton-palo-alto-cortex-v0.0.6-linux-amd64.tar.gz"
-      sha256 "4a692f516e29ae9bce376bc507fe137de49b24213ceb4d74fcd59bf6e41b98a1"
+      url "https://github.com/ConductorOne/baton-palo-alto-cortex/releases/download/v0.0.7-test/baton-palo-alto-cortex-v0.0.7-test-linux-amd64.tar.gz"
+      sha256 "226e602fd20a24d162bb160e26ff484d66b9d0d79cec7b8dc52c12845b07d344"
       def install
         bin.install "baton-palo-alto-cortex"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-palo-alto-cortex/releases/download/v0.0.6/baton-palo-alto-cortex-v0.0.6-linux-arm64.tar.gz"
-      sha256 "5a76d0f7b399b2a60e481b3f82ff38b6c855173127cc33880fc97b2af366ff72"
+      url "https://github.com/ConductorOne/baton-palo-alto-cortex/releases/download/v0.0.7-test/baton-palo-alto-cortex-v0.0.7-test-linux-arm64.tar.gz"
+      sha256 "13dd2531df1468826d1ef43e77b86fc4f0c2ab315f114287e83fb1fbe712408f"
       def install
         bin.install "baton-palo-alto-cortex"
       end
