@@ -5,20 +5,20 @@
 class BatonGoogleads < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-googleads/releases/download/v0.1.0/baton-googleads-v0.1.0-darwin-amd64.zip"
-      sha256 "d693206ee3a4325fb78fa2dfccb4706aa9f7dcb539082f40ce5cb2616e5ead16"
+      url "https://github.com/ConductorOne/baton-googleads/releases/download/v0.2.0/baton-googleads-v0.2.0-darwin-amd64.zip"
+      sha256 "0a20b5ca9bb5daace1bec3f9bb3408cbb0bcda43114a2e4dcf242cba2cb7919f"
 
       def install
         bin.install "baton-googleads"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-googleads/releases/download/v0.1.0/baton-googleads-v0.1.0-darwin-arm64.zip"
-      sha256 "e4d8e6f3fb6e446a63b4e6849004a49084c00f80e2f6fe102694f90cf8a4972e"
+      url "https://github.com/ConductorOne/baton-googleads/releases/download/v0.2.0/baton-googleads-v0.2.0-darwin-arm64.zip"
+      sha256 "e5824b8dfd6d5db265eac948c0ecdd88cd7aaff930281b42cc564602c72778aa"
 
       def install
         bin.install "baton-googleads"
@@ -28,15 +28,15 @@ class BatonGoogleads < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-googleads/releases/download/v0.1.0/baton-googleads-v0.1.0-linux-amd64.tar.gz"
-      sha256 "7342b7eaf1f3a22cc6ac3718e0c6247145a41eeca506f951f4abd072a41f2be0"
+      url "https://github.com/ConductorOne/baton-googleads/releases/download/v0.2.0/baton-googleads-v0.2.0-linux-amd64.tar.gz"
+      sha256 "bbe3cf9d759493744b52692f3a7da9182554148cd6f74ca8244956f41d395f02"
       def install
         bin.install "baton-googleads"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-googleads/releases/download/v0.1.0/baton-googleads-v0.1.0-linux-arm64.tar.gz"
-      sha256 "4b3c653119c6497e82759101e7240fe8106961e330dddf245dd6ca14b639f7e9"
+      url "https://github.com/ConductorOne/baton-googleads/releases/download/v0.2.0/baton-googleads-v0.2.0-linux-arm64.tar.gz"
+      sha256 "274672569ffbff21c2298e406d47ae7ce107212d5ed2986c3f7cb557aa9cb4ab"
       def install
         bin.install "baton-googleads"
       end
