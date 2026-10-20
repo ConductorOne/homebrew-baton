@@ -5,20 +5,20 @@
 class BatonVultr < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-vultr/releases/download/v0.2.0/baton-vultr-v0.2.0-darwin-amd64.zip"
-      sha256 "c7f34b6a89800b7a60250d284f04066129f098b7912a6e65ecff324f5761f12b"
+      url "https://github.com/ConductorOne/baton-vultr/releases/download/v0.3.0/baton-vultr-v0.3.0-darwin-amd64.zip"
+      sha256 "894bc601807e65007086d39638ce69b7df2d119ed9d6113646784967542ad271"
 
       def install
         bin.install "baton-vultr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-vultr/releases/download/v0.2.0/baton-vultr-v0.2.0-darwin-arm64.zip"
-      sha256 "b155c6d02230b4b34251a480a8c78b49b695355b0de81d6c6bdaadfc05f07d02"
+      url "https://github.com/ConductorOne/baton-vultr/releases/download/v0.3.0/baton-vultr-v0.3.0-darwin-arm64.zip"
+      sha256 "84cef501cf8440e050b5db0dfa6740e3f5f7e0c081473d19054d83c86f614b22"
 
       def install
         bin.install "baton-vultr"
@@ -28,15 +28,15 @@ class BatonVultr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-vultr/releases/download/v0.2.0/baton-vultr-v0.2.0-linux-amd64.tar.gz"
-      sha256 "b46b0379fc8573cfdd774418f727290710ba8a10556974985f908a22f882f534"
+      url "https://github.com/ConductorOne/baton-vultr/releases/download/v0.3.0/baton-vultr-v0.3.0-linux-amd64.tar.gz"
+      sha256 "cfb9ba0677f73c61e89d3cf41299cff58bcd38019e82cde2e60b193c00586cc2"
       def install
         bin.install "baton-vultr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-vultr/releases/download/v0.2.0/baton-vultr-v0.2.0-linux-arm64.tar.gz"
-      sha256 "6a1bc975144103d148ea323831bd485d21719f756569d599cf1655f7dbd08961"
+      url "https://github.com/ConductorOne/baton-vultr/releases/download/v0.3.0/baton-vultr-v0.3.0-linux-arm64.tar.gz"
+      sha256 "a1286815c5a3c0034a3af0ddbc3513fd9223b87b3677c34f00970c1eed0a76dc"
       def install
         bin.install "baton-vultr"
       end
