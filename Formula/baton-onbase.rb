@@ -5,20 +5,20 @@
 class BatonOnbase < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-onbase/releases/download/v0.1.1/baton-onbase-v0.1.1-darwin-amd64.zip"
-      sha256 "9353d5f59061e50f9b01c2239804fc5eb40642dab99372faa74c3a432f1b3878"
+      url "https://github.com/ConductorOne/baton-onbase/releases/download/v0.1.2/baton-onbase-v0.1.2-darwin-amd64.zip"
+      sha256 "737fd65f8ab23b77bb30be143334afefad6807579ac6bb29405adb3c8a4fe969"
 
       def install
         bin.install "baton-onbase"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-onbase/releases/download/v0.1.1/baton-onbase-v0.1.1-darwin-arm64.zip"
-      sha256 "d8a6380ef39581793e3aaf7a780cef626d630a70cca3200e266616ceeaee725f"
+      url "https://github.com/ConductorOne/baton-onbase/releases/download/v0.1.2/baton-onbase-v0.1.2-darwin-arm64.zip"
+      sha256 "6a8897888701fbd58dbe7bc6ee585091664b9961670ed914e050f7272a3ffce7"
 
       def install
         bin.install "baton-onbase"
@@ -28,15 +28,15 @@ class BatonOnbase < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-onbase/releases/download/v0.1.1/baton-onbase-v0.1.1-linux-amd64.tar.gz"
-      sha256 "2faa2a837771f92813981475c9d52c686df5299c521208937714e83b038cd0e9"
+      url "https://github.com/ConductorOne/baton-onbase/releases/download/v0.1.2/baton-onbase-v0.1.2-linux-amd64.tar.gz"
+      sha256 "c2c739e5aeea4dbc2eea31c70748020c2676636936dc41f0ae80f154d91b836a"
       def install
         bin.install "baton-onbase"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-onbase/releases/download/v0.1.1/baton-onbase-v0.1.1-linux-arm64.tar.gz"
-      sha256 "fe0c92535c2eae22ecd7842d84cd061d44aa0f02312ba95531c08af968d4eb8c"
+      url "https://github.com/ConductorOne/baton-onbase/releases/download/v0.1.2/baton-onbase-v0.1.2-linux-arm64.tar.gz"
+      sha256 "ec54fd1899c750e4f866cb6a60026b233f33944651cad5d13ac855d2c48510d4"
       def install
         bin.install "baton-onbase"
       end
