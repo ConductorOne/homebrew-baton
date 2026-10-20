@@ -5,20 +5,20 @@
 class BatonClaudeEnterprise < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-claude-enterprise/releases/download/v0.1.0/baton-claude-enterprise-v0.1.0-darwin-amd64.zip"
-      sha256 "e11033def68c037d7b2931533362b5bb6f9a3bb6b4467b82103c226ec9153dd4"
+      url "https://github.com/ConductorOne/baton-claude-enterprise/releases/download/v0.2.0/baton-claude-enterprise-v0.2.0-darwin-amd64.zip"
+      sha256 "cd627165a387c015ef1307e1140f05117889a0f26bf989bca136fe76e96b8ecc"
 
       def install
         bin.install "baton-claude-enterprise"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-claude-enterprise/releases/download/v0.1.0/baton-claude-enterprise-v0.1.0-darwin-arm64.zip"
-      sha256 "5f8b76ac4c19d9643ee800b5d31f96f88c628b765dd497e55e064c66e1a38a8c"
+      url "https://github.com/ConductorOne/baton-claude-enterprise/releases/download/v0.2.0/baton-claude-enterprise-v0.2.0-darwin-arm64.zip"
+      sha256 "a7e461261cf23b7e4bf227519bfc90ece9723d31f697bd873d98c15b3430511e"
 
       def install
         bin.install "baton-claude-enterprise"
@@ -28,15 +28,15 @@ class BatonClaudeEnterprise < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-claude-enterprise/releases/download/v0.1.0/baton-claude-enterprise-v0.1.0-linux-amd64.tar.gz"
-      sha256 "b44be60770d69cd1f33fba654176d721d26d68d9b56677700251ec09169e9c10"
+      url "https://github.com/ConductorOne/baton-claude-enterprise/releases/download/v0.2.0/baton-claude-enterprise-v0.2.0-linux-amd64.tar.gz"
+      sha256 "0fb611fc95f9094a74432a381ebe553ef796e7cdd008d838126190cad01e1b2f"
       def install
         bin.install "baton-claude-enterprise"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-claude-enterprise/releases/download/v0.1.0/baton-claude-enterprise-v0.1.0-linux-arm64.tar.gz"
-      sha256 "0fbec494d4ac275bd4a48eda45e48b24a56750af763841d4dcc40518702118dc"
+      url "https://github.com/ConductorOne/baton-claude-enterprise/releases/download/v0.2.0/baton-claude-enterprise-v0.2.0-linux-arm64.tar.gz"
+      sha256 "2f9edc8e714d8cf0880a8f0b1c8a567a158149f347c469def12e7614a418a4db"
       def install
         bin.install "baton-claude-enterprise"
       end
