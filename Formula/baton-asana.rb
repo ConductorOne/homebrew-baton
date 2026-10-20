@@ -5,20 +5,20 @@
 class BatonAsana < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-asana/releases/download/v0.1.0/baton-asana-v0.1.0-darwin-amd64.zip"
-      sha256 "eadd0c863426399947edfe95e15d857a450bf9357c3247aa3074e5d3c42350a0"
+      url "https://github.com/ConductorOne/baton-asana/releases/download/v0.2.0/baton-asana-v0.2.0-darwin-amd64.zip"
+      sha256 "1d34be919692edaa9335be2e780725606408ac075150a031c903b2cb08a4609c"
 
       def install
         bin.install "baton-asana"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-asana/releases/download/v0.1.0/baton-asana-v0.1.0-darwin-arm64.zip"
-      sha256 "68398b60c7900d065d46ac2ff476c0b146115b905eb710193cf9393c822ce67e"
+      url "https://github.com/ConductorOne/baton-asana/releases/download/v0.2.0/baton-asana-v0.2.0-darwin-arm64.zip"
+      sha256 "0440df18b53c00d15eaed1a8972609cb2a2aa8865606c223fecff737b5fee9d2"
 
       def install
         bin.install "baton-asana"
@@ -28,15 +28,15 @@ class BatonAsana < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-asana/releases/download/v0.1.0/baton-asana-v0.1.0-linux-amd64.tar.gz"
-      sha256 "feca99491f8f8bef38c82895308cd62961d55e6b3383933b3d97f02817f6957d"
+      url "https://github.com/ConductorOne/baton-asana/releases/download/v0.2.0/baton-asana-v0.2.0-linux-amd64.tar.gz"
+      sha256 "ab7fcd6018d4cd4e7e2c3f0895d3023cdee25db08d9942bd46bbd6c50c85e96a"
       def install
         bin.install "baton-asana"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-asana/releases/download/v0.1.0/baton-asana-v0.1.0-linux-arm64.tar.gz"
-      sha256 "eccd05f9baf16f6cdeb3a597d762a3aa78a04bfe780a543afa06a4681f8e32ad"
+      url "https://github.com/ConductorOne/baton-asana/releases/download/v0.2.0/baton-asana-v0.2.0-linux-arm64.tar.gz"
+      sha256 "06a3581eacb844a557f4680419e281166e7e67719f9c312b1359c64cd303c227"
       def install
         bin.install "baton-asana"
       end
