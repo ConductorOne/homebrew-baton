@@ -5,20 +5,20 @@
 class BatonSumoLogic < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.5"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-sumo-logic/releases/download/v0.1.5/baton-sumo-logic-v0.1.5-darwin-amd64.zip"
-      sha256 "cf13aeeddc2691dd7542c2fd747c7d44ab772525898d092d8248258e2f6d656d"
+      url "https://github.com/ConductorOne/baton-sumo-logic/releases/download/v0.2.0/baton-sumo-logic-v0.2.0-darwin-amd64.zip"
+      sha256 "b2393fc0f1b83ddf5747574db78ee616968847eb62071a5997309bc40865d51a"
 
       def install
         bin.install "baton-sumo-logic"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-sumo-logic/releases/download/v0.1.5/baton-sumo-logic-v0.1.5-darwin-arm64.zip"
-      sha256 "41ef2d906315dcaffe5c283e5d3c42ceca3c68be0e7314f3c4805a410f2db782"
+      url "https://github.com/ConductorOne/baton-sumo-logic/releases/download/v0.2.0/baton-sumo-logic-v0.2.0-darwin-arm64.zip"
+      sha256 "980988cb4514b11e306de6386a744aef0a4244e99cbe63070fe6837f177ba31c"
 
       def install
         bin.install "baton-sumo-logic"
@@ -28,15 +28,15 @@ class BatonSumoLogic < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sumo-logic/releases/download/v0.1.5/baton-sumo-logic-v0.1.5-linux-amd64.tar.gz"
-      sha256 "70af0ad01fdfaa7ec61de6963c332e2cec2b0edc2f11d3b88e4bd57b9ca5ff3d"
+      url "https://github.com/ConductorOne/baton-sumo-logic/releases/download/v0.2.0/baton-sumo-logic-v0.2.0-linux-amd64.tar.gz"
+      sha256 "890d62f8bf8c764acb6160cc155515fce2125e7d2d501230ee89c0e1261114f9"
       def install
         bin.install "baton-sumo-logic"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sumo-logic/releases/download/v0.1.5/baton-sumo-logic-v0.1.5-linux-arm64.tar.gz"
-      sha256 "ee49bd30696713b13273ba78527debde4d0e037bc0ffe7ee770a20ad865cb63a"
+      url "https://github.com/ConductorOne/baton-sumo-logic/releases/download/v0.2.0/baton-sumo-logic-v0.2.0-linux-arm64.tar.gz"
+      sha256 "832ff88876bd39bd2ba219a0eca380c9253bd6a1cc5f91731af882c7ee61591e"
       def install
         bin.install "baton-sumo-logic"
       end
