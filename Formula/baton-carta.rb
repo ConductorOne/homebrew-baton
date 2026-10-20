@@ -5,20 +5,20 @@
 class BatonCarta < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-carta/releases/download/v0.1.0/baton-carta-v0.1.0-darwin-amd64.zip"
-      sha256 "8ec04d126f24e55c99119ea666b7cde4038d0b4357c65711a43df854cfa4bf80"
+      url "https://github.com/ConductorOne/baton-carta/releases/download/v0.2.0/baton-carta-v0.2.0-darwin-amd64.zip"
+      sha256 "2fba1c2b064101d2a6aa642a1ad34d4e561e4332bcc6d889115d8564254747c9"
 
       def install
         bin.install "baton-carta"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-carta/releases/download/v0.1.0/baton-carta-v0.1.0-darwin-arm64.zip"
-      sha256 "ae5dcfdfa3f0561e5ccc6f1169aa17103986ff7b036dddd7918c891d4d8b6c8c"
+      url "https://github.com/ConductorOne/baton-carta/releases/download/v0.2.0/baton-carta-v0.2.0-darwin-arm64.zip"
+      sha256 "6e56bce592ce5706362567564fe725920c31ccec179f577ad125f9977a734438"
 
       def install
         bin.install "baton-carta"
@@ -28,15 +28,15 @@ class BatonCarta < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-carta/releases/download/v0.1.0/baton-carta-v0.1.0-linux-amd64.tar.gz"
-      sha256 "a920a9749e2a101d12a8ac1131200e960401d4cb0df5fb0f82f9c90e09c24ee3"
+      url "https://github.com/ConductorOne/baton-carta/releases/download/v0.2.0/baton-carta-v0.2.0-linux-amd64.tar.gz"
+      sha256 "b2327d2f5ffa0fb9138d0fcea9a1bf312d9c7a06d6d8e3d8b4d4415012c2e9ef"
       def install
         bin.install "baton-carta"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-carta/releases/download/v0.1.0/baton-carta-v0.1.0-linux-arm64.tar.gz"
-      sha256 "3d7f6a2f25baa93cd48dae02a493919db3ea2d77690a79cc748d50a3f21088fd"
+      url "https://github.com/ConductorOne/baton-carta/releases/download/v0.2.0/baton-carta-v0.2.0-linux-arm64.tar.gz"
+      sha256 "49408f10864482b8590482dfed1e5c0d8a0c3c30a27baaf4ca8d77753089f0b1"
       def install
         bin.install "baton-carta"
       end
