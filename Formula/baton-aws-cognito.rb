@@ -5,20 +5,20 @@
 class BatonAwsCognito < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.2"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-aws-cognito/releases/download/v0.0.2/baton-aws-cognito-v0.0.2-darwin-amd64.zip"
-      sha256 "b9e8942887f677aadba6dee717b910f3130e9f26115bfc27a17da05af7fd5dc6"
+      url "https://github.com/ConductorOne/baton-aws-cognito/releases/download/v0.1.0/baton-aws-cognito-v0.1.0-darwin-amd64.zip"
+      sha256 "36c343a6de0546273e218114dc94aacae5c9a14f4b9212c015c8a643dc944d2e"
 
       def install
         bin.install "baton-aws-cognito"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-aws-cognito/releases/download/v0.0.2/baton-aws-cognito-v0.0.2-darwin-arm64.zip"
-      sha256 "4610f89184a7f0040aeef67e35a5a215b8ad91a7d10d45bf58eadc628af6eef2"
+      url "https://github.com/ConductorOne/baton-aws-cognito/releases/download/v0.1.0/baton-aws-cognito-v0.1.0-darwin-arm64.zip"
+      sha256 "4f7c28ae8e67c25d7dd123803ae9b3ced1194b64907f36610f96c90828e608a1"
 
       def install
         bin.install "baton-aws-cognito"
@@ -28,15 +28,15 @@ class BatonAwsCognito < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-aws-cognito/releases/download/v0.0.2/baton-aws-cognito-v0.0.2-linux-amd64.tar.gz"
-      sha256 "8d3a4843b477022a3d3492bf836bb38a37d770345122288b5be52a80afcb10e3"
+      url "https://github.com/ConductorOne/baton-aws-cognito/releases/download/v0.1.0/baton-aws-cognito-v0.1.0-linux-amd64.tar.gz"
+      sha256 "0666ddf72d8212391da15f5d2dbdebce4aabd9fc12d0d6175b8b56e4f15d6dfa"
       def install
         bin.install "baton-aws-cognito"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-aws-cognito/releases/download/v0.0.2/baton-aws-cognito-v0.0.2-linux-arm64.tar.gz"
-      sha256 "c3a1f1c1e14108f2558de81d4d391d4df6d038d10ddd076263e1704abc5f0631"
+      url "https://github.com/ConductorOne/baton-aws-cognito/releases/download/v0.1.0/baton-aws-cognito-v0.1.0-linux-arm64.tar.gz"
+      sha256 "497f2e599780e0dbfbe7b4ecde6a772e6c42c193c5433df9dafc323a2a05f853"
       def install
         bin.install "baton-aws-cognito"
       end
