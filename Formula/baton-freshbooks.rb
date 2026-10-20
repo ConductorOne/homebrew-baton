@@ -5,20 +5,20 @@
 class BatonFreshbooks < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.2"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-freshbooks/releases/download/v0.1.2/baton-freshbooks-v0.1.2-darwin-amd64.zip"
-      sha256 "5a52d6b5b2809497c4105e43fa8aea41b485aab1c2c1d1be629b4deb6b5c55ee"
+      url "https://github.com/ConductorOne/baton-freshbooks/releases/download/v0.2.0/baton-freshbooks-v0.2.0-darwin-amd64.zip"
+      sha256 "d7ae3830b6af65e628ec1605024dc42a21fbc926558372a882e1a8fd9f530e40"
 
       def install
         bin.install "baton-freshbooks"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-freshbooks/releases/download/v0.1.2/baton-freshbooks-v0.1.2-darwin-arm64.zip"
-      sha256 "6f843d249e2781e3422830e0d2b26c909a2ca3979ad1b4da201fd4486bfa19d6"
+      url "https://github.com/ConductorOne/baton-freshbooks/releases/download/v0.2.0/baton-freshbooks-v0.2.0-darwin-arm64.zip"
+      sha256 "165bf03b2efdf05acc30c644e8cfeb200f13cec2ccb8114de3020308a995ca9d"
 
       def install
         bin.install "baton-freshbooks"
@@ -28,15 +28,15 @@ class BatonFreshbooks < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-freshbooks/releases/download/v0.1.2/baton-freshbooks-v0.1.2-linux-amd64.tar.gz"
-      sha256 "5fa56fc332ae59f88ac1ca383aed91bed0c5607cdb1db35c124ff9c2a3966730"
+      url "https://github.com/ConductorOne/baton-freshbooks/releases/download/v0.2.0/baton-freshbooks-v0.2.0-linux-amd64.tar.gz"
+      sha256 "7ebfa75753fe4530cc3b598d16ee8de76ce0459a57c9c778fc5c4f9c398cb776"
       def install
         bin.install "baton-freshbooks"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-freshbooks/releases/download/v0.1.2/baton-freshbooks-v0.1.2-linux-arm64.tar.gz"
-      sha256 "4aa075f2d85acc610c10875890966f8b5aaa8587d825a7b4e5256ee463cd7320"
+      url "https://github.com/ConductorOne/baton-freshbooks/releases/download/v0.2.0/baton-freshbooks-v0.2.0-linux-arm64.tar.gz"
+      sha256 "4defc75cd0131eccbcd4411bca4085905c96b5d0dba42d0178e836c9affe8b8a"
       def install
         bin.install "baton-freshbooks"
       end
