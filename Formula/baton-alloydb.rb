@@ -5,20 +5,20 @@
 class BatonAlloydb < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.1"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-alloydb/releases/download/v0.2.1/baton-alloydb-v0.2.1-darwin-amd64.zip"
-      sha256 "fc065d812ad2319c702af3a22be37a3d3bd5f659ffa648e33fbbcea215edca27"
+      url "https://github.com/ConductorOne/baton-alloydb/releases/download/v0.3.0/baton-alloydb-v0.3.0-darwin-amd64.zip"
+      sha256 "649f49714327cd53bbb332238b8b1b3d9f13a24ca87c3e859dedfa23970694b8"
 
       def install
         bin.install "baton-alloydb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-alloydb/releases/download/v0.2.1/baton-alloydb-v0.2.1-darwin-arm64.zip"
-      sha256 "88562e5d90e284033580a8c42e52469fdb71fb9a5884c6f95cbce1d9c989d6da"
+      url "https://github.com/ConductorOne/baton-alloydb/releases/download/v0.3.0/baton-alloydb-v0.3.0-darwin-arm64.zip"
+      sha256 "6cbd448f918b8794504c511c0088681d34d505857ec867e21c3f882e0009df7d"
 
       def install
         bin.install "baton-alloydb"
@@ -28,15 +28,15 @@ class BatonAlloydb < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-alloydb/releases/download/v0.2.1/baton-alloydb-v0.2.1-linux-amd64.tar.gz"
-      sha256 "6d8a9a29b133e9b1a6adee738eeca8c34c82cbca4641bb21d83cd68b30f4f825"
+      url "https://github.com/ConductorOne/baton-alloydb/releases/download/v0.3.0/baton-alloydb-v0.3.0-linux-amd64.tar.gz"
+      sha256 "010bbf86c9b5c2d383372f5ff9f15896f499a455edafd91f7f6c74818362b723"
       def install
         bin.install "baton-alloydb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-alloydb/releases/download/v0.2.1/baton-alloydb-v0.2.1-linux-arm64.tar.gz"
-      sha256 "a62981ba6801754fc9ff89d4bbf2a09651c6c9032dc1b90b606f8ff4b7968f1d"
+      url "https://github.com/ConductorOne/baton-alloydb/releases/download/v0.3.0/baton-alloydb-v0.3.0-linux-arm64.tar.gz"
+      sha256 "22a15286d7589890d2c56916fe8b51a0b6bcb2972cdcd6bc11472c5d001af7f2"
       def install
         bin.install "baton-alloydb"
       end
