@@ -5,20 +5,20 @@
 class BatonAtlassian < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.17"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-atlassian/releases/download/v0.0.17/baton-atlassian-v0.0.17-darwin-amd64.zip"
-      sha256 "5be5d0f8ae65d19c391f45756f6c9054c52c0f7b1955c3e379ba2c64f8c1a9df"
+      url "https://github.com/ConductorOne/baton-atlassian/releases/download/v0.1.0/baton-atlassian-v0.1.0-darwin-amd64.zip"
+      sha256 "439e6578c8a640cc15dc1a48fb7154ab663a7b9a0ec8603388d934dadd9fdc5a"
 
       def install
         bin.install "baton-atlassian"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-atlassian/releases/download/v0.0.17/baton-atlassian-v0.0.17-darwin-arm64.zip"
-      sha256 "33989ba64ec369b91f9f88a27ff86f5c1d1226969abb8c1898144c92b7287d2f"
+      url "https://github.com/ConductorOne/baton-atlassian/releases/download/v0.1.0/baton-atlassian-v0.1.0-darwin-arm64.zip"
+      sha256 "5b1b328d11b017871ed3398a968f68f4c21cd7836fc706946870b4c9ad971452"
 
       def install
         bin.install "baton-atlassian"
@@ -28,15 +28,15 @@ class BatonAtlassian < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-atlassian/releases/download/v0.0.17/baton-atlassian-v0.0.17-linux-amd64.tar.gz"
-      sha256 "6db5f14826f7fac38c1c9e424aeb14f60253243cdf4d56475b10e748c3053853"
+      url "https://github.com/ConductorOne/baton-atlassian/releases/download/v0.1.0/baton-atlassian-v0.1.0-linux-amd64.tar.gz"
+      sha256 "7a8758c7e65c469e3bdd59ec3e4b036a0ff62bae33ac778c64de21e988b32569"
       def install
         bin.install "baton-atlassian"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-atlassian/releases/download/v0.0.17/baton-atlassian-v0.0.17-linux-arm64.tar.gz"
-      sha256 "ebeedac9ace618db90e834f1520b53dc91b78b86723be7e71c919300574c0ff4"
+      url "https://github.com/ConductorOne/baton-atlassian/releases/download/v0.1.0/baton-atlassian-v0.1.0-linux-arm64.tar.gz"
+      sha256 "cdd790775aea1583700be254cf8461600c20d6255741b0345990f4c585cd68cb"
       def install
         bin.install "baton-atlassian"
       end
