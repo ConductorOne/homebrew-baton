@@ -5,20 +5,20 @@
 class BatonNinjio < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-ninjio/releases/download/v0.2.0/baton-ninjio-v0.2.0-darwin-amd64.zip"
-      sha256 "f35d5af156ab0d5914d07ff340c97051bccd3e314a027b07ded76c74e17aea5c"
+      url "https://github.com/ConductorOne/baton-ninjio/releases/download/v0.2.1/baton-ninjio-v0.2.1-darwin-amd64.zip"
+      sha256 "c2be41024d500587648f574096941c61b54c5eb8422e389cb2a107cebcb3078f"
 
       def install
         bin.install "baton-ninjio"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-ninjio/releases/download/v0.2.0/baton-ninjio-v0.2.0-darwin-arm64.zip"
-      sha256 "198e8b546f9ee06bb5e41ce4c3a8d28b76d7fce2bf31f7239d2289c5b9ffd4d9"
+      url "https://github.com/ConductorOne/baton-ninjio/releases/download/v0.2.1/baton-ninjio-v0.2.1-darwin-arm64.zip"
+      sha256 "f300cfa01829b8ef3d7777f23c8e6f693034051e77396b3ba94a3c7be8e9625e"
 
       def install
         bin.install "baton-ninjio"
@@ -28,15 +28,15 @@ class BatonNinjio < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ninjio/releases/download/v0.2.0/baton-ninjio-v0.2.0-linux-amd64.tar.gz"
-      sha256 "f14646f2c94de473bba946a34ef4e7aca6fa888b0c17da4ec64a2539e6207d79"
+      url "https://github.com/ConductorOne/baton-ninjio/releases/download/v0.2.1/baton-ninjio-v0.2.1-linux-amd64.tar.gz"
+      sha256 "e9f516f376d30d1d7b59d54ecbc22c368c36271f535ae90764ec450cf0287533"
       def install
         bin.install "baton-ninjio"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ninjio/releases/download/v0.2.0/baton-ninjio-v0.2.0-linux-arm64.tar.gz"
-      sha256 "3b071fa87817a28c36a43be776a72ce3c1fd766bf79eb078fc0d9bb5f45f402d"
+      url "https://github.com/ConductorOne/baton-ninjio/releases/download/v0.2.1/baton-ninjio-v0.2.1-linux-arm64.tar.gz"
+      sha256 "1ac24735437365d0a164b97c1e985532b0bc905250bd2f073a54375577775b57"
       def install
         bin.install "baton-ninjio"
       end
