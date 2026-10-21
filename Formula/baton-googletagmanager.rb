@@ -5,20 +5,20 @@
 class BatonGoogletagmanager < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-googletagmanager/releases/download/v0.2.0/baton-googletagmanager-v0.2.0-darwin-amd64.zip"
-      sha256 "569739e0101247d317355a7c5ac7eb663b2dab30baa77386b72991176b74b11a"
+      url "https://github.com/ConductorOne/baton-googletagmanager/releases/download/v0.2.1/baton-googletagmanager-v0.2.1-darwin-amd64.zip"
+      sha256 "a4c84ddcf15d640edfe2abe6df79cb876ea669819a1d0e9c191e9cf06b95c404"
 
       def install
         bin.install "baton-googletagmanager"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-googletagmanager/releases/download/v0.2.0/baton-googletagmanager-v0.2.0-darwin-arm64.zip"
-      sha256 "064ed8602e2e761f3ef450c601b32da36c9ac5a1db3cb2c2560086f76082ece5"
+      url "https://github.com/ConductorOne/baton-googletagmanager/releases/download/v0.2.1/baton-googletagmanager-v0.2.1-darwin-arm64.zip"
+      sha256 "19375edd3640ac9395db1aac73143ad0da7c0d6e70d27ad6ea3e61135a81edf1"
 
       def install
         bin.install "baton-googletagmanager"
@@ -28,15 +28,15 @@ class BatonGoogletagmanager < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-googletagmanager/releases/download/v0.2.0/baton-googletagmanager-v0.2.0-linux-amd64.tar.gz"
-      sha256 "d2b87e862067fea9fe18a2c4cd4f163bef183b8f5d13476d0526e99c0e89ad55"
+      url "https://github.com/ConductorOne/baton-googletagmanager/releases/download/v0.2.1/baton-googletagmanager-v0.2.1-linux-amd64.tar.gz"
+      sha256 "dca643f96cb6ac231188fdda820fd8bfee700839bbb78c3c451c31c5906e3c3a"
       def install
         bin.install "baton-googletagmanager"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-googletagmanager/releases/download/v0.2.0/baton-googletagmanager-v0.2.0-linux-arm64.tar.gz"
-      sha256 "492f41d90171da0246ea3863cda8cb3d8c1faa5aef94ac3d95a0930d70f83e49"
+      url "https://github.com/ConductorOne/baton-googletagmanager/releases/download/v0.2.1/baton-googletagmanager-v0.2.1-linux-arm64.tar.gz"
+      sha256 "233fcf9a26c77f3145660a4a6d465e93c8c09b0b13aa5dbe8671269c6e5c58d8"
       def install
         bin.install "baton-googletagmanager"
       end
