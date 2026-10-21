@@ -5,20 +5,20 @@
 class BatonSuccessfactorsScim < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-successfactors-scim/releases/download/v0.3.0/baton-successfactors-scim-v0.3.0-darwin-amd64.zip"
-      sha256 "21c960d24d384eac19c6938e180a53eb14acea448a0f9173b15443a5637b3fb6"
+      url "https://github.com/ConductorOne/baton-successfactors-scim/releases/download/v0.3.1/baton-successfactors-scim-v0.3.1-darwin-amd64.zip"
+      sha256 "185cb1975485d5a02968b4c6f0b16a20e1663f60db7fe60a8d57164c752ffce8"
 
       def install
         bin.install "baton-successfactors-scim"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-successfactors-scim/releases/download/v0.3.0/baton-successfactors-scim-v0.3.0-darwin-arm64.zip"
-      sha256 "ca3f2fa8c24d03b3b4bf9132dd17544fd6b1f541754ef7342dc89f6b684ff836"
+      url "https://github.com/ConductorOne/baton-successfactors-scim/releases/download/v0.3.1/baton-successfactors-scim-v0.3.1-darwin-arm64.zip"
+      sha256 "0b6c6ac99908c8b89c6423bae457c52d818f4b58e472eed61df7fd5ce1f88ebc"
 
       def install
         bin.install "baton-successfactors-scim"
@@ -28,15 +28,15 @@ class BatonSuccessfactorsScim < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-successfactors-scim/releases/download/v0.3.0/baton-successfactors-scim-v0.3.0-linux-amd64.tar.gz"
-      sha256 "bcfb5298b8746eb0ee656d291e1d99b6cce000bb3c42be1ef191e71a83e1093c"
+      url "https://github.com/ConductorOne/baton-successfactors-scim/releases/download/v0.3.1/baton-successfactors-scim-v0.3.1-linux-amd64.tar.gz"
+      sha256 "d025d9efd408ce3fa366c53415460e5b6b92384d87d77a8fa538401e954d8bfe"
       def install
         bin.install "baton-successfactors-scim"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-successfactors-scim/releases/download/v0.3.0/baton-successfactors-scim-v0.3.0-linux-arm64.tar.gz"
-      sha256 "d9411b1e2f344b75391114c297b3cad19e1b3571c3bf06a38920755e26e7c96d"
+      url "https://github.com/ConductorOne/baton-successfactors-scim/releases/download/v0.3.1/baton-successfactors-scim-v0.3.1-linux-arm64.tar.gz"
+      sha256 "e20f3ab62da6bcd98e507abba019d6480dee0ceffc65d5b87973ddf21f15a837"
       def install
         bin.install "baton-successfactors-scim"
       end
