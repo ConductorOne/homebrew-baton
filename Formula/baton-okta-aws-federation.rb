@@ -5,20 +5,20 @@
 class BatonOktaAwsFederation < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.5.0"
+  version "0.5.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-okta-aws-federation/releases/download/v0.5.0/baton-okta-aws-federation-v0.5.0-darwin-amd64.zip"
-      sha256 "23c253640069b6773a65c80301a51596b54d9494f4d9410c066effd1032b25bf"
+      url "https://github.com/ConductorOne/baton-okta-aws-federation/releases/download/v0.5.1/baton-okta-aws-federation-v0.5.1-darwin-amd64.zip"
+      sha256 "61ea958ba6fb1bc28a4001f3048a4d468867ed5eee1da6a429d9907c675cca5d"
 
       def install
         bin.install "baton-okta-aws-federation"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-okta-aws-federation/releases/download/v0.5.0/baton-okta-aws-federation-v0.5.0-darwin-arm64.zip"
-      sha256 "f94b81af7e5de2c07ba570b1fec81ca331717ec11cff5e74bb15b65ccd536e31"
+      url "https://github.com/ConductorOne/baton-okta-aws-federation/releases/download/v0.5.1/baton-okta-aws-federation-v0.5.1-darwin-arm64.zip"
+      sha256 "7d61ddd80d863c9cee1fe71071ee5f4a8442377b31befecc3bf40bfd04f27cce"
 
       def install
         bin.install "baton-okta-aws-federation"
@@ -28,15 +28,15 @@ class BatonOktaAwsFederation < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-okta-aws-federation/releases/download/v0.5.0/baton-okta-aws-federation-v0.5.0-linux-amd64.tar.gz"
-      sha256 "e7c398420d7a28dab6612ea03b593579c3673b8aeb85d2c728e213db405f23c3"
+      url "https://github.com/ConductorOne/baton-okta-aws-federation/releases/download/v0.5.1/baton-okta-aws-federation-v0.5.1-linux-amd64.tar.gz"
+      sha256 "8fe55eef033191ed62b5776405181eab4bd09efa4ca0b583f80c329cafa6082c"
       def install
         bin.install "baton-okta-aws-federation"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-okta-aws-federation/releases/download/v0.5.0/baton-okta-aws-federation-v0.5.0-linux-arm64.tar.gz"
-      sha256 "2da3a4cdba7c8394cafdd2530d61426a95c886052077dbcae6a093beaee95e85"
+      url "https://github.com/ConductorOne/baton-okta-aws-federation/releases/download/v0.5.1/baton-okta-aws-federation-v0.5.1-linux-arm64.tar.gz"
+      sha256 "77b602a792ec580849a38619f783504cc39a3f15594b0452672af57818e87be2"
       def install
         bin.install "baton-okta-aws-federation"
       end
