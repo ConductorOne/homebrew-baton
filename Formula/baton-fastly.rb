@@ -5,20 +5,20 @@
 class BatonFastly < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-fastly/releases/download/v0.2.0/baton-fastly-v0.2.0-darwin-amd64.zip"
-      sha256 "e3b59153953da8912fa2911edacc6771820e8dc11915667bb369371b8399012b"
+      url "https://github.com/ConductorOne/baton-fastly/releases/download/v0.2.1/baton-fastly-v0.2.1-darwin-amd64.zip"
+      sha256 "a6826d2c414b1d8517bfa19feda962e367ebf80b8297236dcc3ec91bd678c776"
 
       def install
         bin.install "baton-fastly"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-fastly/releases/download/v0.2.0/baton-fastly-v0.2.0-darwin-arm64.zip"
-      sha256 "33a723aa0b3c1e570193d5abf06e7472962bec3ca3840940cb35fd7e7dc74d03"
+      url "https://github.com/ConductorOne/baton-fastly/releases/download/v0.2.1/baton-fastly-v0.2.1-darwin-arm64.zip"
+      sha256 "ef7f9a2c0141813e3a17133b2c1f80955fb24c805edfe05aa431e99cb5b5304c"
 
       def install
         bin.install "baton-fastly"
@@ -28,15 +28,15 @@ class BatonFastly < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-fastly/releases/download/v0.2.0/baton-fastly-v0.2.0-linux-amd64.tar.gz"
-      sha256 "ea8be5d9ecc9b6a94bdf5331979add85a00c7c1e2765fa97b80d12f741aa6b0d"
+      url "https://github.com/ConductorOne/baton-fastly/releases/download/v0.2.1/baton-fastly-v0.2.1-linux-amd64.tar.gz"
+      sha256 "66dc833b40c885311ced7fe5b850e79ef4a33f85521ea73abacddaf8131b5bd3"
       def install
         bin.install "baton-fastly"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-fastly/releases/download/v0.2.0/baton-fastly-v0.2.0-linux-arm64.tar.gz"
-      sha256 "3cb222859e6e15a0ca90c81187b919d43eed893d8d54729a96909673e5d099c0"
+      url "https://github.com/ConductorOne/baton-fastly/releases/download/v0.2.1/baton-fastly-v0.2.1-linux-arm64.tar.gz"
+      sha256 "1f9fcec1a494947d8a5264766a0f61970aef04b3ce04f4e68be244095f3e2299"
       def install
         bin.install "baton-fastly"
       end
