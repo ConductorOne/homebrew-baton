@@ -5,20 +5,20 @@
 class BatonGrafana < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.3.0"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-grafana/releases/download/v0.3.0/baton-grafana-v0.3.0-darwin-amd64.zip"
-      sha256 "92ba14ccc19444a7677f8d9bfc6356d4f5fd1f79118494faf31fb20c8563f9a9"
+      url "https://github.com/ConductorOne/baton-grafana/releases/download/v0.4.0/baton-grafana-v0.4.0-darwin-amd64.zip"
+      sha256 "6417c5c6cf5f1ff4e1a6f5abf71792703ce768f60e4926d50aa165ec6d104e30"
 
       def install
         bin.install "baton-grafana"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-grafana/releases/download/v0.3.0/baton-grafana-v0.3.0-darwin-arm64.zip"
-      sha256 "f963ef9e1b00f972ec9c3a96d320e65b74c56da23cbffe300afe810d333d532b"
+      url "https://github.com/ConductorOne/baton-grafana/releases/download/v0.4.0/baton-grafana-v0.4.0-darwin-arm64.zip"
+      sha256 "c358dc11e300344947b5754384b1d446e31c6c10299c0eb63778d153a3e36f3b"
 
       def install
         bin.install "baton-grafana"
@@ -28,15 +28,15 @@ class BatonGrafana < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-grafana/releases/download/v0.3.0/baton-grafana-v0.3.0-linux-amd64.tar.gz"
-      sha256 "bd49727fb9eb5057c00ecc326dfb67df191fcb8fb2b74f49c6a0339d080f2a2f"
+      url "https://github.com/ConductorOne/baton-grafana/releases/download/v0.4.0/baton-grafana-v0.4.0-linux-amd64.tar.gz"
+      sha256 "c91ea57d27bb6f8da0e78e3d6fc67546081cb3139482f482330d5b3f1c67f5b4"
       def install
         bin.install "baton-grafana"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-grafana/releases/download/v0.3.0/baton-grafana-v0.3.0-linux-arm64.tar.gz"
-      sha256 "e52dfe74ae509797be61e91b24bf568775626b0e75644dda104eae17a6e1f8f3"
+      url "https://github.com/ConductorOne/baton-grafana/releases/download/v0.4.0/baton-grafana-v0.4.0-linux-arm64.tar.gz"
+      sha256 "a2c5c457b19ab8d3fb63c884c37a70194ef7b9ffc90d15c7355a97054f3bc0ea"
       def install
         bin.install "baton-grafana"
       end
