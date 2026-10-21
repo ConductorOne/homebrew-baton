@@ -5,20 +5,20 @@
 class BatonSplunk < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-splunk/releases/download/v0.2.0/baton-splunk-v0.2.0-darwin-amd64.zip"
-      sha256 "26837d05cf9078e22f8997dc39655806b657b3ae73331a2ee7f3fbc1d8bf1211"
+      url "https://github.com/ConductorOne/baton-splunk/releases/download/v0.2.1/baton-splunk-v0.2.1-darwin-amd64.zip"
+      sha256 "9f9c3922e2a7d4d3e21464353fa27cfbd98c2771859d11c7b3d6ebf09178aceb"
 
       def install
         bin.install "baton-splunk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-splunk/releases/download/v0.2.0/baton-splunk-v0.2.0-darwin-arm64.zip"
-      sha256 "63e886f1c1372433281d0badff8e010d98f0bc2c7916cc7e69addf940cb7f213"
+      url "https://github.com/ConductorOne/baton-splunk/releases/download/v0.2.1/baton-splunk-v0.2.1-darwin-arm64.zip"
+      sha256 "a71b19a8e3c7fd8feda1caf48c0310ceab4bc88ce087b830f456619be211dd08"
 
       def install
         bin.install "baton-splunk"
@@ -28,15 +28,15 @@ class BatonSplunk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-splunk/releases/download/v0.2.0/baton-splunk-v0.2.0-linux-amd64.tar.gz"
-      sha256 "3427b30fc34ae0976984c2dfbcca75eb4ff79fef9b935d23fe9ceb4fdc1e0024"
+      url "https://github.com/ConductorOne/baton-splunk/releases/download/v0.2.1/baton-splunk-v0.2.1-linux-amd64.tar.gz"
+      sha256 "7cae756d0ae69ab9b4074b0643b4a3b1d91ecfc3a138999df4611b239585b9df"
       def install
         bin.install "baton-splunk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-splunk/releases/download/v0.2.0/baton-splunk-v0.2.0-linux-arm64.tar.gz"
-      sha256 "9993b00e8706b97a0a4cd1dd4c8c0a0649ead43d1193d76d480de39ca2a4700c"
+      url "https://github.com/ConductorOne/baton-splunk/releases/download/v0.2.1/baton-splunk-v0.2.1-linux-arm64.tar.gz"
+      sha256 "ced5ac212ba9531c3a596cd084e9161af516f03701f65c79e902cf3cca216baa"
       def install
         bin.install "baton-splunk"
       end
