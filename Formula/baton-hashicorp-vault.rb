@@ -5,20 +5,20 @@
 class BatonHashicorpVault < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-hashicorp-vault/releases/download/v0.2.0/baton-hashicorp-vault-v0.2.0-darwin-amd64.zip"
-      sha256 "85d47c46cf20755220810bc5ef9c4c9436f441bdebeb4e8251356bd56c0644d2"
+      url "https://github.com/ConductorOne/baton-hashicorp-vault/releases/download/v0.2.1/baton-hashicorp-vault-v0.2.1-darwin-amd64.zip"
+      sha256 "3c4cf22b34a0e525cacac0d40aa8ff056891d533926e1014774b2f57b4290f09"
 
       def install
         bin.install "baton-hashicorp-vault"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-hashicorp-vault/releases/download/v0.2.0/baton-hashicorp-vault-v0.2.0-darwin-arm64.zip"
-      sha256 "c2de6eb979cb684cc9bd8c1c43885d8013b8b1331c514d4b45331390410cf74c"
+      url "https://github.com/ConductorOne/baton-hashicorp-vault/releases/download/v0.2.1/baton-hashicorp-vault-v0.2.1-darwin-arm64.zip"
+      sha256 "f36a101751497b75181555fb931afd876458bbc887448b41ae0082364bf11b1d"
 
       def install
         bin.install "baton-hashicorp-vault"
@@ -28,15 +28,15 @@ class BatonHashicorpVault < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-hashicorp-vault/releases/download/v0.2.0/baton-hashicorp-vault-v0.2.0-linux-amd64.tar.gz"
-      sha256 "e61af58f90ce5b676880a08e61cd1f5da446b2767f073ada5b8249aa8d731292"
+      url "https://github.com/ConductorOne/baton-hashicorp-vault/releases/download/v0.2.1/baton-hashicorp-vault-v0.2.1-linux-amd64.tar.gz"
+      sha256 "67ef3b4bf92a4ed8f092ea02e0cb2e220fe5ee6d923fda1955932c6335b05a82"
       def install
         bin.install "baton-hashicorp-vault"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-hashicorp-vault/releases/download/v0.2.0/baton-hashicorp-vault-v0.2.0-linux-arm64.tar.gz"
-      sha256 "56870dd5eb0ca52963235c49d22eb1ba91d1a8bf388c951c7c0054ccc47eab06"
+      url "https://github.com/ConductorOne/baton-hashicorp-vault/releases/download/v0.2.1/baton-hashicorp-vault-v0.2.1-linux-arm64.tar.gz"
+      sha256 "a770fc8725a9f265f4bbc9687bb22e687ea7bd14fa3ec878c916a45809a26999"
       def install
         bin.install "baton-hashicorp-vault"
       end
