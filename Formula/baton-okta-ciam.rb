@@ -5,20 +5,20 @@
 class BatonOktaCiam < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.5.0"
+  version "0.5.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-okta-ciam/releases/download/v0.5.0/baton-okta-ciam-v0.5.0-darwin-amd64.zip"
-      sha256 "50a73b62377c123136df8f3828e369e159c0949d10b959bad1f5028db48536a9"
+      url "https://github.com/ConductorOne/baton-okta-ciam/releases/download/v0.5.1/baton-okta-ciam-v0.5.1-darwin-amd64.zip"
+      sha256 "4a62b9866411a4e682d4b5836950a9b7d153cd7e5c8b758b53b355635554a950"
 
       def install
         bin.install "baton-okta-ciam"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-okta-ciam/releases/download/v0.5.0/baton-okta-ciam-v0.5.0-darwin-arm64.zip"
-      sha256 "4f8e0f84e6adb6fb21eb5e396daef04d20b77acaccced4a0da34d8ec732e97c4"
+      url "https://github.com/ConductorOne/baton-okta-ciam/releases/download/v0.5.1/baton-okta-ciam-v0.5.1-darwin-arm64.zip"
+      sha256 "9c0b8efb2f38482fdb70e5422d13f49ec8beb23d0a1568caf642dbe448a76b83"
 
       def install
         bin.install "baton-okta-ciam"
@@ -28,15 +28,15 @@ class BatonOktaCiam < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-okta-ciam/releases/download/v0.5.0/baton-okta-ciam-v0.5.0-linux-amd64.tar.gz"
-      sha256 "feb386baac1d4cec071d1b38b8d4e958e5fcce7487952cb18e88bdd9a9ed0a35"
+      url "https://github.com/ConductorOne/baton-okta-ciam/releases/download/v0.5.1/baton-okta-ciam-v0.5.1-linux-amd64.tar.gz"
+      sha256 "3e4960ba34b0aac783879025d6ace3f2b73287ca466931df1190096dd56c4e9a"
       def install
         bin.install "baton-okta-ciam"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-okta-ciam/releases/download/v0.5.0/baton-okta-ciam-v0.5.0-linux-arm64.tar.gz"
-      sha256 "f682cc25e90fb42ba6439f2121b046115f9baa0904e0e6d8facaff618615bcd7"
+      url "https://github.com/ConductorOne/baton-okta-ciam/releases/download/v0.5.1/baton-okta-ciam-v0.5.1-linux-arm64.tar.gz"
+      sha256 "c77d4205d3553437fee1cdbaac787c30161e14648461e2f7449b24de3058cb4e"
       def install
         bin.install "baton-okta-ciam"
       end
