@@ -5,20 +5,20 @@
 class BatonJiraDatacenter < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.4.0"
+  version "0.4.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-jira-datacenter/releases/download/v0.4.0/baton-jira-datacenter-v0.4.0-darwin-amd64.zip"
-      sha256 "7a17313c2773b33e4dae95fc32951f4203a21e0fe5f10bd421cc6f2514a8adc4"
+      url "https://github.com/ConductorOne/baton-jira-datacenter/releases/download/v0.4.1/baton-jira-datacenter-v0.4.1-darwin-amd64.zip"
+      sha256 "066155a2dcf4882b66a5afa628f61537cd5e4212a75bb5bebecbcd0ea9702fbf"
 
       def install
         bin.install "baton-jira-datacenter"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-jira-datacenter/releases/download/v0.4.0/baton-jira-datacenter-v0.4.0-darwin-arm64.zip"
-      sha256 "05d39cca0e777a8c3342864d30ef1eb13ec5179fe653a636046cdf7abe010d6d"
+      url "https://github.com/ConductorOne/baton-jira-datacenter/releases/download/v0.4.1/baton-jira-datacenter-v0.4.1-darwin-arm64.zip"
+      sha256 "e89e7fb9f4542aadd08cd86a26bea54710cdbc9361fbc4b76a12c649c4a93ceb"
 
       def install
         bin.install "baton-jira-datacenter"
@@ -28,15 +28,15 @@ class BatonJiraDatacenter < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-jira-datacenter/releases/download/v0.4.0/baton-jira-datacenter-v0.4.0-linux-amd64.tar.gz"
-      sha256 "33c2689cd0731a4cf61e73460f300cc89ca35773e924cf77d93d9c8c1e7b01bd"
+      url "https://github.com/ConductorOne/baton-jira-datacenter/releases/download/v0.4.1/baton-jira-datacenter-v0.4.1-linux-amd64.tar.gz"
+      sha256 "b6f19c3887ed605d00d8e23ce6634d7943050882d411507cd50243d42ad6285f"
       def install
         bin.install "baton-jira-datacenter"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-jira-datacenter/releases/download/v0.4.0/baton-jira-datacenter-v0.4.0-linux-arm64.tar.gz"
-      sha256 "41e3f9d1c53c1f1aee567f79a0e30f3f215c70686499f705efaa13dd34008fb7"
+      url "https://github.com/ConductorOne/baton-jira-datacenter/releases/download/v0.4.1/baton-jira-datacenter-v0.4.1-linux-arm64.tar.gz"
+      sha256 "dc83c67b987dbef83252cd5d9a515d9386a79a5afdab63232ba61e8de5e0b5f5"
       def install
         bin.install "baton-jira-datacenter"
       end
