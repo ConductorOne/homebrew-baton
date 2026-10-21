@@ -5,20 +5,20 @@
 class BatonTeamcity < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-teamcity/releases/download/v0.2.0/baton-teamcity-v0.2.0-darwin-amd64.zip"
-      sha256 "22b15c6bd223966ec7cd99ea028ccfeab60e1f312f083e7641d55548ff520675"
+      url "https://github.com/ConductorOne/baton-teamcity/releases/download/v0.2.1/baton-teamcity-v0.2.1-darwin-amd64.zip"
+      sha256 "9b43a309cc13e6bd983d2cfdd9963d3b5d20ad7a56f2f84af1c886ed4239380f"
 
       def install
         bin.install "baton-teamcity"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-teamcity/releases/download/v0.2.0/baton-teamcity-v0.2.0-darwin-arm64.zip"
-      sha256 "17e25a16491d3fc6d5a27666ee4d2976752fafd19b30f79c7370c09bd55ced40"
+      url "https://github.com/ConductorOne/baton-teamcity/releases/download/v0.2.1/baton-teamcity-v0.2.1-darwin-arm64.zip"
+      sha256 "5414d5f5877962a2a750a2b8f112693cf5397bdd0c4c546c3a665a1e930b4f57"
 
       def install
         bin.install "baton-teamcity"
@@ -28,15 +28,15 @@ class BatonTeamcity < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-teamcity/releases/download/v0.2.0/baton-teamcity-v0.2.0-linux-amd64.tar.gz"
-      sha256 "7a0b4f7f79a9ef59c4c1c4f1de36ce8c4d096d728e72096df64a5e25f0b79d89"
+      url "https://github.com/ConductorOne/baton-teamcity/releases/download/v0.2.1/baton-teamcity-v0.2.1-linux-amd64.tar.gz"
+      sha256 "a62e2388165d7203b9141be9a360d54d4df35048fa637f4d3f71dafc13732656"
       def install
         bin.install "baton-teamcity"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-teamcity/releases/download/v0.2.0/baton-teamcity-v0.2.0-linux-arm64.tar.gz"
-      sha256 "1a54b8ff1bcafc2954d1ebc4319f32fb7a63bab54746b63b6cede8d4fe3ca77c"
+      url "https://github.com/ConductorOne/baton-teamcity/releases/download/v0.2.1/baton-teamcity-v0.2.1-linux-arm64.tar.gz"
+      sha256 "3656fbd9fda0d9819589d237de95bbe894b7a3b995c6bc0105465d0ce3da1a8a"
       def install
         bin.install "baton-teamcity"
       end
