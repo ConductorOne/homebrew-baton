@@ -5,20 +5,20 @@
 class BatonAriba < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.1"
+  version "0.2.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-ariba/releases/download/v0.2.1/baton-ariba-v0.2.1-darwin-amd64.zip"
-      sha256 "50498dac5aaed0f1ec1ed805fa3113c3f77cd1d458070ad9507004c559e0908c"
+      url "https://github.com/ConductorOne/baton-ariba/releases/download/v0.2.2/baton-ariba-v0.2.2-darwin-amd64.zip"
+      sha256 "c7ad5823caf9852fb4687615419946365f9987be51918ea1b61fda41fb1a9bd4"
 
       def install
         bin.install "baton-ariba"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-ariba/releases/download/v0.2.1/baton-ariba-v0.2.1-darwin-arm64.zip"
-      sha256 "a9a04b5075762fb44f7f1f3c45f53e49556cb20fcf2f957e6ae43fc6cacf0039"
+      url "https://github.com/ConductorOne/baton-ariba/releases/download/v0.2.2/baton-ariba-v0.2.2-darwin-arm64.zip"
+      sha256 "cc96cfead4ba4c45d52a922d11352e6b136075219f4cca3c3254b45189904a2a"
 
       def install
         bin.install "baton-ariba"
@@ -28,15 +28,15 @@ class BatonAriba < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ariba/releases/download/v0.2.1/baton-ariba-v0.2.1-linux-amd64.tar.gz"
-      sha256 "e8958b4d1c1b194834a9ee52554540a31a1f6239e683deefded1a53cdf6cad8c"
+      url "https://github.com/ConductorOne/baton-ariba/releases/download/v0.2.2/baton-ariba-v0.2.2-linux-amd64.tar.gz"
+      sha256 "88fa21122c643c5ddc67eadf01eaf16b4bc0e892f5cc26c2378d19ad1967c7f4"
       def install
         bin.install "baton-ariba"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ariba/releases/download/v0.2.1/baton-ariba-v0.2.1-linux-arm64.tar.gz"
-      sha256 "cb1aa8525e8d60df21dec276f7e0e7468e6145c5675cba91c43c9ca91198301d"
+      url "https://github.com/ConductorOne/baton-ariba/releases/download/v0.2.2/baton-ariba-v0.2.2-linux-arm64.tar.gz"
+      sha256 "9378382dcbecfd86121d512bd2a6441170990dde597b3725180f89b81771e63c"
       def install
         bin.install "baton-ariba"
       end
