@@ -5,20 +5,20 @@
 class BatonGithubEnterprise < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.1"
+  version "0.2.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-github-enterprise/releases/download/v0.2.1/baton-github-enterprise-v0.2.1-darwin-amd64.zip"
-      sha256 "a24f260ce79a8d14a13198cfb7fe9292187aeae61748722b8532de61dc3f90b4"
+      url "https://github.com/ConductorOne/baton-github-enterprise/releases/download/v0.2.2/baton-github-enterprise-v0.2.2-darwin-amd64.zip"
+      sha256 "8bc863c28a176a7f6cc465357bf7e7422482e1e0183720328431b65f5ed4e371"
 
       def install
         bin.install "baton-github-enterprise"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-github-enterprise/releases/download/v0.2.1/baton-github-enterprise-v0.2.1-darwin-arm64.zip"
-      sha256 "72b63b770638cdf4f07a8813061176fdf65f9b458ec0af4c8b500fefa14b3928"
+      url "https://github.com/ConductorOne/baton-github-enterprise/releases/download/v0.2.2/baton-github-enterprise-v0.2.2-darwin-arm64.zip"
+      sha256 "ed6b528f57fe4576158999d12bb653a565dc0b48453359ec1c1603fb980b28b7"
 
       def install
         bin.install "baton-github-enterprise"
@@ -28,15 +28,15 @@ class BatonGithubEnterprise < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-github-enterprise/releases/download/v0.2.1/baton-github-enterprise-v0.2.1-linux-amd64.tar.gz"
-      sha256 "159f6464550e6ec29d5dd1e008cbcb547001ad7fc8c2e0ef8b06eedd40675c33"
+      url "https://github.com/ConductorOne/baton-github-enterprise/releases/download/v0.2.2/baton-github-enterprise-v0.2.2-linux-amd64.tar.gz"
+      sha256 "e7bbe1d97e2f3fa962de90621fcf8a905b4d7b07580ff2a6180b7dd2676b9222"
       def install
         bin.install "baton-github-enterprise"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-github-enterprise/releases/download/v0.2.1/baton-github-enterprise-v0.2.1-linux-arm64.tar.gz"
-      sha256 "9a35162bed876dbdb595bdc64784828bd8d48e1513d51d45ece24d7a3d29e828"
+      url "https://github.com/ConductorOne/baton-github-enterprise/releases/download/v0.2.2/baton-github-enterprise-v0.2.2-linux-arm64.tar.gz"
+      sha256 "81b0d87a432847813a3f79bc08553c6710e498280b6794b1b391958da7f0ad5c"
       def install
         bin.install "baton-github-enterprise"
       end
