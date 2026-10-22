@@ -5,20 +5,20 @@
 class BatonKubernetes < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.5.2"
+  version "0.5.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-kubernetes/releases/download/v0.5.2/baton-kubernetes-v0.5.2-darwin-amd64.zip"
-      sha256 "88eaf06bcf9372b2a579427cf5b087698f7b124ba536344abf71d611718e7eb4"
+      url "https://github.com/ConductorOne/baton-kubernetes/releases/download/v0.5.3/baton-kubernetes-v0.5.3-darwin-amd64.zip"
+      sha256 "258673479812e504d36eee71a18e0c3a0e3fb389c8bed15c3870e0394cb345bd"
 
       def install
         bin.install "baton-kubernetes"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-kubernetes/releases/download/v0.5.2/baton-kubernetes-v0.5.2-darwin-arm64.zip"
-      sha256 "1a6c95338fef3522f8aecdc4e0a1fd6ce6dd4e08b9c98b4147dc4bf213d9061f"
+      url "https://github.com/ConductorOne/baton-kubernetes/releases/download/v0.5.3/baton-kubernetes-v0.5.3-darwin-arm64.zip"
+      sha256 "545b0f3ebb2c48e68292e661cc22c00f0b95b4fcbaa1b059c4708fb0a822f6e3"
 
       def install
         bin.install "baton-kubernetes"
@@ -28,15 +28,15 @@ class BatonKubernetes < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-kubernetes/releases/download/v0.5.2/baton-kubernetes-v0.5.2-linux-amd64.tar.gz"
-      sha256 "dde1017ee742c6258031e2b3990fb2af61035ee8fdccb5d5b4f52aa68ff3f9be"
+      url "https://github.com/ConductorOne/baton-kubernetes/releases/download/v0.5.3/baton-kubernetes-v0.5.3-linux-amd64.tar.gz"
+      sha256 "20da453b44de041e5b60280831d791c3a4a5ca272bcdaf0538ecd6593bc07ed8"
       def install
         bin.install "baton-kubernetes"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-kubernetes/releases/download/v0.5.2/baton-kubernetes-v0.5.2-linux-arm64.tar.gz"
-      sha256 "941c4dbcad331ef7e5163d53a38b510cb4f108e82732e29c968631523c604725"
+      url "https://github.com/ConductorOne/baton-kubernetes/releases/download/v0.5.3/baton-kubernetes-v0.5.3-linux-arm64.tar.gz"
+      sha256 "c6f9c3eb05efef4c49a24644d6f69317de7fc8dfc7f4ff28ae0a3051b53a9e42"
       def install
         bin.install "baton-kubernetes"
       end
