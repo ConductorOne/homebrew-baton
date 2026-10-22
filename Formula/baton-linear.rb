@@ -5,20 +5,20 @@
 class BatonLinear < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.1"
+  version "0.2.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.2.1/baton-linear-v0.2.1-darwin-amd64.zip"
-      sha256 "400b68b0c98a1fb6935927b3df7ebf7671748dfb708c4ce8ee96a51914d3bb21"
+      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.2.2/baton-linear-v0.2.2-darwin-amd64.zip"
+      sha256 "b83d357366c84edb15004b9cb20bf5aa7f1dde24560040bde032d932122feff0"
 
       def install
         bin.install "baton-linear"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.2.1/baton-linear-v0.2.1-darwin-arm64.zip"
-      sha256 "63f8008e09072f0b01293abe4348b466a5a9906d6a16d35fb35c51f8682af991"
+      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.2.2/baton-linear-v0.2.2-darwin-arm64.zip"
+      sha256 "8a5934da3effbf7e731fa29b2a1cb050c051c6adb39aec6e84a7f98fa5716af4"
 
       def install
         bin.install "baton-linear"
@@ -28,15 +28,15 @@ class BatonLinear < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.2.1/baton-linear-v0.2.1-linux-amd64.tar.gz"
-      sha256 "f9bde5dfb96828e616e2204db87b4555368bd06d411697cbcd4bb4e2e79c182f"
+      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.2.2/baton-linear-v0.2.2-linux-amd64.tar.gz"
+      sha256 "eb87a1f1199d7c5ac5413327aadf47c7e52ede39ba9c13084934c7482d641142"
       def install
         bin.install "baton-linear"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.2.1/baton-linear-v0.2.1-linux-arm64.tar.gz"
-      sha256 "651e2e50817ca1367ead749f56edc74a7a37f056ff9f668c0ffb2c6df33ce587"
+      url "https://github.com/ConductorOne/baton-linear/releases/download/v0.2.2/baton-linear-v0.2.2-linux-arm64.tar.gz"
+      sha256 "ca46075dc32bacd3c13f28c2cc71945940ef161f74fd8cdf533a0007a22340bd"
       def install
         bin.install "baton-linear"
       end
