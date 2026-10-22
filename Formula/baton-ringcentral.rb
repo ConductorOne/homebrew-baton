@@ -5,20 +5,20 @@
 class BatonRingcentral < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-ringcentral/releases/download/v0.1.0/baton-ringcentral-v0.1.0-darwin-amd64.zip"
-      sha256 "8a5b14477a2425ccafb8cf46433d1d972dd60eeb4f2871d7fa6c447f5428b2d8"
+      url "https://github.com/ConductorOne/baton-ringcentral/releases/download/v0.2.0/baton-ringcentral-v0.2.0-darwin-amd64.zip"
+      sha256 "36835ab730fb7d25aef9dddd2a3c34bc5899173a153d277d0db3cd2b24e2fd59"
 
       def install
         bin.install "baton-ringcentral"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-ringcentral/releases/download/v0.1.0/baton-ringcentral-v0.1.0-darwin-arm64.zip"
-      sha256 "74a646cee75281e4b5bd4ce06b87d6e570d776675352fc6bece9900154df948b"
+      url "https://github.com/ConductorOne/baton-ringcentral/releases/download/v0.2.0/baton-ringcentral-v0.2.0-darwin-arm64.zip"
+      sha256 "7482f7e4063de0b5d215f05ab9abd9ae2a213db955d8236ca065594fff47e2b9"
 
       def install
         bin.install "baton-ringcentral"
@@ -28,15 +28,15 @@ class BatonRingcentral < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ringcentral/releases/download/v0.1.0/baton-ringcentral-v0.1.0-linux-amd64.tar.gz"
-      sha256 "691cfd5d156f687578b56df3f40b270ad6d00aacbc2c93e46aeee89d71629ffb"
+      url "https://github.com/ConductorOne/baton-ringcentral/releases/download/v0.2.0/baton-ringcentral-v0.2.0-linux-amd64.tar.gz"
+      sha256 "c82ab6882c3e8b18a49b1f83e63565e2e8a5a75b69422a9f551b4082e6b1f6fe"
       def install
         bin.install "baton-ringcentral"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ringcentral/releases/download/v0.1.0/baton-ringcentral-v0.1.0-linux-arm64.tar.gz"
-      sha256 "6da1e8cb17f257f60b1b0a908b3545d2efaafe40328163ec174973e1482543ff"
+      url "https://github.com/ConductorOne/baton-ringcentral/releases/download/v0.2.0/baton-ringcentral-v0.2.0-linux-arm64.tar.gz"
+      sha256 "516af2398ad2a73598be1dfcb725436310475f272aff4de7c1e341fb4f620220"
       def install
         bin.install "baton-ringcentral"
       end
