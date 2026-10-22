@@ -5,20 +5,20 @@
 class BatonBrex < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.2"
+  version "0.2.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-brex/releases/download/v0.2.2/baton-brex-v0.2.2-darwin-amd64.zip"
-      sha256 "32b9a18a4d89c2589473c3271387fd4528d461863fcafc80ea18473ef378122f"
+      url "https://github.com/ConductorOne/baton-brex/releases/download/v0.2.3/baton-brex-v0.2.3-darwin-amd64.zip"
+      sha256 "ff33920be207fc6d9b8c4fc0d80f15a08dbeb2c5c054813068a2fd84ad68509c"
 
       def install
         bin.install "baton-brex"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-brex/releases/download/v0.2.2/baton-brex-v0.2.2-darwin-arm64.zip"
-      sha256 "4db2923aa94d5a4d2c3f1e0c1c96c63737f06bf2770688bdec1359eb35f9d016"
+      url "https://github.com/ConductorOne/baton-brex/releases/download/v0.2.3/baton-brex-v0.2.3-darwin-arm64.zip"
+      sha256 "d887d3f068cdaee27aafb507afd4307694b7b8047562c839f3b9258e1c4ae14a"
 
       def install
         bin.install "baton-brex"
@@ -28,15 +28,15 @@ class BatonBrex < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-brex/releases/download/v0.2.2/baton-brex-v0.2.2-linux-amd64.tar.gz"
-      sha256 "16e26e78ed594daa61514b337f3f1f1d79151abb9d930eb2d890b679734a77e7"
+      url "https://github.com/ConductorOne/baton-brex/releases/download/v0.2.3/baton-brex-v0.2.3-linux-amd64.tar.gz"
+      sha256 "df356925fffeb56e91bc9b777b2373c17f03de7ddc8752ecb3b9ae7e02b861c0"
       def install
         bin.install "baton-brex"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-brex/releases/download/v0.2.2/baton-brex-v0.2.2-linux-arm64.tar.gz"
-      sha256 "0a7b96f8cd0129fcda75cfb6c20a1bb2536da068c39ea476a69d9dba9f6da7a8"
+      url "https://github.com/ConductorOne/baton-brex/releases/download/v0.2.3/baton-brex-v0.2.3-linux-arm64.tar.gz"
+      sha256 "284003ab19dc31d4cf5e8d5bacbabd4aea644e783f6bf84192dbeb397ddb0f57"
       def install
         bin.install "baton-brex"
       end
