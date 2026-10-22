@@ -5,20 +5,20 @@
 class BatonCeligo < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.1"
+  version "0.2.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-celigo/releases/download/v0.2.1/baton-celigo-v0.2.1-darwin-amd64.zip"
-      sha256 "840853abedc24a0383164c5da362c99fbdc4e943582cb783728651540c0825a3"
+      url "https://github.com/ConductorOne/baton-celigo/releases/download/v0.2.2/baton-celigo-v0.2.2-darwin-amd64.zip"
+      sha256 "431d827160256c7c8a8141e6dd7ea1add15cfc834ab811e9f404ca11cb9b5f62"
 
       def install
         bin.install "baton-celigo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-celigo/releases/download/v0.2.1/baton-celigo-v0.2.1-darwin-arm64.zip"
-      sha256 "176297634b7f4e3a17fb6d3e935505b40cdc8324d25c5c9fcfe5fcbdbd69f8bb"
+      url "https://github.com/ConductorOne/baton-celigo/releases/download/v0.2.2/baton-celigo-v0.2.2-darwin-arm64.zip"
+      sha256 "3f8233688757848c8c39ee7b47246a9590851d69b0b3c5738e15c7205a3ae857"
 
       def install
         bin.install "baton-celigo"
@@ -28,15 +28,15 @@ class BatonCeligo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-celigo/releases/download/v0.2.1/baton-celigo-v0.2.1-linux-amd64.tar.gz"
-      sha256 "da26c67cf1686cbcafc8ab1b95409c724c8a682508f1eef50f76dea6c947c8bd"
+      url "https://github.com/ConductorOne/baton-celigo/releases/download/v0.2.2/baton-celigo-v0.2.2-linux-amd64.tar.gz"
+      sha256 "125aa21d6a84a1279abbd643fb2ad8bb8425a61511754079000e60f44c3258fc"
       def install
         bin.install "baton-celigo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-celigo/releases/download/v0.2.1/baton-celigo-v0.2.1-linux-arm64.tar.gz"
-      sha256 "849c415e87e778fae321d60a56919aed4ab321b412109841de43e329a1c0ca46"
+      url "https://github.com/ConductorOne/baton-celigo/releases/download/v0.2.2/baton-celigo-v0.2.2-linux-arm64.tar.gz"
+      sha256 "2e8fea948e166e241048ef5bb27d4c221a547b3aea73b8c9dc7678c1aafe1450"
       def install
         bin.install "baton-celigo"
       end
