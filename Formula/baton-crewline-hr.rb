@@ -5,20 +5,20 @@
 class BatonCrewlineHr < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.3.1"
+  version "0.3.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-crewline-hr/releases/download/v0.3.1/baton-crewline-hr-v0.3.1-darwin-amd64.zip"
-      sha256 "e8ca9fdf85070aa955324166d7031fcc28cce50cdaa21d56583e7c5c0801f298"
+      url "https://github.com/ConductorOne/baton-crewline-hr/releases/download/v0.3.2/baton-crewline-hr-v0.3.2-darwin-amd64.zip"
+      sha256 "53c9a2569bef72429eb98cbe6636562de4646cd657c37863e93b082afc327182"
 
       def install
         bin.install "baton-crewline-hr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-crewline-hr/releases/download/v0.3.1/baton-crewline-hr-v0.3.1-darwin-arm64.zip"
-      sha256 "fb6e943e2518314ebf91b21de8fed294e91e8f60c8f04582a0a498ef54513b5f"
+      url "https://github.com/ConductorOne/baton-crewline-hr/releases/download/v0.3.2/baton-crewline-hr-v0.3.2-darwin-arm64.zip"
+      sha256 "2327033db7bdeae0f875fe20cad7b4aff7a0da9b4b5cb871f2edec52011b61a5"
 
       def install
         bin.install "baton-crewline-hr"
@@ -28,15 +28,15 @@ class BatonCrewlineHr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-crewline-hr/releases/download/v0.3.1/baton-crewline-hr-v0.3.1-linux-amd64.tar.gz"
-      sha256 "cf59341e92a7e914fb7786126e5b6b81c3adf45f365ea254834a596776747f04"
+      url "https://github.com/ConductorOne/baton-crewline-hr/releases/download/v0.3.2/baton-crewline-hr-v0.3.2-linux-amd64.tar.gz"
+      sha256 "edb6cd9ac1f16e5af3db0d2d273a13155836f922fefe1ac3987869c1fd3f6331"
       def install
         bin.install "baton-crewline-hr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-crewline-hr/releases/download/v0.3.1/baton-crewline-hr-v0.3.1-linux-arm64.tar.gz"
-      sha256 "af4d88d05e9cdda283347a648e59e52a9b284719c398d46106d20b3ba91ae309"
+      url "https://github.com/ConductorOne/baton-crewline-hr/releases/download/v0.3.2/baton-crewline-hr-v0.3.2-linux-arm64.tar.gz"
+      sha256 "5771f0398fc785c328e9afb627569c75ea52af43363ea1af1c120d40b2045807"
       def install
         bin.install "baton-crewline-hr"
       end
