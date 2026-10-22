@@ -5,20 +5,20 @@
 class BatonIncidentIo < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.3.1"
+  version "0.3.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-incident-io/releases/download/v0.3.1/baton-incident-io-v0.3.1-darwin-amd64.zip"
-      sha256 "da1f65a03f5813491863fc0e72e5b817239f510ad0c8405bf3af19489005767a"
+      url "https://github.com/ConductorOne/baton-incident-io/releases/download/v0.3.2/baton-incident-io-v0.3.2-darwin-amd64.zip"
+      sha256 "3b588634db01f1b38b96231f177767d92424e151df067451999848993a9aec15"
 
       def install
         bin.install "baton-incident-io"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-incident-io/releases/download/v0.3.1/baton-incident-io-v0.3.1-darwin-arm64.zip"
-      sha256 "7a63c089bca5b1a542344b9b1f81b6145d9fae6cf76eae11df989b4d232a804b"
+      url "https://github.com/ConductorOne/baton-incident-io/releases/download/v0.3.2/baton-incident-io-v0.3.2-darwin-arm64.zip"
+      sha256 "4471503c5ffcaaec4d3800f2dabe69106856ea53cbd3d45957174570088a02ed"
 
       def install
         bin.install "baton-incident-io"
@@ -28,15 +28,15 @@ class BatonIncidentIo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-incident-io/releases/download/v0.3.1/baton-incident-io-v0.3.1-linux-amd64.tar.gz"
-      sha256 "9a73556a97d01af256c4f137de9b45c9b7f88ac11a40f83d5b54510eb2b14755"
+      url "https://github.com/ConductorOne/baton-incident-io/releases/download/v0.3.2/baton-incident-io-v0.3.2-linux-amd64.tar.gz"
+      sha256 "35f7679e51a78ca8c984093672f1c4c6e8a67575595507058696ddef1b7f7f4f"
       def install
         bin.install "baton-incident-io"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-incident-io/releases/download/v0.3.1/baton-incident-io-v0.3.1-linux-arm64.tar.gz"
-      sha256 "aae323943b84a40e655b71e9ab99b8f55aca90ee22268f2281aeb89f0edf24e6"
+      url "https://github.com/ConductorOne/baton-incident-io/releases/download/v0.3.2/baton-incident-io-v0.3.2-linux-arm64.tar.gz"
+      sha256 "2448c4a856030778c594fafeb50e0f7a9ddb14ccdbaf4a2698c42dc2957fbcfe"
       def install
         bin.install "baton-incident-io"
       end
