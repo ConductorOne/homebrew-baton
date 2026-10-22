@@ -5,20 +5,20 @@
 class BatonZuper < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.2"
+  version "0.2.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-zuper/releases/download/v0.2.2/baton-zuper-v0.2.2-darwin-amd64.zip"
-      sha256 "97032f80976d9ac41bccce6caa0e1da5678c1eeaffb495928b299b0529c77236"
+      url "https://github.com/ConductorOne/baton-zuper/releases/download/v0.2.3/baton-zuper-v0.2.3-darwin-amd64.zip"
+      sha256 "e886fea127ab85897070e1239eded8d7fe6419bffc3d90039a8c31cfc80e656a"
 
       def install
         bin.install "baton-zuper"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-zuper/releases/download/v0.2.2/baton-zuper-v0.2.2-darwin-arm64.zip"
-      sha256 "04b5215f25753e4d3f431c4bc2779bcf8c7820c93b393bfee4fb007424913b79"
+      url "https://github.com/ConductorOne/baton-zuper/releases/download/v0.2.3/baton-zuper-v0.2.3-darwin-arm64.zip"
+      sha256 "913b8e21ac143431a84daa6c1729b46ee9afa5a0db2d2910be3d8dd319749982"
 
       def install
         bin.install "baton-zuper"
@@ -28,15 +28,15 @@ class BatonZuper < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-zuper/releases/download/v0.2.2/baton-zuper-v0.2.2-linux-amd64.tar.gz"
-      sha256 "b5d43043d1fed953a1e746ac4797930fb7ce3eb9af40dca2f0694bdf6c2c69b4"
+      url "https://github.com/ConductorOne/baton-zuper/releases/download/v0.2.3/baton-zuper-v0.2.3-linux-amd64.tar.gz"
+      sha256 "2d57ddb0e913ba46d1008b438da86c919c22ec3db181602757afe066877dca31"
       def install
         bin.install "baton-zuper"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-zuper/releases/download/v0.2.2/baton-zuper-v0.2.2-linux-arm64.tar.gz"
-      sha256 "2c90ade9bf6ef8c4910d71be45fc9f2d5e54ba979ebda7862771aff33d5147f0"
+      url "https://github.com/ConductorOne/baton-zuper/releases/download/v0.2.3/baton-zuper-v0.2.3-linux-arm64.tar.gz"
+      sha256 "bbbf58b139eba96198e1b9871e8db21faab2f5bcfef73c51464b5d8e925f987e"
       def install
         bin.install "baton-zuper"
       end
