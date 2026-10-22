@@ -5,20 +5,20 @@
 class BatonOpenshift < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.3"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-openshift/releases/download/v0.0.3/baton-openshift-v0.0.3-darwin-amd64.zip"
-      sha256 "e3706d4ac7030c6ca81f1eb0ea2e0dffa7c3e98aba9c045d750db19f477c2f43"
+      url "https://github.com/ConductorOne/baton-openshift/releases/download/v0.1.0/baton-openshift-v0.1.0-darwin-amd64.zip"
+      sha256 "af308eaadfe15520a52b15fd25167e4f401994148d11265956b652f859056c8c"
 
       def install
         bin.install "baton-openshift"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-openshift/releases/download/v0.0.3/baton-openshift-v0.0.3-darwin-arm64.zip"
-      sha256 "1ee699fad0a8f32eb3e57b596b599536f5b0bbdbb14fde23700852ef7a7640bf"
+      url "https://github.com/ConductorOne/baton-openshift/releases/download/v0.1.0/baton-openshift-v0.1.0-darwin-arm64.zip"
+      sha256 "ed7344a5f0d23d27828e4e918ea93c39a1e0c184cda224062478b32e7263013b"
 
       def install
         bin.install "baton-openshift"
@@ -27,16 +27,16 @@ class BatonOpenshift < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-openshift/releases/download/v0.0.3/baton-openshift-v0.0.3-linux-amd64.tar.gz"
-      sha256 "2508da644f44ac234610ef619128f3a2423436fe8ae8249e548f0c0cdd236e41"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-openshift/releases/download/v0.1.0/baton-openshift-v0.1.0-linux-amd64.tar.gz"
+      sha256 "bdfa7a35e796ae8d87d76c9ddf79e073e076379cba9463e21f6ac45e8929b6e8"
       def install
         bin.install "baton-openshift"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-openshift/releases/download/v0.0.3/baton-openshift-v0.0.3-linux-arm64.tar.gz"
-      sha256 "14d1b9e518e7acda8d1bcfee1a3a0f1461c3bf56ba74ab2a669e546588080af3"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-openshift/releases/download/v0.1.0/baton-openshift-v0.1.0-linux-arm64.tar.gz"
+      sha256 "0fd3619840d416e9e3f4490f0d9602fb5c3041f03e018ac1961f685cb66a0282"
       def install
         bin.install "baton-openshift"
       end
