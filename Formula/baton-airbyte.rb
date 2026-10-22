@@ -5,20 +5,20 @@
 class BatonAirbyte < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.3.1"
+  version "0.3.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-airbyte/releases/download/v0.3.1/baton-airbyte-v0.3.1-darwin-amd64.zip"
-      sha256 "db968e084acb42de224048200dd26f13d9803bc5512545da49bebfa48aacdcb8"
+      url "https://github.com/ConductorOne/baton-airbyte/releases/download/v0.3.2/baton-airbyte-v0.3.2-darwin-amd64.zip"
+      sha256 "301cbfa1d6a323f8ffb845f905f8f90fb6993e6e888e5bf235e492ccfb6ace91"
 
       def install
         bin.install "baton-airbyte"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-airbyte/releases/download/v0.3.1/baton-airbyte-v0.3.1-darwin-arm64.zip"
-      sha256 "11c3666cfdf8cacc421247e924f3cd0d2409317721cf33f6f6ddccb61b08a4b7"
+      url "https://github.com/ConductorOne/baton-airbyte/releases/download/v0.3.2/baton-airbyte-v0.3.2-darwin-arm64.zip"
+      sha256 "31ae9c797869478a180386bdec5e33de12de6055424dc09f4f028e57f776019f"
 
       def install
         bin.install "baton-airbyte"
@@ -28,15 +28,15 @@ class BatonAirbyte < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-airbyte/releases/download/v0.3.1/baton-airbyte-v0.3.1-linux-amd64.tar.gz"
-      sha256 "aef38cae86ae962cbde7cf3f62c0b3b197107e46b42ab37a9ada0c353c8c11e9"
+      url "https://github.com/ConductorOne/baton-airbyte/releases/download/v0.3.2/baton-airbyte-v0.3.2-linux-amd64.tar.gz"
+      sha256 "7abf70edb0d9fee1fc5c8b0dc82427f927d90721fe37c70cc2d0258b940dceb5"
       def install
         bin.install "baton-airbyte"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-airbyte/releases/download/v0.3.1/baton-airbyte-v0.3.1-linux-arm64.tar.gz"
-      sha256 "a1346723604bfae0498dd1469fb7a4395ac90e496d415f4f02db8f5d43773573"
+      url "https://github.com/ConductorOne/baton-airbyte/releases/download/v0.3.2/baton-airbyte-v0.3.2-linux-arm64.tar.gz"
+      sha256 "1bc9f9435e694da462eca35a15ef530add79fb81c4b701471ddbd9dfe9e7edeb"
       def install
         bin.install "baton-airbyte"
       end
