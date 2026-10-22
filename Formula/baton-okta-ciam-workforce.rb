@@ -5,20 +5,20 @@
 class BatonOktaCiamWorkforce < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.3.2"
+  version "0.3.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-okta-ciam-workforce/releases/download/v0.3.2/baton-okta-ciam-workforce-v0.3.2-darwin-amd64.zip"
-      sha256 "04a37496dd4e8d8d428f0add9a8fd269855392c212553bfbce4e463ba691fa88"
+      url "https://github.com/ConductorOne/baton-okta-ciam-workforce/releases/download/v0.3.3/baton-okta-ciam-workforce-v0.3.3-darwin-amd64.zip"
+      sha256 "fe5fc297bdf1ca883ee206097ec7014e8a9737547184bf24848fe4c73f65d432"
 
       def install
         bin.install "baton-okta-ciam-workforce"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-okta-ciam-workforce/releases/download/v0.3.2/baton-okta-ciam-workforce-v0.3.2-darwin-arm64.zip"
-      sha256 "20909c68ec6167feeafd0ead7be611db128efc04cafce71abdea0555812bd844"
+      url "https://github.com/ConductorOne/baton-okta-ciam-workforce/releases/download/v0.3.3/baton-okta-ciam-workforce-v0.3.3-darwin-arm64.zip"
+      sha256 "19fe23530cfc98a54998a30f1085b6c266b3ba3629abd2485b1fd00a104031cd"
 
       def install
         bin.install "baton-okta-ciam-workforce"
@@ -28,15 +28,15 @@ class BatonOktaCiamWorkforce < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-okta-ciam-workforce/releases/download/v0.3.2/baton-okta-ciam-workforce-v0.3.2-linux-amd64.tar.gz"
-      sha256 "4ffa683ac4f9ff09a6508ada2bd97d7e113fbeb0909b5fdf074f7fab426ecea7"
+      url "https://github.com/ConductorOne/baton-okta-ciam-workforce/releases/download/v0.3.3/baton-okta-ciam-workforce-v0.3.3-linux-amd64.tar.gz"
+      sha256 "9bf628e41ffad3ac1f04a55f90b53256ed2e1c945d069f18565b165d86c1d85b"
       def install
         bin.install "baton-okta-ciam-workforce"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-okta-ciam-workforce/releases/download/v0.3.2/baton-okta-ciam-workforce-v0.3.2-linux-arm64.tar.gz"
-      sha256 "13fc497b8a2c56d2a84c025def88fd48a481a10d9c95fcfe3e2ca46bbb343ce7"
+      url "https://github.com/ConductorOne/baton-okta-ciam-workforce/releases/download/v0.3.3/baton-okta-ciam-workforce-v0.3.3-linux-arm64.tar.gz"
+      sha256 "03e984e9a921d269dd5dd97649027116a664058a720e21fb17343d4395470851"
       def install
         bin.install "baton-okta-ciam-workforce"
       end
