@@ -5,20 +5,20 @@
 class BatonJenkins < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.1"
+  version "0.2.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-jenkins/releases/download/v0.2.1/baton-jenkins-v0.2.1-darwin-amd64.zip"
-      sha256 "9cd50b230633ca7d2fecaf550409cc08ad8f2bba26fc848a4d887bba61eb8562"
+      url "https://github.com/ConductorOne/baton-jenkins/releases/download/v0.2.2/baton-jenkins-v0.2.2-darwin-amd64.zip"
+      sha256 "b29732ca2e236ae89abf4b8b2a09992aece1fab8142c4797d0bbc7681256f99b"
 
       def install
         bin.install "baton-jenkins"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-jenkins/releases/download/v0.2.1/baton-jenkins-v0.2.1-darwin-arm64.zip"
-      sha256 "d22491567a08970389eeca0b4ea31f656fe49f61e2c3a15e711cf3cf57e72e11"
+      url "https://github.com/ConductorOne/baton-jenkins/releases/download/v0.2.2/baton-jenkins-v0.2.2-darwin-arm64.zip"
+      sha256 "96e220a0fb2e28004a9ef6de571dedd1c15b8639cd09873c60eab6ca483b6a85"
 
       def install
         bin.install "baton-jenkins"
@@ -28,15 +28,15 @@ class BatonJenkins < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-jenkins/releases/download/v0.2.1/baton-jenkins-v0.2.1-linux-amd64.tar.gz"
-      sha256 "8b13d033e424c8ac60e568bcbb7ccea1c5e83033452f0944afbd98fd277659a1"
+      url "https://github.com/ConductorOne/baton-jenkins/releases/download/v0.2.2/baton-jenkins-v0.2.2-linux-amd64.tar.gz"
+      sha256 "3307a6a49a7bbed3e41bd1e55ed8a1a2d633c321c3c1321f1e0055f58d9c4c96"
       def install
         bin.install "baton-jenkins"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-jenkins/releases/download/v0.2.1/baton-jenkins-v0.2.1-linux-arm64.tar.gz"
-      sha256 "89625d6ab0eaabddcd2cfe323c5dd98029dcfe53a1a83e0909fe6a908a50d288"
+      url "https://github.com/ConductorOne/baton-jenkins/releases/download/v0.2.2/baton-jenkins-v0.2.2-linux-arm64.tar.gz"
+      sha256 "8279319db7948a473121892ef341e93c46399ca8dbc2953472d4e25c91a5913e"
       def install
         bin.install "baton-jenkins"
       end
