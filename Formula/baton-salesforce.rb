@@ -5,20 +5,20 @@
 class BatonSalesforce < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.4.2"
+  version "0.4.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-salesforce/releases/download/v0.4.2/baton-salesforce-v0.4.2-darwin-amd64.zip"
-      sha256 "f05c149fa39f5512ba30ca0004ce12bfa8e425d2b4a7741a5ffdd42e06cff88c"
+      url "https://github.com/ConductorOne/baton-salesforce/releases/download/v0.4.3/baton-salesforce-v0.4.3-darwin-amd64.zip"
+      sha256 "27ec862a739e40f58e8ce229c6d3b79ebf1810c6ae4df87fa34b47f29ec279bb"
 
       def install
         bin.install "baton-salesforce"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-salesforce/releases/download/v0.4.2/baton-salesforce-v0.4.2-darwin-arm64.zip"
-      sha256 "57bf06614ebd7a9c33af792f80a6a5dd5222061a78364755a52cf927337a172e"
+      url "https://github.com/ConductorOne/baton-salesforce/releases/download/v0.4.3/baton-salesforce-v0.4.3-darwin-arm64.zip"
+      sha256 "9aeb5c6783fa90a3854417ced6ab769c0e095e2da567cbf4ed5f0f18d6b63e04"
 
       def install
         bin.install "baton-salesforce"
@@ -28,15 +28,15 @@ class BatonSalesforce < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-salesforce/releases/download/v0.4.2/baton-salesforce-v0.4.2-linux-amd64.tar.gz"
-      sha256 "0b5dad980dda6cb1d4e7583d440b62aafc0c13408ba358e563d81c0cf042f187"
+      url "https://github.com/ConductorOne/baton-salesforce/releases/download/v0.4.3/baton-salesforce-v0.4.3-linux-amd64.tar.gz"
+      sha256 "d5cdddabf8d81adc2a766b6bc99629833f3b9d88db1d80f6f37a69e1fb521236"
       def install
         bin.install "baton-salesforce"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-salesforce/releases/download/v0.4.2/baton-salesforce-v0.4.2-linux-arm64.tar.gz"
-      sha256 "53a4dfc26aa04ccc674b38697e89a49e2bf823fb1afd73ce4961ac5403a65669"
+      url "https://github.com/ConductorOne/baton-salesforce/releases/download/v0.4.3/baton-salesforce-v0.4.3-linux-arm64.tar.gz"
+      sha256 "5be6fc0222ac81d2c3c4c96827e7c42f3c37f8be094929f5ee8711c9d5163b11"
       def install
         bin.install "baton-salesforce"
       end
