@@ -5,20 +5,20 @@
 class BatonFileshare < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.2"
+  version "0.2.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-fileshare/releases/download/v0.2.2/baton-fileshare-v0.2.2-darwin-amd64.zip"
-      sha256 "df7c21c72a8ac530a0301d0f7fa89dec928db6f5d5f21ba82442ea0ca9c8479a"
+      url "https://github.com/ConductorOne/baton-fileshare/releases/download/v0.2.3/baton-fileshare-v0.2.3-darwin-amd64.zip"
+      sha256 "2d7c6860c5b0ea8ac3d3603d589df167ea5c369b3f7d3b9d60ad7a79e1f5ca19"
 
       def install
         bin.install "baton-fileshare"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-fileshare/releases/download/v0.2.2/baton-fileshare-v0.2.2-darwin-arm64.zip"
-      sha256 "471182b8cdc98b432d96b5e0569780eb8fc42fa953da3e6146d8f449df0016f2"
+      url "https://github.com/ConductorOne/baton-fileshare/releases/download/v0.2.3/baton-fileshare-v0.2.3-darwin-arm64.zip"
+      sha256 "054fad665016f621e91d5a889675bd5bcfedecf1a6046f892a92443b3310cbeb"
 
       def install
         bin.install "baton-fileshare"
@@ -28,15 +28,15 @@ class BatonFileshare < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-fileshare/releases/download/v0.2.2/baton-fileshare-v0.2.2-linux-amd64.tar.gz"
-      sha256 "dec6702399d834b9de944b8860b37dadd557932765f56896b9402b8197c13d9f"
+      url "https://github.com/ConductorOne/baton-fileshare/releases/download/v0.2.3/baton-fileshare-v0.2.3-linux-amd64.tar.gz"
+      sha256 "694694c457a7849e27055b69fc4b79adb5532f5c0fb5d2dd514057bcf4eb14f8"
       def install
         bin.install "baton-fileshare"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-fileshare/releases/download/v0.2.2/baton-fileshare-v0.2.2-linux-arm64.tar.gz"
-      sha256 "64c3e2b659b0f9bcde552a3c476a4ef077fc8273b6e45cdb712a41dabce42766"
+      url "https://github.com/ConductorOne/baton-fileshare/releases/download/v0.2.3/baton-fileshare-v0.2.3-linux-arm64.tar.gz"
+      sha256 "49e35ee4e19aad8aa7b03f69e5a1c28592504162449ad6fce366ef72513f5cf5"
       def install
         bin.install "baton-fileshare"
       end
