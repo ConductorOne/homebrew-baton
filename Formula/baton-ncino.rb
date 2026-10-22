@@ -5,20 +5,20 @@
 class BatonNcino < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.0"
+  version "0.2.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-ncino/releases/download/v0.2.0/baton-ncino-v0.2.0-darwin-amd64.zip"
-      sha256 "6e728a124447cf607c4082ee761c9135c175af9ec0be482ec6a750385c330933"
+      url "https://github.com/ConductorOne/baton-ncino/releases/download/v0.2.2/baton-ncino-v0.2.2-darwin-amd64.zip"
+      sha256 "94efa910f82b32e8341acc5230c4fa924c79eceb0ac92d1502e6b4ce89a228f9"
 
       def install
         bin.install "baton-ncino"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-ncino/releases/download/v0.2.0/baton-ncino-v0.2.0-darwin-arm64.zip"
-      sha256 "5f2b69715a9b82db6fc9c973c8dfcebae11596349684030581f9eff531f65eca"
+      url "https://github.com/ConductorOne/baton-ncino/releases/download/v0.2.2/baton-ncino-v0.2.2-darwin-arm64.zip"
+      sha256 "3b224f0c51229d50df6ad8df40ea4fa8a4fb55fd28abd782242ca392fb53c4f5"
 
       def install
         bin.install "baton-ncino"
@@ -28,15 +28,15 @@ class BatonNcino < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ncino/releases/download/v0.2.0/baton-ncino-v0.2.0-linux-amd64.tar.gz"
-      sha256 "6faa8ef9f1a3c27aaf5c9061e308981ab4d0e6e2f70cbfea637e1512efe56f8c"
+      url "https://github.com/ConductorOne/baton-ncino/releases/download/v0.2.2/baton-ncino-v0.2.2-linux-amd64.tar.gz"
+      sha256 "2d38fdf1d0b9ad5da910bd3b97388678d7abbcebf6026080015e0f9bb765f9f7"
       def install
         bin.install "baton-ncino"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ncino/releases/download/v0.2.0/baton-ncino-v0.2.0-linux-arm64.tar.gz"
-      sha256 "d422b506af2a3328c78d7e893a851c89293078296ad8b22452ec9c15f8160454"
+      url "https://github.com/ConductorOne/baton-ncino/releases/download/v0.2.2/baton-ncino-v0.2.2-linux-arm64.tar.gz"
+      sha256 "98efdc3c25c0deabd0e84e2f4d1e9f847c3a28a9a1ed72d17b6e3d37d7c3f88b"
       def install
         bin.install "baton-ncino"
       end
