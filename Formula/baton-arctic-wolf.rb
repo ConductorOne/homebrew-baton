@@ -5,20 +5,20 @@
 class BatonArcticWolf < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.1"
+  version "0.2.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-arctic-wolf/releases/download/v0.2.1/baton-arctic-wolf-v0.2.1-darwin-amd64.zip"
-      sha256 "34dd373dcf530204b66a004b7846abc333675f205db6e5416aa6cb436676a47f"
+      url "https://github.com/ConductorOne/baton-arctic-wolf/releases/download/v0.2.2/baton-arctic-wolf-v0.2.2-darwin-amd64.zip"
+      sha256 "ca32802441ea50c10175cfafbb9c3a40d3a9fd22c61d5bab55a22f1a2c5b82cb"
 
       def install
         bin.install "baton-arctic-wolf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-arctic-wolf/releases/download/v0.2.1/baton-arctic-wolf-v0.2.1-darwin-arm64.zip"
-      sha256 "fe431f069e5810e0c5f7554e8a296c4c28bb289496115e52c589e25a388d56f1"
+      url "https://github.com/ConductorOne/baton-arctic-wolf/releases/download/v0.2.2/baton-arctic-wolf-v0.2.2-darwin-arm64.zip"
+      sha256 "e187bb7548109107df887d5acf39d7a3e568cb5304ac72b048d11de23a5644fa"
 
       def install
         bin.install "baton-arctic-wolf"
@@ -28,15 +28,15 @@ class BatonArcticWolf < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-arctic-wolf/releases/download/v0.2.1/baton-arctic-wolf-v0.2.1-linux-amd64.tar.gz"
-      sha256 "9c1e7392c5f451483cc5294c10523f716ba4518d1cccc08f482b140c992d0a88"
+      url "https://github.com/ConductorOne/baton-arctic-wolf/releases/download/v0.2.2/baton-arctic-wolf-v0.2.2-linux-amd64.tar.gz"
+      sha256 "664684bdc95d9789a16e8ef659da1a41a672ff54413bff4a545f537d88b176ac"
       def install
         bin.install "baton-arctic-wolf"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-arctic-wolf/releases/download/v0.2.1/baton-arctic-wolf-v0.2.1-linux-arm64.tar.gz"
-      sha256 "f85400cde753d5313ec566a80dda2ced3967cab5518ee308c0603a80e4585381"
+      url "https://github.com/ConductorOne/baton-arctic-wolf/releases/download/v0.2.2/baton-arctic-wolf-v0.2.2-linux-arm64.tar.gz"
+      sha256 "563085bfd85705704095f85c59d6c271d0351b3a4bb0943e092fa0d187932137"
       def install
         bin.install "baton-arctic-wolf"
       end
