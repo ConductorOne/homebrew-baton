@@ -5,20 +5,20 @@
 class BatonZoom < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.5.1"
+  version "0.5.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-zoom/releases/download/v0.5.1/baton-zoom-v0.5.1-darwin-amd64.zip"
-      sha256 "84ca7faaac7d0504b41ad67a70cf2e6853b79c233cd2933d3dfd30ffab85966d"
+      url "https://github.com/ConductorOne/baton-zoom/releases/download/v0.5.2/baton-zoom-v0.5.2-darwin-amd64.zip"
+      sha256 "21d9fd6f60a2b0eb9ef1d886a3ea948e59878ee75e92704933be2f4a0c26d994"
 
       def install
         bin.install "baton-zoom"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-zoom/releases/download/v0.5.1/baton-zoom-v0.5.1-darwin-arm64.zip"
-      sha256 "dabd4ccc9bf488c3a649934c8b22e35d49abac1a88c3fab7e8af9dd2902a2ca5"
+      url "https://github.com/ConductorOne/baton-zoom/releases/download/v0.5.2/baton-zoom-v0.5.2-darwin-arm64.zip"
+      sha256 "62c4f72a85c4e3be3818962ec248254a16e5da7dbb215a0d312132decb16b6b0"
 
       def install
         bin.install "baton-zoom"
@@ -28,15 +28,15 @@ class BatonZoom < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-zoom/releases/download/v0.5.1/baton-zoom-v0.5.1-linux-amd64.tar.gz"
-      sha256 "9b413f4214f3246981e65d324fe58a9451380911208074e693d9f6588fd2c12b"
+      url "https://github.com/ConductorOne/baton-zoom/releases/download/v0.5.2/baton-zoom-v0.5.2-linux-amd64.tar.gz"
+      sha256 "6a2c5d8728f2785c131193c6c02746e11e67b0db3c9b969160ed78051baeeb6e"
       def install
         bin.install "baton-zoom"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-zoom/releases/download/v0.5.1/baton-zoom-v0.5.1-linux-arm64.tar.gz"
-      sha256 "1da71111a485301a27c1e5625fc8daaa8fef8268a330d65430584afd15309543"
+      url "https://github.com/ConductorOne/baton-zoom/releases/download/v0.5.2/baton-zoom-v0.5.2-linux-arm64.tar.gz"
+      sha256 "f77973278e28f07638449ee0fdcd1996cf608f9680e4189cf3883d531268ac5f"
       def install
         bin.install "baton-zoom"
       end
