@@ -5,20 +5,20 @@
 class BatonDocusign < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.10"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-docusign/releases/download/v0.1.10/baton-docusign-v0.1.10-darwin-amd64.zip"
-      sha256 "76f47157496ace971fb1df9d806e0bf7f6daf127f7ff5fc7ea4ffac5818fcee9"
+      url "https://github.com/ConductorOne/baton-docusign/releases/download/v0.2.0/baton-docusign-v0.2.0-darwin-amd64.zip"
+      sha256 "39d2e78bb9e982539ba7f9caff117b6e77af92593bd5741aab6a7dccd0a4c663"
 
       def install
         bin.install "baton-docusign"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-docusign/releases/download/v0.1.10/baton-docusign-v0.1.10-darwin-arm64.zip"
-      sha256 "9e41000223bf6b14a7ff141b1a8f576f7df0d2c55d09cfb3916a7f1a8cb8a1da"
+      url "https://github.com/ConductorOne/baton-docusign/releases/download/v0.2.0/baton-docusign-v0.2.0-darwin-arm64.zip"
+      sha256 "b841bb092aa8461958c6453bc3614f774012cc2658336dda4259a6c391e85e7e"
 
       def install
         bin.install "baton-docusign"
@@ -28,15 +28,15 @@ class BatonDocusign < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-docusign/releases/download/v0.1.10/baton-docusign-v0.1.10-linux-amd64.tar.gz"
-      sha256 "30bc2a6fddec3ba1de4529a78d59432754a7ce74b7f3cc8769a17fc3c06df8b5"
+      url "https://github.com/ConductorOne/baton-docusign/releases/download/v0.2.0/baton-docusign-v0.2.0-linux-amd64.tar.gz"
+      sha256 "1bceca85e687c8c198ba8b8a24af328268eb14bb4d6fa4b1495b40f9bd0d6efd"
       def install
         bin.install "baton-docusign"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-docusign/releases/download/v0.1.10/baton-docusign-v0.1.10-linux-arm64.tar.gz"
-      sha256 "7f84e6b24d4be9d69745653b35f28322ba86a540afa8c8cf6dcdc3013df9e91f"
+      url "https://github.com/ConductorOne/baton-docusign/releases/download/v0.2.0/baton-docusign-v0.2.0-linux-arm64.tar.gz"
+      sha256 "fa99e71197abe1a1ee78da452e09b946cd4eab02395c7b7330b046aefdcc8768"
       def install
         bin.install "baton-docusign"
       end
