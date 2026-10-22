@@ -5,20 +5,20 @@
 class BatonPanorama < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-panorama/releases/download/v0.0.1/baton-panorama-v0.0.1-darwin-amd64.zip"
-      sha256 "2c82561f1bc48531d1dac3a54ccf4c7f2f5ff648d48b675e92fd59f89aef69af"
+      url "https://github.com/ConductorOne/baton-panorama/releases/download/v0.1.0/baton-panorama-v0.1.0-darwin-amd64.zip"
+      sha256 "4089473258e882cca502ca0285b024a43393fc5f6ea3b22e1f74738e1700fec4"
 
       def install
         bin.install "baton-panorama"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-panorama/releases/download/v0.0.1/baton-panorama-v0.0.1-darwin-arm64.zip"
-      sha256 "27f85b9dd2538ef57139e0d5764b287a9d687006a0bf0bd33e6aee98c6dc1c66"
+      url "https://github.com/ConductorOne/baton-panorama/releases/download/v0.1.0/baton-panorama-v0.1.0-darwin-arm64.zip"
+      sha256 "7c0c9dcc118accde4af7f1dadfc54fc54f773f99e88ab524f892e0ba147c48dd"
 
       def install
         bin.install "baton-panorama"
@@ -27,18 +27,16 @@ class BatonPanorama < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-panorama/releases/download/v0.0.1/baton-panorama-v0.0.1-linux-arm64.tar.gz"
-      sha256 "87d1c6267cffdcda84679d2c01dfda53bfef1fcfd9041571eb035e3af5b37e4a"
-
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-panorama/releases/download/v0.1.0/baton-panorama-v0.1.0-linux-amd64.tar.gz"
+      sha256 "984f3f78be4fe715a7cb4f2fd379fb5d6fcd89167b5c2a45dda3728155f3075f"
       def install
         bin.install "baton-panorama"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-panorama/releases/download/v0.0.1/baton-panorama-v0.0.1-linux-amd64.tar.gz"
-      sha256 "539b728d692e4efb373ae07c1b162a205aa7ce6ebbd5e8f3308bed19e6900da2"
-
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-panorama/releases/download/v0.1.0/baton-panorama-v0.1.0-linux-arm64.tar.gz"
+      sha256 "36c19c70b63d963d636cbc4965f5af961e77a4cbbb3ffffc5161bbd63365d3f6"
       def install
         bin.install "baton-panorama"
       end
