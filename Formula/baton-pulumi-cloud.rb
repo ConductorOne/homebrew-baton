@@ -5,20 +5,20 @@
 class BatonPulumiCloud < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.1"
+  version "0.2.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-pulumi-cloud/releases/download/v0.2.1/baton-pulumi-cloud-v0.2.1-darwin-amd64.zip"
-      sha256 "ceb6fdac4406cc341658967f2ff035853ccdc91786af8b002c2d3254502cc07e"
+      url "https://github.com/ConductorOne/baton-pulumi-cloud/releases/download/v0.2.2/baton-pulumi-cloud-v0.2.2-darwin-amd64.zip"
+      sha256 "fb61f78a5b9bfcbef32aeb42641e7d434411ea7d3a6088173a9e697afb2d6c8f"
 
       def install
         bin.install "baton-pulumi-cloud"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-pulumi-cloud/releases/download/v0.2.1/baton-pulumi-cloud-v0.2.1-darwin-arm64.zip"
-      sha256 "752dcfd52789b88b79ae3511f98b61fce3c962c5fa8586c8dda92d7bc7a96610"
+      url "https://github.com/ConductorOne/baton-pulumi-cloud/releases/download/v0.2.2/baton-pulumi-cloud-v0.2.2-darwin-arm64.zip"
+      sha256 "875476e09e004a398d66931432b90c2f168347a10dda926b9fba525a7a412a2b"
 
       def install
         bin.install "baton-pulumi-cloud"
@@ -28,15 +28,15 @@ class BatonPulumiCloud < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-pulumi-cloud/releases/download/v0.2.1/baton-pulumi-cloud-v0.2.1-linux-amd64.tar.gz"
-      sha256 "6b70a10f7a48944163109bdc443ed597825a68caaf51fede6c7657cf7e31a2c5"
+      url "https://github.com/ConductorOne/baton-pulumi-cloud/releases/download/v0.2.2/baton-pulumi-cloud-v0.2.2-linux-amd64.tar.gz"
+      sha256 "7949e42a5e5537eed65d16c284bebda8219cd479614da1fae5a06be9c611ec33"
       def install
         bin.install "baton-pulumi-cloud"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-pulumi-cloud/releases/download/v0.2.1/baton-pulumi-cloud-v0.2.1-linux-arm64.tar.gz"
-      sha256 "5503bfea0b25793a53b7804e7142672383f6a49474d3d1973765192b77d60d4e"
+      url "https://github.com/ConductorOne/baton-pulumi-cloud/releases/download/v0.2.2/baton-pulumi-cloud-v0.2.2-linux-arm64.tar.gz"
+      sha256 "ccfa0d696da374f823ddf37abfa0ac97b2ee67aecf728a2f39942ffd00709854"
       def install
         bin.install "baton-pulumi-cloud"
       end
