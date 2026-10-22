@@ -5,20 +5,20 @@
 class BatonSonarqube < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-sonarqube/releases/download/v0.1.2/baton-sonarqube-v0.1.2-darwin-amd64.zip"
-      sha256 "d57fcee38ddc2bf0c563c5b32f6c5b1508e5d3cd59660cf5886c1e7fe4309175"
+      url "https://github.com/ConductorOne/baton-sonarqube/releases/download/v0.1.3/baton-sonarqube-v0.1.3-darwin-amd64.zip"
+      sha256 "38a955582df04cf848f6de17981dfd4643d18439938b177868355b3a7d10c8c1"
 
       def install
         bin.install "baton-sonarqube"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-sonarqube/releases/download/v0.1.2/baton-sonarqube-v0.1.2-darwin-arm64.zip"
-      sha256 "e494f7a6a35d687fd454ed3c9e76b02c1f7f9dc2e448ea19a74cfd5167eee477"
+      url "https://github.com/ConductorOne/baton-sonarqube/releases/download/v0.1.3/baton-sonarqube-v0.1.3-darwin-arm64.zip"
+      sha256 "6fbd1051caaec4a2901821a543b173de45475ee38f3d60209a375a57e18a0b17"
 
       def install
         bin.install "baton-sonarqube"
@@ -28,15 +28,15 @@ class BatonSonarqube < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sonarqube/releases/download/v0.1.2/baton-sonarqube-v0.1.2-linux-amd64.tar.gz"
-      sha256 "f45f2c1205e8e07dc3495e1c2287505c0a9c5cdc05c88fac7604997586dff6d6"
+      url "https://github.com/ConductorOne/baton-sonarqube/releases/download/v0.1.3/baton-sonarqube-v0.1.3-linux-amd64.tar.gz"
+      sha256 "330b5fc82dfcdf4a0606956e9ce5a59d33d74f14470724f0de06fee2956397ce"
       def install
         bin.install "baton-sonarqube"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sonarqube/releases/download/v0.1.2/baton-sonarqube-v0.1.2-linux-arm64.tar.gz"
-      sha256 "9abf2e684f4278768c3b61959f126bb75de9f0e90ebb8e231c3822d5fa160d90"
+      url "https://github.com/ConductorOne/baton-sonarqube/releases/download/v0.1.3/baton-sonarqube-v0.1.3-linux-arm64.tar.gz"
+      sha256 "1b13b316f46c0f2f8fed2a3e6809af0a4314681ea822844dfc82f45cc25b8fff"
       def install
         bin.install "baton-sonarqube"
       end
