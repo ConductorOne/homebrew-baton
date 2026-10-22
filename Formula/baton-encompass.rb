@@ -5,20 +5,20 @@
 class BatonEncompass < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-encompass/releases/download/v0.1.0/baton-encompass-v0.1.0-darwin-amd64.zip"
-      sha256 "d8574779dd57f23723f9c0b0d225a8a94adc896906d58f0acdff040a2b6b11e3"
+      url "https://github.com/ConductorOne/baton-encompass/releases/download/v0.2.0/baton-encompass-v0.2.0-darwin-amd64.zip"
+      sha256 "ed3982590bb2db771774f0e3eed9d0589a23989fbe44998f6e35e214e60228c4"
 
       def install
         bin.install "baton-encompass"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-encompass/releases/download/v0.1.0/baton-encompass-v0.1.0-darwin-arm64.zip"
-      sha256 "037283c244cb1c417150c6fe10f6c2bb2e36be0ffea48f11eb894717631e513f"
+      url "https://github.com/ConductorOne/baton-encompass/releases/download/v0.2.0/baton-encompass-v0.2.0-darwin-arm64.zip"
+      sha256 "93ff3b0c47186895d6229524672db1107bb363b422f2f96655a1817a3b544fae"
 
       def install
         bin.install "baton-encompass"
@@ -28,15 +28,15 @@ class BatonEncompass < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-encompass/releases/download/v0.1.0/baton-encompass-v0.1.0-linux-amd64.tar.gz"
-      sha256 "5cb966e5f514a27fc2124cf2fa5f3ab34fc08a667333da4118069121f8f3f358"
+      url "https://github.com/ConductorOne/baton-encompass/releases/download/v0.2.0/baton-encompass-v0.2.0-linux-amd64.tar.gz"
+      sha256 "615ca033a4f1c6d40dc90e5c3b258ca5673eb134b51b31dfc3c83a05694d8cb2"
       def install
         bin.install "baton-encompass"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-encompass/releases/download/v0.1.0/baton-encompass-v0.1.0-linux-arm64.tar.gz"
-      sha256 "34c874b0e9a68ac8c78435e07655231eafbd2a8f9f345d90473c9292e26d6b07"
+      url "https://github.com/ConductorOne/baton-encompass/releases/download/v0.2.0/baton-encompass-v0.2.0-linux-arm64.tar.gz"
+      sha256 "fcbac1b823239e18fb798d54dd94b2237c4fb4741b066e52fa76f787b95167cd"
       def install
         bin.install "baton-encompass"
       end
