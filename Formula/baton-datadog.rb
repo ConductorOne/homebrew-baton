@@ -5,20 +5,20 @@
 class BatonDatadog < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.6.1"
+  version "0.6.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-datadog/releases/download/v0.6.1/baton-datadog-v0.6.1-darwin-amd64.zip"
-      sha256 "a72c72f6f7ce72245dd99abe68c45a3796940d14fb9d4d3c1cfacd5e3b1618cd"
+      url "https://github.com/ConductorOne/baton-datadog/releases/download/v0.6.2/baton-datadog-v0.6.2-darwin-amd64.zip"
+      sha256 "9734002e996dd0687ebc7ab810ff804694e1f8a5d0db8fbb36252560365e6411"
 
       def install
         bin.install "baton-datadog"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-datadog/releases/download/v0.6.1/baton-datadog-v0.6.1-darwin-arm64.zip"
-      sha256 "cd25c0501f0c5f4cec79e008d392df437a84e2c922df624c8dbb71fa090a24fa"
+      url "https://github.com/ConductorOne/baton-datadog/releases/download/v0.6.2/baton-datadog-v0.6.2-darwin-arm64.zip"
+      sha256 "8b2b866f37aa5e2a5c8fd4668a4602d55eb0d3556b7c8c4dd048aef120f63ad2"
 
       def install
         bin.install "baton-datadog"
@@ -28,15 +28,15 @@ class BatonDatadog < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-datadog/releases/download/v0.6.1/baton-datadog-v0.6.1-linux-amd64.tar.gz"
-      sha256 "5106c782f8e037362d7797a446d171bd703e6be50bb85555e696babafde4553b"
+      url "https://github.com/ConductorOne/baton-datadog/releases/download/v0.6.2/baton-datadog-v0.6.2-linux-amd64.tar.gz"
+      sha256 "ea9a95107f9a02d9b1971bd4cf59ed460b8652ca043e0be6ae894ebc2611351d"
       def install
         bin.install "baton-datadog"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-datadog/releases/download/v0.6.1/baton-datadog-v0.6.1-linux-arm64.tar.gz"
-      sha256 "ff9c609be77f72c34210544844b91393265b8186533827d6e44204b9b8f067b9"
+      url "https://github.com/ConductorOne/baton-datadog/releases/download/v0.6.2/baton-datadog-v0.6.2-linux-arm64.tar.gz"
+      sha256 "3d949f20a273c0a721b83a89b063a47111a6cda11ef230b42191458985c4468a"
       def install
         bin.install "baton-datadog"
       end
