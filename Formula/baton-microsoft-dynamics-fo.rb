@@ -5,20 +5,20 @@
 class BatonMicrosoftDynamicsFo < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.2"
+  version "0.2.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-microsoft-dynamics-fo/releases/download/v0.2.2/baton-microsoft-dynamics-fo-v0.2.2-darwin-amd64.zip"
-      sha256 "4f843194724e97007afff38ba9bb0f7d463d6c7ce1fdeca69f8c3f6d67f5aaf3"
+      url "https://github.com/ConductorOne/baton-microsoft-dynamics-fo/releases/download/v0.2.3/baton-microsoft-dynamics-fo-v0.2.3-darwin-amd64.zip"
+      sha256 "f3542c38e3fa2afcbc3e626524afe59d76fb27e3ea835224f079d237da0b826c"
 
       def install
         bin.install "baton-microsoft-dynamics-fo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-microsoft-dynamics-fo/releases/download/v0.2.2/baton-microsoft-dynamics-fo-v0.2.2-darwin-arm64.zip"
-      sha256 "d7bb82574c8af073dbfab57f9e987ba8d2f52df55bc87d9329410d9e45e17bb7"
+      url "https://github.com/ConductorOne/baton-microsoft-dynamics-fo/releases/download/v0.2.3/baton-microsoft-dynamics-fo-v0.2.3-darwin-arm64.zip"
+      sha256 "cc6f5430fea7c57e090c69e9639493a85c1b5c7be50ac1fbdbb91f74891c9086"
 
       def install
         bin.install "baton-microsoft-dynamics-fo"
@@ -28,15 +28,15 @@ class BatonMicrosoftDynamicsFo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-microsoft-dynamics-fo/releases/download/v0.2.2/baton-microsoft-dynamics-fo-v0.2.2-linux-amd64.tar.gz"
-      sha256 "4e589a59b7fd8490344a745d72d48c1bd27b1f0af65076c3b52a52651907ac68"
+      url "https://github.com/ConductorOne/baton-microsoft-dynamics-fo/releases/download/v0.2.3/baton-microsoft-dynamics-fo-v0.2.3-linux-amd64.tar.gz"
+      sha256 "0d207e55db850ddd7a3ef53c9a5291b4f2f3cf927d57085db6eee7ec3b96a71b"
       def install
         bin.install "baton-microsoft-dynamics-fo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-microsoft-dynamics-fo/releases/download/v0.2.2/baton-microsoft-dynamics-fo-v0.2.2-linux-arm64.tar.gz"
-      sha256 "8b9cc4e047a6dad6ea6a1e565036f5a7415c9bd760c69270a7d54acd3ae8e1d2"
+      url "https://github.com/ConductorOne/baton-microsoft-dynamics-fo/releases/download/v0.2.3/baton-microsoft-dynamics-fo-v0.2.3-linux-arm64.tar.gz"
+      sha256 "dc4b5e9b10bc513eecba0808d0563a0ddf8b53dbd9e94abfc4ad03ff7958b976"
       def install
         bin.install "baton-microsoft-dynamics-fo"
       end
