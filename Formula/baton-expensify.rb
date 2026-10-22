@@ -5,20 +5,20 @@
 class BatonExpensify < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.1"
+  version "0.2.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-expensify/releases/download/v0.2.1/baton-expensify-v0.2.1-darwin-amd64.zip"
-      sha256 "35f45e85e0966120d4afb7e4e618234d9a89de6f3b65ff7c893122018943176b"
+      url "https://github.com/ConductorOne/baton-expensify/releases/download/v0.2.2/baton-expensify-v0.2.2-darwin-amd64.zip"
+      sha256 "369d89c3eedf85c53f7fb2177aff3130ea841889deebee0165e63a86e35a8a37"
 
       def install
         bin.install "baton-expensify"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-expensify/releases/download/v0.2.1/baton-expensify-v0.2.1-darwin-arm64.zip"
-      sha256 "5cb62dc4947851bfd32783349112f7d54a04819ea433d196928743c1b6acdb32"
+      url "https://github.com/ConductorOne/baton-expensify/releases/download/v0.2.2/baton-expensify-v0.2.2-darwin-arm64.zip"
+      sha256 "a9f5d5218f0a3b912990a66a30f1e5925b2e39b7bbc7570d62949ca369702d9c"
 
       def install
         bin.install "baton-expensify"
@@ -28,15 +28,15 @@ class BatonExpensify < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-expensify/releases/download/v0.2.1/baton-expensify-v0.2.1-linux-amd64.tar.gz"
-      sha256 "41f766a08045a102dfa708d62cde39a92775f7fc1774a4728b4c94facba5bcc7"
+      url "https://github.com/ConductorOne/baton-expensify/releases/download/v0.2.2/baton-expensify-v0.2.2-linux-amd64.tar.gz"
+      sha256 "5eccb024b34ccf914f82aaab4c65e38bfc0c82d316e991d8389497836ce14f9f"
       def install
         bin.install "baton-expensify"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-expensify/releases/download/v0.2.1/baton-expensify-v0.2.1-linux-arm64.tar.gz"
-      sha256 "2e068e390f679caadaf6815b96500706da76aa73210dd6a094297f9168b60542"
+      url "https://github.com/ConductorOne/baton-expensify/releases/download/v0.2.2/baton-expensify-v0.2.2-linux-arm64.tar.gz"
+      sha256 "b38463f6179faa3f54f81e2f5c06ef486e8511c5691501e653bd5856ceaaa317"
       def install
         bin.install "baton-expensify"
       end
