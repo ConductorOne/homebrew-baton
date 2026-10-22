@@ -5,20 +5,20 @@
 class BatonPandaDoc < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.3.2"
+  version "0.3.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-panda-doc/releases/download/v0.3.2/baton-panda-doc-v0.3.2-darwin-amd64.zip"
-      sha256 "b70e6e9b961567243a636a34e0e13561785747d0d0dec402eeca178c4cdb67bb"
+      url "https://github.com/ConductorOne/baton-panda-doc/releases/download/v0.3.3/baton-panda-doc-v0.3.3-darwin-amd64.zip"
+      sha256 "35388c44184c6d731bed607d5b2289d49877ff35b988b098dc2223fb4218aa2c"
 
       def install
         bin.install "baton-panda-doc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-panda-doc/releases/download/v0.3.2/baton-panda-doc-v0.3.2-darwin-arm64.zip"
-      sha256 "26ddeb4f8dea075a26acf8d924e5992db847f8105a37e2ff73bf7edbaa570a90"
+      url "https://github.com/ConductorOne/baton-panda-doc/releases/download/v0.3.3/baton-panda-doc-v0.3.3-darwin-arm64.zip"
+      sha256 "e9a7a4946fcd4c5d1d43b51bc800558b6954af3121fec525cc8687a3ac073a6d"
 
       def install
         bin.install "baton-panda-doc"
@@ -28,15 +28,15 @@ class BatonPandaDoc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-panda-doc/releases/download/v0.3.2/baton-panda-doc-v0.3.2-linux-amd64.tar.gz"
-      sha256 "49e48f2f6d3fd36d4a8434a06c8468388ec0cf4968d2cdadcea0e4cc3f771ed1"
+      url "https://github.com/ConductorOne/baton-panda-doc/releases/download/v0.3.3/baton-panda-doc-v0.3.3-linux-amd64.tar.gz"
+      sha256 "5ee65462f2c5f4a206c804cf0d922a9aceafdc9e38ffdfe8bf9f2d0024908497"
       def install
         bin.install "baton-panda-doc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-panda-doc/releases/download/v0.3.2/baton-panda-doc-v0.3.2-linux-arm64.tar.gz"
-      sha256 "1bf4db94791d4eee4d2ffa2cb5d329c272a949718cd4c193e811e4460a8ab8f3"
+      url "https://github.com/ConductorOne/baton-panda-doc/releases/download/v0.3.3/baton-panda-doc-v0.3.3-linux-arm64.tar.gz"
+      sha256 "84ffc62d43fe829410992e6ed6c457e7d816162ec7b707c102c6126ab89ad569"
       def install
         bin.install "baton-panda-doc"
       end
