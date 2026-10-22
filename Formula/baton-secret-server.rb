@@ -5,20 +5,20 @@
 class BatonSecretServer < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.2"
+  version "0.2.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-secret-server/releases/download/v0.2.2/baton-secret-server-v0.2.2-darwin-amd64.zip"
-      sha256 "11e4eb03abd1aa882e5e5cee0f4a72d8d368041a5a3f59830a7ae2b0c8df0d8e"
+      url "https://github.com/ConductorOne/baton-secret-server/releases/download/v0.2.3/baton-secret-server-v0.2.3-darwin-amd64.zip"
+      sha256 "3d77d56104b94d29dc9280a17f514494a5ce96749c2157b9729f991c44366223"
 
       def install
         bin.install "baton-secret-server"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-secret-server/releases/download/v0.2.2/baton-secret-server-v0.2.2-darwin-arm64.zip"
-      sha256 "af4edd33cad0678293f00d7760c871349df1f3c356e8a27aeb1e218212eb2fe6"
+      url "https://github.com/ConductorOne/baton-secret-server/releases/download/v0.2.3/baton-secret-server-v0.2.3-darwin-arm64.zip"
+      sha256 "f078de4a7d88232a8aa6590bebdbc8d51e4fd2c0f9482a70127d163f28ef7888"
 
       def install
         bin.install "baton-secret-server"
@@ -28,15 +28,15 @@ class BatonSecretServer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-secret-server/releases/download/v0.2.2/baton-secret-server-v0.2.2-linux-amd64.tar.gz"
-      sha256 "0a3689f3d10d27de5d228ebfc3c1234512ee834a0caaabc45982268b0b2ebb81"
+      url "https://github.com/ConductorOne/baton-secret-server/releases/download/v0.2.3/baton-secret-server-v0.2.3-linux-amd64.tar.gz"
+      sha256 "fd176536c7c9e7f6b581eca0e1fc0850e2d124053ef767dc50d85e9667c2e872"
       def install
         bin.install "baton-secret-server"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-secret-server/releases/download/v0.2.2/baton-secret-server-v0.2.2-linux-arm64.tar.gz"
-      sha256 "06d30a55c6ff0f91a697e47253a78066d6c47862a3f8f550f1e80fd08cdc4c3e"
+      url "https://github.com/ConductorOne/baton-secret-server/releases/download/v0.2.3/baton-secret-server-v0.2.3-linux-arm64.tar.gz"
+      sha256 "eb99bdc2fa0d5820f5ac4138dbc2b2e6c19d9ae973e00b510ef484e0a844c654"
       def install
         bin.install "baton-secret-server"
       end
