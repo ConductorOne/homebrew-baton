@@ -5,20 +5,20 @@
 class BatonBlueworksLive < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.3"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-blueworks-live/releases/download/v0.0.3/baton-blueworks-live-v0.0.3-darwin-amd64.zip"
-      sha256 "78ab30a5881381b4af366035cf7cdfffca8f443c5397c5a01a1a4f7a2b64b417"
+      url "https://github.com/ConductorOne/baton-blueworks-live/releases/download/v0.1.0/baton-blueworks-live-v0.1.0-darwin-amd64.zip"
+      sha256 "36888f8c74aa5118be2b20d56314184f0907151f9ae41312112dad2f984deb43"
 
       def install
         bin.install "baton-blueworks-live"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-blueworks-live/releases/download/v0.0.3/baton-blueworks-live-v0.0.3-darwin-arm64.zip"
-      sha256 "bec2bf58ea1217e53881212afe77558491c294349c4775e60305bbcd2975cefd"
+      url "https://github.com/ConductorOne/baton-blueworks-live/releases/download/v0.1.0/baton-blueworks-live-v0.1.0-darwin-arm64.zip"
+      sha256 "b4587d4b227af0d3ae49b6d7cdb489bcfed143550d3d8176d82d85e88613fcf2"
 
       def install
         bin.install "baton-blueworks-live"
@@ -27,24 +27,18 @@ class BatonBlueworksLive < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-blueworks-live/releases/download/v0.0.3/baton-blueworks-live-v0.0.3-linux-amd64.tar.gz"
-        sha256 "1f683a8ecf69202b5e11afc361768172fdf22107832de4c984a192c5cf2248d7"
-
-        def install
-          bin.install "baton-blueworks-live"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-blueworks-live/releases/download/v0.1.0/baton-blueworks-live-v0.1.0-linux-amd64.tar.gz"
+      sha256 "1ff508778d9297f6fa3b4f158aeefde630113bf98a817d8c65d6e37df1e66deb"
+      def install
+        bin.install "baton-blueworks-live"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-blueworks-live/releases/download/v0.0.3/baton-blueworks-live-v0.0.3-linux-arm64.tar.gz"
-        sha256 "212b73895eb0e8e8a55467f9c8c1173ff7cdedf62018351d19917a803b288dbc"
-
-        def install
-          bin.install "baton-blueworks-live"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-blueworks-live/releases/download/v0.1.0/baton-blueworks-live-v0.1.0-linux-arm64.tar.gz"
+      sha256 "6e24ad87361d077370241cad5bcb0aac1ed59087d20abc359357571b4100f01c"
+      def install
+        bin.install "baton-blueworks-live"
       end
     end
   end
