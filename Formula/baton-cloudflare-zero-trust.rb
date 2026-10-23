@@ -5,20 +5,20 @@
 class BatonCloudflareZeroTrust < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-cloudflare-zero-trust/releases/download/v0.3.0/baton-cloudflare-zero-trust-v0.3.0-darwin-amd64.zip"
-      sha256 "ed97a658631a84ece5cfccd4481b5d773f3e5b91c2439d6af071e0f4df3eacc9"
+      url "https://github.com/ConductorOne/baton-cloudflare-zero-trust/releases/download/v0.3.1/baton-cloudflare-zero-trust-v0.3.1-darwin-amd64.zip"
+      sha256 "f8c748169599687ec2c0820d9603444e733cb122be1c41bbe2b939ba0e97750f"
 
       def install
         bin.install "baton-cloudflare-zero-trust"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-cloudflare-zero-trust/releases/download/v0.3.0/baton-cloudflare-zero-trust-v0.3.0-darwin-arm64.zip"
-      sha256 "9f0476b612cadc144cc7651a42063e53af44ecf63ab9f9c65f49f5d7e20b028e"
+      url "https://github.com/ConductorOne/baton-cloudflare-zero-trust/releases/download/v0.3.1/baton-cloudflare-zero-trust-v0.3.1-darwin-arm64.zip"
+      sha256 "7b50c17ecdc980c0a06ef9a737564e1a6f43bc6107e190743b9a625d463dae1b"
 
       def install
         bin.install "baton-cloudflare-zero-trust"
@@ -28,15 +28,15 @@ class BatonCloudflareZeroTrust < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-cloudflare-zero-trust/releases/download/v0.3.0/baton-cloudflare-zero-trust-v0.3.0-linux-amd64.tar.gz"
-      sha256 "3e941b6699e1df75e1e41356cff3e223f4332c390fa4641491dd93c68c823dfc"
+      url "https://github.com/ConductorOne/baton-cloudflare-zero-trust/releases/download/v0.3.1/baton-cloudflare-zero-trust-v0.3.1-linux-amd64.tar.gz"
+      sha256 "0d76871846a6e5d64e90315891be78faaaa703372d841e10beb87d60a9d1c93d"
       def install
         bin.install "baton-cloudflare-zero-trust"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-cloudflare-zero-trust/releases/download/v0.3.0/baton-cloudflare-zero-trust-v0.3.0-linux-arm64.tar.gz"
-      sha256 "d113594706451807e8a26c37b208646ed33dcfdb13eba0167afa1a3fb6852f0a"
+      url "https://github.com/ConductorOne/baton-cloudflare-zero-trust/releases/download/v0.3.1/baton-cloudflare-zero-trust-v0.3.1-linux-arm64.tar.gz"
+      sha256 "339922965f37874f97017ef795b97c5a43f8611f07a3134e1ab3fb0ffb0cfd10"
       def install
         bin.install "baton-cloudflare-zero-trust"
       end
