@@ -5,20 +5,20 @@
 class BatonRedis < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.4"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-redis/releases/download/v0.0.4/baton-redis-v0.0.4-darwin-amd64.zip"
-      sha256 "f145f5e86ce9241b3dbdf89856167bfe429f502baa02b274cdf73a462231e0d6"
+      url "https://github.com/ConductorOne/baton-redis/releases/download/v0.1.0/baton-redis-v0.1.0-darwin-amd64.zip"
+      sha256 "b3c502d5fbdac9da16c5726aff4966033b0a4370cb7f708ecaaae132352417c5"
 
       def install
         bin.install "baton-redis"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-redis/releases/download/v0.0.4/baton-redis-v0.0.4-darwin-arm64.zip"
-      sha256 "a4aadd28434210e4496e79fd8d8b4af1a370a151edebc1f9a9f2d1eac682b2ac"
+      url "https://github.com/ConductorOne/baton-redis/releases/download/v0.1.0/baton-redis-v0.1.0-darwin-arm64.zip"
+      sha256 "741fdcf371f71d1de5c68d74e9770bb44a2493e3d9eeb69da6cb5f71ad1649c1"
 
       def install
         bin.install "baton-redis"
@@ -28,15 +28,15 @@ class BatonRedis < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-redis/releases/download/v0.0.4/baton-redis-v0.0.4-linux-amd64.tar.gz"
-      sha256 "aa266d403c3699faf8038719873d8aaf3eb367eb17a5ad457554fb5f83f9c14f"
+      url "https://github.com/ConductorOne/baton-redis/releases/download/v0.1.0/baton-redis-v0.1.0-linux-amd64.tar.gz"
+      sha256 "55aa0dd1c566474715c210eca97f3fbd91b2db4540c66aca68bb79d33a3d2a22"
       def install
         bin.install "baton-redis"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-redis/releases/download/v0.0.4/baton-redis-v0.0.4-linux-arm64.tar.gz"
-      sha256 "f7d2284d976f71e4ee58bce83ddfc7a8be191554b96f26c31591c44f206ea6f6"
+      url "https://github.com/ConductorOne/baton-redis/releases/download/v0.1.0/baton-redis-v0.1.0-linux-arm64.tar.gz"
+      sha256 "9ee216331b9da8f6bc4f665ddffa01a138fa44c385cffb1a0ea5f2bc0ea20b00"
       def install
         bin.install "baton-redis"
       end
