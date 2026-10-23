@@ -5,20 +5,20 @@
 class BatonVmwareVcenter < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.1.0"
 
   on_macos do
-    on_intel do
-      url "https://github.com/ConductorOne/baton-vmware-vcenter/releases/download/v0.0.1/baton-vmware-vcenter-v0.0.1-darwin-amd64.zip"
-      sha256 "a9082f9f63bbdcec2221aa82339362c4bed7ef6d4499a1de70353d0639744465"
+    if Hardware::CPU.intel?
+      url "https://github.com/ConductorOne/baton-vmware-vcenter/releases/download/v0.1.0/baton-vmware-vcenter-v0.1.0-darwin-amd64.zip"
+      sha256 "7b68b02d3e90715fae96482312937df5ab22d3fbdee0040d3cfe5fd0f19c2cc5"
 
       def install
         bin.install "baton-vmware-vcenter"
       end
     end
-    on_arm do
-      url "https://github.com/ConductorOne/baton-vmware-vcenter/releases/download/v0.0.1/baton-vmware-vcenter-v0.0.1-darwin-arm64.zip"
-      sha256 "bfb5902bc4f80ffcd9726ba20111eebb94f07826fe8ec60d7c6af01bb6ef0e48"
+    if Hardware::CPU.arm?
+      url "https://github.com/ConductorOne/baton-vmware-vcenter/releases/download/v0.1.0/baton-vmware-vcenter-v0.1.0-darwin-arm64.zip"
+      sha256 "301fe7983f968c77ad5c76d45059c6f5870aef405509ba945e0844c3b2190ee6"
 
       def install
         bin.install "baton-vmware-vcenter"
@@ -27,24 +27,18 @@ class BatonVmwareVcenter < Formula
   end
 
   on_linux do
-    on_intel do
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-vmware-vcenter/releases/download/v0.0.1/baton-vmware-vcenter-v0.0.1-linux-amd64.tar.gz"
-        sha256 "b1ef67d029433fc32069a24b9f381accf9939d13469beff750982ccecb45aad6"
-
-        def install
-          bin.install "baton-vmware-vcenter"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-vmware-vcenter/releases/download/v0.1.0/baton-vmware-vcenter-v0.1.0-linux-amd64.tar.gz"
+      sha256 "4896b39ee45f0fd4c1fa7dee40995367f8df8d88c351fd7fb32922d6d823b5a0"
+      def install
+        bin.install "baton-vmware-vcenter"
       end
     end
-    on_arm do
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-vmware-vcenter/releases/download/v0.0.1/baton-vmware-vcenter-v0.0.1-linux-arm64.tar.gz"
-        sha256 "2e7c5a75b02ed4d812611d7398ae85ebafb606849d93bc121f1f21486e20680c"
-
-        def install
-          bin.install "baton-vmware-vcenter"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-vmware-vcenter/releases/download/v0.1.0/baton-vmware-vcenter-v0.1.0-linux-arm64.tar.gz"
+      sha256 "bbe429a540e9d0db995a1e60d20bf7de87e0e580cec887a845f40613048df16c"
+      def install
+        bin.install "baton-vmware-vcenter"
       end
     end
   end
