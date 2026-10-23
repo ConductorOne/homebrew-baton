@@ -5,20 +5,20 @@
 class BatonTwilioSegmentV2 < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.4"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-twilio-segment-v2/releases/download/v0.0.4/baton-twilio-segment-v2-v0.0.4-darwin-amd64.zip"
-      sha256 "db5e1e29b203d8daaa181b0acb78ad301c850693e27ffb130dc75888368ccb10"
+      url "https://github.com/ConductorOne/baton-twilio-segment-v2/releases/download/v0.1.0/baton-twilio-segment-v2-v0.1.0-darwin-amd64.zip"
+      sha256 "a962f8b36e7aadbc0ea146a99de092bf9014db65150d49b708e0ddcaf11f4e0c"
 
       def install
         bin.install "baton-twilio-segment-v2"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-twilio-segment-v2/releases/download/v0.0.4/baton-twilio-segment-v2-v0.0.4-darwin-arm64.zip"
-      sha256 "9bf22c8cffc5a2a977b1be84751acd3cec9497c78fc5f35b6032481b0ea83851"
+      url "https://github.com/ConductorOne/baton-twilio-segment-v2/releases/download/v0.1.0/baton-twilio-segment-v2-v0.1.0-darwin-arm64.zip"
+      sha256 "fcfa9f5472cd245c738bfa97a3dc509f9db25accb0879a80a2edccb5c85b44bd"
 
       def install
         bin.install "baton-twilio-segment-v2"
@@ -28,15 +28,15 @@ class BatonTwilioSegmentV2 < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-twilio-segment-v2/releases/download/v0.0.4/baton-twilio-segment-v2-v0.0.4-linux-amd64.tar.gz"
-      sha256 "71c67d70ad8a4ad7f107c4a62b97d69ebae0378360f59ff3a71a87fa490522fb"
+      url "https://github.com/ConductorOne/baton-twilio-segment-v2/releases/download/v0.1.0/baton-twilio-segment-v2-v0.1.0-linux-amd64.tar.gz"
+      sha256 "97aaa10bf7783bd5a6add9be5f6e035b1f30f492589e8c35c64330b4b9adfeb5"
       def install
         bin.install "baton-twilio-segment-v2"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-twilio-segment-v2/releases/download/v0.0.4/baton-twilio-segment-v2-v0.0.4-linux-arm64.tar.gz"
-      sha256 "c714b802f107497581d56d2f3fe9ec46466afa751412ee4916629ea688045bb0"
+      url "https://github.com/ConductorOne/baton-twilio-segment-v2/releases/download/v0.1.0/baton-twilio-segment-v2-v0.1.0-linux-arm64.tar.gz"
+      sha256 "124f7147812f1d1e39e8999255eeb0528640d6486864624b93b3fa61ed549194"
       def install
         bin.install "baton-twilio-segment-v2"
       end
