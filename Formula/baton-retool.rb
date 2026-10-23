@@ -5,20 +5,20 @@
 class BatonRetool < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.21"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-retool/releases/download/v0.0.21/baton-retool-v0.0.21-darwin-amd64.zip"
-      sha256 "2514d1cf5b9741c164d8e9618329a2699dac8d7d18a011ef853151a08f66ec5c"
+      url "https://github.com/ConductorOne/baton-retool/releases/download/v0.1.0/baton-retool-v0.1.0-darwin-amd64.zip"
+      sha256 "cd73406d0ca7fbca6b9f3a01fd9df07759d93a02e3d3a75f382700035337fa07"
 
       def install
         bin.install "baton-retool"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-retool/releases/download/v0.0.21/baton-retool-v0.0.21-darwin-arm64.zip"
-      sha256 "dc99884d4f6bee797ace92758ea7c37db95ba30baa0a8b841a47d2bed6431c15"
+      url "https://github.com/ConductorOne/baton-retool/releases/download/v0.1.0/baton-retool-v0.1.0-darwin-arm64.zip"
+      sha256 "415531f4e4549e6cd1a51b3f42280a7578804a869c89963d9bf2d6ed2eebb70e"
 
       def install
         bin.install "baton-retool"
@@ -28,15 +28,15 @@ class BatonRetool < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-retool/releases/download/v0.0.21/baton-retool-v0.0.21-linux-amd64.tar.gz"
-      sha256 "2ea171190f83eb54fc1b04609e7885932bc5d4acbf8179ba2fbb0b1cae749ecb"
+      url "https://github.com/ConductorOne/baton-retool/releases/download/v0.1.0/baton-retool-v0.1.0-linux-amd64.tar.gz"
+      sha256 "8c42c4bf706fcacaffb30744ca93ee4732f2a1ea2f5997f58410272b970fb263"
       def install
         bin.install "baton-retool"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-retool/releases/download/v0.0.21/baton-retool-v0.0.21-linux-arm64.tar.gz"
-      sha256 "65d77b2883e10627037c598e0a5cfcb76583c296fdc002a0f0b0ae06842b7754"
+      url "https://github.com/ConductorOne/baton-retool/releases/download/v0.1.0/baton-retool-v0.1.0-linux-arm64.tar.gz"
+      sha256 "1e38380f95020e0e53a34f194a9a63da876bf3150025f8e42134db8276e50c80"
       def install
         bin.install "baton-retool"
       end
