@@ -5,20 +5,20 @@
 class BatonDiscord < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.3"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-discord/releases/download/v0.0.3/baton-discord-v0.0.3-darwin-amd64.zip"
-      sha256 "c22a2bd30db0f939ffcddec71fbe0bcc64468165081cce19d1f84a73acea45a8"
+      url "https://github.com/ConductorOne/baton-discord/releases/download/v0.1.0/baton-discord-v0.1.0-darwin-amd64.zip"
+      sha256 "32b449e8b46b193e0306fb3a8d586f9ef3e58bbb1700158cc2084ab5fe4ce54c"
 
       def install
         bin.install "baton-discord"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-discord/releases/download/v0.0.3/baton-discord-v0.0.3-darwin-arm64.zip"
-      sha256 "fcd12afdd1b364c1b838f40f2b1787e4c5332990bd2c82ab9775bf0142e155ce"
+      url "https://github.com/ConductorOne/baton-discord/releases/download/v0.1.0/baton-discord-v0.1.0-darwin-arm64.zip"
+      sha256 "d73613ae2c19b8ec96342f9def818f94a58fc020c5cf5c517b718dea09db5474"
 
       def install
         bin.install "baton-discord"
@@ -28,15 +28,15 @@ class BatonDiscord < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-discord/releases/download/v0.0.3/baton-discord-v0.0.3-linux-amd64.tar.gz"
-      sha256 "50cd4d8d54ded29ffb59e3dd3f0f5ab8c51a35ed0d670fa06ada0bfd06b14c15"
+      url "https://github.com/ConductorOne/baton-discord/releases/download/v0.1.0/baton-discord-v0.1.0-linux-amd64.tar.gz"
+      sha256 "99e1f92d1985bfefb639412fd51057f894dd6a3a2e0936e530f3890bc61db69c"
       def install
         bin.install "baton-discord"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-discord/releases/download/v0.0.3/baton-discord-v0.0.3-linux-arm64.tar.gz"
-      sha256 "b32598384539fc929da7a2470d66cf380c7a8bc32a63eec56d27955072ed6887"
+      url "https://github.com/ConductorOne/baton-discord/releases/download/v0.1.0/baton-discord-v0.1.0-linux-arm64.tar.gz"
+      sha256 "ce49baebce1f6675b2dac0d81bb62aa2bea6b400bf025ace042a42a9469e6a6a"
       def install
         bin.install "baton-discord"
       end
