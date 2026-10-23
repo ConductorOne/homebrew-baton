@@ -5,20 +5,20 @@
 class BatonVeeam < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-veeam/releases/download/v0.0.1/baton-veeam-v0.0.1-darwin-amd64.zip"
-      sha256 "35602f5bdae0100541f8fcd9047305fbcd4d644b6b6c1dcecce9590196674332"
+      url "https://github.com/ConductorOne/baton-veeam/releases/download/v0.1.0/baton-veeam-v0.1.0-darwin-amd64.zip"
+      sha256 "6db2e35b5085c93434849d55239263c5218e9c6e08090a8e6d1d07e205935ec1"
 
       def install
         bin.install "baton-veeam"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-veeam/releases/download/v0.0.1/baton-veeam-v0.0.1-darwin-arm64.zip"
-      sha256 "371f6d1dd1b8cf61718711b827fed0755f505ed45c7a00fafdf9741b97095f4b"
+      url "https://github.com/ConductorOne/baton-veeam/releases/download/v0.1.0/baton-veeam-v0.1.0-darwin-arm64.zip"
+      sha256 "4402aae6a167bd7d1a03a749fe3d25e19069e2f1cfe7bdfe9fe49841486e2fdc"
 
       def install
         bin.install "baton-veeam"
@@ -28,15 +28,15 @@ class BatonVeeam < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-veeam/releases/download/v0.0.1/baton-veeam-v0.0.1-linux-amd64.tar.gz"
-      sha256 "a387bd80b8276642b36314bad3090a84854ccfceed1f297d82fb4bac1e06c2d1"
+      url "https://github.com/ConductorOne/baton-veeam/releases/download/v0.1.0/baton-veeam-v0.1.0-linux-amd64.tar.gz"
+      sha256 "cd3e134f5f94722e4e87e89bf7bb5744a0b22b16b5735212a53ba317e7af85e7"
       def install
         bin.install "baton-veeam"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-veeam/releases/download/v0.0.1/baton-veeam-v0.0.1-linux-arm64.tar.gz"
-      sha256 "1f5a423fa61946cb75fed287fffcd5eefdb84ed67baeb8121dac8acbdfb118f5"
+      url "https://github.com/ConductorOne/baton-veeam/releases/download/v0.1.0/baton-veeam-v0.1.0-linux-arm64.tar.gz"
+      sha256 "16c9391760e5dca507ba7f672da1bb70e56a04825477745dfe8c43d6f7069a6f"
       def install
         bin.install "baton-veeam"
       end
