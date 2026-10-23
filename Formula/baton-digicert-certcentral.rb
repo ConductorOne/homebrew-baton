@@ -5,20 +5,20 @@
 class BatonDigicertCertcentral < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-digicert-certcentral/releases/download/v0.1.0/baton-digicert-certcentral-v0.1.0-darwin-amd64.zip"
-      sha256 "3ea63c6705c7bb5eafbf14235bec53832545766926298004e3948eb8bd55855e"
+      url "https://github.com/ConductorOne/baton-digicert-certcentral/releases/download/v0.2.0/baton-digicert-certcentral-v0.2.0-darwin-amd64.zip"
+      sha256 "25068efbdfcfcc8a51d46ab3ed3543d980eb0255e2b0a9b259e6e72b99dba510"
 
       def install
         bin.install "baton-digicert-certcentral"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-digicert-certcentral/releases/download/v0.1.0/baton-digicert-certcentral-v0.1.0-darwin-arm64.zip"
-      sha256 "850ad3021441791051934c84c6fddd4d41c2064b9ab93bcd87d9df31eacf8a77"
+      url "https://github.com/ConductorOne/baton-digicert-certcentral/releases/download/v0.2.0/baton-digicert-certcentral-v0.2.0-darwin-arm64.zip"
+      sha256 "800f109da18e37d15507659f5b662677619761a88bd1003a9b39f1bad6606f56"
 
       def install
         bin.install "baton-digicert-certcentral"
@@ -27,24 +27,18 @@ class BatonDigicertCertcentral < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-digicert-certcentral/releases/download/v0.1.0/baton-digicert-certcentral-v0.1.0-linux-amd64.tar.gz"
-        sha256 "c0295c3f667311a48032b05083f2fda75f3dac0fb03077a5459f02feb9e3da1b"
-
-        def install
-          bin.install "baton-digicert-certcentral"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-digicert-certcentral/releases/download/v0.2.0/baton-digicert-certcentral-v0.2.0-linux-amd64.tar.gz"
+      sha256 "7666487240ecdf0ca2ad36c7661e42ec23309bfd4adce0f9ad0315179420fad4"
+      def install
+        bin.install "baton-digicert-certcentral"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-digicert-certcentral/releases/download/v0.1.0/baton-digicert-certcentral-v0.1.0-linux-arm64.tar.gz"
-        sha256 "9491ecbd596b874a8f2c2420e2f95b4b78ae44e853938e9bcc49e8f443e03cec"
-
-        def install
-          bin.install "baton-digicert-certcentral"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-digicert-certcentral/releases/download/v0.2.0/baton-digicert-certcentral-v0.2.0-linux-arm64.tar.gz"
+      sha256 "ec9adb9ce680e6a4939824d54e441e030f32c960b2cc3ec690dd4f76a3ea5a73"
+      def install
+        bin.install "baton-digicert-certcentral"
       end
     end
   end
