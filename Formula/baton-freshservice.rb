@@ -5,20 +5,20 @@
 class BatonFreshservice < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.8"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-freshservice/releases/download/v0.0.8/baton-freshservice-v0.0.8-darwin-amd64.zip"
-      sha256 "2d80737543b83246998bc16a0ff89496b501614e5d57bea0a9d8027ca7ab8fda"
+      url "https://github.com/ConductorOne/baton-freshservice/releases/download/v0.1.0/baton-freshservice-v0.1.0-darwin-amd64.zip"
+      sha256 "3b5f6c4736f94cbb9c5b741e6e02c395daee19035d952e7adce4dd0993538173"
 
       def install
         bin.install "baton-freshservice"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-freshservice/releases/download/v0.0.8/baton-freshservice-v0.0.8-darwin-arm64.zip"
-      sha256 "1bfc0acd99f5bd5230c410f08cb0c6cdc2563a4fdde9ff995acd472fcedb58cb"
+      url "https://github.com/ConductorOne/baton-freshservice/releases/download/v0.1.0/baton-freshservice-v0.1.0-darwin-arm64.zip"
+      sha256 "7ab17984032e6c5499994fb800a3aaa1c6717e8b3302ac0d85054c994ff1d889"
 
       def install
         bin.install "baton-freshservice"
@@ -28,15 +28,15 @@ class BatonFreshservice < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-freshservice/releases/download/v0.0.8/baton-freshservice-v0.0.8-linux-amd64.tar.gz"
-      sha256 "2e2ac551996cdfb0bc05ac356a43bdeb7bce28752b6e44a5e44bdb64372512b2"
+      url "https://github.com/ConductorOne/baton-freshservice/releases/download/v0.1.0/baton-freshservice-v0.1.0-linux-amd64.tar.gz"
+      sha256 "a5143874ab5954589b11cfd87caecfe638f845786fd4482cbe3018be4929af29"
       def install
         bin.install "baton-freshservice"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-freshservice/releases/download/v0.0.8/baton-freshservice-v0.0.8-linux-arm64.tar.gz"
-      sha256 "7dc3140a0765ec7a58904bee19404a9c05963c9dc0b3a0f387df1bc6af16001f"
+      url "https://github.com/ConductorOne/baton-freshservice/releases/download/v0.1.0/baton-freshservice-v0.1.0-linux-arm64.tar.gz"
+      sha256 "87ff01a91683aecb0f93d4723b8d13e6d1011997bcff209c58a2dca7e6e4de12"
       def install
         bin.install "baton-freshservice"
       end
