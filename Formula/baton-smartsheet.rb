@@ -5,20 +5,20 @@
 class BatonSmartsheet < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-smartsheet/releases/download/v0.2.0/baton-smartsheet-v0.2.0-darwin-amd64.zip"
-      sha256 "10ef039436e97e6cb526c327babd51461984a2fa2d63a7f0a1297e62d5d9c87e"
+      url "https://github.com/ConductorOne/baton-smartsheet/releases/download/v0.2.1/baton-smartsheet-v0.2.1-darwin-amd64.zip"
+      sha256 "6157a134dc119a49c194dc43b0c936ba7f8bbcb058d06327cab16cf6be004a78"
 
       def install
         bin.install "baton-smartsheet"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-smartsheet/releases/download/v0.2.0/baton-smartsheet-v0.2.0-darwin-arm64.zip"
-      sha256 "5f78b4815394a05513f29bdc8222dc76b76462c89c9c97c4f480656bae9e38df"
+      url "https://github.com/ConductorOne/baton-smartsheet/releases/download/v0.2.1/baton-smartsheet-v0.2.1-darwin-arm64.zip"
+      sha256 "52ef4946baa1166c089a74b3071bf748bea6ffb6247e183cd679f9c4e3d81376"
 
       def install
         bin.install "baton-smartsheet"
@@ -28,15 +28,15 @@ class BatonSmartsheet < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-smartsheet/releases/download/v0.2.0/baton-smartsheet-v0.2.0-linux-amd64.tar.gz"
-      sha256 "99875139a74b9f18b75a815b34109629522dc63446c6c4e3bb119bdfaa3e07cf"
+      url "https://github.com/ConductorOne/baton-smartsheet/releases/download/v0.2.1/baton-smartsheet-v0.2.1-linux-amd64.tar.gz"
+      sha256 "cc16580efa6d38a4b336abc5a23e529e14946a69d4a6b630052bfb65bccd3b5d"
       def install
         bin.install "baton-smartsheet"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-smartsheet/releases/download/v0.2.0/baton-smartsheet-v0.2.0-linux-arm64.tar.gz"
-      sha256 "b5edafe316e55910de0fa87d8fb3de561f912baeea05312eb7511c2b018ec7f1"
+      url "https://github.com/ConductorOne/baton-smartsheet/releases/download/v0.2.1/baton-smartsheet-v0.2.1-linux-arm64.tar.gz"
+      sha256 "965d9155c8b170b60b6ab6838742716d63f091816d12461ca2f8495f2a6bd783"
       def install
         bin.install "baton-smartsheet"
       end
