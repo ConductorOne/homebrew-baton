@@ -5,20 +5,20 @@
 class BatonRamp < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.1-test-acc-provisioning"
+  version "0.1.1-test-acc-provisioning-2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-ramp/releases/download/v0.1.1-test-acc-provisioning/baton-ramp-v0.1.1-test-acc-provisioning-darwin-amd64.zip"
-      sha256 "58e293e265b1b0eba5c7310149a8297e11f28e5a515cb37dcf170dbe02e53860"
+      url "https://github.com/ConductorOne/baton-ramp/releases/download/v0.1.1-test-acc-provisioning-2/baton-ramp-v0.1.1-test-acc-provisioning-2-darwin-amd64.zip"
+      sha256 "885d60c907bbf1fda8f41f74951154886e69fb504f3f311253f72c608c82ae54"
 
       def install
         bin.install "baton-ramp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-ramp/releases/download/v0.1.1-test-acc-provisioning/baton-ramp-v0.1.1-test-acc-provisioning-darwin-arm64.zip"
-      sha256 "6cd2d120319b4ce1321f1303f794d378662cd9893d03d87eaeb31f5e01712a65"
+      url "https://github.com/ConductorOne/baton-ramp/releases/download/v0.1.1-test-acc-provisioning-2/baton-ramp-v0.1.1-test-acc-provisioning-2-darwin-arm64.zip"
+      sha256 "75f21a66fcec305bb68221a32893fe8cf58f71def3d008096151109ce205bcbd"
 
       def install
         bin.install "baton-ramp"
@@ -28,15 +28,15 @@ class BatonRamp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ramp/releases/download/v0.1.1-test-acc-provisioning/baton-ramp-v0.1.1-test-acc-provisioning-linux-amd64.tar.gz"
-      sha256 "9f9c52fb847007562899c80a5b6e583a1e048c78a747feddfe33f8561e0d6553"
+      url "https://github.com/ConductorOne/baton-ramp/releases/download/v0.1.1-test-acc-provisioning-2/baton-ramp-v0.1.1-test-acc-provisioning-2-linux-amd64.tar.gz"
+      sha256 "41e4230adeba5daab4823c1b3635bbb0240adcadba471731b453b29759397f35"
       def install
         bin.install "baton-ramp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ramp/releases/download/v0.1.1-test-acc-provisioning/baton-ramp-v0.1.1-test-acc-provisioning-linux-arm64.tar.gz"
-      sha256 "9bd44b749e4635b24c49937d065260379732dc2255a61957806a00207d17930d"
+      url "https://github.com/ConductorOne/baton-ramp/releases/download/v0.1.1-test-acc-provisioning-2/baton-ramp-v0.1.1-test-acc-provisioning-2-linux-arm64.tar.gz"
+      sha256 "12956237134871cb5d82ee9a7b9b3b2f3c75cd2f4d5c0583d536246f562e80ba"
       def install
         bin.install "baton-ramp"
       end
