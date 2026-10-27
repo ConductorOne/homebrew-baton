@@ -5,20 +5,20 @@
 class BatonTenableVm < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.3.3"
+  version "0.3.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-tenable-vm/releases/download/v0.3.3/baton-tenable-vm-v0.3.3-darwin-amd64.zip"
-      sha256 "3b709738963bf1561e51231f4fb26a9b264c006dd6c8260555df261454eb02ff"
+      url "https://github.com/ConductorOne/baton-tenable-vm/releases/download/v0.3.4/baton-tenable-vm-v0.3.4-darwin-amd64.zip"
+      sha256 "3dd577b9154809970800030600c560fe67692775037b75f447d9da4cc384cc46"
 
       def install
         bin.install "baton-tenable-vm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-tenable-vm/releases/download/v0.3.3/baton-tenable-vm-v0.3.3-darwin-arm64.zip"
-      sha256 "27a9a59feffb455c08815f3c4c10ee41e08abe3958487749e516b1cbfc0aaa35"
+      url "https://github.com/ConductorOne/baton-tenable-vm/releases/download/v0.3.4/baton-tenable-vm-v0.3.4-darwin-arm64.zip"
+      sha256 "c95f1b61c539fe62047371fe6d9cd4170cf07ea95f408b7c0fdd7331da127009"
 
       def install
         bin.install "baton-tenable-vm"
@@ -28,15 +28,15 @@ class BatonTenableVm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-tenable-vm/releases/download/v0.3.3/baton-tenable-vm-v0.3.3-linux-amd64.tar.gz"
-      sha256 "b492a6139e5bc8f77a0ee6b6d055a524dc7c69989dbeff8f0dc801eccf9ab937"
+      url "https://github.com/ConductorOne/baton-tenable-vm/releases/download/v0.3.4/baton-tenable-vm-v0.3.4-linux-amd64.tar.gz"
+      sha256 "4b69942ce387ad71953006fa6bc6e22b7acdd5b5b6c6d4ac9e2e9a4c9bbdbc21"
       def install
         bin.install "baton-tenable-vm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-tenable-vm/releases/download/v0.3.3/baton-tenable-vm-v0.3.3-linux-arm64.tar.gz"
-      sha256 "14be02f41e7c4e5cf0b1b4fb5b68937dc4ba9ea903ca5da676eaa595714637d5"
+      url "https://github.com/ConductorOne/baton-tenable-vm/releases/download/v0.3.4/baton-tenable-vm-v0.3.4-linux-arm64.tar.gz"
+      sha256 "807dd9a96a04326ae0025bdb31589491f609f2b1e1cbd83328fd900e8b991cad"
       def install
         bin.install "baton-tenable-vm"
       end
