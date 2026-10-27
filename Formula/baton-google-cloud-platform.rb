@@ -5,20 +5,20 @@
 class BatonGoogleCloudPlatform < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.3.3"
+  version "0.3.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-google-cloud-platform/releases/download/v0.3.3/baton-google-cloud-platform-v0.3.3-darwin-amd64.zip"
-      sha256 "a7390c393888cdc4d74d90b69d850bac70fa5d86f9f62ee82fc6a095fdfe6373"
+      url "https://github.com/ConductorOne/baton-google-cloud-platform/releases/download/v0.3.4/baton-google-cloud-platform-v0.3.4-darwin-amd64.zip"
+      sha256 "d60c40e57959cf2bfb8fc6fe8c8a7de95f1ea3ee9cba24d4729637b6424e7d63"
 
       def install
         bin.install "baton-google-cloud-platform"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-google-cloud-platform/releases/download/v0.3.3/baton-google-cloud-platform-v0.3.3-darwin-arm64.zip"
-      sha256 "c570604dc03c1204c529247895d7fefbf235286ea9fcb7b7f10f7840c08ce76f"
+      url "https://github.com/ConductorOne/baton-google-cloud-platform/releases/download/v0.3.4/baton-google-cloud-platform-v0.3.4-darwin-arm64.zip"
+      sha256 "5dde1f96d3066a128d79548d8582fe76caa7a62026942690c5b06cf176aeda06"
 
       def install
         bin.install "baton-google-cloud-platform"
@@ -28,15 +28,15 @@ class BatonGoogleCloudPlatform < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-google-cloud-platform/releases/download/v0.3.3/baton-google-cloud-platform-v0.3.3-linux-amd64.tar.gz"
-      sha256 "c0276ffb7f7c5cbedfc51c697a11dbba07f85e6c8a9f429cb60ce190cc5071f4"
+      url "https://github.com/ConductorOne/baton-google-cloud-platform/releases/download/v0.3.4/baton-google-cloud-platform-v0.3.4-linux-amd64.tar.gz"
+      sha256 "53f94f93d16e5f606a7f264443b47f8e6754f2ccb1006704e5fde39f9179e533"
       def install
         bin.install "baton-google-cloud-platform"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-google-cloud-platform/releases/download/v0.3.3/baton-google-cloud-platform-v0.3.3-linux-arm64.tar.gz"
-      sha256 "05639153a803b269a87cb985f6c51f446f723c3ca92d1b22812fa80e0711d0f2"
+      url "https://github.com/ConductorOne/baton-google-cloud-platform/releases/download/v0.3.4/baton-google-cloud-platform-v0.3.4-linux-arm64.tar.gz"
+      sha256 "21a7cff9f1e94ccce705cd4f40c6603b498e4298fb8cabb0094bee94fc572d6f"
       def install
         bin.install "baton-google-cloud-platform"
       end
