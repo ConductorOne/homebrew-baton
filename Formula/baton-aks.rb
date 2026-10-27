@@ -5,20 +5,20 @@
 class BatonAks < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.3"
+  version "0.2.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-aks/releases/download/v0.2.3/baton-aks-v0.2.3-darwin-amd64.zip"
-      sha256 "a21af7c908fa269bd961f9edd35b0d2c33fb3380945133265b1f3c6ff2fddc54"
+      url "https://github.com/ConductorOne/baton-aks/releases/download/v0.2.4/baton-aks-v0.2.4-darwin-amd64.zip"
+      sha256 "a1e5c6f190e8a92d381ee10aa791a63421cd456b772aa04923031c06477fe37e"
 
       def install
         bin.install "baton-aks"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-aks/releases/download/v0.2.3/baton-aks-v0.2.3-darwin-arm64.zip"
-      sha256 "dd0665955b5f5b181cb6a0f0e5818f3235c77e517614e19c937f120d6fff39a6"
+      url "https://github.com/ConductorOne/baton-aks/releases/download/v0.2.4/baton-aks-v0.2.4-darwin-arm64.zip"
+      sha256 "f4be0a838183523a924c3d13bb196d85a926e39e55318dbd2627799fcd7cd637"
 
       def install
         bin.install "baton-aks"
@@ -28,15 +28,15 @@ class BatonAks < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-aks/releases/download/v0.2.3/baton-aks-v0.2.3-linux-amd64.tar.gz"
-      sha256 "6811385b948a0560a022e39f34e7497577b880ec4afe6654ab0efcc561171d6b"
+      url "https://github.com/ConductorOne/baton-aks/releases/download/v0.2.4/baton-aks-v0.2.4-linux-amd64.tar.gz"
+      sha256 "5ef63d749fa31ea63b23cbd16994a1ffe2bd631d55bbb4c7ac9830e468924f26"
       def install
         bin.install "baton-aks"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-aks/releases/download/v0.2.3/baton-aks-v0.2.3-linux-arm64.tar.gz"
-      sha256 "11c0d263f67f6da8008fd9dc364744e5f59902ad9d90c45e6f7c79cacd74a2ae"
+      url "https://github.com/ConductorOne/baton-aks/releases/download/v0.2.4/baton-aks-v0.2.4-linux-arm64.tar.gz"
+      sha256 "4b317515b73202bbc662cc8ebd2a2ad4e0313036bd56b0b86d5921da940b8657"
       def install
         bin.install "baton-aks"
       end
