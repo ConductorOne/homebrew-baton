@@ -5,20 +5,20 @@
 class BatonHaloServiceDesk < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.6"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-halo-service-desk/releases/download/v0.0.6/baton-halo-service-desk-v0.0.6-darwin-amd64.zip"
-      sha256 "a859b134e1d4df4b036c3fe7eb4686119facd51316c09f0b098e5af959a61f98"
+      url "https://github.com/ConductorOne/baton-halo-service-desk/releases/download/v0.1.0/baton-halo-service-desk-v0.1.0-darwin-amd64.zip"
+      sha256 "269c47e924ad64ce90e9687fed4c7b4f548f4d6eb793b6edc7b832cc1907f8b7"
 
       def install
         bin.install "baton-halo-service-desk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-halo-service-desk/releases/download/v0.0.6/baton-halo-service-desk-v0.0.6-darwin-arm64.zip"
-      sha256 "f9ba6ca33722ad8e7c95b64ed2afc6e1879fc94b2f5fa245307209321271b264"
+      url "https://github.com/ConductorOne/baton-halo-service-desk/releases/download/v0.1.0/baton-halo-service-desk-v0.1.0-darwin-arm64.zip"
+      sha256 "780b40abf6207c5bf2487cbf82d8f2c8255bac7a479a88e4433d0955a36afd75"
 
       def install
         bin.install "baton-halo-service-desk"
@@ -28,15 +28,15 @@ class BatonHaloServiceDesk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-halo-service-desk/releases/download/v0.0.6/baton-halo-service-desk-v0.0.6-linux-amd64.tar.gz"
-      sha256 "aa51d6a73bc85f073d05ef517d818a017d2fbe84535fad01e330605f01a6608d"
+      url "https://github.com/ConductorOne/baton-halo-service-desk/releases/download/v0.1.0/baton-halo-service-desk-v0.1.0-linux-amd64.tar.gz"
+      sha256 "5bef979f1805f39299914ab11ec101387ac19b887bf89c2de568bca063b46536"
       def install
         bin.install "baton-halo-service-desk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-halo-service-desk/releases/download/v0.0.6/baton-halo-service-desk-v0.0.6-linux-arm64.tar.gz"
-      sha256 "acbbd00b96712d708a4f532ee559518b27283b453202e16154dd09686358345d"
+      url "https://github.com/ConductorOne/baton-halo-service-desk/releases/download/v0.1.0/baton-halo-service-desk-v0.1.0-linux-arm64.tar.gz"
+      sha256 "eeec35bb8fcddd4799a66d209fe9da82972b01528c869f1c5c288b26a5ed5b12"
       def install
         bin.install "baton-halo-service-desk"
       end
