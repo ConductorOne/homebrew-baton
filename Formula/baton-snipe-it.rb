@@ -5,20 +5,20 @@
 class BatonSnipeIt < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.7"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-snipe-it/releases/download/v0.0.7/baton-snipe-it-v0.0.7-darwin-amd64.zip"
-      sha256 "c8d8333eb264ba28deaba88fd8e81a7b49077d71f34cdbca365171317d55adb0"
+      url "https://github.com/ConductorOne/baton-snipe-it/releases/download/v0.1.0/baton-snipe-it-v0.1.0-darwin-amd64.zip"
+      sha256 "9ccade4ffc17da785189ec1d9ac90bfb81a4953735129573db2a4e5a80b1b7a1"
 
       def install
         bin.install "baton-snipe-it"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-snipe-it/releases/download/v0.0.7/baton-snipe-it-v0.0.7-darwin-arm64.zip"
-      sha256 "4ff4e8ebe08b0fedc6a5bd155adcbc412c6a1aa7f26d900c2a60961d96db45a7"
+      url "https://github.com/ConductorOne/baton-snipe-it/releases/download/v0.1.0/baton-snipe-it-v0.1.0-darwin-arm64.zip"
+      sha256 "9199e2028fcf909a7165758fadb8d7bceeb3c2e452547b75789e4bf3cfcdfda7"
 
       def install
         bin.install "baton-snipe-it"
@@ -27,18 +27,16 @@ class BatonSnipeIt < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-snipe-it/releases/download/v0.0.7/baton-snipe-it-v0.0.7-linux-amd64.tar.gz"
-      sha256 "9fdef7d8b698272b92c5669dfed54241515d28574ad4ebe769ee20b744d15638"
-
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-snipe-it/releases/download/v0.1.0/baton-snipe-it-v0.1.0-linux-amd64.tar.gz"
+      sha256 "c9609fbf9bc3eeef4d256a62a8c90f68563d45008429662be58bd41790a5bcfc"
       def install
         bin.install "baton-snipe-it"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-snipe-it/releases/download/v0.0.7/baton-snipe-it-v0.0.7-linux-arm64.tar.gz"
-      sha256 "004feab04646137a93ce215a05569ce42f1ab87865e1e18e7dcf2533249c2006"
-
+      url "https://github.com/ConductorOne/baton-snipe-it/releases/download/v0.1.0/baton-snipe-it-v0.1.0-linux-arm64.tar.gz"
+      sha256 "a105849f9307bddf729aac5d2c459baf4c9157c6f1a674bbeb9f0ce3d3902e4b"
       def install
         bin.install "baton-snipe-it"
       end
