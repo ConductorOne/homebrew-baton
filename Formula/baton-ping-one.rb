@@ -5,20 +5,20 @@
 class BatonPingOne < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.7"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-ping-one/releases/download/v0.0.7/baton-ping-one-v0.0.7-darwin-amd64.zip"
-      sha256 "d16e11a317e30925ee7b50db7590743f856141cf9817e9f13c71d4cfd0576f40"
+      url "https://github.com/ConductorOne/baton-ping-one/releases/download/v0.1.0/baton-ping-one-v0.1.0-darwin-amd64.zip"
+      sha256 "0229bdb50e22c12ab7e71bd0a7de4651885fa939108510ebb271fc8826dab7c8"
 
       def install
         bin.install "baton-ping-one"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-ping-one/releases/download/v0.0.7/baton-ping-one-v0.0.7-darwin-arm64.zip"
-      sha256 "cf6fd83ec4f13bcb3893e37768561c7b83aa44361578806f1fed1b1361cbd68a"
+      url "https://github.com/ConductorOne/baton-ping-one/releases/download/v0.1.0/baton-ping-one-v0.1.0-darwin-arm64.zip"
+      sha256 "76b6a6ddbad0bc942b6f4926f3dd9346896c6354ab9c795b8d1ba9845d0b661e"
 
       def install
         bin.install "baton-ping-one"
@@ -27,24 +27,18 @@ class BatonPingOne < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-ping-one/releases/download/v0.0.7/baton-ping-one-v0.0.7-linux-amd64.tar.gz"
-        sha256 "47248369aa021518ed9d36ca409b37ebbeb4162c7055f9be98ecf08e4db9f4fb"
-
-        def install
-          bin.install "baton-ping-one"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-ping-one/releases/download/v0.1.0/baton-ping-one-v0.1.0-linux-amd64.tar.gz"
+      sha256 "6c13a64f87d755cc959a46b490151ed66c36d653676445fed5eb13120009d1a4"
+      def install
+        bin.install "baton-ping-one"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-ping-one/releases/download/v0.0.7/baton-ping-one-v0.0.7-linux-arm64.tar.gz"
-        sha256 "70a84ff0f7d13a91996eb36d5d8b544ef602154a27a06518856b87cce51ae9e5"
-
-        def install
-          bin.install "baton-ping-one"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-ping-one/releases/download/v0.1.0/baton-ping-one-v0.1.0-linux-arm64.tar.gz"
+      sha256 "cf6d6fa159094fab156ef8444bab43c0e4b937c7fee6192d91152a0a6f730254"
+      def install
+        bin.install "baton-ping-one"
       end
     end
   end
