@@ -5,20 +5,20 @@
 class BatonValimail < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.2"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-valimail/releases/download/v0.0.2/baton-valimail-v0.0.2-darwin-amd64.zip"
-      sha256 "460128388daa11bf2044189ed39e4d8c67562047728e122496ff1d08a23a73f2"
+      url "https://github.com/ConductorOne/baton-valimail/releases/download/v0.1.0/baton-valimail-v0.1.0-darwin-amd64.zip"
+      sha256 "526b4d83ff0bc846bef9b5e26f2cb0d271f48a9c1f58c0ef0d38244c5de146ac"
 
       def install
         bin.install "baton-valimail"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-valimail/releases/download/v0.0.2/baton-valimail-v0.0.2-darwin-arm64.zip"
-      sha256 "46fe839590d5c51c4f347eee5746a66ff22484ce4c6f8364e13d8d1192d2bd79"
+      url "https://github.com/ConductorOne/baton-valimail/releases/download/v0.1.0/baton-valimail-v0.1.0-darwin-arm64.zip"
+      sha256 "6fc3519b4a27343168b803750ec24ab7a7d78b755c0f55c8533c9b7db83c3720"
 
       def install
         bin.install "baton-valimail"
@@ -28,15 +28,15 @@ class BatonValimail < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-valimail/releases/download/v0.0.2/baton-valimail-v0.0.2-linux-amd64.tar.gz"
-      sha256 "7ad48bdb112e9995faf22b6823b41c69ef6494666d0e18dc56f8d273375c692b"
+      url "https://github.com/ConductorOne/baton-valimail/releases/download/v0.1.0/baton-valimail-v0.1.0-linux-amd64.tar.gz"
+      sha256 "34a9b0cc910c1b0c912fb38b340343aa8cd7d621db12b996aa589573b8b5a5f3"
       def install
         bin.install "baton-valimail"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-valimail/releases/download/v0.0.2/baton-valimail-v0.0.2-linux-arm64.tar.gz"
-      sha256 "6393654617b3f9f4c6af8042c3310b73bce23673d23c2caa64f7ce6f80013db7"
+      url "https://github.com/ConductorOne/baton-valimail/releases/download/v0.1.0/baton-valimail-v0.1.0-linux-arm64.tar.gz"
+      sha256 "52bb10b08625299b1a3b8a7d6d877d49996e4663f24854b118a13431c4ec7e7a"
       def install
         bin.install "baton-valimail"
       end
