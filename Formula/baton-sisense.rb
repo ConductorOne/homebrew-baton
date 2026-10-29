@@ -5,20 +5,20 @@
 class BatonSisense < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-sisense/releases/download/v0.1.0/baton-sisense-v0.1.0-darwin-amd64.zip"
-      sha256 "46a14162b1045de39f9488ae16780419dadf815b91dce50a3a593a5c9bb1b3c3"
+      url "https://github.com/ConductorOne/baton-sisense/releases/download/v0.2.0/baton-sisense-v0.2.0-darwin-amd64.zip"
+      sha256 "26137f1447ec3dec52694da76ee8f4763f884a5e5a454b28f1726bcf85a429ee"
 
       def install
         bin.install "baton-sisense"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-sisense/releases/download/v0.1.0/baton-sisense-v0.1.0-darwin-arm64.zip"
-      sha256 "8fe84de0289d49870ed25de4413bd830803b8f312110c63df5691f4697ecf768"
+      url "https://github.com/ConductorOne/baton-sisense/releases/download/v0.2.0/baton-sisense-v0.2.0-darwin-arm64.zip"
+      sha256 "e22552ca02239cceeb9585f9852682b8b2d9597a377c7be3d5fb027851be9506"
 
       def install
         bin.install "baton-sisense"
@@ -27,24 +27,18 @@ class BatonSisense < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-sisense/releases/download/v0.1.0/baton-sisense-v0.1.0-linux-amd64.tar.gz"
-        sha256 "90578d527c64dc9e71964d63e799b47e7f2a723a3a827e9cce156e521ab3feb8"
-
-        def install
-          bin.install "baton-sisense"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-sisense/releases/download/v0.2.0/baton-sisense-v0.2.0-linux-amd64.tar.gz"
+      sha256 "180ca87de57b9bc37b33ef6152960dce72e9201cf18e20ce5d49acf43bf46269"
+      def install
+        bin.install "baton-sisense"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-sisense/releases/download/v0.1.0/baton-sisense-v0.1.0-linux-arm64.tar.gz"
-        sha256 "74f5a28f52b486dd7200714e06f43cda301e2930bc25869aac2dba1cf2652c8d"
-
-        def install
-          bin.install "baton-sisense"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-sisense/releases/download/v0.2.0/baton-sisense-v0.2.0-linux-arm64.tar.gz"
+      sha256 "35def00def93d68116b8681f03903269d658b41d8514a80750154dce459f3d1a"
+      def install
+        bin.install "baton-sisense"
       end
     end
   end
