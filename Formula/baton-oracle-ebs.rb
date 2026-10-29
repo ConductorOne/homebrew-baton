@@ -5,20 +5,20 @@
 class BatonOracleEbs < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.1.0"
 
   on_macos do
-    on_intel do
-      url "https://github.com/ConductorOne/baton-oracle-ebs/releases/download/v0.0.1/baton-oracle-ebs-v0.0.1-darwin-amd64.zip"
-      sha256 "d69c6d07417240fd4c17a9af40ce35e31c57c56bd67fe362faecb96a40056060"
+    if Hardware::CPU.intel?
+      url "https://github.com/ConductorOne/baton-oracle-ebs/releases/download/v0.1.0/baton-oracle-ebs-v0.1.0-darwin-amd64.zip"
+      sha256 "b0897c2e3e2e8d5e59afe6e723b8f6ccde6c8064c7ea527b7635d1fbec28f44d"
 
       def install
         bin.install "baton-oracle-ebs"
       end
     end
-    on_arm do
-      url "https://github.com/ConductorOne/baton-oracle-ebs/releases/download/v0.0.1/baton-oracle-ebs-v0.0.1-darwin-arm64.zip"
-      sha256 "655a15f7b39d5e68c552932a7815a263c0935e89ceef3897c9932c79a9296a6f"
+    if Hardware::CPU.arm?
+      url "https://github.com/ConductorOne/baton-oracle-ebs/releases/download/v0.1.0/baton-oracle-ebs-v0.1.0-darwin-arm64.zip"
+      sha256 "10efba331335a8c964cea928852482d4fc7e019fa8cfbd94d7d95683623d0826"
 
       def install
         bin.install "baton-oracle-ebs"
@@ -27,24 +27,18 @@ class BatonOracleEbs < Formula
   end
 
   on_linux do
-    on_intel do
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-oracle-ebs/releases/download/v0.0.1/baton-oracle-ebs-v0.0.1-linux-amd64.tar.gz"
-        sha256 "a6a7a971f8518755b3f14ab3067a8954a8c9993892c6ffdfc370ee14b562d108"
-
-        def install
-          bin.install "baton-oracle-ebs"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-oracle-ebs/releases/download/v0.1.0/baton-oracle-ebs-v0.1.0-linux-amd64.tar.gz"
+      sha256 "aee93570939eaa1ad08cf20155f73f55dc5889212df8eab5c7e6faa84571deb8"
+      def install
+        bin.install "baton-oracle-ebs"
       end
     end
-    on_arm do
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-oracle-ebs/releases/download/v0.0.1/baton-oracle-ebs-v0.0.1-linux-arm64.tar.gz"
-        sha256 "8877f156709fa6465f8c05521ba1238bd54dbbc9057a9ebbc5908e31eea5ba6a"
-
-        def install
-          bin.install "baton-oracle-ebs"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-oracle-ebs/releases/download/v0.1.0/baton-oracle-ebs-v0.1.0-linux-arm64.tar.gz"
+      sha256 "63203eb998af1eadd9bbf4b5fce729c19ac1123a8e6177c76eaff8b8de9b1641"
+      def install
+        bin.install "baton-oracle-ebs"
       end
     end
   end
