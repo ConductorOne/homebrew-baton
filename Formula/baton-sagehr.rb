@@ -5,20 +5,20 @@
 class BatonSagehr < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-sagehr/releases/download/v0.1.0/baton-sagehr-v0.1.0-darwin-amd64.zip"
-      sha256 "a455bb9666e7bdb02dd6226a03527fc92a5b54a46a1b8d84bc6134856b78ac73"
+      url "https://github.com/ConductorOne/baton-sagehr/releases/download/v0.2.0/baton-sagehr-v0.2.0-darwin-amd64.zip"
+      sha256 "362ba6a6df99930c017f80bfaac0a9b4c1dcc9fba50846a2fe62e7324627311e"
 
       def install
         bin.install "baton-sagehr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-sagehr/releases/download/v0.1.0/baton-sagehr-v0.1.0-darwin-arm64.zip"
-      sha256 "7522f1b8805bbfa02fd00e5eccb7e95b16077b9724d0c062f6d23bcf481dc979"
+      url "https://github.com/ConductorOne/baton-sagehr/releases/download/v0.2.0/baton-sagehr-v0.2.0-darwin-arm64.zip"
+      sha256 "3bd26323bd55715c29f181264a3ddc510a1091dc60197995b601dc2952859e8c"
 
       def install
         bin.install "baton-sagehr"
@@ -27,24 +27,18 @@ class BatonSagehr < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-sagehr/releases/download/v0.1.0/baton-sagehr-v0.1.0-linux-amd64.tar.gz"
-        sha256 "fcf0c44449605e43ef383b5e4ba375ffc1502b53cfa8036019e2f7899c8478f3"
-
-        def install
-          bin.install "baton-sagehr"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-sagehr/releases/download/v0.2.0/baton-sagehr-v0.2.0-linux-amd64.tar.gz"
+      sha256 "ddc2717ec144210694ce8a451c3da2c9ece4a4e85f1f281096d7f4405b61a3af"
+      def install
+        bin.install "baton-sagehr"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-sagehr/releases/download/v0.1.0/baton-sagehr-v0.1.0-linux-arm64.tar.gz"
-        sha256 "a8522c8a5a01d3335c4ff16bf0f790089af88a7d6cf184ef25757c197bcbb2b8"
-
-        def install
-          bin.install "baton-sagehr"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-sagehr/releases/download/v0.2.0/baton-sagehr-v0.2.0-linux-arm64.tar.gz"
+      sha256 "4abc33c0daef1597438b7a14b9146686b440b3df979dfaa84fd0857df791e020"
+      def install
+        bin.install "baton-sagehr"
       end
     end
   end
