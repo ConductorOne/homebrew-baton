@@ -5,20 +5,20 @@
 class BatonCharthop < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1-alpha"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-charthop/releases/download/v0.0.1-alpha/baton-charthop-v0.0.1-alpha-darwin-amd64.zip"
-      sha256 "90d6fbd6e3e641abe19afb5a90a2e0610cf22893d64fdcf852772ded321575c4"
+      url "https://github.com/ConductorOne/baton-charthop/releases/download/v0.0.2/baton-charthop-v0.0.2-darwin-amd64.zip"
+      sha256 "212af5dc95da7118b8ed4608f5256717a66a8384b4fca8bd76f21443148da4d2"
 
       def install
         bin.install "baton-charthop"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-charthop/releases/download/v0.0.1-alpha/baton-charthop-v0.0.1-alpha-darwin-arm64.zip"
-      sha256 "f72b168435c2d41086e371447666262684f4576324d689f83591746a3a372faf"
+      url "https://github.com/ConductorOne/baton-charthop/releases/download/v0.0.2/baton-charthop-v0.0.2-darwin-arm64.zip"
+      sha256 "1bbf0d08fc4656103bb195f6513b40aadc2200c8585377b7a68271a3ccb3ede4"
 
       def install
         bin.install "baton-charthop"
@@ -28,15 +28,15 @@ class BatonCharthop < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-charthop/releases/download/v0.0.1-alpha/baton-charthop-v0.0.1-alpha-linux-amd64.tar.gz"
-      sha256 "d175c9b5cc99e20f1b679feced8c81322b392adcf429352e31f066e9cd568a95"
+      url "https://github.com/ConductorOne/baton-charthop/releases/download/v0.0.2/baton-charthop-v0.0.2-linux-amd64.tar.gz"
+      sha256 "9f945ee06ab8e97cb7bb4c815a6c6a07bd3a4aca2e087395c3c0daad2a6181d8"
       def install
         bin.install "baton-charthop"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-charthop/releases/download/v0.0.1-alpha/baton-charthop-v0.0.1-alpha-linux-arm64.tar.gz"
-      sha256 "a7dae7a040616261cce3ced826b0acb6ad3cc7fec7b895b6dc34bd9e4e48a08d"
+      url "https://github.com/ConductorOne/baton-charthop/releases/download/v0.0.2/baton-charthop-v0.0.2-linux-arm64.tar.gz"
+      sha256 "9819b08020d0e20c4375598f98ff9537683c9f7bb66eccfb2ae5b2fb7cbfcc5d"
       def install
         bin.install "baton-charthop"
       end
