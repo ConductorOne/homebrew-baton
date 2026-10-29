@@ -5,20 +5,20 @@
 class BatonGke < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.2"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-gke/releases/download/v0.1.2/baton-gke-v0.1.2-darwin-amd64.zip"
-      sha256 "fd42c24196a3bbb7b4ce41bb87c36c5cdb60297f088e85178b418703942cbc3a"
+      url "https://github.com/ConductorOne/baton-gke/releases/download/v0.2.0/baton-gke-v0.2.0-darwin-amd64.zip"
+      sha256 "d1429e22eaa76a6b5d1cef6c177fc989415e65007b77a6e14b41cbfd83784bf6"
 
       def install
         bin.install "baton-gke"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-gke/releases/download/v0.1.2/baton-gke-v0.1.2-darwin-arm64.zip"
-      sha256 "da597124dfd09dba55e6402b362f35406e7b864d647083603d91d30ddb868f13"
+      url "https://github.com/ConductorOne/baton-gke/releases/download/v0.2.0/baton-gke-v0.2.0-darwin-arm64.zip"
+      sha256 "4c490b3c306440595fe399ebef6d63f53ee94ade4030d68f9e0e561e94978731"
 
       def install
         bin.install "baton-gke"
@@ -28,15 +28,15 @@ class BatonGke < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-gke/releases/download/v0.1.2/baton-gke-v0.1.2-linux-amd64.tar.gz"
-      sha256 "86d94645e2918e81415f9fdcebb0afd7d6115a9ee809ed6b5fcec15d8fc43e35"
+      url "https://github.com/ConductorOne/baton-gke/releases/download/v0.2.0/baton-gke-v0.2.0-linux-amd64.tar.gz"
+      sha256 "51f7039fb70923fff91b3c5875cada46d1dba3245e179eb3abf329a3f6fe976a"
       def install
         bin.install "baton-gke"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-gke/releases/download/v0.1.2/baton-gke-v0.1.2-linux-arm64.tar.gz"
-      sha256 "931d3a22b2068fd85a457db6e07b80d34c8a76afe09b35d7529776a712cc1d96"
+      url "https://github.com/ConductorOne/baton-gke/releases/download/v0.2.0/baton-gke-v0.2.0-linux-arm64.tar.gz"
+      sha256 "61c8ad1ccee83382479777b4cb56b83f7dc0830be94a98b5c1d47286aea0c3e5"
       def install
         bin.install "baton-gke"
       end
