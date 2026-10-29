@@ -5,20 +5,20 @@
 class BatonPaylocity < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.2"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-paylocity/releases/download/v0.0.2/baton-paylocity-v0.0.2-darwin-amd64.zip"
-      sha256 "33c3c53b00c79d3dbed548e1a25f0c3881316d66cd51cd5eb5c8021e52a18297"
+      url "https://github.com/ConductorOne/baton-paylocity/releases/download/v0.1.0/baton-paylocity-v0.1.0-darwin-amd64.zip"
+      sha256 "c4c767cf4319e8b04630e96a39e605e4f400c037cc9a610a682ce9e5e49eb53b"
 
       def install
         bin.install "baton-paylocity"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-paylocity/releases/download/v0.0.2/baton-paylocity-v0.0.2-darwin-arm64.zip"
-      sha256 "49f157251645afc4d132cf7efd5d663c6aa29ba72a2fbd82ca967ff111753ed0"
+      url "https://github.com/ConductorOne/baton-paylocity/releases/download/v0.1.0/baton-paylocity-v0.1.0-darwin-arm64.zip"
+      sha256 "7b23e70fa896717af02824d803c44aaadac7298a485650cfbe203d10e5066378"
 
       def install
         bin.install "baton-paylocity"
@@ -27,24 +27,18 @@ class BatonPaylocity < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-paylocity/releases/download/v0.0.2/baton-paylocity-v0.0.2-linux-amd64.tar.gz"
-        sha256 "850e4b6ce58fc2120e6a9eef93c2c43b9762268c22f7eca9fe97643f42113d2d"
-
-        def install
-          bin.install "baton-paylocity"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-paylocity/releases/download/v0.1.0/baton-paylocity-v0.1.0-linux-amd64.tar.gz"
+      sha256 "b9d2fb4108f316c861c35fa978b0710d124fb1e2a94c8a5a4ad3feb5ae6352d2"
+      def install
+        bin.install "baton-paylocity"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-paylocity/releases/download/v0.0.2/baton-paylocity-v0.0.2-linux-arm64.tar.gz"
-        sha256 "bf3688db9a748fc612c8258542aa4d6e35629d4ab8c3726c4bc54292bb4a826b"
-
-        def install
-          bin.install "baton-paylocity"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-paylocity/releases/download/v0.1.0/baton-paylocity-v0.1.0-linux-arm64.tar.gz"
+      sha256 "ebf4ca9445531934237174fb06d35443a7fd3e66ae0fae7a91a1488c19dc7cb9"
+      def install
+        bin.install "baton-paylocity"
       end
     end
   end
