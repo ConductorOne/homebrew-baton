@@ -5,20 +5,20 @@
 class BatonNetlify < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.3"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-netlify/releases/download/v0.0.3/baton-netlify-v0.0.3-darwin-amd64.zip"
-      sha256 "c4f2cf1e0f5121b9e1813580877078c17c3a71795cd121521afaec76a168b886"
+      url "https://github.com/ConductorOne/baton-netlify/releases/download/v0.1.0/baton-netlify-v0.1.0-darwin-amd64.zip"
+      sha256 "474d37bd583afd96a711969f778b186b746ddfa9fd41c3fbdb1ff82b2e354965"
 
       def install
         bin.install "baton-netlify"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-netlify/releases/download/v0.0.3/baton-netlify-v0.0.3-darwin-arm64.zip"
-      sha256 "5af25b808aa826866bf40a4dc7d0d2156a56b6f6ed8a7d513791f53ea58cb2df"
+      url "https://github.com/ConductorOne/baton-netlify/releases/download/v0.1.0/baton-netlify-v0.1.0-darwin-arm64.zip"
+      sha256 "d4594ed997e21cd52df8f5e85de2a5d2533144a5f618f4a311cc967f0759f9f5"
 
       def install
         bin.install "baton-netlify"
@@ -27,24 +27,18 @@ class BatonNetlify < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-netlify/releases/download/v0.0.3/baton-netlify-v0.0.3-linux-amd64.tar.gz"
-        sha256 "262d5621a720e81d168be941e4fc9c5562659aee5f2a7890560cbe7e6cf4565d"
-
-        def install
-          bin.install "baton-netlify"
-        end
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-netlify/releases/download/v0.1.0/baton-netlify-v0.1.0-linux-amd64.tar.gz"
+      sha256 "64f5a07c6579cd57e3da0fa5fb121657d4156789be9adb3b4af2ea7c9849b918"
+      def install
+        bin.install "baton-netlify"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/ConductorOne/baton-netlify/releases/download/v0.0.3/baton-netlify-v0.0.3-linux-arm64.tar.gz"
-        sha256 "14e3b61680d7023380316f561489bdd6990e88a4130b0a99865c90d041fee2d4"
-
-        def install
-          bin.install "baton-netlify"
-        end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ConductorOne/baton-netlify/releases/download/v0.1.0/baton-netlify-v0.1.0-linux-arm64.tar.gz"
+      sha256 "143f54059405ac79b85aaada76af5985c0b376fc5d797a403ee6e1026de795ba"
+      def install
+        bin.install "baton-netlify"
       end
     end
   end
