@@ -5,20 +5,20 @@
 class BatonAirflow < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.4"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-airflow/releases/download/v0.2.4/baton-airflow-v0.2.4-darwin-amd64.zip"
-      sha256 "aa5696f3a7c29bfcfc81d9c7df5de6bf09303b938a5828c74f8bb7a88948521e"
+      url "https://github.com/ConductorOne/baton-airflow/releases/download/v0.3.0/baton-airflow-v0.3.0-darwin-amd64.zip"
+      sha256 "28e66c4d5044fc4805dada4bd3cbde0acd5d23684de44b4b9babe9b0d99b0fc6"
 
       def install
         bin.install "baton-airflow"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-airflow/releases/download/v0.2.4/baton-airflow-v0.2.4-darwin-arm64.zip"
-      sha256 "7868c021e50a76008323225825ed28ff4c84f80a5d476b849dce1409f677765b"
+      url "https://github.com/ConductorOne/baton-airflow/releases/download/v0.3.0/baton-airflow-v0.3.0-darwin-arm64.zip"
+      sha256 "97da4ebcf9f4d98d9d4303b566c0bff20d9ec4fe58ce6da9d410cbc51c7991a8"
 
       def install
         bin.install "baton-airflow"
@@ -28,15 +28,15 @@ class BatonAirflow < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-airflow/releases/download/v0.2.4/baton-airflow-v0.2.4-linux-amd64.tar.gz"
-      sha256 "49fba8e480e041944d3b2194d458b8dda1b37a3db0cbee161bacb203969e42bb"
+      url "https://github.com/ConductorOne/baton-airflow/releases/download/v0.3.0/baton-airflow-v0.3.0-linux-amd64.tar.gz"
+      sha256 "a66e03ef46530ddee77889c1cfeab3ac8b05a50d05406f7b3c8cb320053023af"
       def install
         bin.install "baton-airflow"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-airflow/releases/download/v0.2.4/baton-airflow-v0.2.4-linux-arm64.tar.gz"
-      sha256 "f81a99ef5cbe8c402dd600ee72e5df8253824b2530779f93c8feff656453f1d1"
+      url "https://github.com/ConductorOne/baton-airflow/releases/download/v0.3.0/baton-airflow-v0.3.0-linux-arm64.tar.gz"
+      sha256 "b5309a92ae703b9fec54927a71a8adb18d39bb4b971f0836ae26e12b331b8280"
       def install
         bin.install "baton-airflow"
       end
