@@ -5,20 +5,20 @@
 class BatonVerkada < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-verkada/releases/download/v0.1.0/baton-verkada-v0.1.0-darwin-amd64.zip"
-      sha256 "716c5cb82040eb9533d3c5d06b0900914e2e83b460b99996b6550552e656bfbc"
+      url "https://github.com/ConductorOne/baton-verkada/releases/download/v0.2.0/baton-verkada-v0.2.0-darwin-amd64.zip"
+      sha256 "c03da19d348d9dff67384f2476f85cb9b7521e21c46f9476d8bab1d6fc60d180"
 
       def install
         bin.install "baton-verkada"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-verkada/releases/download/v0.1.0/baton-verkada-v0.1.0-darwin-arm64.zip"
-      sha256 "fc005257cbac600dc059f0717d333e988b90d7a4e63ac5ab96ba950316c7da1d"
+      url "https://github.com/ConductorOne/baton-verkada/releases/download/v0.2.0/baton-verkada-v0.2.0-darwin-arm64.zip"
+      sha256 "0657c2e8a6ac41545a4fc0e870dd33f4a584ff79245a4d0bd67dd144e4b6fe1b"
 
       def install
         bin.install "baton-verkada"
@@ -28,15 +28,15 @@ class BatonVerkada < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-verkada/releases/download/v0.1.0/baton-verkada-v0.1.0-linux-amd64.tar.gz"
-      sha256 "caa4b279db970ba8fd400e84b734ed5bc870433bf6bc9be558d61cece0368c94"
+      url "https://github.com/ConductorOne/baton-verkada/releases/download/v0.2.0/baton-verkada-v0.2.0-linux-amd64.tar.gz"
+      sha256 "6d727c70404ce516a3e7dd80ef17d649938ceee569678a5eb0d85155c0e5b135"
       def install
         bin.install "baton-verkada"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-verkada/releases/download/v0.1.0/baton-verkada-v0.1.0-linux-arm64.tar.gz"
-      sha256 "f7616656bd88fd93e436ea9a90531fa964eee4f0a9ad6c8030a4021a61f4c3ec"
+      url "https://github.com/ConductorOne/baton-verkada/releases/download/v0.2.0/baton-verkada-v0.2.0-linux-arm64.tar.gz"
+      sha256 "1c0d35606188ca98e55affb19f602bd91e580c14d00f1c1943b03069f8614dff"
       def install
         bin.install "baton-verkada"
       end
