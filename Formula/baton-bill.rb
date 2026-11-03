@@ -5,20 +5,20 @@
 class BatonBill < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.3"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-bill/releases/download/v0.2.3/baton-bill-v0.2.3-darwin-amd64.zip"
-      sha256 "093b29bc92b4deec8576fb3f5d01abf6fe0cb3f52f13de7ab9d9eea5877d6637"
+      url "https://github.com/ConductorOne/baton-bill/releases/download/v0.3.0/baton-bill-v0.3.0-darwin-amd64.zip"
+      sha256 "ec8a690cd533733c627e09ea09f88d6d3a53d9ae31700d7ff1f534ea9a557999"
 
       def install
         bin.install "baton-bill"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-bill/releases/download/v0.2.3/baton-bill-v0.2.3-darwin-arm64.zip"
-      sha256 "753e31ccb1f5f92474972c17a2188e71942dc7d4918f8a4834d35dc3ab710190"
+      url "https://github.com/ConductorOne/baton-bill/releases/download/v0.3.0/baton-bill-v0.3.0-darwin-arm64.zip"
+      sha256 "97bf5e73eee742970707a7af72fc28fbca5637767f958626ff614bd7d6035079"
 
       def install
         bin.install "baton-bill"
@@ -28,15 +28,15 @@ class BatonBill < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-bill/releases/download/v0.2.3/baton-bill-v0.2.3-linux-amd64.tar.gz"
-      sha256 "1e6d97ed45991d7a4d6e4905c12aa339caa678267f27cf2c5142035650c92036"
+      url "https://github.com/ConductorOne/baton-bill/releases/download/v0.3.0/baton-bill-v0.3.0-linux-amd64.tar.gz"
+      sha256 "ae75b89fc726efb38141fa44ce24e7a836da7bfa4f83c55a55362f942a6b5eac"
       def install
         bin.install "baton-bill"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-bill/releases/download/v0.2.3/baton-bill-v0.2.3-linux-arm64.tar.gz"
-      sha256 "6d7f5c8251962906b7953bf1de9130c324e2d86cd8f05e8857b99e89e3200cb1"
+      url "https://github.com/ConductorOne/baton-bill/releases/download/v0.3.0/baton-bill-v0.3.0-linux-arm64.tar.gz"
+      sha256 "52331f95f42657bbaae0ec3c4c991067b1045cc979261a5a054e8dfe420f83f9"
       def install
         bin.install "baton-bill"
       end
