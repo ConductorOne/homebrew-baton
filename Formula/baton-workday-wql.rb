@@ -5,20 +5,20 @@
 class BatonWorkdayWql < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.4.1-test-organization-role-assignments"
+  version "0.4.1-test-organization-role"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-workday-wql/releases/download/v0.4.1-test-organization-role-assignments/baton-workday-wql-v0.4.1-test-organization-role-assignments-darwin-amd64.zip"
-      sha256 "1ad5767ef95020cc219297640975349f3f4fdd2079ca1aca1c48d4f3d7f372e4"
+      url "https://github.com/ConductorOne/baton-workday-wql/releases/download/v0.4.1-test-organization-role/baton-workday-wql-v0.4.1-test-organization-role-darwin-amd64.zip"
+      sha256 "c5d112b741a98c6d24677cd80bbd6ff542bf45b9ae011675a6ed035730373f58"
 
       def install
         bin.install "baton-workday-wql"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-workday-wql/releases/download/v0.4.1-test-organization-role-assignments/baton-workday-wql-v0.4.1-test-organization-role-assignments-darwin-arm64.zip"
-      sha256 "a2a8e5660372e8fcae804cff4065e9b3b8716f8df3d162aa194770ff81986aeb"
+      url "https://github.com/ConductorOne/baton-workday-wql/releases/download/v0.4.1-test-organization-role/baton-workday-wql-v0.4.1-test-organization-role-darwin-arm64.zip"
+      sha256 "f1859041f4cfab72c78b47c43b768afd6d7f7bd687bf23d3e36bf76ace2646a3"
 
       def install
         bin.install "baton-workday-wql"
@@ -28,15 +28,15 @@ class BatonWorkdayWql < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-workday-wql/releases/download/v0.4.1-test-organization-role-assignments/baton-workday-wql-v0.4.1-test-organization-role-assignments-linux-amd64.tar.gz"
-      sha256 "fa23a48bae9abf247433c21e3247319e38e81f8e3a3490f027ba98a1953b9112"
+      url "https://github.com/ConductorOne/baton-workday-wql/releases/download/v0.4.1-test-organization-role/baton-workday-wql-v0.4.1-test-organization-role-linux-amd64.tar.gz"
+      sha256 "d6fd2017d6801c6759fe010087fb95288356ec29db16b013d00b98d8ae2ac38d"
       def install
         bin.install "baton-workday-wql"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-workday-wql/releases/download/v0.4.1-test-organization-role-assignments/baton-workday-wql-v0.4.1-test-organization-role-assignments-linux-arm64.tar.gz"
-      sha256 "f22ce0f5e25ac4f4e158192bd5005cb0b0fcf99f271fa8c2e22702d5a28f4f50"
+      url "https://github.com/ConductorOne/baton-workday-wql/releases/download/v0.4.1-test-organization-role/baton-workday-wql-v0.4.1-test-organization-role-linux-arm64.tar.gz"
+      sha256 "ea41a3957daf5560958d44233dd9ad6a706a1725dfcd885edaac3cb5cc4c7d6a"
       def install
         bin.install "baton-workday-wql"
       end
