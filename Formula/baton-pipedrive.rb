@@ -5,20 +5,20 @@
 class BatonPipedrive < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.4.3"
+  version "0.5.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-pipedrive/releases/download/v0.4.3/baton-pipedrive-v0.4.3-darwin-amd64.zip"
-      sha256 "a775e8ec0308f7582a1c9be9505f1c69e891df020061c4c67017f6743d8ce716"
+      url "https://github.com/ConductorOne/baton-pipedrive/releases/download/v0.5.0/baton-pipedrive-v0.5.0-darwin-amd64.zip"
+      sha256 "473b5060d731e7696fa008339f0fc8cebb5bbabb4a2c69fb9e3190718c5cada0"
 
       def install
         bin.install "baton-pipedrive"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-pipedrive/releases/download/v0.4.3/baton-pipedrive-v0.4.3-darwin-arm64.zip"
-      sha256 "c90842ee1e0ef0e8e659b70400d54162e2f18ea0bbdee94383d7fc747fd41c49"
+      url "https://github.com/ConductorOne/baton-pipedrive/releases/download/v0.5.0/baton-pipedrive-v0.5.0-darwin-arm64.zip"
+      sha256 "e69f2655fd3baa7f0b7391f8080fb813f242cc81387aa40ac70fa81b34dd981f"
 
       def install
         bin.install "baton-pipedrive"
@@ -28,15 +28,15 @@ class BatonPipedrive < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-pipedrive/releases/download/v0.4.3/baton-pipedrive-v0.4.3-linux-amd64.tar.gz"
-      sha256 "1c662a6541715610d7f6ee229fd93c17f387fd1fcdb390239568599a5b804178"
+      url "https://github.com/ConductorOne/baton-pipedrive/releases/download/v0.5.0/baton-pipedrive-v0.5.0-linux-amd64.tar.gz"
+      sha256 "9788b0de009efe17db5d9258cfa3a19f89ecb96fe3399c3203a9050c80b4441c"
       def install
         bin.install "baton-pipedrive"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-pipedrive/releases/download/v0.4.3/baton-pipedrive-v0.4.3-linux-arm64.tar.gz"
-      sha256 "4846d22cf5cfc66722f47ab87bd270e4a4c46bcb2b15efad732b64ad073115f0"
+      url "https://github.com/ConductorOne/baton-pipedrive/releases/download/v0.5.0/baton-pipedrive-v0.5.0-linux-arm64.tar.gz"
+      sha256 "d02152fcd04fb4ad10de6c0d08a7b057e0fabe033277a71cc0918d1c9f33bb35"
       def install
         bin.install "baton-pipedrive"
       end
