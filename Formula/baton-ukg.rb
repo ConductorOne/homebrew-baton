@@ -5,20 +5,20 @@
 class BatonUkg < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.3"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-ukg/releases/download/v0.2.3/baton-ukg-v0.2.3-darwin-amd64.zip"
-      sha256 "e6d01975bbeaf008ad44af5282049375f6cdcf3969f17d46a6dcfa2a0078919e"
+      url "https://github.com/ConductorOne/baton-ukg/releases/download/v0.3.0/baton-ukg-v0.3.0-darwin-amd64.zip"
+      sha256 "54d8aff6887c08e718d8b9600576df6812802c3c5300464183d854d7b97babba"
 
       def install
         bin.install "baton-ukg"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-ukg/releases/download/v0.2.3/baton-ukg-v0.2.3-darwin-arm64.zip"
-      sha256 "1973a4982633b916e80a1ba8e45e896a18ee3e835f04e22e6823eb0c6a16d28c"
+      url "https://github.com/ConductorOne/baton-ukg/releases/download/v0.3.0/baton-ukg-v0.3.0-darwin-arm64.zip"
+      sha256 "e18dc7f8a40abedfb3edc75904bf9a31ac230cf00a86b72d97dc0e8fa04d0483"
 
       def install
         bin.install "baton-ukg"
@@ -28,15 +28,15 @@ class BatonUkg < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ukg/releases/download/v0.2.3/baton-ukg-v0.2.3-linux-amd64.tar.gz"
-      sha256 "62bd92d08ff979336e46688aa78bbb84101d462d2db7dd970c2c6fdf1fc0fb71"
+      url "https://github.com/ConductorOne/baton-ukg/releases/download/v0.3.0/baton-ukg-v0.3.0-linux-amd64.tar.gz"
+      sha256 "41506ed2380bf1d87cac358dd89b56e724a9b796e50fd3eeb8d4afd0ef886846"
       def install
         bin.install "baton-ukg"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ukg/releases/download/v0.2.3/baton-ukg-v0.2.3-linux-arm64.tar.gz"
-      sha256 "c54c51513f2eb50326cd78c91f2d6633e4e983fa7ea50b6a9e2ced1fef64623c"
+      url "https://github.com/ConductorOne/baton-ukg/releases/download/v0.3.0/baton-ukg-v0.3.0-linux-arm64.tar.gz"
+      sha256 "6662f9a9338f7dc556ae8866a9bc94bd39189f75748459c6ac87f6bc2cbe0b96"
       def install
         bin.install "baton-ukg"
       end
