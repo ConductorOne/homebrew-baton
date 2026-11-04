@@ -5,20 +5,20 @@
 class BatonNosql < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1-test"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-nosql/releases/download/v0.0.1-test/baton-nosql-v0.0.1-test-darwin-amd64.zip"
-      sha256 "aa9084fddb9178439af8b71963724e01b32396d3b5a6fc45d4e8bee16b5e6b1f"
+      url "https://github.com/ConductorOne/baton-nosql/releases/download/v0.1.0/baton-nosql-v0.1.0-darwin-amd64.zip"
+      sha256 "39c3895e48270013ee437eb258eedd4fec4b3bf78c7c5786a708ba46d379920c"
 
       def install
         bin.install "baton-nosql"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-nosql/releases/download/v0.0.1-test/baton-nosql-v0.0.1-test-darwin-arm64.zip"
-      sha256 "2113fb51822d50bd24f4b78f9a3326d2e34150bf8fa841294c5b4f8ad987bf8a"
+      url "https://github.com/ConductorOne/baton-nosql/releases/download/v0.1.0/baton-nosql-v0.1.0-darwin-arm64.zip"
+      sha256 "6fad707111b3f8848752b3549c677ece5263e112fb81f3e0d7e18ba18071d04a"
 
       def install
         bin.install "baton-nosql"
@@ -28,15 +28,15 @@ class BatonNosql < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-nosql/releases/download/v0.0.1-test/baton-nosql-v0.0.1-test-linux-amd64.tar.gz"
-      sha256 "414360e1a28505963010b4fb82afe3c42521f2aad157e46d20467fdc29d72876"
+      url "https://github.com/ConductorOne/baton-nosql/releases/download/v0.1.0/baton-nosql-v0.1.0-linux-amd64.tar.gz"
+      sha256 "132b43b8602400ae09218a66982252e1b5aaf6bfe6fd75573dac9b08bc064730"
       def install
         bin.install "baton-nosql"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-nosql/releases/download/v0.0.1-test/baton-nosql-v0.0.1-test-linux-arm64.tar.gz"
-      sha256 "603084f3c8c08ff700d94255feca81464364725d5c87c5e775eff4a547bf485f"
+      url "https://github.com/ConductorOne/baton-nosql/releases/download/v0.1.0/baton-nosql-v0.1.0-linux-arm64.tar.gz"
+      sha256 "cb0668a46525ef505f46d9c81154427f49f3cec24984253630261e348444e097"
       def install
         bin.install "baton-nosql"
       end
