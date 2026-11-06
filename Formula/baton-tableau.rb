@@ -5,20 +5,20 @@
 class BatonTableau < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.3.5-test-pr-56"
+  version "0.3.5-test-pr-55"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-tableau/releases/download/v0.3.5-test-pr-56/baton-tableau-v0.3.5-test-pr-56-darwin-amd64.zip"
-      sha256 "8da7f3960d690294dfa329b0cb6a22b8678eea78e99aa0fb760f336113bc5fe7"
+      url "https://github.com/ConductorOne/baton-tableau/releases/download/v0.3.5-test-pr-55/baton-tableau-v0.3.5-test-pr-55-darwin-amd64.zip"
+      sha256 "d744dc46ebaf9039874b65cb748ffe0fede73cb77da477b66af94484a698b16f"
 
       def install
         bin.install "baton-tableau"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-tableau/releases/download/v0.3.5-test-pr-56/baton-tableau-v0.3.5-test-pr-56-darwin-arm64.zip"
-      sha256 "a2bbd5e41dbe2250a6fa6913b095607500d66e8f9e1d7787d655b851ae0256cf"
+      url "https://github.com/ConductorOne/baton-tableau/releases/download/v0.3.5-test-pr-55/baton-tableau-v0.3.5-test-pr-55-darwin-arm64.zip"
+      sha256 "501f8846a96ebdcee21f39bdea5975d435a87a0f2df2944dffe9182ccebcb79c"
 
       def install
         bin.install "baton-tableau"
@@ -28,15 +28,15 @@ class BatonTableau < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-tableau/releases/download/v0.3.5-test-pr-56/baton-tableau-v0.3.5-test-pr-56-linux-amd64.tar.gz"
-      sha256 "268a24379a33b7372f6da5ca65cea40a3613b8c117cefe04779edf839948b438"
+      url "https://github.com/ConductorOne/baton-tableau/releases/download/v0.3.5-test-pr-55/baton-tableau-v0.3.5-test-pr-55-linux-amd64.tar.gz"
+      sha256 "5db186385665cc13727fc3a704277046f5e0df48d9c59f6c1ef2244781187c9e"
       def install
         bin.install "baton-tableau"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-tableau/releases/download/v0.3.5-test-pr-56/baton-tableau-v0.3.5-test-pr-56-linux-arm64.tar.gz"
-      sha256 "8ef4ae47410ea8c8f67b7832d6947b6db5af9a3c836f97203382b341ac4887d2"
+      url "https://github.com/ConductorOne/baton-tableau/releases/download/v0.3.5-test-pr-55/baton-tableau-v0.3.5-test-pr-55-linux-arm64.tar.gz"
+      sha256 "97842d96e4e6cdb0ad935246585f980ba02ce8a3b2d3e3ee0eb16a7cf820823b"
       def install
         bin.install "baton-tableau"
       end
