@@ -5,20 +5,20 @@
 class BatonRpa < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.6"
+  version "0.0.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-rpa/releases/download/v0.0.6/baton-rpa-v0.0.6-darwin-amd64.zip"
-      sha256 "4e6bd96ed6b74874c5e33f1d4bc882bc48b307251067ef68aa0cbcd0ccdb2be9"
+      url "https://github.com/ConductorOne/baton-rpa/releases/download/v0.0.7/baton-rpa-v0.0.7-darwin-amd64.zip"
+      sha256 "7e4462083a115f3a422e42125a50c8fa989e171143c096bcd851ed77b5cb5a6b"
 
       def install
         bin.install "baton-rpa"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-rpa/releases/download/v0.0.6/baton-rpa-v0.0.6-darwin-arm64.zip"
-      sha256 "6a88f3d6ad2f2a0c30ad641e09b3cf73c31f6e2ed610a478a1d49b4c19b47a10"
+      url "https://github.com/ConductorOne/baton-rpa/releases/download/v0.0.7/baton-rpa-v0.0.7-darwin-arm64.zip"
+      sha256 "1fe60ff7e2472508085c6dc33bb15680d5946be952ebc48f4ac8abd281696530"
 
       def install
         bin.install "baton-rpa"
@@ -28,15 +28,15 @@ class BatonRpa < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-rpa/releases/download/v0.0.6/baton-rpa-v0.0.6-linux-amd64.tar.gz"
-      sha256 "808cc44e9111bc25fc2d7eea591487915072be2ba33afd1cf14972d585c4f617"
+      url "https://github.com/ConductorOne/baton-rpa/releases/download/v0.0.7/baton-rpa-v0.0.7-linux-amd64.tar.gz"
+      sha256 "c3222ed0ace66dc9f52355cd90e9da32c3bd7f5188508cf90e32ce1625162f87"
       def install
         bin.install "baton-rpa"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-rpa/releases/download/v0.0.6/baton-rpa-v0.0.6-linux-arm64.tar.gz"
-      sha256 "952911b3543cb27aaa2a5fcf0a3bf548961e23f6026562ff84852620603323c3"
+      url "https://github.com/ConductorOne/baton-rpa/releases/download/v0.0.7/baton-rpa-v0.0.7-linux-arm64.tar.gz"
+      sha256 "f0f12bf02d6f4e5302a5cc7406214f0cd49d7ffaa9fba3e124a9226c81a9ca64"
       def install
         bin.install "baton-rpa"
       end
