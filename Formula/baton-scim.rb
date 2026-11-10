@@ -5,20 +5,20 @@
 class BatonScim < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-scim/releases/download/v0.2.0/baton-scim-v0.2.0-darwin-amd64.zip"
-      sha256 "9009ff36ccf7003fd5b3314064f562cf5e7f3fc6018fb7fbe0aa52f40df84bd3"
+      url "https://github.com/ConductorOne/baton-scim/releases/download/v0.3.0/baton-scim-v0.3.0-darwin-amd64.zip"
+      sha256 "6078467e3f58737547f97ce6c0668543928a914651f2812695a60a4df720f4f5"
 
       def install
         bin.install "baton-scim"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-scim/releases/download/v0.2.0/baton-scim-v0.2.0-darwin-arm64.zip"
-      sha256 "8b3a5172c6e62911e70363655fd685c25264a98cd23add72abaa2661dc6551db"
+      url "https://github.com/ConductorOne/baton-scim/releases/download/v0.3.0/baton-scim-v0.3.0-darwin-arm64.zip"
+      sha256 "cd7c7b06b3e3b6c5f7c0b39e0c7860f6e583f341d2bf8ba2a00d7eb44dc6860d"
 
       def install
         bin.install "baton-scim"
@@ -28,15 +28,15 @@ class BatonScim < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-scim/releases/download/v0.2.0/baton-scim-v0.2.0-linux-amd64.tar.gz"
-      sha256 "a1a01e4c5ecd4e4f7c96ade062a4f6034ec7c006c4089f9dc3074483279c5585"
+      url "https://github.com/ConductorOne/baton-scim/releases/download/v0.3.0/baton-scim-v0.3.0-linux-amd64.tar.gz"
+      sha256 "e116bf1ff4884e74e1cb553b0ca9773a045a5bb1b4f29caeff99ce570ec5d13b"
       def install
         bin.install "baton-scim"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-scim/releases/download/v0.2.0/baton-scim-v0.2.0-linux-arm64.tar.gz"
-      sha256 "829c1ac17b5d55dad126606fc71286399f12e86d0d914eec7c97a3821265a04a"
+      url "https://github.com/ConductorOne/baton-scim/releases/download/v0.3.0/baton-scim-v0.3.0-linux-arm64.tar.gz"
+      sha256 "4e6740b0d7ea3978c321098000350556f6836239628e6fd6b5b718cab80ef5ef"
       def install
         bin.install "baton-scim"
       end
