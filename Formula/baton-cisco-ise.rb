@@ -5,20 +5,20 @@
 class BatonCiscoIse < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.3"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-cisco-ise/releases/download/v0.2.3/baton-cisco-ise-v0.2.3-darwin-amd64.zip"
-      sha256 "e36c41aec33afeb8f30e8bf8d8460d6ccc1a44f2922c788b20cbe677b622dc47"
+      url "https://github.com/ConductorOne/baton-cisco-ise/releases/download/v0.3.0/baton-cisco-ise-v0.3.0-darwin-amd64.zip"
+      sha256 "38353d5f7ac0ca20c33dc76b9102007dde79c5f578ea298414f4eb243b6b51db"
 
       def install
         bin.install "baton-cisco-ise"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-cisco-ise/releases/download/v0.2.3/baton-cisco-ise-v0.2.3-darwin-arm64.zip"
-      sha256 "a549bfce6b168ec68bd4cd5d5d4fe1ec342ccb2cb202a29892cb5eb401ab0f60"
+      url "https://github.com/ConductorOne/baton-cisco-ise/releases/download/v0.3.0/baton-cisco-ise-v0.3.0-darwin-arm64.zip"
+      sha256 "0d05df03dcecfa779fb688c0ebd28cfbdfdd9d3885f970cf7dbe12e7ffee6f02"
 
       def install
         bin.install "baton-cisco-ise"
@@ -28,15 +28,15 @@ class BatonCiscoIse < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-cisco-ise/releases/download/v0.2.3/baton-cisco-ise-v0.2.3-linux-amd64.tar.gz"
-      sha256 "91f8dadfa6cfe7aaace7110b0e0f9b88d27b60bfc1729aa68ea84b507feb1771"
+      url "https://github.com/ConductorOne/baton-cisco-ise/releases/download/v0.3.0/baton-cisco-ise-v0.3.0-linux-amd64.tar.gz"
+      sha256 "f0b48266ca105cd2517399fccac76e3b7f289418f6320f98ecac9604d174c081"
       def install
         bin.install "baton-cisco-ise"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-cisco-ise/releases/download/v0.2.3/baton-cisco-ise-v0.2.3-linux-arm64.tar.gz"
-      sha256 "7049142485923b3b768e7af336801609a8fcec6d9719185dc30e9051c5e2f5f2"
+      url "https://github.com/ConductorOne/baton-cisco-ise/releases/download/v0.3.0/baton-cisco-ise-v0.3.0-linux-arm64.tar.gz"
+      sha256 "947814b344b7727a5c33000dc308910a8d4cf556765cca82b1e287e2a87b83b3"
       def install
         bin.install "baton-cisco-ise"
       end
