@@ -5,20 +5,20 @@
 class BatonElastic < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-elastic/releases/download/v0.1.0/baton-elastic-v0.1.0-darwin-amd64.zip"
-      sha256 "c20628a0293967269652dca8a627594bb60f6ab0c7febbdd1390c96b6dff38fe"
+      url "https://github.com/ConductorOne/baton-elastic/releases/download/v0.1.1/baton-elastic-v0.1.1-darwin-amd64.zip"
+      sha256 "9e6408946824e78713963edd04d8058234edd6233d9b9cfdb87d135df8a1c27d"
 
       def install
         bin.install "baton-elastic"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-elastic/releases/download/v0.1.0/baton-elastic-v0.1.0-darwin-arm64.zip"
-      sha256 "81644b34502bcfd665b792ddc15bbfb4ea2f0e8624059e053c91a318b468541f"
+      url "https://github.com/ConductorOne/baton-elastic/releases/download/v0.1.1/baton-elastic-v0.1.1-darwin-arm64.zip"
+      sha256 "903e080360c43a020b97b413bfd43069d5f9eb6399d0e3e591845afe45700b68"
 
       def install
         bin.install "baton-elastic"
@@ -28,15 +28,15 @@ class BatonElastic < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-elastic/releases/download/v0.1.0/baton-elastic-v0.1.0-linux-amd64.tar.gz"
-      sha256 "20c9cefd30c11f1c18c4b91aa5aa20b6bd4d78a93d0cfbeca55eb4f7caf67995"
+      url "https://github.com/ConductorOne/baton-elastic/releases/download/v0.1.1/baton-elastic-v0.1.1-linux-amd64.tar.gz"
+      sha256 "a118b46ffed79300b7851316d817a3c0b2a19d17eb21c69bd615c60798740c34"
       def install
         bin.install "baton-elastic"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-elastic/releases/download/v0.1.0/baton-elastic-v0.1.0-linux-arm64.tar.gz"
-      sha256 "f35f763ecb1a68cae1f84d1aabca1a43894eec27d7df2bce8ebd4a889cfdc2f0"
+      url "https://github.com/ConductorOne/baton-elastic/releases/download/v0.1.1/baton-elastic-v0.1.1-linux-arm64.tar.gz"
+      sha256 "39777a238ab6748fb55927d141f552c697676a5b9a9ab4616966a5b55a9e250d"
       def install
         bin.install "baton-elastic"
       end
