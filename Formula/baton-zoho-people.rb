@@ -5,20 +5,20 @@
 class BatonZohoPeople < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-zoho-people/releases/download/v0.2.0/baton-zoho-people-v0.2.0-darwin-amd64.zip"
-      sha256 "16650fff6bddd30113936c8bdb515ddee61e9f29f68046c582a4229da38df752"
+      url "https://github.com/ConductorOne/baton-zoho-people/releases/download/v0.2.1/baton-zoho-people-v0.2.1-darwin-amd64.zip"
+      sha256 "2fb27e6ceb4dfa0501810799256339d8064805238b630c2d9d11d87b41ff3bd0"
 
       def install
         bin.install "baton-zoho-people"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-zoho-people/releases/download/v0.2.0/baton-zoho-people-v0.2.0-darwin-arm64.zip"
-      sha256 "045af36ee45f5b9795e1e3c984e6819f003d3dc464aeb21c5b93ba2e945041ec"
+      url "https://github.com/ConductorOne/baton-zoho-people/releases/download/v0.2.1/baton-zoho-people-v0.2.1-darwin-arm64.zip"
+      sha256 "a7885bb2b5c286609c3db17d87a8ac59932fc985bc9db850fa3b2192e374d75b"
 
       def install
         bin.install "baton-zoho-people"
@@ -28,15 +28,15 @@ class BatonZohoPeople < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-zoho-people/releases/download/v0.2.0/baton-zoho-people-v0.2.0-linux-amd64.tar.gz"
-      sha256 "24df2cb0182f7801bf989de1c86fdd0a4282ebdd7928189b983b4712fab25c68"
+      url "https://github.com/ConductorOne/baton-zoho-people/releases/download/v0.2.1/baton-zoho-people-v0.2.1-linux-amd64.tar.gz"
+      sha256 "bed5c7923fe49aac54683f1f835a49c32a1630f80e44fff3528525407c118d8d"
       def install
         bin.install "baton-zoho-people"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-zoho-people/releases/download/v0.2.0/baton-zoho-people-v0.2.0-linux-arm64.tar.gz"
-      sha256 "9369351dfd95396d10f18569d2effca69f9d5a767ac123fefdd59664cb567507"
+      url "https://github.com/ConductorOne/baton-zoho-people/releases/download/v0.2.1/baton-zoho-people-v0.2.1-linux-arm64.tar.gz"
+      sha256 "e6b451e9fe5296240eea5318ff37eb5ec2f3dbac0727a01d10a44794b64108cb"
       def install
         bin.install "baton-zoho-people"
       end
