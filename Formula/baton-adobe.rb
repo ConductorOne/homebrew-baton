@@ -5,20 +5,20 @@
 class BatonAdobe < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-adobe/releases/download/v0.3.0/baton-adobe-v0.3.0-darwin-amd64.zip"
-      sha256 "0e81265d8b9d0410d215ce73363f0186b6ef9ce375bd4cdf0526bbe7d67c0fcc"
+      url "https://github.com/ConductorOne/baton-adobe/releases/download/v0.3.1/baton-adobe-v0.3.1-darwin-amd64.zip"
+      sha256 "9b5fbc1a3d2349c3f79f95d4b893df2093372c188653221d5b561d5587637932"
 
       def install
         bin.install "baton-adobe"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-adobe/releases/download/v0.3.0/baton-adobe-v0.3.0-darwin-arm64.zip"
-      sha256 "18306fda38091109497a412be28b283ed3875fde85037cafaef9b80066a237ec"
+      url "https://github.com/ConductorOne/baton-adobe/releases/download/v0.3.1/baton-adobe-v0.3.1-darwin-arm64.zip"
+      sha256 "2fc3755c11d6669a0cc5125be0c38225c4a2b949cfd01ea9a95e4e96cefd72b2"
 
       def install
         bin.install "baton-adobe"
@@ -28,15 +28,15 @@ class BatonAdobe < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-adobe/releases/download/v0.3.0/baton-adobe-v0.3.0-linux-amd64.tar.gz"
-      sha256 "4de871a567b437843b95d6d8e5579719d0787f111b979c1f8cff3aea41f60223"
+      url "https://github.com/ConductorOne/baton-adobe/releases/download/v0.3.1/baton-adobe-v0.3.1-linux-amd64.tar.gz"
+      sha256 "846589f91451fc2ec182da630d03dacec6a5c116c07569bbaf10f89bb83c6b84"
       def install
         bin.install "baton-adobe"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-adobe/releases/download/v0.3.0/baton-adobe-v0.3.0-linux-arm64.tar.gz"
-      sha256 "5fa589e69b3b76954b89d879413573126d40ba96f77601d288973afdccd970ba"
+      url "https://github.com/ConductorOne/baton-adobe/releases/download/v0.3.1/baton-adobe-v0.3.1-linux-arm64.tar.gz"
+      sha256 "6e2e907ff4fa212bb37196578588355f01c9271a15ac7dd93b100edfe6a77f37"
       def install
         bin.install "baton-adobe"
       end
