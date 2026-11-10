@@ -5,20 +5,20 @@
 class BatonDigicertCertcentral < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.1"
+  version "0.2.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-digicert-certcentral/releases/download/v0.2.1/baton-digicert-certcentral-v0.2.1-darwin-amd64.zip"
-      sha256 "a80a5ffe3ebf5f842c04c8c92300f94d2031c16c0d7ba9289b5dcd96fa007072"
+      url "https://github.com/ConductorOne/baton-digicert-certcentral/releases/download/v0.2.2/baton-digicert-certcentral-v0.2.2-darwin-amd64.zip"
+      sha256 "730aea441a84677bd4ed20190537204e75ed2b431ad37fa52823c10cb80b0ea4"
 
       def install
         bin.install "baton-digicert-certcentral"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-digicert-certcentral/releases/download/v0.2.1/baton-digicert-certcentral-v0.2.1-darwin-arm64.zip"
-      sha256 "b296b88d752a1be0ce833df384fa68451e6c6ea1f8c78a9638402942f1ef03c9"
+      url "https://github.com/ConductorOne/baton-digicert-certcentral/releases/download/v0.2.2/baton-digicert-certcentral-v0.2.2-darwin-arm64.zip"
+      sha256 "049aa760f80cb168f5a38e6a15128fba66ab96da05d71b37fc368f4ebcf8eda2"
 
       def install
         bin.install "baton-digicert-certcentral"
@@ -28,15 +28,15 @@ class BatonDigicertCertcentral < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-digicert-certcentral/releases/download/v0.2.1/baton-digicert-certcentral-v0.2.1-linux-amd64.tar.gz"
-      sha256 "4899efba57894f6d48daa8c99a6620a344b65c79434a0d0f980dd01caa217e9e"
+      url "https://github.com/ConductorOne/baton-digicert-certcentral/releases/download/v0.2.2/baton-digicert-certcentral-v0.2.2-linux-amd64.tar.gz"
+      sha256 "7c02d82bd37b0caaf217ef1ca2ee2fae928830e3be8804ec2b201575094fd575"
       def install
         bin.install "baton-digicert-certcentral"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-digicert-certcentral/releases/download/v0.2.1/baton-digicert-certcentral-v0.2.1-linux-arm64.tar.gz"
-      sha256 "63e8bc525aa3bf697c45b4318fa876bd842e2e233baa78ae9cf66e21eb806d03"
+      url "https://github.com/ConductorOne/baton-digicert-certcentral/releases/download/v0.2.2/baton-digicert-certcentral-v0.2.2-linux-arm64.tar.gz"
+      sha256 "7050feb3d946fcf758868ce037aa8f471102b35c8587778b6415818c800669ce"
       def install
         bin.install "baton-digicert-certcentral"
       end
