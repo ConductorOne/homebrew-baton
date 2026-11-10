@@ -5,20 +5,20 @@
 class BatonSupabase < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-supabase/releases/download/v0.1.0/baton-supabase-v0.1.0-darwin-amd64.zip"
-      sha256 "93f576e24801c8fedc730952ea8c07f80be2bde21b0a32ffae7daa6c1aed46c0"
+      url "https://github.com/ConductorOne/baton-supabase/releases/download/v0.1.1/baton-supabase-v0.1.1-darwin-amd64.zip"
+      sha256 "dff31046af5c7776720d5e599bc91845bc504428d2627984a0bb185455d982e5"
 
       def install
         bin.install "baton-supabase"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-supabase/releases/download/v0.1.0/baton-supabase-v0.1.0-darwin-arm64.zip"
-      sha256 "c8a6a2421aa812b3019dc241b2656ce6eec17baef811bcf91cdbe01d56994130"
+      url "https://github.com/ConductorOne/baton-supabase/releases/download/v0.1.1/baton-supabase-v0.1.1-darwin-arm64.zip"
+      sha256 "c4e87761dabc01128396599ad44a6497c3e291794ae906475ced627f77d0ccbe"
 
       def install
         bin.install "baton-supabase"
@@ -28,15 +28,15 @@ class BatonSupabase < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-supabase/releases/download/v0.1.0/baton-supabase-v0.1.0-linux-amd64.tar.gz"
-      sha256 "453f3633211edf0e707cfd6c93d46f8af25b89cd0b104c41ae491d00707d2958"
+      url "https://github.com/ConductorOne/baton-supabase/releases/download/v0.1.1/baton-supabase-v0.1.1-linux-amd64.tar.gz"
+      sha256 "a943ab72913e8d85cb83edc04b4aaa5c7b305b429ce3b5d908d9d5fb99ec6193"
       def install
         bin.install "baton-supabase"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-supabase/releases/download/v0.1.0/baton-supabase-v0.1.0-linux-arm64.tar.gz"
-      sha256 "6ddc0d040d27fd372bfa1f1741859c23c6bc86bf4705753f106316e3a01090c8"
+      url "https://github.com/ConductorOne/baton-supabase/releases/download/v0.1.1/baton-supabase-v0.1.1-linux-arm64.tar.gz"
+      sha256 "fd32a7d0a5179cdf661bb9c41796b9aa10f3e7167b20262493a07f65120e38b6"
       def install
         bin.install "baton-supabase"
       end
