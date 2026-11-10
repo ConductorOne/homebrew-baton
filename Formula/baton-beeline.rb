@@ -5,20 +5,20 @@
 class BatonBeeline < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-beeline/releases/download/v0.2.0/baton-beeline-v0.2.0-darwin-amd64.zip"
-      sha256 "ff3b22069c1ef7347cd18e0198ea270dbef3e552640a9970293640d37b032ca1"
+      url "https://github.com/ConductorOne/baton-beeline/releases/download/v0.2.1/baton-beeline-v0.2.1-darwin-amd64.zip"
+      sha256 "ac8223fae0f41599bbcb6a9a01fe84af6ef8c96cdfb1c07a3398746f20691c32"
 
       def install
         bin.install "baton-beeline"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-beeline/releases/download/v0.2.0/baton-beeline-v0.2.0-darwin-arm64.zip"
-      sha256 "b5783329a7bf736f191e01539729eb20d9197ecf91550582ad251de6534fb9bd"
+      url "https://github.com/ConductorOne/baton-beeline/releases/download/v0.2.1/baton-beeline-v0.2.1-darwin-arm64.zip"
+      sha256 "453a509c027320161d04438d9773db29afcb1bf91103c7042e6eaadf5ee62cad"
 
       def install
         bin.install "baton-beeline"
@@ -28,15 +28,15 @@ class BatonBeeline < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-beeline/releases/download/v0.2.0/baton-beeline-v0.2.0-linux-amd64.tar.gz"
-      sha256 "097fa4df198f6f5c3e5d6ff6fd858aa88f5af0140b80b554f5aab469be5dcfb8"
+      url "https://github.com/ConductorOne/baton-beeline/releases/download/v0.2.1/baton-beeline-v0.2.1-linux-amd64.tar.gz"
+      sha256 "e65415a2220e86d55bfc2a01ebe266e48503e51f1c409ca5f75c241a5b975727"
       def install
         bin.install "baton-beeline"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-beeline/releases/download/v0.2.0/baton-beeline-v0.2.0-linux-arm64.tar.gz"
-      sha256 "4c53e9f0c7f1925fea2d6d4a64e540d40fc334209693a34b51ba6e35e440f952"
+      url "https://github.com/ConductorOne/baton-beeline/releases/download/v0.2.1/baton-beeline-v0.2.1-linux-arm64.tar.gz"
+      sha256 "f78b5b4686e02a51b89dc7ccff0eec9a2e5edae568a5c690a42c9a206e0e7a69"
       def install
         bin.install "baton-beeline"
       end
