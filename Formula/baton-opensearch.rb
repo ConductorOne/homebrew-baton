@@ -5,20 +5,20 @@
 class BatonOpensearch < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.3"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-opensearch/releases/download/v0.2.3/baton-opensearch-v0.2.3-darwin-amd64.zip"
-      sha256 "fb7244c2272420466dde34f047d2da056a2a2cef5901bd9c371a4f724a8967d8"
+      url "https://github.com/ConductorOne/baton-opensearch/releases/download/v0.3.0/baton-opensearch-v0.3.0-darwin-amd64.zip"
+      sha256 "74fcb9919c28a4ed688caa540fa86e4ea874a91abf026df894ef8fc15c725604"
 
       def install
         bin.install "baton-opensearch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-opensearch/releases/download/v0.2.3/baton-opensearch-v0.2.3-darwin-arm64.zip"
-      sha256 "b06874c247a9ace8341f4110733160fe35c3fcc50e9ba425ff899b82bbc85727"
+      url "https://github.com/ConductorOne/baton-opensearch/releases/download/v0.3.0/baton-opensearch-v0.3.0-darwin-arm64.zip"
+      sha256 "cc52741375f22f28839939ee735cb3fc451dc39fbccc9f85b2a84e69be5b5223"
 
       def install
         bin.install "baton-opensearch"
@@ -28,15 +28,15 @@ class BatonOpensearch < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-opensearch/releases/download/v0.2.3/baton-opensearch-v0.2.3-linux-amd64.tar.gz"
-      sha256 "094b0ebdd7432787df7da9aa1ac165f88db538dbcd2ba7ea2039fa6101022f84"
+      url "https://github.com/ConductorOne/baton-opensearch/releases/download/v0.3.0/baton-opensearch-v0.3.0-linux-amd64.tar.gz"
+      sha256 "a6ee35888785a06e7af0af61398c4041cc2534cf9c0196f7d5c4392d62635311"
       def install
         bin.install "baton-opensearch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-opensearch/releases/download/v0.2.3/baton-opensearch-v0.2.3-linux-arm64.tar.gz"
-      sha256 "c4107f697920fd5adf1b99b3759cbe62f10013ce136abbe51a37aa6c47fbd9ce"
+      url "https://github.com/ConductorOne/baton-opensearch/releases/download/v0.3.0/baton-opensearch-v0.3.0-linux-arm64.tar.gz"
+      sha256 "090d7adb7fcb6d332dc4260ad51c43227f87eb326eb4805c7e32f8eefaaa4e95"
       def install
         bin.install "baton-opensearch"
       end
