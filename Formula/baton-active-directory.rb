@@ -5,20 +5,20 @@
 class BatonActiveDirectory < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.5.17"
+  version "0.5.18-test-delete-guard.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-active-directory/releases/download/v0.5.17/baton-active-directory-v0.5.17-darwin-amd64.zip"
-      sha256 "50c50dbfb1c7a3c0fe79845d9a18e0aab23ac324d98c28a14690313fbe24da27"
+      url "https://github.com/ConductorOne/baton-active-directory/releases/download/v0.5.18-test-delete-guard.1/baton-active-directory-v0.5.18-test-delete-guard.1-darwin-amd64.zip"
+      sha256 "30c1ce1e0183b3b9c5b2c2005becde56739c866852005c67b4729323f7a0ef11"
 
       def install
         bin.install "baton-active-directory"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-active-directory/releases/download/v0.5.17/baton-active-directory-v0.5.17-darwin-arm64.zip"
-      sha256 "d6ef9a67336241ccc9b13d7ca96b5c49f96f5dbfb379de37f26063a4b8304d70"
+      url "https://github.com/ConductorOne/baton-active-directory/releases/download/v0.5.18-test-delete-guard.1/baton-active-directory-v0.5.18-test-delete-guard.1-darwin-arm64.zip"
+      sha256 "35e9e820a868640384859b9408bc233e31195658a386c9b5e28317d4f5cf11d7"
 
       def install
         bin.install "baton-active-directory"
@@ -28,15 +28,15 @@ class BatonActiveDirectory < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-active-directory/releases/download/v0.5.17/baton-active-directory-v0.5.17-linux-amd64.tar.gz"
-      sha256 "2b507af82c524c68669b44da458f2123c81fafb9cce5f7a4f12dba96b7799db9"
+      url "https://github.com/ConductorOne/baton-active-directory/releases/download/v0.5.18-test-delete-guard.1/baton-active-directory-v0.5.18-test-delete-guard.1-linux-amd64.tar.gz"
+      sha256 "392de200711082061b7658e8e4dfeb762198c699e1661d3278303d5f0e89b038"
       def install
         bin.install "baton-active-directory"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-active-directory/releases/download/v0.5.17/baton-active-directory-v0.5.17-linux-arm64.tar.gz"
-      sha256 "10d6b7de025e421e01183aeaf22d2f2cee4d88e7c80ad77248b2b3a871d0e464"
+      url "https://github.com/ConductorOne/baton-active-directory/releases/download/v0.5.18-test-delete-guard.1/baton-active-directory-v0.5.18-test-delete-guard.1-linux-arm64.tar.gz"
+      sha256 "812c99b3c584643142089a3462a1480ac42d27690a903b129a8d9af7378d5c27"
       def install
         bin.install "baton-active-directory"
       end
