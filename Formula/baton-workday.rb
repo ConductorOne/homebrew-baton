@@ -5,20 +5,20 @@
 class BatonWorkday < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.7"
+  version "0.2.8-test-signin-renewal"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-workday/releases/download/v0.2.7/baton-workday-v0.2.7-darwin-amd64.zip"
-      sha256 "90ffc216a2ec36a799b02a1cd1fd41734a15f3eaed9b40cca343fa9a105a238d"
+      url "https://github.com/ConductorOne/baton-workday/releases/download/v0.2.8-test-signin-renewal/baton-workday-v0.2.8-test-signin-renewal-darwin-amd64.zip"
+      sha256 "971e9deb85e774c87c6420ad75eb682771d9419d636e9a1200e8eac88295e688"
 
       def install
         bin.install "baton-workday"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-workday/releases/download/v0.2.7/baton-workday-v0.2.7-darwin-arm64.zip"
-      sha256 "057916d48db97511a74f1e89a8407a6836f4afe0893ceb21dede36a63f61bd56"
+      url "https://github.com/ConductorOne/baton-workday/releases/download/v0.2.8-test-signin-renewal/baton-workday-v0.2.8-test-signin-renewal-darwin-arm64.zip"
+      sha256 "bb2096943b14e6dea4ebc1a79c218c312d85b37589d0ebd2e1db42d33b7b09eb"
 
       def install
         bin.install "baton-workday"
@@ -28,15 +28,15 @@ class BatonWorkday < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-workday/releases/download/v0.2.7/baton-workday-v0.2.7-linux-amd64.tar.gz"
-      sha256 "38a91e2afd10a5c87086f27fc29ec80405be1cd02e87ea61360fb8b5ca40891f"
+      url "https://github.com/ConductorOne/baton-workday/releases/download/v0.2.8-test-signin-renewal/baton-workday-v0.2.8-test-signin-renewal-linux-amd64.tar.gz"
+      sha256 "982ea64459734950bd2fc161e2ef0898c246462b8c362422f8650f2ca8ec8258"
       def install
         bin.install "baton-workday"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-workday/releases/download/v0.2.7/baton-workday-v0.2.7-linux-arm64.tar.gz"
-      sha256 "65d882f292cbfc14123ecfc734b984c0e70ec52cb64aade1f93ffc97b71c0b6b"
+      url "https://github.com/ConductorOne/baton-workday/releases/download/v0.2.8-test-signin-renewal/baton-workday-v0.2.8-test-signin-renewal-linux-arm64.tar.gz"
+      sha256 "0e96b303163d962b23604166a9ded962babe2769304ea5d66bbc13ac539901f7"
       def install
         bin.install "baton-workday"
       end
