@@ -5,20 +5,20 @@
 class BatonWorkdayWql < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.4.1-test-empty-sync-guards"
+  version "0.4.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-workday-wql/releases/download/v0.4.1-test-empty-sync-guards/baton-workday-wql-v0.4.1-test-empty-sync-guards-darwin-amd64.zip"
-      sha256 "516327d6215139280106d18620357965775d3afa4b67240931cdfa9fdad8a51c"
+      url "https://github.com/ConductorOne/baton-workday-wql/releases/download/v0.4.1/baton-workday-wql-v0.4.1-darwin-amd64.zip"
+      sha256 "0c930a5d6d7284573bbf76f3b36748596ebfc6f2448a65a068c853273c7889b1"
 
       def install
         bin.install "baton-workday-wql"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-workday-wql/releases/download/v0.4.1-test-empty-sync-guards/baton-workday-wql-v0.4.1-test-empty-sync-guards-darwin-arm64.zip"
-      sha256 "ce4ab835f8c02bcfd800c4e6fc4c63f9fad322d601c51dfbe0752d207b82dc27"
+      url "https://github.com/ConductorOne/baton-workday-wql/releases/download/v0.4.1/baton-workday-wql-v0.4.1-darwin-arm64.zip"
+      sha256 "a807b38fa59265895e296f87266e45938ea53ad5fcb5fef2f5a06d46718480ce"
 
       def install
         bin.install "baton-workday-wql"
@@ -28,15 +28,15 @@ class BatonWorkdayWql < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-workday-wql/releases/download/v0.4.1-test-empty-sync-guards/baton-workday-wql-v0.4.1-test-empty-sync-guards-linux-amd64.tar.gz"
-      sha256 "526d107803ca4b2619643814aedd2f00c166eaa7e544295b065cb091b194fad7"
+      url "https://github.com/ConductorOne/baton-workday-wql/releases/download/v0.4.1/baton-workday-wql-v0.4.1-linux-amd64.tar.gz"
+      sha256 "13ea37e1193e90dd1c2ba2b444dd6b913a2d0ad57a8646c43bdabab10d966398"
       def install
         bin.install "baton-workday-wql"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-workday-wql/releases/download/v0.4.1-test-empty-sync-guards/baton-workday-wql-v0.4.1-test-empty-sync-guards-linux-arm64.tar.gz"
-      sha256 "02734fe1cb3970f6367e75a6ee15c99cd3b6a1663b5e85dc1aec042520042335"
+      url "https://github.com/ConductorOne/baton-workday-wql/releases/download/v0.4.1/baton-workday-wql-v0.4.1-linux-arm64.tar.gz"
+      sha256 "ae008a8cd252a73b01f5c016d054692b16b7ba5ed17838dc2880bf118415396b"
       def install
         bin.install "baton-workday-wql"
       end
