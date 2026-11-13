@@ -5,20 +5,20 @@
 class BatonDatabricks < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.7-test-inc-sync-fixes"
+  version "0.2.7-test-pr-94"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-databricks/releases/download/v0.2.7-test-inc-sync-fixes/baton-databricks-v0.2.7-test-inc-sync-fixes-darwin-amd64.zip"
-      sha256 "3594ee0ff9b9f7d2613ff8b59ed6ca494612f5e249bbf2679caa5c5ab4c59101"
+      url "https://github.com/ConductorOne/baton-databricks/releases/download/v0.2.7-test-pr-94/baton-databricks-v0.2.7-test-pr-94-darwin-amd64.zip"
+      sha256 "54212080e34899e06b07b7c69bc05d40e4fbee54dc2f441db370f8506db6247c"
 
       def install
         bin.install "baton-databricks"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-databricks/releases/download/v0.2.7-test-inc-sync-fixes/baton-databricks-v0.2.7-test-inc-sync-fixes-darwin-arm64.zip"
-      sha256 "dbaf4a070134063ffcad2066f6dd2b48aead9f6c28f1504091c89f6858be6870"
+      url "https://github.com/ConductorOne/baton-databricks/releases/download/v0.2.7-test-pr-94/baton-databricks-v0.2.7-test-pr-94-darwin-arm64.zip"
+      sha256 "796e3345a8614b0c88378bcb3def58d98e42cbb2fd373ceae1a61a1165d09cef"
 
       def install
         bin.install "baton-databricks"
@@ -28,15 +28,15 @@ class BatonDatabricks < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-databricks/releases/download/v0.2.7-test-inc-sync-fixes/baton-databricks-v0.2.7-test-inc-sync-fixes-linux-amd64.tar.gz"
-      sha256 "80a333bc4bf0ca402348739b4c833fd7066b7e22f7d4c06db0fe4546202ee489"
+      url "https://github.com/ConductorOne/baton-databricks/releases/download/v0.2.7-test-pr-94/baton-databricks-v0.2.7-test-pr-94-linux-amd64.tar.gz"
+      sha256 "f9de58ca5b95342a14184f6bd5f151ff6c19e0d2202ca58fbf9c4648a9d07058"
       def install
         bin.install "baton-databricks"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-databricks/releases/download/v0.2.7-test-inc-sync-fixes/baton-databricks-v0.2.7-test-inc-sync-fixes-linux-arm64.tar.gz"
-      sha256 "cf5352ffca93d947a52bc678f5f7d298552017631eb96d7e942a5df1752fb57f"
+      url "https://github.com/ConductorOne/baton-databricks/releases/download/v0.2.7-test-pr-94/baton-databricks-v0.2.7-test-pr-94-linux-arm64.tar.gz"
+      sha256 "e300eb3938e5f9c0d75d16a123159105879350c368ab27a2380da45d5f9286d0"
       def install
         bin.install "baton-databricks"
       end
