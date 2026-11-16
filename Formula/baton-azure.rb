@@ -5,20 +5,20 @@
 class BatonAzure < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "1.1.17"
+  version "1.1.18-test-ra-for-ar"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-azure/releases/download/v1.1.17/baton-azure-v1.1.17-darwin-amd64.zip"
-      sha256 "6646e76e7449e92a703006ea103a61122d59aea31042b5d9cacbeddaa5857be7"
+      url "https://github.com/ConductorOne/baton-azure/releases/download/v1.1.18-test-ra-for-ar/baton-azure-v1.1.18-test-ra-for-ar-darwin-amd64.zip"
+      sha256 "3d0c5539e1d6c4f9beab4b36d84901531fbe1354885cc1d1d218f5dd9731b751"
 
       def install
         bin.install "baton-azure"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-azure/releases/download/v1.1.17/baton-azure-v1.1.17-darwin-arm64.zip"
-      sha256 "e462d782be85d6238d42b8f999103c949115777a99b4944625b51e1b5b4cca29"
+      url "https://github.com/ConductorOne/baton-azure/releases/download/v1.1.18-test-ra-for-ar/baton-azure-v1.1.18-test-ra-for-ar-darwin-arm64.zip"
+      sha256 "7162ce780275a6d2f2bb4cb9cb00c96c4b4fa56d9e74e5a1d9ada35b626f0992"
 
       def install
         bin.install "baton-azure"
@@ -28,15 +28,15 @@ class BatonAzure < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-azure/releases/download/v1.1.17/baton-azure-v1.1.17-linux-amd64.tar.gz"
-      sha256 "e8a348cbada45cc7bea7ab2390fcb75a4d5d03c292257681a62b7629c3f30eff"
+      url "https://github.com/ConductorOne/baton-azure/releases/download/v1.1.18-test-ra-for-ar/baton-azure-v1.1.18-test-ra-for-ar-linux-amd64.tar.gz"
+      sha256 "67f51d222ce760c7d0c3f2c8803b934c29fb66d683c53db508b4ceafd68e297c"
       def install
         bin.install "baton-azure"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-azure/releases/download/v1.1.17/baton-azure-v1.1.17-linux-arm64.tar.gz"
-      sha256 "8db7499aa53afac68c4ca551b4bd88487d5e4a7ffd3ce20a164815a473f0cdb0"
+      url "https://github.com/ConductorOne/baton-azure/releases/download/v1.1.18-test-ra-for-ar/baton-azure-v1.1.18-test-ra-for-ar-linux-arm64.tar.gz"
+      sha256 "aece201fcdc11f383a77c8693c63d66020864ce5ec4f169302fa2c711b698725"
       def install
         bin.install "baton-azure"
       end
