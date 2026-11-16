@@ -5,20 +5,20 @@
 class BatonSql < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.6.5"
+  version "0.6.6-test-inc-sync"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-sql/releases/download/v0.6.5/baton-sql-v0.6.5-darwin-amd64.zip"
-      sha256 "2f42632dbff7aaa8688759bf8e17b7146ad8fc87dbb6b3f0abd57715b3b09f0e"
+      url "https://github.com/ConductorOne/baton-sql/releases/download/v0.6.6-test-inc-sync/baton-sql-v0.6.6-test-inc-sync-darwin-amd64.zip"
+      sha256 "f8cb48f50fd47e0045aab02d4154d697619560d196cfc7fc4b7bda28dda39d74"
 
       def install
         bin.install "baton-sql"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-sql/releases/download/v0.6.5/baton-sql-v0.6.5-darwin-arm64.zip"
-      sha256 "9346c0ad76d2064ed8437a38c04bac53e7df25d387fa672583205b6be06f5abd"
+      url "https://github.com/ConductorOne/baton-sql/releases/download/v0.6.6-test-inc-sync/baton-sql-v0.6.6-test-inc-sync-darwin-arm64.zip"
+      sha256 "c5f44e7b28f62af007d8bde4c9e33c4ef02ad3baa14398e2a713ed9119ebf1bb"
 
       def install
         bin.install "baton-sql"
@@ -28,15 +28,15 @@ class BatonSql < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sql/releases/download/v0.6.5/baton-sql-v0.6.5-linux-amd64.tar.gz"
-      sha256 "fdb5cd7ea3d2b10fb99acd8f72265d96572a746c8507e0fc0422a3420e690bee"
+      url "https://github.com/ConductorOne/baton-sql/releases/download/v0.6.6-test-inc-sync/baton-sql-v0.6.6-test-inc-sync-linux-amd64.tar.gz"
+      sha256 "666afd6ca4e65e52478d49e8ee18fdcba060034643ddc6747874246fbe143eda"
       def install
         bin.install "baton-sql"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sql/releases/download/v0.6.5/baton-sql-v0.6.5-linux-arm64.tar.gz"
-      sha256 "aaddb103abd48e0b1c73247c30b3dc0624de6c1fadac57d6c985a8bc59ee9d7d"
+      url "https://github.com/ConductorOne/baton-sql/releases/download/v0.6.6-test-inc-sync/baton-sql-v0.6.6-test-inc-sync-linux-arm64.tar.gz"
+      sha256 "30a9d1f5c7f3da1534bca6f594cda3be48ecdd02b953cc5e92ad1a625c2d9537"
       def install
         bin.install "baton-sql"
       end
