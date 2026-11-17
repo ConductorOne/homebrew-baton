@@ -5,20 +5,20 @@
 class BatonPrivx < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-privx/releases/download/v0.1.0/baton-privx-v0.1.0-darwin-amd64.zip"
-      sha256 "ecb63642c424643d8c581d39f756817e0ae4ac816f88a4b998845c34814c3a8a"
+      url "https://github.com/ConductorOne/baton-privx/releases/download/v0.2.0/baton-privx-v0.2.0-darwin-amd64.zip"
+      sha256 "257b1ffb28b8e769cf6d353ff26f82c2e374a0436812f7f4085ce0f88cdac73b"
 
       def install
         bin.install "baton-privx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-privx/releases/download/v0.1.0/baton-privx-v0.1.0-darwin-arm64.zip"
-      sha256 "481a8b89d7a3d883cd9093441d60d6252b94f7e5c4f1e1d1b6219d8558530514"
+      url "https://github.com/ConductorOne/baton-privx/releases/download/v0.2.0/baton-privx-v0.2.0-darwin-arm64.zip"
+      sha256 "829101ab256021bb3aa5b82d07b4fdb47ed948e96b9e68c2775b177aae6301c7"
 
       def install
         bin.install "baton-privx"
@@ -28,15 +28,15 @@ class BatonPrivx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-privx/releases/download/v0.1.0/baton-privx-v0.1.0-linux-amd64.tar.gz"
-      sha256 "6f122893b3274316f232993242d09e4256d1ac63450ccd84aea63d2cfdf09152"
+      url "https://github.com/ConductorOne/baton-privx/releases/download/v0.2.0/baton-privx-v0.2.0-linux-amd64.tar.gz"
+      sha256 "8d8f2351e1b3e684fed480e313f58fa64f9b60724e27671f835b7f940d73c039"
       def install
         bin.install "baton-privx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-privx/releases/download/v0.1.0/baton-privx-v0.1.0-linux-arm64.tar.gz"
-      sha256 "a4670ad8ce58fed154d1a398bef68e2fc83105f7bb61863c7d4cdc146271c920"
+      url "https://github.com/ConductorOne/baton-privx/releases/download/v0.2.0/baton-privx-v0.2.0-linux-arm64.tar.gz"
+      sha256 "0c51c7e1831ef117ef7ccae89003d04644ec92738459c73697d0acd61b14c85f"
       def install
         bin.install "baton-privx"
       end
