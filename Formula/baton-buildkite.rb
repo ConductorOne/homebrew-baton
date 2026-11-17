@@ -5,20 +5,20 @@
 class BatonBuildkite < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.3"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-buildkite/releases/download/v0.2.3/baton-buildkite-v0.2.3-darwin-amd64.zip"
-      sha256 "e088241b8a1976a057a72f15155afbc9fae7428b045e8f3d613129b4eb302be8"
+      url "https://github.com/ConductorOne/baton-buildkite/releases/download/v0.3.0/baton-buildkite-v0.3.0-darwin-amd64.zip"
+      sha256 "fc4db4bb6912ff847aea582977dcf35679cd1523aeaf8850b6073d36ad185647"
 
       def install
         bin.install "baton-buildkite"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-buildkite/releases/download/v0.2.3/baton-buildkite-v0.2.3-darwin-arm64.zip"
-      sha256 "39164b217207d570c1aebe2d73934bc6d9fa61d8d3e09f58b2784083f4271514"
+      url "https://github.com/ConductorOne/baton-buildkite/releases/download/v0.3.0/baton-buildkite-v0.3.0-darwin-arm64.zip"
+      sha256 "fc8f7f900275f18d782bd42ec7c67ef886fde7556ffd7062134831bcdc06a002"
 
       def install
         bin.install "baton-buildkite"
@@ -28,15 +28,15 @@ class BatonBuildkite < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-buildkite/releases/download/v0.2.3/baton-buildkite-v0.2.3-linux-amd64.tar.gz"
-      sha256 "09afff6bc68edd9236fb0498227e8ab93edf3bc41f744f5508b2db7aa3891c69"
+      url "https://github.com/ConductorOne/baton-buildkite/releases/download/v0.3.0/baton-buildkite-v0.3.0-linux-amd64.tar.gz"
+      sha256 "bb48de21aa8be1aa94d77ad4eef85fdc7d0829bcb9629e361b91e8992a2d0a90"
       def install
         bin.install "baton-buildkite"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-buildkite/releases/download/v0.2.3/baton-buildkite-v0.2.3-linux-arm64.tar.gz"
-      sha256 "5f8e1dcd190c4f06e2b04d395ef9853376d9f3398f6f663a0db8ee3ac9df3919"
+      url "https://github.com/ConductorOne/baton-buildkite/releases/download/v0.3.0/baton-buildkite-v0.3.0-linux-arm64.tar.gz"
+      sha256 "fe0df252706bfe5d567a6147039e14fb37deecef1da7be734bfd1ba1c5fafef5"
       def install
         bin.install "baton-buildkite"
       end
