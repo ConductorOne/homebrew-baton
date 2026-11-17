@@ -5,20 +5,20 @@
 class BatonDockerhub < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-dockerhub/releases/download/v0.1.0/baton-dockerhub-v0.1.0-darwin-amd64.zip"
-      sha256 "d63ca2f43e04fae55213b9c940afcad4b310ebe14bf623dc787480fc0ebb4ec7"
+      url "https://github.com/ConductorOne/baton-dockerhub/releases/download/v0.2.0/baton-dockerhub-v0.2.0-darwin-amd64.zip"
+      sha256 "4842095203a4b24797ebc4805fc998d6fdfccc123a30e98977343c33ef52891a"
 
       def install
         bin.install "baton-dockerhub"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-dockerhub/releases/download/v0.1.0/baton-dockerhub-v0.1.0-darwin-arm64.zip"
-      sha256 "8d7a434caa9db33fdac263babdba346185260f2db51bd50d263b2b0de0f62093"
+      url "https://github.com/ConductorOne/baton-dockerhub/releases/download/v0.2.0/baton-dockerhub-v0.2.0-darwin-arm64.zip"
+      sha256 "3a7e1657eb33dc8424eacb627bc00de7aac7949a490f4031b95783ab7f07168d"
 
       def install
         bin.install "baton-dockerhub"
@@ -28,15 +28,15 @@ class BatonDockerhub < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-dockerhub/releases/download/v0.1.0/baton-dockerhub-v0.1.0-linux-amd64.tar.gz"
-      sha256 "0e57ca092cfa56475b4f0969ffa67aa3016cf8179bb44cd86e531af0b4729891"
+      url "https://github.com/ConductorOne/baton-dockerhub/releases/download/v0.2.0/baton-dockerhub-v0.2.0-linux-amd64.tar.gz"
+      sha256 "fd4720ff4a83538f341644b1d2559eca75903a091de2b867c7515cab15428187"
       def install
         bin.install "baton-dockerhub"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-dockerhub/releases/download/v0.1.0/baton-dockerhub-v0.1.0-linux-arm64.tar.gz"
-      sha256 "5e6996b5f038da68d8eb6d5864f94867563e6b410be5aa0b73dba15e1919cf14"
+      url "https://github.com/ConductorOne/baton-dockerhub/releases/download/v0.2.0/baton-dockerhub-v0.2.0-linux-arm64.tar.gz"
+      sha256 "63c9b998958442e8985436c9c8e54df9a6821d53927e64b5997caad1c305243e"
       def install
         bin.install "baton-dockerhub"
       end
