@@ -5,20 +5,20 @@
 class BatonAirtable < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-airtable/releases/download/v0.1.0/baton-airtable-v0.1.0-darwin-amd64.zip"
-      sha256 "c3f55b7ea9d66a3835f3091649b0a42a7fdcc4e7a9c50afdc20008505abb95a8"
+      url "https://github.com/ConductorOne/baton-airtable/releases/download/v0.2.0/baton-airtable-v0.2.0-darwin-amd64.zip"
+      sha256 "4d0187c734c8fe1ebaa13b99266949bdb5aee7361fe38260f735a1ff60f0edc7"
 
       def install
         bin.install "baton-airtable"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-airtable/releases/download/v0.1.0/baton-airtable-v0.1.0-darwin-arm64.zip"
-      sha256 "a402f2a00adbbab887f30d6734345f82a976f93613b693bde1521636947e5f3e"
+      url "https://github.com/ConductorOne/baton-airtable/releases/download/v0.2.0/baton-airtable-v0.2.0-darwin-arm64.zip"
+      sha256 "fc5fc01ee55d4b07b09dcf1ae7c271beb2822443373d94f9da511513ed6ad819"
 
       def install
         bin.install "baton-airtable"
@@ -28,15 +28,15 @@ class BatonAirtable < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-airtable/releases/download/v0.1.0/baton-airtable-v0.1.0-linux-amd64.tar.gz"
-      sha256 "2391723986827c331f861199fc046fa8bdf7b570a716d05e2cde537bed4e52bb"
+      url "https://github.com/ConductorOne/baton-airtable/releases/download/v0.2.0/baton-airtable-v0.2.0-linux-amd64.tar.gz"
+      sha256 "e05791e4d87175539d6c1cd5345a32097d7149fd1cd31980457633fb05401770"
       def install
         bin.install "baton-airtable"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-airtable/releases/download/v0.1.0/baton-airtable-v0.1.0-linux-arm64.tar.gz"
-      sha256 "f5b77ee281bc249520b13090e0e2013243132844974acf6cd05f9f26065dc249"
+      url "https://github.com/ConductorOne/baton-airtable/releases/download/v0.2.0/baton-airtable-v0.2.0-linux-arm64.tar.gz"
+      sha256 "c8984b29cd58b845168abef51475987e28050db1e229696aa11581a43a542525"
       def install
         bin.install "baton-airtable"
       end
