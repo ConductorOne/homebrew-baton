@@ -5,20 +5,20 @@
 class C1i < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.10.1"
+  version "0.11.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/c1i/releases/download/v0.10.1/c1i-v0.10.1-darwin-amd64.zip"
-      sha256 "0ac38b09a6d7f100799a8f73275817018db53d2f36f77b6d4c6e67025bcc004c"
+      url "https://github.com/ConductorOne/c1i/releases/download/v0.11.0/c1i-v0.11.0-darwin-amd64.zip"
+      sha256 "ff92b6f74e6955de270e0a3245b7b213e776cd47e568bdde1e155d6c77a90351"
 
       def install
         bin.install "c1i"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/c1i/releases/download/v0.10.1/c1i-v0.10.1-darwin-arm64.zip"
-      sha256 "dc15a908c63c681116a297f412f71850d350e5b35b88a2231bf5dd82c601d462"
+      url "https://github.com/ConductorOne/c1i/releases/download/v0.11.0/c1i-v0.11.0-darwin-arm64.zip"
+      sha256 "469f6720b1b4c694066d58b47db1e083af82026955bb287ea8c7f7b1c85046d1"
 
       def install
         bin.install "c1i"
@@ -28,15 +28,15 @@ class C1i < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/c1i/releases/download/v0.10.1/c1i-v0.10.1-linux-amd64.tar.gz"
-      sha256 "63eac698e534af5236f44fde206bed08336a41045394fe22509493994ccc8678"
+      url "https://github.com/ConductorOne/c1i/releases/download/v0.11.0/c1i-v0.11.0-linux-amd64.tar.gz"
+      sha256 "b1f9f0ba8e0c6b0cfc16887aea8cf20ae1ddaf091025074a698bcb73e057022c"
       def install
         bin.install "c1i"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/c1i/releases/download/v0.10.1/c1i-v0.10.1-linux-arm64.tar.gz"
-      sha256 "81e3e27c852dc25e5e233c4f1f972b1a3f93e7077352d28cd7bfb5f51aad98ec"
+      url "https://github.com/ConductorOne/c1i/releases/download/v0.11.0/c1i-v0.11.0-linux-arm64.tar.gz"
+      sha256 "0fdcd3795916d129bd7e59435769c9d70d7a959670fbf3a96029169baaead920"
       def install
         bin.install "c1i"
       end
