@@ -5,20 +5,20 @@
 class BatonTorq < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.2"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-torq/releases/download/v0.0.2/baton-torq-v0.0.2-darwin-amd64.zip"
-      sha256 "a988334830f2b15ad8f5f0bd690a8d663cb36c2e7795337f3b1aa5d2fbeb1f98"
+      url "https://github.com/ConductorOne/baton-torq/releases/download/v0.1.0/baton-torq-v0.1.0-darwin-amd64.zip"
+      sha256 "40e6fa74135149a9e32735906ca198cfc9b5a3f6d0a59e87a1af9071e7cae0b6"
 
       def install
         bin.install "baton-torq"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-torq/releases/download/v0.0.2/baton-torq-v0.0.2-darwin-arm64.zip"
-      sha256 "a0e1341feb6a292e89bd919827883495bf4cd96698f35edc5b5755b4a64259b0"
+      url "https://github.com/ConductorOne/baton-torq/releases/download/v0.1.0/baton-torq-v0.1.0-darwin-arm64.zip"
+      sha256 "b757029ce5e16b07aa497fd8825513612582779520337805daeca620a5fa0868"
 
       def install
         bin.install "baton-torq"
@@ -28,15 +28,15 @@ class BatonTorq < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-torq/releases/download/v0.0.2/baton-torq-v0.0.2-linux-amd64.tar.gz"
-      sha256 "353de0075f60d397b0c816af6bd50990b3be50106473a0d33c1fb077aec82435"
+      url "https://github.com/ConductorOne/baton-torq/releases/download/v0.1.0/baton-torq-v0.1.0-linux-amd64.tar.gz"
+      sha256 "62d8715f5cb27e1e63ef6de2f48c907179b7870c7832d5c2a08f706e1dbc584e"
       def install
         bin.install "baton-torq"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-torq/releases/download/v0.0.2/baton-torq-v0.0.2-linux-arm64.tar.gz"
-      sha256 "35df69dc4440044434d9c641c43ba66ec007a070f83028dd26ca9963b39716d2"
+      url "https://github.com/ConductorOne/baton-torq/releases/download/v0.1.0/baton-torq-v0.1.0-linux-arm64.tar.gz"
+      sha256 "3a4be15c38fe6b9d127518e293c7c146f61191b431aaa47601f6116cd8373a86"
       def install
         bin.install "baton-torq"
       end
