@@ -5,20 +5,20 @@
 class BatonXsoar < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-xsoar/releases/download/v0.1.0/baton-xsoar-v0.1.0-darwin-amd64.zip"
-      sha256 "43ea971693f466d2be4b69ea0a4a706c367967128ef667c3247eab801737f557"
+      url "https://github.com/ConductorOne/baton-xsoar/releases/download/v0.2.0/baton-xsoar-v0.2.0-darwin-amd64.zip"
+      sha256 "ef14b2d0e23f2ff752dc62fc932e8882a243022de4175dadd4a8a225dda34023"
 
       def install
         bin.install "baton-xsoar"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-xsoar/releases/download/v0.1.0/baton-xsoar-v0.1.0-darwin-arm64.zip"
-      sha256 "6ac68b9c09fdda5e33d3fb6ff2bd2529ba8a33bbbf1eedc463138b012087cd7b"
+      url "https://github.com/ConductorOne/baton-xsoar/releases/download/v0.2.0/baton-xsoar-v0.2.0-darwin-arm64.zip"
+      sha256 "f26b49bbcba12c37e4bd8323d919b381e849ceb54186cd655ca9b9383c7210e4"
 
       def install
         bin.install "baton-xsoar"
@@ -28,15 +28,15 @@ class BatonXsoar < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-xsoar/releases/download/v0.1.0/baton-xsoar-v0.1.0-linux-amd64.tar.gz"
-      sha256 "dba93fb26577be993319a53ca0742b1666ef23769788b6caafee381609d459c9"
+      url "https://github.com/ConductorOne/baton-xsoar/releases/download/v0.2.0/baton-xsoar-v0.2.0-linux-amd64.tar.gz"
+      sha256 "fe06c2ce89a3548770c19c41ab7a6fa57786ce7cf79bea1e1d869afae8c00647"
       def install
         bin.install "baton-xsoar"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-xsoar/releases/download/v0.1.0/baton-xsoar-v0.1.0-linux-arm64.tar.gz"
-      sha256 "e3219a39e61de1e7cebfc10595584b94437eb76bc8ace8896858d30f9ea6a99a"
+      url "https://github.com/ConductorOne/baton-xsoar/releases/download/v0.2.0/baton-xsoar-v0.2.0-linux-arm64.tar.gz"
+      sha256 "9e494918eb569a01f1e9f46b92f2bb824da8f8499dfb985c350cb4a4a13ea1c1"
       def install
         bin.install "baton-xsoar"
       end
