@@ -5,20 +5,20 @@
 class BatonJdEdwards < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.1"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-jd-edwards/releases/download/v0.1.1/baton-jd-edwards-v0.1.1-darwin-amd64.zip"
-      sha256 "1410e20274788eca5831fcf2b074113a298b8a96e0f97661b865f29289a0b688"
+      url "https://github.com/ConductorOne/baton-jd-edwards/releases/download/v0.2.0/baton-jd-edwards-v0.2.0-darwin-amd64.zip"
+      sha256 "f36845ebdfb5ab24849963593be18504fed6d4b9dadefeba7192393adfa7456d"
 
       def install
         bin.install "baton-jd-edwards"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-jd-edwards/releases/download/v0.1.1/baton-jd-edwards-v0.1.1-darwin-arm64.zip"
-      sha256 "5c71df854cab7821429726b2f70bdadc7217e813ec2810821f8971fc2b9d6a86"
+      url "https://github.com/ConductorOne/baton-jd-edwards/releases/download/v0.2.0/baton-jd-edwards-v0.2.0-darwin-arm64.zip"
+      sha256 "aeecc467e733e533464d6e7be323b27f4b37ae82deba92e7fd6ee208bf875b02"
 
       def install
         bin.install "baton-jd-edwards"
@@ -28,15 +28,15 @@ class BatonJdEdwards < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-jd-edwards/releases/download/v0.1.1/baton-jd-edwards-v0.1.1-linux-amd64.tar.gz"
-      sha256 "0ea7c76e3a1a137d6d960bf75e2a10dcdc84ba3d566cd0ee79dc06b060481092"
+      url "https://github.com/ConductorOne/baton-jd-edwards/releases/download/v0.2.0/baton-jd-edwards-v0.2.0-linux-amd64.tar.gz"
+      sha256 "9e8cc44968be0892b59b3ae57aaf6ea1b258cc11a2fe7d26ac496c847d2ad292"
       def install
         bin.install "baton-jd-edwards"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-jd-edwards/releases/download/v0.1.1/baton-jd-edwards-v0.1.1-linux-arm64.tar.gz"
-      sha256 "2c45dba65d304cefcf3c0109546edef12df3c26acbebed396b719c2673abfe93"
+      url "https://github.com/ConductorOne/baton-jd-edwards/releases/download/v0.2.0/baton-jd-edwards-v0.2.0-linux-arm64.tar.gz"
+      sha256 "b7fdf26584a843837902821c8af162e20d4df45d8d4a1aaab6cf7c6a536f1f51"
       def install
         bin.install "baton-jd-edwards"
       end
