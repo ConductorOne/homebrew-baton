@@ -5,20 +5,20 @@
 class BatonMongodbAtlas < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.12-test-project-role-grant"
+  version "0.1.12-test-project-role-grant-2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.12-test-project-role-grant/baton-mongodb-atlas-v0.1.12-test-project-role-grant-darwin-amd64.zip"
-      sha256 "83fd19dad22ba101d251475135ad8f849cc266591b12903c4e9a26d43da558ce"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.12-test-project-role-grant-2/baton-mongodb-atlas-v0.1.12-test-project-role-grant-2-darwin-amd64.zip"
+      sha256 "0c582d7ec50e750315dbf71dd090d66141fa95d48bbfe36573577ac82213c8f2"
 
       def install
         bin.install "baton-mongodb-atlas"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.12-test-project-role-grant/baton-mongodb-atlas-v0.1.12-test-project-role-grant-darwin-arm64.zip"
-      sha256 "47b41ae1fff3b0e644cca7202ba6731318f42d92c5cc78972e12b2fb3a900381"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.12-test-project-role-grant-2/baton-mongodb-atlas-v0.1.12-test-project-role-grant-2-darwin-arm64.zip"
+      sha256 "43887c9d1c4cbeb3b9409a776ca7f6b822c9e7ac0f7125903516c2b1f56d9eba"
 
       def install
         bin.install "baton-mongodb-atlas"
@@ -28,15 +28,15 @@ class BatonMongodbAtlas < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.12-test-project-role-grant/baton-mongodb-atlas-v0.1.12-test-project-role-grant-linux-amd64.tar.gz"
-      sha256 "be9e70f395e0b71be1337362644bf52c02d2d7693279a6b9a14b026d2daae22e"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.12-test-project-role-grant-2/baton-mongodb-atlas-v0.1.12-test-project-role-grant-2-linux-amd64.tar.gz"
+      sha256 "f38bf29a2cc38700a10f5a7449827c10ea37ed2dedb04d38d486485da9c2878b"
       def install
         bin.install "baton-mongodb-atlas"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.12-test-project-role-grant/baton-mongodb-atlas-v0.1.12-test-project-role-grant-linux-arm64.tar.gz"
-      sha256 "3e1adbcb49d54528ecaff201010b9be0a42793b6b23fb2ee7e9e55140686d0df"
+      url "https://github.com/ConductorOne/baton-mongodb-atlas/releases/download/v0.1.12-test-project-role-grant-2/baton-mongodb-atlas-v0.1.12-test-project-role-grant-2-linux-arm64.tar.gz"
+      sha256 "2592fb45f2e90485f7ab0163e7f7d8a1098cfbb896f63a6a019bb0b857e55e4e"
       def install
         bin.install "baton-mongodb-atlas"
       end
