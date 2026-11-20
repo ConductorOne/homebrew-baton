@@ -5,20 +5,20 @@
 class BatonAvalara < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0-rc.1"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-avalara/releases/download/v0.1.0-rc.1/baton-avalara-v0.1.0-rc.1-darwin-amd64.zip"
-      sha256 "d7c7d4e7925dd9f1b73c042b9874fb580a9a81ecb3e3c31c878dd779535f5496"
+      url "https://github.com/ConductorOne/baton-avalara/releases/download/v0.1.0/baton-avalara-v0.1.0-darwin-amd64.zip"
+      sha256 "b33b5ed58c0acd4aba3942c54b018ccc994474bfe50c2a1ca1b8d0231c41262a"
 
       def install
         bin.install "baton-avalara"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-avalara/releases/download/v0.1.0-rc.1/baton-avalara-v0.1.0-rc.1-darwin-arm64.zip"
-      sha256 "444aa9e78df3f0b893477e4c9fc118a53f3d4fab695c2a18ddd67f0346905786"
+      url "https://github.com/ConductorOne/baton-avalara/releases/download/v0.1.0/baton-avalara-v0.1.0-darwin-arm64.zip"
+      sha256 "09ab193cb375c6a046ef7fd1bf0af328c9a498eecfce316cb3dd351940f620d4"
 
       def install
         bin.install "baton-avalara"
@@ -28,15 +28,15 @@ class BatonAvalara < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-avalara/releases/download/v0.1.0-rc.1/baton-avalara-v0.1.0-rc.1-linux-amd64.tar.gz"
-      sha256 "b8c28a785a747d8c7ee2e325eba053097b87ae9a1d1187fc0d6361f9db69e2aa"
+      url "https://github.com/ConductorOne/baton-avalara/releases/download/v0.1.0/baton-avalara-v0.1.0-linux-amd64.tar.gz"
+      sha256 "52e43024f9f8742d9a36b570e017a2b7ee729239af02830f3c9b72e11a218ad0"
       def install
         bin.install "baton-avalara"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-avalara/releases/download/v0.1.0-rc.1/baton-avalara-v0.1.0-rc.1-linux-arm64.tar.gz"
-      sha256 "0737efcd5f64a5bf7ef170ac9f35bbf2a2e067eba418dfc95159fe71f0e3dc2d"
+      url "https://github.com/ConductorOne/baton-avalara/releases/download/v0.1.0/baton-avalara-v0.1.0-linux-arm64.tar.gz"
+      sha256 "c0a3453f65d3f923e6855a376733255e609c218c787e3a5e670fb61fdf992b9f"
       def install
         bin.install "baton-avalara"
       end
