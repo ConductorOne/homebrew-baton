@@ -5,20 +5,20 @@
 class BatonZiphq < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.0"
+  version "0.2.1-test-roles-attributes"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-ziphq/releases/download/v0.2.0/baton-ziphq-v0.2.0-darwin-amd64.zip"
-      sha256 "f7176ad63eef7229656ae2ed70ec3ff7dd55a0539d80e5e78dbef0cd84d41788"
+      url "https://github.com/ConductorOne/baton-ziphq/releases/download/v0.2.1-test-roles-attributes/baton-ziphq-v0.2.1-test-roles-attributes-darwin-amd64.zip"
+      sha256 "0bddf1cdfc73725b26efa4a4adc481b5bf8edf8b2b4cc23e0c1ee38abf0bff16"
 
       def install
         bin.install "baton-ziphq"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-ziphq/releases/download/v0.2.0/baton-ziphq-v0.2.0-darwin-arm64.zip"
-      sha256 "9776a12d2176125a4d34b331ebd55ff0927625d5790613d37e696313e4d30cde"
+      url "https://github.com/ConductorOne/baton-ziphq/releases/download/v0.2.1-test-roles-attributes/baton-ziphq-v0.2.1-test-roles-attributes-darwin-arm64.zip"
+      sha256 "5965c59334488c995acf75818458c50aadd272bde8dc74294571a523c3c2a578"
 
       def install
         bin.install "baton-ziphq"
@@ -28,15 +28,15 @@ class BatonZiphq < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ziphq/releases/download/v0.2.0/baton-ziphq-v0.2.0-linux-amd64.tar.gz"
-      sha256 "e0b2f3e8ccffae343f94127ba9ea4ade6a8cb0773412e09c30529a1c5beb2b7b"
+      url "https://github.com/ConductorOne/baton-ziphq/releases/download/v0.2.1-test-roles-attributes/baton-ziphq-v0.2.1-test-roles-attributes-linux-amd64.tar.gz"
+      sha256 "42c9722f97561cca6d131c0a02dbb6dcdea87ef67fde8ca9c42467d2d606ebc0"
       def install
         bin.install "baton-ziphq"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ziphq/releases/download/v0.2.0/baton-ziphq-v0.2.0-linux-arm64.tar.gz"
-      sha256 "feb776ca2fcb6cb727695c334ac7123296bd62dc8daa4de34b5da213fd042731"
+      url "https://github.com/ConductorOne/baton-ziphq/releases/download/v0.2.1-test-roles-attributes/baton-ziphq-v0.2.1-test-roles-attributes-linux-arm64.tar.gz"
+      sha256 "c4ab9f646c53e5d02bbb0a93230b0a372126df54ac9ed2a2c15edf4bc0da3b25"
       def install
         bin.install "baton-ziphq"
       end
