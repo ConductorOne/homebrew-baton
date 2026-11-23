@@ -5,20 +5,20 @@
 class BatonDatabricks < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.7-test-workload-identity-2"
+  version "0.2.8"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-databricks/releases/download/v0.2.7-test-workload-identity-2/baton-databricks-v0.2.7-test-workload-identity-2-darwin-amd64.zip"
-      sha256 "d0c1c0d72051bce45d4dbc11c605c8384b3e9b3e05eb657ee40f6b49f65a74f9"
+      url "https://github.com/ConductorOne/baton-databricks/releases/download/v0.2.8/baton-databricks-v0.2.8-darwin-amd64.zip"
+      sha256 "a33794a509b5c7460cd9a687b3f1eaecd1eec0fec2747c5a2445beb42a331637"
 
       def install
         bin.install "baton-databricks"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-databricks/releases/download/v0.2.7-test-workload-identity-2/baton-databricks-v0.2.7-test-workload-identity-2-darwin-arm64.zip"
-      sha256 "23bffb27cc479fbabdc8394c9ace192e40c0a96d85ea9dea3564119c4d1904f1"
+      url "https://github.com/ConductorOne/baton-databricks/releases/download/v0.2.8/baton-databricks-v0.2.8-darwin-arm64.zip"
+      sha256 "17eea2f67a250d2cf577c209127a5532d12375c5736de7a50cff8e93c1f9f474"
 
       def install
         bin.install "baton-databricks"
@@ -28,15 +28,15 @@ class BatonDatabricks < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-databricks/releases/download/v0.2.7-test-workload-identity-2/baton-databricks-v0.2.7-test-workload-identity-2-linux-amd64.tar.gz"
-      sha256 "db153160bf371db02023191133a792b4164b075cbec54ad169a87045737be457"
+      url "https://github.com/ConductorOne/baton-databricks/releases/download/v0.2.8/baton-databricks-v0.2.8-linux-amd64.tar.gz"
+      sha256 "09ddb7d9244da014b59033a546ab6150feef265b2b7823d364c0f9d81254fcb5"
       def install
         bin.install "baton-databricks"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-databricks/releases/download/v0.2.7-test-workload-identity-2/baton-databricks-v0.2.7-test-workload-identity-2-linux-arm64.tar.gz"
-      sha256 "b14604871845cd57adfac2c71ce2307717a7236c2146484173c27bebf325fb30"
+      url "https://github.com/ConductorOne/baton-databricks/releases/download/v0.2.8/baton-databricks-v0.2.8-linux-arm64.tar.gz"
+      sha256 "9f4b1481d090efce5fb7df8e7e97061fd07c5f28d0c71594b9420ac2cefeef53"
       def install
         bin.install "baton-databricks"
       end
