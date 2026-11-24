@@ -5,20 +5,20 @@
 class BatonSigmacomputing < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.3.6"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-sigmacomputing/releases/download/v0.3.6/baton-sigmacomputing-v0.3.6-darwin-amd64.zip"
-      sha256 "0124056302231399d300284a823b68de3590a011ac098c8d8ac2095388ecab90"
+      url "https://github.com/ConductorOne/baton-sigmacomputing/releases/download/v0.4.0/baton-sigmacomputing-v0.4.0-darwin-amd64.zip"
+      sha256 "c9d780fe30be0c1985d57df450ffd8b5073a0d681a9db4f03046079fe4a59576"
 
       def install
         bin.install "baton-sigmacomputing"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-sigmacomputing/releases/download/v0.3.6/baton-sigmacomputing-v0.3.6-darwin-arm64.zip"
-      sha256 "b060bf71ac19e43b02eaea55a23a0c223689d1c1bb1396f1327406d754bb4e43"
+      url "https://github.com/ConductorOne/baton-sigmacomputing/releases/download/v0.4.0/baton-sigmacomputing-v0.4.0-darwin-arm64.zip"
+      sha256 "73c78ad97bb58cc3caf0eede2bda6734d2dba0e443f0c790620e24c56192df85"
 
       def install
         bin.install "baton-sigmacomputing"
@@ -28,15 +28,15 @@ class BatonSigmacomputing < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sigmacomputing/releases/download/v0.3.6/baton-sigmacomputing-v0.3.6-linux-amd64.tar.gz"
-      sha256 "3b398adff2da4da7e795fc95d2d243f2c5f57728cbc9157127b2f416c3e3601b"
+      url "https://github.com/ConductorOne/baton-sigmacomputing/releases/download/v0.4.0/baton-sigmacomputing-v0.4.0-linux-amd64.tar.gz"
+      sha256 "e26ff67cefdf37d84b74126b742cfd9491aa665d4a228f295a53a8f6ff38a7b6"
       def install
         bin.install "baton-sigmacomputing"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-sigmacomputing/releases/download/v0.3.6/baton-sigmacomputing-v0.3.6-linux-arm64.tar.gz"
-      sha256 "5b67317d5e1248b3581e09086b508f80dfb623cefec1ee1ed9f84899ab32365f"
+      url "https://github.com/ConductorOne/baton-sigmacomputing/releases/download/v0.4.0/baton-sigmacomputing-v0.4.0-linux-arm64.tar.gz"
+      sha256 "79bd35ddf7c6d3ba9053b15f431f56a09b5ed1fbb49285fd94016709c10f8a3a"
       def install
         bin.install "baton-sigmacomputing"
       end
