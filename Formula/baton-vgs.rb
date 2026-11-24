@@ -5,20 +5,20 @@
 class BatonVgs < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.1"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-vgs/releases/download/v0.2.1/baton-vgs-v0.2.1-darwin-amd64.zip"
-      sha256 "5532939efb9da4246edad1ba90bd772494d503205d7c9f55bcffa47ece6d3392"
+      url "https://github.com/ConductorOne/baton-vgs/releases/download/v0.3.0/baton-vgs-v0.3.0-darwin-amd64.zip"
+      sha256 "19b72d964d63613eb80744a2796c3b0e46e9437d93198c1abe56c0d2dffc5b01"
 
       def install
         bin.install "baton-vgs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-vgs/releases/download/v0.2.1/baton-vgs-v0.2.1-darwin-arm64.zip"
-      sha256 "fa4cbeb76c5d10880f558d006554422f0ed842d3076494503b7fd29a8e377059"
+      url "https://github.com/ConductorOne/baton-vgs/releases/download/v0.3.0/baton-vgs-v0.3.0-darwin-arm64.zip"
+      sha256 "9a1c3b720929ab2bddb0e003a6ba2382ca6a010c040b1b0580165f9870fbbcfb"
 
       def install
         bin.install "baton-vgs"
@@ -28,15 +28,15 @@ class BatonVgs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-vgs/releases/download/v0.2.1/baton-vgs-v0.2.1-linux-amd64.tar.gz"
-      sha256 "11b147b65f325b55b07182395276b7f7a0b55e8efb2273d320ef9b0fe7db2c4a"
+      url "https://github.com/ConductorOne/baton-vgs/releases/download/v0.3.0/baton-vgs-v0.3.0-linux-amd64.tar.gz"
+      sha256 "a4b3e01f3de94b23f31204d37079a73c623bc023534d927b04c06cfb78a0ae88"
       def install
         bin.install "baton-vgs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-vgs/releases/download/v0.2.1/baton-vgs-v0.2.1-linux-arm64.tar.gz"
-      sha256 "04fbeb46c911b3b0b67cd478a7032365c840e5a6a6ee9ae34c713d888b20c962"
+      url "https://github.com/ConductorOne/baton-vgs/releases/download/v0.3.0/baton-vgs-v0.3.0-linux-arm64.tar.gz"
+      sha256 "88522f80925d149d8c274b31c1b0c034831e6e5856fd0ad9a2da3a09676a8828"
       def install
         bin.install "baton-vgs"
       end
