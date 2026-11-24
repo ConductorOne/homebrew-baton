@@ -5,20 +5,20 @@
 class BatonOracleFccs < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-oracle-fccs/releases/download/v0.1.0/baton-oracle-fccs-v0.1.0-darwin-amd64.zip"
-      sha256 "bbda62db3417d2214ae7948e16633c262d2ed392c577b6b450712de1cd62199b"
+      url "https://github.com/ConductorOne/baton-oracle-fccs/releases/download/v0.2.0/baton-oracle-fccs-v0.2.0-darwin-amd64.zip"
+      sha256 "2d0141b0dd516bee3fd6c47c2889413f72a03e22d02d2e7b5cde69384f0a88c9"
 
       def install
         bin.install "baton-oracle-fccs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-oracle-fccs/releases/download/v0.1.0/baton-oracle-fccs-v0.1.0-darwin-arm64.zip"
-      sha256 "abd63516cb75e3f1885d821da3bb117e6ed14673bd3e8d928a20a0def18c2f3d"
+      url "https://github.com/ConductorOne/baton-oracle-fccs/releases/download/v0.2.0/baton-oracle-fccs-v0.2.0-darwin-arm64.zip"
+      sha256 "60d8f9701fe5ebc69d77695be5eea415d4095b9e60f0c197d98d7db323552905"
 
       def install
         bin.install "baton-oracle-fccs"
@@ -28,15 +28,15 @@ class BatonOracleFccs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-oracle-fccs/releases/download/v0.1.0/baton-oracle-fccs-v0.1.0-linux-amd64.tar.gz"
-      sha256 "85c1e0570cead53149a5a859f1a34550d035c44486d5e4c16f39f5f184116fc8"
+      url "https://github.com/ConductorOne/baton-oracle-fccs/releases/download/v0.2.0/baton-oracle-fccs-v0.2.0-linux-amd64.tar.gz"
+      sha256 "63c6bedd86b07ad861fbc7da006068cb844eeaa16ed974525fc0633ec6115a39"
       def install
         bin.install "baton-oracle-fccs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-oracle-fccs/releases/download/v0.1.0/baton-oracle-fccs-v0.1.0-linux-arm64.tar.gz"
-      sha256 "727e59292e027f104dd5f36c16fd8828b749e19aa3a2c28122cb1bb8fec34429"
+      url "https://github.com/ConductorOne/baton-oracle-fccs/releases/download/v0.2.0/baton-oracle-fccs-v0.2.0-linux-arm64.tar.gz"
+      sha256 "83011b141ecb8d2b11fa7688c159b86c5db7211cc5774c0c3422d5c4de3886be"
       def install
         bin.install "baton-oracle-fccs"
       end
