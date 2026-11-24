@@ -5,20 +5,20 @@
 class BatonArubaCentral < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-aruba-central/releases/download/v0.1.0/baton-aruba-central-v0.1.0-darwin-amd64.zip"
-      sha256 "1926f23267944ac6808644890374a9c7561009f35a863ef111b1d024de1942f1"
+      url "https://github.com/ConductorOne/baton-aruba-central/releases/download/v0.2.0/baton-aruba-central-v0.2.0-darwin-amd64.zip"
+      sha256 "6ca8ca77dfb681fbfb22f603a4c5ce39672284c87d3c30b61dd5b64051690204"
 
       def install
         bin.install "baton-aruba-central"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-aruba-central/releases/download/v0.1.0/baton-aruba-central-v0.1.0-darwin-arm64.zip"
-      sha256 "3ca61af4a6bdfff6992d17bc0f0374463749b8443420d6a435f402f13b8905c2"
+      url "https://github.com/ConductorOne/baton-aruba-central/releases/download/v0.2.0/baton-aruba-central-v0.2.0-darwin-arm64.zip"
+      sha256 "1859ef746a5f881ee028f32073ef4f323bc19447be301356e62fe9c37ad9b532"
 
       def install
         bin.install "baton-aruba-central"
@@ -28,15 +28,15 @@ class BatonArubaCentral < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-aruba-central/releases/download/v0.1.0/baton-aruba-central-v0.1.0-linux-amd64.tar.gz"
-      sha256 "5f0a3f27591cea112e5421c678b65ba77647471f4c6a85cfdb9e500ce47daf3d"
+      url "https://github.com/ConductorOne/baton-aruba-central/releases/download/v0.2.0/baton-aruba-central-v0.2.0-linux-amd64.tar.gz"
+      sha256 "1d35cdfd0a6aaefd2a1b736f8e5c9cfe20952cd8f8523d3d52afa8fb1604af37"
       def install
         bin.install "baton-aruba-central"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-aruba-central/releases/download/v0.1.0/baton-aruba-central-v0.1.0-linux-arm64.tar.gz"
-      sha256 "ba6f94b3354c2ece663e6713acb6a770cf341d0b9e6f816540202b5f6dfa74bf"
+      url "https://github.com/ConductorOne/baton-aruba-central/releases/download/v0.2.0/baton-aruba-central-v0.2.0-linux-arm64.tar.gz"
+      sha256 "1470108c7fa9d141ee9ab311e83c804cf07d1e5060461c8b99d2f97ca24acf5c"
       def install
         bin.install "baton-aruba-central"
       end
