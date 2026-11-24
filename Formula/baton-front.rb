@@ -5,20 +5,20 @@
 class BatonFront < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.1"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-front/releases/download/v0.2.1/baton-front-v0.2.1-darwin-amd64.zip"
-      sha256 "9f9875777306b6112da9e0872e8b44e86286542ae0a7d3137b005b720aea8a94"
+      url "https://github.com/ConductorOne/baton-front/releases/download/v0.3.0/baton-front-v0.3.0-darwin-amd64.zip"
+      sha256 "200bf04f19666478f3cc23020eabff425827f7bd95928cac33d8f5bd3409f986"
 
       def install
         bin.install "baton-front"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-front/releases/download/v0.2.1/baton-front-v0.2.1-darwin-arm64.zip"
-      sha256 "3d4a9d765041219ada3222420b89387067266eec546efbcb799714193f734ae1"
+      url "https://github.com/ConductorOne/baton-front/releases/download/v0.3.0/baton-front-v0.3.0-darwin-arm64.zip"
+      sha256 "a1e88e6d17c570648a857aa09eef76dbf4fb20bf906d2d7b03047c6f5b43012c"
 
       def install
         bin.install "baton-front"
@@ -28,15 +28,15 @@ class BatonFront < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-front/releases/download/v0.2.1/baton-front-v0.2.1-linux-amd64.tar.gz"
-      sha256 "ebd88d38a4fba44f04098a21871f167a85ec66495a9af2998f25f552b8fd6757"
+      url "https://github.com/ConductorOne/baton-front/releases/download/v0.3.0/baton-front-v0.3.0-linux-amd64.tar.gz"
+      sha256 "f88b4fa207a9dd36fd940831ae65898fdf15b9d6ca8c6e3abc5b1cd9ab57c964"
       def install
         bin.install "baton-front"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-front/releases/download/v0.2.1/baton-front-v0.2.1-linux-arm64.tar.gz"
-      sha256 "1fe0852a88d0e4d58eb90e2641a4af9f6ee65657a59d69832ab020ea7ec62bec"
+      url "https://github.com/ConductorOne/baton-front/releases/download/v0.3.0/baton-front-v0.3.0-linux-arm64.tar.gz"
+      sha256 "46a1dd5f38aec3da11ab9dfd074e216bca876d7313658aceba11fb794f9167a9"
       def install
         bin.install "baton-front"
       end
