@@ -5,20 +5,20 @@
 class BatonPanther < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.3"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-panther/releases/download/v0.0.3/baton-panther-v0.0.3-darwin-amd64.zip"
-      sha256 "6f0f9c35d2f8608770342b8d6f2a3cd4f626ac72ceab8cb3e321153ba924416c"
+      url "https://github.com/ConductorOne/baton-panther/releases/download/v0.1.0/baton-panther-v0.1.0-darwin-amd64.zip"
+      sha256 "6387055d31aedb1048a2808e6a1ff76f9c8307ad42384facf3ef881766668af0"
 
       def install
         bin.install "baton-panther"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-panther/releases/download/v0.0.3/baton-panther-v0.0.3-darwin-arm64.zip"
-      sha256 "b6faf45fdfce26adcb147e197924f0fbe5fcbf788cb9693787f373abc8c691b3"
+      url "https://github.com/ConductorOne/baton-panther/releases/download/v0.1.0/baton-panther-v0.1.0-darwin-arm64.zip"
+      sha256 "945a3543897f4260ec73e158be47df9dfd6976ed06adac9468a5b0c51e8854ca"
 
       def install
         bin.install "baton-panther"
@@ -28,15 +28,15 @@ class BatonPanther < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-panther/releases/download/v0.0.3/baton-panther-v0.0.3-linux-amd64.tar.gz"
-      sha256 "1bfe4b4737b935c4186b34a536692b9c7d9053d860eba3c0dcf6255d7e8951cb"
+      url "https://github.com/ConductorOne/baton-panther/releases/download/v0.1.0/baton-panther-v0.1.0-linux-amd64.tar.gz"
+      sha256 "8d9173f7dd634f6b1d19cbb49a81f6d6aeae3f766471c7ebcf4cb787363d43a0"
       def install
         bin.install "baton-panther"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-panther/releases/download/v0.0.3/baton-panther-v0.0.3-linux-arm64.tar.gz"
-      sha256 "ef112f8a8ee35f32658f883a48c4929cdbf2520b0d23f042d1897e73e456def2"
+      url "https://github.com/ConductorOne/baton-panther/releases/download/v0.1.0/baton-panther-v0.1.0-linux-arm64.tar.gz"
+      sha256 "ea2ab4a17383b53685a1eecfccc3d6b1b55e8da4b91235171678c8ea2d7e0f89"
       def install
         bin.install "baton-panther"
       end
