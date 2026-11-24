@@ -5,20 +5,20 @@
 class BatonIvanti < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-ivanti/releases/download/v0.0.2/baton-ivanti-v0.0.2-darwin-amd64.zip"
-      sha256 "f8739bbb3465ec946253707b6930b865e7b9a8471347e6f72b67bc1ca643fa7b"
+      url "https://github.com/ConductorOne/baton-ivanti/releases/download/v0.0.3/baton-ivanti-v0.0.3-darwin-amd64.zip"
+      sha256 "42125506947d6ee56afb9027e1a96fbcbceeda227590c3f847ffbebecce300a2"
 
       def install
         bin.install "baton-ivanti"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-ivanti/releases/download/v0.0.2/baton-ivanti-v0.0.2-darwin-arm64.zip"
-      sha256 "b27fabbc245ea10b4c83875ae8ef37a0885f7f5c66a3c336e2ebea028fbff7f8"
+      url "https://github.com/ConductorOne/baton-ivanti/releases/download/v0.0.3/baton-ivanti-v0.0.3-darwin-arm64.zip"
+      sha256 "60ed2d1d33621d7fa7d806e12ea73d4d509e405f46e63eac0e5132cabbccec88"
 
       def install
         bin.install "baton-ivanti"
@@ -28,15 +28,15 @@ class BatonIvanti < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ivanti/releases/download/v0.0.2/baton-ivanti-v0.0.2-linux-amd64.tar.gz"
-      sha256 "fbad45d46ace74fbe6399e5b13eeadbb65be067511e5238b96f8c567c813892a"
+      url "https://github.com/ConductorOne/baton-ivanti/releases/download/v0.0.3/baton-ivanti-v0.0.3-linux-amd64.tar.gz"
+      sha256 "f5c616debcd227c651577bd68c6eadddbef11a40eef81af0d06d2fda50cec0c5"
       def install
         bin.install "baton-ivanti"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-ivanti/releases/download/v0.0.2/baton-ivanti-v0.0.2-linux-arm64.tar.gz"
-      sha256 "8f5c081fb09f5ec6cabdf297939d78d7a244b65ac9b9066deb6b868ddbf8b3e2"
+      url "https://github.com/ConductorOne/baton-ivanti/releases/download/v0.0.3/baton-ivanti-v0.0.3-linux-arm64.tar.gz"
+      sha256 "c4a6ceca859c15cee08d7c2f753bbda0d6b4b8f01cd7d86972c8d838a2259bcb"
       def install
         bin.install "baton-ivanti"
       end
