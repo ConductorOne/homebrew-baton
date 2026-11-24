@@ -5,20 +5,20 @@
 class BatonGoogleIdentityPlatform < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.4"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-google-identity-platform/releases/download/v0.2.4/baton-google-identity-platform-v0.2.4-darwin-amd64.zip"
-      sha256 "5f7c8e43793c705afa7b241ebcacbb54cbd8fba34d9ca459023f425e32812667"
+      url "https://github.com/ConductorOne/baton-google-identity-platform/releases/download/v0.3.0/baton-google-identity-platform-v0.3.0-darwin-amd64.zip"
+      sha256 "4d3cc5ebdafc4daa62fce4384c1afc6c95b940c088109d54b7f2978021d5584e"
 
       def install
         bin.install "baton-google-identity-platform"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-google-identity-platform/releases/download/v0.2.4/baton-google-identity-platform-v0.2.4-darwin-arm64.zip"
-      sha256 "80ad03c5ce22ca3d0cb0b0d4702660c3c4a5477e30759f4ab2e2bcfaca541f7f"
+      url "https://github.com/ConductorOne/baton-google-identity-platform/releases/download/v0.3.0/baton-google-identity-platform-v0.3.0-darwin-arm64.zip"
+      sha256 "c19f3e235d224786f6f7075456b9a685c25606c0ebcc855f9906ab7fc775f05b"
 
       def install
         bin.install "baton-google-identity-platform"
@@ -28,15 +28,15 @@ class BatonGoogleIdentityPlatform < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-google-identity-platform/releases/download/v0.2.4/baton-google-identity-platform-v0.2.4-linux-amd64.tar.gz"
-      sha256 "f612d927a3af1c8c70a8a898a1bfd34c280eeef33f1f9e509c50ae7154643050"
+      url "https://github.com/ConductorOne/baton-google-identity-platform/releases/download/v0.3.0/baton-google-identity-platform-v0.3.0-linux-amd64.tar.gz"
+      sha256 "b6c7ddf91ca1e965a1c9f2479bff67e23e74eaecf77b2b27a37309217413b7a6"
       def install
         bin.install "baton-google-identity-platform"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-google-identity-platform/releases/download/v0.2.4/baton-google-identity-platform-v0.2.4-linux-arm64.tar.gz"
-      sha256 "a8e07c6f1a764fb8ea7374a7048e8dbdab1c0b51de3605e92ef5bfce0e670c22"
+      url "https://github.com/ConductorOne/baton-google-identity-platform/releases/download/v0.3.0/baton-google-identity-platform-v0.3.0-linux-arm64.tar.gz"
+      sha256 "6c7a88614f73d5ba042a57bf1e7fa0b5b49c89ae39ae72cd70807c8cfb82cdb4"
       def install
         bin.install "baton-google-identity-platform"
       end
