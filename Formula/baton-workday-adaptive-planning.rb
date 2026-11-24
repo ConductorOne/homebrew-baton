@@ -5,20 +5,20 @@
 class BatonWorkdayAdaptivePlanning < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-workday-adaptive-planning/releases/download/v0.0.1/baton-workday-adaptive-planning-v0.0.1-darwin-amd64.zip"
-      sha256 "0b749aad0db4c4073653f38f2e3d93f64ecffb5c125072a6de57c1390d618920"
+      url "https://github.com/ConductorOne/baton-workday-adaptive-planning/releases/download/v0.0.2/baton-workday-adaptive-planning-v0.0.2-darwin-amd64.zip"
+      sha256 "9729f4b6a49d757a0e70d25ae235a510db3edba36c02809aa1f9b4701f9bb828"
 
       def install
         bin.install "baton-workday-adaptive-planning"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-workday-adaptive-planning/releases/download/v0.0.1/baton-workday-adaptive-planning-v0.0.1-darwin-arm64.zip"
-      sha256 "ec2ede6b62675af53ed297de2f870b459c394a69e8b705d3c0b4fffe29dd8af5"
+      url "https://github.com/ConductorOne/baton-workday-adaptive-planning/releases/download/v0.0.2/baton-workday-adaptive-planning-v0.0.2-darwin-arm64.zip"
+      sha256 "95464b54b6b227cd3edd7348239b51184f3953eaeeaf21f0c0dc871488a46200"
 
       def install
         bin.install "baton-workday-adaptive-planning"
@@ -28,15 +28,15 @@ class BatonWorkdayAdaptivePlanning < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-workday-adaptive-planning/releases/download/v0.0.1/baton-workday-adaptive-planning-v0.0.1-linux-amd64.tar.gz"
-      sha256 "2c20829736ea21c3eb5d302498988d57872c305c11d67c9a2f41421f6aaa355a"
+      url "https://github.com/ConductorOne/baton-workday-adaptive-planning/releases/download/v0.0.2/baton-workday-adaptive-planning-v0.0.2-linux-amd64.tar.gz"
+      sha256 "2626a2eedec359274e9e2d8c2cd39ca96e260a11e6ffd54ef81ea823017e3656"
       def install
         bin.install "baton-workday-adaptive-planning"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-workday-adaptive-planning/releases/download/v0.0.1/baton-workday-adaptive-planning-v0.0.1-linux-arm64.tar.gz"
-      sha256 "24b2ce3a7ee4212dbbfce9c431cf6d6b0690c8c00cab9641cbed25e5ee3d2241"
+      url "https://github.com/ConductorOne/baton-workday-adaptive-planning/releases/download/v0.0.2/baton-workday-adaptive-planning-v0.0.2-linux-arm64.tar.gz"
+      sha256 "1e7527d3a642521032b99b8c1a4e31d1285dfcbdeabce22361a1ecd093338485"
       def install
         bin.install "baton-workday-adaptive-planning"
       end
