@@ -5,20 +5,20 @@
 class BatonSnowflake < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.3.5-test"
+  version "0.3.5-test-2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-snowflake/releases/download/v0.3.5-test/baton-snowflake-v0.3.5-test-darwin-amd64.zip"
-      sha256 "d1d600d4254cd7990e8b96a2b3716e37a42a69a48d6f8cfcdd8a717bf90b1796"
+      url "https://github.com/ConductorOne/baton-snowflake/releases/download/v0.3.5-test-2/baton-snowflake-v0.3.5-test-2-darwin-amd64.zip"
+      sha256 "a39d7a3b05c30853e3241dc0055a5bc61bb32c55b11aa9b68d78571e3ab8c207"
 
       def install
         bin.install "baton-snowflake"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-snowflake/releases/download/v0.3.5-test/baton-snowflake-v0.3.5-test-darwin-arm64.zip"
-      sha256 "ccf7a676123931563b9b9db37457771e7b2d15aebfad6c25e7203c68413f8c1f"
+      url "https://github.com/ConductorOne/baton-snowflake/releases/download/v0.3.5-test-2/baton-snowflake-v0.3.5-test-2-darwin-arm64.zip"
+      sha256 "18a798672ede90020dccb3f34e73cc6a12bad98d17a11aabb6f08fc40a05f264"
 
       def install
         bin.install "baton-snowflake"
@@ -28,15 +28,15 @@ class BatonSnowflake < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-snowflake/releases/download/v0.3.5-test/baton-snowflake-v0.3.5-test-linux-amd64.tar.gz"
-      sha256 "d4184f833722c0694d2f640ee1954b75845f223a321ebecc446fa9b7abf28f34"
+      url "https://github.com/ConductorOne/baton-snowflake/releases/download/v0.3.5-test-2/baton-snowflake-v0.3.5-test-2-linux-amd64.tar.gz"
+      sha256 "e6171eb6b77a45446b600216f0ca0c228f4f632b67ecefe63a16c5c4060291db"
       def install
         bin.install "baton-snowflake"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-snowflake/releases/download/v0.3.5-test/baton-snowflake-v0.3.5-test-linux-arm64.tar.gz"
-      sha256 "026e838bd20332c87fa92fa223583f3b0e8074ba6063275c0886bbfa20b9c5ce"
+      url "https://github.com/ConductorOne/baton-snowflake/releases/download/v0.3.5-test-2/baton-snowflake-v0.3.5-test-2-linux-arm64.tar.gz"
+      sha256 "6d771e32e7b337d63dcc1389750b64360180b1211c47339e6610a3da6b1b6c91"
       def install
         bin.install "baton-snowflake"
       end
