@@ -5,20 +5,20 @@
 class BatonWorkday < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.3.2"
+  version "0.3.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-workday/releases/download/v0.3.2/baton-workday-v0.3.2-darwin-amd64.zip"
-      sha256 "c35eda436774a35189708196f59f8bc94206cea4904b8154f4729559bddd0562"
+      url "https://github.com/ConductorOne/baton-workday/releases/download/v0.3.3/baton-workday-v0.3.3-darwin-amd64.zip"
+      sha256 "12be1f441796e95b3c93c472241f2f93ca0c41a5130ff5d8b08d622f3559a4e6"
 
       def install
         bin.install "baton-workday"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-workday/releases/download/v0.3.2/baton-workday-v0.3.2-darwin-arm64.zip"
-      sha256 "70160400fe820d6c49ae9bc402ea6557f3c50919887d35fba5da27a3614882f1"
+      url "https://github.com/ConductorOne/baton-workday/releases/download/v0.3.3/baton-workday-v0.3.3-darwin-arm64.zip"
+      sha256 "068286b46b28c84c2309c5a10a9d7105d4122337ba81747dfe939e64f4042dfa"
 
       def install
         bin.install "baton-workday"
@@ -28,15 +28,15 @@ class BatonWorkday < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-workday/releases/download/v0.3.2/baton-workday-v0.3.2-linux-amd64.tar.gz"
-      sha256 "8078fdbb156dc30ae94679d7bdda7f14425c442fe5c973162f3cf437b5f87266"
+      url "https://github.com/ConductorOne/baton-workday/releases/download/v0.3.3/baton-workday-v0.3.3-linux-amd64.tar.gz"
+      sha256 "3532c095ff78693d2bd9db64e2d6fa083e7caf62bc34eed3ba81d7b7975fa4af"
       def install
         bin.install "baton-workday"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-workday/releases/download/v0.3.2/baton-workday-v0.3.2-linux-arm64.tar.gz"
-      sha256 "1259e59c1f52ded2041a0f6ba90e39350786782cdb1832edbc610ae27217a807"
+      url "https://github.com/ConductorOne/baton-workday/releases/download/v0.3.3/baton-workday-v0.3.3-linux-arm64.tar.gz"
+      sha256 "216fed9eb198607ce34d034439c9fc981dbd27de81a954aa6eb14fc5cfb45473"
       def install
         bin.install "baton-workday"
       end
