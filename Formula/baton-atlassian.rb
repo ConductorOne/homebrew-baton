@@ -5,20 +5,20 @@
 class BatonAtlassian < Formula
   desc ""
   homepage "https://conductorone.com"
-  version "0.2.3-test-actions"
+  version "0.2.3-test-group-grants"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ConductorOne/baton-atlassian/releases/download/v0.2.3-test-actions/baton-atlassian-v0.2.3-test-actions-darwin-amd64.zip"
-      sha256 "2b47ba6655f7b144d18ddcac302c3e496e7cb1ae9e94798a45de692a0d2b97e0"
+      url "https://github.com/ConductorOne/baton-atlassian/releases/download/v0.2.3-test-group-grants/baton-atlassian-v0.2.3-test-group-grants-darwin-amd64.zip"
+      sha256 "84c4d9d9998956c3b1724368118cc6c674877bb9a23ae799ead6a3fa4a7a9205"
 
       def install
         bin.install "baton-atlassian"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ConductorOne/baton-atlassian/releases/download/v0.2.3-test-actions/baton-atlassian-v0.2.3-test-actions-darwin-arm64.zip"
-      sha256 "ac6849ae4d1f8724829c443b43a94a2aee1012bf67c6f2f07ff5ff2c5845f0c6"
+      url "https://github.com/ConductorOne/baton-atlassian/releases/download/v0.2.3-test-group-grants/baton-atlassian-v0.2.3-test-group-grants-darwin-arm64.zip"
+      sha256 "d1ec5d48ba6e26a8709e12168f6f7af255d322ea2c76eea3f36fdc5dab47b771"
 
       def install
         bin.install "baton-atlassian"
@@ -28,15 +28,15 @@ class BatonAtlassian < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-atlassian/releases/download/v0.2.3-test-actions/baton-atlassian-v0.2.3-test-actions-linux-amd64.tar.gz"
-      sha256 "1498977cdc9dffb915b37255128aade94513b2a3e956d7f701a98e0075018bc4"
+      url "https://github.com/ConductorOne/baton-atlassian/releases/download/v0.2.3-test-group-grants/baton-atlassian-v0.2.3-test-group-grants-linux-amd64.tar.gz"
+      sha256 "1a411a0b90c3919432dbcf3eae200a8f8b76e3b6c56d4312a39c038b78547fa1"
       def install
         bin.install "baton-atlassian"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ConductorOne/baton-atlassian/releases/download/v0.2.3-test-actions/baton-atlassian-v0.2.3-test-actions-linux-arm64.tar.gz"
-      sha256 "d254badcacd687e566573bcc54d2801c15a2cfe7ee8c5dd59c2b3368ec513b49"
+      url "https://github.com/ConductorOne/baton-atlassian/releases/download/v0.2.3-test-group-grants/baton-atlassian-v0.2.3-test-group-grants-linux-arm64.tar.gz"
+      sha256 "c9b3fb2cd851d818aae66caec3810ea3c196573eb883b31a4c5d1095f09f1da3"
       def install
         bin.install "baton-atlassian"
       end
